@@ -2,7 +2,7 @@
 * [[Architecture]]
 * [[Plugin System]]
 * [[Installation]]
-* #Configuration#
+* **Configuration**
  * [[CouchDB]]
  * [[Plugins]]
   * [[Metasploit configuration]]
