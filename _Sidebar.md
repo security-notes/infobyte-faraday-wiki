@@ -14,8 +14,6 @@
  * [[Interface]]
  * [[Multi-User Setup]]
 * [[Community]]
- * [[Mailing List]]
- * [[IRC]]
 * [[Development]]
  * [[API]]
  * [[Basic Plugin Development]]
