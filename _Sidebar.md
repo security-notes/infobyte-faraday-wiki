@@ -4,11 +4,9 @@
 * [[Presentations]]
 * [[Download]]
 * [[Installation]]
- * [[Troubleshooting]]
-* [[Configuration]]
+* Configuration
  * [[CouchDB]]
  * [[Plugins]]
- * [[Architecture]]
   * [[Metasploit configuration]]
   * [[Burp Proxy Extender Plugin]]
 * [[Usage]]
