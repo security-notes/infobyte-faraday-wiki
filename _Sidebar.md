@@ -19,4 +19,3 @@
  * [[Basic Plugin Development]]
  * [[Live debugging]]
 * [[FAQ]]
-* [[Other]]
