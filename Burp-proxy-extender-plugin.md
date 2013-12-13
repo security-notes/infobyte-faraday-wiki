@@ -14,9 +14,6 @@ Jruby 1.7.6 Complete [[http://www.jruby.org/download]]
 
 #Notes
 By default, this plugins adds the vulnerabilities already created at Burp, new vulnerabilities are added in a interactive way.
-Change the following variable in faraday-burp.rb  
+Change the variable **IMPORTVULN** in faraday-burp.rb if you only want to import new vulns
 
-    IMPORTVULN=1 #1 if you like to import the current vulnerabilities, or 0 if you only want to import new vulns
-
-#Bugs
-If you export a Scanner XML file from Burp, you must select "Base64-encode" option. If not the exported XML file will be corrupt due lack of escaping html characters
+    IMPORTVULN=0
