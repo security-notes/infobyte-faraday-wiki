@@ -8,4 +8,5 @@ To list the available objects just run
 MainWindow is the main application context. 
 
 You can ask for the ModelController to see the available hosts and interact with them:
+
     > self._model_controller.getAllHosts()
