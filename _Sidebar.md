@@ -1,7 +1,6 @@
 * [[Introduction]]
 * [[Architecture]]
 * [[Plugin System]]
-* [[Presentations]]
 * [[Download]]
 * [[Installation]]
 * Configuration
