@@ -1,9 +1,8 @@
 * [[Introduction]]
 * [[Architecture]]
 * [[Plugin System]]
-* [[Download]]
 * [[Installation]]
-* Configuration
+* #Configuration#
  * [[CouchDB]]
  * [[Plugins]]
   * [[Metasploit configuration]]
