@@ -1,4 +1,4 @@
-#Maling List
+#Mailing List
 https://groups.google.com/d/forum/faradaysec
 
 #IRC
