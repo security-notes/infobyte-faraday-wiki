@@ -1,0 +1,1 @@
+![](https://raw.github.com/wiki/infobyte/faraday/images/Faraday-Mainwindow.png)
