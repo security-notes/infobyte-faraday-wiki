@@ -4,8 +4,8 @@
 * [[Installation]]
 * **Configuration**
  * [[CouchDB]]
-    * [[Couchdb SSL]]
-    * [[Couchdb Authentication]]
+    * [[Couchdb-SSL]]
+    * [[Couchdb-Authentication]]
   * **Plugins**
      * [[Metasploit configuration]]
      * [[Burp Proxy Extender Plugin]]
