@@ -1,2 +1,2 @@
-![Faraday Logo](https://raw.github.com/wiki/infobyte/faraday/Faraday-Logo.png)
+![Faraday Logo](https://raw.github.com/wiki/infobyte/faraday/images/Faraday-Logo.png)
 
