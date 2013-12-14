@@ -13,7 +13,7 @@
 * [[Usage]]
 * [[Community]]
 * [[Development]]
- * [[API]]
  * [[Basic Plugin Development]]
+ * [[API]]
  * [[Live debugging]]
 * [[FAQ]]
