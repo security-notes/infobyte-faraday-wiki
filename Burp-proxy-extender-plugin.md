@@ -5,12 +5,19 @@ Jruby 1.7.6 Complete [[http://www.jruby.org/download]]
 
 #Configuration
 1) (Burp) In the Extender Tab, Options, in the Ruby Enviroment option set to the PATH of jruby-complete.jar  
+
+![](https://raw.github.com/wiki/infobyte/faraday/images/burp_conf.png)
 2) (Faraday) Edit the RPCSERVER of faraday/plugins/repo/burp/faraday-burp.rb to the IP and Port of Faraday's RPC  
 
     #FARADAY CONF:
     RPCSERVER="http://127.0.0.1:9876/"
 
+
+![](https://raw.github.com/wiki/infobyte/faraday/images/faraday_burp.png)
+
 3) (Burp) Inside the extensions, select Ruby Extension and set the location of faraday-burp.rb, normally faraday/plugins/repo/burp/faraday-burp.rb  
+
+![](https://raw.github.com/wiki/infobyte/faraday/images/burp_conf2.png)
 
 #Notes
 By default, this plugins adds the vulnerabilities already created at Burp, new vulnerabilities are added in a interactive way.  
