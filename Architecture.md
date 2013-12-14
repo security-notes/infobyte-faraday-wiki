@@ -13,3 +13,8 @@ You have two kind of configuration:
 2) Every user have a own local CouchDB and replicate with a centralize CouchDB Server.
 ![Sincronize_1](https://raw.github.com/wiki/infobyte/faraday/images/synchronize_1.png)
 
+Plugins
+--
+The following diagram explain the plugin architecture
+
+![Plugin_Controller](https://raw.github.com/wiki/infobyte/faraday/images/plugin_controller.png)
