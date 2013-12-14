@@ -9,7 +9,7 @@ This plugin can be set from Faraday's Plugin Configuration, where the informatio
 [Password]  
 [Workspace]  
 
-![](Metasploit-Plugin.png)
+![](https://raw.github.com/wiki/infobyte/faraday/images/Metasploit-Plugin.png)
 By default this plugin is disabled, change the enable boolean in order to use it
 
 The information required for connecting to Metasploit is generated dynamically and stored in :
