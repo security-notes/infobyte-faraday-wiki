@@ -30,10 +30,10 @@ To ensure that the issue is not with your certificates, test from the command li
 You can test your certificates separately using:
 
     openssl s_server -key <keyfile> -cert <certfile> -www
-    curl -k -v https://localhost:4433/
+    curl -k -v https://127.0.0.1:6984/
 
 Configure Faraday:
 ---
 Go to Edit->Server Connection to point to the required master and replication databases.  
-Multiple replication is available, separating each IP with a semicolon. For example, for master 192.168.33.10 and replicating to 192.168.33.12 and 192.168.33.11 use:  
+Multiple replication is available, separating each IP with a semicolon. For example, for master 192.168.33.10 
 CouchDB URL: https://192.168.33.10:6984/
