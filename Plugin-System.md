@@ -6,12 +6,10 @@ Right now faraday has more that 40 supported tools, among them you will find:
 * Openvas, 2.0
 * Beef, 0.4.4.9-alpha
 * Qualysguard, Qualysguard
-* MetasploitOn, Metasploit 4.7.2
 * Arachni, 0.4.5.2
 * Hydra, 7.5
 * Acunetix, 9
 * Dnsenum, 1.2.2
-* faraday, 1.0.0
 * Nessus, 5.2.4
 * Sqlmap, sqlmap/1.0-dev
 * ftp, 0.17
@@ -41,7 +39,6 @@ Right now faraday has more that 40 supported tools, among them you will find:
 * Dnsrecon, 0.8.7
 * Skipfish, 2.1.5
 * Nmap, 6.40
-* Maltego, 3.0.4
 * Medusa, 2.1.1
 * Nexpose, Nexpose Enterprise 5.7.19
 * Zap, 2.2.2
