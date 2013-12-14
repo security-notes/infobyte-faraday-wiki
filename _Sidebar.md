@@ -4,10 +4,10 @@
 * [[Installation]]
 * **Configuration**
  * [[CouchDB]]
- * [[Plugins]]
-  * [[Metasploit configuration]]
-  * [[Burp Proxy Extender Plugin]]
-  * [[BeEF configuration]]
+  * Plugins
+   * [[Metasploit configuration]]
+   * [[Burp Proxy Extender Plugin]]
+   * [[BeEF configuration]]
 * [[Usage]]
  * [[Starting Faraday]]
  * [[Interface]]
