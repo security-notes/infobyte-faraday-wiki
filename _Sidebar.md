@@ -4,7 +4,7 @@
 * [[Installation]]
 * **Configuration**
  * [[CouchDB]]
-   * **Plugins**
+  * **Plugins**
      * [[Metasploit configuration]]
      * [[Burp Proxy Extender Plugin]]
      * [[BeEF configuration]]
