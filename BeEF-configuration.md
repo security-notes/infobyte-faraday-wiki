@@ -4,7 +4,7 @@ This plugin can be set from Faraday's Plugin Configuration, where the informatio
 [Host]  
 
 
-![](https://raw.github.com/wiki/infobyte/faraday/images/Beef-Plugin.png
+![](https://raw.github.com/wiki/infobyte/faraday/images/Beef-Plugin.png)
 
 By default this plugin is disabled, change the enable boolean in order to use it  
 
