@@ -7,6 +7,8 @@ Go to Edit->Server Connection to point to the required master for example http:/
 ![](https://raw.github.com/wiki/infobyte/faraday/images/Couchdb_conf.png)
 
 2) Every user have a own local CouchDB and replicate with a centralize CouchDB Server.  
+**NOTE:** If you like to use this configuration check that all CouchDB use almost the version 1.2.0 because some distributions have old version that have some problems.  
+
 Go to Edit->Server Connection to point to the required master for example http://127.0.0.1:5984/ and replication database http://192.168.10.210:5984/.  
 
 ![](https://raw.github.com/wiki/infobyte/faraday/images/Couchdb_conf2.png)
