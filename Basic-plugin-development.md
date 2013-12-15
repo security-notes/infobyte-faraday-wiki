@@ -88,47 +88,34 @@ This method we create and add a interface to host
 
 **core.PluginBase**
 
-The complete list of method in the PluginBase are:
+The complete list of methods in the PluginBase are:
 
     def createAndAddServiceToInterface(self, host_id, interface_id, name, protocol = "tcp?", 
                 ports = [], status = "running", version = "unknown", description = ""):
-
-
+    
     def createAndAddVulnToHost(self, host_id, name, desc="", ref=[], severity=""):
-
-
+    
     def createAndAddVulnToInterface(self, host_id, interface_id, name, desc="", ref=[], severity=""):
-
-
+    
     def createAndAddVulnToApplication(self, host_id, application_id, name, desc="", ref=[], severity=""):
-
-
+    
     def createAndAddVulnToService(self, host_id, service_id, name, desc="", ref=[], severity=""):
-
-
+    
     def createAndAddVulnWebToService(self, host_id, service_id, name, desc="", ref=[], severity="", website="", path="", request="",
                                   response="",method="",pname="", params="",query="",category=""):    
-
-
+    
     def createAndAddNoteToHost(self, host_id, name, text):
-
-
+    
     def createAndAddNoteToInterface(self, host_id, interface_id, name, text):
-
-
+    
     def createAndAddNoteToApplication(self, host_id, application_id, name, text):
-
-
+    
     def createAndAddNoteToService(self, host_id, service_id, name, text):
-
-
+    
     def createAndAddNoteToNote(self, host_id, service_id, note_id, name, text):
-
-
+    
     def createAndAddCredToService(self, host_id, service_id, username, password):
-
-
+        
     def log(self, msg, level='INFO'):
-
-
+    
     def devlog(self, msg): 
