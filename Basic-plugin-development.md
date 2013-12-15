@@ -53,7 +53,7 @@ In the following example you can see plugin of command ping:
     def createPlugin():
     return CmdPingPlugin()
 
-In this plugin if we detect the host is active we add to the database
+In this plugin if the host is active we add it to the database
 
 **Key information:**
 
