@@ -53,10 +53,9 @@ In the following example you can see plugin of command ping:
     def createPlugin():
     return CmdPingPlugin()
 
-
 In this plugin if we detect the host is active we add to the database
 
-Key information:
+**Key information:**
 
     self._command_regex
 a regex used to match the command string and determine if the plugin is suitable to handle it
@@ -66,7 +65,7 @@ This have the dict used for intellisense
 
     def parseOutputString(self, output, debug = False):
 This method will be called when the command finished executing and
-the complete output will be received to work with it
+the complete output will be received to work with it  
 Using the output the plugin can create and add hosts, interfaces, services, etc.
 
     def processCommandString(self, username, current_path, command_string):
