@@ -52,3 +52,4 @@ In the following example you can see plugin of command ping:
     
     def createPlugin():
     return CmdPingPlugin()
+
