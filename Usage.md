@@ -10,7 +10,7 @@ The following list have different features available:
 #Database#
 By default Faraday use local file database if you like to sincronize with others users you have to configure [CouchDB](CouchDB) to share information in real time.  
 #Workspaces#
-We have the possibility for separate information in different workspaces. The idea is have one workspaces for client, assessments or maybe for network location. 
+We have the possibility to separate information in different workspaces. The idea is have one workspaces for client, assessments or maybe for network location. 
 #Highlight#
 Console support highlighting of every hostname or ip with is in the HostTree. If we double click the highlight will be select the host int he HostTree.
 #Plugins#
