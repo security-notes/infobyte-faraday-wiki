@@ -12,8 +12,8 @@
      * [[BeEF configuration]]
 * [[Usage]]
 * [[Community]]
-* [[Development]]
+* **Development**
  * [[Basic Plugin Development]]
- * [[API]]
+ * [[Faraday API]]
  * [[Live debugging]]
 * [[FAQ]]
