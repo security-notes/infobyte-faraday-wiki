@@ -4,7 +4,7 @@ All the plugins are in:
 
     $faraday/plugins/repo/[pluginname]
 
-In the following example you can see simple plugin development of command ping
+In the following example you can see plugin of command ping:
 
     from plugins import core
     from model import api
@@ -29,30 +29,25 @@ In the following example you can see simple plugin development of command ping
                                   }
     
         def parseOutputString(self, output, debug = False):
-    
+            """
+            This method will be called when the command finished executing and
+            the complete output will be received to work with it
+            Using the output the plugin can create and add hosts, interfaces, services, etc.
+            """
             reg=re.search(r"PING ([\w\.-:]+)( |)\(([\w\.:]+)\)", output)
             if re.search("0 received|unknown host",output) is None and reg is not None:
     
                 ip_address = reg.group(3)
                 hostname=reg.group(1)
-    
-    
                 h_id = self.createAndAddHost(ip_address)
-                if self._isIPV4(ip_address):
-                    i_id = self.createAndAddInterface(h_id, ip_address, ipv4_address=ip_address, hostname_resolution=[hostname])
-                else:
-                    i_id = self.createAndAddInterface(h_id, ip_address, ipv6_address=ip_address, hostname_resolution=[hostname])
+                i_id = self.createAndAddInterface(h_id, ip_address, ipv4_address=ip_address, hostname_resolution=[hostname])
     
             return True
     
-        def _isIPV4(self, ip):
-            if len(ip.split(".")) == 4:
-                return True
-            else:
-                return False
-    
         def processCommandString(self, username, current_path, command_string):
             """
+            With this method a plugin can add aditional arguments to the command that
+            it's going to be executed.
             """
             return None
     
