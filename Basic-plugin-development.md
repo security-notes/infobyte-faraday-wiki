@@ -9,7 +9,6 @@ In the following example you can see plugin of command ping:
     from plugins import core
     from model import api
     import re
-    import os
     class CmdPingPlugin(core.PluginBase):
         """
         This plugin handles ping command.
@@ -23,7 +22,7 @@ In the following example you can see plugin of command ping:
             self.version  = "1.0.0"
             self._command_regex  = re.compile(r'^(sudo ping|ping|sudo ping6|ping6).*?')
             self._completition = {
-                                "":"[-LRUbdfnqrvVaAB]  [-c  count]  [-m  mark]  [-i interval] [-l preload] [-p pattern] [-s packetsize] [-t ttl] [-w deadline] [-F flowlabel] [-Iinterface] [-M hint] [-N nioption] [-Q tos] [-S sndbuf] [-T     timestamp option] [-W timeout] [hop ...] destination",
+                                "":"[-LRUbdfnqrvVaAB]  [-c  count]  [-m  mark]  [-i interval] ...",
                                     "-a":"Audible ping.",
                                     #...
                                   }
