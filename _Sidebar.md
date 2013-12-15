@@ -1,10 +1,10 @@
 * [[Introduction]]
 * [[Installation]]
+* [[Usage]]
 * **Configuration**
  * [[CouchDB]]
     * [[Couchdb SSL]]
     * [[Couchdb Authentication]]
-* [[Usage]]
 * [[Architecture]]
 * [[Plugin System]]
   * **Plugins**
