@@ -93,9 +93,12 @@ The complete list of method in the PluginBase are:
     def createAndAddServiceToInterface(self, host_id, interface_id, name, protocol = "tcp?", 
                 ports = [], status = "running", version = "unknown", description = ""):
 
+
     def createAndAddVulnToHost(self, host_id, name, desc="", ref=[], severity=""):
 
+
     def createAndAddVulnToInterface(self, host_id, interface_id, name, desc="", ref=[], severity=""):
+
 
     def createAndAddVulnToApplication(self, host_id, application_id, name, desc="", ref=[], severity=""):
 
