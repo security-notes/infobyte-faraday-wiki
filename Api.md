@@ -1,10 +1,11 @@
 Faraday have a RPC API Server by default running in 127.0.0.1:9876  
 This RPC server can be used by others tools to incorporate information directly in the database.
 
-Let's see the following example to develop Shodan tool with Faraday RPC API.
+Let's see the following example to develop Shodan tool with Faraday RPC API.  
 For this example we use shodan example code: https://developers.shodan.io/python/tutorial.html
 
 Shodan example:
+
     from shodan import WebAPI
     SHODAN_API_KEY = "insert your API key here"
     api = WebAPI(SHODAN_API_KEY)
