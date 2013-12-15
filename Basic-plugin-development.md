@@ -53,3 +53,36 @@ In the following example you can see plugin of command ping:
     def createPlugin():
     return CmdPingPlugin()
 
+
+In this plugin if we detect the host is active we add to the database
+
+Key information:
+
+    self._command_regex
+a regex used to match the command string and determine if the plugin is suitable to handle it
+
+    self._completition
+This have the dict used for intellisense 
+
+    def parseOutputString(self, output, debug = False):
+This method will be called when the command finished executing and
+the complete output will be received to work with it
+Using the output the plugin can create and add hosts, interfaces, services, etc.
+
+    def processCommandString(self, username, current_path, command_string):
+With this method a plugin can add aditional arguments to the command that
+it's going to be executed.
+
+
+
+    createAndAddHost(self, name, os = "unknown", category = None, update = False, old_hostname = None):
+This method we create and add a host to the database
+
+    createAndAddInterface(self, host_id, name = "", mac = "00:00:00:00:00:00",
+                 ipv4_address = "0.0.0.0", ipv4_mask = "0.0.0.0",
+                 ipv4_gateway = "0.0.0.0", ipv4_dns = [],
+                 ipv6_address = "0000:0000:0000:0000:0000:0000:0000:0000", ipv6_prefix = "00",
+                 ipv6_gateway = "0000:0000:0000:0000:0000:0000:0000:0000", ipv6_dns = [],
+                 network_segment = "", hostname_resolution = []):
+
+This method we create and add a interface to host
