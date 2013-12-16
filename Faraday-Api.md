@@ -55,6 +55,6 @@ Shodan with Faraday:
     except Exception, e:
             print 'Error: %s' % e
 
-Congratulations! 5 file of code and you have Shodan working on Faraday!
+Congratulations! 5 file of code and you have Shodan working on Faraday!  
 You can see this example in $faraday/scripts/shodan_faraday.py
 
