@@ -29,6 +29,7 @@ except Exception, e:
 
 Shodan with Faraday:
 
+
 ```
 from shodan import WebAPI
 import xmlrpclib
