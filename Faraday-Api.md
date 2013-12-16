@@ -33,7 +33,6 @@ Shodan with Faraday:
 from shodan import WebAPI
 import xmlrpclib
 SHODAN_API_KEY = "insert your API key here"
-SHODAN_API_KEY = "KHmj7ZYYCOxsY83djT0JkwuRoUooliGQ"
 api = WebAPI(SHODAN_API_KEY)
 # Wrap the request in a try/ except block to catch errors
 try:
