@@ -5,23 +5,27 @@ Let's see the following example to develop Shodan tool with Faraday.
 For this example we use Shodan example code: https://developers.shodan.io/python/tutorial.html
 
 Shodan example:
+```
+from shodan import WebAPI
 
-    from shodan import WebAPI
-    SHODAN_API_KEY = "insert your API key here"
-    api = WebAPI(SHODAN_API_KEY)
-    # Wrap the request in a try/ except block to catch errors
-    try:
-            # Search Shodan
-            results = api.search('apache')
-    
-            # Show the results
-            print 'Results found: %s' % results['total']
-            for result in results['matches']:
-                    print 'IP: %s' % result['ip']
-                    print result['data']
-                    print ''
-    except Exception, e:
-            print 'Error: %s' % e
+SHODAN_API_KEY = "insert your API key here"
+
+api = WebAPI(SHODAN_API_KEY)
+
+# Wrap the request in a try/ except block to catch errors
+try:
+        # Search Shodan
+        results = api.search('apache')
+
+        # Show the results
+        print 'Results found: %s' % results['total']
+        for result in results['matches']:
+                print 'IP: %s' % result['ip']
+                print result['data']
+                print ''
+except Exception, e:
+        print 'Error: %s' % e
+```
 
 Shodan with Faraday:
 
