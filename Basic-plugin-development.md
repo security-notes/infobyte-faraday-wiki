@@ -69,14 +69,15 @@ the complete output will be received to work with it
 Using the output the plugin can create and add hosts, interfaces, services, vuln, webvuln, credentials, notes.
 
     def processCommandString(self, username, current_path, command_string):
-With this method a plugin can add aditional arguments to the command that
+With this method a plugin can add additional arguments to the command that
 it's going to be executed.
 
 
+```python
+    createAndAddHost(self, name, os = "unknown", category = None, update = False, old_hostname = None):
 ```
-    createAndAddHost(self, name, os = "unknown", category = None, update = False, old_hostname = None):```
 This method we create and add a host to the database
-```
+```python
     createAndAddInterface(self, host_id, name = "", mac = "00:00:00:00:00:00",
                  ipv4_address = "0.0.0.0", ipv4_mask = "0.0.0.0",
                  ipv4_gateway = "0.0.0.0", ipv4_dns = [],
