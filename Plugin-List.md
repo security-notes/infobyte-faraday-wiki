@@ -43,3 +43,4 @@ Right now faraday has more that 40 supported tools, among them you will find:
 * Nexpose, Nexpose Enterprise 5.7.19
 * Zap, 2.2.2
 * Webfuzzer, 0.2.0
+* Shodan
