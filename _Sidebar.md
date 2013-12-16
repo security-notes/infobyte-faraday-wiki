@@ -1,5 +1,6 @@
 * [[Installation]]
 * [[Usage]]
+* [[Demo]]
 * **Configuration**
  * [[CouchDB]]
     * [[Couchdb SSL]]
