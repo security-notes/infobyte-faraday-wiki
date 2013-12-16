@@ -1,4 +1,3 @@
-* [[Introduction]]
 * [[Installation]]
 * [[Usage]]
 * **Configuration**
