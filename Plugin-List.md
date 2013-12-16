@@ -27,7 +27,6 @@ Right now faraday has more that 40 supported tools, among them you will find:
 * X1, Onapsis X1 2.56
 * Burp, 1.5.18 BurpPro
 * Metasploit, 4.7.2
-* Dradis, 2.9.0
 * Metagoofil, 2.2
 * Dnswalk, 2.0.2
 * Goohost, v.0.0.1
