@@ -16,4 +16,5 @@
  * [[Basic Plugin Development]]
  * [[API]]
  * [[Live debugging]]
+* [[Visualization]]
 * [[Version comparision]]
