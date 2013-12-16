@@ -2,8 +2,8 @@
 
 What is Faraday
 ---
-
-Faraday is the first multiuser Penetration test IDE. Designed for distribution, indexation and analysis of the generated data during the process of a security audit.
+Faraday introduce a new concept (IPE) Integrated Penetration-Test Enviroment. 
+First multiuser Penetration test IDE. Designed for distribution, indexation and analysis of the generated data during the process of a security audit.
 
 The main purpose of Faraday is to re-use the available tools in the community to take advantages of them in a multiuser way.
 
