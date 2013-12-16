@@ -1,11 +1,11 @@
-Faraday have a **RPC API Server** by default running in 127.0.0.1:9876  
-This RPC server can be used by others tools to incorporate information directly in the database.
+Faraday has a **RPC API Server** by default running in 127.0.0.1:9876  
+This RPC server can be used by others tools to incorporate information directly into the database.
 
 Let's see the following example to develop Shodan tool with Faraday.  
-For this example we use Shodan example code: https://developers.shodan.io/python/tutorial.html
+For this example we are using Shodan's example code: https://developers.shodan.io/python/tutorial.html
 
 Shodan example:
-```
+``` python
 from shodan import WebAPI
 
 SHODAN_API_KEY = "insert your API key here"
@@ -30,7 +30,7 @@ except Exception, e:
 Shodan with Faraday:
 
 
-```
+``` python
 from shodan import WebAPI
 import xmlrpclib
 SHODAN_API_KEY = "insert your API key here"
@@ -64,5 +64,5 @@ except Exception, e:
         print 'Error: %s' % e
 ```
 
-Congratulations! 5 file of code and you have Shodan working on Faraday!  
+Congratulations! 5 lines of code and you have Shodan plugin working on Faraday!  
 You can see this example in $faraday/scripts/shodan_faraday.py
