@@ -35,3 +35,14 @@ For example **user1** incorporate host 127.0.0.1 OS:Linux and **user2** incorpor
 Hostree filter is a small search engine over the current Model Objects that provide filtering capabilities to the view. Currently you can filter by the following fields (ip, hostname, mac, os, port, srvname, owned, vuln, note, noten, vulnn), you can also negate the filter and use boolean connectors.
   
 For example to search ip 127.0.0.1 and port 22 write "ip:127.0.0.1 AND port:22"  
+
+#Faraday plugin#
+Using our plugin you can do different actions using the command line, for example
+```
+$ cd ~/.faraday/bin/
+$ #Adding new hosts 
+$./fplugin -e 'for h in api.createAndAddHost("8.8.8.8","Linux")'
+$ #Get all ip of HostTree
+$ ./fplugin -e 'for h in api.__model_controller.getAllHosts(): print h.name' > allhost.txt
+$ nmap -i allhost.txt
+```

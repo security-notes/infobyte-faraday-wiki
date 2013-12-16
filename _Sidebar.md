@@ -5,8 +5,8 @@
     * [[Couchdb SSL]]
     * [[Couchdb Authentication]]
 * [[Architecture]]
-* [[Plugin System]]
   * **Plugins**
+     * [[Plugin List]]
      * [[Metasploit configuration]]
      * [[Burp Proxy Extender Plugin]]
      * [[BeEF configuration]]
@@ -15,4 +15,4 @@
  * [[Basic Plugin Development]]
  * [[API]]
  * [[Live debugging]]
-* [[FAQ]]
+* [[Version comparision]]
