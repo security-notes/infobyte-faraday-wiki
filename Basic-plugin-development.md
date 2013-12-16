@@ -5,7 +5,7 @@ All the plugins are in:
     $faraday/plugins/repo/[pluginname]
 
 In the following example you can see plugin of command ping:
-
+``` python
     from plugins import core
     from model import api
     import re
@@ -52,7 +52,7 @@ In the following example you can see plugin of command ping:
     
     def createPlugin():
     return CmdPingPlugin()
-
+```
 In this plugin if the host is active we add it to the database
 
 **Key information:**
@@ -73,23 +73,23 @@ With this method a plugin can add aditional arguments to the command that
 it's going to be executed.
 
 
-
-    createAndAddHost(self, name, os = "unknown", category = None, update = False, old_hostname = None):
+```
+    createAndAddHost(self, name, os = "unknown", category = None, update = False, old_hostname = None):```
 This method we create and add a host to the database
-
+```
     createAndAddInterface(self, host_id, name = "", mac = "00:00:00:00:00:00",
                  ipv4_address = "0.0.0.0", ipv4_mask = "0.0.0.0",
                  ipv4_gateway = "0.0.0.0", ipv4_dns = [],
                  ipv6_address = "0000:0000:0000:0000:0000:0000:0000:0000", ipv6_prefix = "00",
                  ipv6_gateway = "0000:0000:0000:0000:0000:0000:0000:0000", ipv6_dns = [],
                  network_segment = "", hostname_resolution = []):
-
+```
 This method we create and add a interface to host
 
 **core.PluginBase**
 
 The complete list of methods in the PluginBase are:
-
+```
     def createAndAddServiceToInterface(self, host_id, interface_id, name, protocol = "tcp?", 
                 ports = [], status = "running", version = "unknown", description = ""):
     
@@ -119,3 +119,4 @@ The complete list of methods in the PluginBase are:
     def log(self, msg, level='INFO'):
     
     def devlog(self, msg): 
+```
