@@ -15,4 +15,4 @@
  * [[Basic Plugin Development]]
  * [[API]]
  * [[Live debugging]]
-* [[FAQ]]
+* [[Version comparision]]
