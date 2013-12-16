@@ -2,9 +2,9 @@ Faraday use CouchDB >= 1.2.0.
 
 The first step is to edit CouchDB config file located in /etc/couchdb/local.ini and set bind_address to the required IP  
 Restart CouchDB as follows  
-
-    $ sudo service couchdb restart
-
+```
+$ sudo service couchdb restart
+```
 You have two kind of configuration:  
 1) Every user use the same CouchDB database.  
 Go to Edit->Server Connection to point to the required master for example http://192.168.10.210:5984/.  
