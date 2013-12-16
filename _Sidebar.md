@@ -14,6 +14,6 @@
 * [[Community]]
 * **Development**
  * [[Basic Plugin Development]]
- * [[Faraday API]]
+ * [[API]]
  * [[Live debugging]]
 * [[FAQ]]
