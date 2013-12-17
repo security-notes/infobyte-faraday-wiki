@@ -1,5 +1,11 @@
 Using the Debug button will launch an interactive ipython[0] terminal for you to check on live objects.
 
+![](https://raw.github.com/wiki/infobyte/faraday/images/Debug_button.png)
+
+By default Debug button is disable to enable you to execute faraday in debug mode:
+```
+$ ./faraday -d 
+```
 To list the available objects just run
 
     > locals()
