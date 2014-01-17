@@ -46,3 +46,12 @@ $ #Get all ip of HostTree
 $ ./fplugin -e 'for h in api.__model_controller.getAllHosts(): print h.name' > allhost.txt
 $ nmap -i allhost.txt
 ```
+
+You can use presets actions using the included files (delAllServiceClosed.py, getAllCreds.py, getAllHosts.py, getAllIps.py, getAllVulnsCSV.py, etc) for example:
+
+```
+$ cd ~/.faraday/bin/
+$ #Get all ip of HostTree
+$ ./fplugin -f getAllIps.py > allhost.txt
+$ nmap -i allhost.txt
+```
