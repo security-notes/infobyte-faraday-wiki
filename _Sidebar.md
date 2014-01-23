@@ -11,6 +11,7 @@
      * [[Metasploit configuration]]
      * [[Burp Proxy Extender Plugin]]
      * [[BeEF configuration]]
+     * [[evilgrade configuration]]
 * [[Community]]
 * **Development**
  * [[Basic Plugin Development]]
