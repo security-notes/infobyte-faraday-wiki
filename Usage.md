@@ -47,7 +47,7 @@ $ ./fplugin -e 'for h in api.__model_controller.getAllHosts(): print h.name' > a
 $ nmap -i allhost.txt
 ```
 
-You can use presets actions using the included files (delAllServiceClosed.py, getAllCreds.py, getAllHosts.py, getAllIps.py, getAllVulnsCSV.py, etc) for example:
+You can use presets actions using the included files (delAllHost.py, delAllServiceClosed.py, getAllCreds.py, getAllHosts.py, getAllIpsInterfaces.py, getAllIps.py, getAllOs.py, getAllTelnet.py, getAllVnc.py, getAllVulnsCSV.py, getAllWebservers.py, etc) for example: 
 
 ```
 $ cd ~/.faraday/bin/
