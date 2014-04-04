@@ -1,10 +1,18 @@
-Faraday main windows is simple:  
+Faraday main window is simple:  
 
 ![](https://raw.github.com/wiki/infobyte/faraday/images/Faraday-Mainwindow.png)
 
 Structured in panes: Main Console, HostTree, Log Console, Item Info & Editing panes.
 
 Every command that you execute is intercepted and a handler is invoked in order to transparently import the newly generated information by the tool in the context of the pentest like ip addresses, hostnames, services, vulnerabilities, websites, notes, etc.
+
+
+#Running with ZSH UI#
+
+You can even run Faraday in detached mode connecting with a ZSH terminal to it:
+
+![](https://raw.github.com/wiki/infobyte/faraday/images/no-ui.png)
+![](https://raw.github.com/wiki/infobyte/faraday/images/no-ui2.png)
 
 No manual imports needed but supported. Just drop your fresh generated reports in :
     $ ~/.faraday/report/workspace_name
