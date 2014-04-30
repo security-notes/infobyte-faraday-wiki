@@ -29,7 +29,7 @@ OSX support, tried on latest OSX Maverick 10.9.2
 * Xcode 
 You just need to go to AppStore and install Xcode. If you run brew install first, it'll ask to install Xcode there too.
 
-![](http://imgur.com/gifhqk3)
+![xcode install](http://imgur.com/gifhqk3.png)
 
 After you install Xcode (it will take a while since is 2+ Gb) you need to go to preferences and install command line tools or just run this on the terminal console:
 
@@ -37,7 +37,7 @@ After you install Xcode (it will take a while since is 2+ Gb) you need to go to 
 
 You will see:
 
-![](http://imgur.com/wpF6p8U)
+![xcode warning](http://imgur.com/wpF6p8U.png)
 
 **IMPORTANT NOTE:** Before continue with the rest of this guide, you NEED to open Xcode at least one time. This is for accept the License Agreement. Some of the dependencies will fail to install without accepting it.
 
