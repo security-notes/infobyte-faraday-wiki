@@ -21,3 +21,72 @@ $ git clone https://github.com/infobyte/faraday.git faraday-dev
 $ cd faraday-dev
 $ ./install
 ```
+
+### OSX
+
+OSX support, tried on latest OSX Maverick 10.9.2
+
+* Xcode 
+You just need to go to AppStore and install Xcode. If you run brew install first, it'll ask to install Xcode there too.
+
+![](http://imgur.com/gifhqk3)
+
+After you install Xcode (it will take a while since is 2+ Gb) you need to go to preferences and install command line tools or just run this on the terminal console:
+
+`xcode-select --install`
+
+You will see:
+
+![](http://imgur.com/wpF6p8U)
+
+**IMPORTANT NOTE:** Before continue with the rest of this guide, you NEED to open Xcode at least one time. This is for accept the License Agreement. Some of the dependencies will fail to install without accepting it.
+
+* Brew (http://brew.sh)
+To install brew just run this line:
+
+`ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"`
+
+* Python & pip
+To install latest python version we are going to use brew
+
+`brew install python`
+
+Note: Remember, brew doesn't like to run as root, so don't sudo it.
+
+* Git via Brew
+
+We need to install git in order to get faraday repository from github:
+
+`brew install git`
+
+* Getting faraday from github repository
+
+`git clone https://github.com/infobyte/faraday.git faraday-dev`
+
+* Python libraries via PIP
+
+Installing python via brew will also install pip. We are going to use it to install Faraday's requirements.
+
+`pip install -r requirements.txt`
+
+* ZSH
+
+Faraday need ZSH to connect to the server. To install ZSH just run:
+
+`brew install zsh`
+
+* Going for it!
+
+You are almost there! You just need to start the faraday's server like this:
+
+`cd    #to go to your home
+cd faraday-dev
+./faraday --gui=nogui`
+
+and in other terminal run:
+
+`cd
+cd faraday-dev
+./faraday-terminal.zsh`
+
+You should see ">>> WELCOME TO FARADAY".
