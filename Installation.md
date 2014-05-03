@@ -81,14 +81,15 @@ Faraday need ZSH to connect to the server. To install ZSH just run:
 
 You are almost there! You just need to start the faraday's server like this:
 
-`
-cd faraday-dev
-./faraday --gui=nogui`
+```
+$ cd faraday-dev
+$ ./faraday --gui=nogui
+```
 
 and in other terminal run:
 
-`
-cd faraday-dev
-./faraday-terminal.zsh`
-
+```
+$ cd faraday-dev
+$ ./faraday-terminal.zsh
+```
 You should see ">>> WELCOME TO FARADAY".
