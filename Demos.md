@@ -1,3 +1,7 @@
-Take a look of our last demo:
+Take a look of our last demos:
 
-[![ScreenShot](https://raw.github.com/wiki/infobyte/faraday/images/Youtube_demo.png)](http://www.youtube.com/embed/EBz0g6ya7Mg)
+
+[![ScreenShot](https://raw.github.com/wiki/infobyte/faraday/images/youtube.png) - Release Demo]
+(https://bitly.com/1gaHSyu)
+
+[![ScreenShot](https://raw.github.com/wiki/infobyte/faraday/images/youtube.png) - Demo 1 - (A fast class C domain scanner)] (https://bit.ly/RI5GP1)
