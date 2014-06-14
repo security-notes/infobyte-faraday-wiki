@@ -71,6 +71,10 @@ Installing python via brew will also install pip. We are going to use it to inst
 
 `pip install -r requirements.txt`
 
+On Maveriks 10.9.2
+
+`sudo ARCHFLAGS=-Wno-error=unused-command-line-argument-hard-error-in-future pip install -r requirements.txt`
+
 * ZSH
 
 Faraday need ZSH to connect to the server. To install ZSH just run:
