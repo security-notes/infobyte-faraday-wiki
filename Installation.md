@@ -21,6 +21,16 @@ $ git clone https://github.com/infobyte/faraday.git faraday-dev
 $ cd faraday-dev
 $ ./install
 ```
+### ArchLinux
+
+To install Faraday on ArchLinux, you first need an AUR wrapper to easily install user-contributed packages. We will use yaourt, that you can get here : http://archlinux.fr/yaourt-en
+
+Then, use :
+```
+$ yaourt -S python2-whoosh pyqt3 python2-mockito python2-couchdbkit python2-flask python2-restkit python2-ipy python2-requests python2-tornado python2-dateutil
+```
+To install all the required dependencies.
+After this, you can download faraday, and run it (./faraday).
 
 ### OSX
 
