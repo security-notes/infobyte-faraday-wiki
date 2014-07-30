@@ -11,3 +11,5 @@ Take a look of our last demos:
 [![ScreenShot](https://raw.github.com/wiki/infobyte/faraday/images/youtube.png) - Using plugin Medusa (III) ] (https://bit.ly/1nIlwIc)
 
 [![ScreenShot](https://raw.github.com/wiki/infobyte/faraday/images/youtube.png) - Using plugin THC-Hydra (IV) ] (https://bit.ly/1jhYpNb)
+
+[![ScreenShot](https://raw.github.com/wiki/infobyte/faraday/images/youtube.png) - Installing Faraday plugin from Burp's BAap Store (V) ] (https://bit.ly/1rH9EUs)
