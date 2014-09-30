@@ -4,7 +4,7 @@ In order to access to visualization you have to click in the icon:
 
 Faraday Community Version has simple visualization (include summary information):
 
-![](https://raw.github.com/wiki/infobyte/faraday/images/Faraday-Dashboard-Simple.png)
+![](https://raw.github.com/wiki/infobyte/faraday/images/GUI_Dashboard_new.png)
 
 Faraday Professional & Corporate has advance visualization (including Tags, Pentest comparation, Pentester ranking, etc)
 
