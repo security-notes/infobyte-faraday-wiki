@@ -1,13 +1,18 @@
-Faraday main window is simple:  
+Faraday have 3 different interfaces:
+* [GUI QT] (https://github.com/infobyte/faraday/wiki/Usage#GUI QT)
+* ZSH UI
+* [Web UI] (https://github.com/infobyte/faraday/wiki/Visualization)
 
+#GUI QT:
+
+Faraday main window is simple:  
 ![](https://raw.github.com/wiki/infobyte/faraday/images/Faraday-Mainwindow.png)
 
 Structured in panes: Main Console, HostTree, Log Console, Item Info & Editing panes.
 
 Every command that you execute is intercepted and a handler is invoked in order to transparently import the newly generated information by the tool in the context of the pentest like ip addresses, hostnames, services, vulnerabilities, websites, notes, etc.
 
-
-#Running with ZSH UI#
+#Running with ZSH UI
 
 You can even run Faraday in detached mode connecting with a ZSH terminal to it:
 
@@ -67,7 +72,6 @@ $ nmap -i allhost.txt
 Updating objets on faraday now results in a beautiful notification in the QT ui.
 ![](https://raw.github.com/wiki/infobyte/faraday/images/faraday_notifications.png)
 ![](https://raw.github.com/wiki/infobyte/faraday/images/faraday_notifications_more.png)
-
 
 #CVS Exporting & Importing
 [More information](Exporting-the-information)
