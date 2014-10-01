@@ -1,5 +1,5 @@
-Faraday have 3 different interfaces:
-* [GUI QT] (https://github.com/infobyte/faraday/wiki/Usage#GUI QT)
+Faraday has 3 different ways to interact with information:
+* GUI QT
 * ZSH UI
 * [Web UI] (https://github.com/infobyte/faraday/wiki/Visualization)
 
