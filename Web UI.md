@@ -1,4 +1,4 @@
-Point your browser to: http://[COUCHDB]:5984//reports/_design/reports/index.html
+In order to access the Web UI point your browser to: http://[COUCHDB]:5984/reports/_design/reports/index.html
 ![](https://raw.github.com/wiki/infobyte/faraday/images/Console_GUIWeb_Highlight.png)
 
 Directly from the GUI QT you have to click in the icon:
