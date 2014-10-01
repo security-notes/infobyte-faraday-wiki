@@ -18,7 +18,7 @@
  * [[API]]
  * [[Live debugging]]
 * [[Version comparision]]
-* [[Visualization]]
+* [[Web UI - Visualization]]
 * [[Screenshots]]
 * [[Faraday Awards]]
 
