@@ -1,5 +1,6 @@
 * [[Installation]]
 * [[Usage]]
+ * [[Web UI]]
 * [[Demos]]
 * **Configuration**
  * [[CouchDB]]
@@ -18,7 +19,6 @@
  * [[API]]
  * [[Live debugging]]
 * [[Version comparision]]
-* [[Visualization]]
 * [[Screenshots]]
 * [[Faraday Awards]]
 
