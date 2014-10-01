@@ -1,6 +1,6 @@
 * [[Installation]]
 * [[Usage]]
-* [[Web UI]]
+ * [[Web UI]]
 * [[Demos]]
 * **Configuration**
  * [[CouchDB]]
