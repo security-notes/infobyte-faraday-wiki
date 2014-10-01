@@ -1,8 +1,6 @@
 Point your browser to: http://[COUCHDB]:5984//reports/_design/reports/index.html
 
-Or:
-
-In order to access to Web UI you have to click in the icon:
+Directly from the GUI QT you have to click in the icon:
 
 ![](https://raw.github.com/wiki/infobyte/faraday/images/Visualize-icon.png)
 
