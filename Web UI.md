@@ -1,4 +1,4 @@
-In order to access to visualization you have to click in the icon:
+In order to access to Web UI you have to click in the icon:
 
 ![](https://raw.github.com/wiki/infobyte/faraday/images/Visualize-icon.png)
 
