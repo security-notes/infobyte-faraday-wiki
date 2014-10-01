@@ -63,7 +63,11 @@ $ #Get all ip of HostTree
 $ ./fplugin -f getAllIps.py > allhost.txt
 $ nmap -i allhost.txt
 ```
+#Notifications
+Updating objets on faraday now results in a beautiful notification in the QT ui.
+![](https://raw.github.com/wiki/infobyte/faraday/images/faraday_notifications.png)
+![](https://raw.github.com/wiki/infobyte/faraday/images/faraday_notifications_more.png)
+
 
 #CVS Exporting & Importing
 [More information](Exporting-the-information)
-
