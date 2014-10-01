@@ -20,7 +20,7 @@ Faraday Community Version has simple visualization (Include summary information)
 ![](https://raw.github.com/wiki/infobyte/faraday/images/GUI_Services.png)
 
 # Faraday Professional & Corporate:
-**Faraday Professional & Corporate** has advance visualization (including Tags, Pentest comparation, Pentester ranking, etc)
+**Faraday Professional & Corporate** has advance visualization (including Tags, Pentest comparison, Pentester ranking, etc)
 
 ![](https://raw.github.com/wiki/infobyte/faraday/images/Faraday-Dashboard-Advance.png)
 
