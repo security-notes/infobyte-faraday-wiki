@@ -51,7 +51,7 @@ You will see:
 ![](https://raw.github.com/wiki/infobyte/faraday/images/confirm.png)
 
 
-**IMPORTANT NOTE:** Before continue with the rest of this guide, you NEED to open Xcode at least one time. This is for accept the License Agreement. Some of the dependencies will fail to install without accepting it.
+**IMPORTANT NOTE:** Before contining with the rest of this guide, you NEED to open Xcode at least one time. This is for accept the License Agreement. Some of the dependencies will fail to install without accepting it.
 
 * Brew (http://brew.sh)
 To install brew just run this line:
