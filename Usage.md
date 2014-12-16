@@ -78,12 +78,3 @@ Updating objets on faraday now results in a beautiful notification in the QT ui.
 
 #CVS Exporting & Importing
 [More information](Exporting-the-information)
-
-#Plugin Commands
-```
-$ ./faraday.py --dev-mode
-$ cd scripts/
-```
-Open Faraday using the following command: ./faraday.py --dev-mode, so that it refreshes the plugins folder
-
-Now that you Faraday open, go to scripts folder (cd scripts)
