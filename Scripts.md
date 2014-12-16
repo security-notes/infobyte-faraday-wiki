@@ -18,6 +18,7 @@
  * [[Basic Plugin Development]]
  * [[API]]
  * [[Live debugging]]
+* [[Scripts]]
 * [[Version comparision]]
 * [[Screenshots]]
 * [[Faraday Awards]]
