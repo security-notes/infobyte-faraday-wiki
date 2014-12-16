@@ -15,6 +15,9 @@ Faraday Community Version has simple visualization (Include summary information)
 
 ![](https://raw.githubusercontent.com/wiki/infobyte/faraday/images/UI_Web_Status_Report.png)
 
+**Vulnerability Creation**
+![](https://raw.githubusercontent.com/wiki/infobyte/faraday/images/faraday_new.png)
+
 **Top Services View:**
 ![](https://raw.github.com/wiki/infobyte/faraday/images/GUI_Dashboard_new_Services.png)
 ![](https://raw.github.com/wiki/infobyte/faraday/images/GUI_Services.png)
