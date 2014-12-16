@@ -19,7 +19,7 @@
  * [[API]]
  * [[Live debugging]]
 * [[Scripts]]
-  * *[[SSLCheck]]
+  * [[SSLCheck]]
 * [[Version comparision]]
 * [[Screenshots]]
 * [[Faraday Awards]]
