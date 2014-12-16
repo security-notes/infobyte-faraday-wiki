@@ -73,6 +73,9 @@ Updating objets on faraday now results in a beautiful notification in the QT ui.
 ![](https://raw.github.com/wiki/infobyte/faraday/images/faraday_notifications.png)
 ![](https://raw.github.com/wiki/infobyte/faraday/images/faraday_notifications_more.png)
 
+### ZSH UI no-gui notifications
+![](https://raw.githubusercontent.com/wiki/infobyte/faraday/images/faraday_gui_notifi.png)
+
 #CVS Exporting & Importing
 [More information](Exporting-the-information)
 
