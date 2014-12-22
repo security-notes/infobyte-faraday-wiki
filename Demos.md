@@ -16,5 +16,5 @@ Take a look of our last demos:
 
 Workshop - Ekoparty 2014:
 
-[![ScreenShot](https://raw.github.com/wiki/infobyte/faraday/images/youtube.png) - Auditing thousands of assets at a time without panicking 101"]
+[![ScreenShot](https://raw.github.com/wiki/infobyte/faraday/images/youtube.png) - Auditing thousands of assets at a time without panicking 101]
 (https://bit.ly/1AOihAM)
