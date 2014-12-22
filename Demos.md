@@ -14,5 +14,9 @@ Take a look of our last demos:
 
 [![ScreenShot](https://raw.github.com/wiki/infobyte/faraday/images/youtube.png) - Installing Faraday plugin from Burp's BApp Store (V) ] (https://bit.ly/1rH9EUs)
 
-[![ScreenShot](https://raw.github.com/wiki/infobyte/faraday/images/youtube.png) - Full #workshop #video @ekoparty "Auditing thousands of assets at a time without panicking 101"]
+Workshops:
+
+Ekoparty 2014:
+
+[![ScreenShot](https://raw.github.com/wiki/infobyte/faraday/images/youtube.png) - Auditing thousands of assets at a time without panicking 101"]
 (https://bit.ly/1AOihAM)
