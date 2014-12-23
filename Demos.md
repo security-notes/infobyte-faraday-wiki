@@ -14,7 +14,7 @@ Take a look of our last demos:
 
 [![ScreenShot](https://raw.github.com/wiki/infobyte/faraday/images/youtube.png) - Installing Faraday plugin from Burp's BApp Store (V) ] (https://bit.ly/1rH9EUs)
 
-[![ScreenShot](https://raw.github.com/wiki/infobyte/faraday/images/youtube.png) - Faraday's SSLCheck command line tool (V) ] (https://bit.ly/1vko7Xj)
+[![ScreenShot](https://raw.github.com/wiki/infobyte/faraday/images/youtube.png) - Faraday's SSLCheck command line tool (VI) ] (https://bit.ly/1vko7Xj)
 
 Workshop - Ekoparty 2014:
 
