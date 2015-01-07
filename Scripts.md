@@ -12,14 +12,21 @@ Follow the steps below:
 
 3. Execute the command ./sslcheck.py target (./sslcheck.py 192.168.10.254)
 
-Also, you can quickly run  the comand for several targets and domains, the targets need to be written seperately with a single space.
+Also, you can quickly run the command for several targets and domains, the targets need to be written separately with a single space.
 
 ./sslcheck.py 192.168.10.254 facebook.com www.google.com 192.168.10.168
 
 ## # Shodan
 
-It is a tool to get information from shodan
+It is a command line tool to get information from shodan
 
 You can find the script in $faraday/scripts/shodan_faraday.py
+
+usage: shodan_faraday [-h] -q SHODAN_QUERY [-c COUNT] [-a SKEY]
+                      [--faradayapi FARADAYAPI] [--debug DEBUG] [--version]
+
+The following command will incorporate all the server with apache in Faraday
+
+./shodan_faraday -q apache -a (SHODANKEY)
 
 See an example using Shodan here [[API]]!
