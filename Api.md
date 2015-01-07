@@ -64,4 +64,4 @@ except Exception, e:
 ```
 
 Congratulations! 5 lines of code and you have Shodan plugin working on Faraday!  
-You can see this example in $faraday/scripts/shodan_faraday.py
+You can see advance tool in $faraday/scripts/shodan_faraday.py
