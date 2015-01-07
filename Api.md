@@ -2,15 +2,15 @@ Faraday has a **RPC API Server** by default running in 127.0.0.1:9876
 This RPC server can be used by others tools to incorporate information directly into the database.
 
 Let's see the following example to develop Shodan tool with Faraday.  
-For this example we are using Shodan's example code: https://developers.shodan.io/python/tutorial.html
+For this example we are using Shodan's example code: https://shodan.readthedocs.org/
 
 Shodan example:
 ``` python
-from shodan import WebAPI
+import shodan
 
 SHODAN_API_KEY = "insert your API key here"
 
-api = WebAPI(SHODAN_API_KEY)
+api = shodan.Shodan(SHODAN_API_KEY)
 
 # Wrap the request in a try/ except block to catch errors
 try:
@@ -20,10 +20,10 @@ try:
         # Show the results
         print 'Results found: %s' % results['total']
         for result in results['matches']:
-                print 'IP: %s' % result['ip']
+                print 'IP: %s' % result['ip_str']
                 print result['data']
                 print ''
-except Exception, e:
+except shodan.APIError, e:
         print 'Error: %s' % e
 ```
 
@@ -31,10 +31,9 @@ Shodan with Faraday:
 
 
 ``` python
-from shodan import WebAPI
-import xmlrpclib
+import shodan
 SHODAN_API_KEY = "insert your API key here"
-api = WebAPI(SHODAN_API_KEY)
+api = shodan.Shodan(SHODAN_API_KEY)
 # Wrap the request in a try/ except block to catch errors
 try:
 # Search Shodan
@@ -49,19 +48,19 @@ try:
         print 'Results found: %s' % results['total']
         for result in results['matches']:
                 if "ip" in result:
-                        print 'IP: %s' % result['ip']
+                        print 'IP: %s' % result['ip_str']
                         print result['data']
                         print ''
 
-                        h_id = api.createAndAddHost(result['ip'],result['os'] if result['os'] is not None else "")
-                        i_id = api.createAndAddInterface(h_id,result['ip'],"00:00:00:00:00:00", result['ip'], "0.0.0.0", "0.0.0.0",[],
+                        h_id = api.createAndAddHost(result['ip_str'],result['os'] if result['os'] is not None else "")
+                        i_id = api.createAndAddInterface(h_id,result['ip_str'],"00:00:00:00:00:00", result['ip_str'], "0.0.0.0", "0.0.0.0",[],
                                   "0000:0000:0000:0000:0000:0000:0000:0000","00","0000:0000:0000:0000:0000:0000:0000:0000",
                                   [],"",result['hostnames'] if result['hostnames'] is not None else [])
                         s_id = api.createAndAddServiceToInterface(h_id, i_id, "www",
                                                                  "tcp",str(result['port']),"open","Apache",result['data'])
 
 except Exception, e:
-        print 'Error: %s' % e
+        print 'Error: %s' % e 
 ```
 
 Congratulations! 5 lines of code and you have Shodan plugin working on Faraday!  
