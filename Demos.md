@@ -16,7 +16,7 @@ Take a look of our last demos:
 
 [![ScreenShot](https://raw.github.com/wiki/infobyte/faraday/images/youtube.png) - Faraday's SSLCheck command line tool (VI) ] (https://bit.ly/1vko7Xj)
 
-[![ScreenShot](https://raw.github.com/wiki/infobyte/faraday/images/youtube.png) - Map all #scada device in your country using @shodanhq & @faradaysec (VII) ] (https://bit.ly/1BLkLkn)
+[![ScreenShot](https://raw.github.com/wiki/infobyte/faraday/images/youtube.png) - Map all scada device in your country using Faraday's shodan command line tool (VII) ] (https://bit.ly/1BLkLkn)
 
 Workshop - Ekoparty 2014:
 
