@@ -29,7 +29,7 @@ The following command will incorporate all the server with apache in Faraday
 
 ./shodan_faraday -q apache -a (SHODANKEY)
 
-We compilate severals queries to find specify stuff using shodan
+We have create some wordlist to find specify stuff using shodan
 ```
 ls -lha $faraday/scripts/shodan_strings/
 scada.txt
