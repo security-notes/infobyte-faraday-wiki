@@ -1,10 +1,10 @@
-**Dashboard Simple**
+**Simple Dashboard**
 ![](https://raw.github.com/wiki/infobyte/faraday/images/Faraday-Dashboard-Simple.png)
 
-**Dashboard Advance**
+**Advanced Dashboard**
 ![](https://raw.github.com/wiki/infobyte/faraday/images/Faraday-Dashboard-Advance.png)
 
-**Mainwindow**
+**Main Window**
 ![](https://raw.github.com/wiki/infobyte/faraday/images/Faraday-Mainwindow.png)
 
 **Plugin settings**
