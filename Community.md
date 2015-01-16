@@ -4,7 +4,7 @@ You can reach us, and find another Faraday users on:
 https://groups.google.com/d/forum/faradaysec
 
 #IRC
-Freenode: [#faraday-dev] (ircs://irc.freenode.net/faraday-dev)
+Freenode: [#faraday-dev] (http://webchat.freenode.net/?channels=faraday-dev)
 
 #Twitter
 http://twitter.com/faradaysec
