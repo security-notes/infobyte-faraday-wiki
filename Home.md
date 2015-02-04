@@ -18,7 +18,8 @@ Plugins list:
 Right now faraday has more than [40+ supported tools](https://github.com/infobyte/faraday/wiki/Plugin-List), among them you will find: 
 ![](https://raw.github.com/wiki/infobyte/faraday/images/plugins/Plugins.png)
 
-#Plugins#
+Plugins types:
+---
 We have 3 kind of plugins:
  * Plugins that intercept commands (directly detected when you execute commands in the console)  
  * Plugins that import file reports (you have to copy the report to $HOME/.faraday/report/[workspacename] and faraday will automatically detect the report, process and added to the HostTree.
