@@ -1,8 +1,9 @@
-Plugins list:
+Supported Tools:
 ---
 Right now faraday has more that 40+ supported tools, among them you will find: 
 ![](https://raw.github.com/wiki/infobyte/faraday/images/plugins/Plugins.png)
 
+If you think your favorite tool is missing, [send us your request!](https://github.com/infobyte/faraday/issues/new)
 * Retina, Retina Network 5.19.2.2718
 * [Openvas](http://twitter.com/openvas), 2.0
 * [BeEF](http://twitter.com/beefproject), 0.4.4.9-alpha
