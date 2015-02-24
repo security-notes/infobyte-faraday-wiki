@@ -13,7 +13,7 @@ If you think your favorite tool is missing, [send us your request!](https://gith
 * [Acunetix](https://twitter.com/acunetix), 9
 * Dnsenum, 1.2.2
 * [Nessus](https://twitter.com/tenablesecurity), 5.2.4
-* [Sqlmap], (https://twitter.com/sqlmap) sqlmap/1.0-dev
+* [Sqlmap](https://twitter.com/sqlmap), sqlmap/1.0-dev
 * ftp, 0.17
 * Listurls, 6.3
 * whois, 5.0.20
