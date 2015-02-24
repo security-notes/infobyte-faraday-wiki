@@ -46,3 +46,4 @@ If you think your favorite tool is missing, [send us your request!](https://gith
 * Webfuzzer, 0.2.0
 * [Shodan](http://twitter.com/shodanhq)
 * [evilgrade](http://twitter.com/infobytesec), 2.0.6
+* [masscan](https://twitter.com/ErrataRob), 1.0.3
