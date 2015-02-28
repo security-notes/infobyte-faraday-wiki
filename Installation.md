@@ -86,6 +86,7 @@ If you have issues building psycopg2 (needed for Metasploit Online Module)
 `pip install psycopg2`
 
 * CouchDB via brew
+
 `brew install couchdb`
 
 On Mavericks 10.9.2
