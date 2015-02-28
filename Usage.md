@@ -1,6 +1,6 @@
 Faraday has 3 different ways to interact with information:
-* GUI QT
-* ZSH UI
+* [GUI QT] (https://github.com/infobyte/faraday/wiki/Usage#gui-qt)
+* [ZSH UI] (https://github.com/infobyte/faraday/wiki/Usage#running-with-zsh-ui)
 * [Web UI] (https://github.com/infobyte/faraday/wiki/Web UI)
 
 #GUI QT:
