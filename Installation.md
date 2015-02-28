@@ -85,7 +85,10 @@ If you have issues building psycopg2 (needed for Metasploit Online Module)
 `brew install postgresql`
 `pip install psycopg2`
 
-On Maveriks 10.9.2
+* CouchDB via brew
+`brew install couchdb`
+
+On Mavericks 10.9.2
 
 `sudo ARCHFLAGS=-Wno-error=unused-command-line-argument-hard-error-in-future pip install -r requirements.txt`
 
