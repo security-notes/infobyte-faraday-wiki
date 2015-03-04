@@ -1,7 +1,7 @@
 * [[Installation]]
 * [[Usage]]
  * [[Web UI]]
- * [[Tags Use]]
+ * [[Tag Use]]
 * [[Demos]]
 * **Configuration**
  * [[CouchDB]]
