@@ -10,6 +10,7 @@
  * [[CouchDB]]
     * [[Couchdb SSL]]
     * [[Couchdb Authentication]]
+ * [[Start up Configuration (Faraday Server)]]
 * [[Architecture]]
   * **Plugins**
      * [[Plugin List]]
