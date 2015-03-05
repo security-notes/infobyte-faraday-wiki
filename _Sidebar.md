@@ -3,6 +3,7 @@
  * [[Web UI]]
  * [[Tag Use]]
  * [[Manage Workspaces]]
+ * [[Chat and Communication]]
 * [[Demos]]
 * **Configuration**
  * [[CouchDB]]
