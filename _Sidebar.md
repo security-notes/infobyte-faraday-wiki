@@ -3,6 +3,7 @@
  * [[Web UI]]
  * [[Tag Use]]
  * [[Manage Workspaces]]
+ * [[Manage Users]]
  * [[Chat and Communication]]
 * [[Demos]]
 * **Configuration**
