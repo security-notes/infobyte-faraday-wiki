@@ -18,6 +18,7 @@
      * [[Burp Proxy Extender Plugin]]
      * [[BeEF configuration]]
      * [[evilgrade configuration]]
+     * [[Plugin for NESSUS reports]]
 * [[Community]]
 * **Development**
  * [[Basic Plugin Development]]
