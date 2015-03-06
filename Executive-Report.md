@@ -9,13 +9,31 @@ Es necesario seguir el procedimiento de la [configuración inicial](https://gith
 
 # Administrar los reportes ejecutivos
 
-Para administrar tus reportes es necesario que accedas a la Interface Web de Faraday haciendo clic en el icono **executive reports** 
+Para administrar tus reportes es necesario que accedas a la Interface Web de Faraday haciendo clic en el icono **executive reports** ![](https://raw.github.com/wiki/infobyte/faraday/images/faraday_report_icono.png)
 
 # Crear un reporte
 
 Los reportes se visualizan desde una lista donde podemos crear o eliminar documentos.
 
+![](https://raw.github.com/wiki/infobyte/faraday/images/faraday_report_create.png)
+
+Al crear un nuevo reporte es necesario completar la siguiente informacion:
+
+* Title
+* Scope
+* Objectives
+* Summary
+* Conclusions
+* Recommendations
+
+![](https://raw.github.com/wiki/infobyte/faraday/images/faraday_report_new.png)
+
+Faraday toma el nuevo reporte para ser procesado y lo disponibiliza para su descarga
+
+![](https://raw.github.com/wiki/infobyte/faraday/images/faraday_report_procesing.png)
+
+![](https://raw.github.com/wiki/infobyte/faraday/images/faraday_report_word.png)
+
 # Eliminar un reporte
 
-Desde la ventana de executive report hacer click en **Delete**
-
+Desde la ventana de executive report seleccionar el documento y hacer click en **Delete**
