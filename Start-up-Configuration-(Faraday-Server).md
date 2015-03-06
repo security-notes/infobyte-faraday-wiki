@@ -1,3 +1,5 @@
+[- Commercial version -](http://faradaysec.com/buy.html)
+
 # Intro
 
 The Faraday Server is made to manage the CouchDB Database. This lets the user access all the information in one centralized platform, run periodic backups and make automated reports.
