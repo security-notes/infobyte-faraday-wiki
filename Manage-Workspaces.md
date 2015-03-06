@@ -1,3 +1,5 @@
+[- Commercial version -](http://faradaysec.com/buy.html)
+
 # Workspace
 
 The workspaces are used to hold the information re-collected from the different tools and/ or commands used in the ¨actions¨ for each Penetration Test. Each workspace integrates all the results from pentesters from a given project in the Web console allowing you to to identify and manage your information in one place.
