@@ -1,3 +1,5 @@
+[- Commercial version -](http://faradaysec.com/buy.html)
+
 # Intro
 
 During the [start-up configuration](https://github.com/tartamar/faraday/wiki/Configuraci%C3%B3n-Inicial-(Server)), you can make a user administrator. Using the specified credentials during the configuration,from the navigator start the session in Faraday´s GUI. One you have gotten the authentication, click on the **Users** icon ![](https://raw.github.com/wiki/tartamar/faraday/images/faraday_users_icono.png)
