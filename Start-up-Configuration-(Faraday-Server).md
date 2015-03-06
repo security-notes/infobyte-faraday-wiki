@@ -41,7 +41,7 @@ To begin the initial setup, the user needs to run the executable **./setup_serve
 
 It is possible to restore the database´s users using the following script:
 
-/faraday# ./reset_admin_couchdb.sh
+`/faraday# ./reset_admin_couchdb.sh`
 
 
 **Important: The process will eliminate existing users**
