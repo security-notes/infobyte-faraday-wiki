@@ -43,8 +43,5 @@ It is possible to restore the database´s users using the following script:
 
 /faraday# ./reset_admin_couchdb.sh
 
-Tincho tenés un errorcito de ortagrafía dice ¨dase¨en vez de ¨base¨. :)
-
-`/faraday# ./reset_admin_couchdb.sh`
 
 **Important: The process will eliminate existing users**
