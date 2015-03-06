@@ -1,3 +1,5 @@
+### Professional and Corporate Feature
+
 # Intro
 
 Tags allow you to organize your vulnerabilities by letting you make and edit categories: environment, technology, state, technology, language, projects, whatever. The team can then see the tagged vulnerabilities and lets you organize the security evaluation.
