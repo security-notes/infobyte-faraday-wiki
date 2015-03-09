@@ -2,24 +2,24 @@
 
 # Intro
 
-Los reportes ejecutivos permiten crear un informe completo acerca de los resultados obtenidos en cada workspace. El proceso del reporte ejecutivo toma toda la información del Penetration Testing que es centralizada en el Status Report y crea un documento de texto con toda la información detallada del trabajo.
+The Executive Reports lets you create (as the name implies) reports about the results obtained in each workspace. To make an Executive Report, it takes all the information from the Status Report and automatically creates a word document with all the information for the given project.
 
-# Requisitos
+# Requirements
 
-Es necesario seguir el procedimiento de la [configuración inicial](https://github.com/infobyte/faraday/wiki/Start-up-Configuration-%28Faraday-Server%29) para utilizar esta característica.
+To utilize this feature, during the [Start up Configuration](https://github.com/infobyte/faraday/wiki/Start-up-Configuration-%28Faraday-Server%29) follow the necessary steps when you are configuring the application. 
 
-# Administrar los reportes ejecutivos
+# Managing Executive Reports 
 
-Para administrar tus reportes es necesario que accedas a la Interface Web de Faraday haciendo clic en el icono **executive reports** ![]
+To manage your reports you need to access Faraday´s Web Interface and click on the icon **executive reports** ![]
 (https://raw.github.com/wiki/infobyte/faraday/images/faraday_report_icono.png)
-
-Los reportes se visualizan desde una lista donde podemos crear o eliminar documentos.
 
 ![](https://raw.github.com/wiki/infobyte/faraday/images/faraday_report_create.png)
 
-# Crear un reporte
+# Making a report
 
-Al crear un nuevo reporte es necesario completar la siguiente información:
+The reports can be seen from a list. On the list we create or eliminate documents.
+
+If you want to create a new report, it´s necessary to complete the following information in the form:
 
 * Title
 * Scope
@@ -30,12 +30,12 @@ Al crear un nuevo reporte es necesario completar la siguiente información:
 
 ![](https://raw.github.com/wiki/infobyte/faraday/images/faraday_report_new.png)
 
-Faraday toma el nuevo reporte para ser procesado y lo disponibiliza para su descarga
+Faraday processes all the information and spits out a shiny new report that is available for download
 
 ![](https://raw.github.com/wiki/infobyte/faraday/images/faraday_report_procesing.png)
 
 ![](https://raw.github.com/wiki/infobyte/faraday/images/faraday_report_word.png)
 
-# Eliminar un reporte
+# Eliminating a report
 
-Desde la ventana de executive report seleccionar el documento y hacer click en **Delete**
+From the executive report window select the document and click on **Delete**.
