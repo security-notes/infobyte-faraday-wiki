@@ -56,7 +56,7 @@ You will see:
 * Brew (http://brew.sh)
 To install brew just run this line:
 
-`ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"`
+`ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`
 
 * Python & pip
 To install latest python version we are going to use brew
