@@ -5,6 +5,7 @@
  * [[Manage Workspaces]]
  * [[Manage Users]]
  * [[Chat and Communication]]
+ * [[Executive Report]]
 * [[Demos]]
 * **Configuration**
  * [[CouchDB]]
