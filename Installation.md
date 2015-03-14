@@ -85,7 +85,16 @@ If you have issues building psycopg2 (needed for Metasploit Online Module)
 `brew install postgresql`
 `pip install psycopg2`
 
-* CouchDB via brew
+* CouchDB 
+
+There are two options for this package:
+
+
+[Prebuild Package](http://www.apache.org/dyn/closer.cgi?path=/couchdb/binary/mac/1.6.1/Apache-CouchDB-1.6.1.zip)
+
+Or
+
+via brew:
 
 `brew install couchdb`
 
