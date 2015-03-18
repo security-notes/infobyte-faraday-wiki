@@ -2,7 +2,7 @@
 
 # Intro
 
-Tags allow you to organize your vulnerabilities by letting you make and edit categories: environment, technology, state, technology, language, projects, whatever. The team can then see the tagged vulnerabilities and lets you organize the security evaluation.
+Tags allow you to organize your vulnerabilities by letting you make and edit categories: environment, technology, state, language, projects, whatever. The team can then see the tagged vulnerabilities and lets you organize the security evaluation.
 
 The tags are assigned to the team´s workspace letting you use different tags for different projects.
 
