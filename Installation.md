@@ -82,7 +82,9 @@ Installing python via brew will also install pip. We are going to use it to inst
 `pip install -r requirements.txt`
 
 If you have issues building psycopg2 (needed for Metasploit Online Module)
+
 `brew install postgresql`
+
 `pip install psycopg2`
 
 * CouchDB 
