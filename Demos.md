@@ -18,6 +18,11 @@ Take a look of our last demos:
 
 [![ScreenShot](https://raw.github.com/wiki/infobyte/faraday/images/youtube.png) - Map all scada device in your country using Shodan & Faraday (VII) ] (https://bit.ly/1BLkLkn)
 
+Webinar - 2015:
+[![ScreenShot](https://raw.github.com/wiki/infobyte/faraday/images/youtube.png) - English] (http://buff.ly/1E6FLWJ)
+  
+[![ScreenShot](https://raw.github.com/wiki/infobyte/faraday/images/youtube.png) - Spanish] (https://buff.ly/1FCQAfz  )
+
 Workshop - Ekoparty 2014:
 
 [![ScreenShot](https://raw.github.com/wiki/infobyte/faraday/images/youtube.png) - Auditing thousands of assets at a time without panicking 101]
