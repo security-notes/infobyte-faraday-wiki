@@ -20,7 +20,7 @@ Take a look of our last demos:
 
 Webinar - 2015:
 
-[![ScreenShot](https://raw.github.com/wiki/infobyte/faraday/images/youtube.png) - English Version - April 8 - ] (http://buff.ly/1E6FLWJ) We will quickly go over how to get the Faraday Corporate up and running and then show a couple of the new features.
+[![ScreenShot](https://raw.github.com/wiki/infobyte/faraday/images/youtube.png) - English Version - April 8 - ] (http://buff.ly/1E6FLWJ) We quickly went over how to get the Faraday Corporate up and running and then showed a couple of the new features.
   
 [![ScreenShot](https://raw.github.com/wiki/infobyte/faraday/images/youtube.png) - Version en Español - Abril 13 - ] (https://buff.ly/1FCQAfz  ) Webinar acerca de la instalación de Faraday Corporate y sus principales características.﻿
 
