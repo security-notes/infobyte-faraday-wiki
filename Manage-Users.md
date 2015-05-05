@@ -2,7 +2,7 @@
 
 # Intro
 
-During the [start-up configuration](https://github.com/infobyte/faraday/wiki/Start-up-Configuration-%28Faraday-Server%29), you can make a user administrator. Using the specified credentials during the configuration,from the navigator start the session in Faraday´s GUI. One you have gotten the authentication, click on the **Users** icon ![](https://raw.github.com/wiki/infobyte/faraday/images/faraday_users_icono.png)
+During the [start-up configuration](https://github.com/infobyte/faraday/wiki/Start-up-Configuration-%28Faraday-Server%29), you can make a user administrator. Using the specified credentials during the configuration,from the navigator start the session in Faraday's GUI. One you have gotten the authentication, click on the **Users** icon ![](https://raw.github.com/wiki/infobyte/faraday/images/faraday_users_icono.png)
 
 ![](https://raw.github.com/wiki/infobyte/faraday/images/faraday_users_login.png)
 

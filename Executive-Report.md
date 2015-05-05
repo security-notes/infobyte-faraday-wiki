@@ -10,7 +10,7 @@ To utilize this feature, during the [Start up Configuration](https://github.com/
 
 # Managing Executive Reports 
 
-To manage your reports you need to access Faraday´s Web Interface and click on the icon **executive reports** ![]
+To manage your reports you need to access Faraday's Web Interface and click on the icon **executive reports** ![]
 (https://raw.github.com/wiki/infobyte/faraday/images/faraday_report_icono.png)
 
 ![](https://raw.github.com/wiki/infobyte/faraday/images/faraday_report_create.png)
@@ -19,7 +19,7 @@ To manage your reports you need to access Faraday´s Web Interface and click on 
 
 The reports can be seen from a list. On the list we create or eliminate documents.
 
-If you want to create a new report, it´s necessary to complete the following information in the form:
+If you want to create a new report, it's necessary to complete the following information in the form:
 
 * Title
 * Scope

@@ -4,11 +4,11 @@
 
 Tags allow you to organize your vulnerabilities by letting you make and edit categories: environment, technology, state, language, projects, whatever. The team can then see the tagged vulnerabilities and lets you organize the security evaluation.
 
-The tags are assigned to the team´s workspace letting you use different tags for different projects.
+The tags are assigned to the team's workspace letting you use different tags for different projects.
 
 # How to tag vulnerabilities
 
-Using the specified credentials during the configuration, from the Navigator start the session in  [Faraday´s GUI](https://github.com/infobyte/faraday/wiki/Web-UI). Once you have obtained the authentication and you are in, click on the “Status Report” ![](https://raw.github.com/wiki/infobyte/faraday/images/faraday_statusreport_icono.png)
+Using the specified credentials during the configuration, from the Navigator start the session in  [Faraday's GUI](https://github.com/infobyte/faraday/wiki/Web-UI). Once you have obtained the authentication and you are in, click on the “Status Report” ![](https://raw.github.com/wiki/infobyte/faraday/images/faraday_statusreport_icono.png)
 
 ![](https://raw.github.com/wiki/infobyte/faraday/images/faraday_statusreport_list.png)
 
@@ -16,7 +16,7 @@ Select the vulnerabilities that you want to tag (for example those that have to 
 
 ![](https://raw.github.com/wiki/infobyte/faraday/images/faraday_statusreport_listselected.png)
 
-After picking one of the vulnerabilities click on the ¨Tags¨ button
+After picking one of the vulnerabilities click on the "Tags" button
 
 ![](https://raw.github.com/wiki/infobyte/faraday/images/faraday_statusreport_tagsadd.png)
 
