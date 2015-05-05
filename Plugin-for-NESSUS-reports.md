@@ -14,4 +14,4 @@ In order to put the report in our Faraday path, we must copy the downloaded repo
 
 Faraday will process the output and load the vulnerabilities inside the Faraday Workspace.
 
-![](https://raw.github.com/wiki/infobyte/faraday/faraday_nessus_plugin2.png)
+![](https://raw.github.com/wiki/infobyte/faraday/images/faraday_nessus_plugin2.png)
