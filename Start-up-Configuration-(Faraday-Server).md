@@ -20,7 +20,7 @@ To begin the initial setup, the user needs to run the executable **./setup_serve
 
 `/faraday# ./setup_server.sh`
 
-![](https://raw.github.com/wiki/tartamar/faraday/images/faraday_setup_libraries.png)
+![](https://raw.github.com/wiki/infobyte/faraday/images/faraday_setup_libraries.png)
 
 `[+] Install required libraries? [y/N]`
 
