@@ -16,7 +16,7 @@ Example self generation certificates
 openssl req -x509 -newkey rsa:2048 -keyout server_key.pem -out server_cert.pem -days XXX
 ```
 On windows, the path format needs to be one of the following:
-* fully specified windows path with slashes inverted, and spaces escaped: c:/program\files/couchdb/etc/config/couchdb/<your.pem>
+* fully specified windows path with slashes inverted, and spaces escaped: c:/program\\files/couchdb/etc/config/couchdb/<your.pem>
 * unix-style path, assuming that the root / will be the root of the drive that couchdb is installed to: /program\ files/couchdb/etc/config/couchdb/<your.pem>
 * relative path, to the %COUCH%/bin folder: ../etc/couchdb/<your.pem>
 
