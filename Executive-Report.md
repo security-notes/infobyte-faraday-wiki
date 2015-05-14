@@ -40,9 +40,9 @@ Faraday processes all the information and spits out a shiny new report that is a
 
 ![](https://raw.github.com/wiki/infobyte/faraday/images/faraday_report_word.png)
 
-If some of the findings in the workspace have tags, you can create a report using only them. When the form opens an option to select tags will appear.
+If you need a custom report that includes only some of the findings in the workspace, you can tag the desired vulnerabilities and then create a Report only with that tag.
+At least one vulnerability must be tagged in order to have the option to generate a filtered Report. When the form opens an option to select tags will appear. Keep in mind that one or more tags can be selected.
 ![](https://raw.github.com/wiki/infobyte/faraday/images/faraday_report_using_tags.png)
-One or more tags can be selected.
 
 # Eliminating a report
 
