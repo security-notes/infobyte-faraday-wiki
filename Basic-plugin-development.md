@@ -121,11 +121,3 @@ The complete list of methods in the PluginBase are:
     
     def devlog(self, msg): 
 ```
-
-#Plugin local refresh
-```
-$ ./faraday.py --dev-mode
-```
-Open Faraday using the following command: ./faraday.py --dev-mode, so that it refreshes the plugins folder
-
-Now that you Faraday open all your local plugins will be updated
