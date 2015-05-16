@@ -18,6 +18,8 @@ Take a look of our last demos:
 
 [![ScreenShot](https://raw.github.com/wiki/infobyte/faraday/images/youtube.png) - Map all scada device in your country using Shodan & Faraday (VII) ] (https://bit.ly/1BLkLkn)
 
+[![ScreenShot](https://raw.github.com/wiki/infobyte/faraday/images/youtube.png) - Faraday's BeEF Integration (VIII) ] (https://bit.ly/1RUWuSB)
+
 Webinar - 2015:
 
 [![ScreenShot](https://raw.github.com/wiki/infobyte/faraday/images/youtube.png) - English Version - April 8 - ] (http://buff.ly/1E6FLWJ) We quickly went over how to get the Faraday Corporate up and running and then showed a couple of the new features.
