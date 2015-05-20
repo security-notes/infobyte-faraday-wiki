@@ -27,7 +27,7 @@ To install Faraday on ArchLinux, you first need an AUR wrapper to easily install
 
 Then, use :
 ```
-$ yaourt -S python2-whoosh pyqt3 python2-mockito python2-couchdbkit python2-flask python2-restkit python2-ipy python2-requests python2-tornado python2-dateutil
+$ yaourt -S python2-whoosh pyqt3 python2-mockito python2-couchdbkit python2-flask python2-restkit python2-ipy python2-requests python2-tornado python2-dateutil python2-colorama python2-pip
 ```
 To install all the required dependencies.
 After this, you can download faraday, and run it (./faraday.py).
