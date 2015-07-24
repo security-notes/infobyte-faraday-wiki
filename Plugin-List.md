@@ -42,7 +42,7 @@ If you think your favorite tool is missing, [send us your request!](https://gith
 * [Nmap](https://twitter.com/nmap), 6.40, XML
 * Medusa, 2.1.1
 * [Nexpose, Nexpose Enterprise](https://twitter.com/rapid7) 5.7.19, simple XML
-* Zap, 2.2.2
+* [Zap](https://twitter.com/nikto), 2.2.2
 * Webfuzzer, 0.2.0
 * [Shodan](https://twitter.com/shodanhq)
 * [evilgrade](http://twitter.com/infobytesec), 2.0.6
