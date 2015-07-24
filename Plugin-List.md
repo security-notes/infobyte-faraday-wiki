@@ -12,7 +12,7 @@ If you think your favorite tool is missing, [send us your request!](https://gith
 * Hydra, 7.5
 * [Acunetix](https://twitter.com/acunetix), 9
 * Dnsenum, 1.2.2
-* [Nessus](https://twitter.com/tenablesecurity), 5.2.4
+* [Nessus](https://twitter.com/tenablesecurity), 5.2.4, .nessus (XML)
 * [Sqlmap](https://twitter.com/sqlmap), sqlmap/1.0-dev
 * ftp, 0.17
 * Listurls, 6.3
@@ -28,7 +28,7 @@ If you think your favorite tool is missing, [send us your request!](https://gith
 * Fierce, 0.9.9
 * [X1, Onapsis](https://twitter.com/onapsis) X1 2.56
 * [Burp, BurpPro](https://twitter.com/Burp_Suite) 1.5.18 
-* [Metasploit](https://twitter.com/metasploit), 4.7.2
+* [Metasploit](https://twitter.com/metasploit), 4.7.2, XML report
 * Metagoofil, 2.2
 * Dnswalk, 2.0.2
 * Goohost, v.0.0.1
@@ -39,9 +39,9 @@ If you think your favorite tool is missing, [send us your request!](https://gith
 * propecia, 1.0
 * Dnsrecon, 0.8.7
 * Skipfish, 2.1.5
-* [Nmap](https://twitter.com/nmap), 6.40
+* [Nmap](https://twitter.com/nmap), 6.40 (XML)
 * Medusa, 2.1.1
-* [Nexpose, Nexpose Enterprise](https://twitter.com/rapid7) 5.7.19
+* [Nexpose, Nexpose Enterprise](https://twitter.com/rapid7) 5.7.19, simple XML
 * Zap, 2.2.2
 * Webfuzzer, 0.2.0
 * [Shodan](https://twitter.com/shodanhq)
