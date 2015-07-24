@@ -39,7 +39,7 @@ If you think your favorite tool is missing, [send us your request!](https://gith
 * propecia, 1.0
 * Dnsrecon, 0.8.7
 * Skipfish, 2.1.5
-* [Nmap](https://twitter.com/nmap), 6.40 (XML)
+* [Nmap](https://twitter.com/nmap), 6.40, XML
 * Medusa, 2.1.1
 * [Nexpose, Nexpose Enterprise](https://twitter.com/rapid7) 5.7.19, simple XML
 * Zap, 2.2.2
