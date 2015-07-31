@@ -24,9 +24,8 @@ Create the tag that you want (in our case SSL) and click OK
 
 ![](https://raw.github.com/wiki/infobyte/faraday/images/faraday_statusreport_tagsadded.png)
 
-
 # Search tagged vulnerabilities
 
-From the Status Report you will be able to find the information using the different tags.
+From the Status Report you will be able to find the information using the different tags. You can add ! in front of the search criteria in order to invert the result. For example _tag:!example_tag_ will result in all vulnerabilities that DON'T have the tag example_tag.
 
 ![](https://raw.github.com/wiki/infobyte/faraday/images/faraday_statusreport_tagssearch.png)
