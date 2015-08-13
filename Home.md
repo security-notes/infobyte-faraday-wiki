@@ -79,6 +79,9 @@ Presentation
    * http://prezi.com/fw46zt6_zgi8/faraday/
    * http://vimeo.com/16516987
 
-* Blackhat Arsenal 2011
+* Black Hat Arsenal 2015
    * http://www.infobytesec.com/down/Faraday_BH2011_Arsenal.pdf
+
+* Black Hat Arsenal 2015
+   * https://www.blackhat.com/us-15/arsenal.html#faraday
 
