@@ -43,7 +43,7 @@ If you think your favorite tool is missing, [send us your request!](https://gith
 * Medusa, 2.1.1
 * [Nexpose, Nexpose Enterprise](https://twitter.com/rapid7) 5.7.19, simple XML
 * [Zap](https://twitter.com/nikto), 2.2.2
-* Webfuzzer,(http://gunzip.altervista.org/g.php?f=projects#webfuzzer) 0.2.0
+* [Webfuzzer](http://gunzip.altervista.org/g.php?f=projects#webfuzzer), 0.2.0
 * [Shodan](https://twitter.com/shodanhq)
 * [evilgrade](http://twitter.com/infobytesec), 2.0.6
 * [masscan](https://twitter.com/ErrataRob), 1.0.3
