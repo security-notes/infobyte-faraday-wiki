@@ -4,14 +4,14 @@ Right now faraday has more that 40+ supported tools, among them you will find:
 ![](https://raw.github.com/wiki/infobyte/faraday/images/plugins/Plugins.png)
 
 If you think your favorite tool is missing, [send us your request!](https://github.com/infobyte/faraday/issues/new)
-* Retina, Retina Network 5.19.2.2718
+* [Retina] (http://www.beyondtrust.com/Products/RetinaNetworkSecurityScanner/), Retina Network 5.19.2.2718
 * [Openvas](https://twitter.com/openvas), 2.0
 * [BeEF](https://twitter.com/beefproject), 0.4.4.9-alpha
-* Qualysguard, Qualysguard
+* [Qualysguard] (https://www.qualys.com/), Qualysguard
 * [Arachni](https://twitter.com/ArachniScanner), 0.4.5.2
 * [Hydra] (https://www.thc.org/thc-hydra), 7.5
 * [Acunetix](https://twitter.com/acunetix), 9
-* Dnsenum, 1.2.2
+* [Dnsenum] (https://github.com/fwaeytens/dnsenum), 1.2.2
 * [Nessus](https://twitter.com/tenablesecurity), 5.2.4, .nessus (XML)
 * [Sqlmap](https://twitter.com/sqlmap), sqlmap/1.0-dev
 * ftp, 0.17
