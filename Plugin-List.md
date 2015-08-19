@@ -35,12 +35,12 @@ If you think your favorite tool is missing, [send us your request!](https://gith
 * [Theharvester] (https://github.com/laramies/theHarvester), 2.2a
 * [Nikto] (https://cirt.net/Nikto2), 2.1.5
 * [Core Impact, Core Impact](https://twitter.com/CoreSecurity) 2013R1
-* [Reverseraider], (http://sourceforge.net/projects/complemento/files/) 0.7.6
+* [Reverseraider](http://sourceforge.net/projects/complemento/files/), 0.7.6
 * [propecia] (http://packetstormsecurity.com/files/14232/propecia.c.html), 1.0
 * [Dnsrecon] (https://github.com/darkoperator/dnsrecon), 0.8.7
 * [Skipfish](https://code.google.com/p/skipfish/) , 2.1.5
 * [Nmap](https://twitter.com/nmap), 6.40, XML
-* [Medusa] http://h.foofus.net/?page_id=51 , 2.1.1
+* [Medusa] (http://h.foofus.net/?page_id=51 ), 2.1.1
 * [Nexpose, Nexpose Enterprise](https://twitter.com/rapid7) 5.7.19, simple XML
 * [Zap](https://twitter.com/nikto), 2.2.2
 * [Webfuzzer](http://gunzip.altervista.org/g.php?f=projects#webfuzzer), 0.2.0
