@@ -29,7 +29,7 @@ If you think your favorite tool is missing, [send us your request!](https://gith
 * [X1, Onapsis](https://twitter.com/onapsis) X1 2.56
 * [Burp, BurpPro](https://twitter.com/Burp_Suite) 1.5.18 
 * [Metasploit](https://twitter.com/metasploit), 4.7.2, XML report
-* [Metagoofil] (code.google.com/p/metagoofil/downloads/list), 2.2
+* [Metagoofil] (https://code.google.com/p/metagoofil/downloads/list), 2.2
 * [Dnswalk] (https://github.com/leebaird/discover.git), 2.0.2
 * [Goohost] (http://www.aldeid.com/wiki/Goohost), v.0.0.1
 * [Theharvester] (https://github.com/laramies/theHarvester), 2.2a
