@@ -77,7 +77,7 @@ $ ./fplugin -f getAllIps.py > allhost.txt
 $ nmap -i allhost.txt
 ```
 #Notifications
-Updating objets on faraday now results in a beautiful notification in the QT ui.
+Updating objects on faraday now results in a beautiful notification in the QT ui.
 ![](https://raw.github.com/wiki/infobyte/faraday/images/faraday_notifications.png)
 ![](https://raw.github.com/wiki/infobyte/faraday/images/faraday_notifications_more.png)
 
