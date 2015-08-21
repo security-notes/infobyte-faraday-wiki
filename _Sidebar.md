@@ -26,6 +26,6 @@
  * [[API]]
  * [[Live debugging]]
 * [[Scripts]]
-* [[Version comparision]]
+* [[Version-comparision]]
 * [[Screenshots]]
 * [[Faraday Awards]]
