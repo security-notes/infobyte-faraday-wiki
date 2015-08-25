@@ -81,7 +81,4 @@ Presentation
 
 * Black Hat Arsenal 2015
    * http://www.infobytesec.com/down/Faraday_BH2011_Arsenal.pdf
-
-* Black Hat Arsenal 2015
    * https://www.blackhat.com/us-15/arsenal.html#faraday
-
