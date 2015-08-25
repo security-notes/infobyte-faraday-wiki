@@ -70,7 +70,7 @@ Links
 * Mailing list subscription: https://groups.google.com/forum/#!forum/faradaysec
 * Twitter: [@faradaysec] (https://twitter.com/faradaysec)
 * [Demos] (https://github.com/infobyte/faraday/wiki/Demos)
-* IRC: [ircs://irc.freenode.net/faraday-dev] (ircs://irc.freenode.net/faraday-dev) [WebClient](http://webchat.freenode.net/?nick=wikiuser&channels=faraday-dev&prompt=1&uio=d4)
+* IRC: [ircs://irc.freenode.net/faraday-dev] (ircs://irc.freenode.net/faraday-dev) [WebClient](https://webchat.freenode.net/?nick=wikiuser&channels=faraday-dev&prompt=1&uio=d4)
 * Screenshots: https://github.com/infobyte/faraday/wiki/Screenshots
 
 Presentation
