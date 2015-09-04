@@ -1,4 +1,4 @@
-[- Commercial version -](http://faradaysec.com/buy.html)
+[- Commercial version -](https://www.faradaysec.com/#download)
 
 # Intro
 
