@@ -1,4 +1,4 @@
-Faraday use CouchDB >= 1.2.0.
+Faraday uses CouchDB >= 1.2.0.
 
 The first step is to edit CouchDB config file located in /etc/couchdb/local.ini and set bind_address to the required IP  
 Restart CouchDB as follows  
