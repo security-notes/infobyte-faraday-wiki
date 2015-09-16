@@ -1,0 +1,1 @@
+To add your own Vulnerabilities Database put the CSV inside $FARADAY/data/. After that you need to run $FARADAY/pushCwe.py to upload it to CouchDB.
