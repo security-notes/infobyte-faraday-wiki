@@ -42,7 +42,7 @@ Each workspace contains the gathered information for each pentesting assignment.
 #Highlight#
 Console support highlighting of every hostname or ip with is in the HostTree. If we double click the highlight will be select the host int he HostTree.
 #Plugins#
-We have 3 kinds of plugins:
+There are three kinds of plugins available for Faraday:
  * Plugins that intercept commands - these are fired directly when a command is detected in the console.
  * Plugins that import file reports - a report must be copied to $HOME/.faraday/report/[workspacename]. Faraday will detect the report, process it and add it to the HostTree.
  * Plugin connectors or online (BeEF, Metasploit, Burp) connect directly with external APIs or databases, or connect with Faraday's RPC API.
