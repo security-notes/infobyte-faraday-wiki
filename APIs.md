@@ -144,7 +144,7 @@ For example, if Faraday is executed like this:
 If no parameters are specified, default configuration is set:
 
 ```
-matt@xps:faraday/ (white/integracion*) $ ./faraday-terminal.zsh
+isr@faraday $ ./faraday-terminal.zsh
 [!] Using default configuration 127.0.0.1:9977
 >>> WELCOME TO FARADAY
 [+] Current Workspace: untitled
