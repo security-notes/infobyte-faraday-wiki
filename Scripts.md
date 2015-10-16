@@ -35,4 +35,5 @@ ls -lha $faraday/scripts/shodan_strings/
 scada.txt
 webcam.txt 
 ```
-In the following video you can see an example using this queries.
+In the following video you can see an example using this queries:
+https://www.youtube.com/watch?v=6_PM_jKkVNI
