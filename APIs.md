@@ -1,28 +1,30 @@
-Faraday has an **RPC API Server** by default running on 127.0.0.1:9876 and a **RESTful API Server** by default running on 127.0.0.1:9977.
+Faraday has 2 API servers:
+- An **RPC API Server** by default running on 127.0.0.1:9876
+- and a **RESTful API Server** by default running on 127.0.0.1:9977.
 
 ## Configuration
 
-You can configure both ports and the IP address binded to them via the CLI. Part of the current help shows us how to do it:
+You can configure both ports and the IP address binded to them. 
+As you will see, right now the only way to configure the RESTful server is by hand (information below). This will be changed in the future.
+
+Via the CLI, part of the current help shows us how to do it:
 ```
   -n HOST, --hostname HOST
                         The hostname where both server APIs will listen (XMLRPC and RESTful).
                         Default = localhost   
-  -px PORT_XMLRPC, --port-xmlrpc PORT_XMLRPC
+  -p PORT, --port PORT
                         Sets the port where the api XMLRPCServer will listen.
                         Default = 9876
-  -pr PORT_REST, --port-rest PORT_REST
-                        Sets the port where the api RESTful server will listen.
-                        Default = 9977
 ```
 
 So if you want to make your custom configuration, you can specify new ports and bind faraday on broadcast for example:
 
 ```
-./faraday.py --hostname 0.0.0.0 --port-xmlrpc 9999 --port-restful 10000
+./faraday.py --hostname 0.0.0.0 --port 9999
 ```
 There's also a shorter alias for each command flag: 
 ```
-./faraday.py -n 192.168.20.32 -px 9999 -pr 10000
+./faraday.py -n 192.168.20.32 -p 9999
 ```
 
 ## Manual configuration (persistent)
@@ -61,13 +63,13 @@ If you want to return to the default configuration you may delete the 3 lines sh
   <api_restful_con_info_port>9977</api_restful_con_info_port>
 ...
 ```
-Faraday will detect that some of the configuration is missing and will use the default values specified in the launcher.
+Faraday will detect that some of the configuration is missing and will use the default values specified by the launcher.
 
 ## RPC Server
 The **RPC server** can be used by others tools to incorporate information directly into the database.
 
-Let's see the following example to develop Shodan tool with Faraday.  
-For this example we are using Shodan's example code: https://shodan.readthedocs.org/
+Let's see the following example to develop a Shodan tool with Faraday.  
+For this we are using Shodan's example code: https://shodan.readthedocs.org/
 
 Shodan example:
 ``` python
@@ -136,27 +138,4 @@ You can see the finished tool in $faraday/scripts/shodan_faraday.py
 
 This API server should be connected to zsh specifying the parameters where Faraday is listening on both host and REST port flags.
 
-For example, if Faraday is executed like this:
-```
-./faraday.py -n 0.0.0.0 -pr 8080
-```
-
-If no parameters are specified, default configuration is set:
-
-```
-isr@faraday $ ./faraday-terminal.zsh
-[!] Using default configuration 127.0.0.1:9977
->>> WELCOME TO FARADAY
-[+] Current Workspace: untitled
-[-] API: Warning API unreachable
-```
-
-So if you want to use the zsh interface, you have to start it like this:
-```
-isr@faraday $ ./faraday-terminal.zsh 127.0.0.1 9977
->>> WELCOME TO FARADAY
-[+] Current Workspace: untitled
-[+] API: OK
-```
-
-This API will allow developers, in the future, to interact with the framework from external applications and not necessarily from plugins.
+In the future, this will allow developers to interact with the framework from external applications and not necessarily from plugins.
