@@ -24,7 +24,7 @@
 * [[Community]]
 * **Development**
  * [[Basic Plugin Development]]
- * [[API]]
+ * [[APIs]]
  * [[Live debugging]]
 * [[Scripts]]
 * [[Version comparison]]
