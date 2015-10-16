@@ -25,6 +25,44 @@ There's also a shorter alias for each command flag:
 ./faraday.py -n 192.168.20.32 -px 9999 -pr 10000
 ```
 
+## Manual configuration (persistent)
+
+You can also modify the APIs configuration by hand, going to your config path of faraday, and editing the user.xml file.
+
+Let's see an example. By default you have something like this (trimming to only the important elements):
+
+```
+<faraday>
+  <api_con_info_host>127.0.0.1</api_con_info_host>
+  <api_con_info_port>9876</api_con_info_port>
+  <api_restful_con_info_port>9977</api_restful_con_info_port>
+  <appname>Faraday - Penetration Test IDE Community</appname>
+...
+```
+
+So if you want to bind the ip address to 0.0.0.0 and change the rest api to 8080, you just can edit it:
+```
+<faraday>
+  <api_con_info_host>0.0.0.0</api_con_info_host>
+  <api_con_info_port>9876</api_con_info_port>
+  <api_restful_con_info_port>8080</api_restful_con_info_port>
+  <appname>Faraday - Penetration Test IDE Community</appname>
+...
+```
+
+## Default configuration
+
+If you want to return to the default configuration you may delete the 3 lines shown below.
+
+```
+<faraday>
+  <api_con_info_host>127.0.0.1</api_con_info_host>
+  <api_con_info_port>9876</api_con_info_port>
+  <api_restful_con_info_port>9977</api_restful_con_info_port>
+...
+```
+Faraday will detect that some of the configuration is missing and will use the default values specified in the launcher.
+
 ## RPC Server
 The **RPC server** can be used by others tools to incorporate information directly into the database.
 
@@ -92,3 +130,31 @@ except Exception, e:
 
 Congratulations! 5 lines of code and you have Shodan plugin working on Faraday!  
 You can see the finished tool in $faraday/scripts/shodan_faraday.py
+
+
+## RESTful API server
+
+This API server should be connected to zsh specifying the parameters where Faraday is listening on both host and REST port flags.
+
+For example, if Faraday is executed like this:
+```
+./faraday.py -n 0.0.0.0 -pr 8080
+```
+
+If no parameters are specified, default configuration is set:
+```matt@xps:faraday/ (white/integracion*) $ ./faraday-terminal.zsh
+[!] Using default configuration 127.0.0.1:9977
+>>> WELCOME TO FARADAY
+[+] Current Workspace: untitled
+[-] API: Warning API unreachable
+```
+
+So if you want to use the zsh interface, you have to start it like this:
+```
+isr@faraday $ ./faraday-terminal.zsh 127.0.0.1 9977
+>>> WELCOME TO FARADAY
+[+] Current Workspace: untitled
+[+] API: OK
+```
+
+This API will allow developers, in the future, to interact with the framework from external applications and not necessarily from plugins.
