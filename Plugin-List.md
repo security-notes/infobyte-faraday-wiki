@@ -42,7 +42,7 @@ If you think your favorite tool is missing, [send us your request!](https://gith
 * [Nmap](https://twitter.com/nmap), XML
 * [Medusa] (http://h.foofus.net/?page_id=51 )
 * [Nexpose, Nexpose Enterprise](https://twitter.com/rapid7), simple XML, XML Export plugin (2.0)
-* [Zap](https://twitter.com/nikto)
+* [Zap](https://twitter.com/zaproxy)
 * [Webfuzzer](http://gunzip.altervista.org/g.php?f=projects#webfuzzer)
 * [Shodan](https://twitter.com/shodanhq)
 * [evilgrade](http://twitter.com/infobytesec)
