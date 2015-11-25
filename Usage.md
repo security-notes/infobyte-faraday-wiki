@@ -11,10 +11,11 @@ Faraday main window is simple:
 Structured in panes: Main Console, HostTree, Log Console, Item Info & Editing panes.
 
 ## GUI QT with authentication
+[- Commercial version -](https://www.faradaysec.com/#download)
 
-If yoa are able to run Faraday QT with credentials add a login option:
+If you are able to run Faraday QT with credentials add a login option:
 
-`#./faraday.sh --login`
+`#./faraday.pyc --login`
 
 ![](https://raw.github.com/wiki/infobyte/faraday/images/faraday_guiqt_login.png)
 
