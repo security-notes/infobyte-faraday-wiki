@@ -6,7 +6,7 @@
  * [[Manage Users]]
  * [[Chat and Communication]]
  * [[Executive Report]]
- * CVS Exporting & Importing [[Exporting the information]]
+ * [CVS Exporting & Importing] (https://github.com/infobyte/faraday/wiki/Exporting-the-information) 
 * [[Demos]]
 * **Configuration**
  * [[CouchDB]]
