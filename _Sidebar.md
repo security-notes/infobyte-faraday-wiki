@@ -6,6 +6,7 @@
  * [[Manage Users]]
  * [[Chat and Communication]]
  * [[Executive Report]]
+ * [[Exporting the information]]
 * [[Demos]]
 * **Configuration**
  * [[CouchDB]]
