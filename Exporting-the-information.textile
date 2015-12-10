@@ -8,5 +8,5 @@ Actually Faraday supports CSV Exporting from it's UI, just right click in the wo
 
 The current output format is in the form:
 
-found date | status | severity level | name | target | vulnerability description
+found date | severity level | service parent | target | name | vulnerability description | data field | references
 
