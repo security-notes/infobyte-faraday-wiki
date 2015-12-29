@@ -31,3 +31,4 @@
 * [[Version comparison]]
 * [[Screenshots]]
 * [[Faraday Awards]]
+* [[FAQ]]
