@@ -19,7 +19,7 @@ Faraday is to Penetration Testing what an IDE is to Development. The main purpos
 ArchAssault, Archlinux, Debian, Kali, OSX, Debian. You can find a detailed explanation [here](https://github.com/infobyte/faraday/wiki/FAQ) 
 
 # Faraday is not importing my report
-First let's make sure there is a Plugin to parse it so make sure your tool is listed in our [[Plugin List]].
+First let's make sure there is a Plugin to parse it so make sure your tool is listed in our [[Plugin List]]. Not there? [Code your own](https://github.com/infobyte/faraday/wiki/Basic-plugin-development) or [ask us to do it](https://github.com/infobyte/faraday/issues).
 
 Is you XML valid? Try opening it in a browser, if the browser complains then you can try our XML Cleaning script (make sure to have [BeautifulSoup](http://www.crummy.com/software/BeautifulSoup/bs4/doc/)):
 
