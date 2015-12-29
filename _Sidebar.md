@@ -1,4 +1,10 @@
 * [[Installation]]
+* **Configuration**
+ * [[CouchDB]]
+    * [[Couchdb SSL]]
+    * [[Vulnerabilities Database]]
+    * [[Couchdb Authentication]]
+ * [[Start up Configuration (Faraday Server)]]
 * [[Usage]]
  * [[Web UI]]
  * [[Tag Use]]
@@ -8,12 +14,6 @@
  * [[Executive Report]]
  * [CSV Exporting & Importing] (https://github.com/infobyte/faraday/wiki/Exporting-the-information) 
 * [[Demos]]
-* **Configuration**
- * [[CouchDB]]
-    * [[Couchdb SSL]]
-    * [[Vulnerabilities Database]]
-    * [[Couchdb Authentication]]
- * [[Start up Configuration (Faraday Server)]]
 * [[Architecture]]
   * **Plugins**
      * [[Plugin List]]
