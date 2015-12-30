@@ -29,4 +29,12 @@ python $FARADAY/helpers/cleanXML.py broken_file.xml
 
 Keep in mind that this is not part of the Faraday core, and is only meant to be a quick fix for other tools' bugs, so use at your own risk, and always keep a fresh backup of your data.
 
+Then open Faraday's QT interface running the following in your installation root:
+
+```
+./faraday.py
+```
+
+Open the Workspaces perspective and select your workspace. Then copy the report file into the active workspace's directory in $HOME/.faraday/report/WS_NAME/
+
 Still not working? [Contact us](https://github.com/infobyte/faraday/issues)
