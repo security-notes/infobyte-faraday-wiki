@@ -18,6 +18,17 @@ Faraday is to Penetration Testing what an IDE is to Development. The main purpos
 # What are the supported OSs?
 ArchAssault, Archlinux, Debian, Kali, OSX, Debian. You can find a detailed explanation [here](https://github.com/infobyte/faraday/wiki/FAQ) 
 
+# I can't access the web GUI
+Is your CouchDB up and running? If not, maybe try the [Apache CouchDB Installation Guide](https://wiki.apache.org/couchdb/Installation).
+
+If so, read our documentation on how to configure it [using our QT GUI](https://github.com/infobyte/faraday/wiki/CouchDB) or edit your local config file in $HOME/.faraday/config/user.xml and set your CouchDB route using the *couch_uri* tag, for example:
+
+```
+<couch_uri>http://127.0.0.1:5984</couch_uri>
+```
+
+Then run Faraday and point your browser to http://COUCH_URI/reports/_design/reports/index.html
+
 # Faraday is not importing my report
 First let's make sure there is a Plugin to parse it so make sure your tool is listed in our [[Plugin List]]. Not there? [Code your own](https://github.com/infobyte/faraday/wiki/Basic-plugin-development) or [ask us to do it](https://github.com/infobyte/faraday/issues).
 
@@ -35,6 +46,8 @@ Then open Faraday's QT interface running the following in your installation root
 ./faraday.py
 ```
 
-Open the Workspaces perspective and select your workspace. Then copy the report file into the active workspace's directory in $HOME/.faraday/report/WS_NAME/
+Open the Workspaces perspective and select your workspace. Then copy the report file into the active workspace's directory in $HOME/.faraday/report/WS_NAME/. Faraday will only process requests for the active workspace.
 
-Still not working? [Contact us](https://github.com/infobyte/faraday/issues)
+
+
+Are you still having troubles? Is your question not listed here? [Contact us](https://github.com/infobyte/faraday/issues)
