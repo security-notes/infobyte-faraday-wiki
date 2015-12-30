@@ -21,7 +21,7 @@ ArchAssault, Archlinux, Debian, Kali, OSX, Debian. You can find a detailed expla
 # I can't access the web GUI
 Is your CouchDB up and running? If not, maybe try the [Apache CouchDB Installation Guide](https://wiki.apache.org/couchdb/Installation).
 
-If so, read our documentation on how to setup Faraday to work with CouchDB [using our QT GUI](https://github.com/infobyte/faraday/wiki/CouchDB) or edit your local config file in $HOME/.faraday/config/user.xml and set your CouchDB route using the _couch_uri_ tag, for example:
+If so, read our documentation on how to setup Faraday to work with CouchDB [using our QT GUI](https://github.com/infobyte/faraday/wiki/CouchDB) or edit your local config file in $HOME/.faraday/config/user.xml and set your CouchDB route using the **couch_uri** tag, for example:
 
 ```
 <couch_uri>http://127.0.0.1:5984</couch_uri>
