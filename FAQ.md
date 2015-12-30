@@ -23,11 +23,11 @@ Is your CouchDB up and running? If not, maybe try the [Apache CouchDB Installati
 
 If so, read our documentation on how to setup Faraday to work with CouchDB [using our QT GUI](https://github.com/infobyte/faraday/wiki/CouchDB) or edit your local config file in $HOME/.faraday/config/user.xml and set your CouchDB route using the **couch_uri** tag, for example:
 
-```
+```xml
 <couch_uri>http://127.0.0.1:5984</couch_uri>
 ```
 
-Then run Faraday and point your browser to http://COUCH_URI/reports/_design/reports/index.html
+Then run Faraday and point your browser to http://127.0.0.1:5984/reports/_design/reports/index.html replacing **127.0.0.1:5984** with your CouchDB URI.
 
 # Faraday is not importing my report
 First let's make sure there is a Plugin to parse it so make sure your tool is listed in our [[Plugin List]]. Not there? [Code your own](https://github.com/infobyte/faraday/wiki/Basic-plugin-development) or [ask us to do it](https://github.com/infobyte/faraday/issues).
