@@ -1,7 +1,7 @@
-#Dependencies     
+###Dependencies     
 * psycopg2 [http://initd.org/psycopg/]  
 
-#Configuration
+###Configuration
 This plugin can be set from Faraday's Plugin Configuration, where the information of the MSF's postgresql server and credentials  
 [Server]  
 [Database]  
