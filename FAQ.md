@@ -18,6 +18,9 @@ Faraday is to Penetration Testing what an IDE is to Development. The main purpos
 ### What are the supported OSs?
 ArchAssault, Archlinux, Debian, Kali, OSX, Debian. You can find a detailed explanation [here](https://github.com/infobyte/faraday/wiki/FAQ) 
 
+### How do I configure my own Vulnerabilities Database?
+Check out our [[Vulnerabilities Database]] config page.
+
 ### I can't access the web GUI
 Is your CouchDB up and running? If not, maybe try the [Apache CouchDB Installation Guide](https://wiki.apache.org/couchdb/Installation).
 
@@ -48,7 +51,5 @@ Then open Faraday's QT interface running the following in your installation root
 
 Open the Workspaces perspective and select your workspace. Then copy the report file into the active workspace's directory in $HOME/.faraday/report/WS_NAME/. Faraday will only process requests for the active workspace.
 
-### How do I configure my own Vulnerabilities Database?
-Check out our [[Vulnerabilities Database]] config page.
 
-Are you still having troubles? Is your question not listed here? [Contact us](https://github.com/infobyte/faraday/issues)
+Is your question not listed here? [Contact us](https://github.com/infobyte/faraday/issues)
