@@ -1,7 +1,6 @@
 * [[Installation]]
 * **Configuration**
  * [[CouchDB]]
-    * [[Couchdb SSL]]
     * [[Vulnerabilities Database]]
     * [[Couchdb Authentication]]
  * [[Start up Configuration (Faraday Server)]]
