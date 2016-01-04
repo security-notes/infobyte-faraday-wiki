@@ -8,11 +8,23 @@ To load the ruby interpreter in burp, go to Extender->Options, and in the Ruby E
 ![](https://raw.github.com/wiki/infobyte/faraday/images/burp_ruby_path.png)
 
 ##Installation
+### Burp PRO users
+
 You can find Faraday in the Burp App Store!
 
-Go to Extender->Extensions->BApp Store, and then install the Faraday extension
+Go to Extender->BApp Store, and then install the Faraday extension. Then make sure the extension is loaded in the Extensions tab.
 
 ![](https://raw.github.com/wiki/infobyte/faraday/images/burp_store.png)
+
+### Burp Free users
+
+Go to Extender->Extensions and click in the Add button.
+
+In the Extension Details section, the extension type should be Ruby, and the extension file should be the path to the faraday-burp.rb file (it's in plugins/repo/burp/ folder). Click Next, and if everything went well, you should see no errors and you can close the window. Then make sure the extension is loaded in the Extensions tab.
+
+![](https://raw.github.com/wiki/infobyte/faraday/images/burp_faraday_add_extension.png)
+
+![](https://raw.github.com/wiki/infobyte/faraday/images/burp_loaded.png)
 
 ##Configuration options
 
