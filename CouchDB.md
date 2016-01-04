@@ -44,7 +44,7 @@ If you are using the --gui=no-gui option
 
 5) Using a browser go to http://127.0.0.1:5984/reports/_design/reports/index.html (if you are using couch in a different IP, set it to the right address)
 
-# CouchDB SSL
+# SSL
 1) Enable the httpsd daemon by adding the following line to your local.ini or local_dev.ini (newly generated files include this setting but commented out);
 ```
 [daemons]
@@ -92,3 +92,25 @@ Multiple replication is available, separating each IP with a semicolon. For exam
 ```
 CouchDB URL: https://192.168.33.10:6984/
 ```
+
+# Authentication
+1) Uncomment the next line to trigger basic-auth popup on unauthorized requests.
+
+    [httpd]
+    WWW-Authenticate = Basic realm="administrator"
+2) Required valid user.
+
+    [couch_httpd_auth]
+    require_valid_user = true
+3) Configure users
+
+    [admins]
+    admin:faradaypassword
+
+
+Restart CouchDB services
+
+Configure Faraday
+---
+Go to Edit->Server Connection to point to the required master and replication databases.  
+CouchDB URL: http://admin:faradaypassword@192.168.33.10:5984/
