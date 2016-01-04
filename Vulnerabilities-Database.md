@@ -1,5 +1,11 @@
-Faraday comes with its own CWE Vulnerabilities DB for you to use.
+Find yourself writing the same descriptions over and over again? Tired of typos coming up in your reports? Faraday provides a simple solution; unify criteria for naming vulnerabilities and save time and effort to yourself and your team.
 
-To upload it to Couch just run $FARADAY/helpers/pushCwe.py.
+Faraday comes with its own [CWE](https://cwe.mitre.org/) Vulnerabilities DB for you to use. This is a simple CSV made using CWE standards and allows you to create vulnerabilities without worrying about finding references, description, etc.
 
-To add your own put the CSV inside $FARADAY/data/cve.csv Make sure you run $FARADAY/helpers/pushCwe.py before use and that's it!
+To upload it to Couch just run 
+
+```
+python $FARADAY/helpers/pushCwe.py
+```
+
+To add your own put the CSV inside **$FARADAY/data/cve.csv**. Make sure you run the **pushCwe.py** script before use and that's it!
