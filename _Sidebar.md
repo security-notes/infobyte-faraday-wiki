@@ -1,5 +1,4 @@
 * [[Installation]]
-* **Configuration**
  * [[CouchDB]]
  * [[Vulnerabilities Database]]
  * [[Faraday Server]]
@@ -14,11 +13,11 @@
 * [[Demos]]
 * [[Architecture]]
 * [Plugins](https://github.com/infobyte/faraday/wiki/Plugin-List)
-   * [[Metasploit]]
-   * [[Burp Proxy Extender]]
-   * [[BeEF]]
-   * [[Evilgrade]]
-   * [[Nessus]]
+ * [[Metasploit]]
+ * [[Burp Proxy Extender]]
+ * [[BeEF]]
+ * [[Evilgrade]]
+ * [[Nessus]]
 * [[Community]]
 * **Development**
  * [[Basic Plugin Development]]
