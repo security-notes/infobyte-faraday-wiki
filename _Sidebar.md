@@ -16,7 +16,7 @@
 * [Plugins](https://github.com/infobyte/faraday/wiki/Plugin-List)
    * [[Metasploit]]
    * [[Burp Proxy Extender]]
-   * [[BeEF configuration]]
+   * [[BeEF]]
    * [[Evilgrade]]
    * [[Nessus]]
 * [[Community]]
