@@ -1,4 +1,3 @@
-#Configuration
 This plugin can be set from evilgrade's console. By default the Api RPC connection is disable, change the faraday variable boolean in order to use it. Verify that RPCFaraday server configuration is correctly set.
 
 ```
