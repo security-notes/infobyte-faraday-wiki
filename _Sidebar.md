@@ -17,7 +17,7 @@
    * [[Metasploit]]
    * [[Burp Proxy Extender]]
    * [[BeEF configuration]]
-   * [[evilgrade configuration]]
+   * [[Evilgrade]]
    * [[Nessus]]
 * [[Community]]
 * **Development**
