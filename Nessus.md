@@ -1,8 +1,4 @@
-# Intro
-
 This plugin allows users to import scans done by the Tenable Nessus Vulnerability Scanner to the Faraday Workspace they are using.
-
-# Nessus
 
 We run the Nessus scan that we want to import to Faraday and we export it in XML format to our Faraday PATH.
 
