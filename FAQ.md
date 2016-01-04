@@ -16,7 +16,10 @@ The name was picked to honour *Michael Faraday*, an English scientist whose main
 Faraday is to Penetration Testing what an IDE is to Development. The main purpose of Faraday is to re-use the available tools in the community to take advantage of them in a multiuser way.
 
 ### What are the supported OSs?
-ArchAssault, Archlinux, Debian, Kali, OSX, Debian. You can find a detailed explanation [here](https://github.com/infobyte/faraday/wiki/FAQ) 
+ArchAssault, Archlinux, Debian, Kali, OSX, Debian. You can find a detailed explanation [here](https://github.com/infobyte/faraday/wiki/Installation) 
+
+### I purchased a License, now what?
+You will receive an email with a link to download two tarballs. One will be your Faraday License and the other the version you selected. Uncompress both and place the contents of the license tar inside **$FARADAY/doc/**. 
 
 ### How do I configure my own Vulnerabilities Database?
 Check out our [[Vulnerabilities Database]] config page.
