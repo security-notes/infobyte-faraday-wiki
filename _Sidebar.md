@@ -25,6 +25,5 @@
  * [[Live debugging]]
 * [[Scripts]]
 * [[Version comparison]]
-* [[Screenshots]]
 * [[Faraday Awards]]
 * [[FAQ]]
