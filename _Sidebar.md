@@ -2,7 +2,7 @@
 * **Configuration**
  * [[CouchDB]]
  * [[Vulnerabilities Database]]
- * [[Start up Configuration (Faraday Server)]]
+ * [[Faraday Server]]
 * [[Usage]]
  * [[Web UI]]
  * [[Tag Use]]
