@@ -8,4 +8,4 @@ To upload it to Couch just run
 python $FARADAY/helpers/pushCwe.py
 ```
 
-To add your own put the CSV inside **$FARADAY/data/cve.csv**. Make sure you run the **pushCwe.py** script before use and that's it!
+To add your own put the CSV inside **$FARADAY/data/cwe.csv**. Make sure you run the **pushCwe.py** script before use and that's it!
