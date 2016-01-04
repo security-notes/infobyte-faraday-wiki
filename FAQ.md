@@ -15,6 +15,9 @@ The name was picked to honour *Michael Faraday*, an English scientist whose main
 ### What is Faraday?
 Faraday is to Penetration Testing what an IDE is to Development. The main purpose of Faraday is to re-use the available tools in the community to take advantage of them in a multiuser way.
 
+### Is Faraday free?
+Yes, we have a community version which is totally free, you can [download it from Github](https://github.com/infobyte/faraday/archive/master.zip). But we also develop two [comercial versions](https://www.faradaysec.com/#download).
+
 ### What are the supported OSs?
 ArchAssault, Archlinux, Debian, Kali, OSX, Debian. You can find a detailed explanation [here](https://github.com/infobyte/faraday/wiki/Installation).
 
