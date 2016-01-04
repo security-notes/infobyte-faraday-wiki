@@ -1,18 +1,23 @@
 Faraday uses CouchDB >= 1.2.0.
 
-The first step is to edit CouchDB config file located in /etc/couchdb/local.ini and set bind_address to the required IP  
-Restart CouchDB as follows  
+The first step is to edit CouchDB config file located in /etc/couchdb/local.ini and set bind_address to the required IP.
+
+Then restart CouchDB as follows:
+
 ```
 $ sudo service couchdb restart
 ```
-You have two kind of configuration:  
-1) Every user use the same CouchDB database.  
-Go to Edit->Server Connection to point to the required master for example http://192.168.10.210:5984/.  
+There are two different configuration schemas:
+
+* **Every user uses the same CouchDB database**
+
+Go to Edit->Server Connection to point to the required master. For example; http://192.168.10.210:5984/
 
 ![](https://raw.github.com/wiki/infobyte/faraday/images/Couchdb_conf.png)
 
-2) Every user have a own local CouchDB and replicate with a centralize CouchDB Server.  
-**NOTE:** If you like to use this configuration check that all CouchDB use almost the version 1.2.0 because some distributions have old version that have some problems.  
+* **Every user has its own local CouchDB and replicate to a centralized CouchDB Server**
+
+**NOTE:** In order to make this work all the CouchDB instances must be greater or equal to v1.2.0. Some distributions have older buggy versions.
 
 Go to Edit->Server Connection to point to the required master for example http://127.0.0.1:5984/ and replication database http://192.168.10.210:5984/.  
 
@@ -75,7 +80,7 @@ You can test your certificates separately using:
 $ openssl s_server -key <keyfile> -cert <certfile> -www
 $ curl -k -v https://127.0.0.1:6984/
 ```
-Configure Faraday:
+Configure Faraday
 ---
 1) Running Faraday's launcher with a flag --cert is needed, where the path points to your certificate, NOT your key. This is a security workaround that allow users to use their own signed certificates.
 ```
