@@ -14,7 +14,7 @@
 * [[Demos]]
 * [[Architecture]]
 * [Plugins](https://github.com/infobyte/faraday/wiki/Plugin-List)
-   * [[Metasploit configuration]]
+   * [[Metasploit]]
    * [[Burp Proxy Extender Plugin]]
    * [[BeEF configuration]]
    * [[evilgrade configuration]]
