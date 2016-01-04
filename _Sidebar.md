@@ -10,16 +10,15 @@
  * [[Manage Users]]
  * [[Chat and Communication]]
  * [[Executive Report]]
- * [CSV Exporting & Importing] (https://github.com/infobyte/faraday/wiki/Exporting-the-information) 
+ * [CSV Exporting & Importing](https://github.com/infobyte/faraday/wiki/Exporting-the-information) 
 * [[Demos]]
 * [[Architecture]]
-  * **Plugins**
-     * [[Plugin List]]
-     * [[Metasploit configuration]]
-     * [[Burp Proxy Extender Plugin]]
-     * [[BeEF configuration]]
-     * [[evilgrade configuration]]
-     * [[Plugin for NESSUS reports]]
+* [Plugins](https://github.com/infobyte/faraday/wiki/Plugin-List)
+   * [[Metasploit configuration]]
+   * [[Burp Proxy Extender Plugin]]
+   * [[BeEF configuration]]
+   * [[evilgrade configuration]]
+   * [[Plugin for NESSUS reports]]
 * [[Community]]
 * **Development**
  * [[Basic Plugin Development]]
