@@ -8,7 +8,23 @@ $ ./fplugin -e 'for h in api.__model_controller.getAllHosts(): print h.name' > a
 $ nmap -i allhost.txt
 ```
 
-You can use presets actions using the included files (delAllHost.py, delAllServiceClosed.py, getAllCreds.py, getAllHosts.py, getAllIpsInterfaces.py, getAllIps.py, getAllOs.py, getAllTelnet.py, getAllVnc.py, getAllVulnsCSV.py, getAllWebservers.py, etc) for example: 
+Faraday comes with some presets for bulk actions such as object removal, etc. These are usually necessary when managing large Workspaces. The current presets are:
+* delAllHost.py
+* delAllServiceClosed.py
+* getAllCreds.py
+* getAllHosts.py
+* getAllIpsInterfaces.py
+* getAllIps.py
+* getAllOs.py
+* getAllTelnet.py
+* getAllVnc.py
+* getAllVulnsCSV.py
+* getAllWebservers.py
+* getAllbySrv.py
+* delAllVulnsWith.py
+* getAllIpsNotServices.py
+
+A usage example:
 
 ```
 $ cd ~/.faraday/bin/
