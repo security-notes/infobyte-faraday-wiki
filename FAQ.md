@@ -20,7 +20,7 @@ Yes, we have a community version which is totally free, you can [download it fro
 
 We also develop two [comercial versions](https://www.faradaysec.com/#download).
 
-### What are the supported OSs?
+### Which platforms are supported?
 ArchAssault, Archlinux, Debian, Kali, OSX, Debian. You can find a detailed explanation [here](https://github.com/infobyte/faraday/wiki/Installation).
 
 ### I purchased a License, now what?
