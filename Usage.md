@@ -28,7 +28,7 @@ You can even run Faraday in detached mode connecting with a ZSH terminal to it:
 ![](https://raw.github.com/wiki/infobyte/faraday/images/no-ui.png)
 ![](https://raw.github.com/wiki/infobyte/faraday/images/no-ui2.png)
 
-No manual imports needed but supported. Just drop your fresh generated reports in :
+No manual imports needed but supported. Just drop your fresh generated reports in:
     $ ~/.faraday/report/workspace_name
 
 Faraday will parse your reports and upload the information extracted from them.
@@ -89,14 +89,8 @@ $ ./fplugin -e 'for h in api.__model_controller.getAllHosts(): print h.name' > a
 $ nmap -i allhost.txt
 ```
 
-You can use presets actions using the included files (delAllHost.py, delAllServiceClosed.py, getAllCreds.py, getAllHosts.py, getAllIpsInterfaces.py, getAllIps.py, getAllOs.py, getAllTelnet.py, getAllVnc.py, getAllVulnsCSV.py, getAllWebservers.py, etc) for example: 
+Read more about [[Faraday Plugin]].
 
-```
-$ cd ~/.faraday/bin/
-$ #Get all ip of HostTree
-$ ./fplugin -f getAllIps.py > allhost.txt
-$ nmap -i allhost.txt
-```
 ## Notifications
 Updating objects on faraday now results in a beautiful notification in the QT ui.
 ![](https://raw.github.com/wiki/infobyte/faraday/images/faraday_notifications.png)
