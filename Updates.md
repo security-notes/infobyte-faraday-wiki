@@ -6,7 +6,7 @@ In order to update your Faraday version run:
 
 [- Commercial version -](https://www.faradaysec.com/#download)
 
-Download the last tarball version from our website using the username and password you received after your purchase.
+Download the last tarball version from Faraday Customer Portal using the username and password you received after your purchase.
 
 Unpack it in your current Faraday root directory and run:
 
