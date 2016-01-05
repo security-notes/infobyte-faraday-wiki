@@ -3,6 +3,7 @@
  * [[CouchDB]]
  * [[Vulnerabilities Database]]
  * [[Faraday Server]]
+* [[Updates]]
 * [[Usage]]
  * [[Web UI]]
  * [[Tag Use]]
