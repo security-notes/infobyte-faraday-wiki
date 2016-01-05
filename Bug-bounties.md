@@ -5,11 +5,7 @@ We want Faraday to be an ally for researchers participating in such programs, so
 Currently we support the following  sites:
 * Airbnb
 * Facebook
-* 
-* 
-* 
-* 
-* 
+
 
 
 https://github.com/infobyte/faraday_bugbounty/
