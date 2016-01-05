@@ -1,4 +1,4 @@
-You can reach us, and find another Faraday users on:  
+You can reach us, and find other Faraday users on:
 
 #Mailing List
 https://groups.google.com/d/forum/faradaysec
