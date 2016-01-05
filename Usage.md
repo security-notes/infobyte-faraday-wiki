@@ -31,34 +31,34 @@ You can even run Faraday in detached mode connecting with a ZSH terminal to it:
 No manual imports needed but supported. Just drop your fresh generated reports in :
     $ ~/.faraday/report/workspace_name
 
-Faraday imports the imported documents.
+Faraday will parse your reports and upload the information extracted from them.
 
-The following list have different features available:
-#Database#
+#Features#
+##Database
 By default Faraday uses  a local file database. If you like to synchronize with others users you have to configure [CouchDB](CouchDB) to share information in real time.  
-#Workspaces#
+##Workspaces
 Information is classified in workspaces units. Each Workspace maps into one/many a pentest assignment/s. 
 Each workspace contains the gathered information for each pentesting assignment. In it you can find all the intel you have discovered.
 
-#Highlight#
+##Highlight
 Console support highlighting of every hostname or ip with is in the HostTree. If we double click the highlight will be select the host int he HostTree.
-#Plugins#
+##Plugins
 There are three kinds of plugins available for Faraday:
  * CONSOLE - Plugins that intercept commands - these are fired directly when a command is detected in the console.
  * REPORT - Plugins that import file reports - a report must be copied to $HOME/.faraday/report/[workspacename]. Faraday will detect the report, process it and add it to the HostTree.
  * API - Plugin connectors or online (BeEF, Metasploit, Burp) connect directly with external APIs or databases, or connect with Faraday's RPC API.
 
-#IntelliSense#
+##IntelliSense
 Using CTRL+SPACE in the console for the different commands for example nikto CTRL+SPACE will show the nikto options, or you can use it to get ip or hostname which is in the HostTree for example $ 127.0[CTRL+SPACE] will complete to 127.0.0.1 if we have that ip in the HostTree  
-#Conflicts#
+##Conflicts
 If two plugins have different information for the same element it will generate a conflict that the user have to resolve.  
 For example **user1** incorporate host 127.0.0.1 OS:Linux and **user2** incorporate 127.0.0.1 OS: Linux Ubuntu 13.10. In the name of workspace will include for example "Untitled (1)" (1) is the numbers of conflicts that you have. To resolve, right-click and select "Resolve conflicts" then select which object do you like to keep.  
-#Filters#
+##Filters
 Hostree filter is a small search engine over the current Model Objects that provide filtering capabilities to the view. Currently you can filter by the following fields (ip, hostname, mac, os, port, srvname, owned, vuln, note, noten, vulnn), you can also negate the filter and use boolean connectors.
   
 For example to search ip 127.0.0.1 and port 22 write "ip:127.0.0.1 AND port:22"  
 
-#Faraday plugin#
+##Faraday plugin
 Using our plugin you can do different actions using the command line, for example
 ```
 $ cd ~/.faraday/bin/
@@ -77,7 +77,7 @@ $ #Get all ip of HostTree
 $ ./fplugin -f getAllIps.py > allhost.txt
 $ nmap -i allhost.txt
 ```
-#Notifications
+##Notifications
 Updating objects on faraday now results in a beautiful notification in the QT ui.
 ![](https://raw.github.com/wiki/infobyte/faraday/images/faraday_notifications.png)
 ![](https://raw.github.com/wiki/infobyte/faraday/images/faraday_notifications_more.png)
@@ -85,5 +85,5 @@ Updating objects on faraday now results in a beautiful notification in the QT ui
 ### ZSH UI no-gui notifications
 ![](https://raw.githubusercontent.com/wiki/infobyte/faraday/images/faraday_gui_notifi.png)
 
-#CVS Exporting & Importing
+##CVS Exporting & Importing
 [More information](Exporting-the-information)
