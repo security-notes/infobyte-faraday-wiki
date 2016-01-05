@@ -45,12 +45,14 @@ NOTE: If you have both python2 and python3 in your system, it's better to use pi
 
 Now, run butterfly:
 ```
-$ butterfly.server.py --unsecure --shell=/bin/zsh
+$ butterfly.server.py --unsecure --shell=/bin/zsh --cmd="<path/of/faraday/>faraday-terminal.zsh [host] [port]"
 ```
 
-The idea of the webshell is to be able to do actions directly from the web using ZSH as a console. You would be connected to your own shell (listening in loopback interface). Remember that you also have to run Faraday QT or Faraday —gui=nogui so that the terminal for ZSH functions properly.
+Of course, you need to set the path of the folder in which you have faraday (the faraday-terminal.zsh script should be in the root of that folder). Also, You can pass the host and port as arguments to that script, in case you've changed the Faraday's REST API parameters (remember that you have to run Faraday QT or Faraday —gui=nogui so that the terminal for ZSH functions properly)
 
-Then, open a new tab from the webshell icon in the web UI's sidebar, and you should see the zsh shell up and running. Go to the Faraday folder and run the faraday-terminal.zsh script. You can pass to it the host and port as arguments, in case you've changed the Faraday's REST API parameters.
+The idea of the webshell is to be able to do actions directly from the web using ZSH as a console. You would be connected to your own shell (listening in loopback interface). 
+
+Then, open a new tab from the webshell icon in the web UI's sidebar, and you should see the zsh shell up and running!
 
 ![](https://raw.github.com/wiki/infobyte/faraday/images/butterfly_webshell.png)
 
