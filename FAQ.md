@@ -30,7 +30,19 @@ You will receive an email with a link to download two tarballs. One will be your
 Check out our [[Vulnerabilities Database]] config page.
 
 ### I can't access the web GUI
-Is your CouchDB up and running? If not, maybe try the [Apache CouchDB Installation Guide](https://wiki.apache.org/couchdb/Installation).
+Is your CouchDB up and running? Try running
+
+```
+curl http://127.0.0.1:5984/
+```
+
+The reply should look something like
+
+```json
+{"couchdb":"Welcome","version":"0.10.1"}
+```
+
+If not, maybe try the [Apache CouchDB Installation Guide](https://wiki.apache.org/couchdb/Installation).
 
 If so, read our documentation on how to setup Faraday to work with CouchDB [using our QT GUI](https://github.com/infobyte/faraday/wiki/CouchDB) or edit your local config file in $HOME/.faraday/config/user.xml and set your CouchDB route using the **couch_uri** tag, for example:
 
