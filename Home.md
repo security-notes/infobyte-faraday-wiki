@@ -22,10 +22,11 @@ Right now faraday has more than [40+ supported tools](https://github.com/infobyt
 Installation
 ---
 
-The following platform are supported - [More information] (https://github.com/infobyte/faraday/wiki/Installation) :
+The following platforms are supported
 
 ![platform](https://raw.github.com/wiki/infobyte/faraday/images/platform/supported.png) 
 
+[Read more about this] (https://github.com/infobyte/faraday/wiki/Installation).
 
 Quick install:
 
