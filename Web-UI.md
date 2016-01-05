@@ -22,7 +22,7 @@ Faraday Community Version has simple visualization (Include summary information)
 
 ![](https://raw.githubusercontent.com/wiki/infobyte/faraday/images/faraday_new.png)
 
-**Top Services View:**
+**Top Services View**
 
 ![](https://raw.github.com/wiki/infobyte/faraday/images/GUI_Dashboard_new_Services.png)
 
