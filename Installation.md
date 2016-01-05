@@ -56,9 +56,9 @@ A dialog box will appear asking to install additional tools as shown in the imag
 
 **Important!** Before proceeding with the rest of this guide you need to **open Xcode at least once** in order to accept the License Agreement. Please make sure you do that or else some of the dependencies will fail to install.
 
-##### Brew (http://brew.sh)
+##### Brew
 
-Run:
+To install [Brew](http://brew.sh) run:
 
 ```
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
