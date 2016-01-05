@@ -1,10 +1,8 @@
 [- Commercial version -](https://www.faradaysec.com/#download)
 
-# Intro
-
 The Faraday Server is made to manage the CouchDB Database. This lets the user access all the information in one centralized platform, run periodic backups and make automated reports.
 
-# Requirements
+### Requirements
 
 `# cd faraday`<br>
 `/faraday# cat requirements_server.txt`
@@ -14,7 +12,7 @@ python-docx==0.7.6<br>
 six==1.9.0<br>
 matplotlib==1.4.2<br>
 
-# Start-up Configuration
+### Start-up Configuration
 
 To begin the initial setup the user needs to run the executable **./setup_server.sh**
 
@@ -37,7 +35,7 @@ To begin the initial setup the user needs to run the executable **./setup_server
 `[+] Faraday server is full configured`
 
 
-# Restore the CouchDB user administrator
+### Restore the CouchDB user administrator
 
 It is possible to restore the database's users using the following script:
 
