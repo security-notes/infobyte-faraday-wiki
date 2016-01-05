@@ -11,6 +11,7 @@ There are three kinds of plugins available for Faraday:
 
 If you think your favorite tool is missing, [send us your request!](https://github.com/infobyte/faraday/issues/new)
 
+* [Immunity Canvas](http://www.immunityinc.com/products/canvas/)
 * [Retina] (http://www.beyondtrust.com/Products/RetinaNetworkSecurityScanner/) (REPORT) (XML) 
 * [Openvas](https://twitter.com/openvas) (REPORT) (XML) 
 * [BeEF](https://twitter.com/beefproject) (API)
