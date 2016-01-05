@@ -10,7 +10,7 @@
  * [[Chat and Communication]]
  * [[Executive Report]]
  * [CSV Exporting & Importing](https://github.com/infobyte/faraday/wiki/Exporting-the-information) 
- * [[Filter GUI]]
+ * [[Filter GUI WEB]]
 * [[Demos]]
 * [[Architecture]]
 * [Plugins](https://github.com/infobyte/faraday/wiki/Plugin-List)
