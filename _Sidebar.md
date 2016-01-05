@@ -21,6 +21,7 @@
  * [[BeEF]]
  * [[Evilgrade]]
  * [[Nessus]]
+ * [[Faraday Plugin]]
 * **Development**
  * [[Basic Plugin Development]]
  * [[APIs]]
