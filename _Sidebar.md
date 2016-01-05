@@ -1,3 +1,4 @@
+* [About](https://github.com/infobyte/faraday/wiki)
 * [[Installation]]
  * [[CouchDB]]
  * [[Vulnerabilities Database]]
