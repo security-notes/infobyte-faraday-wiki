@@ -6,13 +6,14 @@
 * [[Updates]]
 * [[Usage]]
  * [[Web UI]]
+ * [[Filter GUI WEB]]
  * [[Tag Use]]
  * [[Manage Workspaces]]
  * [[Manage Users]]
  * [[Chat and Communication]]
  * [[Executive Report]]
+ * [[Bug bounties]]
  * [CSV Exporting & Importing](https://github.com/infobyte/faraday/wiki/Exporting-the-information) 
- * [[Filter GUI WEB]]
 * [[Demos]]
 * [[Architecture]]
 * [Plugins](https://github.com/infobyte/faraday/wiki/Plugin-List)
