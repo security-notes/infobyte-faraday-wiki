@@ -33,6 +33,24 @@ No manual imports needed but supported. Just drop your fresh generated reports i
 
 Faraday will parse your reports and upload the information extracted from them.
 
+## ZSH web console
+
+[- Commercial version -](https://www.faradaysec.com/#download)
+
+It's also possible to use the ZSH interface inside your web browser. To do this, fist you need to install butterfly:
+```
+$ pip install --user butterfly
+```
+NOTE: If you have both python2 and python3 in your system, it's better to use pip2 instead of pip.
+
+Now, run butterfly:
+```
+$ butterfly.server.py --unsecure --shell=<path/of/faraday/>faraday-terminal.zsh
+```
+NOTE: Of course, you need to change the path so it points to the faraday-terminal.zsh file, inside your faraday folder.
+
+The idea of the webshell is to be able to do actions directly from the web using ZSH as a console. You would be connected to your own shell (listening in loopback interface). Remember that you alse have to run Faraday QT or Faraday —gui=nogui so that the terminal for ZSH functions properly.
+
 #Features#
 ##Database
 By default Faraday uses  a local file database. If you like to synchronize with others users you have to configure [CouchDB](CouchDB) to share information in real time.  
