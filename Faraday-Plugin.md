@@ -24,11 +24,10 @@ Faraday comes with some presets for bulk actions such as object removal, etc. Th
 * delAllVulnsWith.py
 * getAllIpsNotServices.py
 
-A usage example:
+For example, getting all IPs in Host Tree to run nmap becomes a simple task:
 
 ```
 $ cd ~/.faraday/bin/
-$ #Get all ip of HostTree
 $ ./fplugin -f getAllIps.py > allhost.txt
 $ nmap -i allhost.txt
 ```
