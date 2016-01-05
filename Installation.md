@@ -136,3 +136,32 @@ and in another terminal run:
 $ cd faraday-dev
 $ ./faraday-terminal.zsh
 ```
+
+### Docker
+##### Starting up Faraday
+
+Run:
+
+```
+# docker run -t -i infobyte/faraday /root/run.sh
+```
+
+This command runs the container with Faraday and CouchDB using a test Workspace called "workspace". Inside, Faraday is started with **./faraday.py -gui=no-gui --update** which means without a graphic environment and checking for  [[updates]].
+
+Now to obtain the container's IP address run:
+
+```
+docker inspect $(docker ps -lq) | grep \"IPAddress
+```
+
+For the purpose of this guide lets use **X.X.X.X**.
+
+##### Web UI
+Direct the browser to http://X.X.X.X/reports/_design/reports/index.html
+
+##### ZSH
+```
+ssh root@X.X.X.X
+cd faraday/
+./faraday-terminal.zsh
+```
