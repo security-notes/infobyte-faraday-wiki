@@ -1,6 +1,7 @@
 ### Requirements
 
-Modern Linux or OSX. Current tests include Debian, Ubuntu, Kali, Backtrack and OSX Maverick 10.9.2.
+Modern Linux or [OSX](#osx). Current tests include Debian, Ubuntu, Kali, Backtrack and OSX Maverick 10.9.2.
+Also you can use [Docker](#docker).
 
 And the following packages:
 
@@ -33,6 +34,7 @@ $ yaourt -S python2-whoosh pyqt3 python2-mockito python2-couchdbkit python2-flas
 
 Now you can proceed to [install Faraday](#install).
 
+<a name="osx"></a>
 ### OSX
 
 Tested on OSX Maverick 10.9.2.
@@ -137,6 +139,7 @@ $ cd faraday-dev
 $ ./faraday-terminal.zsh
 ```
 
+<a name="docker"></a>
 ### Docker
 ##### Starting up Faraday
 
