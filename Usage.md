@@ -51,6 +51,8 @@ NOTE: Of course, you need to change the path so it points to the faraday-termina
 
 The idea of the webshell is to be able to do actions directly from the web using ZSH as a console. You would be connected to your own shell (listening in loopback interface). Remember that you alse have to run Faraday QT or Faraday —gui=nogui so that the terminal for ZSH functions properly.
 
+Then, open a new tab from the webshell icon in the web UI's sidebar, and you should see the zsh shell up and running!
+
 #Features#
 ##Database
 By default Faraday uses  a local file database. If you like to synchronize with others users you have to configure [CouchDB](CouchDB) to share information in real time.  
