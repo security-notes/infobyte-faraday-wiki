@@ -14,6 +14,6 @@ Currently we support the following  sites:
 * Western Union
 * Yahoo
 
-The packages are available via Github in their [own public repository](https://github.com/infobyte/faraday_bugbounty/).
+The packages are available via Github in their [own public repository](https://github.com/infobyte/faraday_bugbounty/). Just download and copy to **/var/lib/couchdb**.
 
 Also, our Web UI allows you to pre-calculate how much a Workspace would be worth for a program and see the vulnerabilities distribution in an [interactive visualization](https://github.com/infobyte/faraday/wiki/Web-UI#workspace-worth).
