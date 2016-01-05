@@ -20,7 +20,6 @@
  * [[BeEF]]
  * [[Evilgrade]]
  * [[Nessus]]
-* [[Community]]
 * **Development**
  * [[Basic Plugin Development]]
  * [[APIs]]
@@ -29,3 +28,4 @@
 * [[Version comparison]]
 * [[Faraday Awards]]
 * [[FAQ]]
+* [[Contact us]]
