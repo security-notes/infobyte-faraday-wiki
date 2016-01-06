@@ -201,7 +201,7 @@ In order to do this copy the report to **$HOME/.faraday/report/[workspace_name]*
 
 We can do this by copying the reports to the containers via sFTP or we can use a file sharing function between the host server and containers.
 
-
+Read more about Faraday Docker in the [release notes](http://blog.infobytesec.com/2015/08/official-faraday-docker-images.html).
 
 
 <a name="chef"></a>
