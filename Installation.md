@@ -169,6 +169,34 @@ cd faraday/
 ./faraday-terminal.zsh
 ```
 
+##### GUI QT
+
+In order to use this interface run:
+
+```
+# docker run infobyte/faraday /root/run_service.sh
+```
+
+And now in a different console, get the IP address:
+```
+# docker inspect $(docker ps -lq) | grep \"IPAddress
+```
+
+Again, for the purpose of this guide lets use **X.X.X.X**.
+
+```
+# ssh -X root@X.X.X.X
+# cd faraday/
+# ./faraday.py
+```
+
+Keep in mind that all tools must be installed inside the Docker container in order to work.
+
+##### Import Reports
+
+A different way to upload data into Faraday is importing a Report from other tools. Read more about [plugin types](https://github.com/infobyte/faraday/wiki/Plugin-List#types).
+
+<a name="chef"></a>
 ### Chef
 
 If you want to deploy Faraday using Chef, Sliim made a cookbook for it! You can find the repository here:
