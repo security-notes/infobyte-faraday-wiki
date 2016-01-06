@@ -173,4 +173,4 @@ cd faraday/
 
 If you want to deploy Faraday using Chef, Sliim made a cookbook for it! You can find the repository here:
 
-[](https://github.com/sliim-cookbooks/faraday/)
+[Faraday cookbook](https://github.com/sliim-cookbooks/faraday/)
