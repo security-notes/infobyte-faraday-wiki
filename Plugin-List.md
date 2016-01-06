@@ -3,6 +3,7 @@ Supported Tools:
 Right now faraday has more that 40+ supported tools, among them you will find: 
 ![](https://raw.github.com/wiki/infobyte/faraday/images/plugins/Plugins.png)
 
+<a name="types"></a>
 There are three kinds of plugins available for Faraday:
 
  * CONSOLE - Plugins that intercept commands - these are fired directly when a command is detected in the console.
