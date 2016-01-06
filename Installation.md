@@ -168,3 +168,9 @@ ssh root@X.X.X.X
 cd faraday/
 ./faraday-terminal.zsh
 ```
+
+### Chef
+
+If you want to deploy Faraday using Chef, Sliim made a cookbook for it! You can find the repository here:
+
+[](https://github.com/sliim-cookbooks/faraday/)
