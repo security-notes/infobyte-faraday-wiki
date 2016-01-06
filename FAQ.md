@@ -52,6 +52,7 @@ If so, read our documentation on how to setup Faraday to work with CouchDB [usin
 
 Then run Faraday and point your browser to http://127.0.0.1:5984/reports/_design/reports/index.html replacing **127.0.0.1:5984** with your CouchDB URI.
 
+<a name="import"></a>
 ### Faraday is not importing my report
 First let's make sure there is a Plugin to parse it so make sure your tool is listed in our [[Plugin List]]. Not there? [Code your own](https://github.com/infobyte/faraday/wiki/Basic-plugin-development) or [ask us to do it](https://github.com/infobyte/faraday/issues).
 
