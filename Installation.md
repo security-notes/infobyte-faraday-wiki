@@ -1,8 +1,12 @@
 ### Requirements
 
-Modern Linux (Tested Debian / Ubuntu  * / Kali / Backtrack)
-* Python 2.6.x and 2.7.x
-* Qt3
+Modern Linux or [OSX](#osx). Current tests include Debian, Ubuntu, Kali, Backtrack and OSX Maverick 10.9.2.
+Also you can use [Docker](#docker).
+
+And the following packages:
+
+<a name="packages"></a>* Python 2.6.x or 2.7.x
+* Qt3 (only Linux)
 * CouchDB >= 1.2.0  
 * The following python libs:
   * mockito 
@@ -13,9 +17,8 @@ Modern Linux (Tested Debian / Ubuntu  * / Kali / Backtrack)
   * IPy
   * requests
 
-Download the latest tarball by clicking [here] (https://github.com/infobyte/faraday/tarball/master) 
+<a name="install"></a>Download the [latest tarball](https://github.com/infobyte/faraday/tarball/master) or clone the [Faraday Git Project](https://github.com/infobyte/faraday repository):
 
-Preferably, you can download faraday by cloning the [Git] (https://github.com/infobyte/faraday repository):
 ```
 $ git clone https://github.com/infobyte/faraday.git faraday-dev
 $ cd faraday-dev
@@ -23,106 +26,145 @@ $ ./install.sh
 ```
 ### ArchLinux
 
-To install Faraday on ArchLinux, you first need an AUR wrapper to easily install user-contributed packages. We will use yaourt, that you can get here : http://archlinux.fr/yaourt-en
+Before [installing Faraday](#install) you will need to get some user-contributed packages. In order to do this quickly we need an [AUR](https://wiki.archlinux.org/index.php/Arch_User_Repository) wrapper, in this case we will use [Yaourt](http://archlinux.fr/yaourt-en). After installing Yaourt run:
 
-Then, use :
 ```
 $ yaourt -S python2-whoosh pyqt3 python2-mockito python2-couchdbkit python2-flask python2-restkit python2-ipy python2-requests python2-tornado python2-dateutil python2-colorama python2-pip
 ```
-To install all the required dependencies.
-After this, you can download faraday, and run it (./faraday.py).
 
+Now you can proceed to [install Faraday](#install).
+
+<a name="osx"></a>
 ### OSX
 
-OSX support, tried on latest OSX Maverick 10.9.2
+Tested on OSX Maverick 10.9.2.
 
-* Xcode 
-You just need to go to AppStore and install Xcode. If you run brew install first, it'll ask to install Xcode there too.
+##### Xcode 
+
+Go to AppStore and install Xcode. If you run **brew install** first, it'll ask to install Xcode too.
 
 ![](https://raw.github.com/wiki/infobyte/faraday/images/xcode.png)
 
+Keep in mind that Xcode is 2+ Gb so it can take a while to download. After this is done go to **Preferences** and install command line tools or open a terminal console and run:
 
-After you install Xcode (it will take a while since is 2+ Gb) you need to go to preferences and install command line tools or just run this on the terminal console:
+```
+xcode-select --install
+```
 
-`xcode-select --install`
-
-You will see:
+A dialog box will appear asking to install additional tools as shown in the image below. Click install.
 
 ![](https://raw.github.com/wiki/infobyte/faraday/images/confirm.png)
 
 
-**IMPORTANT NOTE:** Before contining with the rest of this guide, you NEED to open Xcode at least one time. This is for accept the License Agreement. Some of the dependencies will fail to install without accepting it.
+**Important!** Before proceeding with the rest of this guide you need to **open Xcode at least once** in order to accept the License Agreement. Please make sure you do that or else some of the dependencies will fail to install.
 
-* Brew (http://brew.sh)
-To install brew just run this line:
+##### Brew
 
-`ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`
+To install [Brew](http://brew.sh) run:
 
-* Python & pip
-To install latest python version we are going to use brew
+```
+ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+```
 
-`brew install python`
+##### Python & pip
 
-Note: Remember, brew doesn't like to run as root, so don't sudo it.
+Run:
 
-* Git via Brew
+```
+brew install python
+```
 
-We need to install git in order to get faraday repository from github:
+Remember never to run brew as root.
 
-`brew install git`
+More info about [Python in OSX](http://docs.python-guide.org/en/latest/starting/install/osx/).
 
-* Getting faraday from github repository
+##### Git
 
-`git clone https://github.com/infobyte/faraday.git faraday-dev`
+We need Git in order to get Faraday from Github. Run:
 
-* Python libraries via PIP
+```
+brew install git
+```
 
-Installing python via brew will also install pip. We are going to use it to install Faraday's requirements.
+##### Faraday
+
+Run:
+
+```
+git clone https://github.com/infobyte/faraday.git faraday-dev
+```
+
+##### Python libraries via PIP
+
+Installing Python via brew will also install pip. Now we need to use pip to install the [requirements](#packages):
 
 `pip install -r requirements.txt`
 
 If you have issues building psycopg2 (needed for Metasploit Online Module)
 
-`brew install postgresql`
+```
+brew install postgresql
+pip install psycopg2
+```
 
-`pip install psycopg2`
+##### CouchDB 
 
-* CouchDB 
-
-There are two options for this package:
-
-
-[Prebuild Package](http://www.apache.org/dyn/closer.cgi?path=/couchdb/binary/mac/1.6.1/Apache-CouchDB-1.6.1.zip)
-
-Or
-
-via brew:
+There are two options for this package; [Prebuild Package](http://www.apache.org/dyn/closer.cgi?path=/couchdb/binary/mac/1.6.1/Apache-CouchDB-1.6.1.zip) or use brew:
 
 `brew install couchdb`
 
-On Mavericks 10.9.2
+On Maverick 10.9.2:
 
 `sudo ARCHFLAGS=-Wno-error=unused-command-line-argument-hard-error-in-future pip install -r requirements.txt`
 
-* ZSH
+##### ZSH
 
-Faraday need ZSH to connect to the server. To install ZSH just run:
+Faraday needs [ZSH](http://www.zsh.org/) to connect to the server. To install it run:
 
 `brew install zsh`
 
-* Going for it!
+##### Going for it!
 
-You are almost there! You just need to start the faraday's server like this:
+Almost there! Start Faraday's server:
 
 ```
 $ cd faraday-dev
 $ ./faraday.py --gui=nogui
 ```
 
-and in other terminal run:
+and in another terminal run:
 
 ```
 $ cd faraday-dev
 $ ./faraday-terminal.zsh
 ```
-You should see ">>> WELCOME TO FARADAY".
+
+<a name="docker"></a>
+### Docker
+##### Starting up Faraday
+
+Run:
+
+```
+# docker run -t -i infobyte/faraday /root/run.sh
+```
+
+This command runs the container with Faraday and CouchDB using a test Workspace called "workspace". Inside, Faraday is started with **./faraday.py -gui=no-gui --update** which means without a graphic environment and checking for  [[updates]].
+
+Now to obtain the container's IP address run:
+
+```
+docker inspect $(docker ps -lq) | grep \"IPAddress
+```
+
+For the purpose of this guide lets use **X.X.X.X**.
+
+##### Web UI
+Direct the browser to http://X.X.X.X/reports/_design/reports/index.html
+
+##### ZSH
+```
+ssh root@X.X.X.X
+cd faraday/
+./faraday-terminal.zsh
+```

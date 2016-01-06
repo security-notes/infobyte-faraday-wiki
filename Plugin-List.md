@@ -54,3 +54,9 @@ If you think your favorite tool is missing, [send us your request!](https://gith
 * [Shodan](https://twitter.com/shodanhq) (API)
 * [evilgrade](http://twitter.com/infobytesec) (API)
 * [masscan](https://twitter.com/ErrataRob) (REPORT, CONSOLE) (XML)
+* Dig
+* Traceroute
+* [Immunity Canvas](http://www.immunityinc.com/products/canvas/)
+* [Peeping Tom](https://bitbucket.org/LaNMaSteR53/peepingtom/)
+* [SSHdefaultscan](https://github.com/atarantini/sshdefaultscan)
+* [PasteAnalyzer](https://github.com/Ezequieltbh/pasteAnalyzer)

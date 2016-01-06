@@ -22,7 +22,7 @@ Faraday Community Version has simple visualization (Include summary information)
 
 ![](https://raw.githubusercontent.com/wiki/infobyte/faraday/images/faraday_new.png)
 
-**Top Services View:**
+**Top Services View**
 
 ![](https://raw.github.com/wiki/infobyte/faraday/images/GUI_Dashboard_new_Services.png)
 
@@ -52,7 +52,7 @@ Then your Workspace will be worth
 
 The length of the colored bars shows how much that severity represents in the final worth according to how many of those are present in the current workspace.
 
-
+Learn more about using Faraday for [[Bug bounties]].
 
 ## Faraday Professional & Corporate
 **Faraday Professional & Corporate** has advance visualization (including Tags, Pentest comparison, Pentester ranking, etc)

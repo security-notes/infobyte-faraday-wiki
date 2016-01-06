@@ -1,14 +1,18 @@
+* [About](https://github.com/infobyte/faraday/wiki)
 * [[Installation]]
  * [[CouchDB]]
  * [[Vulnerabilities Database]]
  * [[Faraday Server]]
+* [[Updates]]
 * [[Usage]]
  * [[Web UI]]
+ * [[Filter GUI WEB]]
  * [[Tag Use]]
  * [[Manage Workspaces]]
  * [[Manage Users]]
  * [[Chat and Communication]]
  * [[Executive Report]]
+ * [[Bug bounties]]
  * [CSV Exporting & Importing](https://github.com/infobyte/faraday/wiki/Exporting-the-information) 
 * [[Demos]]
 * [[Architecture]]
@@ -18,7 +22,7 @@
  * [[BeEF]]
  * [[Evilgrade]]
  * [[Nessus]]
-* [[Community]]
+ * [[Faraday Plugin]]
 * **Development**
  * [[Basic Plugin Development]]
  * [[APIs]]
@@ -27,3 +31,4 @@
 * [[Version comparison]]
 * [[Faraday Awards]]
 * [[FAQ]]
+* [[Contact us]]

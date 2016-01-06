@@ -3,14 +3,14 @@ Faraday has 3 different ways to interact with information:
 * [ZSH UI] (https://github.com/infobyte/faraday/wiki/Usage#running-with-zsh-ui)
 * [Web UI] (https://github.com/infobyte/faraday/wiki/Web UI)
 
-#GUI QT:
+### GUI QT
 
 Faraday main window is simple:  
 ![](https://raw.github.com/wiki/infobyte/faraday/images/Faraday-Mainwindow.png)
 
 Structured in panes: Main Console, HostTree, Log Console, Item Info & Editing panes.
 
-## GUI QT with authentication
+#### GUI QT with authentication
 [- Commercial version -](https://www.faradaysec.com/#download)
 
 If you are able to run Faraday QT with credentials add a login option:
@@ -21,19 +21,19 @@ If you are able to run Faraday QT with credentials add a login option:
 
 Every command that you execute is intercepted and a handler is invoked in order to transparently import the newly generated information by the tool in the context of the pentest like ip addresses, hostnames, services, vulnerabilities, websites, notes, etc.
 
-#Running with ZSH UI
+### Running with ZSH UI
 
 You can even run Faraday in detached mode connecting with a ZSH terminal to it:
 
 ![](https://raw.github.com/wiki/infobyte/faraday/images/no-ui.png)
 ![](https://raw.github.com/wiki/infobyte/faraday/images/no-ui2.png)
 
-No manual imports needed but supported. Just drop your fresh generated reports in :
+No manual imports needed but supported. Just drop your fresh generated reports in:
     $ ~/.faraday/report/workspace_name
 
 Faraday will parse your reports and upload the information extracted from them.
 
-## ZSH web console
+#### ZSH web console
 
 [- Commercial version -](https://www.faradaysec.com/#download)
 
@@ -45,13 +45,16 @@ NOTE: If you have both python2 and python3 in your system, it's better to use pi
 
 Now, run butterfly:
 ```
-$ butterfly.server.py --unsecure --shell=<path/of/faraday/>faraday-terminal.zsh
+$ butterfly.server.py --unsecure --shell=/bin/zsh --cmd="<path/of/faraday/>faraday-terminal.zsh [host] [port]"
 ```
-NOTE: Of course, you need to change the path so it points to the faraday-terminal.zsh file, inside your faraday folder.
 
-The idea of the webshell is to be able to do actions directly from the web using ZSH as a console. You would be connected to your own shell (listening in loopback interface). Remember that you alse have to run Faraday QT or Faraday —gui=nogui so that the terminal for ZSH functions properly.
+Of course, you need to set the path of the folder in which you have faraday (the faraday-terminal.zsh script should be in the root of that folder). Also, You can pass the host and port as arguments to that script, in case you've changed the Faraday's REST API parameters (remember that you have to run Faraday QT or Faraday —gui=nogui so that the terminal for ZSH functions properly)
+
+The idea of the webshell is to be able to do actions directly from the web using ZSH as a console. You would be connected to your own shell (listening in loopback interface). 
 
 Then, open a new tab from the webshell icon in the web UI's sidebar, and you should see the zsh shell up and running!
+
+![](https://raw.github.com/wiki/infobyte/faraday/images/butterfly_webshell.png)
 
 #Features#
 ##Database
@@ -89,15 +92,9 @@ $ ./fplugin -e 'for h in api.__model_controller.getAllHosts(): print h.name' > a
 $ nmap -i allhost.txt
 ```
 
-You can use presets actions using the included files (delAllHost.py, delAllServiceClosed.py, getAllCreds.py, getAllHosts.py, getAllIpsInterfaces.py, getAllIps.py, getAllOs.py, getAllTelnet.py, getAllVnc.py, getAllVulnsCSV.py, getAllWebservers.py, etc) for example: 
+Read more about [[Faraday Plugin]].
 
-```
-$ cd ~/.faraday/bin/
-$ #Get all ip of HostTree
-$ ./fplugin -f getAllIps.py > allhost.txt
-$ nmap -i allhost.txt
-```
-##Notifications
+## Notifications
 Updating objects on faraday now results in a beautiful notification in the QT ui.
 ![](https://raw.github.com/wiki/infobyte/faraday/images/faraday_notifications.png)
 ![](https://raw.github.com/wiki/infobyte/faraday/images/faraday_notifications_more.png)
@@ -105,5 +102,5 @@ Updating objects on faraday now results in a beautiful notification in the QT ui
 ### ZSH UI no-gui notifications
 ![](https://raw.githubusercontent.com/wiki/infobyte/faraday/images/faraday_gui_notifi.png)
 
-##CVS Exporting & Importing
+## CSV Exporting & Importing
 [More information](Exporting-the-information)

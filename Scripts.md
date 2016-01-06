@@ -1,4 +1,4 @@
-## # SSLCheck
+### SSLCheck
 
 ![](https://raw.githubusercontent.com/wiki/infobyte/faraday/images/faraday_qt.png)
 
@@ -16,7 +16,7 @@ Also, you can quickly run the command for several targets and domains, the targe
 
 ./sslcheck.py 192.168.10.254 facebook.com www.google.com 192.168.10.168
 
-## # Shodan
+### Shodan
 
 It is a command line tool to get information from shodan
 
