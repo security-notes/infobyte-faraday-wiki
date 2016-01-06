@@ -194,7 +194,17 @@ Keep in mind that all tools must be installed inside the Docker container in ord
 
 ##### Import Reports
 
-A different way to upload data into Faraday is importing a Report from other tools. Read more about [plugin types](https://github.com/infobyte/faraday/wiki/Plugin-List#types).
+A different way to upload data into Faraday is importing a Report from other tools using a Plugin. Read more about [plugin types](https://github.com/infobyte/faraday/wiki/Plugin-List#types).
+
+In order to do this copy the report to **$HOME/.faraday/report/[workspace_name]** replacing [workspace_name] with the name of your Workspace. Once it has been processed and incorporated to the database the report is copied to **$HOME/.faraday/report/[workspace_name]/process**.
+
+We can do this by copying the reports to the containers via sFTP or we can use a file sharing function between the host server and containers.
+
+```
+# mkdir -p /tmp/workspace/process 
+```
+
+
 
 <a name="chef"></a>
 ### Chef
