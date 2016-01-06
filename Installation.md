@@ -5,7 +5,8 @@ Also you can use [Docker](#docker).
 
 And the following packages:
 
-<a name="packages"></a>* Python 2.6.x or 2.7.x
+<a name="packages"></a>
+* Python 2.6.x or 2.7.x
 * Qt3 (only Linux)
 * CouchDB >= 1.2.0  
 * The following python libs:
