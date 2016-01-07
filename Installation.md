@@ -1,6 +1,6 @@
 ### Requirements
 
-Modern Linux or [OSX](#osx). Current tests include Debian, Ubuntu, Kali, Backtrack and OSX Maverick 10.9.2.
+Modern Linux or OSX. Current tests include [Debian](#debian), [Ubuntu](#debian), [Kali](#install), [Backtrack](#install) and [OSX Maverick 10.9.2](#osx).
 Also you can use [Docker](#docker).
 
 And the following packages:
