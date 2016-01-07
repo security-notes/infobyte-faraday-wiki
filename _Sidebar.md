@@ -9,6 +9,7 @@
  * [[Filter GUI WEB]]
  * [[Tag Use]]
  * [[Manage Workspaces]]
+ * [[Workspace replication]]
  * [[Manage Users]]
  * [[Chat and Communication]]
  * [[Executive Report]]
