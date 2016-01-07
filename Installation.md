@@ -2,7 +2,7 @@
 
 Modern Linux or OSX. Current tests include [Debian](#debian), [Ubuntu](#debian), [Kali](#install), [Backtrack](#install) and [OSX Maverick 10.9.2](#osx).
 
-If instead of installing you want to take a quick look at Faraday you can also you can use [Docker](#docker).
+If instead of installing you want to take a quick look at Faraday you can also use [Docker](#docker).
 
 And the following packages:
 
