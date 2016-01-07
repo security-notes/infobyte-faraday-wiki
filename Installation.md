@@ -32,6 +32,17 @@ $ ./install.sh
 $ ./faraday.py
 ```
 
+### Kali
+
+To install Faraday with APT:
+
+```
+apt-get install python-faraday
+```
+
+Due to Kali's package updates this may not be the last version. If you want the latest updates use the [Debian install steps](#debian).
+
+
 <a name="arch"></a>
 ### ArchLinux
 
