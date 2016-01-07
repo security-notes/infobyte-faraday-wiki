@@ -20,7 +20,7 @@ Current tests include [Debian](#debian), [Ubuntu](#debian), [Kali](#kali), [Back
 If instead of installing you want to take a quick look at Faraday you can also use [Docker](#docker).
 
 <a name="debian"></a>
-### Debian and Ubuntu
+### Debian, Ubuntu, Backtrack
 
 <a name="install"></a>
 Download the [latest tarball](https://github.com/infobyte/faraday/tarball/master) or clone the [Faraday Git Project](https://github.com/infobyte/faraday repository):
