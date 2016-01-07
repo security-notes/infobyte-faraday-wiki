@@ -18,13 +18,15 @@ And the following packages:
   * IPy
   * requests
 
-<a name="install"></a>Download the [latest tarball](https://github.com/infobyte/faraday/tarball/master) or clone the [Faraday Git Project](https://github.com/infobyte/faraday repository):
+<a name="install"></a>
+Download the [latest tarball](https://github.com/infobyte/faraday/tarball/master) or clone the [Faraday Git Project](https://github.com/infobyte/faraday repository):
 
 ```
 $ git clone https://github.com/infobyte/faraday.git faraday-dev
 $ cd faraday-dev
 $ ./install.sh
 ```
+
 ### ArchLinux
 
 Before [installing Faraday](#install) you will need to get some user-contributed packages. In order to do this quickly we need an [AUR](https://wiki.archlinux.org/index.php/Arch_User_Repository) wrapper, in this case we will use [Yaourt](http://archlinux.fr/yaourt-en). After installing Yaourt run:
@@ -193,13 +195,35 @@ Again, for the purpose of this guide lets use **X.X.X.X**.
 
 Keep in mind that all tools must be installed inside the Docker container in order to work.
 
-##### Import Reports
+##### Importing Reports
 
 A different way to upload data into Faraday is importing a Report from other tools using a Plugin. Read more about [plugin types](https://github.com/infobyte/faraday/wiki/Plugin-List#types).
 
 In order to do this copy the report to **$HOME/.faraday/report/[workspace_name]** replacing [workspace_name] with the name of your Workspace. Once it has been processed and incorporated to the database the report is copied to **$HOME/.faraday/report/[workspace_name]/process**.
 
 We can do this by copying the reports to the containers via sFTP or we can use a file sharing function between the host server and containers.
+
+For example:
+
+```
+# mkdir -p /tmp/workspace/process
+# cd /root/.faraday/report/workspace/
+# docker run -t -i -v /tmp/workspace/:/root/.faraday/report/workspace/ infobyte/faraday /root/run.sh
+```
+
+Now we can use the tools inside the host server and this is going to be interpreted as if it were inside the container for Faraday in the Workspace called "workspace".
+
+To run nmap:
+
+```
+# nmap localhost -xO /tmp/workspace/output_nmap.xml
+```
+
+Import a Report:
+
+```
+# cp /root/reports/nessusscan.nessus /tmp/workspace/
+```
 
 Read more about Faraday Docker in the [release notes](http://blog.infobytesec.com/2015/08/official-faraday-docker-images.html).
 
