@@ -30,8 +30,6 @@ From the user window, click **New** and fill out the form.
 
 From the user window, select the user and click **Edit**.
 
-![](https://raw.github.com/wiki/infobyte/faraday/images/faraday_users_prevedit.png)
-
 ![](https://raw.github.com/wiki/infobyte/faraday/images/faraday_users_edit.png)
 
 # Eliminating Users
