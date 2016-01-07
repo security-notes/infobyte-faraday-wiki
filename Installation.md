@@ -1,6 +1,6 @@
 ### Requirements
 
-Modern Linux or OSX and the following packages:
+Modern Linux or OSX, and the following packages:
 
 <a name="packages"></a>
 * Python 2.6.x or 2.7.x
