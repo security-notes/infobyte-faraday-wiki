@@ -16,6 +16,9 @@ From the workspaces window click on **New** and complete
 
 * Workspace name
 * Description (optional)
+* Owner
+* Start Date / End Date
+* Scope of workspace
 * Users that can access the workspace
 
 ![](https://raw.github.com/wiki/infobyte/faraday/images/faraday_workspace_new.png)
