@@ -18,7 +18,7 @@ Faraday is to Penetration Testing what an IDE is to Development. The main purpos
 ### Is Faraday free?
 Yes, we have a community version which is totally free, you can [download it from Github](https://github.com/infobyte/faraday/archive/master.zip).
 
-We also develop two [comercial versions](https://www.faradaysec.com/#download).
+We also develop two [commercial versions](https://www.faradaysec.com/#download).
 
 ### Which platforms are supported?
 ArchAssault, Archlinux, Debian, Kali, OSX, Debian. You can find a detailed explanation [here](https://github.com/infobyte/faraday/wiki/Installation).
