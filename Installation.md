@@ -144,6 +144,9 @@ $ ./faraday-terminal.zsh
 
 <a name="docker"></a>
 ### Docker
+
+Docker is great if you wish to give Faraday a try without actually having to install it. In this guide you will find all you need to run Faraday in a Docker container.
+
 ##### Starting up Faraday
 
 Run:
@@ -224,9 +227,6 @@ Import a Report:
 ```
 # cp /root/reports/nessusscan.nessus /tmp/workspace/
 ```
-
-Read more about Faraday Docker in the [release notes](http://blog.infobytesec.com/2015/08/official-faraday-docker-images.html).
-
 
 <a name="chef"></a>
 ### Chef
