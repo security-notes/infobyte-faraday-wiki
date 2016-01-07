@@ -1,10 +1,6 @@
 ### Requirements
 
-Modern Linux or OSX. Current tests include [Debian](#debian), [Ubuntu](#debian), [Kali](#kali), [Backtrack](#install) and [OSX Maverick 10.9.2](#osx).
-
-If instead of installing you want to take a quick look at Faraday you can also use [Docker](#docker).
-
-And the following packages:
+Modern Linux or OSX and the following packages:
 
 <a name="packages"></a>
 * Python 2.6.x or 2.7.x
@@ -18,6 +14,10 @@ And the following packages:
   * psycopg2
   * IPy
   * requests
+
+Current tests include [Debian](#debian), [Ubuntu](#debian), [Kali](#kali), [Backtrack](#install) and [OSX Maverick 10.9.2](#osx).
+
+If instead of installing you want to take a quick look at Faraday you can also use [Docker](#docker).
 
 <a name="debian"></a>
 ### Debian and Ubuntu
