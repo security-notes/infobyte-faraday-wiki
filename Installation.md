@@ -1,6 +1,6 @@
 ### Requirements
 
-Modern Linux or OSX. Current tests include [Debian](#debian), [Ubuntu](#debian), [Kali](#install), [Backtrack](#install) and [OSX Maverick 10.9.2](#osx).
+Modern Linux or OSX. Current tests include [Debian](#debian), [Ubuntu](#debian), [Kali](#kali), [Backtrack](#install) and [OSX Maverick 10.9.2](#osx).
 
 If instead of installing you want to take a quick look at Faraday you can also use [Docker](#docker).
 
@@ -32,6 +32,7 @@ $ ./install.sh
 $ ./faraday.py
 ```
 
+<a name="kali"></a>
 ### Kali
 
 To install Faraday with APT:
