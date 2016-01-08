@@ -6,9 +6,9 @@ Right now faraday has more that 40+ supported tools, among them you will find:
 <a name="types"></a>
 There are three kinds of plugins available for Faraday:
 
- * CONSOLE - Plugins that intercept commands - these are fired directly when a command is detected in the console.
- * REPORT - Plugins that import file reports - a report must be copied to $HOME/.faraday/report/[workspacename]. Faraday will detect the report, process it and add it to the HostTree.
- * API - Plugin connectors or online (BeEF, Metasploit, Burp) connect directly with external APIs or databases, or connect with Faraday's RPC API.
+ * CONSOLE - Plugins that intercept commands, fired directly when a command is detected in the console. These are transparent to you and no additional action on your part is needed.
+ * REPORT - Plugins that import file reports. You have to copy the report to **$HOME/.faraday/report/[workspacename]** (replacing **[workspacename]** with the actual name of your Workspace) and Faraday will automatically detect, process and add it to the HostTree.
+ * API - Plugin connectors or online (BeEF, Metasploit, Burp), these connect to external APIs or databases, or talk directly to Faraday's RPC API.
 
 If you think your favorite tool is missing [code your own plugin](https://github.com/infobyte/faraday/wiki/Basic-plugin-development) or [ask us to do it](https://github.com/infobyte/faraday/issues/new)!
 
