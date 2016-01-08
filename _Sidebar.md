@@ -6,7 +6,6 @@
 * [[Updates]]
 * [[Usage]]
  * [[Web UI]]
- * [[Filter GUI WEB]]
  * [[Tag Use]]
  * [[Manage Workspaces]]
  * [[Workspace replication]]
