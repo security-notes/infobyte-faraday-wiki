@@ -1,7 +1,4 @@
-#### Supported Tools
-
-Right now faraday has more that 40+ supported tools, among them you will find: 
-![](https://raw.github.com/wiki/infobyte/faraday/images/plugins/Plugins.png)
+The main purpose of Faraday is to re-use the available tools in the community to take advantage of them in a multiuser way.
 
 <a name="types"></a>
 There are three kinds of plugins available for Faraday:
