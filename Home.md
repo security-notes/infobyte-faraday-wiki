@@ -57,6 +57,9 @@ $ ./faraday.py
    * https://www.blackhat.com/us-15/arsenal.html#faraday
    * http://blog.infobytesec.com/2015/08/blackhat-2015_24.html
 
+* Ekoparty Security Conference - 2014:
+   * https://www.youtube.com/watch?v=_j0T2S6Ppfo
+
 * Black Hat Arsenal - 2011
    * http://www.infobytesec.com/down/Faraday_BH2011_Arsenal.pdf
 
