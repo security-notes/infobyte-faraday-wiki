@@ -10,7 +10,7 @@ There are three kinds of plugins available for Faraday:
  * REPORT - Plugins that import file reports - a report must be copied to $HOME/.faraday/report/[workspacename]. Faraday will detect the report, process it and add it to the HostTree.
  * API - Plugin connectors or online (BeEF, Metasploit, Burp) connect directly with external APIs or databases, or connect with Faraday's RPC API.
 
-If you think your favorite tool is missing, [send us your request!](https://github.com/infobyte/faraday/issues/new)
+If you think your favorite tool is missing, [Code your own](https://github.com/infobyte/faraday/wiki/Basic-plugin-development) or [ask us to do it](https://github.com/infobyte/faraday/issues/new)!
 
 * [Retina] (http://www.beyondtrust.com/Products/RetinaNetworkSecurityScanner/) (REPORT) (XML) 
 * [Openvas](https://twitter.com/openvas) (REPORT) (XML) 
