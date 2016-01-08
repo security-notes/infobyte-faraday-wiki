@@ -57,6 +57,10 @@ $ ./faraday.py
    * https://www.blackhat.com/us-15/arsenal.html#faraday
    * http://blog.infobytesec.com/2015/08/blackhat-2015_24.html
 
+* RSA - 2015:
+   * http://www.rsaconference.com/events/us15/expo-sponsors/exhibitor-list/1782/infobyte-llc
+   * http://blog.infobytesec.com/2015/05/infobyte-en-la-rsa-2015.html
+
 * Ekoparty Security Conference - 2014:
    * https://www.youtube.com/watch?v=_j0T2S6Ppfo
 
