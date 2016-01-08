@@ -1,5 +1,5 @@
-Supported Tools:
----
+#### Supported Tools
+
 Right now faraday has more that 40+ supported tools, among them you will find: 
 ![](https://raw.github.com/wiki/infobyte/faraday/images/plugins/Plugins.png)
 
