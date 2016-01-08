@@ -36,6 +36,43 @@ $ ./install.sh
 $ ./faraday.py
 ```
 
+##Features
+
+### Workspaces
+Information is classified in **Workspace** units. Each Workspace maps into a pentest team's assignments containing all the intel discovered by that team.
+
+### IntelliSense
+Using CTRL+SPACE in the console for the different commands for example nikto CTRL+SPACE will show the nikto options, or you can use it to get ip or hostname which is in the HostTree for example $ 127.0[CTRL+SPACE] will complete to 127.0.0.1 if we have that ip in the HostTree
+
+### Conflicts
+If two plugins have different information for the same element it will generate a conflict that the user will have to resolve.  
+For example, **user1** incorporates host *127.0.0.1 OS:Linux* and **user2** incorporates *127.0.0.1 OS: Linux Ubuntu 13.10*. The [QT interface](https://github.com/infobyte/faraday/wiki/Usage#gui-qt) will show a number next to the name of the Workspace, this is the amount of conflicts that have to be resolved. To resolve, right-click and select "Resolve conflicts", then select the object you wish to keep and that's it!
+
+### Faraday plugin
+Using our plugin you can do different actions using the command line, for example:
+
+```
+$ cd ~/.faraday/bin/
+$ #Adding new hosts 
+$./fplugin -e 'for h in api.createAndAddHost("8.8.8.8","Linux")'
+$ #Get all ip of HostTree
+$ ./fplugin -e 'for h in api.__model_controller.getAllHosts(): print h.name' > allhost.txt
+$ nmap -i allhost.txt
+```
+
+Read more about the [[Faraday Plugin]].
+
+### Notifications
+Updating objects on faraday now results in a beautiful notification in the QT ui
+
+![](https://raw.github.com/wiki/infobyte/faraday/images/faraday_notifications.png)
+![](https://raw.github.com/wiki/infobyte/faraday/images/faraday_notifications_more.png)
+
+#### ZSH UI no-gui notifications
+![](https://raw.githubusercontent.com/wiki/infobyte/faraday/images/faraday_gui_notifi.png)
+
+### CSV Exporting & Importing
+[More information](Exporting-the-information)
 
 ## Links
 
