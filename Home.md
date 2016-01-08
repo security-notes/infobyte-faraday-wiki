@@ -14,7 +14,7 @@ To read about the latest features check out the [release notes](https://github.c
 
 ## Plugins list
 
-Right now faraday has more than [40+ supported tools](https://github.com/infobyte/faraday/wiki/Plugin-List), among them you will find: 
+Right now faraday has more than [40 supported tools](https://github.com/infobyte/faraday/wiki/Plugin-List), among them you will find: 
 ![](https://raw.github.com/wiki/infobyte/faraday/images/plugins/Plugins.png)
 
 ##Installation
