@@ -10,56 +10,34 @@ Once the data is loaded Faraday crunches it into different visualizations useful
 
 ![GUI - Web](https://raw.github.com/wiki/infobyte/faraday/images/GUI_Dashboard_new.png)
 
-Please read the [RELEASE notes](https://github.com/infobyte/faraday/blob/master/RELEASE.md)!
+To read about the latest features check out the [release notes](https://github.com/infobyte/faraday/blob/master/RELEASE.md)!
 
-Plugins list:
----
+## Plugins list
+
 Right now faraday has more than [40+ supported tools](https://github.com/infobyte/faraday/wiki/Plugin-List), among them you will find: 
 ![](https://raw.github.com/wiki/infobyte/faraday/images/plugins/Plugins.png)
 
+##Installation
 
-Installation
----
-
-The following platforms are supported
+The following platforms are supported:
 
 ![platform](https://raw.github.com/wiki/infobyte/faraday/images/platform/supported.png) 
 
 [Read more about this] (https://github.com/infobyte/faraday/wiki/Installation).
 
-Quick install:
+#### Quick install
 
-Download the latest tarball by clicking [here] (https://github.com/infobyte/faraday/tarball/master) 
+Download the [latest tarball](https://github.com/infobyte/faraday/tarball/master) or clone the [Faraday Git Project](https://github.com/infobyte/faraday repository):
 
-Preferably, you can download faraday by cloning the [Git] (https://github.com/infobyte/faraday) repository:
+```
+$ git clone https://github.com/infobyte/faraday.git faraday-dev
+$ cd faraday-dev
+$ ./install.sh
+$ ./faraday.py
+```
 
-    $ git clone https://github.com/infobyte/faraday.git faraday-dev
-    $ cd faraday-dev
-    $ ./install.sh
-    
 
-
-Usage 
------ 
-
-To get started, simply execute faraday and use the new console to start working in the pentest: 
-
-       $ ./faraday.py
-    
-Plugins types:
----
-We have 3 kind of plugins:
- * Plugins that intercept commands (directly detected when you execute commands in the console)  
- * Plugins that import file reports (you have to copy the report to $HOME/.faraday/report/[workspacename] and faraday will automatically detect the report, process and added to the HostTree.
- * Plugins connectors or online (BeEF, Metasploit, Burp) connect directly with external API or database or connect with Faraday RPC API.   
-
-Get it now!
----
-[![Download Tarball](https://raw.github.com/wiki/infobyte/faraday/images/download.png)]
-(https://github.com/infobyte/faraday/tarball/master)
-
-Links
----
+## Links
 
 * Homepage: http://faradaysec.com
 * User's manual: https://github.com/infobyte/faraday/wiki
@@ -73,14 +51,15 @@ Links
 * IRC: [ircs://irc.freenode.net/faraday-dev] (ircs://irc.freenode.net/faraday-dev) [WebClient](https://webchat.freenode.net/?nick=wikiuser&channels=faraday-dev&prompt=1&uio=d4)
 * Screenshots: https://github.com/infobyte/faraday/wiki/Screenshots
 
-Presentation
----
-* Ekoparty Security Conference - 2010:
-   * http://prezi.com/fw46zt6_zgi8/faraday/
-   * http://vimeo.com/16516987
+## Presentation
+
+* Blackhat Arsenal - 2015:
+   * https://www.blackhat.com/us-15/arsenal.html#faraday
+   * http://blog.infobytesec.com/2015/08/blackhat-2015_24.html
 
 * Black Hat Arsenal 2011
    * http://www.infobytesec.com/down/Faraday_BH2011_Arsenal.pdf
 
-* Black Hat Arsenal 2015
-   * https://www.blackhat.com/us-15/arsenal.html#faraday
+* Ekoparty Security Conference - 2010:
+   * http://prezi.com/fw46zt6_zgi8/faraday/
+   * http://vimeo.com/16516987
