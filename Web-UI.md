@@ -12,23 +12,22 @@ Faraday Community Version has simple visualization (Include summary information)
 
 ![](https://raw.github.com/wiki/infobyte/faraday/images/GUI_Dashboard_new.png)
 
-**Vulnerability Status Report**
-
-![](https://raw.github.com/wiki/infobyte/faraday/images/GUI_Dashboard_SR_Click.png)
+##### Vulnerability Status Report
 
 ![](https://raw.githubusercontent.com/wiki/infobyte/faraday/images/UI_Web_Status_Report.png)
 
-**Vulnerability Creation**
+##### Vulnerability Creation
 
 ![](https://raw.githubusercontent.com/wiki/infobyte/faraday/images/faraday_new.png)
 
-**Top Services View**
+##### Top Services View
 
 ![](https://raw.github.com/wiki/infobyte/faraday/images/GUI_Dashboard_new_Services.png)
 
 ![](https://raw.github.com/wiki/infobyte/faraday/images/GUI_Services.png)
 
-**Workspace Worth**<a name="workspace-worth"></a>
+<a name="workspace-worth"></a>
+##### Workspace's Worth
 
 ![](https://raw.github.com/wiki/infobyte/faraday/images/faraday-dashboard-ws-worth.png)
 
@@ -54,21 +53,17 @@ The length of the colored bars shows how much that severity represents in the fi
 
 Learn more about using Faraday for [[Bug bounties]].
 
-## Search & Filter
+##### Search & Filter
 
 To search, type the keyword in the text field above the table.
 
-You can find the text filter on:
-* Status Report
-* Hosts
-
-**Field values are not case-sensitive**
+You can find the text filter both on the Status Report and Hosts views. Keep in mind that field values are case-insensitive.
 
 ![](https://raw.github.com/wiki/infobyte/faraday/images/search.png)
 
-## How to filter by field
+##### Filter by field
 
-To search by field, enter the name of field  (e.g. **severity**) , continue a colon  (**:**) , finally put in the word that you want to find.
+To search by field enter the name of field  (e.g. **severity**), continue with a colon  (**:**) and finally put in the word that you want to find.
 
 Examples: 
 * severity:unclassified
@@ -76,10 +71,9 @@ Examples:
 
 ![](https://raw.github.com/wiki/infobyte/faraday/images/filterByField.png)
 
-## How to filter by many fields
+##### Filter by many fields
 
-To search by many field, do a normal search but at the end, type a SPACE BAR and do a normal search again.
-Just a SPACE BAR in the middle of the consult.
+To search by many fields do a normal search but at the end type a *SPACE BAR* and do a normal search again.
 
 Examples:
 * severity:unclassified target:173.252.100.18
