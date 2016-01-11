@@ -8,13 +8,13 @@ Directly from the GUI QT you have to click in the icon:
 
 ## Faraday Community Version
 
-##### Dashboard
+#### Dashboard
 
 Faraday's dashboard contains a summary of all the data in a Workspace condensed into different boxes. Each box is a visualization using a specific part of the collected data.
 
 ![](https://raw.github.com/wiki/infobyte/faraday/images/GUI_Dashboard_new.png)
 
-##### Vulnerability Status Report
+#### Vulnerability Status Report
 
 To view a full list of findings you can access the Status Report.
 
@@ -24,7 +24,7 @@ The Status Report provides several options including vulnerability search, filte
 
 Personalize this view by clicking on the blue buttons to select the columns you wish to see, and remove the ones you don't need using the crosses in the table. These changes will be persisted in your browser so you only have to apply them once.
 
-##### Search & Filter
+#### Search & Filter
 
 To search, type the keyword in the text field above the table.
 
@@ -32,7 +32,7 @@ You can find the text filter both on the Status Report and Hosts views. Keep in 
 
 ![](https://raw.github.com/wiki/infobyte/faraday/images/search.png)
 
-##### Filter by field
+#### Filter by field
 
 To search by field enter the name of field  (e.g. **severity**), continue with a colon  (**:**) and finally put in the word that you want to find.
 
@@ -42,7 +42,7 @@ Examples:
 
 ![](https://raw.github.com/wiki/infobyte/faraday/images/filterByField.png)
 
-##### Filter by many fields
+#### Filter by many fields
 
 To search by many fields do a normal search but at the end type a *SPACE BAR* and do a normal search again.
 
@@ -53,11 +53,11 @@ Examples:
 ![](https://raw.github.com/wiki/infobyte/faraday/images/searchByManyFields.png)
 
 <a name="manage"></a>
-##### Vulnerability Creation
+#### Vulnerability Creation
 
 ![](https://raw.githubusercontent.com/wiki/infobyte/faraday/images/faraday_new.png)
 
-##### Top Services View
+#### Top Services View
 
 To access a [treemap](https://en.wikipedia.org/wiki/Treemapping) featuring the top services in the Workspace, click on the box title.
 
@@ -66,7 +66,7 @@ To access a [treemap](https://en.wikipedia.org/wiki/Treemapping) featuring the t
 ![](https://raw.github.com/wiki/infobyte/faraday/images/GUI_Services.png)
 
 <a name="workspace-worth"></a>
-##### Workspace's Worth
+#### Workspace's Worth
 
 ![](https://raw.github.com/wiki/infobyte/faraday/images/faraday-dashboard-ws-worth.png)
 
@@ -92,10 +92,39 @@ The length of the colored bars shows how much that severity represents in the fi
 
 Learn more about using Faraday for [[Bug bounties]].
 
-## Faraday Professional & Corporate
-**Faraday Professional & Corporate** has advance visualization (including Tags, Pentest comparison, Pentester ranking, etc)
+## Faraday Professional & Corporate - [Commercial versions](https://www.faradaysec.com/#download)
+
+This version includes advanced visualizations, tags, pentest comparison, pentester ranking among others.
 
 ![](https://raw.github.com/wiki/infobyte/faraday/images/Faraday-Dashboard-Advance.png)
 
+#### Tags
 
+Tags allow you to organize your vulnerabilities. by letting you make and edit categories: environment, technology, state, language, projects, whatever. The team can then see the tagged vulnerabilities and lets you organize the security evaluation.
+
+The tags are assigned to the team's workspace letting you use different tags for different projects.
+
+##### How to tag vulnerabilities
+
+Using the specified credentials during the configuration, from the Navigator start the session in [Faraday's GUI](https://github.com/infobyte/faraday/wiki/Web-UI). Once you have obtained the authentication and you are in, click on the “Status Report” icon.
+
+![](https://raw.github.com/wiki/infobyte/faraday/images/faraday_statusreport_list.png)
+
+Select the vulnerabilities that you want to tag (for example those that have to do with SSL protocol)
+
+![](https://raw.github.com/wiki/infobyte/faraday/images/faraday_statusreport_listselected.png)
+
+After picking one of the vulnerabilities click on the "Tags" button
+
+![](https://raw.github.com/wiki/infobyte/faraday/images/faraday_statusreport_tagsadd.png)
+
+Create the tag that you want (in our case SSL) and click OK
+
+![](https://raw.github.com/wiki/infobyte/faraday/images/faraday_statusreport_tagsadded.png)
+
+##### Search tagged vulnerabilities
+
+From the Status Report you will be able to find the information using the different tags. You can add ! in front of the search criteria in order to invert the result. For example _tag:!example_tag_ will result in all vulnerabilities that DON'T have the tag example_tag.
+
+![](https://raw.github.com/wiki/infobyte/faraday/images/faraday_statusreport_tagssearch.png)
 
