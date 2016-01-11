@@ -6,7 +6,6 @@
 * [[Updates]]
 * [[Usage]]
  * [[Web UI]]
- * [[Tag Use]]
  * [[Manage Workspaces]]
  * [[Workspace replication]]
  * [[Manage Users]]
