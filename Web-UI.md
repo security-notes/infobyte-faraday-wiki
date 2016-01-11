@@ -20,7 +20,7 @@ To view a full list of findings you can access the Status Report.
 
 ![](https://raw.githubusercontent.com/wiki/infobyte/faraday/images/UI_Web_Status_Report.png)
 
-The Status Report provides several options including vulnerability search, filtering and [management](#manage).
+The Status Report provides several options including vulnerability search, filtering and management.
 
 Personalize this view by clicking on the blue buttons to select the columns you wish to see, and remove the ones you don't need using the crosses in the table. These changes will be persisted in your browser so you only have to apply them once.
 
@@ -58,6 +58,8 @@ Examples:
 ![](https://raw.githubusercontent.com/wiki/infobyte/faraday/images/faraday_new.png)
 
 ##### Top Services View
+
+To access a [treemap](https://en.wikipedia.org/wiki/Treemapping) featuring the top services in the Workspace, click on the box title.
 
 ![](https://raw.github.com/wiki/infobyte/faraday/images/GUI_Dashboard_new_Services.png)
 
