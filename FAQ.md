@@ -1,3 +1,16 @@
+<a name="index"></a>
+### Index
+
+* [Where does the name come from?](#name)
+* [What is Faraday?](#what-is-faraday)
+* [Is Faraday free?](#price)
+* [Which platforms are supported?](#supported-platforms)
+* [I purchased a License, now what?](#after-purchase)
+* [How do I configure my own Vulnerabilities Database?](#vulns-db)
+* [I can't access the web GUI](#cant-access-web)
+* [Faraday is not importing my report](#import)
+
+<a name="name"></a>
 ### Where does the name come from?
 The name was picked to honour *Michael Faraday*, an English scientist whose main discoveries include electromagnetism induction, diamagnetism and electrolysis[1]. Mainly his six principles of scientific discipline, acquired at a young age from Isaac Watts' "The Improvement of the mind"[2]:
 
@@ -12,23 +25,41 @@ The name was picked to honour *Michael Faraday*, an English scientist whose main
 
 [2] http://www.eng.auburn.edu/~sjreeves/cm/improve.html
 
+[ [index] ](#index)
+
+<a name="what-is-faraday"></a>
 ### What is Faraday?
 Faraday is to Penetration Testing what an IDE is to Development. The main purpose of Faraday is to re-use the available tools in the community to take advantage of them in a multiuser way.
 
+[ [index] ](#index)
+
+<a name="price"></a>
 ### Is Faraday free?
 Yes, we have a community version which is totally free, you can [download it from Github](https://github.com/infobyte/faraday/archive/master.zip).
 
 We also develop two [commercial versions](https://www.faradaysec.com/#download).
 
+[ [index] ](#index)
+
+<a name="supported-platforms"></a>
 ### Which platforms are supported?
 ArchAssault, Archlinux, Debian, Kali, OSX, Debian. You can find a detailed explanation [here](https://github.com/infobyte/faraday/wiki/Installation).
 
+[ [index] ](#index)
+
+<a name="after-purchase"></a>
 ### I purchased a License, now what?
 You will receive an email with a link to download two tarballs. One will be your Faraday License and the other the version you selected. Uncompress both and place the contents of the license tar inside **$FARADAY/doc/**. 
 
+[ [index] ](#index)
+
+<a name="vulns-db"></a>
 ### How do I configure my own Vulnerabilities Database?
 Check out our [[Vulnerabilities Database]] config page.
 
+[ [index] ](#index)
+
+<a name="cant-access-web"></a>
 ### I can't access the web GUI
 Is your CouchDB up and running? Try running
 
@@ -52,6 +83,8 @@ If so, read our documentation on how to setup Faraday to work with CouchDB [usin
 
 Then run Faraday and point your browser to http://127.0.0.1:5984/reports/_design/reports/index.html replacing **127.0.0.1:5984** with your CouchDB URI.
 
+[ [index] ](#index)
+
 <a name="import"></a>
 ### Faraday is not importing my report
 First let's make sure there is a Plugin to parse it so make sure your tool is listed in our [[Plugin List]]. Not there? [Code your own](https://github.com/infobyte/faraday/wiki/Basic-plugin-development) or [ask us to do it](https://github.com/infobyte/faraday/issues).
@@ -72,5 +105,6 @@ Then open Faraday's QT interface running the following in your installation root
 
 Open the Workspaces perspective and select your workspace. Then copy the report file into the active workspace's directory in $HOME/.faraday/report/WS_NAME/. Faraday will only process requests for the active workspace.
 
+[ [index] ](#index)
 
 Is your question not listed here? [Contact us](https://github.com/infobyte/faraday/issues)
