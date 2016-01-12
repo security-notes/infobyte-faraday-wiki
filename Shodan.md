@@ -7,7 +7,9 @@ usage: shodan_faraday [-h] -q SHODAN_QUERY [-c COUNT] [-a SKEY]
 
 The following command will incorporate all the server with apache in Faraday
 
+```
 ./shodan_faraday -q apache -a (SHODANKEY)
+```
 
 We have create some wordlist to find specify stuff using shodan
 ```
