@@ -29,7 +29,6 @@
  * [[Basic Plugin Development]]
  * [[APIs]]
  * [[Live debugging]]
-* [[Version comparison]]
 * [[Faraday Awards]]
 * [[FAQ]]
 * [[Contact us]]
