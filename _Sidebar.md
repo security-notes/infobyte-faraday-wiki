@@ -22,6 +22,7 @@
  * [[BeEF]]
  * [[Evilgrade]]
  * [[Nessus]]
+ * [[SSLCheck]]
  * [[Faraday Plugin]]
 * **Development**
  * [[Basic Plugin Development]]
