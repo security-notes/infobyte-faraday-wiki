@@ -23,6 +23,7 @@
  * [[Evilgrade]]
  * [[Nessus]]
  * [[SSLCheck]]
+ * [[Shodan]]
  * [[Faraday Plugin]]
 * **Development**
  * [[Basic Plugin Development]]
