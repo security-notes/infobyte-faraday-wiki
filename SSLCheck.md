@@ -12,4 +12,6 @@ Follow the steps below:
 
 Also, you can quickly run the command for several targets and domains, the targets need to be written separately with a single space.
 
+```
 ./sslcheck.py 192.168.10.254 facebook.com www.google.com 192.168.10.168
+```
