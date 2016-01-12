@@ -1,4 +1,5 @@
-Using our plugin you can do different actions using the command line, for example
+Using our plugin you can do different actions in the command line, for example
+
 ```
 $ cd ~/.faraday/bin/
 $ #Adding new hosts 
