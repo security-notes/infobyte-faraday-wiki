@@ -16,7 +16,7 @@ Structured in panes: Main Console, HostTree, Log Console, Item Info & Editing pa
 If you are able to run Faraday QT with credentials add a login option
 
 ```
-#./faraday.pyc --login
+./faraday.pyc --login
 ```
 
 ![](https://raw.github.com/wiki/infobyte/faraday/images/faraday_guiqt_login.png)
