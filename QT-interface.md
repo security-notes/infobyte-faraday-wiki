@@ -1,3 +1,5 @@
+* [QT](http://github.com/infobyte/faraday/qt-interface/auth)
+
 ### Regular QT
 
 Faraday main window is simple:  
