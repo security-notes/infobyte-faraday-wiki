@@ -2,7 +2,7 @@ Faraday has 3 different ways to interact with information:
 * [QT GUI](#qt-gui)
 * [ZSH UI](#zsh-ui)
 * [Web UI](#web-ui)
-* [ZSH WEB](#zsh-web) (only available in our commercial versions)
+* [ZSH Web](#zsh-web) (only available in our commercial versions)
 
 ### QT GUI
 
