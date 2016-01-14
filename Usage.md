@@ -13,9 +13,11 @@ Structured in panes: Main Console, HostTree, Log Console, Item Info & Editing pa
 #### GUI QT with authentication
 [- Commercial version -](https://www.faradaysec.com/#download)
 
-If you are able to run Faraday QT with credentials add a login option:
+If you are able to run Faraday QT with credentials add a login option
 
-`#./faraday.pyc --login`
+```
+#./faraday.pyc --login
+```
 
 ![](https://raw.github.com/wiki/infobyte/faraday/images/faraday_guiqt_login.png)
 
