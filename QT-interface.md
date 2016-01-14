@@ -1,4 +1,4 @@
-* [QT](https://github.com/infobyte/faraday/wiki/QT-interface/auth)
+* [QT](https://github.com/infobyte/faraday/wiki/QT-interface#auth)
 
 ### Regular QT
 
