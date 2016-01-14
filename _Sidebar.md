@@ -5,7 +5,6 @@
  * [[Faraday Server]]
 * [[Updates]]
 * [[Usage]]
- * [[Web UI]]
  * [[Manage Workspaces]]
  * [[Workspace replication]]
  * [[Manage Users]]
