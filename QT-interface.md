@@ -1,6 +1,16 @@
-* [QT](http://github.com/infobyte/faraday/qt-interface/auth)
+* [QT](https://github.com/infobyte/faraday/wiki/QT-interface/auth)
 
 ### Regular QT
+
+Faraday main window is simple:  
+![](https://raw.github.com/wiki/infobyte/faraday/images/Faraday-Mainwindow.png)
+
+Structured in panes: Main Console, HostTree, Log Console, Item Info & Editing panes.
+
+Faraday main window is simple:  
+![](https://raw.github.com/wiki/infobyte/faraday/images/Faraday-Mainwindow.png)
+
+Structured in panes: Main Console, HostTree, Log Console, Item Info & Editing panes.
 
 Faraday main window is simple:  
 ![](https://raw.github.com/wiki/infobyte/faraday/images/Faraday-Mainwindow.png)
