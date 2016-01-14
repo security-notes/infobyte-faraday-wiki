@@ -1,4 +1,4 @@
-* [QT](https://github.com/infobyte/faraday/wiki/QT-interface#auth)
+* [QT](https://github.com/infobyte/faraday/wiki/QT-interface#qt-auth)
 
 ### Regular QT
 
@@ -17,7 +17,7 @@ Faraday main window is simple:
 
 Structured in panes: Main Console, HostTree, Log Console, Item Info & Editing panes.
 
-#### Auth
+#### QT Auth
 [- Commercial version -](https://www.faradaysec.com/#download)
 
 If you are able to run Faraday QT with credentials add a login option
