@@ -1,7 +1,8 @@
 Faraday has 3 different ways to interact with information:
-* [QT GUI] (#qt-gui)
-* [ZSH UI] (#zsh-ui)
-* [Web UI] (#web-ui)
+* [QT GUI](#qt-gui)
+* [ZSH UI](#zsh-ui)
+* [Web UI](#web-ui)
+* [ZSH WEB](#zsh-web) (only available in our commercial versions)
 
 ### QT GUI
 
@@ -167,7 +168,8 @@ From the Status Report you will be able to find the information using the differ
 
 ![](https://raw.github.com/wiki/infobyte/faraday/images/faraday_statusreport_tagssearch.png)
 
-#### ZSH web console
+<a name="zsh-web"></a>
+### ZSH web console
 
 [- Commercial version -](https://www.faradaysec.com/#download)
 
