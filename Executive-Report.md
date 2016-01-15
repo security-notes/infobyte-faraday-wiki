@@ -7,7 +7,7 @@ When an Executive Report is created, all the data from the Status Report is auto
 
 # Requirements
 
-To utilize this feature follow the necessary steps on [Start up Configuration](https://github.com/infobyte/faraday/wiki/Start-up-Configuration-%28Faraday-Server%29).
+To utilize this feature follow the necessary steps on our [Start up Configuration](https://github.com/infobyte/faraday/wiki/Faraday-Server).
 
 # Managing Executive Reports 
 
