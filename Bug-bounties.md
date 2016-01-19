@@ -11,6 +11,8 @@ Currently we support the following  sites:
 * Mozilla
 * ownCloud
 * Pinterest
+* Twitter
+* Vimeo
 * Western Union
 * Yahoo
 
