@@ -127,6 +127,12 @@ Examples:
 
 ![](https://raw.github.com/wiki/infobyte/faraday/images/searchByManyFields.png)
 
+###### Grouping
+
+To group vulnerabilities by field you can use the **Group By** button. After the vulns are grouped you can select them for easy batch edit.
+
+![](https://raw.githubusercontent.com/wiki/infobyte/faraday/images/faraday_statusreport_groupby.png)
+
 <a name="manage"></a>
 ##### Vulnerability Creation
 
