@@ -1,7 +1,7 @@
 Using our plugin you can do different actions in the command line, for example
 
 ```
-$ cd ~/.faraday/bin/
+$ cd $faraday/bin/
 $ #Adding new hosts 
 $./fplugin -e 'for h in api.createAndAddHost("8.8.8.8","Linux")'
 $ #Get all ip of HostTree
