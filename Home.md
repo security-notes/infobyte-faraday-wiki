@@ -52,7 +52,7 @@ For example, **user1** incorporates host *127.0.0.1 OS:Linux* and **user2** inco
 Using our plugin you can do different actions using the command line, for example:
 
 ```
-$ cd ~/.faraday/bin/
+$ cd $faraday/bin/
 $ #Adding new hosts 
 $./fplugin -e 'for h in api.createAndAddHost("8.8.8.8","Linux")'
 $ #Get all ip of HostTree
