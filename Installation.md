@@ -1,3 +1,13 @@
+### Index
+* [Requirements](#requirements)
+* [Debian & Ubuntu & Backtrack](#debian)
+* [ArchLinux](#arch)
+* [Kali](#kali)
+* [OSX Maverick 10.9.2](#osx)
+* [Docker](#docker)
+* [Chef](#chef)
+
+
 ### Requirements
 
 Modern Linux or OSX, and the following packages:
@@ -19,6 +29,8 @@ Current tests include [Debian](#debian), [Ubuntu](#debian), [Kali](#kali), [Back
 
 If instead of installing you want to take a quick look at Faraday you can also use [Docker](#docker).
 
+[ [index] ](#index)
+
 <a name="debian"></a>
 ### Debian, Ubuntu, Backtrack
 
@@ -32,6 +44,8 @@ $ ./install.sh
 $ ./faraday.py
 ```
 
+[ [index] ](#index)
+
 <a name="kali"></a>
 ### Kali
 
@@ -42,6 +56,8 @@ apt-get install python-faraday
 ```
 
 Due to Kali's package updates this may not be the last version. If you want the latest updates use the [Debian install steps](#debian).
+
+[ [index] ](#index)
 
 
 <a name="arch"></a>
@@ -54,6 +70,8 @@ $ yaourt -S python2-whoosh pyqt3 python2-mockito python2-couchdbkit python2-flas
 ```
 
 Now you can proceed to [install Faraday](#install).
+
+[ [index] ](#index)
 
 <a name="osx"></a>
 ### OSX
@@ -247,6 +265,8 @@ Import a Report:
 ```
 # cp /root/reports/nessusscan.nessus /tmp/workspace/
 ```
+
+[ [index] ](#index)
 
 <a name="chef"></a>
 ### Chef
