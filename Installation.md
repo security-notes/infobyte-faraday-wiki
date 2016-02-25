@@ -274,3 +274,5 @@ Import a Report:
 ### Chef
 
 If you want to deploy Faraday using Chef, [Sliim](https://github.com/Sliim) made a cookbook for it! You can find it [here](https://github.com/sliim-cookbooks/faraday/).
+
+[ [index] ](#index)
