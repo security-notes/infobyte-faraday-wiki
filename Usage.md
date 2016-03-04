@@ -1,4 +1,4 @@
-Faraday has 3 different ways to interact with information:
+Faraday has 4 different ways to interact with information:
 * [QT GUI](#qt-gui)
 * [ZSH UI](#zsh-ui)
 * [Web UI](#web-ui)
