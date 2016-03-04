@@ -89,8 +89,13 @@ Updating objects on faraday now results in a beautiful notification in the QT ui
 * Screenshots: https://github.com/infobyte/faraday/wiki/Screenshots
 
 ## Presentation
+* Black Hat Arsenal Europe - 2016:
+   * https://www.blackhat.com/asia-16/arsenal.html#faraday
 
-* Black Hat Arsenal - 2015:
+* Black Hat Arsenal Europe - 2015:
+   * https://www.blackhat.com/eu-15/arsenal.html#faraday
+
+* Black Hat Arsenal USA - 2015:
    * https://www.blackhat.com/us-15/arsenal.html#faraday
    * http://blog.infobytesec.com/2015/08/blackhat-2015_24.html
 
