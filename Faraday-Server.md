@@ -34,6 +34,10 @@ To begin the initial setup the user needs to run the executable **./setup_server
 
 `[+] Faraday server is full configured`
 
+### Running Faraday for the first time
+
+`/faraday# python faraday.pyc`
+
 
 ### Restore the CouchDB user administrator
 
