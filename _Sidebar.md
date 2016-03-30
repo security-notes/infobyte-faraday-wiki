@@ -16,14 +16,14 @@
 * [[Demos]]
 * [[Architecture]]
 * [Plugins](https://github.com/infobyte/faraday/wiki/Plugin-List)
- * [[Metasploit]]
  * [[Burp Proxy Extender]]
  * [[BeEF]]
  * [[Evilgrade]]
- * [[Nessus]]
- * [[SSLCheck]]
- * [[Shodan]]
  * [[Faraday Plugin]]
+ * [[Metasploit]]
+ * [[Nessus]]
+ * [[Shodan]]
+ * [[SSLCheck]]
 * **Development**
  * [[Basic Plugin Development]]
  * [[APIs]]
