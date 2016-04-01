@@ -20,6 +20,10 @@ Take a look of our last demos:
 
 [![ScreenShot](https://raw.github.com/wiki/infobyte/faraday/images/youtube.png) - Faraday's BeEF Integration (VIII) ] (https://bit.ly/1RUWuSB)
 
+[![ScreenShot](https://raw.github.com/wiki/infobyte/faraday/images/youtube.png) - Using plugin Maltego - Demo (IX) ] (https://bit.ly/1nwQ8gP)
+
+[![ScreenShot](https://raw.github.com/wiki/infobyte/faraday/images/youtube.png) - Using plugin Arachni - Demo (X) ] (https://bit.ly/1Tlx56u)
+
 Webinar - 2015:
 
 [![ScreenShot](https://raw.github.com/wiki/infobyte/faraday/images/youtube.png) - English Version - April 8 - ] (http://buff.ly/1E6FLWJ) We quickly went over how to get the Faraday Corporate up and running and then showed a couple of the new features.
