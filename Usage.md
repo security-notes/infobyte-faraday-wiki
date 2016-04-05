@@ -1,7 +1,23 @@
+## Faraday Server
+
+Only available for our [commercial versions](https://www.faradaysec.com/#download).
+
+This is an experimental tool designed to provide support for JIRA integration so you only need to run it in case you wish to use that feature.
+
+Make sure that your Faraday Server Proxy is [configured](https://github.com/infobyte/faraday/wiki/Faraday-Server#proxy) and then run:
+
+```
+./faraday-server.pyc [--ssl]
+```
+
+
+## Faraday Client
+
 Faraday has 4 different ways to interact with information:
 * [QT GUI](#qt-gui)
 * [ZSH UI](#zsh-ui)
 * [Web UI](#web-ui)
+* [CLI](#cli)
 * [ZSH Web](#zsh-web) (only available in our commercial versions)
 
 ### QT GUI
@@ -173,6 +189,35 @@ Create the tag that you want (in our case SSL) and click OK
 From the Status Report you will be able to find the information using the different tags. You can add ! in front of the search criteria in order to invert the result. For example _tag:!example_tag_ will result in all vulnerabilities that DON'T have the tag example_tag.
 
 ![](https://raw.github.com/wiki/infobyte/faraday/images/faraday_statusreport_tagssearch.png)
+
+
+### CLI
+
+It's possible to use Faraday in CLI mode, allowing you to process your reports in batch. So lets say you want to process the XML output of an **nmap** scan located in ```/tmp/nmap_scan.xml``` and send the information to a workspace called **project_one**. The way to do it using the CLI mode would be to run:
+
+```
+$ python2 faraday.py --cli --workspace project_one --report /tmp/nmap_scan.xml
+```
+
+NOTE: the workspace has to exist for this to work.
+
+#### Professional and corporate versions
+
+If you're using a professional or corporate version, you'll probably need to start faraday with a certain user, with permissions in that workspace. You can pass your credentials using a simple json file with both user and password. You can use any path and name for the file, and you have a template you can change or copy in the root of your Faraday installation called  credentials.json. The structure is this:
+
+```
+{
+    "username": "your_user_here",
+    "password": "your_password_here"
+} 
+```
+
+And then run Faraday:
+
+```
+$ python2 faraday.py --cli --workspace project_one --report /tmp/nmap_scan.xml --creds-file /path/to/file/creds.json
+```
+
 
 <a name="zsh-web"></a>
 ### ZSH web console
