@@ -42,4 +42,28 @@ It is possible to restore the database's users using the following script:
 `/faraday# ./reset_admin_couchdb.sh`
 
 
-**Important: The process will eliminate existing users**
+**Important: this process will eliminate existing users**
+
+
+<a name="proxy"></a>
+### Proxy Server
+
+For the time being this is an experimental feature that enables JIRA integration so it's only necessary in case you wish to do that.
+
+In order to use Faraday Proxy Server you must first configure it.
+
+Edit ```server/default.ini``` and change Faraday Server's port to the one being used by CouchDB in section ```[faraday_server]``` and set a new port for CouchDB in section ```[couch-db]``` (i.e.: 5985).
+
+After that, we need to change CouchDB port. To do that, run ```couchdb -c``` to identify its configuration file. Once you identified it, edit it and change CouchDB port in section ```[httpd]``` to the one set previously (i.e.: 5985).
+
+Restart CouchDB and you are ready to go! Run the following command to start Faraday Proxy Server:
+
+```
+./faraday-server.pyc
+```
+
+##### HTTPS support
+
+If you are running CouchDB using HTTPS you need to configure Faraday Proxy Server to allow incoming HTTPS connections. To do this, first set CouchDB to listen on a new port, for example **6985**.
+
+Now you must configure Faraday Proxy Server to start accepting HTTPS connections. Edit ```server/default.ini``` section ```[ssl]``` and set ```port``` to match CouchDB's previous SSL port and in section ```[couchdb]``` set ```ssl_port``` to the current one. ```certificate``` and ```keyfile``` in section ```[ssl]``` should match with the ones set in CouchDB configuration.
