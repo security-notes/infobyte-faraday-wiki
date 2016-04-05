@@ -13,7 +13,7 @@ Make sure that your Faraday Server Proxy is [configured](https://github.com/info
 
 ## Faraday Client
 
-Faraday has 4 different ways to interact with information:
+Faraday has 5 different ways to interact with information:
 * [QT GUI](#qt-gui)
 * [ZSH UI](#zsh-ui)
 * [Web UI](#web-ui)
