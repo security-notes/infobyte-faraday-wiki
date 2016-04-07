@@ -55,7 +55,7 @@ Open the Workspaces perspective and select your workspace. Then copy the report 
 
 You can go to your Status Report in the WebUI, filter the vulnerabilities by whichever parameter you'd like, select them all and then remove them.  
 
-If for any reasons you don't want to or you can't access the WebUI (or maybe even you'd like to automatize this process with cron or a similar tool) you can use our helper script to remove vulnerabilities by severity. You can find it at:
+If for any reason you don't want to or you can't access the WebUI (or maybe even you'd like to automatize this task) you can use our helper script to remove vulnerabilities by severity. You can find it at:
 
 ```
 $YOUR_FARADAY_PATH/helpers/removeBySeverity.py
