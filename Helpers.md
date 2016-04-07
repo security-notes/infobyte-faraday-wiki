@@ -19,6 +19,19 @@ This script allows you to upload your Vulnerability templates database to CouchD
 ### vulndbToCsv.py
 ### cleanXML.py
 
+```
+usage: cleanXML [-h] -i INFILE [-o OUTFILE]
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -i INFILE, --input INFILE
+                        XML File to read from
+  -o OUTFILE, --output OUTFILE
+                        Filename to write output
+
+Example: ./cleanXML.py
+```
+
 Some tools are known for creating invalid XML output files which tend to be hard to fix by hand. If you want a quick way to patch an XML to feed it to Faraday for processing, this script is your best friend.
 
 Read more about it [here](https://github.com/infobyte/faraday/wiki/troubleshooting#import).
