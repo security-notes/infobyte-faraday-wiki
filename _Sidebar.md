@@ -25,7 +25,7 @@
  * [[Faraday Plugin]]
  * [[Metasploit]]
  * [[Nessus]]
- * [[Immunity Canvas]]
+ * [[Immunitys-CANVAS]]
 * **Development**
  * [[Basic Plugin Development]]
  * [[APIs]]
