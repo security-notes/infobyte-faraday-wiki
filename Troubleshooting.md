@@ -2,6 +2,7 @@
 * [I can't access the web GUI](#cant-access-web)
 * [Faraday is not importing my report](#import)
 * [A plugin added too much information to my database](#remove-by-severity)
+* [I don't remember the Faraday Server password](#recover-password)
 
 <a name="cant-access-web"></a>
 ### I can't access the web GUI
@@ -65,5 +66,13 @@ For example, say you want to remove all vulnerabilities of severity **critical**
 ```./removeBySeverity.py -d messedup -s critical```
 
 Read more about it [here](https://github.com/infobyte/faraday/wiki/helpers#removeBySeverity).
+
+<a name="recover-password"></a>
+### Restore the CouchDB user administrator
+It is possible to restore the database's users using the following script:
+
+`/faraday# ./reset_admin_couchdb.sh`
+
+**Important: this process will eliminate existing users**
 
 [ [index] ](#index)
