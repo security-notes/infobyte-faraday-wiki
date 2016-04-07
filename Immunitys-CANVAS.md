@@ -1,6 +1,6 @@
 #Immunity's CANVAS
 
-This plugin allows a user to import all information about hosts, interfaces and specially vulnerabilities included in Client Side or Server Side attacks.
+This plugin allows a user to import all information about hosts, interfaces and specially vulnerabilities included in Client Side or Server Side attacks using Immunitys Canvas.
 
 This plugin is a little different from the others, Immunity Canvas is the executor of this and not Faraday which makes it interesting to explain how to install it and how it works.
 
