@@ -57,32 +57,12 @@ You can go to your Status Report in the Web GUI, filter the vulnerabilities by w
 
 ![](https://raw.github.com/wiki/infobyte/faraday/images/faraday_statusreport_delete_vulns.png)
 
-If for any reason you don't want to or you can't access the WebUI (or maybe even you'd like to automatize this task) you can use our helper script to remove vulnerabilities by severity. You can find it at:
+If for any reason you don't want to or you can't access the WebUI (or maybe even you'd like to automatize this task) you can use our helper script to remove vulnerabilities by severity.
 
-```
-$YOUR_FARADAY_PATH/helpers/removeBySeverity.py
-```
-
-You can use the --help flag to output more information on each flag available.  
-
-```
-usage: removeBySeverity [-h] [-c COUCHDB] -d DB -s SEVERITY [-t] [-v]
-
-optional arguments:
-  -h, --help            show this help message and exit
-  -c COUCHDB, --couchdburi COUCHDB
-                        Couchdb URL as
-                        http://user:password@couch_ip:couch_port (defaults to
-                        http://127.0.0.1:5984)
-  -d DB, --db DB        DB to process
-  -s SEVERITY, --severity SEVERITY
-                        Vulnerability severity
-  -t, --test            Dry run, does everything except updating the DB
-  -v, --verbose         Extended output
-```
-
-For example, say you want to remove all vulnerabilities of severity 'critical' in a local CouchDB on the workspace named 'messedup'. You could run 
+For example, say you want to remove all vulnerabilities of severity **critical** in a local CouchDB on the workspace named **messedup**, you should run:
 
 ```./removeBySeverity.py -d messedup -s critical```
+
+Read more about it [here](https://github.com/infobyte/faraday/wiki/helpers#removeBySeverity).
 
 [ [index] ](#index)
