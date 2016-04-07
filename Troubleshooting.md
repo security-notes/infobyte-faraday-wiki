@@ -1,6 +1,6 @@
 * [I can't access the web GUI](#cant-access-web)
 * [Faraday is not importing my report](#import)
-* [How can I remove vulnerabilities by severity?](#remove-by-severity)
+* [A plugin added too much information to my database](#remove-by-severity)
 
 <a name="cant-access-web"></a>
 ### I can't access the web GUI
@@ -51,9 +51,11 @@ Open the Workspaces perspective and select your workspace. Then copy the report 
 [ [index] ](#index)
 
 <a name="remove-by-severity"></a>
-### How can I remove vulnerabilities by severity?
+### A plugin added to much information to my database
 
-You can use our helper script. You can find it at
+You can go to your Status Report in the WebUI, filter the scripts by whichever parameter you'd like, select them all and remove them.  
+
+If for any reasons you don't want to or you can't access the WebUI, you can use our helper script to remove vulnerabilities by severity. You can find it at: 
 
 ```
 $YOUR_FARADAY_PATH/helpers/removeBySeverity.py
