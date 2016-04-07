@@ -38,9 +38,11 @@ optional arguments:
 Example: ./cleanXML.py
 ```
 
-Some tools are known for creating invalid XML output files which tend to be hard to fix by hand. If you want a quick way to patch an XML to feed it to Faraday for processing, this script is your best friend.
+Some tools are known for creating invalid XML output files which tend to be hard to fix by hand. If you want a quick way to patch an XML to feed it to Faraday for processing, this script is your best friend. Run it like this (make sure to have [BeautifulSoup](http://www.crummy.com/software/BeautifulSoup/bs4/doc/)):
 
-Read more about it [here](https://github.com/infobyte/faraday/wiki/troubleshooting#import).
+```
+python $FARADAY/helpers/cleanXML.py broken_file.xml
+```
 
 <a name="removeBySeverity"></a>
 ### removeBySeverity.py
