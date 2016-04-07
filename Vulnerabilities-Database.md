@@ -35,3 +35,4 @@ Login to your Faraday Web UI and create or edit a vulnerability , you can see no
 ![](https://raw.githubusercontent.com/wiki/infobyte/faraday/images/CweDb.png)
 
 Write the CWE name of this vulnerability and all the information would loaded!
+Note: Name, Description and Resolution is replaced by contains in the CWE database.
