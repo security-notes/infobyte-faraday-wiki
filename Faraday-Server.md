@@ -34,17 +34,6 @@ To begin the initial setup the user needs to run the executable **./setup_server
 
 `[+] Faraday server is full configured`
 
-
-### Restore the CouchDB user administrator
-
-It is possible to restore the database's users using the following script:
-
-`/faraday# ./reset_admin_couchdb.sh`
-
-
-**Important: this process will eliminate existing users**
-
-
 <a name="proxy"></a>
 ### Proxy Server
 
