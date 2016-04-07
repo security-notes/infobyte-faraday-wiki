@@ -2,8 +2,6 @@ In ```$FARADAY/helpers``` you can find several scripts developed to help you loa
 
 ### pushCwe.py
 
-This script allows you to upload your Vulnerability templates database to CouchDB. Read more about it [here](https://github.com/infobyte/faraday/wiki/Vulnerabilities-Database).
-
 ```
 usage: pushCwe [-h] [-c COUCHDB]
 
@@ -14,6 +12,8 @@ optional arguments:
 
 Example: ./pushCwe.py
 ```
+
+This script allows you to upload your Vulnerability templates database to CouchDB. Read more about it [here](https://github.com/infobyte/faraday/wiki/Vulnerabilities-Database).
 
 ### cfdbToCsv.py
 ### vulndbToCsv.py
