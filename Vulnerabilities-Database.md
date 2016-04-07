@@ -4,6 +4,8 @@ Faraday comes with its own [CWE](https://cwe.mitre.org/) Vulnerabilities DB for 
 
 #Creating CSV and Uploading to CouchDB
 
+Faraday have a CSV of the original Mitre proyect, if you want import to Faraday this, jump to execution of pushCWE.py 
+
 For create a CSV with all information about a specific proyect, you need run a script for download and parse this.
 Faraday have two scripts for two different proyects.
 
