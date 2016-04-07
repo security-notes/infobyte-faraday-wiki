@@ -38,7 +38,7 @@ Is you XML valid? Try opening it in a browser, if the browser complains then you
 python $FARADAY/helpers/cleanXML.py broken_file.xml
 ```
 
-Keep in mind that this is not part of the Faraday core, and is only meant to be a quick fix for other tools' bugs, so use at your own risk, and always keep a fresh backup of your data.
+Read more about cleaning XMLs [here](https://github.com/infobyte/faraday/wiki/Helpers#cleanXML).
 
 Then open Faraday's QT interface running the following in your installation root:
 
