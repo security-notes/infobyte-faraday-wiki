@@ -151,8 +151,11 @@ To group vulnerabilities by field you can use the **Group By** button. After the
 
 <a name="manage"></a>
 ##### Vulnerability Creation
+To create vulnerabilities manually, you can go to the status report page, and click the "New" button at the top right corner. You should see a dialog similar to this:
 
 ![](https://raw.githubusercontent.com/wiki/infobyte/faraday/images/faraday_new.png)
+
+Make sure you select a host (and a service if the vulnerability applies to it), and the correct type. If you create a web vulnerability, you will have a couple more fields available, such as path, method, request, response and so on.
 
 #### Faraday Professional & Corporate - [Commercial versions](https://www.faradaysec.com/#download)
 
