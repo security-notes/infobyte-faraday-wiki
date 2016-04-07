@@ -31,4 +31,15 @@ webcam.txt
 
 You can see an sample usage of these queries [in this video](https://www.youtube.com/watch?v=6_PM_jKkVNI)
 
-###
+<a name="sslcheck"></a>
+### SSL Check
+
+Located at `$FARADAY/scripts/sslcheck.py`, SSL Check is a tool to verify SSL/TLS errors in remote hosts. With code from OpenSSL, this scripts lets a user check the SSL/TLS remote server. The potential vulnerabilities appear in red on the analysis report, which can be easily exported to XML. 
+
+As noted above, the preferred way of using theses scripts is with Faraday, although it is not necessary. To run the script from Faraday, just open the program, cd to the scripts folders and run 
+
+```
+./sslcheck.py TARGET1 TARGE2 TARGET3 ...
+```
+
+For example: ```./sslcheck.py 192.168.10.254 google.com 192.168.5.210 facebook.com ```
