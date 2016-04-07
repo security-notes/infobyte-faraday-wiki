@@ -14,6 +14,7 @@
  * [CSV Exporting & Importing](https://github.com/infobyte/faraday/wiki/Exporting-the-information) 
  * [[Manage Hosts and Services GUI WEB]]
  * [[Helpers]]
+ * [[Scripts]]
 * [[Demos]]
 * [[Architecture]]
 * [Plugins](https://github.com/infobyte/faraday/wiki/Plugin-List)
@@ -23,7 +24,6 @@
  * [[Faraday Plugin]]
  * [[Metasploit]]
  * [[Nessus]]
- * [[Shodan]]
  * [[SSLCheck]]
 * **Development**
  * [[Basic Plugin Development]]
