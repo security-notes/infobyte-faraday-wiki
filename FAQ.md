@@ -1,5 +1,4 @@
 <a name="index"></a>
-### Index
 
 * [Where does the name come from?](#name)
 * [What is Faraday?](#what-is-faraday)
