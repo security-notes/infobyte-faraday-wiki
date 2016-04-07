@@ -38,4 +38,22 @@ Read more about it [here](https://github.com/infobyte/faraday/wiki/troubleshooti
 
 ### removeBySeverity.py
 
+```
+usage: removeBySeverity [-h] [-c COUCHDB] -d DB -s SEVERITY [-t] [-v]
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -c COUCHDB, --couchdburi COUCHDB
+                        Couchdb URL as
+                        http://user:password@couch_ip:couch_port (defaults to
+                        http://127.0.0.1:5984)
+  -d DB, --db DB        DB to process
+  -s SEVERITY, --severity SEVERITY
+                        Vulnerability severity
+  -t, --test            Dry run, does everything except updating the DB
+  -v, --verbose         Extended output
+
+Example: ./removeBySeverity.py
+```
+
 Read more about it [here](https://github.com/infobyte/faraday/wiki/troubleshooting).
