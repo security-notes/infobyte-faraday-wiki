@@ -15,6 +15,7 @@
  * [[Manage Hosts and Services GUI WEB]]
  * [[Helpers]]
  * [[Scripts]]
+ * [[Continuous-Scanning]]
 * [[Demos]]
 * [[Architecture]]
 * [Plugins](https://github.com/infobyte/faraday/wiki/Plugin-List)
