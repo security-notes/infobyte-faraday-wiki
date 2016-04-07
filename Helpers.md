@@ -12,5 +12,6 @@ Some tools are known for creating invalid XML output files which tend to be hard
 
 Read more about it [here](https://github.com/infobyte/faraday/wiki/troubleshooting#import).
 
-### fixBrokenChildren.py
 ### removeBySeverity.py
+
+Read more about it [here](https://github.com/infobyte/faraday/wiki/troubleshooting).
