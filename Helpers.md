@@ -5,14 +5,14 @@ In ```$FARADAY/helpers``` you can find several scripts developed to help you loa
 This script allows you to upload your Vulnerability templates database to CouchDB. Read more about it [here](https://github.com/infobyte/faraday/wiki/Vulnerabilities-Database).
 
 ```
-usage: pushExecutiveReports [-h] [-c COUCHDB]
+usage: pushCwe [-h] [-c COUCHDB]
 
 optional arguments:
   -h, --help            show this help message and exit
   -c COUCHDB, --couchdburi COUCHDB
                         Couchdb URL (default http://127.0.0.1:5984)
 
-Example: ./pushExecutiveReports.py
+Example: ./pushCwe.py
 ```
 
 ### cfdbToCsv.py
