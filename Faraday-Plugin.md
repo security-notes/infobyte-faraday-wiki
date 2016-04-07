@@ -1,4 +1,4 @@
-Using our plugin you can do different actions in the command line, for example
+Using our plugin you can do different actions in the command line of QT3 (Only), for example
 
 ```
 $ cd $faraday/bin/
