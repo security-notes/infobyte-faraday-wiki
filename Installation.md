@@ -1,4 +1,3 @@
-### Index
 * [Requirements](#requirements)
 * [Debian & Ubuntu & Backtrack](#debian)
 * [ArchLinux](#arch)
