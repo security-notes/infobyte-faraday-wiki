@@ -24,7 +24,6 @@
  * [[Faraday Plugin]]
  * [[Metasploit]]
  * [[Nessus]]
- * [[SSLCheck]]
 * **Development**
  * [[Basic Plugin Development]]
  * [[APIs]]
