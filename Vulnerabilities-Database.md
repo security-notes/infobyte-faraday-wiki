@@ -1,6 +1,6 @@
 Find yourself writing the same descriptions over and over again? Tired of typos coming up in your reports? Faraday provides a simple solution; unify criteria for naming vulnerabilities and save time and effort to yourself and your team.
 
-Faraday comes with its own [CWE](https://cwe.mitre.org/) Vulnerabilities DB for you to use. This is a simple **CSV** made using proyects open source based in the **CWE standard** and allows you to create vulnerabilities without worrying about finding references, description, etc.
+Faraday comes with its own [CWE](https://cwe.mitre.org/) Vulnerabilities DB for you to use. This is a simple **CSV** made using open source proyects based in the **CWE standard** and allows you to create vulnerabilities without worrying about finding references, description, etc.
 
 #Creating CSV and Uploading to CouchDB
 
