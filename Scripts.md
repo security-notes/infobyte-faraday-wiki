@@ -1,10 +1,9 @@
 The scripts located at `$FARADAY/scripts/` are tools shipped with Faraday and refined to work seamlessly with it. Nevertheless, at their core, they are standalone tools totally capable of performing their function on their own. 
 
-Faraday ships with three of these scripts:
+Faraday ships with two of these scripts:
 
 * [Shodan Faraday](#shodan)
 * [SSL Check](#sslcheck)
-* [WCScan](#wcsan)
 
 <a name="shodan"></a>
 ###Shodan Faraday
@@ -43,3 +42,5 @@ As noted above, the preferred way of using theses scripts is with Faraday, altho
 ```
 
 For example: ```./sslcheck.py 192.168.10.254 google.com 192.168.5.210 facebook.com ```
+
+<a name="wcscan"></a>
