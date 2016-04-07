@@ -31,4 +31,5 @@
  * [[Live debugging]]
 * [[Faraday Awards]]
 * [[FAQ]]
+* [[Troubleshooting]]
 * [[Contact us]]
