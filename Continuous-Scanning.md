@@ -12,7 +12,9 @@ While this is not (*yet*) a replacement for regular manual security audits (the 
 
 ###Setting up continuous scanning
 
-First, you should get the code at the [continuous scan repo](https://github.com/infobyte/cscan). Mind you may need to install the dependencies (``` pip install python-owasp-zap-v2 w3af-api-client```) and to use burp you need the include the plugin plugin/carbonator/carbonator.py, necessary to adapt it to our implementation.
+The script is located in ```$FARADAY/scripts/cscan/```. The main script is ```cscan.py```.
+
+Mind you may need to install the dependencies (``` pip install python-owasp-zap-v2 w3af-api-client```) and to use burp you need the include the plugin plugin/carbonator/carbonator.py, necessary to adapt it to our implementation.
 
 The following tools are available:
 
