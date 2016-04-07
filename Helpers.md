@@ -4,6 +4,7 @@ In ```$FARADAY/helpers``` you can find several scripts developed to help you loa
 ### pushCwe.py
 
 ```
+$ python helpers/pushCwe.py --help
 usage: pushCwe [-h] [-c COUCHDB]
 
 optional arguments:
@@ -26,6 +27,7 @@ This script allows you to upload your Vulnerability templates database to CouchD
 ### cleanXML.py
 
 ```
+$ python helpers/cleanXML.py --help
 usage: cleanXML [-h] -i INFILE [-o OUTFILE]
 
 optional arguments:
@@ -48,7 +50,7 @@ python $FARADAY/helpers/cleanXML.py broken_file.xml
 ### removeBySeverity.py
 
 ```
-$ python removeBySeverity.py --help
+$ python helpers/removeBySeverity.py --help
 usage: removeBySeverity [-h] [-c COUCHDB] -d DB -s SEVERITY [-t] [-v]
 
 optional arguments:
