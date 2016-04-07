@@ -80,3 +80,5 @@ optional arguments:
 For example, say you want to remove all vulnerabilities of severity 'critical' in a local CouchDB on the workspace named 'messedup'. You could run 
 
 ```./removeBySeverity.py -d messedup -s critical```
+
+[ [index] ](#index)
