@@ -48,6 +48,7 @@ python $FARADAY/helpers/cleanXML.py broken_file.xml
 ### removeBySeverity.py
 
 ```
+$ python removeBySeverity.py --help
 usage: removeBySeverity [-h] [-c COUCHDB] -d DB -s SEVERITY [-t] [-v]
 
 optional arguments:
@@ -64,5 +65,13 @@ optional arguments:
 
 Example: ./removeBySeverity.py
 ```
+
+Removes all vulnerabilities with selected severity. Faraday has 6 levels of severity defined from highest to lowest:
+* critical
+* high
+* med
+* low
+* info
+* unclassified
 
 Read more about it [here](https://github.com/infobyte/faraday/wiki/troubleshooting).
