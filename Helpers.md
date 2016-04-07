@@ -1,5 +1,6 @@
 In ```$FARADAY/helpers``` you can find several scripts developed to help you load and manage Faraday data. None of them are included as part of the Faraday core, and using them can usually mean deleting content from the database in a permanent way, so be careful when executing any of them and always make sure to have a fresh backup.
 
+<a name="pushCwe"></a>
 ### pushCwe.py
 
 ```
@@ -15,8 +16,13 @@ Example: ./pushCwe.py
 
 This script allows you to upload your Vulnerability templates database to CouchDB. Read more about it [here](https://github.com/infobyte/faraday/wiki/Vulnerabilities-Database).
 
+<a name="cfdbToCsv"></a>
 ### cfdbToCsv.py
+
+<a name="vulndbToCsv"></a>
 ### vulndbToCsv.py
+
+<a name="cleanXML"></a>
 ### cleanXML.py
 
 ```
@@ -36,6 +42,7 @@ Some tools are known for creating invalid XML output files which tend to be hard
 
 Read more about it [here](https://github.com/infobyte/faraday/wiki/troubleshooting#import).
 
+<a name="removeBySeverity"></a>
 ### removeBySeverity.py
 
 ```
