@@ -1,16 +1,16 @@
-##The problem
+### The problem
 
 Performing a security audit of your infrastructure, website or services once a year is a great first step, but it's probably not enough. Even doing it every six months could lead to several security holes. And besides that, if the audit only involves one or a few tools, it could lead to vulnerabilities discovered by other programs untouched and uncovered.  
 
-##The solution
+### The solution
 
 That's why the Faraday platform offers you the possibility to do continuous scanning using almost all the auditing tools on the market. The goal of this page is guiding you through setting up Faraday to do a scan every week or after some event, all with different tools and obtaining all the results on your Faraday platform. 
 
 While this is not (*yet*) a replacement for regular manual security audits (the software is not quite there yet), by implementing continuous scanning you can pick a lot of the low hanging fruit, leaving only the really interesting stuff for real people.
 
-##The guide
+### The guide
 
-###Setting up continuous scanning
+#### Setting up continuous scanning
 
 The script is located in ```$FARADAY/scripts/cscan/```. The main script is ```cscan.py```.
 
@@ -65,6 +65,6 @@ After listing the intended targets and reviewing the config.py file, you should 
 
 Another options is to configure the scripts with Jenkins. For example, you could set it up so every time a new merge or release is detected, Jenkins would run the scripts. 
 
-###Using the new information
+#### Using the new information
 
 Each time the scan is run Faraday will incorporate the new information. This can be overwhelming at first, so you should try to organize it. Using the Web UI, this is a breeze. You can set tags for every vulnerability, mark it as confirmed or a false positive, establish the priority, and pretty much everything you want. 
