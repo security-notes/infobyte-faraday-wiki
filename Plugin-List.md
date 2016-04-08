@@ -1,13 +1,23 @@
 The main purpose of Faraday is to re-use the available tools in the community to take advantage of them in a multiuser way.
 
 <a name="types"></a>
-There are three kinds of plugins available for Faraday:
+There are three kinds of plugins available for Faraday; console, report and API
 
- * CONSOLE - Plugins that intercept commands, fired directly when a command is detected in the console. These are transparent to you and no additional action on your part is needed.
- * REPORT - Plugins that import file reports. You have to copy the report to **$HOME/.faraday/report/[workspacename]** (replacing **[workspacename]** with the actual name of your Workspace) and Faraday will automatically detect, process and add it to the HostTree.
- * API - Plugin connectors or online (BeEF, Metasploit, Burp), these connect to external APIs or databases, or talk directly to Faraday's RPC API.
+### Console
 
-If you think your favorite tool is missing [code your own plugin](https://github.com/infobyte/faraday/wiki/Basic-plugin-development) or [ask us to do it](https://github.com/infobyte/faraday/issues/new)!
+Plugins that intercept commands, fired directly when a command is detected in the console. These are transparent to you and no additional action on your part is needed.
+
+### Report
+
+Plugins that import file reports. You have to copy the report to **$HOME/.faraday/report/[workspacename]** (replacing **[workspacename]** with the actual name of your Workspace) and Faraday will automatically detect, process and add it to the HostTree.
+
+### API
+
+Plugin connectors or online (BeEF, Metasploit, Burp), these connect to external APIs or databases, or talk directly to Faraday's RPC API.
+
+### List
+
+If you think your favourite tool is missing [code your own plugin](https://github.com/infobyte/faraday/wiki/Basic-plugin-development) or [ask us to do it](https://github.com/infobyte/faraday/issues/new)!
 
 * [Acunetix](https://twitter.com/acunetix) (REPORT) (XML)
 * [Amap] (https://www.thc.org/thc-amap/) (CONSOLE)
