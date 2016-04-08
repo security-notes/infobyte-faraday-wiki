@@ -1,5 +1,3 @@
-#Immunity's CANVAS
-
 This plugin allows a user to import all information about hosts, interfaces and specially vulnerabilities included in Client Side or Server Side attacks using Immunitys Canvas.
 
 This plugin is a little different from the others, Immunity Canvas is the executor of this and not Faraday which makes it interesting to explain how to install it and how it works.
@@ -14,7 +12,7 @@ to the folder
 
 That’s all you need to do!
 
-#And how does it work?
+### How it works
 In Canvas, open the module “faraday_report”, in the interface and you need to complete three fields:
 
 1. Pickle file : This is the Canvas report, located in [Canvas_Installation]/Sessions/$SESSION_NAME
