@@ -23,9 +23,9 @@
  * [[BeEF]]
  * [[Evilgrade]]
  * [[Faraday Plugin]]
+ * [[Immunitys-CANVAS]]
  * [[Metasploit]]
  * [[Nessus]]
- * [[Immunitys-CANVAS]]
 * **Development**
  * [[Basic Plugin Development]]
  * [[APIs]]
