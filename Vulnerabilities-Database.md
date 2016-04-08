@@ -3,7 +3,8 @@ Find yourself writing the same descriptions over and over again? Tired of typos 
 Faraday comes with its own [CWE](https://cwe.mitre.org/) Vulnerabilities DB for you to use. This is a simple **CSV** made using open source proyects based in the **CWE standard** and allows you to create vulnerabilities without worrying about finding references, description, etc.
 
 You prefer a video about this feature? [Vulnerability Database](https://www.youtube.com/watch?v=o5uSS6yzvCo)
-#Creating CSV and Uploading to CouchDB
+
+### Creating a CSV to upload to CouchDB
 
 Faraday have a CSV of the original Mitre proyect, if you want import to Faraday this, jump to execution of pushCWE.py 
 
@@ -36,7 +37,7 @@ And run pushCWE.py!
 
 Make sure you run the **pushCwe.py** script before use and that's it!
 
-#Using
+### Usage
 
 Login to your Faraday Web UI and create or edit a vulnerability , you can see now a field 'CWE' how show image...
 ![](https://raw.githubusercontent.com/wiki/infobyte/faraday/images/CweDb.png)
