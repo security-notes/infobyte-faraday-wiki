@@ -1,11 +1,12 @@
-# Basic Couchdb setup
+### Basic setup
+
 Edit CouchDB configuration file located in /etc/couchdb/local.ini and set bind_address to the required IP.
 Then restart CouchDB as follows:
 ```
 $ sudo service couchdb restart
 ```
 
-# Configure your instances
+### Configure your instances
 Now you need to configure every Faraday instance so it can connect to CouchDB.
 
 * If you're using the Qt interface, go to Edit->Server Connection to point to server. For example; http://192.168.1.254:5984/
@@ -21,11 +22,11 @@ And search for the following tags and set them, normally is like this:
 
 `<couch_uri>http://127.0.0.1:5984</couch_uri>`
 
-# Web UI
+### Web UI
 You can access the web UI going to http://[your_couch_ip]:5984/reports/_design/reports/index.html.
 More information [here](https://github.com/infobyte/faraday/wiki/Usage#web-ui)
 
-# SSL
+### SSL
 1) Enable the httpsd daemon by adding the following line to your local.ini or local_dev.ini (newly generated files include this setting but commented out);
 ```
 [daemons]
@@ -50,7 +51,7 @@ On windows, the path format needs to be one of the following:
 3) Restart CouchDB.
 CouchDB should now accept SSL connections on, by default, port 6984.
 
-## Troubleshooting
+#### Troubleshooting
 To ensure that the issue is not with your certificates, test from the command line using
 ```
 $ curl -k -v https://127.0.0.1:6984/
@@ -59,7 +60,7 @@ You can test your certificates separately using:
 ```
 $ openssl s_server -key <keyfile> -cert <certfile> -www
 ```
-## Using the certificate in your Faraday instance
+#### Using the certificate in your Faraday instance
 If you're using a valid certificate, you're good to go.
 
 If not, run Faraday's launcher with a flag --cert is needed, where the path points to your certificate, NOT your key. This is a security workaround that allow users to use their own signed certificates.
@@ -67,10 +68,10 @@ If not, run Faraday's launcher with a flag --cert is needed, where the path poin
 ./faraday.py --cert /etc/ssl/certs/server.crt
 ```
 
-# Authentication
-## Commercial version
+### Authentication
+#### Commercial
 
 You can create different types of users through the web UI. Those users can login though the same web UI or though a Faraday client using the --login flag (Faraday will ask for the credentials later)
 
-## Community version
+#### Community
 You can use the couchdb _utils interface to create administrator users, and then edit the couchdb url in your instance with the user's credendials. For example: http://admin:faradaypassword@192.168.1.254:5984/
