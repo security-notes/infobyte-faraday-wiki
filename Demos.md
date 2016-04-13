@@ -20,9 +20,14 @@ Take a look of our last demos:
 
 [![ScreenShot](https://raw.github.com/wiki/infobyte/faraday/images/youtube.png) - Faraday's BeEF Integration (VIII) ] (https://bit.ly/1RUWuSB)
 
-[![ScreenShot](https://raw.github.com/wiki/infobyte/faraday/images/youtube.png) - Using plugin Maltego (IX) ] (https://bit.ly/1nwQ8gP)
+[![ScreenShot](https://raw.github.com/wiki/infobyte/faraday/images/youtube.png) - Using plugin Canvas (IX) ] (http://bit.ly/1S7f2iI)
 
-[![ScreenShot](https://raw.github.com/wiki/infobyte/faraday/images/youtube.png) - Using plugin Arachni (X) ] (https://bit.ly/1Tlx56u)
+[![ScreenShot](https://raw.github.com/wiki/infobyte/faraday/images/youtube.png) - Using plugin Maltego (X) ] (https://bit.ly/1nwQ8gP)
+
+[![ScreenShot](https://raw.github.com/wiki/infobyte/faraday/images/youtube.png) - Using plugin Arachni (XI) ] (https://bit.ly/1Tlx56u)
+
+[![ScreenShot](https://raw.github.com/wiki/infobyte/faraday/images/youtube.png) - Using script getExploits.py(XII) ] (http://bit.ly/23vvyko)
+
 
 Webinar - 2015:
 
