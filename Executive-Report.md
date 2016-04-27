@@ -1,15 +1,15 @@
-[- Commercial version -](https://www.faradaysec.com/#download)
+This feature is only available for our [commercial versions](https://www.faradaysec.com/#download).
 
-# Intro
+### Intro
 
-The Executive Reports lets you create (as the name implies) reports using the results obtained in each workspace. 
+The Executive Reports lets you create (as the name implies) reports using the results obtained in each workspace.
 When an Executive Report is created, all the data from the Status Report is automatically processed and placed in a Word compatible document that can then be downloaded.
 
-# Requirements
+### Requirements
 
-To utilize this feature follow the necessary steps on our [Start up Configuration](https://github.com/infobyte/faraday/wiki/Faraday-Server).
+To utilize this feature follow the necessary steps on our [start up configuration](https://github.com/infobyte/faraday/wiki/Faraday-Server).
 
-# Managing Executive Reports 
+### Managing Executive Reports
 
 To manage your reports you need to access Faraday's Web Interface and click on the icon **executive reports** ![]
 (https://raw.github.com/wiki/infobyte/faraday/images/faraday_report_icon.png)
@@ -20,7 +20,7 @@ All the reports will be listed, including their info and status.
 
 Once a report has been generated it can't be edited.
 
-# Making a report
+### Making a report
 
 To create a new report, navigate to the Executive Report component and click on **New**
 ![](https://raw.github.com/wiki/infobyte/faraday/images/faraday_report_new_button.png). A new form will open, asking for the following fields:
@@ -44,7 +44,14 @@ If you need a custom report that includes only some of the findings in the works
 At least one vulnerability must be tagged in order to have the option to generate a filtered Report. When the form opens an option to select tags will appear. Keep in mind that one or more tags can be selected.
 ![](https://raw.github.com/wiki/infobyte/faraday/images/faraday_report_using_tags.png)
 
-# Eliminating a report
+### Eliminating a report
 
 From the Executive Report window, select the document and click on **Delete**
 ![](https://raw.github.com/wiki/infobyte/faraday/images/faraday_report_delete_button.png)
+
+
+### Templates
+
+All Report templates are located in ```reports/executive/templates```. The default one is ```generic.docx```, you can modify it to get customized reports.
+
+The template uses Jinja2 syntax so we strongly recommend reading the [official documentation](http://jinja.pocoo.org/docs/dev/templates/) before modifying the template.
