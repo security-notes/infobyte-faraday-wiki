@@ -24,26 +24,24 @@ Rename and copy this report, and faraday should now run the plugin and import al
 
 The list of names of plugins availables is:
 
-nmap
-w3af
-nessus
-arachni
-openvas
-zap
-nikto
-metasploit
-metasploit
-burp
-zap
-acunetix
-x1
-impact
-nexpose
-nexpose-full
-qualysguard
-retina
-netsparker
-maltego
+Nmap
+W3af
+Nessus 
+Arachni
+Openvas
+Nikto
+Metasploit
+Burp
+Zap
+Acunetix
+X1
+Core Impact
+Nexpose
+NexposeFull
+Qualysguard
+Retina
+Netsparker
+Maltego
 
 ### API
 
