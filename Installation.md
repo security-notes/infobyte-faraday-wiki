@@ -24,7 +24,7 @@ Modern Linux or OSX, and the following packages:
   * IPy
   * requests
 
-If you want you to use our experimental GTK interface, you will also need the following packages. They are available in major Linux distributions via their repositories and on Mac via homebrew.
+If you want you to use our [[experimental GTK interface|Usage#gtk-gui]], you will also need the following packages. They are available in major Linux distributions via their repositories and on Mac via brew.
 
 * GTK+3
 * pygobject

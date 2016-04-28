@@ -2,6 +2,7 @@
 
 Faraday has 5 different ways to interact with information:
 * [QT GUI](#qt-gui)
+* [GTK GUI](#gtk-gui)
 * [ZSH UI](#zsh-ui)
 * [Web UI](#web-ui)
 * [CLI](#cli)
@@ -38,6 +39,20 @@ If you are able to run Faraday QT with credentials add a login option
 ![](https://raw.github.com/wiki/infobyte/faraday/images/faraday_guiqt_login.png)
 
 Every command that you execute is intercepted and a handler is invoked in order to transparently import the newly generated information by the tool in the context of the pentest like ip addresses, hostnames, services, vulnerabilities, websites, notes, etc.
+
+### GTK GUI
+
+Out experimental GTK+3 is designed to improve on the QT3 interface, so nothing should look out of place if you were already using Faraday. If you weren't, don't worry, it's pretty simple. 
+
+To try it, just [[install the dependencies|Installation]] run Faraday with the --gui=gtk flag.
+
+![](https://raw.github.com/wiki/infobyte/faraday/images/Faraday-Gtk-MainWindow.png)
+
+You are presented with a special version of your own ZSH terminal. Just as with QT3, Faraday intercepts every command you excute and checks if there's a plugin available. If there is, Faraday will gather all relevant information like ip adresses, hostnames, services, vulnerabilities, websites notes for you.
+
+In the application menu you'll find the Preferences dialog, where you can set your CouchDB adress and the Plugins dialog, where you can see information about your plugins and change some of their settings.
+
+If you use our Pro or Corporate version, when you set your CouchDB adress, it'll also ask you for login information.
 
 ### ZSH UI
 
