@@ -1,5 +1,3 @@
-## Workspace replication
-
 There are some situations in which you might want to replicate your workspace to another CouchDB instance. For example:
 
 1. Your team is working with a workspace in your internal CouchDB instance and you want to replicate it to a public instance so a client can see it.
