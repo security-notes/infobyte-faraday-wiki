@@ -54,4 +54,6 @@ From the Executive Report window, select the document and click on **Delete**
 
 All Report templates are located in ```reports/executive/templates```. The default one is ```generic.docx```, you can modify it to get customized reports.
 
-The template uses Jinja2 syntax so we strongly recommend reading the [official documentation](http://jinja.pocoo.org/docs/dev/templates/) before modifying the template.
+The template uses Jinja2 syntax so we strongly recommend reading the [official documentation](http://jinja.pocoo.org/docs/dev/templates/) before modifying the template. The library used to create the report is **python-docx-template** available via [Github](https://github.com/elapouya/python-docx-template/). All Jinja2 tags are available, although there are some [restrictions](http://docxtpl.readthedocs.io/en/latest/#restrictions).
+
+![](https://raw.github.com/wiki/infobyte/faraday/images/faraday_report_template_example.png)
