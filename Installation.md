@@ -24,6 +24,12 @@ Modern Linux or OSX, and the following packages:
   * IPy
   * requests
 
+If you want you to use our experimental GTK interface, you will also need the following packages. They are available in major Linux distributions via their repositories and on Mac via homebrew.
+
+* GTK+3
+* pygobject
+* Vte 2.91
+
 Current tests include [Debian](#debian), [Ubuntu](#debian), [Kali](#kali), [Backtrack](#debian) and [OSX Maverick 10.9.2](#osx).
 
 If instead of installing you want to take a quick look at Faraday you can also use [Docker](#docker).
