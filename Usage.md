@@ -1,3 +1,12 @@
+## Faraday Client
+
+Faraday has 5 different ways to interact with information:
+* [QT GUI](#qt-gui)
+* [ZSH UI](#zsh-ui)
+* [Web UI](#web-ui)
+* [CLI](#cli)
+* [ZSH Web](#zsh-web) (only available in our commercial versions)
+
 ## Faraday Server
 
 Only available for our [commercial versions](https://www.faradaysec.com/#download).
@@ -9,16 +18,6 @@ Make sure that your Faraday Server Proxy is [configured](https://github.com/info
 ```
 ./faraday-server.pyc [--ssl]
 ```
-
-
-## Faraday Client
-
-Faraday has 5 different ways to interact with information:
-* [QT GUI](#qt-gui)
-* [ZSH UI](#zsh-ui)
-* [Web UI](#web-ui)
-* [CLI](#cli)
-* [ZSH Web](#zsh-web) (only available in our commercial versions)
 
 ### QT GUI
 
