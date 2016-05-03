@@ -29,6 +29,8 @@ If you want you to use our [[experimental GTK interface|Usage#gtk-gui]], you wil
 * GTK+3
 * pygobject
 * Vte 2.91
+* zsh
+* curl
 
 Current tests include [Debian](#debian), [Ubuntu](#debian), [Kali](#kali), [Backtrack](#debian) and [OSX Maverick 10.9.2](#osx).
 
