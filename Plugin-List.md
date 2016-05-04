@@ -11,37 +11,36 @@ Plugins that intercept commands, fired directly when a command is detected in th
 
 Plugins that import file reports. You have to copy the report to **$HOME/.faraday/report/[workspacename]** (replacing **[workspacename]** with the actual name of your Workspace) and Faraday will automatically detect, process and add it to the HostTree.
 
-If Faraday is not capable to detect the plugin what need for process a report, you can indicate manually to 
-Faraday what plugin use with '\_faraday\_[PluginName]' before of the extension.
+If Faraday is not capable to detect the plugin needed to process the report, you can manually tell Faraday which plugin you would like to use by adding **\_faraday\_[PluginName]** to the file name before the extension.
 
-Example:
+For example:
 
 Original: burp_1456983368.xml
 
 Modified: Burp_1456983368_faraday_burp.xml
 
-Rename and copy this report, and faraday should now run the plugin and import all vulnerabilities.
+Rename and copy this report, and Faraday should now run the plugin and import all vulnerabilities.
 
 The list of names of plugins availables is:
 
-Nmap
-W3af
-Nessus 
-Arachni
-Openvas
-Nikto
-Metasploit
-Burp
-Zap
-Acunetix
-X1
-Core Impact
-Nexpose
-NexposeFull
-Qualysguard
-Retina
-Netsparker
-Maltego
+* Acunetix
+* Arachni
+* Burp
+* Core Impact
+* Maltego
+* Metasploit
+* Nessus 
+* Netsparker
+* Nexpose
+* NexposeFull
+* Nikto
+* Nmap
+* Openvas
+* Qualysguard
+* Retina
+* W3af
+* X1
+* Zap
 
 ### API
 
