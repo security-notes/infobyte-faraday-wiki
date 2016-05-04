@@ -11,15 +11,9 @@ Plugins that intercept commands, fired directly when a command is detected in th
 
 Plugins that import file reports. You have to copy the report to **$HOME/.faraday/report/[workspacename]** (replacing **[workspacename]** with the actual name of your Workspace) and Faraday will automatically detect, process and add it to the HostTree.
 
-If Faraday is not capable to detect the plugin needed to process the report, you can manually tell Faraday which plugin you would like to use by adding **\_faraday\_[PluginName]** to the file name before the extension.
+If Faraday is not capable to detect the plugin needed to process the report, you can manually choose which plugin will be used by adding ```\_faraday\_[PluginName]``` to the file name before the extension.
 
-For example:
-
-Original: burp_1456983368.xml
-
-Modified: Burp_1456983368_faraday_burp.xml
-
-Rename and copy this report, and Faraday should now run the plugin and import all vulnerabilities.
+For example, if the **Burp** report named ```burp_1456983368.xml``` is not being recognized, try renaming it to ```Burp_1456983368_faraday_burp.xml```. Now copy it to the Workspace directory and Faraday should now run the plugin and import all vulnerabilities.
 
 The list of names of plugins availables is:
 
