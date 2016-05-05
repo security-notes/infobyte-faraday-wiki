@@ -88,3 +88,5 @@ First of all, take a look at our [start-up configuration](https://github.com/inf
 Once that's done, [create the Report](https://github.com/infobyte/faraday/wiki/Executive-Report#making-a-report) and wait for two minutes. If after that time the report is still in **processing** state, try [generating it manually](https://github.com/infobyte/faraday/wiki/Executive-Report#manual-reports).
 
 [ [index] ](#index)
+
+Is your question not listed here? [Contact us](https://github.com/infobyte/faraday/issues)
