@@ -15,7 +15,7 @@ If Faraday is not capable to detect the plugin needed to process the report, you
 
 For example, if the **Burp** report named ```burp_1456983368.xml``` is not being recognized, try renaming it to ```Burp_1456983368_faraday_Burp.xml```. Now copy it to the Workspace directory and Faraday should now run the plugin and import all vulnerabilities.
 
-The list of names of plugins availables is:
+Keep in mind that this functionality is **case sensitive**. The names of the available plugins are:
 
 * Acunetix
 * Arachni
