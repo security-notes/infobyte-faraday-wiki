@@ -63,17 +63,16 @@ An example of how the template cover looks like
 #### Data
 
 Keep in mind that the data available to the Report is:
-
-    * conclusions - contains the text loaded when [creating the report](#making-a-report)
-    * date - the date when the Report was created, as the name of the month and four digits for the year
-    * enterprise - contains the text loaded when [creating the report](#making-a-report)
-    * hosts - a dictionary with all the hosts in the Workspace
-    * objectives - contains the text loaded when [creating the report](#making-a-report)
-    * overview_images - a [sub-document](http://docxtpl.readthedocs.io/en/latest/#sub-documents) containing vulnerability piecharts
-    * recommendations - contains the text loaded when [creating the report](#making-a-report)
-    * scope - contains the text loaded when [creating the report](#making-a-report)
-    * services - a dictionary with all the services in the Workspace
-    * summary - contains the text loaded when [creating the report](#making-a-report)
-    * title - contains the text loaded when [creating the report](#making-a-report)
-    * vulns - a dictionary with all vulnerabilities in the Workspace
-    * vulns_amount - number of vulnerabilities in the Workspace
+* conclusions - contains the text loaded when [creating the report](#making-a-report)
+* date - the date when the Report was created, as the name of the month and four digits for the year
+* enterprise - contains the text loaded when [creating the report](#making-a-report)
+* hosts - a dictionary with all the hosts in the Workspace
+* objectives - contains the text loaded when [creating the report](#making-a-report)
+* overview_images - a [sub-document](http://docxtpl.readthedocs.io/en/latest/#sub-documents) containing vulnerability piecharts
+* recommendations - contains the text loaded when [creating the report](#making-a-report)
+* scope - contains the text loaded when [creating the report](#making-a-report)
+* services - a dictionary with all the services in the Workspace
+* summary - contains the text loaded when [creating the report](#making-a-report)
+* title - contains the text loaded when [creating the report](#making-a-report)
+* vulns - a dictionary with all vulnerabilities in the Workspace
+* vulns_amount - number of vulnerabilities in the Workspace
