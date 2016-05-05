@@ -32,6 +32,11 @@ If you want you to use our [[experimental GTK interface|Usage#gtk-gui]], you wil
 * zsh
 * curl
 
+In Kali, for example, you can get all of these packages with:
+```
+sudo apt-get install gir1.2-gtk-3.0 gir1.2-vte-2.91 python-pip python-gobject zsh curl
+```
+
 Current tests include [Debian](#debian), [Ubuntu](#debian), [Kali](#kali), [Backtrack](#debian) and [OSX Maverick 10.9.2](#osx).
 
 If instead of installing you want to take a quick look at Faraday you can also use [Docker](#docker).
