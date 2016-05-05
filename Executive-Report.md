@@ -84,5 +84,5 @@ Keep in mind that the data available to the Report is:
 If, for any reason, the reports are not being generated after creation you can force Faraday to create them by running
 
 ```
-. $FARADAYINSTALLPATH/.couchadmin; python $FARADAYINSTALLPATH/
+. $FARADAYINSTALLPATH/.couchadmin; python $FARADAYINSTALLPATH/pushExecutiveReports.py
 ```
