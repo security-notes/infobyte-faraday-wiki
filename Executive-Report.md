@@ -78,7 +78,7 @@ Keep in mind that the data available to the Report is:
 * vulns - a dictionary with all vulnerabilities in the Workspace
 * vulns_amount - number of vulnerabilities in the Workspace
 
-<a name="#manual-reports"></a>
+<a name="manual-reports"></a>
 ### Manually generating Reports
 
 If, for any reason, the reports are not being generated after creation you can force Faraday to create them by running
