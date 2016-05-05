@@ -44,6 +44,7 @@ If you need a custom report that includes only some of the findings in the works
 At least one vulnerability must be tagged in order to have the option to generate a filtered Report. When the form opens an option to select tags will appear. Keep in mind that one or more tags can be selected.
 ![](https://raw.github.com/wiki/infobyte/faraday/images/faraday_report_using_tags.png)
 
+
 ### Eliminating a report
 
 From the Executive Report window, select the document and click on **Delete**
@@ -76,3 +77,12 @@ Keep in mind that the data available to the Report is:
 * title - contains the text loaded when [creating the report](#making-a-report)
 * vulns - a dictionary with all vulnerabilities in the Workspace
 * vulns_amount - number of vulnerabilities in the Workspace
+
+<a name="#manual-reports"></a>
+### Manually generating Reports
+
+If, for any reason, the reports are not being generated after creation you can force Faraday to create them by running
+
+```
+. $FARADAYINSTALLPATH/.couchadmin; python $FARADAYINSTALLPATH/
+```
