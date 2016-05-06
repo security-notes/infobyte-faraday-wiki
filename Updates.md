@@ -14,4 +14,10 @@ Unpack it in your current Faraday root directory and run:
 ./faraday.pyc --update --login
 ```
 
+After doing that, run the following command to make sure all dependencies are met:
+
+```
+./setup_server.sh
+```
+
 Now you're ready to go!
