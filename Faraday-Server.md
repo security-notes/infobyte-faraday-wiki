@@ -8,8 +8,8 @@ The Faraday Server is made to manage the CouchDB Database. This lets the user ac
 `/faraday# cat requirements_server.txt`
 
 distribute==0.7.3<br>
-python-docx==0.7.6<br>
-docxtpl==0.8.2<br>
+python-docx==0.8.2<br>
+docxtpl==0.2.0<br>
 six==1.9.0<br>
 matplotlib==1.4.2<br>
 
