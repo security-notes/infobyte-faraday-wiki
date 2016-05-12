@@ -5,6 +5,7 @@ In order to update your Faraday version run:
 ```
 
 [- Commercial version -](https://www.faradaysec.com/#download)
+### Commercial version update
 
 Download the last tarball version from Faraday Customer Portal using the username and password you received after your purchase.
 
