@@ -74,4 +74,4 @@ If not, run Faraday's launcher with a flag --cert is needed, where the path poin
 You can create different types of users through the web UI. Those users can login though the same web UI or though a Faraday client using the --login flag (Faraday will ask for the credentials later)
 
 #### Community
-You can use the couchdb _utils interface to create administrator users, and then edit the couchdb url in your instance with the user's credendials. For example: http://admin:faradaypassword@192.168.1.254:5984/
+You can use the couchdb _utils http://127.0.0.1:5984/_utils/ interface to create administrator users, and then edit the couchdb url in your instance with the user's credendials. For example: http://admin:faradaypassword@192.168.1.254:5984/
