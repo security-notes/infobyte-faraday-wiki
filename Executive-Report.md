@@ -87,7 +87,9 @@ If, for any reason, the reports are not being generated after creation you can f
 . $FARADAYINSTALLPATH/.couchadmin; python $FARADAYINSTALLPATH/pushExecutiveReports.py
 ```
 
-If this still doesn't work, please make sure you have the correct credentials and Couch URL in your .couchadmin file. The file can only be read by the root user, and should look like this:
+If this still doesn't work, please make sure you have the correct credentials and Couch URL in your $FARADAYINSTALLPATH/.couchadmin file. It was created during the server setup (done by the ./setup_server.sh script) and maybe the information has changed or wasn't created correctly for some reason. 
+
+The file can only be read by the root user, and you should edit it to look like this, replacing username, password, couch_url and port with your own information.
 
 ```
 COUCHDB=http://username:password@COUCH_URL:PORT
