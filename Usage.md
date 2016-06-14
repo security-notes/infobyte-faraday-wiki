@@ -83,7 +83,7 @@ Faraday will show you the two conflicting objects, with its differences highligh
 <a name="notifications-dialog"></a>
 #### Notifications dialog
 
-![](https://raw.github.com/wiki/infobyte/faraday/images/Faraday-Gtk-ConflictsDialog.png)
+![](https://raw.github.com/wiki/infobyte/faraday/images/Faraday-Gtk-NotificationsDialog.png)
 
 Faraday is a multi-user integrated penetration test environment. That's why keeping up with changes coming from your collaborators is so important, and its why the notifications dialog exists. 
 
