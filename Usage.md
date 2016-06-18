@@ -100,7 +100,13 @@ You can even run Faraday in detached mode connecting with a ZSH terminal to it:
 No manual imports needed but supported. Just drop your fresh generated reports in:
     $ ~/.faraday/report/workspace_name
 
-Faraday will parse your reports and upload the information extracted from them.
+Faraday will parse your reports and upload the information extracted from them. 
+All the available information will be available through the different interface
+* [QT GUI](#qt-gui)
+* [GTK GUI](#gtk-gui)
+* [Web UI](#web-ui)
+
+### Web UI
 
 In order to access the Web UI point your browser to: http://[COUCHDB]:5984/reports/_design/reports/index.html
 
@@ -110,7 +116,6 @@ Directly from the GUI QT you have to click in the icon:
 
 ![](https://raw.github.com/wiki/infobyte/faraday/images/Visualize-icon.png)
 
-### Web UI
 
 #### Faraday Community Version
 
