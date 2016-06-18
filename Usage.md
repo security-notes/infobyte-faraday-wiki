@@ -110,7 +110,7 @@ All the available information will be available through the different interface
 
 In order to access the Web UI point your browser to: http://[COUCHDB]:5984/reports/_design/reports/index.html
 
-The current URL address is normally display on console log information
+The current URL address is displayed on console log information
 
 ![](https://raw.github.com/wiki/infobyte/faraday/images/Console_GUIWeb_Highlight.png)
 
