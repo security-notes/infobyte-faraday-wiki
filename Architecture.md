@@ -27,5 +27,5 @@ Both topologies combine real-time change notifications with instant transactions
 
 Plugins
 --
-The following diagram explains the pluggins architecture:
+The following diagram explains the plugins architecture:
 ![Plugin_Controller](https://raw.github.com/wiki/infobyte/faraday/images/plugin_controller.png)
