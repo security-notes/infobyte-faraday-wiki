@@ -26,7 +26,7 @@ Read more about it [here](https://github.com/infobyte/faraday/wiki/Vulnerabiliti
 <a name="vulndbToCsv"></a>
 ### vulndbToCsv.py
 
-This script allows you, create a CSV file with Vulnerability templates, based in Vulndb open source proyect.
+This script allows you, create a CSV file with Vulnerability templates, based in Vulndb open source project.
 Read more about it [here](https://github.com/infobyte/faraday/wiki/Vulnerabilities-Database).
 
 <a name="cleanXML"></a>
