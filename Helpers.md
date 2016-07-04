@@ -20,7 +20,7 @@ This script allows you to upload your Vulnerability templates database to CouchD
 <a name="cfdbToCsv"></a>
 ### cfdbToCsv.py
 
-This script allows you, create a CSV file with Vulnerability templates, based in Cfdb open source proyect.
+This script allows you, create a CSV file with Vulnerability templates, based in Cfdb open source project.
 Read more about it [here](https://github.com/infobyte/faraday/wiki/Vulnerabilities-Database).
 
 <a name="vulndbToCsv"></a>
