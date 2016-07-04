@@ -1,6 +1,6 @@
 Front end
 --
-Faraday was developed in Python and QT3
+Faraday was developed in Python, GTK, QT3 [Deprecated]
 
 Backend
 --
