@@ -1,4 +1,4 @@
-Using the Debug button will launch an interactive ipython[0] terminal for you to check on live objects.
+Using the Debug button will launch an interactive ipython terminal for you to check on live objects.
 
 ![](https://raw.github.com/wiki/infobyte/faraday/images/Debug_button.png)
 
