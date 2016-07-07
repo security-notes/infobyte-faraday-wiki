@@ -92,6 +92,12 @@ Updating objects on faraday now results in a beautiful notification in the QT ui
 * Screenshots: https://github.com/infobyte/faraday/wiki/Screenshots
 
 ## Presentation
+* Black Hat Arsenal USA - 2016:
+   * https://www.blackhat.com/us-16/arsenal.html#faraday
+
+* Bsides Latam - 2016:
+   * http://www.infobytesec.com/down/Faraday_BsideLatam_2016.pdf
+
 * Black Hat Arsenal Asia - 2016:
    * https://www.blackhat.com/asia-16/arsenal.html#faraday
 
