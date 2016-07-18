@@ -18,4 +18,6 @@ Currently we support the following  sites:
 
 The packages are available via Github in their [own public repository](https://github.com/infobyte/faraday_bugbounty/). Just download and copy to **/var/lib/couchdb**.
 
+**It is very important** that after downloading and copying the databases to /var/lib/couchdb, you make sure they have the correct owner user and group. For example, if you downloaded the Facebook Bugbounty DB, you'll probably have to run ```sudo chown couchdb:daemon /var/lib/couchdb/facebook.couch``` afterwards. The user and group may vary depending on your sistem and configuration. 
+
 Also, our Web UI allows you to pre-calculate how much a Workspace would be worth for a program and see the vulnerabilities distribution in an [interactive visualization](https://github.com/infobyte/faraday/wiki/Web-UI#workspace-worth).
