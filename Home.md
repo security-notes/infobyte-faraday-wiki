@@ -16,6 +16,7 @@ $ cd faraday-dev
 $ ./install.sh
 $ ./faraday.py
 ```
+[Read more about the installation process](https://github.com/infobyte/faraday/wiki/Installation).
 
 ## About
 
