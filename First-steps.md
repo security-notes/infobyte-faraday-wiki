@@ -4,9 +4,17 @@ The recommended approach for first time users is performing a single Faraday ins
 
 ```
 $ ./install.sh
+$ ./faraday-server.py
 $ ./faraday.py
 ```
 
 Read more about [installing Faraday](https://github.com/infobyte/faraday/wiki/installation).
+Our **Faraday client** is designed to input data to the program.
 
-After
+// quick client installation
+
+The server processes the data you submit and also serves the Web UI and several APIs.
+
+// quick server installation
+
+To read more about installing Faraday [click here]().
