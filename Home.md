@@ -1,3 +1,24 @@
+## Installation
+
+The following platforms are supported:
+
+![platform](https://raw.github.com/wiki/infobyte/faraday/images/platform/supported.png) 
+
+[Read more about this] (https://github.com/infobyte/faraday/wiki/Installation).
+
+#### Quick install
+
+Download the [latest tarball](https://github.com/infobyte/faraday/tarball/master) or clone the [Faraday Git Project](https://github.com/infobyte/faraday repository):
+
+```
+$ git clone https://github.com/infobyte/faraday.git faraday-dev
+$ cd faraday-dev
+$ ./install.sh
+$ ./faraday.py
+```
+
+## About
+
 Faraday introduces a new concept - IPE (Integrated Penetration-Test Environment) a multiuser Penetration test IDE. Designed for distribution, indexation and analysis of the data generated during a security audit.
 
 The main purpose of Faraday is to re-use the available tools in the community to take advantage of them in a multiuser way.
@@ -16,25 +37,6 @@ To read about the latest features check out the [release notes](https://github.c
 
 Right now faraday has more than [50+ supported tools](https://github.com/infobyte/faraday/wiki/Plugin-List), among them you will find: 
 ![](https://raw.github.com/wiki/infobyte/faraday/images/plugins/Plugins.png)
-
-##Installation
-
-The following platforms are supported:
-
-![platform](https://raw.github.com/wiki/infobyte/faraday/images/platform/supported.png) 
-
-[Read more about this] (https://github.com/infobyte/faraday/wiki/Installation).
-
-#### Quick install
-
-Download the [latest tarball](https://github.com/infobyte/faraday/tarball/master) or clone the [Faraday Git Project](https://github.com/infobyte/faraday repository):
-
-```
-$ git clone https://github.com/infobyte/faraday.git faraday-dev
-$ cd faraday-dev
-$ ./install.sh
-$ ./faraday.py
-```
 
 ##Features
 
