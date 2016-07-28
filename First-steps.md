@@ -1,6 +1,6 @@
 Faraday actually consists of two tools; Faraday Client and Faraday Server. 
 
-Our **Faraday client** is designed to input data to the program.
+Our **Faraday client** is designed to input data to the database.
 
 // quick client installation
 
