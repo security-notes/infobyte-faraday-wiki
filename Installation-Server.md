@@ -13,7 +13,7 @@ Once up, you can access Faraday's Web UI via the server: just go to `http://SERV
 <a name="requirements"></a>
 ### Requirements
 
-Faraday Server is built with minimum requirements. This is by design, so you can install it even on the most bare-bones machine you can think of. 
+Faraday Server is built with minimum requirements. This is by design, so you can install it even on the most bare-bones machine you can think of.
 
 * Python 2.6.x or 2.7.x
 * flask (>= 0.10.1)
@@ -31,7 +31,7 @@ In addition, the commercial versions need:
 <a name="commercial"></a>
 ### Commercial Version (Professional & Corporate)
 
-Installing Faraday Server commercial version is extremely simple. You should only keep in mind that you should install the server on the same machine you will install the CouchDB database. 
+Installing Faraday Server commercial version is extremely simple. You should only keep in mind that you should install the server on the same machine you will install the CouchDB database.
 
 Just go to the Faraday directory and run the following. Be aware that the first command should be run as root, the second one can be run as a normal user.
 ```
