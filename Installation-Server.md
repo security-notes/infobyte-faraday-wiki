@@ -38,25 +38,6 @@ Just go to the Faraday directory and run the following. Be aware that the first 
 # ./setup_server.sh
 ```
 
-`/faraday# ./setup_server.sh`
-
-![](https://raw.github.com/wiki/infobyte/faraday/images/faraday_setup_libraries.png)
-
-`[+] Install required libraries? [y/N]`
-
-* Install the necessary libraries to execute the application.These can be found in the folder, requirements_server.txt.
-
-`[+] Install backup crontab? [y/N]`
-
-* Install a batch process to run periodic backups of the database.
-
-`[+] Install Report Generation crontab? [y/N]`
-
-* Install a batch process to make automated reports.
-
-`[+] Faraday server is fully configured`
-
-
 After the setup script is done, run this to fire up the server
 ```
 $ ./faraday-server.py
