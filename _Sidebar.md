@@ -1,8 +1,9 @@
 * [About](https://github.com/infobyte/faraday/wiki)
-* [[Installation]]
- * [[CouchDB]]
+* [[First steps]]
+ * [[Server installation]]
+ * [[Client installation]]
+ * [Using SSL](https://github.com/infobyte/faraday/wiki/SSL)
  * [[Vulnerabilities Database]]
- * [[Faraday Server]]
 * [[Updates]]
 * [[Usage]]
  * [[Manage Workspaces]]
@@ -11,7 +12,7 @@
  * [[Chat and Communication]]
  * [[Executive Report]]
  * [[Bug bounties]]
- * [CSV Exporting & Importing](https://github.com/infobyte/faraday/wiki/Exporting-the-information) 
+ * [CSV Exporting & Importing](https://github.com/infobyte/faraday/wiki/Exporting-the-information)
  * [[Manage Hosts and Services GUI WEB]]
  * [[Helpers]]
  * [[Scripts]]
