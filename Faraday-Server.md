@@ -1,6 +1,10 @@
 [- Commercial version -](https://www.faradaysec.com/#download)
 
-The Faraday Server is made to manage the CouchDB Database. This lets the user access all the information in one centralized platform, run periodic backups and make automated reports.
+
+The purpose of Faraday Server is to manage effectively the CouchDB Database. This lets you access all the information on one centralized platform, run periodic backups and, for our Commercial versions, make automated reports.
+
+The installation processs differs slightly for the Community and Commercial versions. 
+
 
 ### Requirements
 

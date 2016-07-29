@@ -1,5 +1,9 @@
 ### Basic setup
 
+
+Faraday Server needs to comunicate to Couch Databases to function. In order to set up the server,
+we'll first configure and run couchdb.
+
 Edit CouchDB configuration file located in /etc/couchdb/local.ini and set bind_address to the required IP.
 Then restart CouchDB as follows:
 ```
@@ -21,10 +25,6 @@ And search for the following tags and set them, normally is like this:
 `<last_workspace>workspace</last_workspace>`
 
 `<couch_uri>http://127.0.0.1:5984</couch_uri>`
-
-### Web UI
-You can access the web UI going to http://[your_couch_ip]:5984/reports/_design/reports/index.html.
-More information [here](https://github.com/infobyte/faraday/wiki/Usage#web-ui)
 
 ### SSL
 1) Enable the httpsd daemon by adding the following line to your local.ini or local_dev.ini (newly generated files include this setting but commented out);

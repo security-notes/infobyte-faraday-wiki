@@ -13,9 +13,11 @@ Modern Linux or OSX, and the following packages:
 
 <a name="packages"></a>
 * Python 2.6.x or 2.7.x
-* Qt3 (only Linux)
 * CouchDB >= 1.2.0  
 * The following python libs:
+* GTK+3, PyGobject >= 3.12.0, Vte (API >= 2.90)
+* Zsh
+* Curl
   * mockito 
   * couchdbkit 
   * whoosh 
@@ -23,19 +25,6 @@ Modern Linux or OSX, and the following packages:
   * psycopg2
   * IPy
   * requests
-
-If you want you to use our [[GTK interface|Usage#gtk-gui]], you will also need the following packages. They are available in major Linux distributions via their repositories and on Mac via brew.
-
-* GTK+3
-* pygobject
-* Vte 2.91
-* zsh
-* curl
-
-In Kali, for example, you can get all of these packages with:
-```
-sudo apt-get install gir1.2-gtk-3.0 gir1.2-vte-2.91 python-pip python-gobject zsh curl
-```
 
 Current tests include [Debian](#debian), [Ubuntu](#debian), [Kali](#kali), [Backtrack](#debian) and [OSX Maverick 10.9.2](#osx).
 
@@ -78,7 +67,7 @@ Due to Kali's package updates this may not be the last version. If you want the 
 Before [installing Faraday](#install) you will need to get some user-contributed packages. In order to do this quickly we need an [AUR](https://wiki.archlinux.org/index.php/Arch_User_Repository) wrapper, in this case we will use [Yaourt](http://archlinux.fr/yaourt-en). After installing Yaourt run:
 
 ```
-$ yaourt -S python2-whoosh pyqt3 python2-mockito python2-couchdbkit python2-flask python2-restkit python2-ipy python2-requests python2-tornado python2-dateutil python2-colorama python2-pip mime-types
+$ yaourt -S python2-dateutil python2-pip mime-types python2-gobject gtk3 vte3
 ```
 
 Now you can proceed to [install Faraday](#install).
@@ -117,7 +106,7 @@ To install [Brew](http://brew.sh) run:
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 ```
 
-##### Python & pip
+##### Install Python & PIP
 
 Run:
 
@@ -145,7 +134,8 @@ Run:
 git clone https://github.com/infobyte/faraday.git faraday-dev
 ```
 
-##### Python libraries via PIP
+
+##### Dependencies and other Python libraries via PIP
 
 Installing Python via brew will also install pip. Now we need to use pip to install the [requirements](#packages):
 
@@ -157,6 +147,11 @@ If you have issues building psycopg2 (needed for Metasploit Online Module)
 brew install postgresql
 pip install psycopg2
 ```
+
+##### GTK
+We need a few other packages from brew before you can use the client:
+
+`brew install vte3 pygobject`
 
 ##### CouchDB 
 
@@ -170,9 +165,9 @@ On Maverick 10.9.2:
 
 ##### ZSH
 
-Faraday needs [ZSH](http://www.zsh.org/) to connect to the server. To install it run:
+Faraday needs [ZSH](http://www.zsh.org/) and curl to connect to the server. To install it run:
 
-`brew install zsh`
+`brew install zsh curl`
 
 ##### Going for it!
 
@@ -227,7 +222,7 @@ cd faraday/
 ./faraday-terminal.zsh
 ```
 
-##### GUI QT
+##### GTK GUI
 
 In order to use this interface run:
 
