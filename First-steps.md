@@ -35,4 +35,14 @@ And search for the following **couch_uri** tag and set it to the server URL, for
 
 And now you are ready to go!
 
+If you wish to use SSL use our [SSL guide](https://github.com/infobyte/faraday/wiki/SSL).
+
 Run `./faraday-server.py` to run the server and then `./faraday.py` to start the client. Enjoy!
+
+### Authentication
+#### Commercial
+
+You can create different types of users through the web UI. Those users can login though the same web UI or though a Faraday client using the --login flag (Faraday will ask for the credentials later)
+
+#### Community
+You can use the couchdb _utils http://127.0.0.1:5984/_utils/ interface to create administrator users, and then edit the couchdb url in your instance with the user's credendials. For example: http://admin:faradaypassword@192.168.1.254:5984/
