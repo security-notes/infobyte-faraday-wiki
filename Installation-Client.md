@@ -1,3 +1,5 @@
+<a name="index"></a>
+* [Faraday Client](#faraday-client)
 * [Requirements](#requirements)
 * [Debian & Ubuntu & Backtrack](#debian)
 * [ArchLinux](#arch)
@@ -6,18 +8,26 @@
 * [Docker](#docker)
 * [Chef](#chef)
 
+<a name="faraday-client"></a>
+### Faraday Client
 
+Faraday Client is the software which will allow you to work with your favorite security tools and capture their output in an organized manner. It works under a GTK+3 interface with the popular VTE terminal with a custom ZSH shell that respects the user's configuration (yes, that means you get to keep your exact ZSH terminal inside Faraday, even if you use ZPrezto or Oh My ZSH). 
+
+From the client you can also create and delete workspaces, specify plugin configuration, view information about your hosts, resolve conflics that may arise and much more.
+
+It's also a reponsability of the client to send all of the collected information to the server, which will then process it and format it in an friendly way for you to view, edit and confirm. 
+
+<a name="requirements"></a>
 ### Requirements
 
-Modern Linux or OSX, and the following packages:
+Faraday Client works under any modern Linux distro or Mac OS X, and needs the following dependencies. We also provide an installation script, so in most cases you won't need to actually install these by hand. Scroll down to view more information on installation for each particular distribution or operative system.
 
-<a name="packages"></a>
 * Python 2.6.x or 2.7.x
 * CouchDB >= 1.2.0  
-* The following python libs:
 * GTK+3, PyGobject >= 3.12.0, Vte (API >= 2.90)
 * Zsh
 * Curl
+* The following python libs:
   * mockito 
   * couchdbkit 
   * whoosh 
@@ -26,7 +36,7 @@ Modern Linux or OSX, and the following packages:
   * IPy
   * requests
 
-Current tests include [Debian](#debian), [Ubuntu](#debian), [Kali](#kali), [Backtrack](#debian) and [OSX Maverick 10.9.2](#osx).
+Out tests include [Debian](#debian), [Ubuntu](#debian), [Kali](#kali), [Backtrack](#debian) and [OSX Maverick 10.9.2](#osx).
 
 If instead of installing you want to take a quick look at Faraday you can also use [Docker](#docker).
 
@@ -35,7 +45,6 @@ If instead of installing you want to take a quick look at Faraday you can also u
 <a name="debian"></a>
 ### Debian, Ubuntu, Backtrack
 
-<a name="install"></a>
 Download the [latest tarball](https://github.com/infobyte/faraday/tarball/master) or clone the [Faraday Git Project](https://github.com/infobyte/faraday repository):
 
 ```
