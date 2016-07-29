@@ -29,7 +29,7 @@ From the workspace window click on **Edit**
 
 ![](https://raw.github.com/wiki/infobyte/faraday/images/faraday_workspace_edit.png)
 
-### Eliminating Workspaces
+### Deleting Workspaces
 
 From the workspaces window click on **Delete**
 
