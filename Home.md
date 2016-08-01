@@ -23,7 +23,7 @@ The following platforms are supported:
 
 ![platform](https://raw.github.com/wiki/infobyte/faraday/images/platform/supported.png) 
 
-[Read more about this] (https://github.com/infobyte/faraday/wiki/Installation).
+[Read more about this] (https://github.com/infobyte/faraday/wiki/First-Setps).
 
 #### Quick install
 
@@ -47,8 +47,6 @@ Using CTRL+SPACE in the console for the different commands for example nikto CTR
 ### Conflicts
 If two plugins have different information for the same element it will generate a conflict that the user will have to resolve.  For example, **user1** incorporates host *127.0.0.1 OS:Linux* and **user2** incorporates *127.0.0.1 OS: Linux Ubuntu 13.10*. 
 
-The [QT interface](https://github.com/infobyte/faraday/wiki/Usage#qt-gui) will show a number next to the name of the Workspace, this is the amount of conflicts that have to be resolved. To resolve, right-click and select "Resolve conflicts", then select the object you wish to keep and that's it! 
-
 On our [GTK interface](https://github.com/infobyte/faraday/wiki/Usage#gtk-gui) there's a button on the bottom right corner of the main window with the number of conflicts in the current workspace. To solve them, just click that button and a window will open where you can edit the conflicting objects and select which one to keep. 
 
 ### Faraday plugin
@@ -66,10 +64,10 @@ $ nmap -i allhost.txt
 Read more about the [[Faraday Plugin]].
 
 ### Notifications
-Updating objects on faraday now results in a beautiful notification in the QT ui
+Updating objects on other Faraday instances result in notifications on your
+Faraday GTK Client.
 
-![](https://raw.github.com/wiki/infobyte/faraday/images/faraday_notifications.png)
-![](https://raw.github.com/wiki/infobyte/faraday/images/faraday_notifications_more.png)
+![](https://raw.github.com/wiki/infobyte/faraday/images/Faraday-Gtk-NotificationsDialog.png)
 
 #### ZSH UI no-gui notifications
 ![](https://raw.githubusercontent.com/wiki/infobyte/faraday/images/faraday_gui_notifi.png)

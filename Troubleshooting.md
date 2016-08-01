@@ -21,7 +21,7 @@ The reply should look something like
 {"Faraday Server":"Running"}
 ```
 
-If not, maybe try the [Faraday Server Installation](http://github.com/infobyte/faraday/wiki/Installation-Server) and the [Apache CouchDB Installation Guide](https://wiki.apache.org/couchdb/Installation). Or perhaps try the going through the [First Steps](http://github.com/infobyte/faraday/wiki/First-Steps) again and double check everything.
+If not, maybe try the [Faraday Server Installation](https://github.com/infobyte/faraday/wiki/Installation-Server) and the [Apache CouchDB Installation Guide](https://wiki.apache.org/couchdb/Installation). Or perhaps try the going through the [First Steps](https://github.com/infobyte/faraday/wiki/First-Steps) again and double check everything.
 
 [ [index] ](#index)
 
@@ -39,7 +39,7 @@ python $FARADAY/helpers/cleanXML.py broken_file.xml
 
 Read more about cleaning XMLs [here](https://github.com/infobyte/faraday/wiki/Helpers#cleanXML).
 
-Then open Faraday's QT interface running the following in your installation root:
+Then open Faraday's GTK interface running the following in your installation root:
 
 ```
 ./faraday.py
