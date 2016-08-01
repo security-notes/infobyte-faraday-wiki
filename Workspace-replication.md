@@ -19,7 +19,7 @@ Password:pass2
 
 NOTE: It's important to use the same workspace name in both CouchDB instances.                                                                                                                                                                                                   
 
-We have to options to do the replication:                                                                                                                                                                                                                                        
+We have two options to do the replication:                                                                                                                                                                                                                                        
 
 ### Using curl                                                                                                                                                                                                                                                                   
 ```                                                                                                                                                                                                                                                                              
@@ -42,6 +42,3 @@ Remote database: http://user2:user2@192.168.1.210:5984/ws1/
 Click on the "Replicate" button, and that's it.
 
 ![](https://raw.github.com/wiki/infobyte/faraday/images/workspace_replication_replicator.png)
-
-
-
