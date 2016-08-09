@@ -17,6 +17,7 @@
  * [[Helpers]]
  * [[Scripts]]
  * [[Continuous-Scanning]]
+ * [[Workspace-Diff]]
 * [[Demos]]
 * [[Architecture]]
 * [Plugins](https://github.com/infobyte/faraday/wiki/Plugin-List)
