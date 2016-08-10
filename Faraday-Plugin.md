@@ -1,13 +1,44 @@
-Using our plugin you can do different actions in the command line , for example
+In order to manage, extract and list information stored in faraday we created _fplugin_, a simple plugin that allows you to interact directly with our Python API
+
+Using our plugin located in ```$faraday/bin/``` you can do different actions from the command line
 
 ```
-$ cd $faraday/bin/
-$ #Adding new hosts 
+❯❯  ./fplugin -h
+usage: fplugin [-h] [-e EXECUTE] [-o OUTPUT] [-f FILE]
+
+Using our plugin you can do different actions in the command line and interact
+with Faraday. Faraday comes with some presets for bulk actions such as object
+removal, get object information, etc.
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -e EXECUTE, --execute EXECUTE
+                        Execute code received in this parameter. Example:
+                        ./fplugin -e "for h in
+                        api.__model_controller.getAllHosts(): print h.name"
+  -o OUTPUT, --output OUTPUT
+                        Store output of fplugin in a file.
+  -f FILE, --file FILE  File with code to execute. Example: ./fplugin -f
+                        getAllIps.py
+```
+
+
+
+Usage Examples:
+
+#Adding new hosts 
+```
 $./fplugin -e 'for h in api.createAndAddHost("8.8.8.8","Linux")'
-$ #Get all ip of HostTree
+```
+
+#Get all IPs of HostTree and run nmap aginst those targets
+```
 $ ./fplugin -e 'for h in api.__model_controller.getAllHosts(): print h.name' > allhost.txt
 $ nmap -i allhost.txt
 ```
+
+
+
 
 Faraday comes with some presets for bulk actions such as object removal, etc. These are usually necessary when managing large Workspaces. The current presets are:
 
