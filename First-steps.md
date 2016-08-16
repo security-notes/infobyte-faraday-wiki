@@ -2,6 +2,8 @@ Faraday actually consists of two tools; Faraday Client and Faraday Server. These
 
 The recommended approach for first time users is performing a single Faraday installation in an Ubuntu Linux. This means using the same machine for both the client and the server.
 
+If you were already using Faraday before the release of version 2.0, follow the [installation guide for the server](https://github.com/infobyte/faraday/wiki/Installation-server) and then refer to the [Setup](#setup) secion of this page.
+
 ### Installation
 
 Keep in mind that Faraday won't install CouchDB for you, you must install it [using the official CouchDB documentation](http://docs.couchdb.org/en/1.6.1/install).
@@ -10,6 +12,7 @@ Once CouchDB is running [install the server](https://github.com/infobyte/faraday
 
 As of Faraday version 2.0 the server is required for both the community and the commercial versions.
 
+<a name="setup"></a>
 ### Setup
 
 Faraday Server needs to comunicate to Couch Databases to function.
