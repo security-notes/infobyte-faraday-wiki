@@ -31,7 +31,6 @@
 * **Development**
  * [[Basic Plugin Development]]
  * [[APIs]]
- * [[Live debugging]]
 * [[Faraday Awards]]
 * [[FAQ]]
 * [[Troubleshooting]]
