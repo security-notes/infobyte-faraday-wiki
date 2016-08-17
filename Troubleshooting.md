@@ -7,27 +7,21 @@
 
 <a name="cant-access-web"></a>
 ### I can't access the web GUI
-Is your CouchDB up and running? Try running
+
+Is Faraday Server running? Try something like this, replacing the URL and port
+with those of your Faraday Server:
 
 ```
-curl http://127.0.0.1:5984/
+curl http://127.0.0.1:5984/_api/info
 ```
 
 The reply should look something like
 
 ```json
-{"couchdb":"Welcome","version":"0.10.1"}
+{"Faraday Server":"Running"}
 ```
 
-If not, maybe try the [Apache CouchDB Installation Guide](https://wiki.apache.org/couchdb/Installation).
-
-If so, read our documentation on how to setup Faraday to work with CouchDB [using our QT GUI](https://github.com/infobyte/faraday/wiki/CouchDB) or edit your local config file in $HOME/.faraday/config/user.xml and set your CouchDB route using the **couch_uri** tag, for example:
-
-```xml
-<couch_uri>http://127.0.0.1:5984</couch_uri>
-```
-
-Then run Faraday and point your browser to http://127.0.0.1:5984/reports/_design/reports/index.html replacing **127.0.0.1:5984** with your CouchDB URI.
+If not, maybe try the [Faraday Server Installation](https://github.com/infobyte/faraday/wiki/Installation-Server) and the [Apache CouchDB Installation Guide](https://wiki.apache.org/couchdb/Installation). Or perhaps try the going through the [First Steps](https://github.com/infobyte/faraday/wiki/First-Steps) again and double check everything.
 
 [ [index] ](#index)
 
@@ -45,7 +39,7 @@ python $FARADAY/helpers/cleanXML.py broken_file.xml
 
 Read more about cleaning XMLs [here](https://github.com/infobyte/faraday/wiki/Helpers#cleanXML).
 
-Then open Faraday's QT interface running the following in your installation root:
+Then open Faraday's GTK interface running the following in your installation root:
 
 ```
 ./faraday.py
@@ -83,7 +77,7 @@ It is possible to restore the database's users using the following script:
 <a name="er-generation"></a>
 ### Troubles generating Executive Reports
 
-First of all, take a look at our [start-up configuration](https://github.com/infobyte/faraday/wiki/Faraday-Server) and make sure you run ```./setup_server.sh``` before generating Executive Reports.
+First of all, take a look at our [start-up configuration](https://github.com/infobyte/faraday/wiki/Installation-Server) and make sure you run ```./setup_server.sh``` before generating Executive Reports.
 
 Once that's done, [create the Report](https://github.com/infobyte/faraday/wiki/Executive-Report#making-a-report) and wait for two minutes. If after that time the report is still in **processing** state, try [generating it manually](https://github.com/infobyte/faraday/wiki/Executive-Report#manual-reports).
 

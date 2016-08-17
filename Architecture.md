@@ -1,15 +1,12 @@
-Front end
---
-Faraday was developed in Python, GTK, QT3 [Deprecated]
-
-Backend
---
-We rely on the popular no-sql CouchDB  database for the data storage layer. 
+We rely on the popular no-sql CouchDB  database for the data storage layer and
+Faraday Server serves as a layer between this persistence layer and the client. 
 
 CouchDB Serves for the following purposes:
 * Data storage
+
+And the Faraday Server is responsible of:
 * Data replication and sharing between multiple Faraday instances
-* Data transformations engine ([read more about reports](tuvieja))
+* Data transformations engine 
 
 Two topologies are admitted (at this version) in the configuration, Server Centric and Replicated
 

@@ -1,3 +1,5 @@
+<a name="index"></a>
+* [Faraday Client](#faraday-client)
 * [Requirements](#requirements)
 * [Debian & Ubuntu & Backtrack](#debian)
 * [ArchLinux](#arch)
@@ -6,15 +8,25 @@
 * [Docker](#docker)
 * [Chef](#chef)
 
+<a name="faraday-client"></a>
+### Faraday Client
 
+Faraday Client is the software which will allow you to work with your favorite security tools and capture their output in an organized manner. It works under a GTK+3 interface with the popular VTE terminal with a custom ZSH shell that respects the user's configuration (yes, that means you get to keep your exact ZSH terminal inside Faraday, even if you use ZPrezto or Oh My ZSH). 
+
+From the client you can also create and delete workspaces, specify plugin configuration, view information about your hosts, resolve conflics that may arise and much more.
+
+It's also a reponsability of the client to send all of the collected information to the server, which will then process it and format it in an friendly way for you to view, edit and confirm. 
+
+<a name="requirements"></a>
 ### Requirements
 
-Modern Linux or OSX, and the following packages:
+Faraday Client works under any modern Linux distro or Mac OS X, and needs the following dependencies. We also provide an installation script, so in most cases you won't need to actually install these by hand. Scroll down to view more information on installation for each particular distribution or operative system.
 
-<a name="packages"></a>
 * Python 2.6.x or 2.7.x
-* Qt3 (only Linux)
 * CouchDB >= 1.2.0  
+* GTK+3, PyGobject >= 3.12.0, Vte (API >= 2.90)
+* Zsh
+* Curl
 * The following python libs:
   * mockito 
   * couchdbkit 
@@ -24,20 +36,7 @@ Modern Linux or OSX, and the following packages:
   * IPy
   * requests
 
-If you want you to use our [[GTK interface|Usage#gtk-gui]], you will also need the following packages. They are available in major Linux distributions via their repositories and on Mac via brew.
-
-* GTK+3
-* pygobject
-* Vte 2.91
-* zsh
-* curl
-
-In Kali, for example, you can get all of these packages with:
-```
-sudo apt-get install gir1.2-gtk-3.0 gir1.2-vte-2.91 python-pip python-gobject zsh curl
-```
-
-Current tests include [Debian](#debian), [Ubuntu](#debian), [Kali](#kali), [Backtrack](#debian) and [OSX Maverick 10.9.2](#osx).
+Out tests include [Debian](#debian), [Ubuntu](#debian), [Kali](#kali), [Backtrack](#debian) and [OSX Maverick 10.9.2](#osx).
 
 If instead of installing you want to take a quick look at Faraday you can also use [Docker](#docker).
 
@@ -46,7 +45,6 @@ If instead of installing you want to take a quick look at Faraday you can also u
 <a name="debian"></a>
 ### Debian, Ubuntu, Backtrack
 
-<a name="install"></a>
 Download the [latest tarball](https://github.com/infobyte/faraday/tarball/master) or clone the [Faraday Git Project](https://github.com/infobyte/faraday repository):
 
 ```
@@ -78,7 +76,7 @@ Due to Kali's package updates this may not be the last version. If you want the 
 Before [installing Faraday](#install) you will need to get some user-contributed packages. In order to do this quickly we need an [AUR](https://wiki.archlinux.org/index.php/Arch_User_Repository) wrapper, in this case we will use [Yaourt](http://archlinux.fr/yaourt-en). After installing Yaourt run:
 
 ```
-$ yaourt -S python2-whoosh pyqt3 python2-mockito python2-couchdbkit python2-flask python2-restkit python2-ipy python2-requests python2-tornado python2-dateutil python2-colorama python2-pip mime-types
+$ yaourt -S python2-dateutil python2-pip mime-types python2-gobject gtk3 vte3
 ```
 
 Now you can proceed to [install Faraday](#install).
@@ -117,7 +115,7 @@ To install [Brew](http://brew.sh) run:
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 ```
 
-##### Python & pip
+##### Install Python & PIP
 
 Run:
 
@@ -145,7 +143,8 @@ Run:
 git clone https://github.com/infobyte/faraday.git faraday-dev
 ```
 
-##### Python libraries via PIP
+
+##### Dependencies and other Python libraries via PIP
 
 Installing Python via brew will also install pip. Now we need to use pip to install the [requirements](#packages):
 
@@ -157,6 +156,11 @@ If you have issues building psycopg2 (needed for Metasploit Online Module)
 brew install postgresql
 pip install psycopg2
 ```
+
+##### GTK
+We need a few other packages from brew before you can use the client:
+
+`brew install vte3 pygobject`
 
 ##### CouchDB 
 
@@ -170,9 +174,9 @@ On Maverick 10.9.2:
 
 ##### ZSH
 
-Faraday needs [ZSH](http://www.zsh.org/) to connect to the server. To install it run:
+Faraday needs [ZSH](http://www.zsh.org/) and curl to connect to the server. To install it run:
 
-`brew install zsh`
+`brew install zsh curl`
 
 ##### Going for it!
 
@@ -227,7 +231,7 @@ cd faraday/
 ./faraday-terminal.zsh
 ```
 
-##### GUI QT
+##### GTK GUI
 
 In order to use this interface run:
 

@@ -1,44 +1,11 @@
 ## Faraday Client
 
 Faraday has 6 different ways to interact with information:
-* [QT GUI](#qt-gui)
 * [GTK GUI](#gtk-gui)
 * [ZSH UI](#zsh-ui)
 * [Web UI](#web-ui)
 * [CLI](#cli)
 * [ZSH Web](#zsh-web) (only available in our commercial versions)
-
-## Faraday Server
-
-Only available for our [commercial versions](https://www.faradaysec.com/#download).
-
-This is an experimental tool designed to provide support for JIRA integration so you only need to run it in case you wish to use that feature.
-
-Make sure that your Faraday Server Proxy is [configured](https://github.com/infobyte/faraday/wiki/Faraday-Server#proxy) and then run:
-
-```
-./faraday-server.pyc [--ssl]
-```
-
-### QT GUI
-
-Faraday main window is simple:  
-![](https://raw.github.com/wiki/infobyte/faraday/images/Faraday-Mainwindow.png)
-
-Structured in panes: Main Console, HostTree, Log Console, Item Info & Editing panes.
-
-#### With authentication
-[- Commercial version -](https://www.faradaysec.com/#download)
-
-If you are able to run Faraday QT with credentials add a login option
-
-```
-./faraday.pyc --login
-```
-
-![](https://raw.github.com/wiki/infobyte/faraday/images/faraday_guiqt_login.png)
-
-Every command that you execute is intercepted and a handler is invoked in order to transparently import the newly generated information by the tool in the context of the pentest like ip addresses, hostnames, services, vulnerabilities, websites, notes, etc.
 
 ### GTK GUI
 
@@ -108,13 +75,13 @@ All the available information will be available through the different interface
 
 ### Web UI
 
-In order to access the Web UI point your browser to: http://[COUCHDB]:5984/reports/_design/reports/index.html
+In order to access the Web UI point your browser to: http://[FARADY-SERVER]:PORT/_ui/
 
 The current URL address is displayed on console log information
 
 ![](https://raw.github.com/wiki/infobyte/faraday/images/Console_GUIWeb_Highlight.png)
 
-Directly from the GUI QT you have to click in the icon:
+You can also go directly there from GTK clicking on this icon:  
 
 ![](https://raw.github.com/wiki/infobyte/faraday/images/Visualize-icon.png)
 
