@@ -81,5 +81,3 @@ Removes all vulnerabilities with selected severity. Faraday has 6 levels of seve
 * low
 * info
 * unclassified
-
-Read more about it [here](https://github.com/infobyte/faraday/wiki/troubleshooting).
