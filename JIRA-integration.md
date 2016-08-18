@@ -1,4 +1,4 @@
-Only available for our [commercial corp version](https://www.faradaysec.com/#download).
+Only available for our [commercial Corporate version](https://www.faradaysec.com/#download).
 
 This is an experimental new feature that allows you to send data from Faraday to JIRA. Keep in mind that in order to do this, [Faraday Proxy Server must be running](https://github.com/infobyte/faraday/wiki/Usage#faraday-server).
 
