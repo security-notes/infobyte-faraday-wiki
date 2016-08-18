@@ -8,7 +8,7 @@ $ ./faraday-server.py
 $ ./faraday.py
 ```
 
-If you were already using Faraday before the release of version 2.0, follow the [installation guide for the server](https://github.com/infobyte/faraday/wiki/Installation-server) and then refer to the [Setup](#setup) secion of this page.
+If you were already using Faraday before the release of version 2.0, follow the [installation guide for the server](https://github.com/infobyte/faraday/wiki/Installation-server) and then refer to the [Setup](#setup) section of this page.
 
 ### Installation
 
@@ -21,7 +21,7 @@ As of Faraday version 2.0 the server is required for both the community and the 
 <a name="setup"></a>
 ### Setup
 
-Faraday Server needs to comunicate to Couch Databases to function.
+Faraday Server needs to communicate to Couch Databases to function.
 
 Edit CouchDB configuration file. To do that, run ```couchdb -c``` to identify it and then edit it to change CouchDB `port` and `bind_address` in section ```[httpd]```. Set bind_address to the IP you want for CouchBD and port to **5985**.
 
@@ -35,7 +35,7 @@ Now you need to configure every Faraday instance so it can connect to the server
 
 ![](https://raw.github.com/wiki/infobyte/faraday/images/gtk-preferences-dialog.png)
 
-* If you are using the --gui=no-gui option
+* If you are using the ***--gui=no-gui*** option
 
 Edit the file: `~/.faraday/config/user.xml`
 And search for the following **couch_uri** tag and set it to the server URL, for example:
@@ -54,4 +54,4 @@ Run `./faraday-server.py` to run the server and then `./faraday.py` to start the
 You can create different types of users through the web UI. Those users can login though the same web UI or though a Faraday client using the --login flag (Faraday will ask for the credentials later)
 
 #### Community
-You can use the couchdb _utils http://127.0.0.1:5984/_utils/ interface to create administrator users, and then edit the couchdb url in your instance with the user's credendials. For example: http://admin:faradaypassword@192.168.1.254:5984/
+You can use the CouchDB ***_utils*** interface (located in `http://127.0.0.1:5984/_utils/`) to create administrator users, and then edit the CouchDB url in your instance with the user's credentials. For example: `http://admin:faradaypassword@192.168.1.254:5984/`
