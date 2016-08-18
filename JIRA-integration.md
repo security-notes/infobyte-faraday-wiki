@@ -8,4 +8,4 @@ Once the JIRA dialog opens, fill in all fields and click **OK**.
 
 ![](https://raw.githubusercontent.com/wiki/infobyte/faraday/images/faraday_statusreport_jira_dialog.png)
 
-After the vuln has been sent to JIRA the list will be updated with a link to the new ticket.
+After the vuln has been sent to JIRA the list will be updated with a link to the ticket.
