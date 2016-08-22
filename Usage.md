@@ -11,9 +11,11 @@ Faraday has 6 different ways to interact with information:
 
 #### The main window
 
+https://github.com/infobyte/faraday/wiki/installation-client#requirements
+
 Out experimental GTK+3 is designed to improve on the QT3 interface, so nothing should look out of place if you were already using Faraday. If you weren't, don't worry, it's pretty simple. 
 
-To try it, just [[install the dependencies|Installation]] run Faraday with the --gui=gtk flag.
+To try it, just [[install the dependencies|installation-client#requirements]] run Faraday with the --gui=gtk flag.
 
 ![](https://raw.github.com/wiki/infobyte/faraday/images/Faraday-Gtk-MainWindow.png)
 
