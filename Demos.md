@@ -28,6 +28,9 @@ Take a look of our last demos:
 
 [![ScreenShot](https://raw.github.com/wiki/infobyte/faraday/images/youtube.png) - Using script getExploits.py(XII) ] (http://bit.ly/23vvyko)
 
+SecurityWeekly - 2016:
+
+[![ScreenShot](https://raw.github.com/wiki/infobyte/faraday/images/youtube.png) - Paul's Security Weekly 2016 ] (http://bit.ly/2bfkuii) We presented @faradaysec at Paul's Security Weekly! 
 
 Webinar - 2015:
 
