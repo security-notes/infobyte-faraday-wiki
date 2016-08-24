@@ -32,6 +32,10 @@ SecurityWeekly - 2016:
 
 [![ScreenShot](https://raw.github.com/wiki/infobyte/faraday/images/youtube.png) - Paul's Security Weekly 2016 ] (http://bit.ly/2bfkuii) We presented @faradaysec at Paul's Security Weekly! 
 
+Webinar - 2016:
+
+[![ScreenShot](https://raw.github.com/wiki/infobyte/faraday/images/youtube.png) - English Version - ] (http://bit.ly/2bgxL9Q) In this workshop we will be giving a brief demonstration of Faraday and we will be going over how to leverage new features.
+
 Webinar - 2015:
 
 [![ScreenShot](https://raw.github.com/wiki/infobyte/faraday/images/youtube.png) - English Version - April 8 - ] (http://buff.ly/1E6FLWJ) We quickly went over how to get the Faraday Corporate up and running and then showed a couple of the new features.
