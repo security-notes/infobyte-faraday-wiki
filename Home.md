@@ -96,6 +96,9 @@ Faraday GTK Client.
 * Black Hat Arsenal USA - 2016:
    * https://www.blackhat.com/us-16/arsenal.html#faraday
 
+* SecurityWeekly - 2016:
+   * http://securityweekly.com/2016/08/02/security-weekly-475-federico-kirschbaum/
+
 * Bsides Latam - 2016:
    * http://www.infobytesec.com/down/Faraday_BsideLatam_2016.pdf
 
