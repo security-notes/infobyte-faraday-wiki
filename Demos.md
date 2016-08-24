@@ -30,7 +30,7 @@ Take a look of our last demos:
 
 SecurityWeekly - 2016:
 
-[![ScreenShot](https://raw.github.com/wiki/infobyte/faraday/images/youtube.png) - Paul's Security Weekly 2016 - ] (http://bit.ly/2bfkuii) We presented @faradaysec at Paul's Security Weekly! 
+[![ScreenShot](https://raw.github.com/wiki/infobyte/faraday/images/youtube.png) - Paul's Security Weekly 2016 - ] (http://bit.ly/2bfkuii) We presented Faraday at Paul's Security Weekly! 
 
 Webinar - 2016:
 
