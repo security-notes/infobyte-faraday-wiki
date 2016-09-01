@@ -1,6 +1,6 @@
 ## Faraday Client
 
-Faraday has 6 different ways to interact with information:
+Faraday has 5 different ways to interact with information:
 * [GTK GUI](#gtk-gui)
 * [ZSH UI](#zsh-ui)
 * [Web UI](#web-ui)
