@@ -4,29 +4,36 @@ Take a look of our last demos:
 [![ScreenShot](https://raw.github.com/wiki/infobyte/faraday/images/youtube.png) - Release Demo]
 (https://bitly.com/1gaHSyu)
 
-[![ScreenShot](https://raw.github.com/wiki/infobyte/faraday/images/youtube.png) - First couchdb configuration (I)] (https://bit.ly/SkwwwV)
+[![ScreenShot](https://raw.github.com/wiki/infobyte/faraday/images/youtube.png) - First couchdb configuration ] (https://bit.ly/SkwwwV)
 
-[![ScreenShot](https://raw.github.com/wiki/infobyte/faraday/images/youtube.png) - A fast class C domain scanner (II)] (https://bit.ly/U16Gzt)
+[![ScreenShot](https://raw.github.com/wiki/infobyte/faraday/images/youtube.png) - A fast class C domain scanner ] (https://bit.ly/U16Gzt)
 
-[![ScreenShot](https://raw.github.com/wiki/infobyte/faraday/images/youtube.png) - Using plugin Medusa (III) ] (https://bit.ly/1nIlwIc)
+[![ScreenShot](https://raw.github.com/wiki/infobyte/faraday/images/youtube.png) - Using plugin Medusa ] (https://bit.ly/1nIlwIc)
 
-[![ScreenShot](https://raw.github.com/wiki/infobyte/faraday/images/youtube.png) - Using plugin THC-Hydra (IV) ] (https://bit.ly/1jhYpNb)
+[![ScreenShot](https://raw.github.com/wiki/infobyte/faraday/images/youtube.png) - Using plugin THC-Hydra ] (https://bit.ly/1jhYpNb)
 
-[![ScreenShot](https://raw.github.com/wiki/infobyte/faraday/images/youtube.png) - Installing Faraday plugin from Burp's BApp Store (V) ] (https://bit.ly/1rH9EUs)
+[![ScreenShot](https://raw.github.com/wiki/infobyte/faraday/images/youtube.png) - Installing Faraday plugin from Burp's BApp Store ] (https://bit.ly/1rH9EUs)
 
-[![ScreenShot](https://raw.github.com/wiki/infobyte/faraday/images/youtube.png) - Faraday's SSLCheck command line tool (VI) ] (https://bit.ly/1vko7Xj)
+[![ScreenShot](https://raw.github.com/wiki/infobyte/faraday/images/youtube.png) - Faraday's SSLCheck command line tool ] (https://bit.ly/1vko7Xj)
 
-[![ScreenShot](https://raw.github.com/wiki/infobyte/faraday/images/youtube.png) - Map all scada device in your country using Shodan & Faraday (VII) ] (https://bit.ly/1BLkLkn)
+[![ScreenShot](https://raw.github.com/wiki/infobyte/faraday/images/youtube.png) - Map all scada device in your country using Shodan & Faraday ] (https://bit.ly/1BLkLkn)
 
-[![ScreenShot](https://raw.github.com/wiki/infobyte/faraday/images/youtube.png) - Faraday's BeEF Integration (VIII) ] (https://bit.ly/1RUWuSB)
+[![ScreenShot](https://raw.github.com/wiki/infobyte/faraday/images/youtube.png) - Faraday's BeEF Integration ] (https://bit.ly/1RUWuSB)
 
-[![ScreenShot](https://raw.github.com/wiki/infobyte/faraday/images/youtube.png) - Using plugin Canvas (IX) ] (http://bit.ly/1S7f2iI)
+[![ScreenShot](https://raw.github.com/wiki/infobyte/faraday/images/youtube.png) - Using plugin Canvas ] (http://bit.ly/1S7f2iI)
 
-[![ScreenShot](https://raw.github.com/wiki/infobyte/faraday/images/youtube.png) - Using plugin Maltego (X) ] (https://bit.ly/1nwQ8gP)
+[![ScreenShot](https://raw.github.com/wiki/infobyte/faraday/images/youtube.png) - Using plugin Maltego ] (https://bit.ly/1nwQ8gP)
 
-[![ScreenShot](https://raw.github.com/wiki/infobyte/faraday/images/youtube.png) - Using plugin Arachni (XI) ] (https://bit.ly/1Tlx56u)
+[![ScreenShot](https://raw.github.com/wiki/infobyte/faraday/images/youtube.png) - Using plugin Arachni ] (https://bit.ly/1Tlx56u)
 
-[![ScreenShot](https://raw.github.com/wiki/infobyte/faraday/images/youtube.png) - Using script getExploits.py(XII) ] (http://bit.ly/23vvyko)
+[![ScreenShot](https://raw.github.com/wiki/infobyte/faraday/images/youtube.png) - Timeline, PTs ranking, Workspaces comparison & Executive report! ] (http://bit.ly/2cyf6Zc)
+
+[![ScreenShot](https://raw.github.com/wiki/infobyte/faraday/images/youtube.png) -  New databases (vulndb, cfdb, vFeed) - Using script getExploits.py ] (http://bit.ly/23vvyko)
+
+[![ScreenShot](https://raw.github.com/wiki/infobyte/faraday/images/youtube.png) -  Faraday using Docker (GUI / WebUI) ] (http://bit.ly/2ceE8eO)
+
+[![ScreenShot](https://raw.github.com/wiki/infobyte/faraday/images/youtube.png) -  Faraday using Docker (WebUI / ZSH terminal) ] (http://bit.ly/2ca2NTw)
+
 
 SecurityWeekly - 2016:
 
