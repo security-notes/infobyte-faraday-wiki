@@ -1,4 +1,4 @@
-Take a look of our last demos:
+Take a look of our last videos:
 
 
 [![ScreenShot](https://raw.github.com/wiki/infobyte/faraday/images/youtube.png) - Release Demo]
