@@ -14,6 +14,7 @@ Download the [latest tarball](https://github.com/infobyte/faraday/tarball/master
 $ git clone https://github.com/infobyte/faraday.git faraday-dev
 $ cd faraday-dev
 $ ./install.sh
+$ ./faraday-server.py
 $ ./faraday.py
 ```
 [Read more about the installation process](https://github.com/infobyte/faraday/wiki/Installation).
