@@ -29,6 +29,7 @@
  * [[Immunitys-CANVAS]]
  * [[Metasploit]]
  * [[Nessus]]
+ * [More](https://github.com/infobyte/faraday/wiki/Plugin-List#list)
 * **Development**
  * [[APIs]]
  * [[Basic Plugin Development]]
