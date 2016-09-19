@@ -4,7 +4,7 @@ The following platforms are supported:
 
 ![platform](https://raw.github.com/wiki/infobyte/faraday/images/platform/supported.png) 
 
-[Read more about this] (https://github.com/infobyte/faraday/wiki/Installation).
+[Read more about this] (https://github.com/infobyte/faraday/wiki/installation-client).
 
 #### Quick install
 
@@ -17,7 +17,7 @@ $ ./install.sh
 $ ./faraday-server.py
 $ ./faraday.py
 ```
-[Read more about the installation process](https://github.com/infobyte/faraday/wiki/Installation).
+[Read more about the installation process](https://github.com/infobyte/faraday/wiki/installation-client).
 
 ## About
 
