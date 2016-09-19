@@ -1,28 +1,32 @@
-We rely on the popular no-sql CouchDB  database for the data storage layer and
-Faraday Server serves as a layer between this persistence layer and the client. 
+Faraday is composed by the Faraday Server and the Faraday Client with a Server 
+Centric approach. The client talks almost exclusively with the server, and the 
+server is used to syncronize the state of the program between instances.
+
+For the moment, we use the popular No-SQL database CouchDB to provide a few
+key features needed to improve your workflow, but we're working on replicating
+those on Faraday Server to simplify the setup.
 
 CouchDB Serves for the following purposes:
-* Data storage
+* Partial storage
+* Notifications feed
+* User management 
 
-And the Faraday Server is responsible of:
-* Data replication and sharing between multiple Faraday instances
-* Data transformations engine 
+The server provides everything else using a REST API to make queries over 
+sqlite DBs structured according to our Host/Services/Vulnerability model. Our
+server acts as a web server build upon Twisted.
 
-Two topologies are admitted (at this version) in the configuration, Server Centric and Replicated
+It is important to remember that, as said, CouchDB will totally be replaced by
+our Faraday Server in the very near future. All this changes are transparent
+to the user, nevertheless.
 
 Server Centric approach
 ===
-Every user use the same CouchDB database. This is a Server centric approach for the data sharing process.
-![Sincronize_2](https://raw.github.com/wiki/infobyte/faraday/images/synchronize_2.png)
+Every user connects to the same Faraday server, which is itself connected to a CouchDB database.
+This permits seamless data sharing and syncronization.
+![Sincronize_2](https://raw.github.com/wiki/infobyte/faraday/images/Faraday-Server-Comm.png)
 
-Distributed CouchDBs with replication
-===
-Every user have a own local CouchDB and replicate with a centralize CouchDB Server. Allowing to commit your recently gathered information despite the Server going offline.
-![Sincronize_1](https://raw.github.com/wiki/infobyte/faraday/images/synchronize_1.png)
-
-Both topologies combine real-time change notifications with instant transactions to provide instant feedback in the team.
 
 Plugins
---
+===
 The following diagram explains the plugins architecture:
 ![Plugin_Controller](https://raw.github.com/wiki/infobyte/faraday/images/plugin_controller.png)
