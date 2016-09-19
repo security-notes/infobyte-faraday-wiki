@@ -81,7 +81,7 @@ Faraday GTK Client.
 
 ## Links
 
-* Homepage: http://faradaysec.com
+* Homepage: https://www.faradaysec.com
 * User's manual: https://github.com/infobyte/faraday/wiki
 * Download: [.tar.gz] (https://github.com/infobyte/faraday/tarball/master)
 * Commits RSS feed: https://github.com/infobyte/faraday/commits/master.atom
