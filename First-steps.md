@@ -25,7 +25,7 @@ Faraday Server needs to communicate to Couch Databases to function.
 
 Edit CouchDB configuration file. To do that, run ```couchdb -c``` to identify it and then edit it to change CouchDB `port` and `bind_address` in section ```[httpd]```. Set bind_address to the IP you want for CouchBD and port to **5985**.
 
-Next edit ```~/.faraday/config/server.ini``` and change Faraday Server port to **5984** in section ```[faraday_server]``` and set a new port for CouchDB in section ```[couch-db]``` (by default the server will expect CouchDB to use **5985**).
+Next edit ```~/.faraday/config/server.ini``` and change Faraday Server port to **5984** in section ```[faraday_server]``` and set a new port for CouchDB in section ```[couch-db]``` (by default the server will expect CouchDB to use **5985**). You also may need to edit ```user``` and ```password``` in the same section in case you have set up an admin account on your CouchDB.
 
 Restart CouchDB, it should be running in your new IP and port.
 
