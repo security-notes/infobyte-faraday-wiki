@@ -4,7 +4,7 @@ The following platforms are supported:
 
 ![platform](https://raw.github.com/wiki/infobyte/faraday/images/platform/supported.png) 
 
-[Read more about this] (https://github.com/infobyte/faraday/wiki/Installation).
+[Read more about this] (https://github.com/infobyte/faraday/wiki/installation-client).
 
 #### Quick install
 
@@ -14,9 +14,10 @@ Download the [latest tarball](https://github.com/infobyte/faraday/tarball/master
 $ git clone https://github.com/infobyte/faraday.git faraday-dev
 $ cd faraday-dev
 $ ./install.sh
+$ ./faraday-server.py
 $ ./faraday.py
 ```
-[Read more about the installation process](https://github.com/infobyte/faraday/wiki/Installation).
+[Read more about the installation process](https://github.com/infobyte/faraday/wiki/installation-client).
 
 ## About
 
@@ -36,7 +37,7 @@ To read about the latest features check out the [release notes](https://github.c
 
 ## Plugins list
 
-Right now faraday has more than [50+ supported tools](https://github.com/infobyte/faraday/wiki/Plugin-List), among them you will find: 
+Right now faraday has more than [60+ supported tools](https://github.com/infobyte/faraday/wiki/Plugin-List), among them you will find: 
 ![](https://raw.github.com/wiki/infobyte/faraday/images/plugins/Plugins.png)
 
 ##Features
@@ -80,7 +81,7 @@ Faraday GTK Client.
 
 ## Links
 
-* Homepage: http://faradaysec.com
+* Homepage: https://www.faradaysec.com
 * User's manual: https://github.com/infobyte/faraday/wiki
 * Download: [.tar.gz] (https://github.com/infobyte/faraday/tarball/master)
 * Commits RSS feed: https://github.com/infobyte/faraday/commits/master.atom
@@ -95,6 +96,9 @@ Faraday GTK Client.
 ## Presentation
 * Black Hat Arsenal USA - 2016:
    * https://www.blackhat.com/us-16/arsenal.html#faraday
+
+* SecurityWeekly - 2016:
+   * http://securityweekly.com/2016/08/02/security-weekly-475-federico-kirschbaum/
 
 * Bsides Latam - 2016:
    * http://www.infobytesec.com/down/Faraday_BsideLatam_2016.pdf

@@ -1,4 +1,4 @@
-In ```$FARADAY/helpers``` you can find several scripts developed to help you load and manage Faraday data. None of them are included as part of the Faraday core, and using them can usually mean deleting content from the database in a permanent way, so be careful when executing any of them and always make sure to have a fresh backup.
+In ```$FARADAY/helpers``` you can find several scripts developed to help you load and manage Faraday data. None of them are included as part of the Faraday core, and using them can usually mean deleting content from the database in a permanent way, so **be careful when executing any of them and always make sure to have a fresh backup**.
 
 <a name="pushCwe"></a>
 ### pushCwe.py
@@ -81,5 +81,3 @@ Removes all vulnerabilities with selected severity. Faraday has 6 levels of seve
 * low
 * info
 * unclassified
-
-Read more about it [here](https://github.com/infobyte/faraday/wiki/troubleshooting).
