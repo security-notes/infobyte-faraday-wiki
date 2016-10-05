@@ -19,7 +19,7 @@
  * [[Scripts]]
  * [[Workspace-Diff]]
  * [[Workspace replication]]
-* [[Demos]]
+* [Demos / Videos]https://github.com/infobyte/faraday/wiki/Demos
 * [[Architecture]]
 * [Plugins](https://github.com/infobyte/faraday/wiki/Plugin-List)
  * [[Burp Proxy Extender]]
