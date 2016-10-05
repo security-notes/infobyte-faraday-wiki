@@ -19,7 +19,7 @@
  * [[Scripts]]
  * [[Workspace-Diff]]
  * [[Workspace replication]]
-* [Demos / Videos]https://github.com/infobyte/faraday/wiki/Demos
+* [Demos / Videos](https://github.com/infobyte/faraday/wiki/Demos)
 * [[Architecture]]
 * [Plugins](https://github.com/infobyte/faraday/wiki/Plugin-List)
  * [[Burp Proxy Extender]]
@@ -29,7 +29,7 @@
  * [[Immunitys-CANVAS]]
  * [[Metasploit]]
  * [[Nessus]]
- * [More](https://github.com/infobyte/faraday/wiki/Plugin-List#list)
+ * [More +60 plugins](https://github.com/infobyte/faraday/wiki/Plugin-List#list)
 * **Development**
  * [[APIs]]
  * [[Basic Plugin Development]]
