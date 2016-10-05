@@ -12,6 +12,9 @@ Not satisfied? Having troubles? Want to congratule us? [Open a ticket!](https://
 ## Our community
 You can reach us and find other Faraday users on:
 
+#### User forum
+https://forum.faradaysec.com
+
 #### Mailing List
 https://groups.google.com/d/forum/faradaysec
 

@@ -1,7 +1,7 @@
 ### Faraday Server
 If you are running CouchDB using HTTPS you need to configure Faraday Server to allow incoming HTTPS connections. To do this, first set CouchDB to listen on a new port, for example **6985**.
 
-Now you must configure Faraday Server to start accepting HTTPS connections. Edit ```server/default.ini``` section ```[ssl]``` and set ```port``` to match CouchDB's previous SSL port and in section ```[couchdb]``` set ```ssl_port``` to the current one. ```certificate``` and ```keyfile``` in section ```[ssl]``` should match with the ones set in CouchDB configuration.
+Now you must configure Faraday Server to start accepting HTTPS connections. Edit ```~/.faraday/config/server.ini``` section ```[ssl]``` and set ```port``` to match CouchDB's previous SSL port and in section ```[couchdb]``` set ```ssl_port``` to the current one. ```certificate``` and ```keyfile``` in section ```[ssl]``` should match with the ones set in CouchDB configuration.
 
 ### CouchDB
 1) Enable the httpsd daemon by adding the following line to your local.ini or local_dev.ini (newly generated files include this setting but commented out);

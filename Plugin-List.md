@@ -38,7 +38,7 @@ Keep in mind that this functionality is **case sensitive**. The names of the ava
 
 ### API
 
-Plugin connectors or online (BeEF, Metasploit, Burp), these connect to external APIs or databases, or talk directly to Faraday's RPC API.
+Plugin connectors or online ([[BeEF]], [[Metasploit]], [Burp](https://github.com/infobyte/faraday/wiki/Burp-proxy-extender)), these connect to external APIs or databases, or talk directly to [Faraday's RPC API](https://github.com/infobyte/faraday/wiki/APIs).
 
 ### List
 
