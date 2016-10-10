@@ -95,8 +95,12 @@ Faraday GTK Client.
 * Screenshots: https://github.com/infobyte/faraday/wiki/Screenshots
 
 ## Presentation
+
 * Black Hat Arsenal USA - 2016:
    * https://www.blackhat.com/us-16/arsenal.html#faraday
+
+* Black Hat Arsenal Europe - 2016
+   * https://www.blackhat.com/eu-16/arsenal.html#faraday
 
 * SecurityWeekly - 2016:
    * http://securityweekly.com/2016/08/02/security-weekly-475-federico-kirschbaum/
