@@ -8,7 +8,7 @@ The following platforms are supported:
 
 #### Quick install
 
-Download the [latest tarball](https://github.com/infobyte/faraday/tarball/master) or clone the [Faraday Git Project](https://github.com/infobyte/faraday repository):
+Download the [latest tarball](https://github.com/infobyte/faraday/tarball/master) or clone the [Faraday Git Project](https://github.com/infobyte/faraday):
 
 ```
 $ git clone https://github.com/infobyte/faraday.git faraday-dev
