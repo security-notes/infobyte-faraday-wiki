@@ -78,13 +78,13 @@ Due to Kali's package updates the pre-installed package may not be the last vers
 <a name="arch"></a>
 ### ArchLinux
 
-Before [installing Faraday](#install) you will need to get some user-contributed packages. In order to do this quickly we need an [AUR](https://wiki.archlinux.org/index.php/Arch_User_Repository) wrapper, in this case we will use [Yaourt](http://archlinux.fr/yaourt-en). After installing Yaourt run:
+Before installing Faraday you will need to get some user-contributed packages. In order to do this quickly we need an [AUR](https://wiki.archlinux.org/index.php/Arch_User_Repository) wrapper, in this case we will use [Yaourt](http://archlinux.fr/yaourt-en). After installing Yaourt run:
 
 ```
 $ yaourt -S python2-dateutil python2-pip mime-types python2-gobject gtk3 vte3
 ```
 
-Now you can proceed to [install Faraday](#install).
+Now you can proceed to [install Faraday](#debian-ubuntu-backtrack).
 
 [ [index] ](#index)
 
