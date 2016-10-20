@@ -60,13 +60,17 @@ $ ./faraday.py
 <a name="kali"></a>
 ### Kali
 
-To install Faraday with APT:
+Faraday comes pre-installed in Kali Rolling. The package name is **python-faraday**.
 
+In order to run Faraday in Kali:
 ```
-apt-get install python-faraday
+$ systemctl start couchdb
+$ cd /usr/share/python-faraday
+$ python faraday-server.py
+$ python faraday.py
 ```
 
-Due to Kali's package updates this may not be the last version. If you want the latest updates use the [Debian install steps](#debian).
+Due to Kali's package updates the pre-installed package may not be the last version. If you want the latest updates use the [Debian install steps](#debian).
 
 [ [index] ](#index)
 
