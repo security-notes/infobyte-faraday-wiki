@@ -96,6 +96,9 @@ Faraday GTK Client.
 
 ## Presentation
 
+* AV Tokio - 2016:
+   * http://en.avtokyo.org/avtokyo2016/event
+
 * Black Hat Arsenal USA - 2016:
    * https://www.blackhat.com/us-16/arsenal.html#faraday
 
