@@ -6,6 +6,7 @@
 * [Which platforms are supported?](#supported-platforms)
 * [I purchased a License, now what?](#after-purchase)
 * [How do I configure my own Vulnerabilities Database?](#vulns-db)
+* [What if I want to add a Vulnerability manually?](#adding-manually)
 
 <a name="name"></a>
 ### Where does the name come from?
@@ -55,6 +56,13 @@ You will receive an email with a link to download two tarballs. One will be your
 <a name="vulns-db"></a>
 ### How do I configure my own Vulnerabilities Database?
 Check out our [[Vulnerabilities Database]] config page.
+
+[ [index] ](#index)
+
+<a name="adding-manually"></a>
+### What if I want to add a Vulnerability manually?
+You can do this using our WEB UI, read our documentation on [manually adding vulnerabilities](https://github.com/infobyte/faraday/wiki/Usage#vulnerability-creation).
+
 
 [ [index] ](#index)
 
