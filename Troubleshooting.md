@@ -3,7 +3,6 @@
 * [Faraday is not importing my report](#import)
 * [A plugin added too much information to my database](#remove-by-severity)
 * [I don't remember the Faraday Server password](#recover-password)
-* [Troubles generating Executive Reports](#er-generation)
 
 <a name="cant-access-web"></a>
 ### I can't access the web GUI
@@ -71,15 +70,6 @@ It is possible to restore the database's users using the following script:
 `/faraday# ./reset_admin_couchdb.sh`
 
 **Important: this process will eliminate existing users**
-
-[ [index] ](#index)
-
-<a name="er-generation"></a>
-### Troubles generating Executive Reports
-
-First of all, take a look at our [start-up configuration](https://github.com/infobyte/faraday/wiki/Installation-Server) and make sure you run ```./setup_server.sh``` before generating Executive Reports.
-
-Once that's done, [create the Report](https://github.com/infobyte/faraday/wiki/Executive-Report#making-a-report) and wait for two minutes. If after that time the report is still in **processing** state, try [generating it manually](https://github.com/infobyte/faraday/wiki/Executive-Report#manual-reports).
 
 [ [index] ](#index)
 
