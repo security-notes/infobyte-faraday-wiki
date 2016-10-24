@@ -1,6 +1,6 @@
 Faraday supports CSV Exporting from its WEB UI.
 
-In order to download a CSV file containing all your findings, go to the Status Report page in our WEB UI by clicking the second item from the top as shown below
+In order to download a CSV file containing all your findings, go to the Status Report page in our WEB UI by clicking on the second item from the top in our left navigation bar as shown below
 
 ![Status Report Icon](https://raw.github.com/wiki/infobyte/faraday/images/faraday_statusreport_icono.png) 
 
