@@ -1,4 +1,8 @@
-Faraday supports CSV Exporting from its WEB UI, just click on the download link next to the workspace and export to a CSV file.
+Faraday supports CSV Exporting from its WEB UI.
+
+In order to download a CSV file containing all your findings, go to the Status Report page in our WEB UI and click on the green download link next to the workspace.
+
+![CSV Export link](https://raw.github.com/wiki/infobyte/faraday/images/faraday_csv_export.png) 
 
 The current output format is in the form:
 
