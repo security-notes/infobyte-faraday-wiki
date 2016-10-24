@@ -21,7 +21,7 @@ The reply should look something like
 {"Faraday Server":"Running"}
 ```
 
-If not, maybe try the [Faraday Server Installation](https://github.com/infobyte/faraday/wiki/Installation-Server) and the [Apache CouchDB Installation Guide](https://wiki.apache.org/couchdb/Installation). Or perhaps try the going through the [First Steps](https://github.com/infobyte/faraday/wiki/First-Steps) again and double check everything.
+If not, maybe try the [Faraday Server Installation](https://github.com/infobyte/faraday/wiki/Installation-Server) and the [Apache CouchDB Installation Guide](https://wiki.apache.org/couchdb/Installation). Or perhaps try going through the [First Steps](https://github.com/infobyte/faraday/wiki/First-Steps) again and double check everything.
 
 [ [index] ](#index)
 
