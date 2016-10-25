@@ -9,13 +9,11 @@ Faraday has 5 different ways to interact with the information:
 
 ### GTK GUI
 
-#### The main window
-
-https://github.com/infobyte/faraday/wiki/installation-client#requirements
-
 GTK+3 is designed to improve on the QT3 deprecated interface, so nothing should look out of place if you were already using Faraday. If you weren't, don't worry, it's pretty simple. 
 
 To try it, just [[install the dependencies|installation-client#requirements]] and run Faraday using the command `python faraday.py`.
+
+#### The main window
 
 ![](https://raw.github.com/wiki/infobyte/faraday/images/Faraday-Gtk-MainWindow.png)
 
