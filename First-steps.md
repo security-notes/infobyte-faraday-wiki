@@ -43,9 +43,9 @@ If you wish to use SSL use our [SSL guide](https://github.com/infobyte/faraday/w
 Run `./faraday-server.py` to run the server and then `./faraday.py` to start the client. Enjoy!
 
 #### How do I bind Faraday to 0.0.0.0?
-Just go to ```~/.faraday.config/server.ini``` and inside the ```[faraday-server]``` section write:
+Just go to ```~/.faraday/config/server.ini``` and inside the ```[faraday-server]``` section write:
 
-```set bind_address=0.0.0.0``` 
+```bind_address=0.0.0.0``` 
 
 Restart Faraday Server if you had it running.
 
