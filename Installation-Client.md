@@ -81,7 +81,7 @@ Due to Kali's package updates the pre-installed package may not be the last vers
 Before installing Faraday you will need to get some user-contributed packages. In order to do this quickly we need an [AUR](https://wiki.archlinux.org/index.php/Arch_User_Repository) wrapper, in this case we will use [Yaourt](http://archlinux.fr/yaourt-en). After installing Yaourt run:
 
 ```
-$ yaourt -S python2-dateutil python2-pip mime-types python2-gobject gtk3 vte3 couchdb postgresql-libs
+$ yaourt -S python2-dateutil python2-pip mime-types python2-gobject gtk3 vte3 postgresql-libs
 ```
 
 Now you can proceed to [install Faraday](#debian-ubuntu-backtrack).
