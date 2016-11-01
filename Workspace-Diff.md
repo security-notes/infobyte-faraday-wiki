@@ -6,5 +6,5 @@ The workspace comparison feature lets you easily see and assess the differences 
 
 You can access it through our Web UI, it is the peniultimate icon on the sidebar.
 
-![](https://raw.github.com/wiki/infobyte/faraday/images/Faraday-WorskpaceDiff.png)
+![](https://raw.github.com/wiki/infobyte/faraday/images/Faraday-WorkspaceDiff.png)
 
