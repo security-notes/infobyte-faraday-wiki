@@ -1,3 +1,5 @@
+Watch our video on how to [configure Faraday to use SSL](https://www.youtube.com/watch?v=CO0Mjiye20A)!
+
 ### Faraday Server
 If you are running CouchDB using HTTPS you need to configure Faraday Server to allow incoming HTTPS connections. To do this, first set CouchDB to listen on a new port, for example **6985**.
 
