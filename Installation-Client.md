@@ -165,7 +165,7 @@ pip install psycopg2
 ##### GTK
 We need a few other packages from brew before you can use the client:
 
-`brew install vte3 pygobject`
+`brew install vte3 pygobject3`
 
 ##### CouchDB 
 
