@@ -91,6 +91,7 @@ Now you can proceed to [install Faraday](#debian-ubuntu-backtrack).
 <a name="osx"></a>
 ### OSX
 
+Video about install Faraday in macOS Sierra: [Installation in macOS Sierra.](https://www.youtube.com/watch?v=F44RnB3Ru24)
 Tested on OSX Maverick 10.9.2.
 
 ##### Xcode 
