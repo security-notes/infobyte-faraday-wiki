@@ -45,9 +45,6 @@ Right now faraday has more than [60+ supported tools](https://github.com/infobyt
 ### Workspaces
 Information is classified in **Workspace** units. Each Workspace maps into a pentest team's assignments containing all the intel discovered by that team.
 
-### IntelliSense
-Using CTRL+SPACE in the console for the different commands for example nikto CTRL+SPACE will show the nikto options, or you can use it to get ip or hostname which is in the HostTree for example $ 127.0[CTRL+SPACE] will complete to 127.0.0.1 if we have that ip in the HostTree
-
 ### Conflicts
 If two plugins have different information for the same element it will generate a conflict that the user will have to resolve.  For example, **user1** incorporates host *127.0.0.1 OS:Linux* and **user2** incorporates *127.0.0.1 OS: Linux Ubuntu 13.10*. 
 
@@ -76,7 +73,7 @@ Faraday GTK Client.
 #### ZSH UI no-gui notifications
 ![](https://raw.githubusercontent.com/wiki/infobyte/faraday/images/faraday_gui_notifi.png)
 
-### CSV Exporting & Importing
+### CSV Exporting
 [More information](Exporting-the-information)
 
 ## Links
