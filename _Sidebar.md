@@ -9,7 +9,7 @@
  * [[Bug bounties]]
  * [[Chat and Communication]]
  * [[Continuous-Scanning]]
- * [CSV Exporting & Importing](https://github.com/infobyte/faraday/wiki/Exporting-the-information)
+ * [CSV Exporting](https://github.com/infobyte/faraday/wiki/Exporting-the-information)
  * [[Executive Report]]
  * [[Helpers]]
  * [[JIRA Integration]]
