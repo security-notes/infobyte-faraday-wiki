@@ -8,7 +8,4 @@ and then click on the green download link next to the workspace
 
 ![CSV Export link](https://raw.github.com/wiki/infobyte/faraday/images/faraday_csv_export.png) 
 
-The current output format is in the form:
-
-found date | severity level | service parent | target | name | vulnerability description | data field | references
-
+Keep in mind that if you filter findings or hide columns in the Status Report, those changes will impact the output of the CSV Export.
