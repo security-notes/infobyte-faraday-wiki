@@ -53,16 +53,16 @@ Take a look of our last videos:
 
 [![ScreenShot](https://raw.github.com/wiki/infobyte/faraday/images/youtube.png) -  Faraday using Docker (WebUI / ZSH terminal) ] (http://bit.ly/2ca2NTw)
 
-[![ScreenShot](https://raw.github.com/wiki/infobyte/faraday/images/youtube.png) -  Configure Faraday with SSL) ] (https://bit.ly/2h1cjN3)
+[![ScreenShot](https://raw.github.com/wiki/infobyte/faraday/images/youtube.png) -  Configure Faraday with SSL ] (https://bit.ly/2h1cjN3)
 
-[![ScreenShot](https://raw.github.com/wiki/infobyte/faraday/images/youtube.png) -  First steps running Faraday) ] (https://bit.ly/2h1b14H)
+[![ScreenShot](https://raw.github.com/wiki/infobyte/faraday/images/youtube.png) -  First steps running Faraday ] (https://bit.ly/2h1b14H)
 
-[![ScreenShot](https://raw.github.com/wiki/infobyte/faraday/images/youtube.png) -  Faraday using Amap) ] (https://bit.ly/2gKm4yI)
+[![ScreenShot](https://raw.github.com/wiki/infobyte/faraday/images/youtube.png) -  Faraday using Amap ] (https://bit.ly/2gKm4yI)
 
-[![ScreenShot](https://raw.github.com/wiki/infobyte/faraday/images/youtube.png) -  Faraday using sqlmap) ] (https://bit.ly/2h08Bkm)
+[![ScreenShot](https://raw.github.com/wiki/infobyte/faraday/images/youtube.png) -  Faraday using sqlmap ] (https://bit.ly/2h08Bkm)
 
-[![ScreenShot](https://raw.github.com/wiki/infobyte/faraday/images/youtube.png) -  Faraday using Dnsrecon) ] (https://bit.ly/2gwzpaY)
+[![ScreenShot](https://raw.github.com/wiki/infobyte/faraday/images/youtube.png) -  Faraday using Dnsrecon ] (https://bit.ly/2gwzpaY)
 
-[![ScreenShot](https://raw.github.com/wiki/infobyte/faraday/images/youtube.png) -  Faraday using ZAP) ] (https://bit.ly/2gKoVI2)
+[![ScreenShot](https://raw.github.com/wiki/infobyte/faraday/images/youtube.png) -  Faraday using ZAP ] (https://bit.ly/2gKoVI2)
 
-[![ScreenShot](https://raw.github.com/wiki/infobyte/faraday/images/youtube.png) -  Faraday installation in macOS Sierra) ] (https://bit.ly/2gK8Gur)
+[![ScreenShot](https://raw.github.com/wiki/infobyte/faraday/images/youtube.png) -  Faraday installation in macOS Sierra ] (https://bit.ly/2gK8Gur)
