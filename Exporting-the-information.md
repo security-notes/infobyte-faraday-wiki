@@ -9,3 +9,8 @@ and then click on the green download link next to the workspace
 ![CSV Export link](https://raw.github.com/wiki/infobyte/faraday/images/faraday_csv_export.png) 
 
 Keep in mind that if you filter findings or hide columns in the Status Report, those changes will impact the output of the CSV Export.
+
+For example, if we use the search box to filter out vulnerabilities and leave only a few columns the resulting CSV will contain the same information as the list, as you can see in the images below.
+
+![Status Report filtered vulns](https://raw.github.com/wiki/infobyte/faraday/images/faraday_webui_csv_filtering.png) 
+![CSV file reflects filters](https://raw.github.com/wiki/infobyte/faraday/images/faraday_webui_csv_file.png) 
