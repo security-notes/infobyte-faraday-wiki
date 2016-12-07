@@ -7,12 +7,12 @@ After installing and configuring NGINX the setup should be as follows:
 * Faraday Server on port 5985 using HTTP (~/.faraday/config/server.ini)
 * GTK using HTTPS (~/.faraday/config/user.xml) and run:
 ```
-    $ python2 faraday.py --cert path_to_cert
+$ python2 faraday.py --cert path_to_cert
 ```
 * Web UI using https://example_domain:port/_ui
 * NGINX on port 80 redirecting to HTTPS
 
-I'm attaching a sample config file for NGINX. Please keep in mind that you need to change example_domain, example_cert and example_key to your domain, cert and key.
+
 
 For information on *how to generate self signed certificates* you can read [Apache's FAQ on how to do this](https://cwiki.apache.org/confluence/pages/viewpage.action?pageId=48203146).
 
