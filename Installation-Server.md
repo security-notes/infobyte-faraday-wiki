@@ -38,7 +38,7 @@ Just go to the Faraday directory and run the following. Be aware that the first 
 # ./setup_server.sh
 ```
 
-After the setup script is done, run this to fire up the server
+After the setup script is done, [configure the CouchDB credentials](https://github.com/infobyte/faraday/wiki/First-steps#setup), run this to fire up the server 
 ```
 $ ./faraday-server.pyc
 ```
