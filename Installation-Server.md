@@ -40,7 +40,7 @@ Just go to the Faraday directory and run the following. Be aware that the first 
 
 After the setup script is done, run this to fire up the server
 ```
-$ ./faraday-server.py
+$ ./faraday-server.pyc
 ```
 
 If Faraday Server needs dependencies, it will give you the option to install them.
