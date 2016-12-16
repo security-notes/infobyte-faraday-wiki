@@ -5,7 +5,7 @@ Faraday has 5 different ways to interact with the information:
 * [ZSH UI](#zsh-ui)
 * [Web UI](#web-ui)
 * [CLI](#cli)
-* [ZSH Web](#zsh-web) (only available in our commercial versions)
+* [ZSH Web](#zsh-web-console) (only available in our commercial versions)
 
 ### GTK GUI
 
