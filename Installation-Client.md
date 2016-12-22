@@ -229,8 +229,7 @@ docker inspect $(docker ps -lq) | grep \"IPAddress
 For the purpose of this guide lets use **X.X.X.X**.
 
 ##### Web UI
-Direct the browser to http://X.X.X.X/reports/_design/reports/index.html
-
+Direct the browser to http://X.X.X.X/_ui/
 ##### ZSH
 ```
 ssh root@X.X.X.X
