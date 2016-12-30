@@ -43,7 +43,7 @@ We also develop two [commercial versions](https://www.faradaysec.com/#download).
 
 <a name="supported-platforms"></a>
 ### Which platforms are supported?
-ArchAssault, Archlinux, Debian, Kali, OSX, Ubuntu. You can find a detailed explanation [here](https://github.com/infobyte/faraday/wiki/Installation).
+ArchAssault, Archlinux, Debian, Kali, OSX, Ubuntu. You can find a detailed explanation [here](https://github.com/infobyte/faraday/wiki/installation-client).
 
 [ [index] ](#index)
 
