@@ -75,7 +75,7 @@ Keep in mind that the data available to the Report is:
 * services - a dictionary with all the services in the Workspace
 * summary - contains the text loaded when [creating the report](#making-a-report)
 * title - contains the text loaded when [creating the report](#making-a-report)
-* vulns - a dictionary with all vulnerabilities in the Workspace
-* vulns_amount - number of vulnerabilities in the Workspace
+* vulns - a dictionary with all vulnerabilities in the Workspace except for vulns with severity _unclassified_, which are not included
+* vulns_amount - number of vulnerabilities in the Workspace except for vulns with severity _unclassified_, which are not included
 
 <a name="manual-reports"></a>
