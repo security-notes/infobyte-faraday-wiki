@@ -16,9 +16,9 @@ To manage your reports you need to access Faraday's Web Interface and click on t
 
 ![](https://raw.github.com/wiki/infobyte/faraday/images/faraday_report_create.png)
 
-All the reports will be listed, including their info and status.
+All the reports will be listed, including their info, status and link to download.
 
-Once a report has been generated it can't be edited.
+To edit a report, select it and click on the **edit button** ![](https://raw.github.com/wiki/infobyte/faraday/images/faraday_report_edit_button.png). A modal will appear allowing you to modify all the report fields. Save it and a brand new report will be generated, keeping the original version intact.
 
 ### Making a report
 
