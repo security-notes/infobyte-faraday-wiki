@@ -25,7 +25,18 @@ To edit a report, select it and click on the **edit button** ![](https://raw.git
 To create a new report, navigate to the Executive Report component and click on **New**
 ![](https://raw.github.com/wiki/infobyte/faraday/images/faraday_report_new_button.png). A new form will open, asking for the following fields:
 
+* Report Name
+This is the name that will be used to name the report file.
+* Use only confirmed vulns
+If this checkbox is selected, no false positives will be present in the final report.
+* Tags
+When selected, vulnerabilities will be filtered by the selected tag. If more than one tag is selected, all vulns containing one of those will be present in the final report.
+* Grouped Report
+Select this option to generate a report using a grouped dataset.
+* Template
+Select the template to use as a base for your report. Depending on the selected dataset the options will change.
 * Title
+This is the name that will be used to create the cover of the report.
 * Scope
 * Objectives
 * Summary
