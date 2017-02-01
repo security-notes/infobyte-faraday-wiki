@@ -4,6 +4,9 @@
 * [Commercial Versions](#commercial)
 * [Community Version](#community)
 
+### Faraday dont support Couchdb 2.0, use Couchdb 1.6 ALWAYS
+
+
 <a name="faraday-server"></a>
 ### Faraday Server
 Faraday Server is the way to have a better synchronization between your Faraday Client session and CouchDB. The server's responsibility is to send and receive information from both the client and CouchDB, and make sure that they are in sync. At the same time, it provides a much better performance for the Web UI, allowing it to handle enormous workspaces without a problem.
