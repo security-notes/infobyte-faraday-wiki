@@ -28,6 +28,12 @@ All the reports will be listed, including their info, status and link to downloa
 
 To edit a report, select it and click on the **edit button** ![](https://raw.github.com/wiki/infobyte/faraday/images/faraday_report_edit_button.png). A modal will appear allowing you to modify all the report fields. Save it and a brand new report will be generated, keeping the original version intact.
 
+If, instead, you want a new report that is exactly as an existing one but with the current data of your workspace, you can click on the **regenerate** button in the reports list.
+
+![](https://raw.github.com/wiki/infobyte/faraday/images/faraday_report_regenerate_button.png)
+
+Reports can only be regenerated one at a time, so the regeneration buttons are disabled while this action is being performed.
+
 ### Making a report
 
 To create a new report, navigate to the Executive Report component and click on **New**
