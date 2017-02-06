@@ -58,10 +58,12 @@ From the Executive Report window, select the document and click on **Delete**
 
 ### Templates
 
-All Report templates are located in ```reports/executive/templates```. The default one is ```generic_default.docx```, you can modify it to get customized reports.
+All report templates are located in ```reports/executive/templates```. The default one is ```generic_default.docx```, you can modify it to get customized reports.
 
-If you want add a new template, take care with the name of that. You need name it how group_{customName}.docx for grouped reports or generic_{customName}.docx for generic reports (Not grouped).
-If you add a new template following that format, you can see how appears in Faraday Web UI template selection.  
+If you want to add a new template make sure to follow the naming guidelines as follows.
+
+* **generic_{customName}.docx** for generic reports - all the vulnerabilities will be listed as individual items in these reports
+* **group_{customName}.docx** for grouped reports - vulnerabilities will be grouped by name and description
 
 The template uses Jinja2 syntax so we strongly recommend reading the [official documentation](http://jinja.pocoo.org/docs/dev/templates/) before modifying the document. The library used to create the report is **python-docx-template** available via [Github](https://github.com/elapouya/python-docx-template/). All Jinja2 tags are available, although there are some [restrictions](http://docxtpl.readthedocs.io/en/latest/#restrictions).
 
