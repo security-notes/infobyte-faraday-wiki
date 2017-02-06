@@ -23,25 +23,19 @@ To edit a report, select it and click on the **edit button** ![](https://raw.git
 ### Making a report
 
 To create a new report, navigate to the Executive Report component and click on **New**
-![](https://raw.github.com/wiki/infobyte/faraday/images/faraday_report_new_button.png). A new form will open, asking for the following fields:
+![](https://raw.github.com/wiki/infobyte/faraday/images/faraday_report_new_button.png). A form will open asking for the following fields:
 
-* Report Name
-This is the name that will be used to name the report file.
-* Use only confirmed vulns
-If this checkbox is selected, no false positives will be present in the final report.
-* Tags
-When selected, vulnerabilities will be filtered by the selected tag. If more than one tag is selected, all vulns containing one of those will be present in the final report.
-* Grouped Report
-Select this option to generate a report using a grouped dataset.
-* Template
-Select the template to use as a base for your report. Depending on the selected dataset the options will change.
-* Title
-This is the name that will be used to create the cover of the report.
-* Scope
-* Objectives
-* Summary
-* Conclusions
-* Recommendations
+* **report name** - this is the name that will be used to name the report file
+* **use only confirmed vulns** - if this checkbox is *selected*, no false positives will be present in the final report
+* **tags** - when selected, vulnerabilities will be filtered by the selected tag. If more than one tag is selected, all vulns containing one of those will be present in the final report
+* **grouped report** - select this option to generate a report using a grouped dataset
+* **template** - select the template to use as a base for your report. Depending on the selected dataset the options will change
+* **title** - this is the name that will be used to create the cover of the report
+* **scope**
+* **objectives**
+* **summary**
+* **conclusions**
+* **recommendations**
 
 ![](https://raw.github.com/wiki/infobyte/faraday/images/faraday_report_new.png)
 
@@ -78,19 +72,19 @@ An example of how the template cover looks like
 #### Data
 
 Keep in mind that the data available to the Report is:
-* conclusions - contains the text loaded when [creating the report](#making-a-report)
-* counter_severity - a dictionary with all the severities and the amount of vulns for each one
-* date - the date when the Report was created, as the name of the month and four digits for the year
-* enterprise - contains the text loaded when [creating the report](#making-a-report)
-* hosts - a dictionary with all the hosts in the Workspace
-* hosts_amount - an int containing the amount of hosts in the Workspace
-* objectives - contains the text loaded when [creating the report](#making-a-report)
-* overview_images - a [sub-document](http://docxtpl.readthedocs.io/en/latest/#sub-documents) containing vulnerability piecharts
-* recommendations - contains the text loaded when [creating the report](#making-a-report)
-* scope - contains the text loaded when [creating the report](#making-a-report)
-* services - a dictionary with all the services in the Workspace
-* services_amount - an int containing the amount of services in the Workspace
-* summary - contains the text loaded when [creating the report](#making-a-report)
-* title - contains the text loaded when [creating the report](#making-a-report)
-* vulns - a dictionary with all the vulnerabilities in the Workspace except for vulns with severity _unclassified_, which are not included
-* vulns_amount - an int containing the amount of vulnerabilities in the Workspace except for vulns with severity _unclassified_, which are not included
+* **conclusions** - contains the text loaded when [creating the report](#making-a-report)
+* **counter_severity** - a dictionary with all the severities and the amount of vulns for each one
+* **date** - the date when the Report was created, as the name of the month and four digits for the year
+* **enterprise** - contains the text loaded when [creating the report](#making-a-report)
+* **hosts** - a dictionary with all the hosts in the Workspace
+* **hosts_amount** - an int containing the amount of hosts in the Workspace
+* **objectives** - contains the text loaded when [creating the report](#making-a-report)
+* **overview_images** - a [sub-document](http://docxtpl.readthedocs.io/en/latest/#sub-documents) containing vulnerability piecharts
+* **recommendations** - contains the text loaded when [creating the report](#making-a-report)
+* **scope** - contains the text loaded when [creating the report](#making-a-report)
+* **services** - a dictionary with all the services in the Workspace
+* **services_amount** - an int containing the amount of services in the Workspace
+* **summary** - contains the text loaded when [creating the report](#making-a-report)
+* **title** - contains the text loaded when [creating the report](#making-a-report)
+* **vulns** - a dictionary with all the vulnerabilities in the Workspace except for vulns with severity _unclassified_, which are not included
+* **vulns_amount** - an int containing the amount of vulnerabilities in the Workspace except for vulns with severity _unclassified_, which are not included
