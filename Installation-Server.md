@@ -4,7 +4,7 @@
 * [Commercial Versions](#commercial)
 * [Community Version](#community)
 
-### Faraday dont support Couchdb 2.0, use Couchdb 1.6 ALWAYS
+#### Beware! Faraday doesn't support CouchDB 2.0, use CouchDB 1.6!
 
 
 <a name="faraday-server"></a>
