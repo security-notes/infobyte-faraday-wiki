@@ -68,16 +68,26 @@ From the Executive Report window, select the document and click on **Delete**
 
 All report templates are located in ```reports/executive/templates```. The default one is ```generic_default.docx```, you can modify it to get customized reports.
 
-If you want to add a new template make sure to follow the naming guidelines as follows.
-
-* **generic_{customName}.docx** for generic reports - all the vulnerabilities will be listed as individual items in these reports
-* **group_{customName}.docx** for grouped reports - vulnerabilities will be grouped by name and description
-
 The template uses Jinja2 syntax so we strongly recommend reading the [official documentation](http://jinja.pocoo.org/docs/dev/templates/) before modifying the document. The library used to create the report is **python-docx-template** available via [Github](https://github.com/elapouya/python-docx-template/). All Jinja2 tags are available, although there are some [restrictions](http://docxtpl.readthedocs.io/en/latest/#restrictions).
 
 An example of how the template cover looks like
 
 ![](https://raw.github.com/wiki/infobyte/faraday/images/faraday_report_template_example.png)
+
+#### Datasets
+
+Faraday provides two different datasets to create Executive Reports - **generic** and **grouped**.
+
+The *generic dataset* provides one entry for each individual vulnerability with all of its fields readily available as a dictionary. The field **parent** contains an ID corresponding to the vulnerability's parent (either a Host or a Service).
+
+The *grouped dataset* groups vulnerabilities by **name and description**. If two or more vulnerabilities share the same name and description, they will be presented as one. The field **parent** contains a Python Dictionary-style object with the parent IDs as keys and a Python Dictionary-style object containing **evidence_subdoc**, **data** and **__taget__** as values.
+
+#### Naming
+
+If you want to add a new template make sure to follow the naming guidelines as follows.
+
+* **generic_{customName}.docx** for generic reports - all the vulnerabilities will be listed as individual items in these reports
+* **group_{customName}.docx** for grouped reports - vulnerabilities will be grouped by name and description
 
 #### Data
 
