@@ -91,6 +91,12 @@ The *generic dataset* provides one entry for each individual vulnerability with 
 
 The *grouped dataset* groups vulnerabilities by **name and description**. If two or more vulnerabilities share the same name and description, they will be presented as one. The field **parent** contains a Python Dictionary-style object with the parent IDs as keys and a Python Dictionary-style object containing **evidence_subdoc**, **data** and **__taget__** as values. **Tags** and **references** will be merged for vulnerabilities that are grouped and not separated by parent.
 
+By default all of the reports are created using the *generic dataset*. To create a report using the *grouped dataset*, select the checkxbox "grouped report" when creating it, as shown below.
+
+![](https://raw.github.com/wiki/infobyte/faraday/images/faraday_report_using_grouped_vulns.png)
+
+Keep in mind that each template should be designed for a specific dataset and that these are not interchangeable. 
+
 #### Naming
 
 If you want to add a new template make sure to follow the naming guidelines as follows.
