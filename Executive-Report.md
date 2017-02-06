@@ -53,10 +53,19 @@ Faraday processes all the information and spits out a shiny new report that is a
 
 ![](https://raw.github.com/wiki/infobyte/faraday/images/faraday_report_word.png)
 
-If you need a custom report that includes only some of the findings in the workspace, you can tag the desired vulnerabilities and then create a Report only with that tag.
-At least one vulnerability must be tagged in order to have the option to generate a filtered Report. When the form opens an option to select tags will appear. Keep in mind that one or more tags can be selected.
-![](https://raw.github.com/wiki/infobyte/faraday/images/faraday_report_using_tags.png)
+#### Filtering
 
+There are two main ways to manage the data that goes into the final report - confirming vulns and tagging them.
+
+By default all of the vulnerabilities added manually are set as *confirmed* and all of those added by a Plugin are set as *false positives*. If the checkbox "use only confirmed vulns" is selected, the report will only contain confirmed findings.
+
+If you need a custom report that includes only some of the findings in the workspace, you can also tag the desired vulnerabilities and then create a Report only with that tag.
+
+At least one vulnerability must be tagged in order to have the option to generate a tag-filtered report. When the form opens an option to select tags will appear. Keep in mind that one or more tags can be selected.
+
+These two parameters (confirmed and tags) can be mixed to create different outcomes.
+
+![](https://raw.github.com/wiki/infobyte/faraday/images/faraday_report_using_tags.png)
 
 ### Eliminating a report
 
