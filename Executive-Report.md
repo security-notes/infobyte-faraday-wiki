@@ -80,7 +80,7 @@ Faraday provides two different datasets to create Executive Reports - **generic*
 
 The *generic dataset* provides one entry for each individual vulnerability with all of its fields readily available as a dictionary. The field **parent** contains an ID corresponding to the vulnerability's parent (either a Host or a Service).
 
-The *grouped dataset* groups vulnerabilities by **name and description**. If two or more vulnerabilities share the same name and description, they will be presented as one. The field **parent** contains a Python Dictionary-style object with the parent IDs as keys and a Python Dictionary-style object containing **evidence_subdoc**, **data** and **__taget__** as values.
+The *grouped dataset* groups vulnerabilities by **name and description**. If two or more vulnerabilities share the same name and description, they will be presented as one. The field **parent** contains a Python Dictionary-style object with the parent IDs as keys and a Python Dictionary-style object containing **evidence_subdoc**, **data** and **__taget__** as values. **Tags** and **references** will be merged for vulnerabilities that are grouped and not separated by parent.
 
 #### Naming
 
