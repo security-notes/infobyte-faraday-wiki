@@ -49,8 +49,6 @@ To create a new report, navigate to the Executive Report component and click on 
 
 Faraday processes all the information and spits out a shiny new report that is available for download from the same list.
 
-![](https://raw.github.com/wiki/infobyte/faraday/images/faraday_report_procesing.png)
-
 ![](https://raw.github.com/wiki/infobyte/faraday/images/faraday_report_word.png)
 
 #### Filtering
