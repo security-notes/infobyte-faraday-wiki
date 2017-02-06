@@ -91,7 +91,7 @@ If you want to add a new template make sure to follow the naming guidelines as f
 
 #### Data
 
-Keep in mind that the data available to the Report is:
+The data available to the Report template is:
 * **conclusions** - contains the text loaded when [creating the report](#making-a-report)
 * **counter_severity** - a dictionary with all the severities and the amount of vulns for each one
 * **date** - the date when the Report was created, as the name of the month and four digits for the year
@@ -108,3 +108,7 @@ Keep in mind that the data available to the Report is:
 * **title** - contains the text loaded when [creating the report](#making-a-report)
 * **vulns** - a dictionary with all the vulnerabilities in the Workspace except for vulns with severity _unclassified_, which are not included
 * **vulns_amount** - an int containing the amount of vulnerabilities in the Workspace except for vulns with severity _unclassified_, which are not included
+
+Grouped reports will have an additional field:
+
+* **vulns_grouped_amount** - an int containing the total amount of vulnerabilities after grouping
