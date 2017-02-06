@@ -1,4 +1,12 @@
-This feature is only available for our [commercial versions](https://www.faradaysec.com/#download).
+**This feature is only available for our [commercial versions](https://www.faradaysec.com/#download).**
+<a name="index"></a>
+* [Intro](#intro)
+* [Requirements](#requirements)
+* [Managing Executive Reports](#managing-executive-reports)
+* [Making a Report](#making-a-report)
+* [Eliminating a Report](#eliminating-a-report)
+* [Templates](#templates)
+
 
 ### Intro
 
