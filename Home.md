@@ -70,9 +70,6 @@ Faraday GTK Client.
 
 ![](https://raw.github.com/wiki/infobyte/faraday/images/Faraday-Gtk-NotificationsDialog.png)
 
-#### ZSH UI no-gui notifications
-![](https://raw.githubusercontent.com/wiki/infobyte/faraday/images/faraday_gui_notifi.png)
-
 ### CSV Exporting
 [More information](Exporting-the-information)
 
