@@ -6,41 +6,40 @@ You prefer a video about this feature? [Vulnerability Database](https://www.yout
 
 ### Creating a CSV to upload to CouchDB
 
-Faraday have a CSV of the original Mitre proyect, if you want import to Faraday this, jump to execution of pushCWE.py 
+Faraday has a CSV of the original Mitre proyect included in its tree, if you want import to Faraday this, jump to execution of `pushCWE.py` 
 
-For create a CSV with all information about a specific proyect, you need run a script for download and parse this.
-Faraday have two scripts for two different proyects.
+To create a CSV with all information about a specific proyect, you need run a script to download and parse its content.
+Faraday have two scripts for two different proyects. Here we show how to run them in order to download and store the CSV files.
 
-[CFDB](https://github.com/mubix/cfdb):
+####[CFDB](https://github.com/mubix/cfdb) ([cfdbToCsv.py](/helpers/cfdbToCsv.py)):
 
-[Faraday_Installation]/helpers/cfdbToCsv.py
+    $ ./helpers/cfdbToCsv.py
 
-[VulnDb](https://github.com/vulndb/data)
+####[VulnDb](https://github.com/vulndb/data) ([/helpers/vulndbToCsv.py](vulndbToCsv.py)):
 
-[Faraday_Installation]/helpers/vulndbToCsv.py
+    $ ./helpers/vulndbToCsv.py
 
-Go to directory helpers and execute one of this scripts for create a CSV file.
-Next copy this CSV(cfdb.csv or vulndb.csv) to [Faraday_Installation]/data/cwe.csv
+Next copy this CSV file(either cfdb.csv or vulndb.csv) to [/data/cwe.csv](data/cwe.csv).
 
-To upload it to CouchDB go to your Faraday installation root directory and run 
+To upload it to CouchDB go to your Faraday installation root directory and run:
 
-```
-python helpers/pushCwe.py
-```
+    $ ./helpers/pushCwe.py
 
-Use the paramater '-c- if you have a username and password for Faraday.
-Example:
-pushCwe.py -c 'http://USERNAME:PASSWORD@HOSTNAME:PORT/'
+Use the paramater `-c` if you have a username and password for Faraday.
 
-Also, if you need add your own CSV file, put the CSV inside **$FARADAY/data/cwe.csv**.
+    $ ./pushCwe.py -c 'http://USERNAME:PASSWORD@HOSTNAME:PORT/'
+
+Also, if you need add your own CSV file, put the CSV inside `$FARADAY/data/cwe.csv`.
 And run pushCWE.py!
 
-Make sure you run the **pushCwe.py** script before use and that's it!
+Make sure you run the `pushCwe.py` script before use and that's it!
 
 ### Usage
 
-Login to your Faraday Web UI and create or edit a vulnerability , you can see now a field 'CWE' how show image...
+Login to your Faraday Web UI and create or edit a vulnerability, you can see now a field `CWE` like in the followig screenshot:
+
 ![](https://raw.githubusercontent.com/wiki/infobyte/faraday/images/CweDb.png)
 
-Write the CWE name of this vulnerability and all the information would loaded!
-Note: Name, Description and Resolution is replaced by contains in the CWE database.
+Write the CWE name of this vulnerability and all the information will be automatically loaded!
+
+**Note:** Name, Description and Resolution is replaced with the information stored in the CWE database.

@@ -13,8 +13,11 @@ Download the [latest tarball](https://github.com/infobyte/faraday/tarball/master
 ```
 $ git clone https://github.com/infobyte/faraday.git faraday-dev
 $ cd faraday-dev
-$ ./install.sh
+
+$ pip2 install -r requirements_server.txt
 $ ./faraday-server.py
+
+$ pip2 install -r requirements.txt
 $ ./faraday.py
 ```
 [Read more about the installation process](https://github.com/infobyte/faraday/wiki/installation-client).
@@ -46,23 +49,28 @@ Right now faraday has more than [60+ supported tools](https://github.com/infobyt
 Information is classified in **Workspace** units. Each Workspace maps into a pentest team's assignments containing all the intel discovered by that team.
 
 ### Conflicts
-If two plugins have different information for the same element it will generate a conflict that the user will have to resolve.  For example, **user1** incorporates host *127.0.0.1 OS:Linux* and **user2** incorporates *127.0.0.1 OS: Linux Ubuntu 13.10*. 
+If two plugins have different information for the same element it will generate a conflict that the user will have to resolve.  For example, _user1_ incorporates host `127.0.0.1 OS:Linux` and _user2_ incorporates `127.0.0.1 OS: Linux Ubuntu 13.10`.
 
 On our [GTK interface](https://github.com/infobyte/faraday/wiki/Usage#gtk-gui) there's a button on the bottom right corner of the main window with the number of conflicts in the current workspace. To solve them, just click that button and a window will open where you can edit the conflicting objects and select which one to keep. 
 
 ### Faraday plugin
+
 Using our plugin you can do different actions using the command line, for example:
 
-```
-$ cd $faraday/bin/
-$ #Adding new hosts 
-$./fplugin -e 'for h in api.createAndAddHost("8.8.8.8","Linux")'
-$ #Get all ip of HostTree
-$ ./fplugin -e 'for h in api.__model_controller.getAllHosts(): print h.name' > allhost.txt
-$ nmap -i allhost.txt
-```
+    $ cd faraday-dev/bin/
+    $ ./fplugin create_host 192.154.33.222 Android
+    1a7b2981c7becbcb3d5318056eb29a58817f5e67
+    $ ./fplugin filter_services http ssh -p 21 -a
+    Filtering services for ports: 21, 22, 80, 443, 8080, 8443
 
-Read more about the [[Faraday Plugin]].
+    192.168.20.1	ssh	[22]	tcp	open	None
+    192.168.20.1	http	[443]	tcp	open	None
+    192.168.20.7	ssh	[22]	tcp	open	Linux
+    192.168.20.7	http	[443]	tcp	open	Linux
+    192.168.20.11	ssh	[22]	tcp	open	Linux
+
+
+Read more about the [Faraday Plugin](https://github.com/infobyte/faraday/wiki/faraday-plugin).
 
 ### Notifications
 Updating objects on other Faraday instances result in notifications on your
