@@ -3,6 +3,7 @@
 To search, type the keyword in the text field above the table.
 
 You can find the text filter on:
+
 * Status Report
 * Hosts
 
@@ -15,6 +16,7 @@ You can find the text filter on:
 To search by field, enter the name of field  (e.g. **severity**) , continue a colon  (**:**) , finally put in the word that you want to find.
 
 Examples: 
+
 * severity:unclassified
 * name:Nessus scan info
 
@@ -26,6 +28,7 @@ To search by many field, do a normal search but at the end, type a SPACE BAR and
 Just a SPACE BAR in the middle of the consult.
 
 Examples:
+
 * severity:unclassified target:173.252.100.18
 * severity:low service:443 target:173.252
 

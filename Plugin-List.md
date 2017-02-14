@@ -17,6 +17,7 @@ For example, if the **Burp** report named ```burp_1456983368.xml``` is not being
 
 Keep in mind that this functionality is **case sensitive**. The names of the available plugins are:
 
+
 * Acunetix
 * Arachni
 * Burp
@@ -36,6 +37,7 @@ Keep in mind that this functionality is **case sensitive**. The names of the ava
 * X1
 * Zap
 
+
 ### API
 
 Plugin connectors or online ([[BeEF]], [[Metasploit]], [Burp](https://github.com/infobyte/faraday/wiki/Burp-proxy-extender)), these connect to external APIs or databases, or talk directly to [Faraday's RPC API](https://github.com/infobyte/faraday/wiki/APIs).
@@ -43,6 +45,7 @@ Plugin connectors or online ([[BeEF]], [[Metasploit]], [Burp](https://github.com
 ### List
 
 If you think your favourite tool is missing [code your own plugin](https://github.com/infobyte/faraday/wiki/Basic-plugin-development) or [ask us to do it](https://github.com/infobyte/faraday/issues/new)!
+
 
 * [Acunetix](https://twitter.com/acunetix) (REPORT) (XML)
 * [Amap] (https://www.thc.org/thc-amap/) (CONSOLE)
@@ -94,3 +97,4 @@ If you think your favourite tool is missing [code your own plugin](https://githu
 * whois (CONSOLE)
 * [X1, Onapsis](https://twitter.com/onapsis) (REPORT) (XML)
 * [Zap](https://twitter.com/zaproxy) (REPORT) (XML)
+

@@ -2,7 +2,8 @@ A bug bounty program is a deal offered by a website or software developers by wh
 
 We want Faraday to be an ally for researchers participating in such programs, so we thought it would be interesting to prepare some Workspaces for Bug bounties from different organizations.
 
-Currently we support the following  sites:
+Currently we support the following sites:
+
 * Airbnb
 * Facebook
 * Github

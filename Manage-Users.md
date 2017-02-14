@@ -15,9 +15,7 @@ The users can be seen on a list that lets you create, edit or eliminate users ho
 Faraday supports three types of Roles with different levels of access for the application.
 
 * **Admin**: This role lets the administrator manipulate options regarding users, workspaces, vulnerabilities, reports, etc.
-
 * **Pentester**: This role allows the pentester to access permitted workspaces and create, edit or erase vulnerabilities.
-
 * **Client**: This role is allowed to access permitted workspaces without being modification permission.
 
 # Creating Users

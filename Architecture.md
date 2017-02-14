@@ -7,6 +7,7 @@ key features needed to improve your workflow, but we're working on replicating
 those on Faraday Server to simplify the setup.
 
 CouchDB Serves for the following purposes:
+
 * Partial storage
 * Notifications feed
 * User management 

@@ -75,9 +75,11 @@ Example: ./removeBySeverity.py
 ```
 
 Removes all vulnerabilities with selected severity. Faraday has 6 levels of severity defined from highest to lowest:
+
 * critical
 * high
 * med
 * low
 * info
 * unclassified
+

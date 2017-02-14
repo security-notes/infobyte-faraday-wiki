@@ -1,5 +1,6 @@
 **This feature is only available for our [commercial versions](https://www.faradaysec.com/#download).**
 <a name="index"></a>
+
 * [Intro](#intro)
 * [Requirements](#requirements)
 * [Managing Executive Reports](#managing-executive-reports)
@@ -111,6 +112,7 @@ If you want to add a new template make sure to follow the naming guidelines as f
 #### Data
 
 The data available to the Report template is:
+
 * **conclusions** - contains the text loaded when [creating the report](#making-a-report)
 * **counter_severity** - a dictionary with all the severities and the amount of vulns for each one
 * **date** - the date when the Report was created, as the name of the month and four digits for the year

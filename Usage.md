@@ -1,11 +1,13 @@
 ## Faraday Client
 
 Faraday has 5 different ways to interact with the information:
+
 * [GTK GUI](#gtk-gui)
 * [ZSH UI](#zsh-ui)
 * [Web UI](#web-ui)
 * [CLI](#cli)
 * [ZSH Web](#zsh-web-console) (only available in our commercial versions)
+
 
 ### GTK GUI
 
@@ -69,9 +71,11 @@ No manual imports needed but supported. Just drop your fresh generated reports i
 
 Faraday will parse your reports and upload the information extracted from them. 
 All the available information will be available through the different interface
+
 * [QT GUI](#qt-gui)
 * [GTK GUI](#gtk-gui)
 * [Web UI](#web-ui)
+
 
 ### Web UI
 
@@ -113,12 +117,14 @@ You can edit the price per severity by clicking on it. The graphic will change a
 
 So lets say that you have a workspace with 6 vulns, one for each severity. And the price schema is:
 
+
 * Criticals are worth 6 dollars
 * Highs are worth 5 dollars
 * Meds are worth 4 dollars
 * Lows are worth 3 dollars
 * Infos are worth 2 dollars
 * Unclassifieds are worth 1 dollar
+
 
 Then your Workspace will be worth 
 ```
@@ -152,8 +158,10 @@ You can find the text filter both on the Status Report and Hosts views. Keep in 
 To search by field enter the name of field  (e.g. **severity**), continue with a colon  (**:**) and finally put in the word that you want to find.
 
 Examples: 
+
 * severity:unclassified
 * name:Nessus scan info
+
 
 ![](https://raw.github.com/wiki/infobyte/faraday/images/filterByField.png)
 
@@ -162,8 +170,10 @@ Examples:
 To search by many fields do a normal search but at the end type a *SPACE BAR* and do a normal search again.
 
 Examples:
+
 * severity:unclassified target:173.252.100.18
 * severity:low service:443 target:173.252
+
 
 ![](https://raw.github.com/wiki/infobyte/faraday/images/searchByManyFields.png)
 

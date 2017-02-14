@@ -3,12 +3,15 @@ The recommended way to run Faraday using SSL is through NGINX.
 You can find a detailed guide on how to install it in the [official NGINX documentation](https://www.nginx.com/resources/wiki/start/topics/tutorials/install/).
 
 After installing and configuring NGINX the setup should be as follows:
+
 * CouchDB on port 5984 using HTTP (CouchDB config files)
 * Faraday Server on port 5985 using HTTP (~/.faraday/config/server.ini)
 * GTK using HTTPS (~/.faraday/config/user.xml) and run:
+
 ```
 $ python2 faraday.py --cert path_to_cert
 ```
+
 * Web UI using https://example_domain:port/_ui
 * NGINX on port 80 redirecting to HTTPS
 

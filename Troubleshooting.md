@@ -1,4 +1,5 @@
 <a name="index"></a>
+
 * [I can't access the web GUI](#cant-access-web)
 * [Faraday is not importing my report](#import)
 * [A plugin added too much information to my database](#remove-by-severity)
