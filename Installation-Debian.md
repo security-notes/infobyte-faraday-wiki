@@ -6,6 +6,8 @@ We have split the server and client into two separate packages, so you can insta
 
 **Important:** Although you can install both packages using a Graphical Package Manager, like GDebi or Ubuntu Software Center, it is recommended to stick to this instructions, and install them from the command line.
 
+Unfortunately, as Debian is missing a couple of dependencies for Faraday to work, this packages will not be able to be installed. Although it's still possible to do so by adding third party repositories, you will receive no support from us if you encounter any problem.
+
 ## Installing Faraday Server
 
 To install the Faraday Server you have to execute the following commands:
