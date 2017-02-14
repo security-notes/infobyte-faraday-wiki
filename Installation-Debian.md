@@ -4,6 +4,8 @@ If you are using any version of Ubuntu, we have made `.deb` packages available w
 
 We have split the server and client into two separate packages, so you can install them separately, or even on different servers.
 
+**Important:** Although you can install both packages using a Graphical Package Manager, like GDebi or Ubuntu Software Center, it is recommended to stick to this instructions, and install them from the command line.
+
 ## Installing Faraday Server
 
 To install the Faraday Server you have to execute the following commands:
@@ -14,11 +16,17 @@ To install the Faraday Server you have to execute the following commands:
 
 This will install the server, along with all the needed dependencies to run it.
 
+If you are using a commercial version, a configuration dialog will be shown asking you to enter the CouchDB URL and the admin password:
+
+![](https://raw.githubusercontent.com/wiki/infobyte/faraday/images/apt-configure-couch.png.png)
+
+The package automatically creates the admin user in the configuration step, and installs the backup cronjob, so executing the setup script (`setup-server.py`) is not required.
+
 There are two modes of execution explained below.
 
 #### Running from the command line
 
-This mode of execution introduces nothing new. You can simply execute `faradat-server` from any console or terminal and have the server running:
+This mode of execution introduces nothing new. You can simply execute `faraday-server` from any console or terminal and have the server running:
 
     $ faraday-server
 
@@ -54,6 +62,8 @@ If we want faraday to be automatically started when the system boots, we can tel
 And we can undo this by executing:
 
     $ sudo systemctl disable faraday-server
+
+**Note**: If you will be running Faraday Server as a service, please remember that all the configuration files will be stored under `/root/.faraday`
 
 ## Installing Faraday Client
 

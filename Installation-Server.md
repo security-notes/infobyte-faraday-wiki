@@ -48,7 +48,6 @@ You can run the following command to install the required dependencies on any De
 
 Please consult with your distribution documentation to install the dependencies listed above.
 
-
 ## Installing Python 2 dependencies
 
 Once you have the required system dependencies, you just have to install the Python modules needed to run the server using `pip`:
@@ -75,6 +74,16 @@ If you are running Kali, please run the following command instead:
 
 Please consult with your distribution documentation to install the dependencies listed above.
 
+### Commercial Server Configuration
+
+Once you have installed the additional dependencies, you will need to execute the setup script, which will create the admin user with the configured password, and create a backup cronjob for CouchDB. Just execute the following command and answer the questions asked.
+
+    $ sudo ./setup-server.py
+
+If you want more fine grained control over what the setup script does, you can see the available options by executing:
+
+    $ ./setup-server.py --help
+
 ## Running Faraday Server
 
 Once everything is installed, you can proceed to run the Faraday Server script:
@@ -88,7 +97,6 @@ For example, if you are running the commercial version for the first time, you w
 ## Web UI
 
 Once the server is running, you can access Faraday's Web UI using any browser: just point it to `http://SERVER_IP:SERVER_PORT/_ui` and you can start playing with Faraday.
-
 
 ## Next steps
 
