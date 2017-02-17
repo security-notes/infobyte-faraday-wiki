@@ -67,6 +67,12 @@ And we can undo this by executing:
 
 **Note**: If you will be running Faraday Server as a service, please remember that all the configuration files will be stored under `/root/.faraday`
 
+### Upgrading Faraday Server
+
+Upgrading your server version is as simple as installing the newest `.deb` using dpkg. If a new dependency is needed you will be warned, as well as if there is any conflict.
+
+If you are installing the server from the `.deb`, but you already were running it from another source, all you have to do is run the server following this instructions. You will experience no data loss, as the Server will automatically regenerate your workspaces from CouchDB.
+
 ## Installing Faraday Client
 
 Installing the client follows the same procedure as the server:
