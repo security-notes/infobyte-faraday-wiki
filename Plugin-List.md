@@ -44,7 +44,7 @@ Keep in mind that this functionality is **case sensitive**. The names of the ava
 
 Plugin connectors or online ([[BeEF]], [[Metasploit]], [Burp](https://github.com/infobyte/faraday/wiki/Burp-proxy-extender)), these connect to external APIs or databases, or talk directly to [Faraday's RPC API](https://github.com/infobyte/faraday/wiki/APIs).
 
-### List
+## List
 
 If you think your favourite tool is missing [code your own plugin](https://github.com/infobyte/faraday/wiki/Basic-plugin-development) or [ask us to do it](https://github.com/infobyte/faraday/issues/new)!
 
