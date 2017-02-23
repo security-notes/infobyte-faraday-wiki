@@ -1,4 +1,4 @@
-Faraday actually consists of two tools; Faraday Client and Faraday Server. These can run on the same host or not, depending on your needs. Also, to persist all your data Faraday uses CouchDB.
+Faraday actually consists of two tools; **Faraday Client** and **Faraday Server**. These can run on the same host or not, depending on your needs. Also, to persist all your data Faraday uses CouchDB.
 
 The recommended approach for first time users is performing a single Faraday installation in an Ubuntu Linux. This means using the same machine for both the client and the server. For the community version, this is as simple as:
 
