@@ -5,6 +5,9 @@
 * [A plugin added too much information to my database](#remove-by-severity)
 * [I don't remember the Faraday Server password](#recover-password)
 
+Commercial versions
+* [I can't edit Workspaces in the web UI](#edit-workspaces-wui)
+
 <a name="cant-access-web"></a>
 ### I can't access the web GUI
 
@@ -30,6 +33,8 @@ If not, maybe try the [Faraday Server Installation](https://github.com/infobyte/
 First let's make sure there is a Plugin to parse it so make sure your tool is listed in our [[Plugin List]]. Not there? [Code your own](https://github.com/infobyte/faraday/wiki/Basic-plugin-development) or [ask us to do it](https://github.com/infobyte/faraday/issues).
 
 You can also try to force Faraday to process a report with a certain plugin. For example, let's say you have a metasploit report that faraday is not detecting. You can change the report so that it ends with \_faraday\_metasploit, so it ends up as myreport_faraday_metasplot.xml, and then copy it to ~/.faraday/reports/$yourworkspace. This of course works for any plugin, not only metasploit. 
+
+If you're trying to copy the report file, make sure that you place it in ```$HOME/.faraday/report/[workspacename]``` (replacing **[workspacename]** with the actual name of your Workspace) in **the client**. Plugins don't run on the server.
 
 Is your XML valid? Try opening it in a browser, if the browser complains then you can try our XML Cleaning script (make sure to have [BeautifulSoup](http://www.crummy.com/software/BeautifulSoup/bs4/doc/)):
 
@@ -71,6 +76,14 @@ It is possible to restore the database's users using the following script:
 `/faraday# ./reset_admin_couchdb.sh`
 
 **Important: this process will eliminate existing users**
+
+[ [index] ](#index)
+
+## Commercial versions
+
+<a name="edit-workspaces-wui"></a>
+### I can't edit Workspaces from the Web UI
+Make sure that the configuration file for the server contains the credentials for an **administrative user** in the ```user``` and ```password``` fields inside the ```[couchdb]``` section of the configuration file located in ```~/.faraday/config/server.ini```.
 
 [ [index] ](#index)
 
