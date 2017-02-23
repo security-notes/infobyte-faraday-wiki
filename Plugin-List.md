@@ -1,7 +1,9 @@
 The main purpose of Faraday is to re-use the available tools in the community to take advantage of them in a multiuser way.
 
+Faraday Plugins run only on the client.
+
 <a name="types"></a>
-There are three kinds of plugins available for Faraday; console, report and API
+There are three kinds of plugins available for Faraday; console, report and API.
 
 ### Console
 
@@ -9,7 +11,7 @@ Plugins that intercept commands, fired directly when a command is detected in th
 
 ### Report
 
-Plugins that import file reports. You have to copy the report to **$HOME/.faraday/report/[workspacename]** (replacing **[workspacename]** with the actual name of your Workspace) and Faraday will automatically detect, process and add it to the HostTree.
+Plugins that import file reports. You have to copy the report to **$HOME/.faraday/report/[workspacename]** (replacing **[workspacename]** with the actual name of your Workspace) in the client and Faraday will automatically detect, process and add it to the HostTree.
 
 If Faraday is not capable to detect the plugin needed to process the report, you can manually choose which plugin will be used by adding ```_faraday_pluginName``` to the file name before the extension.
 
