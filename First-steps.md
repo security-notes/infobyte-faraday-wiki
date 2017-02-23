@@ -23,7 +23,7 @@ As of Faraday version 2.0 the server is required for both the community and the 
 <a name="setup"></a>
 ### Setup
 
-Faraday Server needs to communicate to Couch Databases to function. By default, the server will listen on port 5985. You may need to edit ```user``` and ```password``` on ``~/.faraday/config/server.ini``` in case you have set up an admin account on your CouchDB.
+Faraday Server needs to communicate to Couch Databases to function. By default, the server will listen on port 5985. You may need to edit ```user``` and ```password``` on ```~/.faraday/config/server.ini``` in case you have set up an admin account on your CouchDB. Remember that if you do add a ```user``` to the config file, its role **must be** admin.
 
 Now you need to configure every Faraday instance so it can connect to the server.
 
