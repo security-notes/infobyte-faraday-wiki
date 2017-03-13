@@ -59,6 +59,6 @@ Faraday comes with some presets for bulk actions such as object removal, etc. Th
 
 Many of these scripts have names that explain himself what they do.
 
-# Note
+## Note
 
 The Faraday Plugin was overhauled, and breaking changes will be released in the next version.
