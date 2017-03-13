@@ -20,7 +20,7 @@ optional arguments:
 
 Usage Examples:
 
-# List all running HTTP services
+### List all running HTTP services
 
 The following command will list all running services exposed on common HTTP ports (services with ports 80, 8080, 443, 8443 open) 
 ```
@@ -32,7 +32,7 @@ http
 http
 ```
 
-#Get all IPs
+### Get all IPs
 ```
 $ ./fplugin -f getAllIps.py -u http://localhost:5985 -w demoworkspace
 192.168.0.1
