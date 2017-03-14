@@ -69,13 +69,13 @@ If you need set the license you can run this commands:
 
 For server instances:
 ```
-./faraday-server.pyc --license $LICENSE_PATH
+./faraday-server.pyc --license-path $LICENSE_PATH
 ```
 
 For client instances:
 
 ```
-./faraday.pyc --login --license $LICENSE_PATH
+./faraday.pyc --login --license-path $LICENSE_PATH
 ```
 
 You need run only one of this commands, with any of this, your license can be written.
