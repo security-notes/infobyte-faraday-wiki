@@ -47,7 +47,7 @@ The rightmost side of the windows shows detailed information of the host, the se
 
 When Faraday finds an object which clashes with one you have already saved, it will inform you there's a conflict. Imagine you have a host marked as a Windows machine, but a tool detects a Linux installation. That's a conflict.
 
-Faraday will show you the two conflicting objects, with its differences highlighted in red. You can edit none or all of the information in the objects, and the decide if you want to keep the left or right one.
+Faraday will show you the two conflicting objects, with its differences highlighted in red. You can edit none or all of the information in the objects, and then decide if you want to keep the left or right one.
 
 <a name="notifications-dialog"></a>
 #### Notifications dialog
