@@ -6,6 +6,7 @@
  * [[Vulnerabilities Database]]
 * [[Updates]]
 * [[Usage]]
+ * [[LDAP]]
  * [[Bug bounties]]
  * [[Chat and Communication]]
  * [[Continuous-Scanning]]

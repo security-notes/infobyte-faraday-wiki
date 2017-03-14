@@ -60,3 +60,23 @@ You can create different types of users through the web UI. Those users can logi
 
 #### Community
 You can use the CouchDB ***_utils*** interface (located in `http://127.0.0.1:5984/_utils/`) to create administrator users, and then edit the CouchDB url in your instance with the user's credentials. For example: `http://admin:faradaypassword@192.168.1.254:5985/`
+
+
+#### Licenses
+##### Only commercials versions
+
+If you need set the license you can run this commands:
+
+For server instances:
+```
+./faraday-server.pyc --license $LICENSE_PATH
+```
+
+For client instances:
+
+```
+./faraday.pyc --login --license $LICENSE_PATH
+```
+
+You need run only one of this commands, with any of this, your license can be written.
+In faraday, licenses are stored in '$HOME' folder, if you run Faraday with another user, you need run this commands again.
