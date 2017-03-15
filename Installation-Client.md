@@ -21,21 +21,28 @@ It's also a reponsability of the client to send all of the collected information
 <a name="requirements"></a>
 ### Requirements
 
-Faraday Client works under any modern Linux distro or Mac OS X, and needs the following dependencies. We also provide an installation script, so in most cases you won't need to actually install these by hand. Scroll down to view more information on installation for each particular distribution or operative system.
+Faraday Client works under any modern Linux distro or Mac OS X, and needs the following dependencies.
 
 * Python 2.6.x or 2.7.x
 * CouchDB >= 1.2.0  
 * GTK+3, PyGobject >= 3.12.0, Vte (API >= 2.90)
 * Zsh
 * Curl
-* The following python libs:
-  * mockito 
-  * couchdbkit 
-  * whoosh 
-  * argparse 
-  * psycopg2
-  * IPy
-  * requests
+* The following Python libs:
+    * couchdbkit
+    * mockito
+    * whoosh
+    * argparse
+    * IPy
+    * restkit
+    * requests
+    * tornado
+    * flask
+    * colorama
+
+The requirements for the client are stored in the [`requirements.txt` file](https://github.com/infobyte/faraday/blob/master/requirements.txt). Some additional requirements are necessary for specific features to work, these are stored in the [`requirements_extras.txt` file](https://github.com/infobyte/faraday/blob/master/requirements_extras.txt).
+
+We provide an installation script, so in most cases you won't need to actually install these by hand. Scroll down to view more information on installation for each particular distribution or operative system.
 
 Out tests include [Debian](#debian), [Ubuntu](#debian), [Kali](#kali), [Backtrack](#debian) and [OSX Maverick 10.9.2](#osx).
 

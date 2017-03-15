@@ -18,11 +18,18 @@ Once up, you can access Faraday's Web UI via the server: just go to `http://SERV
 
 Faraday Server is built with minimum requirements. This is by design, so you can install it even on the most bare-bones machine you can think of.
 
+The requirements for the server are stored in the [`requirements_server.txt` file](https://github.com/infobyte/faraday/blob/master/requirements_server.txt).
+
 * Python 2.6.x or 2.7.x
-* flask (>= 0.10.1)
-* twisted (>= 16.1.1)
-* sqlalchemy (>=1.0.12)
-* pyopenssl (>16.0.0)
+* The following Python libs:
+    * flask (>= 0.10.1)
+    * twisted (>= 16.1.1)
+    * sqlalchemy (>=1.0.12)
+    * pyopenssl (>16.0.0)
+    * couchdbkit (>=0.6.5)
+    * restkit (>=4.2.2)
+    * requests (>=2.10.0)
+    * service_identity (>=16.0.0)
 
 In addition, the commercial versions need:
 
