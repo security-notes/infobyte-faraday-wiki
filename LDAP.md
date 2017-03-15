@@ -1,24 +1,22 @@
-# LDAP/AD configuration.
+**This feature is only available for our [Corporate version](https://www.faradaysec.com/#download).**
 
-## _Only corporate editions._
+For the time being Faraday doesn't support a hybrid installation using both LDAP and local users. Enabling LDAP disables local users and vice versa. However, local users are not deleted, only banned from login. Disabling LDAP unlocks the login for local users.
 
-To configure Faraday with LDAP/AD it is necessary open the following file: 
+To configure Faraday with LDAP/AD edit `~/.faraday/config/server.ini` and complete the following fields inside the `[ldap]` section.
+
 ```
-~/.faraday/config/server.ini
+* enabled (turn off or on the support with AD/LDAP)
+* server (IP Address of the server, Domain Controler or LDAP Server)
+* domain_dn (Domain path for AD)
+* admin_group (name of the group for AD that corresponds to the Admin role)
+* pentester_group (name of the group for AD that corresponds to the Pentester role)
+* client_group (name of the group for AD that corresponds to the Client role)
+* use_ldaps (set up the ldaps function)
+* use_start_tls ( set up the starttls function)
+* port (ldap port)
+* disconnect_timeout (maximum wait time for a session of the domain user)
 ```
-Inside the file server.ini we are going to find certain field that we must complete:
-```
-- enabled (turn off or on the support with AD/LDAP)
-- server (IP Address of the server, Domain Controler or LDAP Server)
-- domain_dn (Domain path for AD)
-- admin_group (name of the group for AD that corresponds to the Admin role)
-- pentester_group (name of the group for AD that corresponds to the Pentester role)
-- client_group (name of the group for AD that corresponds to the Client role)
-- use_ldaps (set up the ldaps function)
-- use_start_tls ( set up the starttls function)
-- port (ldap port)
-- disconnect_timeout (maximum wait time for a session of the domain user)
-```
+
 The following example shows a basic AD configuration:
 
 ```
@@ -35,19 +33,14 @@ port = 389
 disconnect_timeout = 2.0
 ```
 
-After doing the modifications save the file and run the following command to apply the changes:
+After doing the modifications save the file and run the `./faraday-server.pyc --write-config` to apply the changes. Run this command every time you change the LDAP configuration.
 
-```
-./faraday-server.py --write-config
-```
+### Migrating to LDAP
 
-Remember, if you modify any configuration of LDAP, you need run the last command again.
-All set! You have Faraday configured with AD/LDAP.
+When LDAP is enabled, the permissions set for local users over Workspaces are erased, which makes these Workspaces publicly available immediately after restarting the server.
 
-## Migration to LDAP
-
-1. Logout all clients (WEBUI and GTK) and users. Close Faraday server.
-2. Configure LDAP with steps before and enable this.
-3. Start Faraday server.
-4. Login how a Faraday administrator with the LDAP credentials in WEBUI.
-5. Change owner and permissions of all workspaces for continue working. (All workspaces now are public by default)
+1. Logout all clients (WEBUI and GTK) and users and then stop Faraday Server.
+2. Enable LDAP in the Faraday Server configuration file.
+3. Start Faraday Server.
+4. Login as a Faraday administrator with the LDAP credentials in the Web UI.
+5. Change owner and permissions for all the existing workspaces.
