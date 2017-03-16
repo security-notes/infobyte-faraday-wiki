@@ -6,14 +6,6 @@
 
 This plugin can be set from Faraday's Plugin Configuration Dialog, selecting the *Metasploit Online Service Plugin* item and setting MSF's postgresql server and credentials.
 
-`
-[Server]
-[Database]
-[Username]
-[Password]
-[Workspace]
-`
-
 ![](https://raw.github.com/wiki/infobyte/faraday/images/Metasploit-Plugin.png)
 
 This plugin is disabled by default. To enable it, change the boolean `Enabled` to `1`.
