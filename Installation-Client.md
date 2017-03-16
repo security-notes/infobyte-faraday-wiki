@@ -16,7 +16,7 @@ Download the [latest tarball](https://github.com/infobyte/faraday/tarball/master
 
 ## Requirements
 
-Faraday Client works under any modern Linux distribution or Mac OS X, and needs the following dependencies.
+Faraday Client works under any modern Linux distribution or Mac OS X, and needs the following dependencies:
 
 | Dependency | Version |
 |---|
@@ -27,8 +27,18 @@ Faraday Client works under any modern Linux distribution or Mac OS X, and needs 
 | Vte | API >= 2.90 |
 | zsh |  |
 | CURL |  |
+| couchdbkit |  |
+| mockito |  |
+| whoosh |  |
+| argparse |  |
+| IPy |  |
+| restkit |  |
+| requests |  |
+| tornado |  |
+| flask |  |
+| colorama |  |
 
-The requirements for the client are stored in the [`requirements.txt` file](https://github.com/infobyte/faraday/blob/master/requirements.txt). Some additional requirements are necessary for specific features to work, these are stored in the [`requirements_extras.txt` file](https://github.com/infobyte/faraday/blob/master/requirements_extras.txt).
+The Python requirements for the client are stored in the [`requirements.txt` file](https://github.com/infobyte/faraday/blob/master/requirements.txt). Some additional requirements are necessary for specific features to work, these are stored in the [`requirements_extras.txt` file](https://github.com/infobyte/faraday/blob/master/requirements_extras.txt).
 
 Out tests include [Debian](#debian), [Ubuntu](#debian), [Kali](#kali), [Backtrack](#debian) and [OSX Maverick 10.9.2](#osx).
 

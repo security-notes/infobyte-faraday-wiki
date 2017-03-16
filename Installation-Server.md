@@ -17,7 +17,7 @@ Download the [latest tarball](https://github.com/infobyte/faraday/tarball/master
 
 Faraday Server is built with minimum requirements. This is by design, so you can install it even on the most bare-bones machine you can think of.
 
-The requirements for the server are stored in the [`requirements_server.txt` file](https://github.com/infobyte/faraday/blob/master/requirements_server.txt).
+The Python requirements for the server are stored in the [`requirements_server.txt` file](https://github.com/infobyte/faraday/blob/master/requirements_server.txt).
 
 | Dependency | Version |
 |---|
@@ -27,6 +27,14 @@ The requirements for the server are stored in the [`requirements_server.txt` fil
 | twisted | >= 16.1.1 |
 | sqlalchemy | >=1.0.12 |
 | pyopenssl | >16.0.0 |
+| couchdbkit | >=0.6.5 |
+| restkit | >=4.2.2 |
+| requests | >=2.10.0 |
+| flask | >=0.10.1 |
+| twisted | >=16.1.1 |
+| sqlalchemy | >=1.0.12 |
+| pyopenssl | >=16.0.0 |
+| service_identity | >=16.0.0 |
 
 In addition, the **commercial** versions also needs:
 
@@ -82,8 +90,7 @@ Please consult with your distribution documentation to install the dependencies 
 
 Once you have installed the additional dependencies, you will need to execute the setup script, which will create the admin user with the configured password, and create a backup cronjob for CouchDB. Just execute the following command and answer the questions asked.
 
-    $ sudo ./setup-server.py
->>>>>>> update_installation
+    $ sudo ./setup-server.py/
 
 If you want more fine grained control over what the setup script does, you can see the available options by executing:
 
