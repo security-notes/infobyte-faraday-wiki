@@ -52,6 +52,9 @@ Some tools are known for creating invalid XML output files which tend to be hard
 python $FARADAY/helpers/cleanXML.py broken_file.xml
 ```
 
+To install BeautifulSoup you can use the [`requirements_extras.txt` file](https://github.com/infobyte/faraday/blob/master/requirements_extras.txt).
+
+
 <a name="removeBySeverity"></a>
 ### removeBySeverity.py
 

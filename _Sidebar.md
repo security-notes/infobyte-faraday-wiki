@@ -13,6 +13,7 @@
   * [[Executive Report]]
   * [[Helpers]]
   * [[JIRA Integration]]
+  * [[LDAP]]
   * [[Manage Hosts and Services GUI WEB]]
   * [[Manage Users]]
   * [[Manage Workspaces]]

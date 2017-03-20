@@ -13,8 +13,11 @@ Download the [latest tarball](https://github.com/infobyte/faraday/tarball/master
 ```
 $ git clone https://github.com/infobyte/faraday.git faraday-dev
 $ cd faraday-dev
-$ ./install.sh
+
+$ pip2 install -r requirements_server.txt
 $ ./faraday-server.py
+
+$ pip2 install -r requirements.txt
 $ ./faraday.py
 ```
 [Read more about the installation process](https://github.com/infobyte/faraday/wiki/installation-client).
@@ -51,24 +54,32 @@ If two plugins have different information for the same element it will generate 
 On our [GTK interface](https://github.com/infobyte/faraday/wiki/Usage#gtk-gui) there's a button on the bottom right corner of the main window with the number of conflicts in the current workspace. To solve them, just click that button and a window will open where you can edit the conflicting objects and select which one to keep. 
 
 ### Faraday plugin
+
 Using our plugin you can do different actions using the command line, for example:
 
-```
-$ cd $faraday/bin/
-$ #Adding new hosts 
-$./fplugin -e 'for h in api.createAndAddHost("8.8.8.8","Linux")'
-$ #Get all ip of HostTree
-$ ./fplugin -e 'for h in api.__model_controller.getAllHosts(): print h.name' > allhost.txt
-$ nmap -i allhost.txt
-```
+    $ cd faraday-dev/bin/
+    $ ./fplugin create_host 192.154.33.222 Android
+    1a7b2981c7becbcb3d5318056eb29a58817f5e67
+    $ ./fplugin filter_services http ssh -p 21 -a
+    Filtering services for ports: 21, 22, 80, 443, 8080, 8443
 
-Read more about the [[Faraday Plugin]].
+    192.168.20.1    ssh [22]    tcp open    None
+    192.168.20.1    http    [443]   tcp open    None
+    192.168.20.7    ssh [22]    tcp open    Linux
+    192.168.20.7    http    [443]   tcp open    Linux
+    192.168.20.11   ssh [22]    tcp open    Linux
+
+
+Read more about the [Faraday Plugin](https://github.com/infobyte/faraday/wiki/faraday-plugin).
 
 ### Notifications
 Updating objects on other Faraday instances result in notifications on your
 Faraday GTK Client.
 
 ![](https://raw.github.com/wiki/infobyte/faraday/images/Faraday-Gtk-NotificationsDialog.png)
+
+#### ZSH UI no-gui notifications
+![](https://raw.githubusercontent.com/wiki/infobyte/faraday/images/faraday_gui_notifi.png)
 
 ### CSV Exporting
 [More information](Exporting-the-information)

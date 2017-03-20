@@ -2,6 +2,8 @@
 
 * psycopg2 [http://initd.org/psycopg/]
 
+To install it run pip using the file [`requirements_extras.txt`](https://github.com/infobyte/faraday/blob/master/requirements_extras.txt).
+
 ### Configuration
 
 This plugin can be set from Faraday's Plugin Configuration Dialog, selecting the *Metasploit Online Service Plugin* item and setting MSF's postgresql server and credentials.

@@ -8,12 +8,11 @@ Faraday has 5 different ways to interact with the information:
 * [CLI](#cli)
 * [ZSH Web](#zsh-web-console) (only available in our commercial versions)
 
-
 ### GTK GUI
 
 GTK+3 is designed to improve on the QT3 deprecated interface, so nothing should look out of place if you were already using Faraday. If you weren't, don't worry, it's pretty simple. 
 
-To try it, just [[install the dependencies|installation-client#requirements]] and run Faraday using the command `python faraday.py`.
+To try it, just [[install the dependencies|installation-client#requirements]] and run Faraday using the command `python2 faraday.py`.
 
 #### The main window
 
@@ -27,7 +26,7 @@ The sidebar has two tabs, one for workspaces and the other for hosts. The worksp
 
 The statusbar has information about your workspace and also buttons to access the [Notifications dialog](#notifications-dialog) and the [Conflicts resolution dialog](#conflicts-dialog).
 
-The log console works just as you'd expect, showing you what Faraday's doing on the background at all times. For more verbose output, you can run Faraday with the --debug flag. 
+The log console works just as you'd expect, showing you what Faraday's doing on the background at all times. For more verbose output, you can run Faraday with the `--debug` flag.
 
 <a name="host-information-dialog"></a>
 #### Host information dialog
@@ -47,7 +46,7 @@ The rightmost side of the windows shows detailed information of the host, the se
 
 When Faraday finds an object which clashes with one you have already saved, it will inform you there's a conflict. Imagine you have a host marked as a Windows machine, but a tool detects a Linux installation. That's a conflict.
 
-Faraday will show you the two conflicting objects, with its differences highlighted in red. You can edit none or all of the information in the objects, and then decide if you want to keep the left or right one.
+Faraday will show you the two conflicting objects, with its differences highlighted in red. You can edit none or all of the information in the objects, and the decide if you want to keep the left or right one.
 
 <a name="notifications-dialog"></a>
 #### Notifications dialog
@@ -76,10 +75,9 @@ All the available information will be available through the different interface
 * [GTK GUI](#gtk-gui)
 * [Web UI](#web-ui)
 
-
 ### Web UI
 
-In order to access the Web UI point your browser to: http://[FARADY-SERVER]:PORT/_ui/
+In order to access the Web UI point your browser to: `http://[FARADY-SERVER]:PORT/_ui/`
 
 The current URL address is displayed on console log information
 
@@ -117,14 +115,12 @@ You can edit the price per severity by clicking on it. The graphic will change a
 
 So lets say that you have a workspace with 6 vulns, one for each severity. And the price schema is:
 
-
 * Criticals are worth 6 dollars
 * Highs are worth 5 dollars
 * Meds are worth 4 dollars
 * Lows are worth 3 dollars
 * Infos are worth 2 dollars
 * Unclassifieds are worth 1 dollar
-
 
 Then your Workspace will be worth 
 ```
@@ -162,7 +158,6 @@ Examples:
 * severity:unclassified
 * name:Nessus scan info
 
-
 ![](https://raw.github.com/wiki/infobyte/faraday/images/filterByField.png)
 
 ###### Filter by many fields
@@ -171,9 +166,8 @@ To search by many fields do a normal search but at the end type a *SPACE BAR* an
 
 Examples:
 
-* severity:unclassified target:173.252.100.18
-* severity:low service:443 target:173.252
-
+* `severity:unclassified target:173.252.100.18`
+* `severity:low service:443 target:173.252`
 
 ![](https://raw.github.com/wiki/infobyte/faraday/images/searchByManyFields.png)
 
@@ -275,7 +269,7 @@ Now, run butterfly:
 $ butterfly.server.py --unsecure --shell=/bin/zsh --cmd="<path/of/faraday/>faraday-terminal.zsh [host] [port]"
 ```
 
-Of course, you need to set the path of the folder in which you have faraday (the faraday-terminal.zsh script should be in the root of that folder). Also, You can pass the host and port as arguments to that script, in case you've changed the Faraday's REST API parameters (remember that you have to run Faraday QT or Faraday —gui=nogui so that the terminal for ZSH functions properly)
+Of course, you need to set the path of the folder in which you have faraday (the [faraday-terminal.zsh](/faraday-terminal.zsh) script should be in the root of that folder). Also, You can pass the host and port as arguments to that script, in case you've changed the Faraday's REST API parameters (remember that you have to run Faraday QT or Faraday `—gui=nogui` so that the terminal for ZSH functions properly)
 
 The idea of the webshell is to be able to do actions directly from the web using ZSH as a console. You would be connected to your own shell (listening in loopback interface). 
 

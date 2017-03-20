@@ -11,15 +11,15 @@ Faraday has a CSV of the original Mitre proyect included in its tree, if you wan
 To create a CSV with all information about a specific proyect, you need run a script to download and parse its content.
 Faraday have two scripts for two different proyects. Here we show how to run them in order to download and store the CSV files.
 
-####[CFDB](https://github.com/mubix/cfdb) ([cfdbToCsv.py](https://github.com/infobyte/faraday/tree/master/helpers/cfdbToCsv.py)):
+####[CFDB](https://github.com/mubix/cfdb) ([cfdbToCsv.py](/helpers/cfdbToCsv.py)):
 
     $ ./helpers/cfdbToCsv.py
 
-####[VulnDb](https://github.com/vulndb/data) ([vulndbToCsv.py](https://github.com/infobyte/faraday/tree/master/helpers/vulndbToCsv.py)):
+####[VulnDb](https://github.com/vulndb/data) ([/helpers/vulndbToCsv.py](vulndbToCsv.py)):
 
     $ ./helpers/vulndbToCsv.py
 
-Next copy this CSV file(either cfdb.csv or vulndb.csv) to [data/cwe.csv](https://github.com/infobyte/faraday/tree/master/data/cwe.csv).
+Next copy this CSV file(either cfdb.csv or vulndb.csv) to [/data/cwe.csv](data/cwe.csv).
 
 To upload it to CouchDB go to your Faraday installation root directory and run:
 
@@ -42,4 +42,4 @@ Login to your Faraday Web UI and create or edit a vulnerability, you can see now
 
 Write the CWE name of this vulnerability and all the information will be automatically loaded!
 
-**Note:** Name, Description and Resolution is replaced with the information stored in the CWE database.
+**Note:** Name, Description and Resolution fields are replaced with the information stored in the CWE database.
