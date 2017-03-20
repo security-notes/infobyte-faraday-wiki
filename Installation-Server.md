@@ -20,7 +20,7 @@ Faraday Server is built with minimum requirements. This is by design, so you can
 The Python requirements for the server are stored in the [`requirements_server.txt` file](https://github.com/infobyte/faraday/blob/master/requirements_server.txt).
 
 | Dependency | Version |
-|---|
+|---|---|
 | CouchDB | 1.6 |
 | Python | 2.6 or 2.7 |
 | flask | >= 0.10.1 |
