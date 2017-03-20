@@ -39,7 +39,7 @@ The Python requirements for the server are stored in the [`requirements_server.t
 In addition, the **commercial** versions also needs:
 
 | Dependency | Version |
-|---|
+|---|---|
 | CouchDB | 1.6 |
 | python-docx | >=0.8.5 |
 | docxtpl | >=0.2.2 |
