@@ -7,7 +7,7 @@ For the time being Faraday doesn't support a hybrid installation using both LDAP
 The following packages are required:
 
 | Dependency | Version |
-|---|
+|---|---|
 | libsasl | 2.1.26 |
 | libldap | 2.4.22 |
 | python-ldap | 2.4.32 |
