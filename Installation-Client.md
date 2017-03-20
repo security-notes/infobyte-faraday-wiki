@@ -19,7 +19,7 @@ Download the [latest tarball](https://github.com/infobyte/faraday/tarball/master
 Faraday Client works under any modern Linux distribution or Mac OS X, and needs the following dependencies:
 
 | Dependency | Version |
-|---|
+|---|---|
 | CouchDB | 1.6 |
 | Python | 2.6 or 2.7 |
 | GTK3 |  |
