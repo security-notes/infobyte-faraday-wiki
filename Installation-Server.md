@@ -90,7 +90,7 @@ Please consult with your distribution documentation to install the dependencies 
 
 Once you have installed the additional dependencies, you will need to execute the setup script, which will create the admin user with the configured password, and create a backup cronjob for CouchDB. Just execute the following command and answer the questions asked.
 
-    $ sudo ./setup-server.py/
+    $ sudo ./setup-server.py
 
 If you want more fine grained control over what the setup script does, you can see the available options by executing:
 
