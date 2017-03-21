@@ -89,15 +89,16 @@ Faraday GTK Client.
 * Homepage: https://www.faradaysec.com
 * User forum: https://forum.faradaysec.com
 * User's manual: https://github.com/infobyte/faraday/wiki
-* Download: [.tar.gz] (https://github.com/infobyte/faraday/tarball/master)
+* Download: [.tar.gz](https://github.com/infobyte/faraday/tarball/master)
 * Commits RSS feed: https://github.com/infobyte/faraday/commits/master.atom
 * Issue tracker: https://github.com/infobyte/faraday/issues
 * Frequently Asked Questions (FAQ): https://github.com/infobyte/faraday/wiki/FAQ
 * Mailing list subscription: https://groups.google.com/forum/#!forum/faradaysec
-* Twitter: [@faradaysec] (https://twitter.com/faradaysec)
-* [Demos] (https://github.com/infobyte/faraday/wiki/Demos)
-* IRC: [ircs://irc.freenode.net/faraday-dev] (ircs://irc.freenode.net/faraday-dev) [WebClient](https://webchat.freenode.net/?nick=wikiuser&channels=faraday-dev&prompt=1&uio=d4)
+* Twitter: [@faradaysec](https://twitter.com/faradaysec)
+* [Demos](https://github.com/infobyte/faraday/wiki/Demos)
+* IRC: [ircs://irc.freenode.net/faraday-dev](ircs://irc.freenode.net/faraday-dev) [WebClient](https://webchat.freenode.net/?nick=wikiuser&channels=faraday-dev&prompt=1&uio=d4)
 * Screenshots: https://github.com/infobyte/faraday/wiki/Screenshots
+* Send your ideas and suggestions here: [https://www.faradaysec.com/ideas](https://www.faradaysec.com/ideas)
 
 ## Presentation
 
