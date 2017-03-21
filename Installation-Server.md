@@ -40,7 +40,6 @@ In addition, the **commercial** versions also needs:
 
 | Dependency | Version |
 |---|---|
-| CouchDB | 1.6 |
 | python-docx | >=0.8.5 |
 | docxtpl | >=0.2.2 |
 | six | >=1.10.0|
