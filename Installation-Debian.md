@@ -20,7 +20,7 @@ This will install the server, along with all the needed dependencies to run it.
 
 If you are using a commercial version, a configuration dialog will be shown asking you to enter the CouchDB URL and the admin password:
 
-![](https://raw.githubusercontent.com/wiki/infobyte/faraday/images/apt-configure-couch.png.png)
+![](https://raw.githubusercontent.com/wiki/infobyte/faraday/images/apt-configure-couch.png)
 
 The package automatically creates the admin user in the configuration step, and installs the backup cronjob, so executing the setup script (`setup-server.py`) is not required.
 
