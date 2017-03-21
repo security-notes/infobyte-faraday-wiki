@@ -8,7 +8,7 @@ Faraday Server is the way to have a better synchronization between your Faraday 
 
 ## Downloading Faraday
 
-Download the [latest tarball](https://github.com/infobyte/faraday/tarball/master) or clone the [Faraday Git Project](https://github.com/infobyte/faraday repository):
+Download the [latest tarball](https://github.com/infobyte/faraday/tarball/master) or clone the [Faraday Git Project](https://github.com/infobyte/faraday) repository:
 
     $ git clone https://github.com/infobyte/faraday.git faraday-dev
     $ cd faraday-dev
