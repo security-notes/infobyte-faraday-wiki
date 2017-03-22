@@ -20,8 +20,7 @@ To utilize this feature follow the necessary steps on our [start up configuratio
 
 ### Managing Executive Reports
 
-To manage your reports you need to access Faraday's Web Interface and click on the icon **executive reports** ![]
-(https://raw.github.com/wiki/infobyte/faraday/images/faraday_report_icon.png)
+To manage your reports you need to access Faraday's Web Interface and click on the icon **executive reports** ![](https://raw.github.com/wiki/infobyte/faraday/images/faraday_report_icon.png)
 
 ![](https://raw.github.com/wiki/infobyte/faraday/images/faraday_report_create.png)
 
