@@ -1,12 +1,12 @@
 [- Commercial version -](https://www.faradaysec.com/#download)
 
-# Intro
+During the [Faraday Server Setup process](https://github.com/infobyte/faraday/wiki/installation-server#commercial-server-configuration) an administrator user is created. Default username is `faraday` and password `changeme`.
 
-During the [start-up configuration](https://github.com/infobyte/faraday/wiki/Start-up-Configuration-%28Faraday-Server%29), you can make a user administrator. Using the specified credentials during the configuration,from the navigator start the session in Faraday's GUI. One you have gotten the authentication, click on the **Users** icon ![](https://raw.github.com/wiki/infobyte/faraday/images/faraday_users_icono.png)
+To manage users start a session in the Web UI logging in as shown below and then click on the **Users** icon ![](https://raw.github.com/wiki/infobyte/faraday/images/faraday_users_icono.png).
 
 ![](https://raw.github.com/wiki/infobyte/faraday/images/faraday_users_login.png)
 
-The users can be seen on a list that lets you create, edit or eliminate users however you want.
+A list containing all the users will show up, including buttons to create, edit or delete.
 
 ![](https://raw.github.com/wiki/infobyte/faraday/images/faraday_users_list.png)
 
