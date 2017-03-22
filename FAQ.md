@@ -68,8 +68,6 @@ You can do this using our WEB UI, read our documentation on [manually adding vul
 
 [ [index] ](#index)
 
-[ [index] ](#index)
-
 <a name="0.0.0.0"></a>
 ### How do I bind Faraday to 0.0.0.0?
 Just go to ```~/.faraday/config/server.ini``` and inside the ```[faraday-server]``` section write:
@@ -81,4 +79,5 @@ Restart Faraday Server if you had it running.
 That's it!
 
 [ [index] ](#index)
+
 Is your question not listed here? [Contact us](https://github.com/infobyte/faraday/issues)
