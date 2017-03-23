@@ -4,6 +4,6 @@ The recommended approach for first time users is performing a single Faraday ins
 
 The installation is divided between the server and client. It is recommended to first follow the necessary steps to install the server, and test that it is working correctly.
 
-Once you have the server running, you are free to install the client fi you need it.
+Once you have the server running, you are free to install the client if you need it.
 
 If you wish to use SSL use our [SSL guide](https://github.com/infobyte/faraday/wiki/SSL).
