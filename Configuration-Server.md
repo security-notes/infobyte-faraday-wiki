@@ -1,5 +1,3 @@
-## Configuring the Server
-
 Faraday Server needs to communicate to Couch Databases to function. By default, the server will listen on port **5985**. You may need to edit `user` and `password` on `~/.faraday/config/server.ini` in case you have set up an admin account on your CouchDB.
 
 ### Authentication
