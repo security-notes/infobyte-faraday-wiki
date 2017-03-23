@@ -74,9 +74,9 @@ Just go to ```~/.faraday/config/server.ini``` and inside the ```[faraday-server]
 
 `bind_address=0.0.0.0`
 
-Restart Faraday Server if you had it running.
+Restart Faraday Server if you had it running. That's it!
 
-That's it!
+Read more about [configuring the Server](https://github.com/infobyte/faraday/wiki/configuration-server).
 
 [ [index] ](#index)
 
