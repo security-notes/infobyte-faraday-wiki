@@ -11,11 +11,11 @@ Faraday has a CSV of the original Mitre proyect included in its tree, if you wan
 To create a CSV with all information about a specific proyect, you need run a script to download and parse its content.
 Faraday have two scripts for two different proyects. Here we show how to run them in order to download and store the CSV files.
 
-####[CFDB](https://github.com/mubix/cfdb) ([cfdbToCsv.py](/helpers/cfdbToCsv.py)):
+#### [CFDB](https://github.com/mubix/cfdb) ([cfdbToCsv.py](/helpers/cfdbToCsv.py)):
 
     $ ./helpers/cfdbToCsv.py
 
-####[VulnDb](https://github.com/vulndb/data) ([/helpers/vulndbToCsv.py](vulndbToCsv.py)):
+#### [VulnDb](https://github.com/vulndb/data) ([/helpers/vulndbToCsv.py](vulndbToCsv.py)):
 
     $ ./helpers/vulndbToCsv.py
 
