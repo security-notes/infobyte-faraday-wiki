@@ -3,6 +3,8 @@
   * [Installation - Server](https://github.com/infobyte/faraday/wiki/installation-server)
   * [Installation - Client](https://github.com/infobyte/faraday/wiki/installation-client)
   * [Installation - Ubuntu](https://github.com/infobyte/faraday/wiki/installation-debian)
+  * [Configuration - Server](https://github.com/infobyte/faraday/wiki/configuration-server)
+  * [Configuration - Client](https://github.com/infobyte/faraday/wiki/configuration-client)
   * [Using SSL](https://github.com/infobyte/faraday/wiki/SSL)
   * [[Vulnerabilities Database]]
 * [[Updates]]
