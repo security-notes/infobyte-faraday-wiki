@@ -1,6 +1,7 @@
 You can view all our videos on the following [![ScreenShot](https://raw.github.com/wiki/infobyte/faraday/images/youtube.png) Playlist](https://www.youtube.com/playlist?list=PLVnFEI9HluLqEAhjFPFTjEFxTzYXlcrle)
 
 --
+
 SecurityWeekly - 2016:
 
 [![ScreenShot](https://raw.github.com/wiki/infobyte/faraday/images/youtube.png) - Paul's Security Weekly 2016 - ](http://bit.ly/2bfkuii) We presented Faraday at Paul's Security Weekly! 
