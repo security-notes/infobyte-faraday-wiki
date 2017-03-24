@@ -19,8 +19,7 @@ Workshop - Ekoparty 2014:
 
 Take a look of our last videos:
 
-[![ScreenShot](https://raw.github.com/wiki/infobyte/faraday/images/youtube.png) - Release Demo]
-(https://bitly.com/1gaHSyu)
+[![ScreenShot](https://raw.github.com/wiki/infobyte/faraday/images/youtube.png) - Release Demo](https://bitly.com/1gaHSyu)
 
 [![ScreenShot](https://raw.github.com/wiki/infobyte/faraday/images/youtube.png) - First couchdb configuration ](https://bit.ly/SkwwwV)
 
