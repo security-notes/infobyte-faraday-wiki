@@ -1,7 +1,7 @@
 
 SecurityWeekly - 2016:
 
-[![ScreenShot](https://raw.github.com/wiki/infobyte/faraday/images/youtube.png) - Paul's Security Weekly 2016 - ] (http://bit.ly/2bfkuii) We presented Faraday at Paul's Security Weekly! 
+[![ScreenShot](https://raw.github.com/wiki/infobyte/faraday/images/youtube.png) - Paul's Security Weekly 2016 - ](http://bit.ly/2bfkuii) We presented Faraday at Paul's Security Weekly! 
 
 Webinar - 2016:
 
@@ -15,8 +15,7 @@ Webinar - 2015:
 
 Workshop - Ekoparty 2014:
 
-[![ScreenShot](https://raw.github.com/wiki/infobyte/faraday/images/youtube.png) - Auditing thousands of assets at a time without panicking 101]
-(https://bit.ly/1AOihAM)
+[![ScreenShot](https://raw.github.com/wiki/infobyte/faraday/images/youtube.png) - Auditing thousands of assets at a time without panicking 101](https://bit.ly/1AOihAM)
 
 Take a look of our last videos:
 
