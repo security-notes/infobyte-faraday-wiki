@@ -95,6 +95,12 @@ If you want more fine grained control over what the setup script does, you can s
 
     $ ./setup-server.py --help
 
+If you want, you can upload the included CWE database to CouchDB to enable better searching and autocomplete features. To do so, you only need to execute the following command:
+
+    $ ./helpers/pushCwe.py
+
+You will be asked to pass as an argument the CouchDB URL so that a connection can be established.
+
 ## Running Faraday Server
 
 Once everything is installed, you can proceed to run the Faraday Server script:
