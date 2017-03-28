@@ -1,14 +1,14 @@
 This plugin is a script developed in JRuby as a extender to the Burp Proxy API (Pro/Community).
 
-##Dependencies
+### Dependencies
 Jruby 1.7.6 Complete [[http://www.jruby.org/download]]
 
 To load the ruby interpreter in burp, go to Extender->Options, and in the Ruby Environment section set the PATH of the jruby-complete.jar file.
 
 ![](https://raw.github.com/wiki/infobyte/faraday/images/burp_ruby_path.png)
 
-##Installation
-### Burp PRO users
+### Installation
+#### Burp PRO users
 
 You can find Faraday in the Burp App Store!
 
@@ -16,7 +16,7 @@ Go to Extender->BApp Store, and then install the Faraday extension. Then make su
 
 ![](https://raw.github.com/wiki/infobyte/faraday/images/burp_store.png)
 
-### Burp Free users
+#### Burp Free users
 
 Go to Extender->Extensions and click in the Add button.
 
@@ -26,7 +26,7 @@ In the Extension Details section, the extension type should be Ruby, and the ext
 
 ![](https://raw.github.com/wiki/infobyte/faraday/images/burp_loaded.png)
 
-##Configuration options
+### Configuration options
 
 Once the Faraday extension is loaded into your Burp, you will see a new tab called "Faraday".
 
@@ -42,7 +42,7 @@ From there, you can:
 
 4) Save and restore the Faraday extension's configuration.
 
-##Send to Faraday
+### Send to Faraday
 
 Also, we've added the possibility to send the issues and requests to Faraday with a new option in the context menu
 
