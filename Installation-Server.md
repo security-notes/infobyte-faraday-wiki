@@ -117,4 +117,4 @@ Once the server is running, you can access Faraday's Web UI using any browser: j
 
 ## Next steps
 
-To install and run a Faraday Client, please proceed to the next step of the documentation.
+To install and run a Faraday Client, please proceed to the [next step of the documentation](https://github.com/infobyte/faraday/wiki/installation-client).
