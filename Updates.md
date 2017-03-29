@@ -1,37 +1,34 @@
-In order to update your Faraday version run:
+### Community version updates
 
-```
-./faraday.py --update
-```
+#### For single box instances
 
-[- Commercial version -](https://www.faradaysec.com/#download)
+If you have Faraday Client and Server running in the same box, run ```./faraday.py --update``` and that's it! You're ready to go!
+
+#### For separate Client and Server instances
+
+If the client and the server don't run on the same machine, first update the server. Use ```git pull``` if you cloned the repo, or download and untar otherwise.
+
+After updating the server, run ```./faraday.py --update``` to update the client.
+
+
 ### Commercial version update
 
-1) Close all your instances of Faraday and Faraday Server.
+**This guide is for our [commercial versions](https://www.faradaysec.com/#download) only.**
 
-2) Download the last tarball version from Faraday Customer Portal using the username and password you received after your purchase.
+1. Close all your instances of the Faraday Client first, and then stop the Faraday Server.
 
-3) Unpack it in your new Faraday directory. 
+1. Download the latest tarball version from the **Faraday Customer Portal** using the username and password you received after your purchase.
 
-4) If you have a to update also your license you have to copy and replace your files in the following directory $HOME/.faraday/doc/:
+1. Create a new directory and unpack it there. For example, if your current Faraday path is `/home/user/Infobyte/faraday` you can create a new directory `/home/user/Infobyte/faraday2` which will be your new installation directory.
 
-5) After doing that, run the following command to make sure all dependencies are met:
+1. In some cases it is necessary to update the license (when you upgrade your subscription, for example). If that is the case, download the new license from the **Faraday Customer Portal** and unpack its contents in `~/.faraday/doc/`.
 
-```
-./setup_server.sh
-```
+1. Run ```./setup_server.sh``` to make sure all dependencies are met.
 
-5) Run faraday server: 
+1. Run the server using ```./faraday-server.pyc ```.
 
-```
-./faraday-server.pyc 
-```
+1. Run the client using ```./faraday.pyc --update --login```.
 
-6) Run your Faraday Client:
-```
-./faraday.pyc --update --login
-```
-
-Following the same steps in every instance of Faraday
+In order for the update to work, these steps must be followed in every instance of Faraday.
 
 Now you're ready to go!
