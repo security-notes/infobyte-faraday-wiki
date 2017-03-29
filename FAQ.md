@@ -62,7 +62,7 @@ So if you already have a Faraday Installation there are many ways to know which 
 
 * Using the Web UI - If you place the pointer over the Faraday Logo you will get a tooltip containing the version number ![](https://raw.githubusercontent.com/wiki/infobyte/faraday/images/faraday_webui_version.png)
 
-* Checking the contents of the file `VERSION` in the root of the Faraday Installation.
+* Checking the contents of the file `VERSION` in the root of the Faraday Installation
 ![](https://raw.githubusercontent.com/wiki/infobyte/faraday/images/faraday_version_file.png)
 
 [ [index] ](#index)
