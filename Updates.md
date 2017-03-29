@@ -25,8 +25,9 @@ After updating the server, run ```./faraday.py --update``` to update the client.
 
 1. Run ```./setup_server.sh``` to make sure all dependencies are met.
 
-1. Run the server using ```./faraday-server.pyc ```
-1. Run the client using ```./faraday.pyc --update --login```
+1. Run the server using ```./faraday-server.pyc ```.
+
+1. Run the client using ```./faraday.pyc --update --login```.
 
 In order for the update to work, these steps must be followed in every instance of Faraday.
 
