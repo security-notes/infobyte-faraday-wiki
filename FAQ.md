@@ -5,6 +5,7 @@
 * [Is Faraday free?](#price)
 * [Which platforms are supported?](#supported-platforms)
 * [I purchased a License, now what?](#after-purchase)
+* [What version am I using!?](#faraday-version)
 * [How do I configure my own Vulnerabilities Database?](#vulns-db)
 * [What if I want to add a Vulnerability manually?](#adding-manually)
 * [How do I bind Faraday to 0.0.0.0?](#0.0.0.0)
@@ -52,6 +53,17 @@ ArchAssault, Archlinux, Debian, Kali, OSX, Ubuntu. You can find a detailed expla
 <a name="after-purchase"></a>
 ### I purchased a License, now what?
 You will receive an email with a link to download two tarballs. One will be your Faraday License and the other the version you selected. Uncompress both and place the contents of the license tar inside **$FARADAY/doc/**. 
+
+[ [index] ](#index)
+
+<a name="faraday-version"></a>
+### How do I know which Faraday Version I'm using?
+So if you already have a Faraday Installation there are many ways to know which version you're using:
+
+* Using the Web UI - If you place the pointer over the Faraday Logo you will get a tooltip containing the version number ![](https://raw.githubusercontent.com/wiki/infobyte/faraday/images/faraday_webui_version.png)
+
+* Checking the contents of the file `VERSION` in the root of the Faraday Installation.
+![](https://raw.githubusercontent.com/wiki/infobyte/faraday/images/faraday_version_file.png)
 
 [ [index] ](#index)
 
