@@ -43,7 +43,7 @@ To read about the latest features check out the [release notes](https://github.c
 Right now faraday has more than [60+ supported tools](https://github.com/infobyte/faraday/wiki/Plugin-List), among them you will find: 
 ![](https://raw.github.com/wiki/infobyte/faraday/images/plugins/Plugins.png)
 
-##Features
+## Features
 
 ### Workspaces
 Information is classified in **Workspace** units. Each Workspace maps into a pentest team's assignments containing all the intel discovered by that team.
