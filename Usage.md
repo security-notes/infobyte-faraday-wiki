@@ -57,6 +57,19 @@ Faraday is a multi-user integrated penetration test environment. That's why keep
 
 While working, the notifications counter will increase as new changes come from other instances of Faraday connected to the same database. If you click on the button, you'll be presented with a list of all the updates, so you are never kept in the dark. 
 
+<a name="adding-reports"></a>
+#### Adding Reports
+
+If you wish to add a report from a previous scan, you can also do it form the GTK Client.
+
+To do so, click on the Report Button ![](https://raw.github.com/wiki/infobyte/faraday/images/faraday_gtk_report_button.png)
+
+A dialog will open from which you can select the tool that was used to generate the Report from a list as shown below.
+
+![](https://raw.github.com/wiki/infobyte/faraday/images/faraday_gtk_report_list.png)
+
+All the data in the report will be processed and added to the active Workspace, and the console will show a message when the plugin starts and ends.
+
 
 ### ZSH UI
 
