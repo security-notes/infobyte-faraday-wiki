@@ -10,7 +10,7 @@ Faraday has 5 different ways to interact with the information:
 
 ### GTK GUI
 
-GTK+3 is designed to improve on the QT3 deprecated interface, so nothing should look out of place if you were already using Faraday. If you weren't, don't worry, it's pretty simple. 
+GTK+3 is designed to improve on the QT deprecated interface, so nothing should look out of place if you were already using Faraday. If you weren't, don't worry, it's pretty simple. 
 
 To try it, just [[install the dependencies|installation-client#requirements]] and run Faraday using the command `python2 faraday.py`.
 
@@ -18,7 +18,7 @@ To try it, just [[install the dependencies|installation-client#requirements]] an
 
 ![](https://raw.github.com/wiki/infobyte/faraday/images/Faraday-Gtk-MainWindow.png)
 
-You will be presented with a special version of your own ZSH terminal. Just as with QT3, Faraday intercepts every command you execute and checks if there's a plugin available. If there is, Faraday will gather all relevant information like ip adresses, hostnames, services, vulnerabilities, websites and notes for you.
+You will be presented with a special version of your own ZSH terminal. Just as with GTK, Faraday intercepts every command you execute and checks if there's a plugin available. If there is, Faraday will gather all relevant information like ip adresses, hostnames, services, vulnerabilities, websites and notes for you.
 
 The menubar gives you access to the most common options: you can open a new tab create a new workspace, toggle the log or set your CouchDB URL in the preferences dialog (and login to the database if you use our Pro or Corporate versions). At the rightmost border, you'll be able to open a file chooser to import any report by our supported plugins to Faraday.
 
@@ -71,7 +71,6 @@ No manual imports needed but supported. Just drop your fresh generated reports i
 Faraday will parse your reports and upload the information extracted from them. 
 All the available information will be available through the different interface
 
-* [QT GUI](#qt-gui)
 * [GTK GUI](#gtk-gui)
 * [Web UI](#web-ui)
 
@@ -269,7 +268,7 @@ Now, run butterfly:
 $ butterfly.server.py --unsecure --shell=/bin/zsh --cmd="<path/of/faraday/>faraday-terminal.zsh [host] [port]"
 ```
 
-Of course, you need to set the path of the folder in which you have faraday (the [faraday-terminal.zsh](/faraday-terminal.zsh) script should be in the root of that folder). Also, You can pass the host and port as arguments to that script, in case you've changed the Faraday's REST API parameters (remember that you have to run Faraday QT or Faraday `—gui=nogui` so that the terminal for ZSH functions properly)
+Of course, you need to set the path of the folder in which you have faraday (the [faraday-terminal.zsh](/faraday-terminal.zsh) script should be in the root of that folder). Also, You can pass the host and port as arguments to that script, in case you've changed the Faraday's REST API parameters (remember that you have to run Faraday GTK or Faraday `—gui=nogui` so that the terminal for ZSH functions properly)
 
 The idea of the webshell is to be able to do actions directly from the web using ZSH as a console. You would be connected to your own shell (listening in loopback interface). 
 
