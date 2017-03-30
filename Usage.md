@@ -184,11 +184,9 @@ To create vulnerabilities manually, you can go to the status report page, and cl
 
 Make sure you select a host (and a service if the vulnerability applies to it), and the correct type. If you create a web vulnerability, you will have a couple more fields available, such as path, method, request, response and so on.
 
-#### Faraday Professional & Corporate - [Commercial versions](https://www.faradaysec.com/#download)
+#### Faraday Professional & Corporate - [Commercial versions](https://www.faradaysec.com/?utm_source=github#download)
 
 This version includes advanced visualizations, tags, pentest comparison, pentester ranking among others.
-
-![](https://raw.github.com/wiki/infobyte/faraday/images/Faraday-Dashboard-Advance.png)
 
 ##### Tags
 
