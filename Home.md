@@ -100,7 +100,7 @@ Faraday GTK Client.
 * Screenshots: https://github.com/infobyte/faraday/wiki/Screenshots
 * Send your ideas and suggestions here: [https://www.faradaysec.com/ideas](https://www.faradaysec.com/ideas)
 
-## Presentation
+## Presentations
 
 * Black Hat Arsenal Asia - 2017:
    * https://www.blackhat.com/asia-17/arsenal.html#faraday
