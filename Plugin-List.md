@@ -1,5 +1,7 @@
 The main purpose of Faraday is to re-use the available tools in the community to take advantage of them in a multiuser way.
 
+> You break it. We keep track of the pieces!
+
 Faraday Plugins run only on the client.
 
 <a name="types"></a>
