@@ -1,6 +1,6 @@
 ## Installation
 
-The following platforms are supported:
+The following platforms are supported
 
 ![platform](https://raw.github.com/wiki/infobyte/faraday/images/platform/supported.png) 
 
