@@ -42,8 +42,12 @@ To read about the latest features check out the [release notes](https://github.c
 
 ## Plugins list
 
-Right now faraday has more than [60+ supported tools](https://github.com/infobyte/faraday/wiki/Plugin-List), among them you will find: 
+Plugins are the way to feed Faraday data from your favorite tools. Right now there are more than [60+ supported tools](https://github.com/infobyte/faraday/wiki/Plugin-List), among them you will find: 
 ![](https://raw.github.com/wiki/infobyte/faraday/images/plugins/Plugins.png)
+
+There are three Plugin types: **console** which intercept the tools you execute to import their output, **report** which allow you to import previously generated XMLs and **online** which are either external tools accessing Faraday's API or Faraday connecting to external APIs or databases.
+
+[Read more about Plugins](http://github.com/infobyte/faraday/wiki/Plugin-List).
 
 ## Features
 
