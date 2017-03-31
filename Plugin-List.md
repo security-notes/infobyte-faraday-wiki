@@ -2,7 +2,7 @@ The main purpose of Faraday is to re-use the available tools in the community to
 
 > You break it. We keep track of the pieces!
 
-Faraday Plugins run only on the client.
+To maximize flexibility Faraday Plugins run only on the client, which means you can have custom, private plugins all for yourself!
 
 <a name="types"></a>
 There are three kinds of plugins available for Faraday; **console**, **report** and **API** also called **online**. However, these are not mutually exclusive, meaning that some tools have more than one Plugin to process their output. For example, **Nmap** has a Console plugin which allows you to run it directly from ZSH, but it also has a Report one, in order to import scans that were run outside of Faraday.
