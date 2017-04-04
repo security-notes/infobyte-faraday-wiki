@@ -65,6 +65,11 @@ So if you already have a Faraday Installation there are many ways to know which 
 * Checking the contents of the file `VERSION` in the root of the Faraday Installation
 ![](https://raw.githubusercontent.com/wiki/infobyte/faraday/images/faraday_version_file.png)
 
+To get the latest available version:
+
+* for the community version, visit <https://github.com/infobyte/faraday/releases/latest>
+* for the commercial versions, check the Customer Portal
+
 [ [index] ](#index)
 
 <a name="vulns-db"></a>
