@@ -97,7 +97,7 @@ It is possible to restore the database's users using the following script:
 
 [ [index] ](#index)
 
-## Commercial versions
+## Answers for Commercial versions
 
 <a name="edit-workspaces-wui"></a>
 ### I can't edit Workspaces from the Web UI
