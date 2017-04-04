@@ -1,3 +1,5 @@
+## Intro
+
 This guide is intended to provide solutions for common problems. If your problem is not listed below, [make sure to contact us](http://github.com/infobyte/faraday/issues)!
 
 Before moving on, verify that you are using the latest available version running the client and the server using `--version` or `-v`.
@@ -7,7 +9,12 @@ To get the latest available version:
 * for the community version, visit <https://github.com/infobyte/faraday/releases/latest>
 * for the commercial versions, check the Customer Portal
 
+We recommend upgrading to the latest version before proceeding.
+
+Also, to get a better understanding of most problems you can run the Faraday Client using `--debug` or `-d` option.
+
 <a name="index"></a>
+## Index
 
 * [I can't access the web GUI](#cant-access-web)
 * [Faraday is not importing my report](#import)
@@ -16,6 +23,8 @@ To get the latest available version:
 
 Commercial versions
 * [I can't edit Workspaces in the web UI](#edit-workspaces-wui)
+
+## Answers
 
 <a name="cant-access-web"></a>
 ### I can't access the web GUI
@@ -88,7 +97,7 @@ It is possible to restore the database's users using the following script:
 
 [ [index] ](#index)
 
-## Commercial versions
+## Answers for Commercial versions
 
 <a name="edit-workspaces-wui"></a>
 ### I can't edit Workspaces from the Web UI
