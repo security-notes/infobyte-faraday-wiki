@@ -26,9 +26,11 @@ From the workspaces window click on **New** and complete
 
 ### GTK
 On the General view in the GTW interface click on the New Workspace icon 
-![](https://github.com/infobyte/faraday/wiki/images/new-workspace-icon-gtk.png)
+![](https://github.com/infobyte/faraday/wiki/images/Gtk-new-workspace-dialog.png)
 and complete the fields:
+
 *Workspace Name
+
 *Description
 
 ![](https://github.com/infobyte/faraday/wiki/images/new-workspace-icon-gtk.png)
