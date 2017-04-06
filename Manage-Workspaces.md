@@ -10,9 +10,9 @@ The workspaces you can see on a list, where you can create, edit or eliminate th
 
 ![workspaces](https://raw.github.com/wiki/infobyte/faraday/images/faraday_workspace_list.png)
 
-### How to make a Workspace
+## How to make a Workspace
 
-## Web UI
+### Web UI
 From the workspaces window click on **New** and complete
 
 * Workspace name
@@ -24,11 +24,11 @@ From the workspaces window click on **New** and complete
 
 ![](https://raw.github.com/wiki/infobyte/faraday/images/faraday_workspace_new.png)
 
-## GTK
+### GTK
 On the General view in the GTW interface click on the New Workspace icon 
 
 
-## Scripting
+### Scripting
 
 This is the right way to create a Workspace from command line:
 
