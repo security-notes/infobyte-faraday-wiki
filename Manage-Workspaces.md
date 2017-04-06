@@ -12,6 +12,7 @@ The workspaces you can see on a list, where you can create, edit or eliminate th
 
 ### How to make a Workspace
 
+## Web UI
 From the workspaces window click on **New** and complete
 
 * Workspace name
@@ -22,6 +23,40 @@ From the workspaces window click on **New** and complete
 * Users that can access the workspace
 
 ![](https://raw.github.com/wiki/infobyte/faraday/images/faraday_workspace_new.png)
+
+## GTK
+On the General view in the GTW interface click on the New Workspace icon 
+
+
+## Scripting
+
+This is the right way to create a Workspace from command line:
+
+Create a file named script.py, place it in the Faraday Installation Directory and inside it write this piece of code:
+
+```
+#!/usr/bin/python2.7
+from persistence.server import server
+import time
+
+server.FARADAY_UP = False
+#Change this with your Faraday server url
+server.SERVER_URL = "http://127.0.0.1:5985"
+
+date_today = int(time.time() * 1000)
+server.create_workspace('workspacename', 'DESCRIPTION', date_today, date_today, 'CUSTOMER NAME')
+```
+this is an example of what you can do,
+for more thing you could do go checkout  /persistence/server/server.py
+
+And now, to import xml files to your new created workspace run this in the terminal:
+```./faraday.py --cli --workspace project_name -r report/tmp/nmap_scan.xml
+```
+Being
+```project_name```
+the name of your workspace and
+```report/tmp/nmap_scan.xml```
+the path to your import xml file which in this example is called nmap_scan.xml
 
 ### Editing a Workspace
 
@@ -34,3 +69,4 @@ From the workspace window click on **Edit**
 From the workspaces window click on **Delete**
 
 ![](https://raw.github.com/wiki/infobyte/faraday/images/faraday_workspace_delete.png)
+
