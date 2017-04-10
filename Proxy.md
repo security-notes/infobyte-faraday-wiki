@@ -1,5 +1,5 @@
 ## Small guide to set up the Faraday Proxy
-Without logging out open the terminal and run this commands:
+Without loging out open the terminal and run this commands:
 
 For a proxy with authentication:
 ```
