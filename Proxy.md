@@ -12,6 +12,7 @@ $ export http_proxy="http://proxy_host:proxy_port"
 $ export https_proxy="https://proxy_host:proxy_port"
 ```
 
+
 To confirm your set up was successful afterwards you can run:
 
 ```
