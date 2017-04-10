@@ -1,6 +1,6 @@
 ## Small guide to set up the Faraday Proxy
-
-For a proxy with authentication open a Terminal and run this commands:
+Without logging out open the terminal and run this commands:
+For a proxy with authentication:
 ```
 $ export http_proxy=http://username:password@proxy_host:proxy_port
 $ export https_proxy=$http_proxy
@@ -21,3 +21,4 @@ $ echo https_proxy
 ```
 This should show you the value or those variables.
 
+And in the end run `./faraday.py`.
