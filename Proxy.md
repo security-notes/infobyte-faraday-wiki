@@ -5,7 +5,8 @@ For a proxy with authentication:
 ```
 $ export http_proxy=http://username:password@proxy_host:proxy_port
 $ export https_proxy=$http_proxy
-$ export no_proxy="localhost,127.0.0.1,localaddress,.localdomain.com
+$ export faradaysrvip="192.168.1.10"
+$ export no_proxy="localhost,faradaysrvip,localaddress,.localdomain.com
 ```
 
 Otherwise this will work just fine:
