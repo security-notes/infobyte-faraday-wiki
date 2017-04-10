@@ -1,12 +1,22 @@
 ## Small guide to set up the Faraday Proxy
 
-Open a Terminal and run this commands:
+For a proxy with authentication open a Terminal and run this commands:
 ```
 $ export http_proxy=http://username:password@proxy_host:proxy_port
 $ export https_proxy=$http_proxy
 $ export no_proxy="localhost,127.0.0.1,localaddress,.localdomain.com
 ```
+Otherwise:
+```
+$ export http_proxy="http://proxy_host:proxy_port"
+$ export https_proxy="https://proxy_host:proxy_port"
+```
 
+To confirm your set up was successful afterwards you can run:
 
+```
+$ echo http_proxy
+$ echo http_proxy
+```
 
 
