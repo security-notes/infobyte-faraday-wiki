@@ -20,6 +20,7 @@
   * [[Manage Hosts and Services GUI WEB]]
   * [[Manage Users]]
   * [[Manage Workspaces]]
+  * [[Proxy]]
   * [[Scripts]]
   * [[Workspace-Diff]]
   * [[Workspace replication]]
