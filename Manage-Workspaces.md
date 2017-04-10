@@ -57,7 +57,8 @@ this is an example of what you can do,
 for more thing you could do go checkout  /persistence/server/server.py
 
 And now, to import xml files to your new created workspace run this in the terminal:
-```./faraday.py --cli --workspace project_name -r report/tmp/nmap_scan.xml
+```
+./faraday.py --cli --workspace project_name -r report/tmp/nmap_scan.xml
 ```
 Being
 ```project_name```
