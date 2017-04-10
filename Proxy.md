@@ -17,7 +17,7 @@ To confirm your set up was successful afterwards you can run:
 
 ```
 $ echo http_proxy
-$ echo http_proxy
+$ echo https_proxy
 ```
-
+This should show you the value or those variables.
 
