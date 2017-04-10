@@ -1,5 +1,6 @@
 ## Small guide to set up the Faraday Proxy
 Without logging out open the terminal and run this commands:
+
 For a proxy with authentication:
 ```
 $ export http_proxy=http://username:password@proxy_host:proxy_port
