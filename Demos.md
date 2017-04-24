@@ -1,4 +1,4 @@
-You can view all our videos on the following ![](https://www.queeky.com/sites/default/files/images/YouTube-icon-full_color_0.thumbnail.png)[Playlist](https://www.youtube.com/playlist?list=PLVnFEI9HluLqEAhjFPFTjEFxTzYXlcrle)
+You can view all our videos on the following [![ScreenShot](https://raw.githubusercontent.com/wiki/infobyte/faraday/images/youtube.png)[Playlist](https://www.youtube.com/playlist?list=PLVnFEI9HluLqEAhjFPFTjEFxTzYXlcrle)]
 
 --
 
