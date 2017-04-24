@@ -1,4 +1,4 @@
-You can view all our videos on the following ![](http://icons.iconarchive.com/icons/dakirby309/simply-styled/128/YouTube-icon.png)[Playlist](https://www.youtube.com/playlist?list=PLVnFEI9HluLqEAhjFPFTjEFxTzYXlcrle)
+You can view all our videos on the following ![](https://www.queeky.com/sites/default/files/images/YouTube-icon-full_color_0.thumbnail.png)[Playlist](https://www.youtube.com/playlist?list=PLVnFEI9HluLqEAhjFPFTjEFxTzYXlcrle)
 
 --
 
