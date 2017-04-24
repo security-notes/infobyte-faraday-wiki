@@ -1,4 +1,4 @@
-You can view all our videos on the following [![ScreenShot](https://raw.github.com/wiki/infobyte/faraday/images/youtube.png) Playlist](https://www.youtube.com/playlist?list=PLVnFEI9HluLqEAhjFPFTjEFxTzYXlcrle)
+You can view all our videos on the following [![ScreenShot]http://icons.iconarchive.com/icons/dakirby309/simply-styled/128/YouTube-icon.png) Playlist](https://www.youtube.com/playlist?list=PLVnFEI9HluLqEAhjFPFTjEFxTzYXlcrle)
 
 --
 
