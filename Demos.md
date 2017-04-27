@@ -1,28 +1,29 @@
 You can view all our videos on the following [Youtube Playlist ![](https://rawgithub.com/wiki/infobyte/faraday/images/newytlogo.png)](https://www.youtube.com/playlist?list=PLVnFEI9HluLqEAhjFPFTjEFxTzYXlcrle)  
-  
+ 
+*** 
 
-**Presenting Faraday:**  
+## **Presenting Faraday:**  
   
-_SecurityWeekly - 2016:_
-
+### _SecurityWeekly - 2016:_   
 [![ScreenShot](https://rawgithub.com/wiki/infobyte/faraday/images/newytlogo.png) - Paul's Security Weekly 2016 - ](http://bit.ly/2bfkuii) We presented Faraday at Paul's Security Weekly!   
   
-_Webinar - 2016:_
-
+  
+### _Webinar - 2016:_   
 [![ScreenShot](https://rawgithub.com/wiki/infobyte/faraday/images/newytlogo.png) - English Version - ](http://bit.ly/2bgxL9Q) In this workshop we will be giving a brief demonstration of Faraday and we will be going over how to leverage new features.  
   
-_Webinar - 2015:_
-
+  
+### _Webinar - 2015:_   
 [![ScreenShot](https://rawgithub.com/wiki/infobyte/faraday/images/newytlogo.png) - English Version - April 8 - ](http://buff.ly/1E6FLWJ) We quickly went over how to get the Faraday Corporate up and running and then showed a couple of the new features.
   
 [![ScreenShot](https://rawgithub.com/wiki/infobyte/faraday/images/newytlogo.png) - Version en Español - Abril 13 - ](http://buff.ly/1FCQAfz) Webinar acerca de la instalacion de Faraday Corporate y sus principales caracteristicas.  
   
-_Workshop - Ekoparty 2014:_
-
+   
+### _Workshop - Ekoparty 2014:_   
 [![ScreenShot](https://rawgithub.com/wiki/infobyte/faraday/images/newytlogo.png) - Auditing thousands of assets at a time without panicking 101](https://bit.ly/1AOihAM)  
-  
-**Take a look at our latest videos:** 
-  
+   
+***
+## **Take a look at our latest videos:**   
+
 _Installation:_
 
 [![ScreenShot](https://rawgithub.com/wiki/infobyte/faraday/images/newytlogo.png) - Installing Faraday plugin from Burp's BApp Store ](https://bit.ly/1rH9EUs)
@@ -32,18 +33,21 @@ _Installation:_
 [![ScreenShot](https://rawgithub.com/wiki/infobyte/faraday/images/newytlogo.png) - First couchdb configuration ](https://bit.ly/SkwwwV)
 
 [![ScreenShot](https://rawgithub.com/wiki/infobyte/faraday/images/newytlogo.png) -  Faraday installation in macOS Sierra ](https://bit.ly/2gK8Gur)
-  
-
+   
+   
 _Using the platform:_
 
-[![ScreenShot](https://rawgithub.com/wiki/infobyte/faraday/images/newytlogo.png) - Release Demo](https://bitly.com/1gaHSyu)  
-[![ScreenShot](https://rawgithub.com/wiki/infobyte/faraday/images/newytlogo.png) -  First steps running Faraday ](https://bit.ly/2h1b14H)  
-[![ScreenShot](https://rawgithub.com/wiki/infobyte/faraday/images/newytlogo.png) - Timeline, PTs ranking, Workspaces comparison & Executive report! ](http://bit.ly/2cyf6Zc)  
-[![ScreenShot](https://rawgithub.com/wiki/infobyte/faraday/images/newytlogo.png) -  New databases (vulndb, cfdb, vFeed) - Using script getExploits.py ](http://bit.ly/23vvyko)  
-[![ScreenShot](https://rawgithub.com/wiki/infobyte/faraday/images/newytlogo.png) - A fast class C domain scanner ](https://bit.ly/U16Gzt) 
+[![ScreenShot](https://rawgithub.com/wiki/infobyte/faraday/images/newytlogo.png) - Release Demo](https://bitly.com/1gaHSyu)
 
-  
+[![ScreenShot](https://rawgithub.com/wiki/infobyte/faraday/images/newytlogo.png) -  First steps running Faraday ](https://bit.ly/2h1b14H)
 
+[![ScreenShot](https://rawgithub.com/wiki/infobyte/faraday/images/newytlogo.png) - Timeline, PTs ranking, Workspaces comparison & Executive report! ](http://bit.ly/2cyf6Zc)
+
+[![ScreenShot](https://rawgithub.com/wiki/infobyte/faraday/images/newytlogo.png) -  New databases (vulndb, cfdb, vFeed) - Using script getExploits.py ](http://bit.ly/23vvyko)
+
+[![ScreenShot](https://rawgithub.com/wiki/infobyte/faraday/images/newytlogo.png) - A fast class C domain scanner ](https://bit.ly/U16Gzt)
+   
+   
 _Faraday using plugins:_
 
 [![ScreenShot](https://rawgithub.com/wiki/infobyte/faraday/images/newytlogo.png) - Acunetix](http://bit.ly/2pYsNKv)
@@ -51,6 +55,8 @@ _Faraday using plugins:_
 [![ScreenShot](https://rawgithub.com/wiki/infobyte/faraday/images/newytlogo.png) - Amap](https://bit.ly/2gKm4yI)
 
 [![ScreenShot](https://rawgithub.com/wiki/infobyte/faraday/images/newytlogo.png) - Arachni](https://bit.ly/1Tlx56u)
+
+[![ScreenShot](https://rawgithub.com/wiki/infobyte/faraday/images/newytlogo.png) - Auditing Metasploitable 2](http://bit.ly/2pD3Owg)
 
 [![ScreenShot](https://rawgithub.com/wiki/infobyte/faraday/images/newytlogo.png) - BeEF](https://bit.ly/1RUWuSB)
 
