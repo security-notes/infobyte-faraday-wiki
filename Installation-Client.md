@@ -40,7 +40,7 @@ Faraday Client works under any modern Linux distribution or Mac OS X, and needs 
 
 The Python requirements for the client are stored in the [`requirements.txt` file](https://github.com/infobyte/faraday/blob/master/requirements.txt). Some additional requirements are necessary for specific features to work, these are stored in the [`requirements_extras.txt` file](https://github.com/infobyte/faraday/blob/master/requirements_extras.txt).
 
-Out tests include [Debian](#debian), [Ubuntu](#debian), [Kali](#kali), [Backtrack](#debian) and [OSX Maverick 10.9.2](#osx).
+Out tests include [Debian](#debian), [Ubuntu](#debian), [Kali](#kali), [Backtrack](#debian) and [OSX Sierra](https://github.com/infobyte/faraday/wiki/Installation-Client-OSX).
 
 If instead of installing you want to take a quick look at Faraday you can also use [Docker](#docker).
 
@@ -100,7 +100,7 @@ Due to Kali's package updates the pre-installed package may not be the last vers
 
 #### MacOS
 
-[You can find instructions on how to run the client under Mac OSX here.](https://github.com/infobyte/faraday/wiki/installation-client)
+[You can find instructions on how to run the client under Mac OSX here.](https://github.com/infobyte/faraday/wiki/Installation-Client-OSX)
 
 #### Chef
 
