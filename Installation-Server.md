@@ -103,7 +103,7 @@ You will be asked to pass as an argument the CouchDB URL so that a connection ca
 
 After running the setup script run the server once using `python2 faraday-server.pyc` and don't worry if it fails.
 
-Edit the file located in `~/.faraday/config/server.ini` and add the username and password created using the setup script.
+Edit the file located in `~/.faraday/config/server.ini` and add the username and password created using the setup script in the `[couchdb]` section.
 
 ## Running Faraday Server
 
