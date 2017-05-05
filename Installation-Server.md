@@ -87,13 +87,13 @@ Please consult with your distribution documentation to install the dependencies 
 
 ### Commercial Server Configuration
 
-Once you have installed the additional dependencies, you will need to execute the setup script, which will create the admin user with the configured password, and create a backup cronjob for CouchDB. Just execute the following command and answer the questions asked.
+Once you have installed the additional dependencies and CouchDB is running, you will need to execute the setup script, which will create the admin user with the configured password, and create a backup cronjob for CouchDB. Just execute the following command and answer the questions asked.
 
-    $ sudo ./setup-server.py
+    $ sudo python2 setup-server.pyc
 
 If you want more fine grained control over what the setup script does, you can see the available options by executing:
 
-    $ ./setup-server.py --help
+    $ python2 setup-server.pyc --help
 
 If you want, you can upload the included CWE database to CouchDB to enable better searching and autocomplete features. To do so, you only need to execute the following command:
 
@@ -101,11 +101,15 @@ If you want, you can upload the included CWE database to CouchDB to enable bette
 
 You will be asked to pass as an argument the CouchDB URL so that a connection can be established.
 
+After running the setup script run the server once and don't worry if it fails.
+
+Edit the file located in `~/.faraday/config/server.ini` and add the username and password created using the setup script.
+
 ## Running Faraday Server
 
 Once everything is installed, you can proceed to run the Faraday Server script:
 
-    $ ./faraday-server.py
+    $ python2 faraday-server.pyc
 
 Depending on whether it's the first time running it, if you are using the community or commercial version, or if you just upgraded Faraday, it is possible that you may need to answer some questions before the server can start answering requests from the clients.
 
