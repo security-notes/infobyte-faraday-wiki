@@ -96,7 +96,7 @@ Due to Kali's package updates the pre-installed package may not be the last vers
 
 #### Docker
 
-[You can find instructions on how to run the client inside a Docker container here.](https://github.com/infobyte/faraday/wiki/installation-client)
+[You can find instructions on how to run the client inside a Docker container here.](https://github.com/infobyte/faraday/wiki/installation-client-docker)
 
 #### MacOS
 
