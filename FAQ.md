@@ -60,6 +60,8 @@ You will receive an email with a link to download two tarballs. One will be your
 ### How do I know which Faraday Version I'm using?
 So if you already have a Faraday Installation there are many ways to know which version you're using:
 
+* Using the `--version` or `-v` argument in both the Client and Server.
+
 * Using the Web UI - If you place the pointer over the Faraday Logo you will get a tooltip containing the version number ![](https://raw.githubusercontent.com/wiki/infobyte/faraday/images/faraday_webui_version.png)
 
 * Checking the contents of the file `VERSION` in the root of the Faraday Installation

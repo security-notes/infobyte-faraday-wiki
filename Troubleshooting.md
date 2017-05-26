@@ -2,7 +2,7 @@
 
 This guide is intended to provide solutions for common problems. If your problem is not listed below, [make sure to contact us](http://github.com/infobyte/faraday/issues)!
 
-Before moving on, verify that you are using the latest available version - from the Web UI you can place the pointer over the logo or through the `VERSION` file in the root of your Faraday Installation Directory.
+Before moving on, verify that you are using the latest available version running the client and the server using `--version` or `-v`.
 
 To get the latest available version:
 
