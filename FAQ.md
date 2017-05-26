@@ -8,7 +8,7 @@
 * [What version am I using!?](#faraday-version)
 * [How do I configure my own Vulnerabilities Database?](#vulns-db)
 * [What if I want to add a Vulnerability manually?](#adding-manually)
-* [How do I bind Faraday to 0.0.0.0?](#0.0.0.0)
+* [How do I bind Faraday to 0.0.0.0?](#how-do-i-bind-faraday-to-0000)
 
 
 <a name="name"></a>
