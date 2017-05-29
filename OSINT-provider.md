@@ -1,10 +1,24 @@
 In many parts of the Web UI you will see a icon to search the host or service information in Shodan. You can modify this to use any other service you want by by changing the <osint> line in your ~/.faraday/config/user.xml file and restarting the Faraday server. For example, with this one you can use Censys:
 ```xml
-<osint>{"host": "censys.io", "prefix": "/ipv4?q=", "suffix": "", "use_external_icon": true, "icon": "https://censys.io/static/img/icon.png", "label": "Censys"}</osint>
+<osint>
+{"host": "censys.io",
+"prefix": "/ipv4?q=",
+"suffix": "",
+"use_external_icon": true,
+"icon": "https://censys.io/static/img/icon.png",
+"label": "Censys"}
+</osint>
 ```
 Or with this code it will use NetDB:
 ```xml
-<osint>{"host": "netdb.io", "prefix": "/search?q=", "suffix": "", "icon": "netdb", "use_external_icon": false, "label": "NetDB"}</osint>
+<osint>
+{"host": "netdb.io",
+"prefix": "/search?q=",
+"suffix": "",
+"icon": "netdb",
+"use_external_icon": false,
+"label": "NetDB"}
+</osint>
 ```
 
 As you see, you will have to put a JSON inside the <osint> tag. This are the important keys to set:
