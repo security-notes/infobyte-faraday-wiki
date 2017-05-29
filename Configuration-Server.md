@@ -52,7 +52,7 @@ You can use the CouchDB ***_utils*** interface (located in `http://127.0.0.1:598
 
 You can create different types of users through the web UI. Those users can login though the same web UI or though a Faraday client using the `--login` flag (Faraday will ask for the credentials later)
 
-### How do I bind Faraday to `0.0.0.0`?
+### Binding Faraday to `0.0.0.0`
 
 You will need to edit the server's configuration file: ```~/.faraday/config/server.ini```
 
