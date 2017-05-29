@@ -21,11 +21,11 @@
   * [[Manage Hosts and Services GUI WEB]]
   * [[Manage Users]]
   * [[Manage Workspaces]]
+  * [[OSINT provider]]
   * [[Proxy]]
   * [[Scripts]]
   * [[Workspace-Diff]]
   * [[Workspace replication]]
-  * [[OSINT provider]]
 * [Demos / Videos](https://github.com/infobyte/faraday/wiki/Demos)
 * [[Architecture]]
 * [Plugins](https://github.com/infobyte/faraday/wiki/Plugin-List)
