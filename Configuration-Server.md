@@ -18,12 +18,12 @@ You will be asked to pass as an argument the CouchDB URL so that a connection ca
 
 After running the setup script run the server once using `python2 faraday-server.pyc` and don't worry if it fails.
 
-Edit the file located in `~/.faraday/config/server.ini` and add the username and password created using the setup script in the `[couchdb]` section. Assuming the selected password is **password123**, the file should look something like:
+Edit the file located in `~/.faraday/config/server.ini` and add the username and password created using the setup script in the `[couchdb]` section. Assuming the selected password is **changeme**, the file should look something like:
 
 ```
 [couchdb]
 user=faraday
-password=password123
+password=changeme
 ```
 
 ### Corp Server Configuration
@@ -46,7 +46,7 @@ And then run CouchDB and Faraday Server again and you are all set!
 
 #### Community
 
-You can use the CouchDB ***_utils*** interface (located in `http://127.0.0.1:5984/_utils/`) to create administrator users, and then edit the CouchDB url in your instance with the users credentials. For example: `http://admin:faradaypassword@192.168.1.254:5985/`
+You can use the CouchDB ***_utils*** interface (located in `http://127.0.0.1:5984/_utils/`) to create administrator users, and then edit the CouchDB url in your instance with the users credentials. For example: `http://faraday:changeme@192.168.1.254:5985/`
 
 #### Commercial
 
