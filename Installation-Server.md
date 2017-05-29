@@ -87,7 +87,7 @@ Please consult with your distribution documentation to install the dependencies 
 
 ## Running Faraday Server
 
-Once everything is installed you need to configure your server properly. Read our documentation on (Server Configuration)[https://github.com/infobyte/faraday/wiki/Configuration-Server].
+Once everything is installed you need to configure your server properly. Read our documentation on [Server Configuration](https://github.com/infobyte/faraday/wiki/Configuration-Server).
 
 After configuring, you can proceed to run the Faraday Server script:
 
