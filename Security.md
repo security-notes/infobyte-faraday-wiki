@@ -41,3 +41,26 @@ _**Remediation**_:
 Do not use public workspaces.
 
 Do not expose Futon (_utils) externally.
+
+# Report a security vulnerability in Faraday.
+
+Send us a email to : **security@faradaysec.com** with all relevant information about your discovery.
+
+Keep in mind:
+
+Verifiable proof the vulnerability exists (screenshot/script/video).
+
+Reproduction steps.
+
+### Coordinated Disclosure
+The Faraday security team have 30 days to respond to the report, and up to 90 days to implement a fix based on the severity of the report. Please allow for this process to fully complete before you publicly disclose the vulnerability.
+
+### Reward
+
+In appreciation for the effort made:
+
+We will add you to our list of CONTRIBUTORS.
+
+We will send you stickers and t-shirts!
+
+And a huge thank you!
