@@ -4,9 +4,9 @@ The Faraday development team is aware that the information stored in the platfor
 
 With this in mind, we have developed this guide to perform Faraday Hardening.
 
-## TLS
+## SSL
 
-Use TLS for cipher information between client and server, using a Nginx server.
+Use SSL for cipher information between client and server, using a Nginx server.
 
 More information [HERE](https://github.com/infobyte/faraday/wiki/SSL)
 
