@@ -44,7 +44,7 @@ Do not expose Futon (_utils) externally.
 
 # Report a security vulnerability in Faraday.
 
-Send us a email to : **security@faradaysec.com** with all relevant information about your discovery.
+Send us a email with all relevant information about your discovery.
 
 Keep in mind:
 
