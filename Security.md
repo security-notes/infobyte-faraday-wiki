@@ -46,6 +46,8 @@ Do not expose Futon (_utils) externally.
 
 Send us a email with all relevant information about your discovery.
 
+![](https://raw.github.com/wiki/infobyte/faraday/images/security-email.png) 
+
 Keep in mind:
 
 Verifiable proof the vulnerability exists (screenshot/script/video).
