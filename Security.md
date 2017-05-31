@@ -1,8 +1,6 @@
 # Security in Faraday.
 
-The Faraday development team is aware that the information stored in the platform is of the highest criticality. Due to this we have developers with knowledge in safe development, in addition to the collaboration of the area of Red team in Infobyte.
-
-With this in mind, we have developed this guide to perform Faraday Hardening.
+The Faraday development team is aware that the information stored in the platform is of the highest criticality. With this in mind, we have developed this guide to perform Faraday Hardening.
 
 ## SSL
 
