@@ -31,6 +31,7 @@ config_whitelist = []
 With that the _config API is totally disabled, any change of configuration to Couchdb must be done by modifying the local.ini manually.
 Warning: If you are going to use LDAP with Faraday, you must configure the LDAP before applying this remedy.
 
+Dont expose the couchdb service outside if you dont need that.
 ### Public database.
 
 In faraday each workspace is a database, if you create a public workspace this ends up being a public database, so if your instance of couchdb is accessible externally anyone who knows the name of the workspace can access the information stored in that.
