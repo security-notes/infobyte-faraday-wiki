@@ -10,7 +10,7 @@
   * [[Vulnerabilities Database]]
 * [[Updates]]
 * [[Usage]]
-  * [[Backup]]
+  * [Backup](https://github.com/infobyte/faraday/wiki/backup-workspaces)
   * [[Bug bounties]]
   * [[Chat and Communication]]
   * [[Continuous-Scanning]]
