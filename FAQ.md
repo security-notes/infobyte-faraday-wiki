@@ -5,6 +5,7 @@
 * [Is Faraday free?](#price)
 * [Which platforms are supported?](#supported-platforms)
 * [I purchased a License, now what?](#after-purchase)
+* [Can I keep using the Kali version with my newly bought pro-corp license?](#upgrade-kali)
 * [What version am I using!?](#faraday-version)
 * [How do I configure my own Vulnerabilities Database?](#vulns-db)
 * [What if I want to add a Vulnerability manually?](#adding-manually)
@@ -53,6 +54,14 @@ ArchAssault, Archlinux, Debian, Kali, OSX, Ubuntu. You can find a detailed expla
 <a name="after-purchase"></a>
 ### I purchased a License, now what?
 You will receive an email with a link to download two tarballs. One will be your Faraday License and the other the version you selected. Uncompress both and place the contents of the license tar inside **$FARADAY/doc/**. 
+
+[ [index] ](#index)
+
+<a name="upgrade-kali"></a>
+### Can I keep using the Kali version with my newly bought pro-corp license?
+In a nutshell, yes. Even though the Kali Faraday version is incompatible with both the pro and corp licenses, you can upgrade the platform in the same box without losing all your data.
+
+Follow the [commercial update instructions](https://github.com/infobyte/faraday/wiki/Updates#commercial-version-update) to upgrade your version.
 
 [ [index] ](#index)
 
