@@ -10,6 +10,7 @@
   * [[Vulnerabilities Database]]
 * [[Updates]]
 * [[Usage]]
+  * [[Backup]]
   * [[Bug bounties]]
   * [[Chat and Communication]]
   * [[Continuous-Scanning]]
