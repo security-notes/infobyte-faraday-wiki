@@ -36,10 +36,8 @@ Make sure you run the `pushCwe.py` script before use and that's it!
 
 ### Usage
 
-Login to your Faraday Web UI and create or edit a vulnerability, you can see now a field `CWE` like in the followig screenshot:
+Login to your Faraday Web UI and create or edit a vulnerability. A search field will allow you to find your templates, as shown in the picture below.
 
-![](https://raw.githubusercontent.com/wiki/infobyte/faraday/images/CweDb.png)
+![](https://raw.githubusercontent.com/wiki/infobyte/faraday/images/faraday_statusreport_vuln_creation_templates_list.png)
 
-Write the CWE name of this vulnerability and all the information will be automatically loaded!
-
-**Note:** Name, Description and Resolution fields are replaced with the information stored in the CWE database.
+**Note:** Name, Description and Resolution fields are replaced with the information stored in the templates database.
