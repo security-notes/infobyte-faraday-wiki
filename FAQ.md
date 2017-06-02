@@ -5,7 +5,7 @@
 * [Is Faraday free?](#price)
 * [Which platforms are supported?](#supported-platforms)
 * [I purchased a License, now what?](#after-purchase)
-* [Can I keep using the Kali version with my newly bought pro-corp license?](#upgrade-kali)
+* [Can I keep using the Kali version with my newly bought pro/corp license?](#upgrade-kali)
 * [What version am I using!?](#faraday-version)
 * [How do I configure my own Vulnerabilities Database?](#vulns-db)
 * [What if I want to add a Vulnerability manually?](#adding-manually)
