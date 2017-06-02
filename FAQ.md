@@ -59,9 +59,9 @@ You will receive an email with a link to download two tarballs. One will be your
 
 <a name="upgrade-kali"></a>
 ### Can I keep using the Kali version with my newly bought pro-corp license?
-In a nutshell, yes. Even though the Kali Faraday version is incompatible with both the pro and corp licenses, you can upgrade the platform in the same box without losing all your data.
+In a nutshell, yes. Even though the Kali Faraday version is incompatible with both the **pro** and **corp** licenses, you can upgrade the platform in the same box without losing all your data.
 
-Follow the [commercial update instructions](https://github.com/infobyte/faraday/wiki/Updates#commercial-version-update) to upgrade your version.
+Follow the [commercial update instructions](https://github.com/infobyte/faraday/wiki/Updates#commercial-version-update) to upgrade.
 
 [ [index] ](#index)
 
