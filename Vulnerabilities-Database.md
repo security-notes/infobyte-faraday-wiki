@@ -4,9 +4,9 @@ Faraday Server comes with its own [CWE](https://cwe.mitre.org/) Vulnerabilities 
 
 Tired of reading documentation? We have a [video showing how to upload the DBs](https://www.youtube.com/watch?v=o5uSS6yzvCo).
 
-### Creating a CSV to upload to CouchDB
+### Creating a CSV to upload
 
-Faraday has a CSV of the original Mitre project included in its tree, [click here](#pushcwe) for instructions on how to upload it.
+Faraday ships with a **CSV of the original Mitre project** included in its tree, [click here](#upload) for instructions on how to upload it.
 
 To create a CSV with all information about a specific project, you need run a script to download and parse its content.
 Faraday have two scripts for two different projects. Here we show how to run them in order to download and store the CSV files.
@@ -21,7 +21,7 @@ Faraday have two scripts for two different projects. Here we show how to run the
 
 Next copy this CSV file (either cfdb.csv or vulndb.csv) to [/data/cwe.csv](data/cwe.csv).
 
-<a name="pushcwe"></a>
+<a name="upload"></a>
 To upload it to CouchDB go to your Faraday Server installation root directory and run:
 
     $ ./helpers/pushCwe.py
