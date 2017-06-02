@@ -22,6 +22,7 @@ Faraday have two scripts for two different projects. Here we show how to run the
 Next copy this CSV file (either cfdb.csv or vulndb.csv) to [/data/cwe.csv](data/cwe.csv).
 
 <a name="upload"></a>
+### Upload
 To upload it to CouchDB go to your Faraday Server installation root directory and run:
 
     $ ./helpers/pushCwe.py
