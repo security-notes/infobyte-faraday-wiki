@@ -27,7 +27,7 @@ Modify the local.ini file, usually located in /etc/couchdb/, locate the [httpd] 
 
 `config_whitelist = []`
 
-**Warning**: If you are using Professional or Corporate versions, you won't be able to change the password of admin users (pentesters and clients should work ok) in the Web UI. We are working in fixing this issue.
+**Warning**: If you are using Professional or Corporate versions, you won't be able to change the password or roles of admin users (pentesters and clients should work ok) in the Web UI. We are working in fixing this issue.
 
 
 With that the _config API is totally disabled, any change of configuration to Couchdb must be done by modifying the local.ini manually.
