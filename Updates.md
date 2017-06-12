@@ -23,7 +23,7 @@ After updating the server, run ```./faraday.py --update``` to update the client.
 
 1. In some cases it is necessary to update the license (when you upgrade your subscription, for example). If that is the case, download the new license from the **Faraday Customer Portal** and unpack its contents in `~/.faraday/doc/`.
 
-1. Run ```./setup_server.sh``` to make sure all dependencies are met.
+1. Run ```./setup-server.py``` to make sure all dependencies are met.
 
 1. Run the server using ```./faraday-server.pyc ```.
 
