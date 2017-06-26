@@ -4,7 +4,7 @@ During the [Faraday Server Setup process](https://github.com/infobyte/faraday/wi
 
 To manage users start a session in the Web UI logging in as shown below and then click on the **Faraday** icon ![](https://raw.github.com/wiki/infobyte/faraday/images/faraday_users_icono.png)
 and then on **Users**
-![](https://raw.github.com/wiki/infobyte/faraday/images/faraday_users_menu.png.png)
+![](https://raw.github.com/wiki/infobyte/faraday/images/faraday_users_menu.png)
 
 ![](https://raw.github.com/wiki/infobyte/faraday/images/faraday_users_login.png)
 
