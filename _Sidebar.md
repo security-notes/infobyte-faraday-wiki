@@ -15,6 +15,7 @@
   * [[Chat and Communication]]
   * [[Continuous-Scanning]]
   * [CSV Exporting](https://github.com/infobyte/faraday/wiki/Exporting-the-information)
+  * [Data Analysis Tools](https://github.com/infobyte/faraday/wiki/Data-analysis-tools)
   * [[Executive Report]]
   * [[Helpers]]
   * [[JIRA Integration]]
