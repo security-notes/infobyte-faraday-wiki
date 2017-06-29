@@ -2,6 +2,8 @@ Only available for our [commercial Corporate version](https://www.faradaysec.com
 
 ### Data analysis tools
 
+![](https://lh5.googleusercontent.com/MVIA8e4shqUUA0I3FtQRZskM5IxnMp14S7iQpajLyGJVflkGZmJjTnLHAt_79EUlzmpKlFW5VKfj2k3TiwwTUtag09DfpVakOWmC7KJXu9ryzryZoRNpqxXqcVOiySO2zDw-Ucb_)
+
 These charts allow you to find *new relations between* your data and clarify the state of an assessment.
 We will also add new charts in the future, and the possibility to customize them as well!
 As an example, this is how some of the current reports look.
@@ -20,10 +22,7 @@ Since Faraday allows you to keep all of your pentests in one place, we thought i
 
 You can also download the charts as *PNG* or *SVG* format to include them in your custom reports.
 
-
-Example charts:
-
-![](https://lh5.googleusercontent.com/MVIA8e4shqUUA0I3FtQRZskM5IxnMp14S7iQpajLyGJVflkGZmJjTnLHAt_79EUlzmpKlFW5VKfj2k3TiwwTUtag09DfpVakOWmC7KJXu9ryzryZoRNpqxXqcVOiySO2zDw-Ucb_)
+Some Example charts:
 
 ![](https://lh4.googleusercontent.com/6pNOtHQfFTnyVXP8nhDCsmWYzA1yroKK2vu-RMT7X6twoemG8ix7RjbRlJCZW3xU5XqG5dV74091Qb8X4vcuX9cvYVOZPNhyTurqiUWTO9dzCLBQeszKmLsTsXHNNB4w2BH46CoX)
 
