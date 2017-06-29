@@ -2,12 +2,12 @@ Only available for our [commercial Corporate version](https://www.faradaysec.com
 
 ### Data analysis tools
 
-![](https://lh5.googleusercontent.com/MVIA8e4shqUUA0I3FtQRZskM5IxnMp14S7iQpajLyGJVflkGZmJjTnLHAt_79EUlzmpKlFW5VKfj2k3TiwwTUtag09DfpVakOWmC7KJXu9ryzryZoRNpqxXqcVOiySO2zDw-Ucb_)
-
 These charts allow you to find *new relations between* your data and clarify the state of an assessment.
 We will also add new charts in the future, and the possibility to customize them as well!
 As an example, this is how some of the current reports look.
 Since Faraday allows you to keep all of your pentests in one place, we thought it would be interesting to add the possibility to see your assessments come to life, so we added new data analysis reports to the Web UI: 
+
+![](https://lh5.googleusercontent.com/MVIA8e4shqUUA0I3FtQRZskM5IxnMp14S7iQpajLyGJVflkGZmJjTnLHAt_79EUlzmpKlFW5VKfj2k3TiwwTUtag09DfpVakOWmC7KJXu9ryzryZoRNpqxXqcVOiySO2zDw-Ucb_)
 
 * Tools findings by severity and targets.
 * Vulnerability severity cluster.
