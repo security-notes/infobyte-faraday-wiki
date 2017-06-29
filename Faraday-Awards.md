@@ -1,4 +1,6 @@
-The idea of the developer awards is that *every buyer* of a Faraday Professional & Corporate license must necessarily select a beneficiary from a list of supported open source tools. We think this kind of support will help on the continuity of great open source security projects. 
+The Faraday Awards was made with the idea to put our money where our mouth is and support open-source tools with some financial benefits for the excellent work they do.
+
+We think this kind of support will help with the continuity of great open source-security projects. With the purchase of every Faraday license, one of the tools below will receive a small payment to help with their future success.
 
 At the moment these are the projects who already have agreed to be part of the awards:
 

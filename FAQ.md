@@ -5,10 +5,11 @@
 * [Is Faraday free?](#price)
 * [Which platforms are supported?](#supported-platforms)
 * [I purchased a License, now what?](#after-purchase)
+* [Can I keep using the Kali version with my newly bought pro/corp license?](#upgrade-kali)
 * [What version am I using!?](#faraday-version)
 * [How do I configure my own Vulnerabilities Database?](#vulns-db)
 * [What if I want to add a Vulnerability manually?](#adding-manually)
-* [How do I bind Faraday to 0.0.0.0?](#0.0.0.0)
+* [How do I bind Faraday to 0.0.0.0?](#how-do-i-bind-faraday-to-0000)
 
 
 <a name="name"></a>
@@ -56,9 +57,19 @@ You will receive an email with a link to download two tarballs. One will be your
 
 [ [index] ](#index)
 
+<a name="upgrade-kali"></a>
+### Can I keep using the Kali version with my newly bought pro-corp license?
+In a nutshell, yes. Even though the Kali Faraday version is incompatible with both the **pro** and **corp** licenses, you can upgrade the platform in the same box without losing all your data.
+
+Follow the [commercial update instructions](https://github.com/infobyte/faraday/wiki/Updates#commercial-version-update) to upgrade.
+
+[ [index] ](#index)
+
 <a name="faraday-version"></a>
 ### How do I know which Faraday Version I'm using?
 So if you already have a Faraday Installation there are many ways to know which version you're using:
+
+* Using the `--version` or `-v` argument in both the Client and Server.
 
 * Using the Web UI - If you place the pointer over the Faraday Logo you will get a tooltip containing the version number ![](https://raw.githubusercontent.com/wiki/infobyte/faraday/images/faraday_webui_version.png)
 

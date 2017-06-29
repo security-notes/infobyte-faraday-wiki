@@ -4,9 +4,9 @@ Faraday Server comes with its own [CWE](https://cwe.mitre.org/) Vulnerabilities 
 
 Tired of reading documentation? We have a [video showing how to upload the DBs](https://www.youtube.com/watch?v=o5uSS6yzvCo).
 
-### Creating a CSV to upload to CouchDB
+### Creating a CSV to upload
 
-Faraday has a CSV of the original Mitre project included in its tree, [click here](#pushcwe) for instructions on how to upload it.
+Faraday ships with a **CSV of the original Mitre project** included in its tree, [click here](#upload) for instructions on how to upload it.
 
 To create a CSV with all information about a specific project, you need run a script to download and parse its content.
 Faraday have two scripts for two different projects. Here we show how to run them in order to download and store the CSV files.
@@ -21,7 +21,8 @@ Faraday have two scripts for two different projects. Here we show how to run the
 
 Next copy this CSV file (either cfdb.csv or vulndb.csv) to [/data/cwe.csv](data/cwe.csv).
 
-<a name="pushcwe"></a>
+<a name="upload"></a>
+### Upload
 To upload it to CouchDB go to your Faraday Server installation root directory and run:
 
     $ ./helpers/pushCwe.py
@@ -36,10 +37,8 @@ Make sure you run the `pushCwe.py` script before use and that's it!
 
 ### Usage
 
-Login to your Faraday Web UI and create or edit a vulnerability, you can see now a field `CWE` like in the followig screenshot:
+Login to your Faraday Web UI and create or edit a vulnerability. A search field will allow you to find your templates, as shown in the picture below.
 
-![](https://raw.githubusercontent.com/wiki/infobyte/faraday/images/CweDb.png)
+![](https://raw.githubusercontent.com/wiki/infobyte/faraday/images/faraday_statusreport_vuln_creation_templates_list.png)
 
-Write the CWE name of this vulnerability and all the information will be automatically loaded!
-
-**Note:** Name, Description and Resolution fields are replaced with the information stored in the CWE database.
+**Note:** Name, Description and Resolution fields are replaced with the information stored in the templates database.

@@ -2,7 +2,7 @@
 
 This guide is intended to provide solutions for common problems. If your problem is not listed below, [make sure to contact us](http://github.com/infobyte/faraday/issues)!
 
-Before moving on, verify that you are using the latest available version - from the Web UI you can place the pointer over the logo or through the `VERSION` file in the root of your Faraday Installation Directory.
+Before moving on, verify that you are using the latest available version running the client and the server using `--version` or `-v`.
 
 To get the latest available version:
 
@@ -50,7 +50,7 @@ If not, maybe try the [Faraday Server Installation](https://github.com/infobyte/
 ### Faraday is not importing my report
 First let's make sure there is a Plugin to parse it so make sure your tool is listed in our [[Plugin List]]. Not there? [Code your own](https://github.com/infobyte/faraday/wiki/Basic-plugin-development) or [ask us to do it](https://github.com/infobyte/faraday/issues).
 
-You can also try to force Faraday to process a report with a certain plugin. For example, let's say you have a metasploit report that faraday is not detecting. You can change the report so that it ends with **\_faraday\_metasploit**, so it ends up as **myreport_faraday_metasplot.xml**, and then copy it to ```~/.faraday/reports/{workspacename}``` (replacing **{workspacename}** with the actual name of your Workspace) in the client. This of course works for any plugin, not only Metasploit. 
+You can also try to force Faraday to process a report with a certain plugin. For example, let's say you have a metasploit report that faraday is not detecting. You can change the report so that it ends with **\_faraday\_Metasploit**, (First letter of the plugin in capital letter) so it ends up as **myreport_faraday_Metasploit.xml**, and then copy it to ```~/.faraday/reports/{workspacename}``` (replacing **{workspacename}** with the actual name of your Workspace) in the client. This of course works for any plugin, not only Metasploit. 
 
 Keep in mind that Plugins don't run on the server, so if you're trying to copy the report file, make sure that you place it inside ```~/.faraday/report/{workspacename}``` (replacing **{workspacename}** with the actual name of your Workspace) in **the client**.
 
@@ -69,6 +69,8 @@ Then open Faraday's GTK interface running the following in your installation roo
 ```
 
 Open the Workspaces perspective and select your workspace. Then copy the report file into the active workspace's directory in ```~/.faraday/report/{workspacename}/``` (replacing **{workspacename}** with the actual name of your Workspace) in the client. Faraday will only process requests for the active workspace.
+
+If you get the message "**IP of host unknown**", the problem may be that the system you're importing into _cannot resolve the DNS address_ from the hosts in your report (this is a must!).
 
 [ [index] ](#index)
 

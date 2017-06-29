@@ -3,16 +3,19 @@
   * [Installation - Server](https://github.com/infobyte/faraday/wiki/installation-server)
   * [Installation - Client](https://github.com/infobyte/faraday/wiki/installation-client)
   * [Installation - Ubuntu](https://github.com/infobyte/faraday/wiki/installation-debian)
+  * [Installation - OS X](https://github.com/infobyte/faraday/wiki/Installation-Client-OSX)
   * [Configuration - Server](https://github.com/infobyte/faraday/wiki/configuration-server)
   * [Configuration - Client](https://github.com/infobyte/faraday/wiki/configuration-client)
   * [Using SSL](https://github.com/infobyte/faraday/wiki/SSL)
   * [[Vulnerabilities Database]]
 * [[Updates]]
 * [[Usage]]
+  * [Backup](https://github.com/infobyte/faraday/wiki/backup-workspaces)
   * [[Bug bounties]]
   * [[Chat and Communication]]
   * [[Continuous-Scanning]]
   * [CSV Exporting](https://github.com/infobyte/faraday/wiki/Exporting-the-information)
+  * [Data Analysis Tools](https://github.com/infobyte/faraday/wiki/Data-analysis-tools)
   * [[Executive Report]]
   * [[Helpers]]
   * [[JIRA Integration]]
@@ -20,6 +23,7 @@
   * [[Manage Hosts and Services GUI WEB]]
   * [[Manage Users]]
   * [[Manage Workspaces]]
+  * [[OSINT provider]]
   * [[Proxy]]
   * [[Scripts]]
   * [[Workspace-Diff]]

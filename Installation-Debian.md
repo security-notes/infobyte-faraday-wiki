@@ -1,4 +1,4 @@
-## Installing Faraday in Ubuntu
+**Beware! this documentation only applies to the community version. To install our Pro/Corp version, use the [server](https://github.com/infobyte/faraday/wiki/installation-server) and [client](https://github.com/infobyte/faraday/wiki/installation-client) guides.**
 
 If you are using any version of Ubuntu, we have made `.deb` packages available which will automatically download all the needed dependencies and install Faraday on your system.
 

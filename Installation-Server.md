@@ -4,7 +4,7 @@
 ### Faraday Server
 Faraday Server is the way to have a better synchronization between your Faraday Client session and CouchDB. The server's responsibility is to send and receive information from both the client and CouchDB, and make sure that they are both in sync. At the same time, it provides much better performance to the Web UI, allowing it to handle enormous workspaces without a problem.
 
-**NOTE:** You should keep in mind that the Faraday server must be installed on the same machine as CouchDB.
+**Important:** You should keep in mind that the Faraday server must be installed on the same machine as CouchDB.
 
 ## Downloading Faraday
 
@@ -85,27 +85,13 @@ If you are running Kali, please run the following command instead:
 
 Please consult with your distribution documentation to install the dependencies listed above.
 
-### Commercial Server Configuration
-
-Once you have installed the additional dependencies, you will need to execute the setup script, which will create the admin user with the configured password, and create a backup cronjob for CouchDB. Just execute the following command and answer the questions asked.
-
-    $ sudo ./setup-server.py
-
-If you want more fine grained control over what the setup script does, you can see the available options by executing:
-
-    $ ./setup-server.py --help
-
-If you want, you can upload the included CWE database to CouchDB to enable better searching and autocomplete features. To do so, you only need to execute the following command:
-
-    $ ./helpers/pushCwe.py
-
-You will be asked to pass as an argument the CouchDB URL so that a connection can be established.
-
 ## Running Faraday Server
 
-Once everything is installed, you can proceed to run the Faraday Server script:
+Once everything is installed you need to configure your server properly. Read our documentation on [Server Configuration](https://github.com/infobyte/faraday/wiki/Configuration-Server).
 
-    $ ./faraday-server.py
+After configuring, you can proceed to run the Faraday Server script:
+
+    $ python2 faraday-server.pyc
 
 Depending on whether it's the first time running it, if you are using the community or commercial version, or if you just upgraded Faraday, it is possible that you may need to answer some questions before the server can start answering requests from the clients.
 
