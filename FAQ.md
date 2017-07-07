@@ -1,4 +1,5 @@
 <a name="index"></a>
+## Index
 
 * [Where does the name come from?](#name)
 * [What is Faraday?](#what-is-faraday)
@@ -12,6 +13,7 @@
 * [How do I bind Faraday to 0.0.0.0?](#how-do-i-bind-faraday-to-0000)
 
 
+## Topics
 <a name="name"></a>
 ### Where does the name come from?
 The name was picked to honour *Michael Faraday*, an English scientist whose main discoveries include electromagnetism induction, diamagnetism and electrolysis[1]. Mainly his six principles of scientific discipline, acquired at a young age from Isaac Watts' "The Improvement of the mind"[2]:
