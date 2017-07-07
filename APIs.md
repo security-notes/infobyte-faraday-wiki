@@ -199,7 +199,7 @@ Create an interface
 * parent_id
 
 
-#### PUT/model/service
+#### PUT /model/service
 
 Create a service
 
