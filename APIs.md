@@ -136,7 +136,9 @@ You can see the finished tool in $faraday/scripts/shodan_faraday.py
 
 ## RESTful API server
 
-This API server should be connected to zsh specifying the parameters where Faraday is listening on both host and REST port flags.
+When you start the CLI or GTK client it also starts a local RESTful API listening on localhost (so other devices connected to your network won't be able to use it), on port 9978 by default. You can check it's running in the output of `./faraday.py` or in the logs:
+
+`2017-07-07 17:41:47,541 - faraday - INFO - REST API server configured on ('localhost', 9978)`
 
 In the future, this will allow developers to interact with the framework from external applications and not necessarily from plugins.
 
