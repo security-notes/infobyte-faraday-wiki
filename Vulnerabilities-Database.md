@@ -8,8 +8,8 @@ Faraday Server comes with its own [CWE](https://cwe.mitre.org/) Vulnerabilities 
 ## Index
 
 * [CSV](#csv)
-* [Upload](#upload)
-* [Manually adding templates](#manually)
+* [Upload CSV File](#upload)
+* [Manually Adding Templates](#manually)
 * [Usage](#usage)
 
 ## Topics
@@ -36,8 +36,17 @@ $ ./helpers/vulndbToCsv.py
 Next copy this CSV file (either cfdb.csv or vulndb.csv) to [/data/cwe.csv](data/cwe.csv).
 
 <a name="upload"></a>
-### Upload
-To upload it to CouchDB go to your Faraday Server installation root directory and run:
+### Upload CSV file
+
+#### Manual Import
+
+Go to the **Web UI** and click on the **import** icon ![](https://raw.github.com/wiki/infobyte/faraday/images/faraday_vulntemplates_import_icon.png)
+
+A modal dialog will pop up asking you to choose a CSV file to upload, select it, click **ok** and you're done!
+
+#### Script
+
+To upload the CSV to CouchDB using the script go to your Faraday Server installation root directory and run:
 
 ```
 $ ./helpers/pushCwe.py
@@ -52,7 +61,7 @@ $ ./pushCwe.py -c 'http://USERNAME:PASSWORD@HOSTNAME:PORT/'
 Also, if you need add your own CSV file, put the CSV inside `$FARADAY/data/cwe.csv`. And run pushCWE. Make sure you run the `pushCwe.py` script before use and that's it!
 
 <a name="manually"></a>
-### Manually
+### Manually Adding Templates
 
 You can also create templates manually in the Web UI. Click on the **vulnerability templates** icon ![](https://raw.github.com/wiki/infobyte/faraday/images/faraday_vulntemplates_icon.png)
 
