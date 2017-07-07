@@ -1,6 +1,6 @@
 [- Commercial version -](https://www.faradaysec.com/#download)
 
-Faraday lets you send private instant messages through the Web Interface by clicking on the **Communication** icon ![](https://raw.github.com/wiki/infobyte/faraday/images/faraday_comm_icono.png)
+Faraday lets you send private instant messages through the **Web Interface** by clicking on the **Communication** icon ![](https://raw.github.com/wiki/infobyte/faraday/images/faraday_comm_icono.png)
 
 ![](https://raw.github.com/wiki/infobyte/faraday/images/faraday_comm_chat.png)
 
