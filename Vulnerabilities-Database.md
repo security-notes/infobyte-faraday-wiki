@@ -39,15 +39,17 @@ Next copy this CSV file (either cfdb.csv or vulndb.csv) to [/data/cwe.csv](data/
 ### Upload
 To upload it to CouchDB go to your Faraday Server installation root directory and run:
 
-    $ ./helpers/pushCwe.py
+```
+$ ./helpers/pushCwe.py
+```
 
-    Use the paramater `-c` if you have a username and password for Faraday.
+Use the paramater `-c` if you have a username and password for Faraday.
 
-        $ ./pushCwe.py -c 'http://USERNAME:PASSWORD@HOSTNAME:PORT/'
+```        
+$ ./pushCwe.py -c 'http://USERNAME:PASSWORD@HOSTNAME:PORT/'
+```
 
-        Also, if you need add your own CSV file, put the CSV inside `$FARADAY/data/cwe.csv`. And run pushCWE.py!
-
-        Make sure you run the `pushCwe.py` script before use and that's it!
+Also, if you need add your own CSV file, put the CSV inside `$FARADAY/data/cwe.csv`. And run pushCWE. Make sure you run the `pushCwe.py` script before use and that's it!
 
 <a name="manually"></a>
 ### Manually
