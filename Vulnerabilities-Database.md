@@ -7,12 +7,14 @@ Faraday Server comes with its own [CWE](https://cwe.mitre.org/) Vulnerabilities 
 
 ## Index
 
-* CSV
-* Manually adding templates
-* Usage
+* [CSV](#csv)
+* [Upload](#upload)
+* [Manually adding templates](#manually)
+* [Usage](#usage)
 
 ## Topics
 
+<a name="csv"></a>
 ### CSV
 
 Faraday ships with a **CSV of the original Mitre project** included in its tree in `data/cwe.csv`. However, we also ship two different scripts to generate CSVs for [**CFDB**](https://github.com/mubix/cfdb) and [**VulnDB**](https://github.com/vulndb/data). These scripts will download and parse the contents of those databases.
@@ -37,16 +39,28 @@ Next copy this CSV file (either cfdb.csv or vulndb.csv) to [/data/cwe.csv](data/
 ### Upload
 To upload it to CouchDB go to your Faraday Server installation root directory and run:
 
-    $ ./helpers/pushCwe.py
+```
+$ ./helpers/pushCwe.py
+```
 
-    Use the paramater `-c` if you have a username and password for Faraday.
+Use the paramater `-c` if you have a username and password for Faraday.
 
-        $ ./pushCwe.py -c 'http://USERNAME:PASSWORD@HOSTNAME:PORT/'
+```        
+$ ./pushCwe.py -c 'http://USERNAME:PASSWORD@HOSTNAME:PORT/'
+```
 
-        Also, if you need add your own CSV file, put the CSV inside `$FARADAY/data/cwe.csv`. And run pushCWE.py!
+Also, if you need add your own CSV file, put the CSV inside `$FARADAY/data/cwe.csv`. And run pushCWE. Make sure you run the `pushCwe.py` script before use and that's it!
 
-        Make sure you run the `pushCwe.py` script before use and that's it!
+<a name="manually"></a>
+### Manually
 
+You can also create templates manually in the Web UI. Click on the **vulnerability templates** icon ![](https://raw.github.com/wiki/infobyte/faraday/images/faraday_vulntemplates_icon.png)
+
+You will get a list of the existing templates in your installation
+
+![](https://raw.github.com/wiki/infobyte/faraday/images/faraday_vulntemplates_list.png)
+
+<a name="usage"></a>
 ### Usage
 
 Login to your Faraday Web UI and create or edit a vulnerability. A search field will allow you to find your templates, as shown in the picture below.
