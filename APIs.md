@@ -139,3 +139,146 @@ You can see the finished tool in $faraday/scripts/shodan_faraday.py
 This API server should be connected to zsh specifying the parameters where Faraday is listening on both host and REST port flags.
 
 In the future, this will allow developers to interact with the framework from external applications and not necessarily from plugins.
+
+### List of RESTful API endpoints
+
+#### POST /model/edit/vulns
+
+Edit a vulnerability
+
+##### Fields
+
+* name
+* desc
+* severity
+* resolution
+* refs
+
+#### DELETE /model/del/vulns
+
+Delete a vulnerability
+
+##### Fields
+
+* vulnid
+* hostid
+
+
+#### PUT /model/host
+
+Create a host
+
+##### Fields
+
+* name (required)
+* os
+
+
+#### GET /model/webvulns
+
+List web vulnerabilities
+
+#### PUT /model/interface
+
+Create an interface
+
+##### Fields
+
+* name (required)
+* mac
+* ipv6_address
+* ipv4_mask
+* ipv4_gateway
+* ipv4_dns
+* ipv6_address
+* ipv6_prefix
+* ipv6_gateway
+* ipv6_dns
+* network_segment
+* hostname_resolution
+* parent_id
+
+
+#### PUT/model/service
+
+Create a service
+
+##### Fields
+
+* name (required)
+* protocol
+* ports
+* status
+* version
+* description
+* parent_id
+
+
+#### PUT /model/vuln
+
+Create a vulnerability
+
+##### Fields
+
+* name (required)
+* desc
+* ref
+* severity
+* resolution
+* parent_id
+
+#### PUT /model/vulnweb
+
+Create a web vulnerability
+
+##### Fields
+
+* name (required)
+* desc
+* ref
+* severity
+* resolution
+* website
+* path
+* request
+* response
+* method
+* pname
+* params
+* query
+* category
+* parent_id
+
+#### PUT /model/note
+
+Create a note
+
+##### Fields
+
+* name (required)
+* text
+* parent_id
+
+
+#### PUT /model/cred
+
+Create a credential
+
+##### Fields
+
+* username
+* password
+* parent_id
+
+
+#### GET /status/check
+
+Check the status of the API. Example response:
+
+```json
+{
+    "code": 200,
+    "message": "Faraday API Status: OK"
+}
+```
+
