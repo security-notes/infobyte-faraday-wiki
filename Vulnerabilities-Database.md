@@ -1,45 +1,57 @@
+## Intro
 Find yourself writing the same descriptions over and over again? Tired of typos coming up in your reports? Faraday provides a simple solution; unify criteria for naming vulnerabilities and save time and effort to yourself and your team.
+
+> Write vulns once and use them forever!
 
 Faraday Server comes with its own [CWE](https://cwe.mitre.org/) Vulnerabilities DB for you to use. This is a simple **CSV** made using Open Source projects based in the **CWE standard** and allows you to create vulnerabilities without worrying about finding references, description, etc.
 
-Tired of reading documentation? We have a [video showing how to upload the DBs](https://www.youtube.com/watch?v=o5uSS6yzvCo).
+## Index
 
-### Creating a CSV to upload to CouchDB
+* CSV
+* Manually adding templates
+* Usage
 
-Faraday has a CSV of the original Mitre project included in its tree, [click here](#pushcwe) for instructions on how to upload it.
+## Topics
 
-To create a CSV with all information about a specific project, you need run a script to download and parse its content.
-Faraday have two scripts for two different projects. Here we show how to run them in order to download and store the CSV files.
+### CSV
 
-#### [CFDB](https://github.com/mubix/cfdb) ([cfdbToCsv.py](/helpers/cfdbToCsv.py)):
+Faraday ships with a **CSV of the original Mitre project** included in its tree in `data/cwe.csv`. However, we also ship two different scripts to generate CSVs for [**CFDB**](https://github.com/mubix/cfdb) and [**VulnDB**](https://github.com/vulndb/data). These scripts will download and parse the contents of those databases.
 
-    $ ./helpers/cfdbToCsv.py
+* CFDB
+Execute the following command to get a CSV for CFDB
 
-#### [VulnDb](https://github.com/vulndb/data) ([/helpers/vulndbToCsv.py](vulndbToCsv.py)):
+```
+$ ./helpers/cfdbToCsv.py
+```
 
-    $ ./helpers/vulndbToCsv.py
+* VulnDb
+Execute the following command to get a CSV for VulnDB
+
+```
+$ ./helpers/vulndbToCsv.py
+```
 
 Next copy this CSV file (either cfdb.csv or vulndb.csv) to [/data/cwe.csv](data/cwe.csv).
 
-<a name="pushcwe"></a>
+<a name="upload"></a>
+### Upload
 To upload it to CouchDB go to your Faraday Server installation root directory and run:
 
     $ ./helpers/pushCwe.py
 
-Use the paramater `-c` if you have a username and password for Faraday.
+    Use the paramater `-c` if you have a username and password for Faraday.
 
-    $ ./pushCwe.py -c 'http://USERNAME:PASSWORD@HOSTNAME:PORT/'
+        $ ./pushCwe.py -c 'http://USERNAME:PASSWORD@HOSTNAME:PORT/'
 
-Also, if you need add your own CSV file, put the CSV inside `$FARADAY/data/cwe.csv`. And run pushCWE.py!
+        Also, if you need add your own CSV file, put the CSV inside `$FARADAY/data/cwe.csv`. And run pushCWE.py!
 
-Make sure you run the `pushCwe.py` script before use and that's it!
+        Make sure you run the `pushCwe.py` script before use and that's it!
 
 ### Usage
 
-Login to your Faraday Web UI and create or edit a vulnerability, you can see now a field `CWE` like in the followig screenshot:
+Login to your Faraday Web UI and create or edit a vulnerability. A search field will allow you to find your templates, as shown in the picture below.
 
-![](https://raw.githubusercontent.com/wiki/infobyte/faraday/images/CweDb.png)
+![](https://raw.githubusercontent.com/wiki/infobyte/faraday/images/faraday_statusreport_vuln_creation_templates_list.png)
 
-Write the CWE name of this vulnerability and all the information will be automatically loaded!
+**Note:** Name, Description and Resolution fields are replaced with the information stored in the templates database.
 
-**Note:** Name, Description and Resolution fields are replaced with the information stored in the CWE database.
