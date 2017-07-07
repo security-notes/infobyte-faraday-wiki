@@ -44,10 +44,10 @@ From the service window, click New and fill out the form.
 
 From the service window, select the service and click **Edit**.
 
-![](https://raw.github.com/wiki/infobyte/faraday/images/faraday_hosts_edit.png)
+![](https://raw.github.com/wiki/infobyte/faraday/images/faraday_service_edit.png)
 
 ### Eliminating Service
 
 From the service window, select the service and click **Delete**.
 
-![](https://raw.github.com/wiki/infobyte/faraday/images/faraday_hosts_delete.png)
+![](https://raw.github.com/wiki/infobyte/faraday/images/faraday_service_delete.png)
