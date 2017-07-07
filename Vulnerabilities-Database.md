@@ -54,4 +54,3 @@ Login to your Faraday Web UI and create or edit a vulnerability. A search field 
 ![](https://raw.githubusercontent.com/wiki/infobyte/faraday/images/faraday_statusreport_vuln_creation_templates_list.png)
 
 **Note:** Name, Description and Resolution fields are replaced with the information stored in the templates database.
-

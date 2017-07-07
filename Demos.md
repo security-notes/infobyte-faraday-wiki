@@ -70,6 +70,10 @@ _Faraday using plugins:_
 
 [![ScreenShot](https://rawgithub.com/wiki/infobyte/faraday/images/newytlogo.png) -  Docker (WebUI / ZSH terminal)](http://bit.ly/2ca2NTw)
 
+[![ScreenShot](https://rawgithub.com/wiki/infobyte/faraday/images/newytlogo.png) - Faraday Plugin - Import pcap](http://bit.ly/2soJf8x)
+
+[![ScreenShot](https://rawgithub.com/wiki/infobyte/faraday/images/newytlogo.png) - Faraday Plugin - List all IPs](http://bit.ly/2rWT6kd)
+
 [![ScreenShot](https://rawgithub.com/wiki/infobyte/faraday/images/newytlogo.png) -  Goohost](http://bit.ly/2pt8lBA)
 
 [![ScreenShot](https://rawgithub.com/wiki/infobyte/faraday/images/newytlogo.png) -  hping3](http://bit.ly/2oEizu6)
@@ -79,6 +83,8 @@ _Faraday using plugins:_
 [![ScreenShot](https://rawgithub.com/wiki/infobyte/faraday/images/newytlogo.png) - Medusa](https://bit.ly/1nIlwIc)
 
 [![ScreenShot](https://rawgithub.com/wiki/infobyte/faraday/images/newytlogo.png) - Nessus](http://bit.ly/2paGG5i)
+
+[![ScreenShot](https://rawgithub.com/wiki/infobyte/faraday/images/newytlogo.png) - OpenVas](http://bit.ly/2sxhAl6)
 
 [![ScreenShot](https://rawgithub.com/wiki/infobyte/faraday/images/newytlogo.png) - Shodan](https://bit.ly/1BLkLkn)
 

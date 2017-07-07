@@ -4,7 +4,7 @@
 ### Faraday Server
 Faraday Server is the way to have a better synchronization between your Faraday Client session and CouchDB. The server's responsibility is to send and receive information from both the client and CouchDB, and make sure that they are both in sync. At the same time, it provides much better performance to the Web UI, allowing it to handle enormous workspaces without a problem.
 
-**NOTE:** You should keep in mind that the Faraday server must be installed on the same machine as CouchDB.
+**Important:** You should keep in mind that the Faraday server must be installed on the same machine as CouchDB.
 
 ## Downloading Faraday
 
