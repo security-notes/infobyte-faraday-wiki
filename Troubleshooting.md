@@ -20,6 +20,11 @@ Also, to get a better understanding of most problems you can run the Faraday Cli
 * [Faraday is not importing my report](#import)
 * [A plugin added too much information to my database](#remove-by-severity)
 * [I don't remember the Faraday Server password](#recover-password)
+* [Clients can't access the Faraday server](#faraday-server-access-problems)
+* [Error No such file or directory VERSION](#no-such-file-version)
+* [ERROR - [ERROR] XML Plugin: Ip of host unknown](#ip-of-host-unknown)
+* [OSError: [Errno 2] No such file or directory: './reports/executive/templates/'](#executive-report-error)
+* [ERROR - CouchDB is not running](#couchdb-is-not-running)
 
 Commercial versions
 * [I can't edit Workspaces in the web UI](#edit-workspaces-wui)
@@ -106,5 +111,138 @@ It is possible to restore the database's users using the following script:
 Make sure that the configuration file for the server contains the credentials for an **administrative user** in the ```user``` and ```password``` fields inside the ```[couchdb]``` section of the configuration file located in ```~/.faraday/config/server.ini```.
 
 [ [index] ](#index)
+
+<a name="faraday-server-access-problems"></a>
+## Clients can't access the Faraday server
+
+In your server machine, go to ~/.faraday/config/server.ini and check if you're listening only on the localhost.
+You should see something like this:
+
+```python
+[faraday_server]
+port=5985
+bind_address=localhost
+```
+
+If your clients are on different machines than the server, then you'll need to change the bind_address to your private IP (or all your interfaces). For example:
+
+```python
+bind_address=0.0.0.0
+```
+
+[Check the configuration server page for more information](https://github.com/infobyte/faraday/wiki/Configuration-Server)
+
+# Traceback Troubleshooting
+
+For traceback troubleshooting you need to open the faraday logs and search for the string *ERROR*.
+Logs are located on *~/.faraday/logs*.
+
+
+In this section we will show common errors and possible solutions. We recommend to search part of the error in this page and try to match the error with possible solutions.
+
+
+For example for the stack trace below you could try to search the following strings in this search:
+
+* IOError: [Errno 2] No such file or directory: 
+* server/modules/info.py", line 16, in show_info
+
+```python
+2017-07-07 15:57:26,333 - server.app - ERROR - Exception on /info [GET]
+Traceback (most recent call last):
+  File "/home/leonardo/.pyenv/versions/faraday/local/lib/python2.7/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/leonardo/.pyenv/versions/faraday/local/lib/python2.7/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/leonardo/.pyenv/versions/faraday/local/lib/python2.7/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/leonardo/.pyenv/versions/faraday/local/lib/python2.7/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/leonardo/.pyenv/versions/faraday/local/lib/python2.7/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/leonardo/workspace/faraday/server/modules/info.py", line 16, in show_info
+    with open(file_path, 'r') as version_file:
+IOError: [Errno 2] No such file or directory: '/home/leonardo/VERSION'
+```
+
+
+
+<a name="no-such-file-version"></a>
+## Solution to error No such file or directory VERSION
+
+This issue is common on version v2.4 and v2.5 and occurs when the faraday-server.py is executed outside the path where the faraday-server.py resides.
+To solve the issue it's required to execute the faraday-server.py in the directory where that file resides.
+After version v2.6 this issue was solved.
+
+To solve this issue execute *faraday-server.py* on the correct directory as shown below:
+```python
+cd /home/username/faraday # or where the faraday-server was installed(*)
+python faraday-server.py
+```
+
+(*) sometimes faraday server was installed in the /usr directory, check the traceback for the full path.
+
+The stack track trace is:
+
+```python
+2017-07-07 15:57:26,333 - server.app - ERROR - Exception on /info [GET]
+Traceback (most recent call last):
+  File "/home/leonardo/.pyenv/versions/faraday/local/lib/python2.7/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/leonardo/.pyenv/versions/faraday/local/lib/python2.7/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/leonardo/.pyenv/versions/faraday/local/lib/python2.7/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/leonardo/.pyenv/versions/faraday/local/lib/python2.7/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/leonardo/.pyenv/versions/faraday/local/lib/python2.7/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/leonardo/workspace/faraday/server/modules/info.py", line 16, in show_info
+    with open(file_path, 'r') as version_file:
+IOError: [Errno 2] No such file or directory: '/home/leonardo/VERSION'
+```
+
+<a name="ip-of-host-unknown"></a>
+## ERROR - [ERROR] XML Plugin: Ip of host unknown
+
+While importing reports faraday need to be able to resolve domain or else it will fail with the error *Ip of host unknown*.
+Make sure you can resolve the domain from the computer where faraday is being executed.
+
+<a name="executive-report-error"></a>
+## OSError: [Errno 2] No such file or directory: './reports/executive/templates/'
+
+When you click "New" on the executive report and the modal doest not appear, be sure to check the logs for errors.
+
+This happens when the faraday is executed outside the directory where it resides. This issue was solved on v2.6.
+
+
+To solve this issue execute *faraday-server.py* on the correct directory as shown below:
+```python
+cd /home/username/faraday # or where the faraday-server was installed
+python faraday-server.py
+```
+
+(*) sometimes faraday server was installed in the /usr directory, check the traceback for the full path.
+
+<a name="couchdb-is-not-running"></a>
+## ERROR - CouchDB is not running
+
+This error is common on first installation or when you change the listening interface.
+
+### Check Couchdb service is working
+
+First make sure that couchdb service is up and the server is configured correctly.
+Execute *service couchdb status* or *ps ax | grep couchdb* make sure the couchdb service is up.
+Another way to check couchdb is opening the couchdb utils,  with your browsers open the url *http://couchdb_ip:couchdb_port/_utils/* and you should see the couchdb utils page.
+
+### Check that Couchdb is properly configured
+
+If couchdb service is working check the server.ini file on *~/.faraday/config/server.ini*, for [more details on the server.ini read this page](https://github.com/infobyte/faraday/wiki/Configuration-Server).
+
+Error shown:
+``` python
+2017-07-07 16:16:59,001 - faraday-server.server.importer - ERROR - CouchDB is not running at http://localhost:5985. Check faraday-server's configuration and make sure CouchDB is running
+```
+
+
 
 Is your question not listed here? [Contact us](https://github.com/infobyte/faraday/issues)
