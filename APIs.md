@@ -134,7 +134,34 @@ Congratulations! 5 lines of code and you have Shodan plugin working on Faraday!
 You can see the finished tool in $faraday/scripts/shodan_faraday.py
 
 
-## RESTful API server
+## Server RESTful API
+This is used by the web and the client to connect to the server. It runs on http://localhost:5986 or whereever you configured Faraday server to listen.
+
+The following endoints are available:
+
+* GET /ws/**workspace**/hosts
+* GET /ws
+* GET /ws/**workspace**/summary
+* GET /ws/**workspace**
+* PUT /ws/**workspace**
+* DELETE /ws/**workspace**
+* GET /ws/**workspace**/services
+* GET /ws/**workspace**/services/count
+* GET /ws/**workspace**/vulns
+* GET /ws/**workspace**/vulns/count
+* GET /ws/**workspace**/notes
+* GET /ws/**workspace**/notes/count
+* GET /ws/**workspace**/interfaces
+* GET /ws/vulns/create_csv
+* GET /ws/**workspace**/commands
+* GET /ws/**workspace**/doc/**doc_id**
+* PUT /ws/**workspace**/doc/**doc_id**
+* DELETE /ws/**workspace**/doc/**doc_id**
+* GET /ws/**workspace**/credentials
+
+
+
+## Client RESTful API
 
 When you start the CLI or GTK client it also starts a local RESTful API listening on localhost (so other devices connected to your network won't be able to use it), on port 9978 by default. You can check it's running in the output of `./faraday.py` or in the logs:
 
