@@ -139,25 +139,24 @@ This is used by the web and the client to connect to the server. It runs on http
 
 The following endoints are available:
 
-* GET /ws/**workspace\_name**/hosts
+* GET /ws/**workspace\_name**/hosts: Lists the hosts of a workspace
 * GET /ws: List all workspaces
-* GET /ws/**workspace\_name**/summary
-* GET /ws/**workspace\_name**
-* PUT /ws/**workspace\_name**
-* DELETE /ws/**workspace\_name**
-* GET /ws/**workspace\_name**/services
-* GET /ws/**workspace\_name**/services/count
-* GET /ws/**workspace\_name**/vulns
-* GET /ws/**workspace\_name**/vulns/count
-* GET /ws/**workspace\_name**/notes
-* GET /ws/**workspace\_name**/notes/count
-* GET /ws/**workspace\_name**/interfaces
-* GET /ws/vulns/create\_csv
-* GET /ws/**workspace\_name**/commands
-* GET /ws/**workspace\_name**/doc/**doc\_id**
-* PUT /ws/**workspace\_name**/doc/**doc\_id**
-* DELETE /ws/**workspace\_name**/doc/**doc\_id**
-* GET /ws/**workspace\_name**/credentials
+* GET /ws/**workspace\_name**/summary: Get stats of a workspace (count of vulns, services, etc)
+* GET /ws/**workspace\_name**: Get workspace details
+* PUT /ws/**workspace\_name**: Create a workspace
+* DELETE /ws/**workspace\_name**: Delete a workspace
+* GET /ws/**workspace\_name**/services: List workspace's services
+* GET /ws/**workspace\_name**/services/count: Count workspace's services
+* GET /ws/**workspace\_name**/vulns: List workspace's vulns
+* GET /ws/**workspace\_name**/vulns/count: Count workspace's vulns
+* GET /ws/**workspace\_name**/notes: List workspace's notes
+* GET /ws/**workspace\_name**/notes/count: Count workspace's notes
+* GET /ws/**workspace\_name**/interfaces: List workspace's interfaces
+* GET /ws/**workspace\_name**/commands: List workspace's commands
+* GET /ws/**workspace\_name**/credentials: List workspace's credentials
+* GET /ws/**workspace\_name**/doc/**doc\_id**: Get a generic object
+* PUT /ws/**workspace\_name**/doc/**doc\_id**: Update or create a generic object
+* DELETE /ws/**workspace\_name**/doc/**doc\_id**: Delete a generic object
 
 
 
