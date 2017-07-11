@@ -139,25 +139,25 @@ This is used by the web and the client to connect to the server. It runs on http
 
 The following endoints are available:
 
-* GET /ws/**workspace**/hosts
-* GET /ws
-* GET /ws/**workspace**/summary
-* GET /ws/**workspace**
-* PUT /ws/**workspace**
-* DELETE /ws/**workspace**
-* GET /ws/**workspace**/services
-* GET /ws/**workspace**/services/count
-* GET /ws/**workspace**/vulns
-* GET /ws/**workspace**/vulns/count
-* GET /ws/**workspace**/notes
-* GET /ws/**workspace**/notes/count
-* GET /ws/**workspace**/interfaces
-* GET /ws/vulns/create_csv
-* GET /ws/**workspace**/commands
-* GET /ws/**workspace**/doc/**doc_id**
-* PUT /ws/**workspace**/doc/**doc_id**
-* DELETE /ws/**workspace**/doc/**doc_id**
-* GET /ws/**workspace**/credentials
+* GET /ws/**workspace\_name**/hosts
+* GET /ws: List all workspaces
+* GET /ws/**workspace\_name**/summary
+* GET /ws/**workspace\_name**
+* PUT /ws/**workspace\_name**
+* DELETE /ws/**workspace\_name**
+* GET /ws/**workspace\_name**/services
+* GET /ws/**workspace\_name**/services/count
+* GET /ws/**workspace\_name**/vulns
+* GET /ws/**workspace\_name**/vulns/count
+* GET /ws/**workspace\_name**/notes
+* GET /ws/**workspace\_name**/notes/count
+* GET /ws/**workspace\_name**/interfaces
+* GET /ws/vulns/create\_csv
+* GET /ws/**workspace\_name**/commands
+* GET /ws/**workspace\_name**/doc/**doc\_id**
+* PUT /ws/**workspace\_name**/doc/**doc\_id**
+* DELETE /ws/**workspace\_name**/doc/**doc\_id**
+* GET /ws/**workspace\_name**/credentials
 
 
 
