@@ -7,6 +7,7 @@
 * [Which platforms are supported?](#supported-platforms)
 * [I purchased a License, now what?](#after-purchase)
 * [Can I keep using the Kali version with my newly bought pro/corp license?](#upgrade-kali)
+* [Can I install the Server and/or Client in my own box instead of using a Virtual Machine?](#native-install)
 * [What version am I using!?](#faraday-version)
 * [How do I configure my own Vulnerabilities Database?](#vulns-db)
 * [What if I want to add a Vulnerability manually?](#adding-manually)
@@ -64,6 +65,17 @@ You will receive an email with a link to download two tarballs. One will be your
 In a nutshell, yes. Even though the Kali Faraday version is incompatible with both the **pro** and **corp** licenses, you can upgrade the platform in the same box without losing all your data.
 
 Follow the [commercial update instructions](https://github.com/infobyte/faraday/wiki/Updates#commercial-version-update) to upgrade.
+
+[ [index] ](#index)
+
+<a name="native-install"></a>
+### Can I do an installation of the Server and/or Client in my native OS or is the VM the only available option?
+
+The **only** intended purpose for the **Faraday VM** is as a commercial demo.
+
+For production environments we recommend doing a fresh install in a Ubuntu Server and do not recommend using that Virtual Machine.
+
+If the use of a Virtualized environment is a must-have, then we recommend doing a proper install in a fresh Virtual Machine following the regular installation steps.
 
 [ [index] ](#index)
 
