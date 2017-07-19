@@ -26,7 +26,7 @@
   * [[OSINT provider]]
   * [[Proxy]]
   * [[Scripts]]
-  * [[Tag-Usage]]
+  * [[Tag Use]]
   * [[Workspace-Diff]]
   * [[Workspace replication]]
 * [Demos / Videos](https://github.com/infobyte/faraday/wiki/Demos)
