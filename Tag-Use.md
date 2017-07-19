@@ -26,4 +26,5 @@ Create the tag that you want (in our case SSL) and click OK
 
 From the Status Report you will be able to find the information using the `tags` parameter. For example: "tags:ssl" as shown in the image below.
 
+
 ![](https://raw.github.com/wiki/infobyte/faraday/images/faraday_statusreport_tagssearch.png)
