@@ -82,7 +82,7 @@ You can also duplicate vulnerabilities easily by saving them as a template.
 
 and later on importing the template:
 
-![](https://raw.github.com/wiki/infobyte/faraday/images/faraday_vulntemplates_import.gif)
+![](https://raw.github.com/wiki/infobyte/faraday/images/faraday_vulntemplates_import.png)
 
 
 
