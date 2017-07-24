@@ -76,4 +76,15 @@ Login to your Faraday Web UI and create or edit a vulnerability. A search field 
 
 ![](https://raw.githubusercontent.com/wiki/infobyte/faraday/images/faraday_statusreport_vuln_creation_templates_list.png)
 
+You can also duplicate vulnerabilities easily by saving them as a template.
+
+![](https://raw.github.com/wiki/infobyte/faraday/images/faraday_vulntemplates_create.png)
+
+and later on importing the template:
+
+![](https://raw.github.com/wiki/infobyte/faraday/images/faraday_vulntemplates_import.gif)
+
+
+
+
 **Note:** Name, Description and Resolution fields are replaced with the information stored in the templates database.
