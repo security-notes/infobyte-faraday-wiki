@@ -25,6 +25,8 @@ After updating the server, run ```./faraday.py --update``` to update the client.
 
 1. Run ```./setup-server.pyc``` to make sure all dependencies are met.
 
+1. Run ```pip install -r requirements.txt -U``` in the client box and ```pip install -r requirements_server.txt -U``` in the server to update the Python Dependencies.
+
 1. Run the server using ```./faraday-server.pyc ```.
 
 1. Run the client using ```./faraday.pyc --update --login```.
