@@ -97,6 +97,12 @@ Depending on whether it's the first time running it, if you are using the commun
 
 For example, if you are running the commercial version for the first time, you will be asked to create an admin user, and to set up a backup cron job.
 
+If you want to run the server in background mode, you should use the `--start` option:
+
+    $ python2 faraday-server.pyc --start
+
+This is the recommended way to do this. Other methods like using the bash `&` could cause unexpected IOErrors and other related exceptions.
+
 ## Web UI
 
 Once the server is running, you can access Faraday's Web UI using any browser: just point it to `http://SERVER_IP:SERVER_PORT/_ui` and you can start playing with Faraday.
