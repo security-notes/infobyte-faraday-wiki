@@ -8,7 +8,7 @@ and one API on the Server:
 ## Configuration
 
 You can configure both ports and the IP address binded to them. 
-As you will see, right now the only way to configure the RESTful server is by hand (information below). This will be changed in the future.
+As you will see, right now the only way to configure the RESTful GTK API is by hand (information below). This will be changed in the future.
 
 Via the CLI, part of the current help shows us how to do it:
 ```
@@ -39,8 +39,8 @@ Let's see an example. By default you have something like this (trimming to only 
 ```
 <faraday>
   <api_con_info_host>127.0.0.1</api_con_info_host>
-  <api_con_info_port>9876</api_con_info_port>
-  <api_restful_con_info_port>9977</api_restful_con_info_port>
+  <api_con_info_port>9884</api_con_info_port>
+  <api_restful_con_info_port>9984</api_restful_con_info_port>
   <appname>Faraday - Penetration Test IDE Community</appname>
 ...
 ```
@@ -49,8 +49,8 @@ So if you want to bind the ip address to 0.0.0.0 and change the rest api to 8080
 ```
 <faraday>
   <api_con_info_host>0.0.0.0</api_con_info_host>
-  <api_con_info_port>9876</api_con_info_port>
-  <api_restful_con_info_port>8080</api_restful_con_info_port>
+  <api_con_info_port>9884</api_con_info_port>
+  <api_restful_con_info_port>9984</api_restful_con_info_port>
   <appname>Faraday - Penetration Test IDE Community</appname>
 ...
 ```
@@ -62,14 +62,14 @@ If you want to return to the default configuration you may delete the 3 lines sh
 ```
 <faraday>
   <api_con_info_host>127.0.0.1</api_con_info_host>
-  <api_con_info_port>9876</api_con_info_port>
-  <api_restful_con_info_port>9977</api_restful_con_info_port>
+  <api_con_info_port>9884</api_con_info_port>
+  <api_restful_con_info_port>9984</api_restful_con_info_port>
 ...
 ```
 Faraday will detect that some of the configuration is missing and will use the default values specified by the launcher.
 
-## RPC Server
-The **RPC server** can be used by others tools to incorporate information directly into the database.
+## Client RPC API
+The **RPC service** can be used by others tools to incorporate information directly into the database.
 
 Let's see the following example to develop a Shodan tool with Faraday.  
 For this we are using Shodan's example code: https://shodan.readthedocs.org/
@@ -136,38 +136,11 @@ except Exception, e:
 Congratulations! 5 lines of code and you have Shodan plugin working on Faraday!  
 You can see the finished tool in $faraday/scripts/shodan_faraday.py
 
-
-## Server RESTful API
-This is used by the web and the client to connect to the server. It runs on http://localhost:5985 or wherever you configured Faraday server to listen.
-
-The following endpoints are available:
-
-* GET /_api/ws/**workspace\_name**/hosts: Lists the hosts of a workspace
-* GET /ws: List all workspaces
-* GET /_api/ws/**workspace\_name**/summary: Get stats of a workspace (count of vulns, services, etc)
-* GET /_api/ws/**workspace\_name**: Get workspace details
-* PUT /_api/ws/**workspace\_name**: Create a workspace
-* DELETE /_api/ws/**workspace\_name**: Delete a workspace
-* GET /_api/ws/**workspace\_name**/services: List workspace's services
-* GET /_api/ws/**workspace\_name**/services/count: Count workspace's services
-* GET /_api/ws/**workspace\_name**/vulns: List workspace's vulns
-* GET /_api/ws/**workspace\_name**/vulns/count: Count workspace's vulns
-* GET /ws/**workspace\_name**/notes: List workspace's notes
-* GET /ws/**workspace\_name**/notes/count: Count workspace's notes
-* GET /_api/ws/**workspace\_name**/interfaces: List workspace's interfaces
-* GET /_api/ws/**workspace\_name**/commands: List workspace's commands
-* GET /_api/ws/**workspace\_name**/credentials: List workspace's credentials
-* GET /_api/ws/**workspace\_name**/doc/**doc\_id**: Get a generic object
-* PUT /_api/ws/**workspace\_name**/doc/**doc\_id**: Update or create a generic object
-* DELETE /ws/**workspace\_name**/doc/**doc\_id**: Delete a generic object
-
-
-
 ## Client RESTful API
 
-When you start the CLI or GTK client it also starts a local RESTful API listening on localhost (so other devices connected to your network won't be able to use it), on port 9978 by default. You can check it's running in the output of `./faraday.py` or in the logs:
+When you start the CLI or GTK client it also starts a local RESTful API listening on localhost (so other devices connected to your network won't be able to use it), on port 9984 by default. You can check it's running in the output of `./faraday.py` or in the logs:
 
-`2017-07-07 17:41:47,541 - faraday - INFO - REST API server configured on ('localhost', 9978)`
+`2017-07-07 17:41:47,541 - faraday - INFO - REST API server configured on ('localhost',9984)`
 
 In the future, this will allow developers to interact with the framework from external applications and not necessarily from plugins.
 
