@@ -1,7 +1,9 @@
-Faraday has 2 API servers:
-- An **RPC API Server** by default running on 127.0.0.1:9876
-- and a **RESTful API Server** by default running on 127.0.0.1:9977.
-
+## Faraday's APIs
+Faraday has 2 APIs on the Client:
+- An **RPC GTK API Service** by default running on 127.0.0.1:9884.
+- and a **RESTful GTK API Service** by default running on 127.0.0.1:9884.
+and one API on the Server:
+ - 
 ## Configuration
 
 You can configure both ports and the IP address binded to them. 
@@ -135,7 +137,7 @@ You can see the finished tool in $faraday/scripts/shodan_faraday.py
 
 
 ## Server RESTful API
-This is used by the web and the client to connect to the server. It runs on http://localhost:5986 or whereever you configured Faraday server to listen.
+This is used by the web and the client to connect to the server. It runs on http://localhost:5986 or wherever you configured Faraday server to listen.
 
 The following endpoints are available:
 
