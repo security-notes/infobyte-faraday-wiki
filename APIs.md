@@ -139,23 +139,23 @@ This is used by the web and the client to connect to the server. It runs on http
 
 The following endpoints are available:
 
-* GET /ws/**workspace\_name**/hosts: Lists the hosts of a workspace
-* GET /ws: List all workspaces
-* GET /ws/**workspace\_name**/summary: Get stats of a workspace (count of vulns, services, etc)
-* GET /ws/**workspace\_name**: Get workspace details
-* PUT /ws/**workspace\_name**: Create a workspace
-* DELETE /ws/**workspace\_name**: Delete a workspace
-* GET /ws/**workspace\_name**/services: List workspace's services
-* GET /ws/**workspace\_name**/services/count: Count workspace's services
-* GET /ws/**workspace\_name**/vulns: List workspace's vulns
-* GET /ws/**workspace\_name**/vulns/count: Count workspace's vulns
-* GET /ws/**workspace\_name**/notes: List workspace's notes
-* GET /ws/**workspace\_name**/notes/count: Count workspace's notes
-* GET /ws/**workspace\_name**/interfaces: List workspace's interfaces
-* GET /ws/**workspace\_name**/commands: List workspace's commands
-* GET /ws/**workspace\_name**/credentials: List workspace's credentials
-* GET /ws/**workspace\_name**/doc/**doc\_id**: Get a generic object
-* PUT /ws/**workspace\_name**/doc/**doc\_id**: Update or create a generic object
+* GET /_api/ws/**workspace\_name**/hosts: Lists the hosts of a workspace
+* GET /_api/ws: List all workspaces
+* GET /_api/ws/**workspace\_name**/summary: Get stats of a workspace (count of vulns, services, etc)
+* GET /_api/ws/**workspace\_name**: Get workspace details
+* PUT /_api/ws/**workspace\_name**: Create a workspace
+* DELETE /_api/ws/**workspace\_name**: Delete a workspace
+* GET /_api/ws/**workspace\_name**/services: List workspace's services
+* GET /_api/ws/**workspace\_name**/services/count: Count workspace's services
+* GET /_api/ws/**workspace\_name**/vulns: List workspace's vulns
+* GET /_api/ws/**workspace\_name**/vulns/count: Count workspace's vulns
+* GET /_api/ws/**workspace\_name**/notes: List workspace's notes
+* GET /_api/ws/**workspace\_name**/notes/count: Count workspace's notes
+* GET /_api/ws/**workspace\_name**/interfaces: List workspace's interfaces
+* GET /_api/ws/**workspace\_name**/commands: List workspace's commands
+* GET /_api/ws/**workspace\_name**/credentials: List workspace's credentials
+* GET /_api/ws/**workspace\_name**/doc/**doc\_id**: Get a generic object
+* PUT /_api/ws/**workspace\_name**/doc/**doc\_id**: Update or create a generic object
 * DELETE /ws/**workspace\_name**/doc/**doc\_id**: Delete a generic object
 
 
