@@ -2,6 +2,7 @@
 Faraday has 2 APIs on the Client:
 - An **RPC GTK API Service** by default running on 127.0.0.1:9884.
 - and a **RESTful GTK API Service** by default running on 127.0.0.1:9984.
+
 and one API on the Server:
 -  A **Server RESTful API** by default running on 127.0.0.1:5985
 ## Configuration
