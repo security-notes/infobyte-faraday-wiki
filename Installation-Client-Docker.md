@@ -20,7 +20,7 @@ For the purpose of this guide lets use `192.168.0.10`.
 
 ##### Web UI
 
-Direct the browser to `http://192.168.0.10:5984/_ui/`
+Direct the browser to `http://192.168.0.10:5985/_ui/`
 
 ##### ZSH
 
