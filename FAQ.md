@@ -151,5 +151,5 @@ Restart Faraday Server if you had it running. That's it!
 Read more about [configuring the Server](https://github.com/infobyte/faraday/wiki/configuration-server).
 
 [ [index] ](#index)  
-     
 
+Is your question not listed here? [Contact us](https://github.com/infobyte/faraday/issues)
