@@ -1,5 +1,3 @@
-## Docker
-
 Docker is great if you want to give Faraday a try without actually installing it. In this guide you will find all you need to run Faraday in a Docker container.
 
 If you already tried Faraday and you are ready to use it for real we strongly recommend that you install it in your host OS.
