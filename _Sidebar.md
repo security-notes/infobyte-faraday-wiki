@@ -1,11 +1,10 @@
 * [About](https://github.com/infobyte/faraday/wiki)
 * [[First steps]]
-  * [Installation - Server](https://github.com/infobyte/faraday/wiki/installation-server)
-  * [Installation - Client](https://github.com/infobyte/faraday/wiki/installation-client)
-  * [Installation - Ubuntu](https://github.com/infobyte/faraday/wiki/installation-debian)
-  * [Installation - OS X](https://github.com/infobyte/faraday/wiki/Installation-Client-OSX)
-  * [Configuration - Server](https://github.com/infobyte/faraday/wiki/configuration-server)
-  * [Configuration - Client](https://github.com/infobyte/faraday/wiki/configuration-client)
+  * [Installation - Community](https://github.com/infobyte/faraday/wiki/installation-community)
+  * [Installation - Professional](https://github.com/infobyte/faraday/wiki/installation-pro)
+  * [Installation - Corporate](https://github.com/infobyte/faraday/wiki/installation-corp)
+  * [Installation - OS X](https://github.com/infobyte/faraday/wiki/Installation-OSX)
+  * [Installation - Docker](https://github.com/infobyte/faraday/wiki/installation-docker)
   * [Using SSL](https://github.com/infobyte/faraday/wiki/SSL)
   * [[Vulnerabilities Database]]
 * [[Updates]]
