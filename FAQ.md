@@ -15,7 +15,6 @@
 * [How do I configure my own Vulnerabilities Database?](#vulns-db)
 * [What if I want to add a Vulnerability manually?](#adding-manually)
 * [How do I bind Faraday to 0.0.0.0?](#0.0.0.0)
-* [Something isn’t working. What do I do?](#ticket)
 
      
 **Is your question not listed here? [Contact us](https://github.com/infobyte/faraday/issues)**
@@ -151,16 +150,6 @@ Restart Faraday Server if you had it running. That's it!
 
 Read more about [configuring the Server](https://github.com/infobyte/faraday/wiki/configuration-server).
 
-[ [index] ](#index)
-
-<a name="ticket"></a>
-### Something isn’t working. What do I do?
-
-Please run ./faraday-server.py --debug (for the server) or ./faraday.py --debug (for GTK) and send the logs/reports/ screenshots via our [Assembla page](https://www.assembla.com/spaces/faraday/) and we will try to help.
-
-Logs are located in ($HOME/.faraday/logs/*)
-
-
-[ [index] ](#index)   
+[ [index] ](#index)  
      
 
