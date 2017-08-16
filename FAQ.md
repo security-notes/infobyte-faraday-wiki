@@ -88,6 +88,8 @@ If instead of installing you want to take a quick look at Faraday you can also u
 ### I purchased a License, now what?
 You will receive an email with a link to download two tarballs. One will be your Faraday License and the other the version you selected. Uncompress both and place the contents of the license tar inside **$FARADAY/doc/**. 
 
+Read more on how to install - [Pro Installation](https://github.com/infobyte/faraday/wiki/installation-pro) and [Corp Installation](https://github.com/infobyte/faraday/wiki/installation-corp).
+
 [ [index] ](#index)
 
 <a name="upgrade-kali"></a>

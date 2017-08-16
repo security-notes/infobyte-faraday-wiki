@@ -37,6 +37,22 @@ Remember never to run brew as root.
 
 More info about [Python in OSX](http://docs.python-guide.org/en/latest/starting/install/osx/).
 
+*Important* Make sure that you are using the python interpreter that brew installed and not the one shipped with the OS.
+To know which python you are using execute:
+
+    $ which python
+
+it should return:
+
+    $ /usr/local/bin/python
+
+If this is not the case you can change the PATH to use the /usr/local/bin:
+
+    $ ln -s /usr/local/bin/python2 /usr/local/bin/python
+
+If you want to revert this change just delete the link executed in the previous command.
+
+
 ### Git
 
 We need Git in order to get Faraday from Github. Run:
