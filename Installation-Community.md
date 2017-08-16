@@ -12,6 +12,9 @@ Faraday Server is the way to have a better synchronization between your Faraday 
 
 **Important:** You should keep in mind that the Faraday server must be installed on the same machine as CouchDB. Also make sure to use version 1.6, as Faraday doesn't support CouchDB version 2.0.
 
+Due to the new version of Erlang, in debian based systems like Kali linux(and potentially others) Couchdb 1.6 is not working.
+We recommend use Couchdb in docker, we are working in migrate to another database engine for fix that problem.
+
 #### Downloading
 
 Download the [latest tarball](https://github.com/infobyte/faraday/tarball/master) or clone the [Faraday Git Project](https://github.com/infobyte/faraday) repository:
