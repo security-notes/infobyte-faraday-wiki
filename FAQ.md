@@ -62,7 +62,7 @@ Full plugin list: https://github.com/infobyte/faraday/wiki/PluginList
 
 <a name="supported-platforms"></a>
 ### Which platforms are supported?
-ArchAssault, Archlinux, Debian, Kali, OSX, Ubuntu. You can find a detailed explanation [here](https://github.com/infobyte/faraday/wiki/installation-client).
+ArchAssault, Archlinux, Debian, Kali, OSX, Ubuntu. You can find a detailed explanation [here](https://github.com/infobyte/faraday/wiki/installation-community).
 
 [ [index] ](#index)
 
@@ -80,7 +80,7 @@ Memory: 2 GB RAM (4 GB RAM recommended)
 
 Current tests include ​Debian​, ​Ubuntu​, ​Kali​, ​Backtrack​ and ​OSX Maverick 10.9.2​.
 
-If instead of installing you want to take a quick look at Faraday you can also use [​Docker](https://github.com/infobyte/faraday/wiki/installation-client-docker)​.
+If instead of installing you want to take a quick look at Faraday you can also use [​Docker](https://github.com/infobyte/faraday/wiki/installation-docker)​.
 
 [ [index] ](#index)
 
