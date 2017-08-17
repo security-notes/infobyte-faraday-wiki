@@ -11,5 +11,6 @@ couchdb pull couchdb:1.6
 In order to persist data two directories must be created before running the container, one for the config files and one for the data. Make sure these two dirs exist before firing up the image like so
 
 ```
-docker run -v /path/to/couchdb/conf:/usr/local/etc/couchdb/local.d -v /path/to/couchdb/data:/usr/local/var/lib/couchdb -p 5984:5984 -d couchdb
+docker run -v /path/to/couchdb/conf:/usr/local/etc/couchdb/local.d \
+    -v /path/to/couchdb/data:/usr/local/var/lib/couchdb -p 5984:5984 -d couchdb
 ```
