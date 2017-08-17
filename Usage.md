@@ -12,7 +12,7 @@ Faraday has 5 different ways to interact with the information:
 
 GTK+3 is designed to improve on the QT deprecated interface, so nothing should look out of place if you were already using Faraday. If you weren't, don't worry, it's pretty simple. 
 
-To try it, just [[install the dependencies|installation-client#requirements]] and run Faraday using the command `python2 faraday.py`.
+To try it, check out our [installation manual](https://github.com/infobyte/faraday/wiki/installation-community).
 
 #### The main window
 
@@ -244,7 +244,7 @@ NOTE: the workspace has to exist for this to work.
 
 #### Professional and corporate versions
 
-If you're using a professional or corporate version, you'll probably need to start faraday with a certain user, with permissions in that workspace. You can pass your credentials using a simple json file with both user and password. You can use any path and name for the file, and you have a template you can change or copy in the root of your Faraday installation called  credentials.json. The structure is this:
+If you're using a professional or corporate version, you'll probably need to start faraday with a certain user, with permissions in that workspace. You can pass your credentials using a simple json file with both user and password. You can use any path and name for the file, and you have a template you can change or copy in the root of your Faraday installation called  `credentials.json`. The structure is this:
 
 ```
 {
