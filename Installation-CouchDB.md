@@ -22,7 +22,8 @@ $ mkdir -p /path/to/couchdb/data
 Make sure these two dirs exist before firing up the image like so
 
 ```
-docker run -v /path/to/couchdb/conf:/usr/local/etc/couchdb/local.d \
+docker run --name couchdb_faraday \ 
+    -v /path/to/couchdb/conf:/usr/local/etc/couchdb/local.d \
     -v /path/to/couchdb/data:/usr/local/var/lib/couchdb \
-    -p 5984:5984 -d couchdb_faraday
+    -p 5984:5984 -d couchdb:1.6
 ```
