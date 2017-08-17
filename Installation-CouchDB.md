@@ -12,7 +12,7 @@ To get the version compatible with Faraday run
 $ docker pull couchdb:1.6
 ```
 
-In order to persist data two directories must be created before running the container, one for the config files and one for the data. 
+In order to persist data, two directories must be created before running the container, one for the config files and one for the data. 
 
 For example
 
