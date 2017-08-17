@@ -5,10 +5,19 @@ The official CouchDB image can be found here: https://hub.docker.com/_/couchdb/
 To get the version compatible with Faraday run
 
 ```
-couchdb pull couchdb:1.6
+$ couchdb pull couchdb:1.6
 ```
 
-In order to persist data two directories must be created before running the container, one for the config files and one for the data. Make sure these two dirs exist before firing up the image like so
+In order to persist data two directories must be created before running the container, one for the config files and one for the data. 
+
+For example
+
+```
+$ mkdir -p /path/to/couchdb/conf
+$ mkdir -p /path/to/couchdb/data
+```
+
+Make sure these two dirs exist before firing up the image like so
 
 ```
 docker run -v /path/to/couchdb/conf:/usr/local/etc/couchdb/local.d \
