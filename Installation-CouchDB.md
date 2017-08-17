@@ -12,5 +12,5 @@ In order to persist data two directories must be created before running the cont
 
 ```
 docker run -v /path/to/couchdb/conf:/usr/local/etc/couchdb/local.d \
-    -v /path/to/couchdb/data:/usr/local/var/lib/couchdb -p 5984:5984 -d couchdb
+    -v /path/to/couchdb/data:/usr/local/var/lib/couchdb -p 5984:5984 -d couchdb_faraday
 ```
