@@ -45,4 +45,5 @@
 * [[Faraday Awards]]
 * [[FAQ]]
 * [[Troubleshooting]]
+* [[Security]]
 * [[Contact us]]
