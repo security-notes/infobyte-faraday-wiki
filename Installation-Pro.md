@@ -255,7 +255,7 @@ $ sudo apt-get install libpq-dev python-pip python-dev gir1.2-gtk-3.0 gir1.2-vte
 <a name="client-kali"></a>
 ##### Kali
 
-Faraday comes pre-installed in Kali Rolling. However, that version is **incompatible** with the **Pro License**. Follow the [Debian install steps](#debian) to install.
+Faraday comes pre-installed in Kali Rolling. However, that version is **incompatible** with the **Pro License**. Follow the [Debian install steps](#debian-and-derivates) to install.
 
 ##### ArchLinux
 
