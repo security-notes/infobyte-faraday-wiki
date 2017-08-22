@@ -3,6 +3,7 @@
   * [Installation - Community](https://github.com/infobyte/faraday/wiki/installation-community)
   * [Installation - Professional](https://github.com/infobyte/faraday/wiki/installation-pro)
   * [Installation - Corporate](https://github.com/infobyte/faraday/wiki/installation-corp)
+  * [Installation - CouchDB](https://github.com/infobyte/faraday/wiki/installation-couchdb)
   * [Installation - OS X](https://github.com/infobyte/faraday/wiki/Installation-OSX)
   * [Installation - Docker](https://github.com/infobyte/faraday/wiki/installation-docker)
   * [Using SSL](https://github.com/infobyte/faraday/wiki/SSL)
