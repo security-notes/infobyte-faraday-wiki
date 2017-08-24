@@ -8,6 +8,10 @@ You can view all our videos on the following [Youtube Playlist ![](https://rawgi
 [![ScreenShot](https://rawgithub.com/wiki/infobyte/faraday/images/newytlogo.png) - Paul's Security Weekly 2016 - ](http://bit.ly/2bfkuii) We presented Faraday at Paul's Security Weekly!   
   
   
+### _Webinar - 2017:_   
+[![ScreenShot](https://rawgithub.com/wiki/infobyte/faraday/images/newytlogo.png)](http://bit.ly/2wIUda3) In this workshop we will be giving a brief demonstration of Faraday and we will be going over how to leverage new features (v 2.5.0)  
+  
+  
 ### _Webinar - 2016:_   
 [![ScreenShot](https://rawgithub.com/wiki/infobyte/faraday/images/newytlogo.png) - English Version - ](http://bit.ly/2bgxL9Q) In this workshop we will be giving a brief demonstration of Faraday and we will be going over how to leverage new features.  
   
@@ -64,6 +68,8 @@ _Faraday using plugins:_
 
 [![ScreenShot](https://rawgithub.com/wiki/infobyte/faraday/images/newytlogo.png) -  DIG ](http://bit.ly/2ptuLmn)
 
+[![ScreenShot](https://rawgithub.com/wiki/infobyte/faraday/images/newytlogo.png) - Dnsenum ](http://bit.ly/2w1oMqN)
+
 [![ScreenShot](https://rawgithub.com/wiki/infobyte/faraday/images/newytlogo.png) - Dnsrecon ](https://bit.ly/2gwzpaY)
 
 [![ScreenShot](https://rawgithub.com/wiki/infobyte/faraday/images/newytlogo.png) -  Docker (GUI / WebUI)](http://bit.ly/2ceE8eO)
@@ -77,6 +83,8 @@ _Faraday using plugins:_
 [![ScreenShot](https://rawgithub.com/wiki/infobyte/faraday/images/newytlogo.png) -  Goohost](http://bit.ly/2pt8lBA)
 
 [![ScreenShot](https://rawgithub.com/wiki/infobyte/faraday/images/newytlogo.png) -  hping3](http://bit.ly/2oEizu6)
+
+[![ScreenShot](https://rawgithub.com/wiki/infobyte/faraday/images/newytlogo.png) -  Hydra](http://bit.ly/2vsnYrj)
 
 [![ScreenShot](https://rawgithub.com/wiki/infobyte/faraday/images/newytlogo.png) - Maltego](https://bit.ly/1nwQ8gP)
 
