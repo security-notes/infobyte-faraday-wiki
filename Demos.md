@@ -9,7 +9,7 @@ You can view all our videos on the following [Youtube Playlist ![](https://rawgi
   
   
 ### _Webinar - 2017:_   
-[![ScreenShot](https://rawgithub.com/wiki/infobyte/faraday/images/newytlogo.png)](http://bit.ly/2wIUda3) In this workshop we will be giving a brief demonstration of Faraday and we will be going over how to leverage new features (v 2.5.0)  
+[![ScreenShot](https://rawgithub.com/wiki/infobyte/faraday/images/newytlogo.png) - English Version - ](http://bit.ly/2wIUda3) In this workshop we will be giving a brief demonstration of Faraday and we will be going over how to leverage new features (v 2.5.0)  
   
   
 ### _Webinar - 2016:_   
