@@ -150,7 +150,7 @@ Just go to ```~/.faraday/config/server.ini``` and inside the ```[faraday-server]
 
 Restart Faraday Server if you had it running. That's it!
 
-Read more about [configuring the Server](https://github.com/infobyte/faraday/wiki/configuration-server).
+Read more about [configuring the Community Server](https://github.com/infobyte/faraday/wiki/installation-community#configuration).
 
 [ [index] ](#index)  
 
