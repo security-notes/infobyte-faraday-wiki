@@ -1,21 +1,21 @@
 * [About](https://github.com/infobyte/faraday/wiki)
 * [[First steps]]
-  * [Installation - Community](https://github.com/infobyte/faraday/wiki/installation-community)
-  * [Installation - Professional](https://github.com/infobyte/faraday/wiki/installation-pro)
-  * [Installation - Corporate](https://github.com/infobyte/faraday/wiki/installation-corp)
-  * [Installation - CouchDB](https://github.com/infobyte/faraday/wiki/installation-couchdb)
+  * [Installation - Community](https://github.com/infobyte/faraday/wiki/Installation-Community)
+  * [Installation - Professional](https://github.com/infobyte/faraday/wiki/Installation-Pro)
+  * [Installation - Corporate](https://github.com/infobyte/faraday/wiki/Installation-Corp)
+  * [Installation - CouchDB](https://github.com/infobyte/faraday/wiki/Installation-CouchDB)
   * [Installation - OS X](https://github.com/infobyte/faraday/wiki/Installation-OSX)
-  * [Installation - Docker](https://github.com/infobyte/faraday/wiki/installation-docker)
+  * [Installation - Docker](https://github.com/infobyte/faraday/wiki/Installation-Docker)
   * [Using SSL](https://github.com/infobyte/faraday/wiki/SSL)
   * [[Vulnerabilities Database]]
 * [[Updates]]
 * [[Usage]]
-  * [Backup](https://github.com/infobyte/faraday/wiki/backup-workspaces)
+  * [Backup](https://github.com/infobyte/faraday/wiki/Backup-Workspaces)
   * [[Bug bounties]]
   * [[Chat and Communication]]
   * [[Continuous-Scanning]]
   * [CSV Exporting](https://github.com/infobyte/faraday/wiki/Exporting-the-information)
-  * [Data Analysis Tools](https://github.com/infobyte/faraday/wiki/Data-analysis-tools)
+  * [Data Analysis Tools](https://github.com/infobyte/faraday/wiki/Data-Analysis-Tools)
   * [[Executive Report]]
   * [[Helpers]]
   * [[JIRA Integration]]
