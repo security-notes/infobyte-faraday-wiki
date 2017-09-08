@@ -80,7 +80,7 @@ For information on *how to generate self signed certificates* you can read [Apac
 
 To ensure that the issue is not with your certificates, test from the command line using
 
-    $ curl -k -v https://127.0.0.1:6984/
+    $ curl -k -v https://127.0.0.1:5984/
 
 You can test your certificates separately using:
 
