@@ -11,8 +11,8 @@
 * [[Updates]]
 * [[Usage]]
   * [Backup](https://github.com/infobyte/faraday/wiki/Backup-Workspaces)
-  * [[Bug bounties]]
-  * [[Chat and Communication]]
+  * [Bug bounties](https://github.com/infobyte/faraday/wiki/Bug-bounties)
+  * [Chat and Communication](https://github.com/infobyte/faraday/wiki/Chat-and-Communication)
   * [[Continuous-Scanning]]
   * [CSV Exporting](https://github.com/infobyte/faraday/wiki/Exporting-the-information)
   * [Data Analysis Tools](https://github.com/infobyte/faraday/wiki/Data-Analysis-Tools)
