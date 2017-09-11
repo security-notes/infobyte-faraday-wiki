@@ -114,7 +114,7 @@ To access a [treemap](https://en.wikipedia.org/wiki/Treemapping) featuring the t
 
 ![](https://raw.github.com/wiki/infobyte/faraday/images/GUI_Dashboard_new_Services.png)
 
-![](https://raw.github.com/wiki/infobyte/faraday/images/GUI_Services.png)
+![](https://raw.github.com/wiki/infobyte/faraday/images/GUI_Services.gif)
 
 <a name="workspace-worth"></a>
 ###### Workspace's Worth
