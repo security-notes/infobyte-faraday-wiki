@@ -1,5 +1,5 @@
-* [About](https://github.com/infobyte/faraday/wiki)
-* [[First steps]]
+* [About](https://github.com/infobyte/faraday/Home)
+* [First steps](https://github.com/infobyte/faraday/wiki/First-steps)
   * [Installation - Community](https://github.com/infobyte/faraday/wiki/Installation-Community)
   * [Installation - Professional](https://github.com/infobyte/faraday/wiki/Installation-Pro)
   * [Installation - Corporate](https://github.com/infobyte/faraday/wiki/Installation-Corp)
@@ -18,7 +18,7 @@
   * [Data Analysis Tools](https://github.com/infobyte/faraday/wiki/Data-Analysis-Tools)
   * [[Executive Report]]
   * [[Helpers]]
-  * [[JIRA Integration]]
+  * [JIRA Integration](https://github.com/infobyte/faraday/wiki/Jira-integration)
   * [[LDAP]]
   * [[Manage Hosts and Services GUI WEB]]
   * [[Manage Users]]
@@ -32,7 +32,7 @@
 * [Demos / Videos](https://github.com/infobyte/faraday/wiki/Demos)
 * [[Architecture]]
 * [Plugins](https://github.com/infobyte/faraday/wiki/Plugin-List)
-  * [[Burp Proxy Extender]]
+  * [Burp Proxy Extender](https://github.com/infobyte/faraday/wiki/Burp-proxy-extender)
   * [[BeEF]]
   * [[Evilgrade]]
   * [[Faraday Plugin]]
@@ -42,7 +42,7 @@
   * [More +60 plugins](https://github.com/infobyte/faraday/wiki/Plugin-List#list)
 * **Development**
   * [[APIs]]
-  * [[Basic Plugin Development]]
+  * [Basic Plugin Development](https://github.com/infobyte/faraday/wiki/Basic-plugin-development)
 * [[Faraday Awards]]
 * [[FAQ]]
 * [[Troubleshooting]]
