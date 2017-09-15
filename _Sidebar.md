@@ -1,5 +1,5 @@
-* [About](https://github.com/infobyte/faraday/Home)
-* [First steps](https://github.com/infobyte/faraday/wiki/First-steps)
+* [About](https://github.com/infobyte/faraday/wiki)
+* [[First steps]]
   * [Installation - Community](https://github.com/infobyte/faraday/wiki/Installation-Community)
   * [Installation - Professional](https://github.com/infobyte/faraday/wiki/Installation-Pro)
   * [Installation - Corporate](https://github.com/infobyte/faraday/wiki/Installation-Corp)
