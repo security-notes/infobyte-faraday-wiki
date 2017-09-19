@@ -1,11 +1,11 @@
 ## Index
 
-* [Server](#faraday-server)
-* [Client](#faraday-client)
+* [Server](#faraday-server-pro)
+* [Client](#faraday-client-pro)
 
 ## Topics
 
-<a name="faraday-server"></a>
+<a name="faraday-server-pro"></a>
 ### Faraday Server
 
 Faraday Server is the way to have a better synchronization between your Faraday Client session and CouchDB. The server's responsibility is to send and receive information from both the client and CouchDB, and make sure that they are both in sync. At the same time, it provides much better performance to the Web UI, allowing it to handle enormous workspaces without a problem.
@@ -172,7 +172,7 @@ This is the recommended way to do this. Other methods like using the bash `&` co
 Once the server is running, you can access Faraday's Web UI using any browser: just point it to `http://SERVER_IP:SERVER_PORT/_ui` and you can start playing with Faraday.
 
 
-<a name="faraday-client"></a>
+<a name="faraday-client-pro"></a>
 ### Faraday Client
 
 Faraday Client is the software which will allow you to work with your favorite security tools and capture their output in an organized manner. It works under a GTK+3 interface with the popular VTE terminal with a custom ZSH shell that respects the user's configuration (yes, that means you get to keep your exact ZSH terminal inside Faraday, even if you use ZPrezto or Oh My ZSH).
