@@ -50,8 +50,9 @@ _Using the platform:_
 [![ScreenShot](https://raw.github.com/wiki/infobyte/faraday/images/newytlogo.png) -  New databases (vulndb, cfdb, vFeed) - Using script getExploits.py ](http://bit.ly/23vvyko)
 
 [![ScreenShot](https://raw.github.com/wiki/infobyte/faraday/images/newytlogo.png) - A fast class C domain scanner ](https://bit.ly/U16Gzt)
-   
-   
+
+[![ScreenShot](https://raw.github.com/wiki/infobyte/faraday/images/newytlogo.png) - Using Faraday's Reporting features ](http://bit.ly/2xsVdMC) 
+
 _Faraday using plugins:_
 
 [![ScreenShot](https://raw.github.com/wiki/infobyte/faraday/images/newytlogo.png) - Acunetix](http://bit.ly/2pYsNKv)
@@ -69,6 +70,8 @@ _Faraday using plugins:_
 [![ScreenShot](https://raw.github.com/wiki/infobyte/faraday/images/newytlogo.png) -  DIG ](http://bit.ly/2ptuLmn)
 
 [![ScreenShot](https://raw.github.com/wiki/infobyte/faraday/images/newytlogo.png) - Dnsenum ](http://bit.ly/2w1oMqN)
+
+[![ScreenShot](https://raw.github.com/wiki/infobyte/faraday/images/newytlogo.png) - Dnsmap ](http://bit.ly/2xSNcnj)
 
 [![ScreenShot](https://raw.github.com/wiki/infobyte/faraday/images/newytlogo.png) - Dnsrecon ](https://bit.ly/2gwzpaY)
 
@@ -101,6 +104,8 @@ _Faraday using plugins:_
 [![ScreenShot](https://raw.github.com/wiki/infobyte/faraday/images/newytlogo.png) - SSLCheck command line tool ](https://bit.ly/1vko7Xj)
 
 [![ScreenShot](https://raw.github.com/wiki/infobyte/faraday/images/newytlogo.png) -  Sqlmap ](https://bit.ly/2h08Bkm)
+
+[![ScreenShot](https://raw.github.com/wiki/infobyte/faraday/images/newytlogo.png) -  Telnet - Ping - Whois](http://bit.ly/2yjS8mP)
 
 [![ScreenShot](https://raw.github.com/wiki/infobyte/faraday/images/newytlogo.png) - THC-Hydra](https://bit.ly/1jhYpNb)
 
