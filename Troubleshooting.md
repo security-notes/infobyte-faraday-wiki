@@ -47,7 +47,7 @@ The reply should look something like
 {"Faraday Server":"Running"}
 ```
 
-If not, maybe try the [Faraday Server Installation](https://github.com/infobyte/faraday/wiki/Installation-Server) and the [Apache CouchDB Installation Guide](https://wiki.apache.org/couchdb/Installation). Or perhaps try going through the [First Steps](https://github.com/infobyte/faraday/wiki/First-Steps) again and double check everything.
+If not, maybe try the [Faraday Server Installation](https://github.com/infobyte/faraday/wiki/Installation-Community#server-configuration) and the [Apache CouchDB Installation Guide](https://wiki.apache.org/couchdb/Installation). Or perhaps try going through the [First Steps](https://github.com/infobyte/faraday/wiki/First-Steps) again and double check everything.
 
 [ [index] ](#index)
 
@@ -130,7 +130,7 @@ If your clients are on different machines than the server, then you'll need to c
 bind_address=0.0.0.0
 ```
 
-[Check the configuration server page for more information](https://github.com/infobyte/faraday/wiki/Configuration-Server)
+[Check the configuration server page for more information](https://github.com/infobyte/faraday/wiki/Installation-Community#server-configuration)
 
 # Traceback Troubleshooting
 
@@ -236,7 +236,7 @@ Another way to check couchdb is opening the couchdb utils,  with your browsers o
 
 ### Check that Couchdb is properly configured
 
-If couchdb service is working check the server.ini file on *~/.faraday/config/server.ini*, for [more details on the server.ini read this page](https://github.com/infobyte/faraday/wiki/Configuration-Server).
+If couchdb service is working check the server.ini file on *~/.faraday/config/server.ini*, for [more details on the server.ini read this page]((https://github.com/infobyte/faraday/wiki/Installation-Community#server-configuration)).
 
 Error shown:
 ``` python
