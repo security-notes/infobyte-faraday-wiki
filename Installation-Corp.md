@@ -238,7 +238,7 @@ Faraday Client works under any modern Linux distribution or Mac OS X, and needs 
 
 The Python requirements for the client are stored in the [`requirements.txt` file](https://github.com/infobyte/faraday/blob/master/requirements.txt). Some additional requirements are necessary for specific features to work, these are stored in the [`requirements_extras.txt` file](https://github.com/infobyte/faraday/blob/master/requirements_extras.txt).
 
-Out tests include [Debian](#client-debian), [Ubuntu](#client-debian), [Kali](#client-kali), [Backtrack](#client-debian) and [OSX Sierra](https://github.com/infobyte/faraday/wiki/Installation-Client-OSX).
+Out tests include [Debian](#client-debian), [Ubuntu](#client-debian), [Kali](#client-kali), [Backtrack](#client-debian) and [OSX Sierra](https://github.com/infobyte/faraday/wiki/Installation-OSX).
 
 If instead of installing you want to take a quick look at Faraday you can also use [Docker](#client-docker).
 
@@ -269,7 +269,7 @@ $ sudo apt-get install libpq-dev python-pip python-dev gir1.2-gtk-3.0 gir1.2-vte
 <a name="client-kali"></a>
 ##### Kali
 
-Faraday comes pre-installed in Kali Rolling. However, that version is **incompatible** with the **Pro License**. Follow the [Debian install steps](#debian) to install.
+Faraday comes pre-installed in Kali Rolling. However, that version is **incompatible** with the **Pro License**. Follow the [Debian install steps](#client-debian) to install.
 
 ##### ArchLinux
 
