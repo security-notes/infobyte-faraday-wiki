@@ -6,7 +6,7 @@ Faraday ships with two of these scripts:
 * [SSL Check](#sslcheck)
 
 <a name="shodan"></a>
-###Shodan Faraday
+### Shodan Faraday
 
 A command line tool to get information from Shodan located at `$FARADAY/scripts/shodan_faraday.py`. 
 
