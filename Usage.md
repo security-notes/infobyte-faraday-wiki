@@ -142,7 +142,7 @@ Then your Workspace will be worth
 The length of the colored bars shows how much that severity represents in the final worth according to how many of those are present in the current workspace.
 
 Learn more about using Faraday for [[Bug bounties]].
-
+<a name="vulnerability-status-report"></a>
 ##### Vulnerability Status Report
 
 To view a full list of findings you can access the Status Report.
