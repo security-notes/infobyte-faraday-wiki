@@ -151,7 +151,7 @@ Then restart the server if you had it running and reload your browser in case yo
 
 #### Running
 
-Once everything is installed you need to configure your server properly. Read our documentation on [Server Configuration](https://github.com/infobyte/faraday/wiki/Configuration-Server).
+Once everything is installed you need to configure your server properly. Read about [Server Configuration](#server-configuration).
 
 After configuring, you can proceed to run the Faraday Server script:
 
