@@ -1,4 +1,4 @@
-Saving backups is always a good choice, wether it is to keep data safe or to share with others.
+Saving backups is always a good choice, whether it is to keep data safe or to share with others.
 
 In order to create a backup for a specific workspace follow these steps:
 
