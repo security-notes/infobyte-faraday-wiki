@@ -246,7 +246,7 @@ Error shown:
 ```
 
 <a name="#401-unauthorized-when-importing-a-report-on-the-client"></a>
-### 401 Unauthorized: when importing a report on the client
+## 401 Unauthorized: when importing a report on the client
 (Corp Versions only!)
 
 An additional CouchDB config is necessary. Follow these steps to set it up:
