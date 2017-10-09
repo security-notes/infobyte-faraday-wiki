@@ -28,7 +28,7 @@ Also, to get a better understanding of most problems you can run the Faraday Cli
 
 Commercial versions
 * [I can't edit Workspaces in the web UI](#edit-workspaces-wui)
-* [401 Unauthorized: when importing a report on the client](#401-Unauthorized:-when-importing-a-report-on-the-client)
+* [401 Unauthorized: when importing a report on the client](#401-unauthorized-when-importing-a-report-on-the-client)
 
 
 ## Answers
@@ -245,7 +245,7 @@ Error shown:
 2017-07-07 16:16:59,001 - faraday-server.server.importer - ERROR - CouchDB is not running at http://localhost:5985. Check faraday-server's configuration and make sure CouchDB is running
 ```
 
-<a name="#401-Unauthorized:-when-importing-a-report-on-the-client"></a>
+<a name="#401-unauthorized-when-importing-a-report-on-the-client"></a>
 ### 401 Unauthorized: when importing a report on the client
 (Corp Versions only!)
 
