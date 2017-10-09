@@ -25,10 +25,11 @@ Also, to get a better understanding of most problems you can run the Faraday Cli
 * [ERROR - [ERROR] XML Plugin: Ip of host unknown](#ip-of-host-unknown)
 * [OSError: [Errno 2] No such file or directory: './reports/executive/templates/'](#executive-report-error)
 * [ERROR - CouchDB is not running](#couchdb-is-not-running)
-* [401 Unauthorized: when importing a report on the client] (#401-Unauthorized:-when-importing-a-report-on-the-client)
 
 Commercial versions
 * [I can't edit Workspaces in the web UI](#edit-workspaces-wui)
+* [401 Unauthorized: when importing a report on the client](#401-Unauthorized:-when-importing-a-report-on-the-client)
+
 
 ## Answers
 
@@ -253,7 +254,8 @@ An additional CouchDB config is necessary. Follow these steps to set it up:
 - Turn off Faraday Server (./faraday-server.pyc --stop)
 - Turn off CouchDB (systemctl stop couchdb)
 - Modify the file local.ini usually located in the path /etc/couch/local.ini
-- Add the following lines to the [couch_httpd_auth] part of that file
+- Add the following lines to the [couch_httpd_auth] part of that file:
+
       `allow_persistent_cookies = true`
       `timeout = 9999999`
 
