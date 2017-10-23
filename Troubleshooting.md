@@ -256,8 +256,8 @@ An additional CouchDB config is necessary. Follow these steps to set it up:
 - Modify the file local.ini usually located in the path /etc/couch/local.ini
 - Add the following lines to the [couch_httpd_auth] part of that file:
 
-      `allow_persistent_cookies = true`
-      `timeout = 9999999`
+      allow_persistent_cookies = true
+      timeout = 9999999
 
 And then run CouchDB and Faraday Server again and you are all set!
 
