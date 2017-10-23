@@ -87,9 +87,16 @@ Removes all vulnerabilities with selected severity. Faraday has 6 levels of seve
 * unclassified
 
 To use this plugin follow this behavior:
+
+
 1)Stop Faraday’s Server but keep couchdb running.
+
 2)Run the script removeBySeverity.py.
+
 3)Now delete Sqlite database, run:
+
  	 rm faraday/server/workspaces/WORSPACE_NAME.db
+
+
 4)Run faraday’s server again and you're all set. 
 
