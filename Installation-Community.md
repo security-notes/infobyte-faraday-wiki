@@ -76,6 +76,17 @@ $ sudo apt-get install build-essential ipython python-setuptools \
                 libxslt1-dev libfreetype6-dev libpng-dev
 ```
 
+##### Gentoo 
+If you are running Gentoo, this are the dependencies with Emerge:
+
+```
+dev-db/couchdb dev-python/flask-sqlalchemy dev-python/service_identity dev-python/twisted \
+dev-python/pyopenssl dev-python/couchdbkit dev-java/mockito dev-python/Whoosh \ 
+dev-python/configargparse dev-python/restkit dev-python/requests www-servers/tornado \
+dev-python/flask dev-python/colorama dev-python/setuptools dev-python/pip dev-libs/libpqxx \
+libffi-dev 
+```
+
 ##### Others
 
 Please consult with your distribution documentation to install the dependencies listed above.
