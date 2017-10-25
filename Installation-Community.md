@@ -224,8 +224,10 @@ $ sudo apt-get install libpq-dev python-pip python-dev gir1.2-gtk-3.0 gir1.2-vte
 
 This are the dependencies for Gentoo with Emerge:
 
+```
 dev-libs/gobject-introspection net-libs/webkit-gtk x11-libs/gtk+ \
 x11-libs/vte dev-python/pygobject app-shells/zsh net-misc/curl dev-python/ipython
+```
 
 #### ArchLinux
 
