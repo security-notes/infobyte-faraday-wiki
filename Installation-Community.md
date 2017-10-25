@@ -229,6 +229,12 @@ dev-libs/gobject-introspection net-libs/webkit-gtk x11-libs/gtk+ \
 x11-libs/vte dev-python/pygobject app-shells/zsh net-misc/curl dev-python/ipython
 ```
 
+Extras dependencies:
+
+```
+dev-python/beautifulsoup dev-python/gevent-psycopg2
+```
+
 #### ArchLinux
 
 Before installing Faraday you will need to get some user-contributed packages. In order to do this quickly we need an [AUR](https://wiki.archlinux.org/index.php/Arch_User_Repository) wrapper, in this case we will use [Yaourt](http://archlinux.fr/yaourt-en). After installing Yaourt run:
