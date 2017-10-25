@@ -220,6 +220,13 @@ If you are any other version, please execute the following command:
 $ sudo apt-get install libpq-dev python-pip python-dev gir1.2-gtk-3.0 gir1.2-vte-2.91 python-gobject zsh curl
 ```
 
+#### Gentoo 
+
+This are the dependencies for Gentoo with Emerge:
+
+dev-libs/gobject-introspection net-libs/webkit-gtk x11-libs/gtk+ \
+x11-libs/vte dev-python/pygobject app-shells/zsh net-misc/curl dev-python/ipython
+
 #### ArchLinux
 
 Before installing Faraday you will need to get some user-contributed packages. In order to do this quickly we need an [AUR](https://wiki.archlinux.org/index.php/Arch_User_Repository) wrapper, in this case we will use [Yaourt](http://archlinux.fr/yaourt-en). After installing Yaourt run:
