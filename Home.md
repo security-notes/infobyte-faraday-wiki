@@ -114,7 +114,7 @@ Faraday GTK Client.
 * Black Hat Arsenal Asia - 2017:
    * https://www.blackhat.com/asia-17/arsenal.html#faraday
 
-*Zero Nights - 2016
+* Zero Nights - 2016
    * https://www.slideshare.net/AlexanderLeonov2/enterprise-vulnerability-management-zeronights16
 
 * AV Tokio - 2016:
