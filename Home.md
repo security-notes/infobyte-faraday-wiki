@@ -108,9 +108,14 @@ Faraday GTK Client.
 
 ## Presentations
 
+* Ekoparty Security Conference - 2017:
+   *http://blog.infobytesec.com/2017/10/ekoparty-2017-review_23.html
+
 * Black Hat Arsenal Asia - 2017:
    * https://www.blackhat.com/asia-17/arsenal.html#faraday
 
+*Zero Nights - 2016
+   *https://www.slideshare.net/AlexanderLeonov2/enterprise-vulnerability-management-zeronights16
 * AV Tokio - 2016:
    * http://en.avtokyo.org/avtokyo2016/event
 
