@@ -252,6 +252,13 @@ Once you have the required system dependencies, you just have to install the Pyt
 $ pip2 install -r requirements.txt
 ```
 
+If you are working inside a Virtual Machine you need to follow this extra steps for GTK to work:
+```
+pip2 install vext
+pip2 install vext.pygtk
+
+```
+
 <a name="client-configuration"></a>
 #### Configuration
 
