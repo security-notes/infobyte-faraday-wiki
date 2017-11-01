@@ -256,7 +256,6 @@ If you are working inside a Virtual Machine you need to follow this extra steps 
 ```
 pip2 install vext
 pip2 install vext.pygtk
-
 ```
 
 <a name="client-configuration"></a>
