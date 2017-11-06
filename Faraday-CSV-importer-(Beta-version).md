@@ -123,7 +123,7 @@ A few important concepts you should keep in mind before importing an csv file:
 
 Command for Community:
 ~~~~
-python2 ./bin/fplugin import_csv --u http://username:password@127.0.0.1:5985/ --csv /path/to/file/file.csv -w WORSKPACE_NAME
+python2 ./bin/fplugin import_csv -u http://username:password@127.0.0.1:5985/ --csv /path/to/file/file.csv -w WORSKPACE_NAME
 ~~~~
 
  --csv The name and path of your csv.
@@ -133,7 +133,7 @@ python2 ./bin/fplugin import_csv --u http://username:password@127.0.0.1:5985/ --
 
 Command for Commercial Versions:
 ~~~~
-python2 ./bin/fplugin import_csv --u http://127.0.0.1:5985/ --csv /path/to/file/file.csv -w WORSKPACE_NAME --username USERNAME --password PASSWORD
+python2 ./bin/fplugin import_csv -u http://127.0.0.1:5985/ --csv /path/to/file/file.csv -w WORSKPACE_NAME --username USERNAME --password PASSWORD
 ~~~~
 
  --csv The name and path of your csv.
