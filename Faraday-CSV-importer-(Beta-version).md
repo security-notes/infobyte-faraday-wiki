@@ -140,10 +140,7 @@ python2 ./bin/fplugin import_csv -u http://127.0.0.1:5985/ --csv /path/to/file/f
 
  -w Faraday's workspace where all the information will go to.
 
- --username y --password Username and Password of an Admin User.
-
- Here you have an Example
-
-Create a file called file.csv.
-
-Paste this inside:
+ --username  Username of an Admin User.
+ --password  Password of an Admin User.
+ 
+Here you have an file example.
