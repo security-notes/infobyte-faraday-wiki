@@ -145,4 +145,4 @@ python2 ./bin/fplugin import_csv -u http://127.0.0.1:5985/ --csv /path/to/file/f
  
 Here you have an file example:
 
-![](https://raw.githubusercontent.com/wiki/infobyte/faraday/files/file.csv)
+![file.csv](https://raw.githubusercontent.com/wiki/infobyte/faraday/files/file.csv)
