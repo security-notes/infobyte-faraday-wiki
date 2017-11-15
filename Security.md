@@ -18,6 +18,20 @@ Additionally, we recommend use the [require_valid_user](http://docs.couchdb.org/
 in the local.ini file.
 This option requires that all requests addressed to Couchdb must be authenticated
 
+Recommendations by the Couchdb team:
+
+`Public CouchDB instances:
+- you should already have updated to the new release.
+- if you have enabled require_valid_user AND if you trust all your
+users with database admin & server shell access: there is no problem
+
+Internal CouchDB instances:
+- if you trust everyone on the network: no problem.
+- if you have require_valid_user enabled AND if you trust all your
+users with database admin & server shell access: no problem
+- if you have require_valid_user disabled AND if you trust all your
+users with database admin & server shell access: enable require_valid_user`
+
 ### Admin party:
 
 By default the Couchdb installations come without any user or password configured as administrator, this status in Couchdb is called Admin party. Any request that reaches the Couchdb APIs will have administrator user privileges exposing the service to previously mentioned exploit.
