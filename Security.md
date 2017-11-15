@@ -20,7 +20,8 @@ This option requires that all requests addressed to Couchdb must be authenticate
 
 Recommendations by the Couchdb team:
 
-`Public CouchDB instances:
+```
+Public CouchDB instances:
 - you should already have updated to the new release.
 - if you have enabled require_valid_user AND if you trust all your
 users with database admin & server shell access: there is no problem
@@ -30,7 +31,8 @@ Internal CouchDB instances:
 - if you have require_valid_user enabled AND if you trust all your
 users with database admin & server shell access: no problem
 - if you have require_valid_user disabled AND if you trust all your
-users with database admin & server shell access: enable require_valid_user`
+users with database admin & server shell access: enable require_valid_user
+```
 
 ### Admin party:
 
