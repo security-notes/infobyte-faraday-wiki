@@ -1,5 +1,3 @@
-# Security in Faraday.
-
 The Faraday development team is aware that the information stored in the platform is of the highest criticality.
 With this in mind, we have developed this guide to perform Faraday Hardening.
 
