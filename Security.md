@@ -12,25 +12,6 @@ More information [HERE](https://github.com/infobyte/faraday/wiki/SSL)
 ### CVE-2017-12636 and CVE-2017-12635
 
 We recommend all customers upgrade to Couchdb 1.7.1 to protect against these vulnerabilities.
-Additionally, we recommend enable the [require_valid_user](http://docs.couchdb.org/en/1.6.1/config/auth.html#couch_httpd_auth/require_valid_user) option
-in the local.ini file.
-This option requires that all requests addressed to Couchdb must be authenticated.
-
-Recommendations by the Couchdb team:
-
-```
-Public CouchDB instances:
-- you should already have updated to the new release.
-- if you have enabled require_valid_user AND if you trust all your
-users with database admin & server shell access: there is no problem
-
-Internal CouchDB instances:
-- if you trust everyone on the network: no problem.
-- if you have require_valid_user enabled AND if you trust all your
-users with database admin & server shell access: no problem
-- if you have require_valid_user disabled AND if you trust all your
-users with database admin & server shell access: enable require_valid_user
-```
 
 ### Admin party:
 
