@@ -40,7 +40,7 @@ Is Faraday Server running? Try something like this, replacing the URL and port
 with those of your Faraday Server:
 
 ```
-curl http://127.0.0.1:5984/_api/info
+curl http://127.0.0.1:5985/_api/info
 ```
 
 The reply should look something like
@@ -235,6 +235,11 @@ This error is common on first installation or when you change the listening inte
 First make sure that couchdb service is up and the server is configured correctly.
 Execute *service couchdb status* or *ps ax | grep couchdb* make sure the couchdb service is up.
 Another way to check couchdb is opening the couchdb utils,  with your browsers open the url *http://couchdb_ip:couchdb_port/_utils/* and you should see the couchdb utils page.
+
+If you are running OS X, to start/restart couchdb, you should run:
+``` 
+brew services restart couchdb
+```
 
 ### Check that Couchdb is properly configured
 
