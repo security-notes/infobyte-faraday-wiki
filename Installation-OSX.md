@@ -93,6 +93,10 @@ On Maverick 10.9.2:
 
     $ sudo ARCHFLAGS=-Wno-error=unused-command-line-argument-hard-error-in-future pip install -r requirements.txt
 
+To make sure that it is running, start/restart the service with this command:
+
+    $ brew services restart couchdb
+
 ### ZSH
 
 Faraday needs [ZSH](http://www.zsh.org/) and curl to connect to the server. To install it run:
