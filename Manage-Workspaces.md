@@ -54,13 +54,14 @@ server.FARADAY_UP = False
 #Change this with your Faraday server url
 server.SERVER_URL = "http://127.0.0.1:5985"
 #Change this with your Faraday server username and password
+#Not necessary for community version
 server.AUTH_USER = "YOUR_USERNAME"
 server.AUTH_PASS = "YOUR_PASSWORD"
 
 date_today = int(time.time() * 1000)
 server.create_workspace('workspacename', 'DESCRIPTION', date_today, date_today, 'CUSTOMER NAME')
 ```
-This script will create a workspace with the name "workspacename". (Don't forget to change the variables server.SERVER_URL, server.AUTH_USER, server.AUTH_PASS with your server's url, authorization username, and password!)
+This script will create a workspace with the name "workspacename". (Don't forget to change the variables server.SERVER_URL, server.AUTH_USER, server.AUTH_PASS with your server's url, authorization username, and password! (for the Community version, it isn't necessary to include server.AUTH_USER / server.AUTH_PASSWORD))
 
 The see the various things you can do with scripting, take a look at (in your Faraday installation directory) ./persistence/server/server.py . 
 
