@@ -2,7 +2,7 @@ Faraday actually consists of two tools: **Faraday Client** and **Faraday Server*
 
 The recommended approach for first time users is performing a **single Faraday installation in Ubuntu Linux**, as this is the most thoroughly tested distribution. This means using the same machine for both the client and the server.
 
-To install faraday please choose the guide that fits your configuration:
+To install Faraday please choose the guide that fits your configuration:
  * [Installation - Community](https://github.com/infobyte/faraday/wiki/installation-community)
  * [Installation - Professional](https://github.com/infobyte/faraday/wiki/installation-pro)
  * [Installation - Corporate](https://github.com/infobyte/faraday/wiki/installation-corp)
