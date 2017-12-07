@@ -8,7 +8,7 @@ The following platforms are supported
 
 #### Quick install
 
-Download the [latest tarball](https://github.com/infobyte/faraday/tarball/master) or clone the [Faraday Git Project](https://github.com/infobyte/faraday):
+For many OSes, you can quickly install Faraday by either downloading the [latest tarball](https://github.com/infobyte/faraday/tarball/master) or cloning the [Faraday Git Project](https://github.com/infobyte/faraday), and running:
 
 ```
 $ git clone https://github.com/infobyte/faraday.git faraday-dev
@@ -24,17 +24,17 @@ $ ./faraday.py
 
 ## About
 
-Faraday introduces a new concept - IPE (Integrated Penetration-Test Environment) a multiuser Penetration test IDE. Designed for distribution, indexation and analysis of the data generated during a security audit.
+Faraday introduces a new concept - IPE (Integrated Penetration-Test Environment) a multiuser Penetration test IDE. Designed for distributing, indexing, and analyzing the data generated during a security audit.
 
 > Made for true pentesters!
 
-The main purpose of Faraday is to re-use the available tools in the community to take advantage of them in a multiuser way.
+Faraday was made to let you take advantage of the available tools in the community in a truly multiuser way.
 
-Designed for simplicity, users should notice no difference between their own terminal application and the one included in Faraday. Developed with a specialized set of functionalities that help users improve their own work. Do you remember yourself programming without an IDE? Well, Faraday does the same as an IDE does for you when programming, but from the perspective of a penetration test.
+Designed for simplicity, users should notice no difference between their own terminal application and the one included in Faraday. Developed with a specialized set of functionalities, users improve their own work. Do you remember the last time you programmed without an IDE? What IDEs are to programming, Faraday is to pentesting.
 
 ![GUI - GTK](https://raw.github.com/wiki/infobyte/faraday/images/Faraday-Gtk-MainWindow.png)
 
-Once the data is loaded Faraday crunches it into different visualizations useful not only for managers, but also for pentesters.
+Faraday crunches the data you load into different visualizations that are useful to managers and pentesters alike.
 
 ![GUI - Web](https://raw.github.com/wiki/infobyte/faraday/images/GUI_Dashboard_new.png)
 
@@ -42,26 +42,26 @@ To read about the latest features check out the [release notes](https://github.c
 
 ## Plugins list
 
-Plugins are the way to feed Faraday data from your favorite tools. Right now there are more than [60+ supported tools](https://github.com/infobyte/faraday/wiki/Plugin-List), among them you will find: 
+You feed data to Faraday from your favorite tools through Plugins. Right now there are more than [60+ supported tools](https://github.com/infobyte/faraday/wiki/Plugin-List), among which you will find: 
 ![](https://raw.github.com/wiki/infobyte/faraday/images/plugins/Plugins.png)
 
-There are three Plugin types: **console** which intercept the tools you execute to import their output, **report** which allow you to import previously generated XMLs and **online** which are either external tools accessing Faraday's API or Faraday connecting to external APIs or databases.
+There are three Plugin types: **console** plugins which intercept and interpret the output of the tools you execute, **report** plugins which allows you to import previously generated XMLs, and **online** plugins which access Faraday's API or allow Faraday to connect to external APIs and databases.
 
 [Read more about Plugins](http://github.com/infobyte/faraday/wiki/Plugin-List).
 
 ## Features
 
 ### Workspaces
-Information is classified in **Workspace** units. Each Workspace maps into a pentest team's assignments containing all the intel discovered by that team.
+Information is organized into various **Workspaces**. Each Workspace contains a pentest team's assignments and all the intel that is discovered.
 
 ### Conflicts
-If two plugins have different information for the same element it will generate a conflict that the user will have to resolve.  For example, **user1** incorporates host *127.0.0.1 OS:Linux* and **user2** incorporates *127.0.0.1 OS: Linux Ubuntu 13.10*. 
+If two plugins produce clashing information for an individual element, a conflict that the user will have to resolve is generated.  An example is if **user1** incorporates host *127.0.0.1 OS:Linux* and **user2** incorporates *127.0.0.1 OS: Linux Ubuntu 13.10*. 
 
-On our [GTK interface](https://github.com/infobyte/faraday/wiki/Usage#gtk-gui) there's a button on the bottom right corner of the main window with the number of conflicts in the current workspace. To solve them, just click that button and a window will open where you can edit the conflicting objects and select which one to keep. 
+On our [GTK interface](https://github.com/infobyte/faraday/wiki/Usage#gtk-gui) there's a button on the bottom right corner of the main window displaying the number of conflicts in the current workspace. To resolve them, just click on the button and a window will open where you can edit the conflicting objects and select which one to keep. 
 
 ### Faraday plugin
 
-Using our plugin you can do different actions using the command line, for example:
+Using our plugin you can perform various actions using the command line, for example:
 
     $ cd faraday-dev/bin/
     $ ./fplugin create_host 192.154.33.222 Android
@@ -69,11 +69,11 @@ Using our plugin you can do different actions using the command line, for exampl
     $ ./fplugin filter_services http ssh -p 21 -a
     Filtering services for ports: 21, 22, 80, 443, 8080, 8443
 
-    192.168.20.1    ssh [22]    tcp open    None
+    192.168.20.1    ssh     [22]    tcp open    None
     192.168.20.1    http    [443]   tcp open    None
-    192.168.20.7    ssh [22]    tcp open    Linux
+    192.168.20.7    ssh     [22]    tcp open    Linux
     192.168.20.7    http    [443]   tcp open    Linux
-    192.168.20.11   ssh [22]    tcp open    Linux
+    192.168.20.11   ssh     [22]    tcp open    Linux
 
 
 Read more about the [Faraday Plugin](https://github.com/infobyte/faraday/wiki/faraday-plugin).

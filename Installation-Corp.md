@@ -8,12 +8,15 @@
 <a name="faraday-server"></a>
 ### Faraday Server
 
-Faraday Server is the way to have a better synchronization between your Faraday Client session and CouchDB. The server's responsibility is to send and receive information from both the client and CouchDB, and make sure that they are both in sync. At the same time, it provides much better performance to the Web UI, allowing it to handle enormous workspaces without a problem.
+Faraday Server is the interface between CouchDB and Faraday Client sessions. The server's responsibility is to transmit information between the client and CouchDB, and make sure that they are kept in sync. It also serves the Web UI client, which allows you to handle enormous workspaces from your favorite web browser.
 
-**Important:** You should keep in mind that the Faraday server must be installed on the same machine as CouchDB. Also make sure to use version 1.6, as Faraday doesn't support CouchDB version 2.0.
+**Important:** You should keep in mind that the Faraday server must be installed on the same machine as CouchDB. 
 
-Due to the new version of Erlang, in debian based systems like Kali linux(and potentially others) Couchdb 1.6 is not working.
-We recommend use Couchdb in docker, we are working in migrate to another database engine for fix that problem.
+**Also Important:** make sure to use version 1.7.1 of CouchDB, as Faraday doesn't support CouchDB version 2.0.
+
+Unfortunately, in various Debian-based systems (Kali, potentially others), CouchDB 1.7.1 does not work (due to upgrades to a new version of Erlang). If this is the case with your OS, we recommend use Couchdb through a Docker container.
+
+Because of this, we are currently working on migrating to another database engine.
 
 #### Downloading
 
