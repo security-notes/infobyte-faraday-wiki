@@ -20,7 +20,7 @@ To try it, check out our [installation manual](https://github.com/infobyte/farad
 
 You will be presented with a special version of your own ZSH terminal. Just as with GTK, Faraday intercepts every command you execute and checks if there's a plugin available. If there is, Faraday will gather all relevant information like ip adresses, hostnames, services, vulnerabilities, websites and notes for you.
 
-The menubar gives you access to the most common options: you can open a new tab create a new workspace, toggle the log or set your CouchDB URL in the preferences dialog (and login to the database if you use our Pro or Corporate versions). At the rightmost border, you'll be able to open a file chooser to import any report by our supported plugins to Faraday.
+The menubar gives you access to the most common options: you can open a new tab create a new workspace, toggle the log or set your Faraday Server URL in the preferences dialog (and login to the database if you use our Pro or Corporate versions). At the rightmost border, you'll be able to open a file chooser to import any report by our supported plugins to Faraday.
 
 The sidebar has two tabs, one for workspaces and the other for hosts. The workspaces tab allows you to change workspaces, while the hosts tab shows you all the hosts in your current workspace, plus the amount of vulnerabilities found in each one of them inside parenthesis. Clicking on a host will show you more detailed information, see [Host information dialog](#host-information-dialog)
 
