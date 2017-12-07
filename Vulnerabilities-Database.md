@@ -46,7 +46,7 @@ A modal dialog will pop up asking you to choose a CSV file to upload, select it,
 
 #### Script
 
-To upload the CSV to CouchDB using the script go to your Faraday Server installation root directory and run:
+To upload the CSV to faraday using the script go to your Faraday Server installation root directory and run:
 
 ```
 $ ./helpers/pushCwe.py

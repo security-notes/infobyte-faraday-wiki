@@ -24,7 +24,6 @@ Also, to get a better understanding of most problems you can run the Faraday Cli
 * [Error No such file or directory VERSION](#no-such-file-version)
 * [ERROR - [ERROR] XML Plugin: Ip of host unknown](#ip-of-host-unknown)
 * [OSError: [Errno 2] No such file or directory: './reports/executive/templates/'](#executive-report-error)
-* [ERROR - CouchDB is not running](#couchdb-is-not-running)
 
 Commercial versions
 * [I can't edit Workspaces in the web UI](#edit-workspaces-wui)
@@ -49,7 +48,7 @@ The reply should look something like
 {"Faraday Server":"Running"}
 ```
 
-If not, maybe try the [Faraday Server Installation](https://github.com/infobyte/faraday/wiki/Installation-Community#server-configuration) and the [Apache CouchDB Installation Guide](https://wiki.apache.org/couchdb/Installation). Or perhaps try going through the [First Steps](https://github.com/infobyte/faraday/wiki/First-Steps) again and double check everything.
+If not, maybe try the [Faraday Server Installation](https://github.com/infobyte/faraday/wiki/Installation-Community#server-configuration). Or perhaps try going through the [First Steps](https://github.com/infobyte/faraday/wiki/First-Steps) again and double check everything.
 
 [ [index] ](#index)
 
@@ -90,27 +89,19 @@ You can go to your Status Report in the Web GUI, filter the vulnerabilities by w
 
 If for any reason you don't want to or you can't access the WebUI (or maybe even you'd like to automatize this task) you can use our helper script to remove vulnerabilities by severity.
 
-For example, say you want to remove all vulnerabilities of severity **critical** in a local CouchDB on the workspace named **messedup**, you should run:
+For example, say you want to remove all vulnerabilities of severity **critical** in a local database on the workspace named **messedup**, you should run:
 
 ```./removeBySeverity.py -d messedup -s critical```
 
 Read more about it [here](https://github.com/infobyte/faraday/wiki/helpers#removeBySeverity).
 
 <a name="recover-password"></a>
-### Restore the CouchDB user administrator
-It is possible to restore the database's users using the following script:
-
-`/faraday# ./reset_admin_couchdb.sh`
 
 **Important: this process will eliminate existing users**
 
 [ [index] ](#index)
 
 ## Answers for Commercial versions
-
-<a name="edit-workspaces-wui"></a>
-### I can't edit Workspaces from the Web UI
-Make sure that the configuration file for the server contains the credentials for an **administrative user** in the ```user``` and ```password``` fields inside the ```[couchdb]``` section of the configuration file located in ```~/.faraday/config/server.ini```.
 
 [ [index] ](#index)
 
@@ -224,48 +215,6 @@ python faraday-server.py
 ```
 
 (*) sometimes faraday server was installed in the /usr directory, check the traceback for the full path.
-
-<a name="couchdb-is-not-running"></a>
-## ERROR - CouchDB is not running
-
-This error is common on first installation or when you change the listening interface.
-
-### Check Couchdb service is working
-
-First make sure that couchdb service is up and the server is configured correctly.
-Execute *service couchdb status* or *ps ax | grep couchdb* make sure the couchdb service is up.
-Another way to check couchdb is opening the couchdb utils,  with your browsers open the url *http://couchdb_ip:couchdb_port/_utils/* and you should see the couchdb utils page.
-
-If you are running OS X, to start/restart couchdb, you should run:
-``` 
-brew services restart couchdb
-```
-
-### Check that Couchdb is properly configured
-
-If couchdb service is working check the server.ini file on *~/.faraday/config/server.ini*, for [more details on the server.ini read this page]((https://github.com/infobyte/faraday/wiki/Installation-Community#server-configuration)).
-
-Error shown:
-``` python
-2017-07-07 16:16:59,001 - faraday-server.server.importer - ERROR - CouchDB is not running at http://localhost:5985. Check faraday-server's configuration and make sure CouchDB is running
-```
-
-<a name="#401-unauthorized-when-importing-a-report-on-the-client"></a>
-## 401 Unauthorized: when importing a report on the client
-(Corp Versions only!)
-
-An additional CouchDB config is necessary. Follow these steps to set it up:
-
-- Turn off Faraday Server (./faraday-server.pyc --stop)
-- Turn off CouchDB (systemctl stop couchdb)
-- Modify the file local.ini usually located in the path /etc/couch/local.ini
-- Add the following lines to the [couch_httpd_auth] part of that file:
-
-      allow_persistent_cookies = true
-      timeout = 9999999
-
-And then run CouchDB and Faraday Server again and you are all set!
-
 
 
 Is your question not listed here? [Contact us](https://github.com/infobyte/faraday/issues)
