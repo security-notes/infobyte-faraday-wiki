@@ -56,6 +56,7 @@ IOError: [Errno 2] No such file or directory: '/home/leonardo/VERSION'
 * [Error No such file or directory VERSION](#no-such-file-version)
 * [ERROR - [ERROR] XML Plugin: Ip of host unknown](#ip-of-host-unknown)
 * [ERROR - CouchDB is not running](#couchdb-is-not-running)
+* [OSx GTK not working IP ERROR](#OSx-gtk-not-working)
 
 
 ### Commercial versions
@@ -233,6 +234,15 @@ Error shown:
 ``` python
 2017-07-07 16:16:59,001 - faraday-server.server.importer - ERROR - CouchDB is not running at http://localhost:5985. Check faraday-server's configuration and make sure CouchDB is running
 ```
+
+<a name="Osx-gtk-not-working"></a>
+### OSx GTK not working IP ERROR
+When using OSx it's necessary for the client to assign the localhost address to your hostname.
+Inside a terminal run:
+`  hostname`
+And copy the result
+Go to your /etc/hosts file and assing 127.0.0.1 to your localmachine hostname.
+
 
 [ [index] ](#index)
 
