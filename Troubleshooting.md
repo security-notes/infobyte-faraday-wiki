@@ -239,8 +239,13 @@ Error shown:
 ### OSx GTK not working IP ERROR
 When using OSx it's necessary for the client to assign the localhost address to your hostname.
 Inside a terminal run:
+
+
 `  hostname`
+
+
 And copy the result
+
 Go to your /etc/hosts file and assing 127.0.0.1 to your localmachine hostname.
 
 
