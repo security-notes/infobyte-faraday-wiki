@@ -55,7 +55,6 @@ IOError: [Errno 2] No such file or directory: '/home/leonardo/VERSION'
 * [Clients can't access the Faraday server](#faraday-server-access-problems)
 * [Error No such file or directory VERSION](#no-such-file-version)
 * [ERROR - [ERROR] XML Plugin: Ip of host unknown](#ip-of-host-unknown)
-* [ERROR - CouchDB is not running](#couchdb-is-not-running)
 
 
 ### Commercial versions
@@ -83,7 +82,7 @@ The reply should look something like
 {"Faraday Server":"Running"}
 ```
 
-If not, maybe try the [Faraday Server Installation](https://github.com/infobyte/faraday/wiki/Installation-Community#server-configuration) and the [Apache CouchDB Installation Guide](https://wiki.apache.org/couchdb/Installation). Or perhaps try going through the [First Steps](https://github.com/infobyte/faraday/wiki/First-Steps) again and double check everything.
+If not, maybe try the [Faraday Server Installation](https://github.com/infobyte/faraday/wiki/Installation-Community#server-configuration).
 
 [ [index] ](#index)
 
@@ -124,21 +123,11 @@ You can go to your Status Report in the Web GUI, filter the vulnerabilities by w
 
 If for any reason you don't want to or you can't access the WebUI (or maybe even you'd like to automatize this task) you can use our helper script to remove vulnerabilities by severity.
 
-For example, say you want to remove all vulnerabilities of severity **critical** in a local CouchDB on the workspace named **messedup**, you should run:
+For example, say you want to remove all vulnerabilities of severity **critical** in a local installation on the workspace named **messedup**, you should run:
 
 ```./removeBySeverity.py -d messedup -s critical```
 
 Read more about it [here](https://github.com/infobyte/faraday/wiki/helpers#removeBySeverity).
-
-[ [index] ](#index)
-
-<a name="recover-password"></a>
-### Restore the CouchDB user administrator
-It is possible to restore the database's users using the following script:
-
-`/faraday# ./reset_admin_couchdb.sh`
-
-**Important: this process will eliminate existing users**
 
 [ [index] ](#index)
 
@@ -208,37 +197,6 @@ While importing reports faraday need to be able to resolve domain or else it wil
 Make sure you can resolve the domain from the computer where faraday is being executed.
 
 [ [index] ](#index)
-
-<a name="couchdb-is-not-running"></a>
-### ERROR - CouchDB is not running
-
-This error is common on first installation or when you change the listening interface.
-
-#### Check Couchdb service is working
-
-First make sure that couchdb service is up and the server is configured correctly.
-Execute *service couchdb status* or *ps ax | grep couchdb* make sure the couchdb service is up.
-Another way to check couchdb is opening the couchdb utils,  with your browsers open the url *http://couchdb_ip:couchdb_port/_utils/* and you should see the couchdb utils page.
-
-If you are running OS X, to start/restart couchdb, you should run:
-```
-brew services restart couchdb
-```
-
-#### Check that Couchdb is properly configured
-
-If couchdb service is working check the server.ini file on *~/.faraday/config/server.ini*, for [more details on the server.ini read this page]((https://github.com/infobyte/faraday/wiki/Installation-Community#server-configuration)).
-
-Error shown:
-``` python
-2017-07-07 16:16:59,001 - faraday-server.server.importer - ERROR - CouchDB is not running at http://localhost:5985. Check faraday-server's configuration and make sure CouchDB is running
-```
-
-[ [index] ](#index)
-
-
-
-
 
 
 
