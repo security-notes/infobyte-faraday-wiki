@@ -164,6 +164,9 @@ Faraday comes with some presets for bulk actions such as object removal, etc. Th
 * `list_hosts`: List hosts
 * `list_ips`: List all scanned IPs
 * `list_os`: Lists all scanned OSs
+* `change_vuln_status`: Changes all vulns status to close
+
+
 
 # Adding new commands
 
