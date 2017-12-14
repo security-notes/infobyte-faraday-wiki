@@ -143,4 +143,6 @@ python2 ./bin/fplugin import_csv -u http://127.0.0.1:5985/ --csv /path/to/file/f
  --username  Username of an Admin User.
  --password  Password of an Admin User.
  
-Here you have an file example.
+Here you have an file example:
+
+[file.csv](https://raw.githubusercontent.com/wiki/infobyte/faraday/files/file.csv)

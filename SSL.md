@@ -70,7 +70,7 @@ Below you can find a sample config file for NGINX. Please keep in mind that you 
 
     server {
            listen *:80;
-           server_name exmaple_domain.com;
+           server_name example_domain.com;
            return 301 https://$host$request_uri;
     }
 

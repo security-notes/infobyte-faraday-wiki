@@ -43,7 +43,7 @@ and complete the fields:
 
 This is the right way to create a Workspace from command line:
 
-Create a file named script.py, place it in the Faraday Installation Directory and inside it write this piece of code:
+Inside the directory in which Faraday is installed, create a file named script.py, with the following code:
 
 ```
 #!/usr/bin/python2.7
@@ -53,22 +53,27 @@ import time
 server.FARADAY_UP = False
 #Change this with your Faraday server url
 server.SERVER_URL = "http://127.0.0.1:5985"
+#Change this with your Faraday server username and password
+#Not necessary for community version
+server.AUTH_USER = "YOUR_USERNAME"
+server.AUTH_PASS = "YOUR_PASSWORD"
 
 date_today = int(time.time() * 1000)
 server.create_workspace('workspacename', 'DESCRIPTION', date_today, date_today, 'CUSTOMER NAME')
 ```
-this is an example of what you can do,
-for more thing you could do go checkout  /persistence/server/server.py
+This script will create a workspace with the name "workspacename". (Don't forget to change the variables server.SERVER_URL, server.AUTH_USER, server.AUTH_PASS with your server's url, authorization username, and password! (for the Community version, it isn't necessary to include server.AUTH_USER / server.AUTH_PASSWORD))
 
-And now, to import xml files to your new created workspace run this in the terminal:
+The see the various things you can do with scripting, take a look at (in your Faraday installation directory) ./persistence/server/server.py . 
+
+And now, to import xml files to your newly created workspace run this in the terminal:
 ```
-./faraday.py --cli --workspace project_name -r report/tmp/nmap_scan.xml
+./faraday.py --cli --workspace workspacename -r report/tmp/nmap_scan.xml
 ```
-Being
-```project_name```
-the name of your workspace and
+Where:
+```workspacename```
+the name of your newly-created workspace and
 ```report/tmp/nmap_scan.xml```
-the path to your import xml file which in this example is called nmap_scan.xml
+the path to the xml file you want to import, which in this example is named nmap_scan.xml
 
 ### Editing a Workspace
 

@@ -13,7 +13,7 @@
 
 > No more 3AM reporting!
 
-The Executive Reports lets you create (as the name implies) reports using the results obtained in each workspace.
+The Executive Reports  feature lets you create (as the name implies) reports using the results obtained in each workspace.
 When an Executive Report is created, all the data from the Status Report is automatically processed and placed in a Word compatible document that can then be downloaded.
 
 ### Requirements
@@ -22,15 +22,15 @@ To utilize this feature follow the necessary steps on our [start up configuratio
 
 ### Managing Executive Reports
 
-To manage your reports you need to access Faraday's Web Interface and click on the icon **executive reports** ![](https://raw.github.com/wiki/infobyte/faraday/images/faraday_report_icon.png)
+To manage your reports you need to access Faraday's Web Interface and click on **Executive Report** icon (the one that looks like a suitcase).
 
-![](https://raw.github.com/wiki/infobyte/faraday/images/faraday_report_create.png)
+![](https://raw.github.com/wiki/infobyte/faraday/images/faraday_report_icon.png)
 
 All the reports will be listed, including their info, status and link to download.
 
-To edit a report, select it and click on the **edit button** ![](https://raw.github.com/wiki/infobyte/faraday/images/faraday_report_edit_button.png). A modal will appear allowing you to modify all the report fields. Save it and a brand new report will be generated, keeping the original version intact.
+To edit a report, select it and click on the **Edit** button. A modal will appear allowing you to modify all the report fields. Save it and a brand new report will be generated, keeping the original version intact.
 
-If, instead, you want a new report that is exactly like an existing one but with the current data of your workspace, you can click on the **regenerate** button in the reports list.
+If, instead, you want a new report that is exactly like an existing one but with the current data of your workspace, you can click on the **Regenerate** button in the reports list.
 
 ![](https://raw.github.com/wiki/infobyte/faraday/images/faraday_report_regenerate_button.png)
 
@@ -38,34 +38,35 @@ Reports can only be regenerated one at a time, so the regeneration buttons are d
 
 ### Making a report
 
-To create a new report, navigate to the Executive Report component and click on **New**
-![](https://raw.github.com/wiki/infobyte/faraday/images/faraday_report_new_button.png). A form will open asking for the following fields:
+To create a new report, navigate to the Executive Report component and click on **New**. A form will open asking for the following fields:
 
-* **report name** - this is the name that will be used to name the report file
-* **use only confirmed vulns** - if this checkbox is *selected*, no false positives will be present in the final report
-* **tags** - when selected, vulnerabilities will be filtered by the selected tag. If more than one tag is selected, all vulns containing one of those will be present in the final report
-* **grouped report** - select this option to generate a report using a grouped dataset
-* **template** - select the template to use as a base for your report. Depending on the selected dataset the options will change
-* **title** - this is the name that will be used to create the cover of the report
-* **scope**
-* **objectives**
-* **summary**
-* **conclusions**
-* **recommendations**
+* **Report name** - this will be used to name the report file.
+* **Use only confirmed vulns for this report** - if this checkbox is *selected*, no false positives will be present in the final report.
+* **Tags** - when selected, vulnerabilities will be filtered by the selected tag. If more than one tag is selected, all vulns containing one of those will be present in the final report.
+* **Template** - select the template to use as a base for your report. Depending on the selected [dataset](#datasets) the options will change
+* **Grouped report** - select this option to generate a report using a grouped dataset.
+* **Title** - this is the name that will be used to create the cover of the report.
+
+The following are a sort of placeholder fields for information that's commonly added to most reports. They are text fields and can be used for any relevant information, not just for what they're named after:
+* **Scope**
+* **Objectives**
+* **Summary**
+* **Conclusions**
+* **Recommendations**
 
 ![](https://raw.github.com/wiki/infobyte/faraday/images/faraday_report_new.png)
 
-Faraday processes all the information and spits out a shiny new report that is available for download from the same list.
+Faraday processes all the information and spits out a shiny new report that is automatically available for download.
 
 ![](https://raw.github.com/wiki/infobyte/faraday/images/faraday_report_word.png)
 
 #### Filtering
 
-There are two main ways to manage the data that goes into the final report - confirming vulns and tagging them.
+There are two main ways to manage the data that goes into the final report - *confirming vulns* and *tagging them**.
 
 By default all of the vulnerabilities added manually are set as *confirmed* and all of those added by a Plugin are set as *false positives*. If the checkbox "use only confirmed vulns" is selected, the report will only contain confirmed findings.
 
-If you need a custom report that includes only some of the findings in the workspace, you can also tag the desired vulnerabilities and then create a Report only with that tag.
+If you need a custom report that includes only some of the findings in the workspace, you can also *tag* the desired vulnerabilities and then create a report only with that tag.
 
 At least one vulnerability must be tagged in order to have the option to generate a tag-filtered report. When the form opens an option to select tags will appear. Keep in mind that one or more tags can be selected.
 

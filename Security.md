@@ -1,5 +1,3 @@
-# Security in Faraday.
-
 The Faraday development team is aware that the information stored in the platform is of the highest criticality.
 With this in mind, we have developed this guide to perform Faraday Hardening.
 
@@ -10,6 +8,10 @@ Use SSL for cipher information between client and server, using a Nginx server.
 More information [HERE](https://github.com/infobyte/faraday/wiki/SSL)
 
 ## Couchdb
+
+### CVE-2017-12636 and CVE-2017-12635
+
+We recommend all customers upgrade to Couchdb 1.7.1 to protect against these vulnerabilities.
 
 ### Admin party:
 
