@@ -8,7 +8,7 @@ After installing and configuring NGINX the setup should be as follows:
 * Faraday Server on port `5985` using HTTP (`~/.faraday/config/server.ini`)
 * GTK using HTTPS (`~/.faraday/config/user.xml`) and run:
 
-        $ python2 faraday.py --cert path_to_cert
+        $ python2 faraday.py --cert path_to_cert(PEM format)
 
 * Web UI using `https://example_domain:port/_ui`
 * NGINX on port `80` redirecting to HTTPS
