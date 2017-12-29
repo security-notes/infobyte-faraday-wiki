@@ -108,5 +108,5 @@ cat intermediate.crt >> bundle.crt
 
 cat server.crt >> bundle.crt
 
-And with that, execute faraday:
-python2 ./faraday.pyc --login --cert bundle.crt --gui=no
+Execute faraday:
+python2 ./faraday.py --cert bundle.crt
