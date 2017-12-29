@@ -97,10 +97,7 @@ If you are using a certificate signed by a internal CA you need follow the next 
 
 For example, with the following CA chain:
 
-Root CA -> intermediate CA -> server cert
-
-root.crt     intermediate.crt       server.crt
-
+Root CA (root.crt) -> intermediate CA (intermediate.crt) -> server cert (server.crt)
 
 Take all the three certs in PEM format and append all in one file:
 touch bundle.crt
