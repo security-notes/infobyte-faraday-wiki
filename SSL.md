@@ -99,14 +99,16 @@ For example, with the following CA chain:
 
 Root CA -> intermediate CA -> server cert
 
-root.crt   intermediate.crt   server.crt
+root.crt     intermediate.crt       server.crt
 
 
 Take all the three certs in PEM format and append all in one file:
 touch bundle.crt
 
 cat root.crt >> bundle.crt
+
 cat intermediate.crt >> bundle.crt
+
 cat server.crt >> bundle.crt
 
 And with that, execute faraday:
