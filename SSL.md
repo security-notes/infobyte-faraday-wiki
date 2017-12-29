@@ -90,3 +90,23 @@ You can test your certificates separately using:
 Make sure that when you create the certificate the commonName field contains the name of your domain.
 
 If for any chance you get an error stating "SSL certificate validation failure" when running GTK, re-generate the certificate and run again.
+
+#### Certificate signed with internal CA.
+
+If you are using a certificate signed by a internal CA you need follow the next steps for connect the Faraday client to the server using this certificate.
+
+For example, with the following CA chain:
+
+Root CA -> intermediate CA -> server cert
+root.crt   intermediate.crt   server.crt
+
+
+Take all the three certs in PEM format and append all in one file:
+touch bundle.crt
+
+cat root.crt >> bundle.crt
+cat intermediate.crt >> bundle.crt
+cat server.crt >> bundle.crt
+
+And with that, execute faraday:
+python2 ./faraday.pyc --login --cert bundle.crt --gui=no
