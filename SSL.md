@@ -100,6 +100,7 @@ For example, with the following CA chain:
 Root CA (root.crt) -> intermediate CA (intermediate.crt) -> server cert (server.crt)
 
 Take all the three certs in PEM format and append all in one file:
+
 touch bundle.crt
 
 cat root.crt >> bundle.crt
