@@ -13,3 +13,13 @@ A few of our default methodologies:
 * Owasp Top 10
 
 ### Creating you own methodology:
+
+Create a CSV file with the following fields:
+
+* name
+* description
+
+Then,use the "Import" button and select your new CSV to load your custom methodology to Faraday.
+
+
+
