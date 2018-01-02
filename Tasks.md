@@ -35,7 +35,9 @@ Do you have a custom methodology created from scratch? Click in "Download CSV fo
 
 
 ## Kanban view
+![Kanban](https://raw.github.com/wiki/infobyte/faraday/images/kanban_methodologies.png) 
 
+kanban_methodologies
 If you click in the methodology name, you go to the kanban view of that methodology.
 
 You can use drag and drop for change the status of this Task or create a new one.
