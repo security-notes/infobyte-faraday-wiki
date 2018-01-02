@@ -25,6 +25,7 @@ Also you can edit (Click in the task name) or delete a task (Click in recycle ic
 Methodologies contains tasks, this tasks include the following fields:
 
 * Name
+* Description
 * Due date
 * Status
 * Users asigned
