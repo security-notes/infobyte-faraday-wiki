@@ -12,6 +12,25 @@ A few of our default methodologies:
 * Network Pentest
 * Owasp Top 10
 
+## Loading a default methodology:
+
+Use the button "New" and select the option "From template", give to this new methodology a name and ready!
+
+
+## Creating you own methodology:
+
+Create a CSV file with the following fields:
+
+* name
+* description
+
+Then, use the "Import" button and select your new CSV to load your custom methodology to Faraday.
+
+## Downloading your prefered methodology:
+
+Do you have a custom methodology created from scratch? Click in "Download CSV for current methodology" and you will download CSV file with that methodology!
+
+
 ## Kanban view
 
 If you click in the methodology name, you go to the kanban view of that methodology.
@@ -34,22 +53,5 @@ Methodologies contains tasks, this tasks include the following fields:
 With that, you can assign a specific task with a end date to a pentester.
 Also, tag a chunk of task for a better appreciation in the kanban view.
 
-## Loading a default methodology:
-
-Use the button "New" and select the option "From template", give to this new methodology a name and ready!
-
-
-## Creating you own methodology:
-
-Create a CSV file with the following fields:
-
-* name
-* description
-
-Then, use the "Import" button and select your new CSV to load your custom methodology to Faraday.
-
-## Downloading your prefered methodology:
-
-Do you have a custom methodology created from scratch? Click in "Download CSV for current methodology" and you will download CSV file with that methodology!
 
 
