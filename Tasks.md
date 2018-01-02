@@ -18,7 +18,7 @@ If you click in the methodology name, you go to the kanban view of that methodol
 You can use drag and drop for change the status of this Task or create a new one.
 Also you can edit (Click in the task name) or delete a task (Click in recycle icon).
 
-###Loading a default methodology:
+### Loading a default methodology:
 
 Use the button "New" and select the option "From template", give to this new methodology a name and ready!
 
