@@ -15,7 +15,7 @@ A few of our default methodologies:
 ## Loading a default methodology:
 
 Use the button "New" and select the option "From template", give to this new methodology a name and ready!
-
+![platform](https://raw.github.com/wiki/infobyte/faraday/images/platform/new_methodology.png) 
 
 ## Creating you own methodology:
 
