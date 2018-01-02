@@ -27,6 +27,8 @@ Create a CSV file with the following fields:
 
 Then, use the "Import" button and select your new CSV to load your custom methodology to Faraday.
 
+![Methodologies](https://raw.github.com/wiki/infobyte/faraday/images/methodologies_list.png) 
+
 ## Downloading your prefered methodology:
 
 Do you have a custom methodology created from scratch? Click in "Download CSV for current methodology" and you will download CSV file with that methodology!
