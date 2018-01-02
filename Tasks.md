@@ -20,6 +20,19 @@ You can use drag and drop for change the status of this Task or create a new one
 
 Also you can edit (Click in the task name) or delete a task (Click in recycle icon).
 
+### Task
+
+Methodologies contains tasks, this tasks include the following fields:
+
+* Name
+* Due date
+* Status
+* Users asigned
+* Tags
+
+With that, you can assign a specific task with a end date to a pentester.
+Also, tag a chunk of task for a better appreciation in the kanban view.
+
 ## Loading a default methodology:
 
 Use the button "New" and select the option "From template", give to this new methodology a name and ready!
