@@ -17,6 +17,7 @@
   * [CSV Exporting](https://github.com/infobyte/faraday/wiki/Exporting-the-information)
   * [Data Analysis Tools](https://github.com/infobyte/faraday/wiki/Data-Analysis-Tools)
   * [[Executive Report]]
+  * [[Faraday CSV importer (Beta version)]]
   * [[Helpers]]
   * [JIRA Integration](https://github.com/infobyte/faraday/wiki/Jira-integration)
   * [[LDAP]]
@@ -29,7 +30,7 @@
   * [[Tag Use]]
   * [[Workspace-Diff]]
   * [[Workspace replication]]
-  * [[Faraday CSV importer (Beta version)]]
+  
 
 * [Demos / Videos](https://github.com/infobyte/faraday/wiki/Demos)
 * [[Architecture]]
