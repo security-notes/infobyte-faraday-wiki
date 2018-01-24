@@ -31,7 +31,7 @@
   * [[Tasks]]
   * [[Workspace-Diff]]
   * [[Workspace replication]]
-  * [[Vulnerability Life Cycle]](https://github.com/infobyte/faraday/wiki/Vulnerability-Life-Cycle)
+  * [[Vulnerability Life Cycle]]
 
 * [Demos / Videos](https://github.com/infobyte/faraday/wiki/Demos)
 * [[Architecture]]
