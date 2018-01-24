@@ -29,9 +29,10 @@
   * [[Scripts]]
   * [[Tag Use]]
   * [[Tasks]]
+  * [[Vulnerability Life Cycle]]
   * [[Workspace-Diff]]
   * [[Workspace replication]]
-  * [[Vulnerability Life Cycle]]
+
 
 * [Demos / Videos](https://github.com/infobyte/faraday/wiki/Demos)
 * [[Architecture]]
