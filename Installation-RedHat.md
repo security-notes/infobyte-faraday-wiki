@@ -38,14 +38,3 @@ Final step! Run the server:
 `python faraday-server.py (first run to install missing dependencies)`
 
 
-
-RHEL 7
-
-# subscription-manager repos --enable=rhel-7-server-rpms --enable=rhel-7-server-supplementary-rpms --enable=rhel-7-server-optional-rpms --enable=rhel-7-server-rhn-tools-rpms --enable=rhel-7-server-extras-rpms
-
-# wget https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
-
-# rpm -ivh epel-release-latest-7.noarch.rpm
-
-Same instructions than before.
-
