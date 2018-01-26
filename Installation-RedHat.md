@@ -10,7 +10,9 @@ Create a folder docker with two subfolders: etc and dbs. Use those paths in the 
 
 ` sudo docker run --name couchdb_Faraday -v /home/USER/docker/etc/:/usr/local/etc/couchdb/local.d -v /home/USER/docker/dbs/:/usr/local/var/lib/couchdb -d -p 5984:5984 couchdb`
 
+
  `subscription-manager repos --enable=rhel-server-rhscl-6-rpms`
+
 
  `subscription-manager repos --enable=rhel-6-server-optional-rpms`
 
