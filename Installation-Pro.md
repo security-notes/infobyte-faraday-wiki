@@ -211,7 +211,7 @@ Faraday Client works under any modern Linux distribution or Mac OS X, and needs 
 | Python | 2.6 or 2.7 |
 | GTK3 |  |
 | PyGobject | 3.12.0 |
-| Vte | API >= 2.90 |
+| Vte | API >= 2.91 |
 | zsh |  |
 | CURL |  |
 | couchdbkit |  |
@@ -246,7 +246,7 @@ $ sudo apt-get update
 If you are running Ubuntu 12.04 LTS, or Ubuntu 14.04 LTS, please execute this command:
 
 ```
-$ sudo apt-get install libpq-dev python-pip python-dev gir1.2-gtk-3.0 gir1.2-vte-2.90 python-gobject zsh curl
+$ sudo apt-get install libpq-dev python-pip python-dev gir1.2-gtk-3.0 gir1.2-vte-2.91 python-gobject zsh curl
 ```
 
 If you are any other version, please execute the following command:
