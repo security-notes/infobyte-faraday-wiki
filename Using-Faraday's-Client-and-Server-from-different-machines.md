@@ -4,7 +4,7 @@ If you wish to access the Server from a different box you need to expose the ser
 Edit the file located in ```~/.faraday/config/server.ini``` and under the section ```[faraday-server```] set the param, it should look something like this:
 Then restart the server if you had it running and reload your browser in case you were already trying to access the Web UI form a different IP.
 
-[](https://raw.github.com/wiki/infobyte/faraday/images/server.ini.png)
+[](https://raw.github.com/wiki/infobyte/faraday/images/faraday_server.ini.png)
 
 ## ***Connecting to a Server from a different machine***
 
