@@ -19,6 +19,6 @@ If you wish to connect to the Web UI you just need to point your browser to `htt
 Once you’ve followed the previous steps on exposing the *<a>server* is time make the client listen to your Server.
 Edit the file located in `~/.faraday/config/user.xml`, change the instance <couch_uri> with the IP where your Faraday server is running, it should look something like this:
 
-[](https://raw.github.com/wiki/infobyte/faraday/images/user.xml.png)
+[](https://raw.github.com/wiki/infobyte/faraday/images/faraday_user.xml.png)
 
 
