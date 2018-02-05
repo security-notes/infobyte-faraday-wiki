@@ -10,5 +10,5 @@ Next just click on the green New button ![](https://raw.githubusercontent.com/wi
 ![](https://raw.githubusercontent.com/wiki/infobyte/faraday/images/faraday_creds_new.png)
 And just complete the data like it shows in the picture above!
 
-When you go to the Credentials View you will see all the credentials you have for every host or service on that workspace:
+When you go to the Credentials View you will see all the credentials you have for every target on that workspace:
 ![](https://raw.githubusercontent.com/wiki/infobyte/faraday/images/faraday_creds_view.png)
