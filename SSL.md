@@ -80,7 +80,7 @@ Even though we recommend the configurations by nginx explained above, we also su
 
 ## Apache
 Place the Apache configuration file on the respective location.
-![](https://raw.githubusercontent.com/wiki/infobyte/faraday/files/000-default.conf)
+![000-default.conf](https://raw.githubusercontent.com/wiki/infobyte/faraday/files/000-default.conf)
  
 #### Troubleshooting
 
