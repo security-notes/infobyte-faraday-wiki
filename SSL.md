@@ -81,17 +81,17 @@ Even though we recommend the configurations by nginx explained above, we also su
 ## Apache
 Place the Apache configuration file on the respective location.
 
-@
-# Enable session resumption to improve https performance
-SSLSessionCache shmcb:/var/cache/mod_ssl/scache(512000)
-SSLSessionCacheTimeout  300
 
-<VirtualHost *:80> 
-	Redirect permanent / https://127.0.0.1/ 
-</VirtualHost>
+        # Enable session resumption to improve https performance
+        SSLSessionCache shmcb:/var/cache/mod_ssl/scache(512000)
+        SSLSessionCacheTimeout  300
 
-<VirtualHost *:443>
-	# Apache logs configuration.
+       <VirtualHost *:80> 
+	      Redirect permanent / https://127.0.0.1/ 
+       </VirtualHost>
+
+       <VirtualHost *:443>
+        # Apache logs configuration.
 
         ServerName localhost
         ServerAdmin webmaster@localhost
