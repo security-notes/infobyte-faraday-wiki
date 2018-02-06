@@ -78,6 +78,8 @@ For information on *how to generate self signed certificates* you can read [Apac
 
 Even though we recommend the configurations by nginx explained above, we also support SSL through Apache.
 ## Apache
+Place the Apache configuration file on the respective location.
+https://raw.githubusercontent.com/wiki/infobyte/faraday/files/000-default.conf
  
 #### Troubleshooting
 
