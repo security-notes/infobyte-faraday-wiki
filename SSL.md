@@ -128,7 +128,7 @@ Place the Apache configuration file on the respective location.
 		Deny from all
 	</Location>
 </VirtualHost>
-@ 
+
 
 #### Troubleshooting
 
