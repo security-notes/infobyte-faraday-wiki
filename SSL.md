@@ -112,7 +112,7 @@ Place the Apache configuration file on the respective location.
 
 	# Reverse proxy configuration
         ProxyPreserveHost On
-	#ProxyPass /server-status ! 
+	# ProxyPass /server-status ! 
         ProxyPass "/" http://127.0.0.1:5985/
         ProxyPassReverse "/" http://127.0.0.1:5985
 	
