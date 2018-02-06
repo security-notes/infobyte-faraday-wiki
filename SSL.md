@@ -76,6 +76,9 @@ Below you can find a sample config file for NGINX. Please keep in mind that you 
 
 For information on *how to generate self signed certificates* you can read [Apache's FAQ on how to do this](https://cwiki.apache.org/confluence/pages/viewpage.action?pageId=48203146).
 
+Even though we recommend the configurations by nginx explained above, we also support SSL through Apache.
+## Apache
+ 
 #### Troubleshooting
 
 To ensure that the issue is not with your certificates, test from the command line using
