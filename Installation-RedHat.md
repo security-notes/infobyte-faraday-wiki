@@ -14,7 +14,7 @@ Create a folder _docker_ with two sub-folders:
 
 Now you'll need the paths of those folders for the next command.
 
-` sudo docker run --name couchdb_Faraday -v **/home/USER/docker/etc/**:/usr/local/etc/couchdb/local.d -v **/home/USER/docker/dbs/**:/usr/local/var/lib/couchdb -d -p 5984:5984 couchdb`
+` sudo docker run --name couchdb_Faraday -v /home/USER/docker/etc/:/usr/local/etc/couchdb/local.d -v /home/USER/docker/dbs/:/usr/local/var/lib/couchdb -d -p 5984:5984 couchdb`
 
 
 ---------------------------------------- You'll need to have your RedHat's offical credecials to keep going-----------------------------------------
