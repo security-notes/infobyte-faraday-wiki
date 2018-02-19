@@ -17,9 +17,7 @@ Now you'll need the paths of those folders for the next command.
     sudo docker run --name couchdb_Faraday -v /home/USER/docker/etc/:/usr/local/etc/couchdb/local.d -v /home/USER/docker/dbs/:/usr/local/var/lib/couchdb -d -p 5984:5984 couchdb
 
 
-
 ----------------------- You'll need to have your RedHat's offical credecials for the next step -----------------------
-
 
 
      subscription-manager repos --enable=rhel-server-rhscl-6-rpms
