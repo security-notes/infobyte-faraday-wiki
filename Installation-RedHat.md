@@ -58,7 +58,7 @@ Almost there! Start Faraday's server:
     $ cd faraday
     $ ./faraday-server.py
 
-And in another terminal start de client runing:
+And in another terminal start the client runing:
 
     $ cd faraday
     $ ./faraday.py
