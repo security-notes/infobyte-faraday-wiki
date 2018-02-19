@@ -7,10 +7,10 @@ Install Docker using EPEL, go to the terminal and run this command-lines.
 
 `rpm -ivh epel-release-latest-6.noarch.rpm`
 
-Create a folder docker with two sub-folders: 
+Create a folder _docker_ with two sub-folders: 
 
-      1. etc
-      2. dbs
+      1. _etc_
+      2. _dbs_
 
 Now you'll need the paths of those folders for the next command.
 
