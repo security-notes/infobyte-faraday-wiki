@@ -18,7 +18,7 @@ Now you'll need the paths of those folders for the next command.
 
 
 
------------------------ You'll need to have your RedHat's offical credecials to keep going-----------------------
+----------------------- You'll need to have your RedHat's offical credecials for the next step -----------------------
 
 
 
