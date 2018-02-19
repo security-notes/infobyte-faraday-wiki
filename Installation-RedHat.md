@@ -38,7 +38,7 @@ It's time to install some system dependencies Faraday needs!
 
     pip install --upgrade pip
 
-## Python libraries via PIP
+### Python libraries via PIP
 
     pip install -r requirements_server.txt
 
