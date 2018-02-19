@@ -1,4 +1,4 @@
-This is Faraday's new feature to manage methodologies and tasks.
+This is Faraday's new feature to manage methodologies and tasks for our profesional and corporate clients.
 
 You can create your custom methodologies, add tasks, tag them and keep track of your whole project directly from Faraday.
 
