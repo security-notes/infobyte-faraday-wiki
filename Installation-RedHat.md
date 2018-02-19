@@ -46,6 +46,7 @@ It's time to install some system dependencies Faraday needs!
 
     `pip install -r requirements.txt`
 
+## Faraday
 Final step! Now all you need to do is Run the server:
 
     `python faraday-server.py (first run to install missing dependencies)`
