@@ -9,9 +9,8 @@ Install Docker using EPEL, go to the terminal and run this command-lines.
 
 Create a folder docker with two sub-folders: 
 
-1)etc
-
-2)dbs
+      1. etc
+      2. dbs
 
 Now you'll need the paths of those folders for the next command.
 
