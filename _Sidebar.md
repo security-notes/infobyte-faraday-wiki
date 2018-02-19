@@ -5,6 +5,7 @@
   * [Installation - Corporate](https://github.com/infobyte/faraday/wiki/Installation-Corp)
   * [Installation - CouchDB](https://github.com/infobyte/faraday/wiki/Installation-CouchDB)
   * [Installation - OS X](https://github.com/infobyte/faraday/wiki/Installation-OSX)
+  * [Installation - RedHat](https://github.com/infobyte/faraday/wiki/Installation-RedHat)
   * [Installation - Docker](https://github.com/infobyte/faraday/wiki/Installation-Docker)
   * [Using SSL](https://github.com/infobyte/faraday/wiki/SSL)
   * [[Vulnerabilities Database]]
