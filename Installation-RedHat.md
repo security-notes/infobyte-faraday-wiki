@@ -49,4 +49,16 @@ Final step! Now all you need to do is Run the server:
 
     python faraday-server.py (first run to install missing dependencies)
 
+### Going for it!
+
+Almost there! Start Faraday's server:
+
+    $ cd faraday
+    $ ./faraday-server.py
+
+And in another terminal start de client runing:
+
+    $ cd faraday
+    $ ./faraday.py
+
 
