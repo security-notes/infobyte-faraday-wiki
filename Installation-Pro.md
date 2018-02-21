@@ -115,14 +115,24 @@ If you want more fine grained control over what the setup script does, you can s
 $ python2 setup-server.pyc --help
 ```
 
+
+***
+
+
 **This step is optional:** If you want, you can upload the included CWE database to CouchDB to enable better searching and autocomplete features. To do so, you only need to execute the following command:
 
 ```
 $ ./helpers/pushCwe.py
 ```
 
-You will be asked to pass as an argument the CouchDB URL so that a connection can be established. For this, use the -c parameter along with your credentials.
+You will be asked to pass as an argument the CouchDB URL so that a connection can be established. For this, use the -c parameter along with your credentials. 
+For example: `sudo ./helpers/pushCwe.py -c http://faraday:password@127.0.0.1:5984 `
 
+
+***
+
+             
+         
 After running the setup script run the server once using `python2 faraday-server.pyc` and don't worry if it fails.
 
 Edit the file located in `~/.faraday/config/server.ini` and add the username and password created using the setup script in the `[couchdb]` section. Assuming the selected password is **changeme**, the file should look something like:
