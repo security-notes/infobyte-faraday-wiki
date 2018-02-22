@@ -14,7 +14,7 @@ Create a folder _docker_ with two sub-folders:
 
 Now you'll need the paths of those folders for the next command.
 
-   $ docker run --name couchdb_faraday -v /path/to/couchdb/conf:/usr/local/etc/couchdb/local.d -v /path/to/couchdb/data:/usr/local/var/lib/couchdb -p 5984:5984 -d couchdb:1.7.1
+     $ docker run --name couchdb_faraday -v /path/to/couchdb/conf:/usr/local/etc/couchdb/local.d -v /path/to/couchdb/data:/usr/local/var/lib/couchdb -p 5984:5984 -d couchdb:1.7.1
 
 
 
@@ -23,9 +23,9 @@ Now you'll need the paths of those folders for the next command.
 You'll need to have your RedHat's official credentials for the next step
 ***
 
-   $  subscription-manager repos --enable=rhel-server-rhscl-6-rpms
+    $  subscription-manager repos --enable=rhel-server-rhscl-6-rpms
 
-   $  subscription-manager repos --enable=rhel-6-server-optional-rpms
+    $  subscription-manager repos --enable=rhel-6-server-optional-rpms
 
 ### System Dependencies 
 
