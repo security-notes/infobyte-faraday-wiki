@@ -33,7 +33,7 @@ It's time to install some system dependencies Faraday needs!
 
     $  yum install gcc libffi-devel openssl-devel python27-python python27-python-devel libxml2-devel libxslt-devel 
 
-    $  freetype-devel libpng-devel
+    $  yum install freetype-devel libpng-devel libsodium-devel
   
     $  scl enable python27 bash
 
