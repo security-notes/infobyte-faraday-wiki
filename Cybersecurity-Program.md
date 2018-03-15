@@ -119,7 +119,7 @@ You could read more about this in  #CISControls CSC-20, but also this process is
 
 
 
-Some conclusions
+**Some conclusions:**
 
 A cybersecurity program is something which you must  adapt and maintain based on your business needs. A fixed plan for everyone is not possible, for this reason you must be close to your business, know the environment and its behaviour, know its risks and compliance requirements. Security is a continuous process which needs training, time, effort, teamwork, support from the business,  budget, and  heart!
 
