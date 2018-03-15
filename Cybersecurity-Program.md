@@ -1,3 +1,5 @@
+This entry covers a “real example” of the usage of Faraday to manage a cybersecurity program. A sub-set of cybersecurity processes will be described, but the tool is not only useful for those. Please, be creative and use it to cover your needs :)
+
 ## Asset Management (know what we have).
 
 Asset management is, maybe, the most critical process which you must put in place to start a cybersecurity program. Knowing which assets you have and what are their  values for the business is the key principle to applying “cost-benefit” security solutions. So, you can consolidate into Faraday all your main assets, using tags or even making some kind of “asset registration” you can describe the main information for  proper cybersecurity management, like:
@@ -123,17 +125,3 @@ A cybersecurity program is something which you must  adapt and maintain based on
 
 To be agile and offer a good performance you should use a tool or a sub-set of tools. Faraday is a great tool to support your cybersecurity program, with a lot of possible usages, features which are updated frequently, with support for the most common security platforms and with a very challenging roadmap of new features.
 
-But remember, a tool is a tool, always you must  think, build cost-effective solutions, know your environment and be the partner for your business.
-
-**Enjoy Faraday! :)**
-
-
-Mariano del Rio
-
-www.securetech.com.ar
-
-https://www.faradaysec.com
-https://github.com/infobyte/faraday
-https://twitter.com/faradaysec
-https://forum.faradaysec.com/
-https://www.faradaysec.com/ideas
