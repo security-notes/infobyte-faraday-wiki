@@ -42,6 +42,7 @@ You can even connect Faraday with your “Compliance Management Tool” to obtai
 You could read more about this in  #CISControls CSC-3, but also this process is part of ISO, NIST, PCI, DSD 35 Top Mitigation Strategies, among others references.
 
 ### Compliance Management
+
 | CIS Controls                                	| CSC 3 - Secure Configurations for Hardware and Software on Mobile Devices, Laptops, Workstations, and ServersCSC 9 - Limitation and Control of Network Ports, Protocols, and ServicesCSC 11 - Secure Configurations for Network Devices such as Firewalls, Routers, and Switches      	|
 |---------------------------------------------	|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------	|
 | Australia DSD Top 35 Mitigations Strategies 	| OS HardeningAPP Hardening                                                                                                                                                                                                                                                             	|
