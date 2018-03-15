@@ -19,6 +19,7 @@ You could read more about this in the #CISControls CSC-1, but also this process 
 Note: You should define a roadmap following your cybersecurity objective. This means increasing scope based on the value of the assets and the risk exposure.
 
 
+
 ### Compliance Management
 | Reference                                   	| Section                                                                                                           	|
 |---------------------------------------------	|-------------------------------------------------------------------------------------------------------------------	|
@@ -27,6 +28,8 @@ Note: You should define a roadmap following your cybersecurity objective. This m
 | PCI-DSS                                     	| 2.4 Maintain an inventory of system components that are in scope for PCI DSS                                      	|
 | ISO 27002                                   	| 8.1 Responsibility for assets                                                                                     	|
 | NCSC Ten Steps for Cybersecurity            	| Secure Configuration                                                                                              	|
+
+
 
 ## Security Hardening
 
@@ -41,6 +44,8 @@ You can even connect Faraday with your “Compliance Management Tool” to obtai
 
 You could read more about this in  #CISControls CSC-3, but also this process is part of ISO, NIST, PCI, DSD 35 Top Mitigation Strategies, among others references.
 
+
+
 ### Compliance Management
 
 | CIS Controls                                	| CSC 3 - Secure Configurations for Hardware and Software on Mobile Devices, Laptops, Workstations, and ServersCSC 9 - Limitation and Control of Network Ports, Protocols, and ServicesCSC 11 - Secure Configurations for Network Devices such as Firewalls, Routers, and Switches      	|
@@ -50,6 +55,8 @@ You could read more about this in  #CISControls CSC-3, but also this process is 
 | ISO 27002                                   	| 9.4 System and application access control13.1 Network security management                                                                                                                                                                                                             	|
 | NCSC Ten Steps for Cybersecurity            	| Secure ConfigurationNetwork Security                                                                                                                                                                                                                                                  	|
 | NCSC Ten Steps for Cybersecurity            	| Secure Configuration                                                                                                                                                                                                                                                                  	|
+
+
 
 ## Vulnerability Management
 
@@ -71,6 +78,8 @@ As always, you should define the reports based on your security objectives which
 You could read more about this in #CISControls CSC-4, but also this process is part of ISO, NIST, PCI, DSD 35 Top Mitigation Strategies, among others references.
 
 
+
+
 ### Compliance Mapping
 | IS Controls                                 	| CSC 4 - Continuous Vulnerability Assessment and RemediationCSC 18 - Application Software Security                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         	|
 |---------------------------------------------	|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------	|
@@ -79,6 +88,8 @@ You could read more about this in #CISControls CSC-4, but also this process is p
 | ISO 27002                                   	| 9.4 System and application access control18.2 Information security reviews                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                	|
 | NCSC Ten Steps for Cybersecurity            	| Secure ConfigurationNetwork Security                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      	|
 | NCSC Ten Steps for Cybersecurity            	| Secure Configuration                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      	|
+
+
 
 ## Pentest Management
 
@@ -93,6 +104,8 @@ Pentest execution and follow-up was the main purpose of Faraday from past years,
 You could read more about this in  #CISControls CSC-20, but also this process is part of ISO, NIST, PCI, among others references.
 
 
+
+
 ### Compliance Management
 | Reference                        	| Section                                                                                                                                                                     	|
 |----------------------------------	|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------	|
@@ -101,6 +114,8 @@ You could read more about this in  #CISControls CSC-20, but also this process is
 | ISO 27002                        	| 12.6 Technical vulnerability management14.1 Security requirements of information systems14.2 Security in development and support processes18.2 Information security reviews 	|
 | NCSC Ten Steps for Cybersecurity 	| Secure ConfigurationNetwork Security                                                                                                                                        	|
 | NCSC Ten Steps for Cybersecurity 	| Secure Configuration                                                                                                                                                        	|
+
+
 
 Some conclusions
 
@@ -114,6 +129,7 @@ But remember, a tool is a tool, always you must  think, build cost-effective sol
 
 
 Mariano del Rio
+
 www.securetech.com.ar
 
 https://www.faradaysec.com
