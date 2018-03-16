@@ -16,6 +16,7 @@
   * [Chat and Communication](https://github.com/infobyte/faraday/wiki/Chat-and-Communication)
   * [[Continuous-Scanning]]
   * [CSV Exporting](https://github.com/infobyte/faraday/wiki/Exporting-the-information)
+  * [[Cybersecurity Program]]
   * [Data Analysis Tools](https://github.com/infobyte/faraday/wiki/Data-Analysis-Tools)
   * [[Executive Report]]
   * [[Faraday CSV importer (Beta version)]]
