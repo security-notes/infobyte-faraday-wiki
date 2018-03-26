@@ -1,7 +1,8 @@
 ## Redhat 6
 ![](https://raw.githubusercontent.com/wiki/infobyte/faraday/images/faraday_redhat.jpeg)
 ### Docker
-Install Docker using EPEL, go to the terminal and run this command-lines.
+Install Docker using EPEL.
+Now, go to the terminal and run this command-lines:
 
     $  wget https://dl.fedoraproject.org/pub/epel/epel-release-latest-6.noarch.rpm
 
