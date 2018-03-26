@@ -14,7 +14,8 @@ Create a folder _docker_ with two sub-folders:
 
 Now you'll need the paths of those folders for the next command.
 
-     $ docker run --name couchdb_faraday -v /path/to/couchdb/conf:/usr/local/etc/couchdb/local.d -v /path/to/couchdb/data:/usr/local/var/lib/couchdb -p 5984:5984 -d couchdb:1.7.1
+     $ sudo docker run --name couchdb_Faraday -v /home/USER/docker/etc/:/usr/local/etc/couchdb/local.d -v /home/USER/docker/dbs/:/usr/local/var/lib/couchdb -d -p 5984:5984 couchdb
+
 
 
 
