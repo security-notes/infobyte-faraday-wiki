@@ -137,7 +137,7 @@ An additional CouchDB config is necessary. Follow these steps to set it up:
 
 1. Turn off Faraday Server (`./faraday-server.pyc --stop`)
 1. Turn off CouchDB (`systemctl stop couchdb`)
-1. Modify the file **local.ini** usually located in the path `/etc/couch/local.ini`
+1. Modify the file **local.ini** usually located in the path `/etc/couchdb/local.ini`
 1. Add the following lines to the `[couch_httpd_auth]` part of that file
 
 ```
