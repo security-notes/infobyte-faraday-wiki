@@ -37,20 +37,18 @@ The Python requirements for the server are stored in the [`requirements_server.t
 
 | Dependency | Version |
 |---|---|
-| CouchDB | 1.6 |
 | Python | 2.6 or 2.7 |
 | flask | >= 0.10.1 |
 | twisted | >= 16.1.1 |
 | sqlalchemy | >=1.0.12 |
 | pyopenssl | >16.0.0 |
-| couchdbkit | >=0.6.5 |
-| restkit | >=4.2.2 |
 | requests | >=2.10.0 |
 | flask | >=0.10.1 |
 | twisted | >=16.1.1 |
 | sqlalchemy | >=1.0.12 |
 | pyopenssl | >=16.0.0 |
 | service_identity | >=16.0.0 |
+| PostgreSQL       | >=9.5 |
 
 <a name="server-system-dependencies"></a>
 #### Installing system dependencies
@@ -64,7 +62,7 @@ $ sudo apt-get update
 $ sudo apt-get install build-essential ipython python-setuptools \
                 python-pip python-dev libssl-dev libffi-dev couchdb \
                 pkg-config libssl-dev libffi-dev libxml2-dev \
-                libxslt1-dev libfreetype6-dev libpng12-dev
+                libxslt1-dev libfreetype6-dev libpng12-dev postgresql
 ```
 
 ##### Kali Linux
