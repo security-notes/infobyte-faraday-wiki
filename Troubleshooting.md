@@ -251,7 +251,15 @@ Go to your /etc/hosts file and assing 127.0.0.1 to your localmachine hostname.
 
 [ [index] ](#index)
 
+### GTK's console is clear
 
+You're using the latest version of Tornado. Faraday don't have, at the time, compatibility with that version.
+You need to downgrade it. 
+Run the following command:
+```
+pip2 install tornado==4.5.2
+```
+Now the console should work properly.
 
 
 
@@ -300,6 +308,5 @@ An additional CouchDB config is necessary. Follow these steps to set it up:
 And then run CouchDB and Faraday Server again and you are all set!
 
 [ [index] ](#index)
-
 
 Is your question not listed here? [Contact us](https://github.com/infobyte/faraday/issues)
