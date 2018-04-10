@@ -19,7 +19,7 @@
   * [[Cybersecurity Program]]
   * [Data Analysis Tools](https://github.com/infobyte/faraday/wiki/Data-Analysis-Tools)
   * [[Executive Report]]
-  * [[Faraday CSV importer (Beta version)]]
+  * [[Faraday CSV importer]]
   * [[Helpers]]
   * [JIRA Integration](https://github.com/infobyte/faraday/wiki/Jira-integration)
   * [[LDAP]]
