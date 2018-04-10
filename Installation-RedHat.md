@@ -136,7 +136,7 @@ Example:
 
 ### Install Epel 
 
-We require epel Installing efor python-pip. Please run the following commands:
+We require epel Installing for python-pip. Please run the following commands:
 
     $ wget https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
 
