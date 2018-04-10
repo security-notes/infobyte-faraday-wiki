@@ -253,7 +253,7 @@ Go to your /etc/hosts file and assing 127.0.0.1 to your localmachine hostname.
 
 ### GTK's console is clear
 
-You're using the latest version of Tornado. Faraday don't have, at the time, compatibility with that version.
+You're using the latest version of Tornado. Faraday doesn't have, at the time, compatibility with that version.
 You need to downgrade it. 
 Run the following command:
 ```
