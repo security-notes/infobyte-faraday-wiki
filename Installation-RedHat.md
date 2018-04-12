@@ -10,12 +10,12 @@ Now, go to the terminal and run this command-lines:
 
 Create a folder _docker_ with two sub-folders: 
 
-   1. _etc_
-   2. _dbs_
+   1. _data_
+   2. _conf_
 
 Now you'll need the paths of those folders for the next command.
 
-     $ sudo docker run --name couchdb_faraday -v /home/USER/docker/etc/:/usr/local/etc/couchdb/local.d -v /home/USER/docker/dbs/:/usr/local/var/lib/couchdb -d -p 5984:5984 couchdb:1.7.1
+     $ sudo docker run --name couchdb_faraday -v /home/USER/docker/data/:/usr/local/etc/couchdb/local.d -v /home/USER/docker/conf/:/usr/local/var/lib/couchdb -d -p 5984:5984 couchdb:1.7.1
 
 
 
@@ -104,12 +104,12 @@ If you want to configure Docker to start on boot, run the following command:
 
 Create a folder _docker_ with two sub-folders: 
 
-   1. _etc_
-   2. _dbs_
+   1. _data_
+   2. _conf_
 
 Now you'll need the paths of those folders for the next command.
 
-    $ sudo docker run --name couchdb_faraday -v /home/USER/docker/etc/:/usr/local/etc/couchdb/local.d -v /home/USER/docker/dbs/:/usr/local/var/lib/couchdb -d -p 5984:5984 couchdb:1.7.1
+    $ sudo docker run --name couchdb_faraday -v /home/USER/docker/data/:/usr/local/etc/couchdb/local.d -v /home/USER/docker/conf/:/usr/local/var/lib/couchdb -d -p 5984:5984 couchdb:1.7.1
 
 In case you can’t start Couchdb container, type the following command:
 
