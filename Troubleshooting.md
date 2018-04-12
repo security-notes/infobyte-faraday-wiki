@@ -57,7 +57,7 @@ IOError: [Errno 2] No such file or directory: '/home/leonardo/VERSION'
 * [ERROR - [ERROR] XML Plugin: Ip of host unknown](#ip-of-host-unknown)
 * [ERROR - CouchDB is not running](#couchdb-is-not-running)
 * [OSx GTK not working IP ERROR](#osx-gtk-not-working)
-
+* [ERROR - Unauthorized access to CouchDB](#unauthorized-access-to-couchdb)
 
 ### Commercial versions
 
@@ -261,9 +261,23 @@ pip2 install tornado==4.5.2
 ```
 Now the console should work properly.
 
+[ [index] ](#index)
+
+<a name="unauthorized-access-to-couchdb"></a>
+### ERROR - Unauthorized access to CouchDB
+
+When you start CouchDB container, Docker doesn't save your Couchdb credentials. In order to fix this issue, follow the next steps:
+
+- Stop CouchDB container (docker stop couchdb_faraday).
+- Go to the CouchDB folder. At the moment you pulled CouchDB from Docker, you must have created two directories: conf and data. (https://github.com/infobyte/faraday/wiki/Installation-CouchDB)
+- Go into the directory named 'conf'.
+- Create a file named 'local.ini'.
+- Run CouchDB container (docker start couchdb_faraday).
+- Create the user again on CouchDB.
+- Run Faraday's server again from the Faraday's directory and you are all set!
 
 
-
+[ [index] ](#index)
 
 ## Answers for Commercial versions
 
@@ -306,7 +320,7 @@ An additional CouchDB config is necessary. Follow these steps to set it up:
       timeout = 9999999
 
 And then run CouchDB and Faraday Server again and you are all set!
-
+ 
 [ [index] ](#index)
 
 Is your question not listed here? [Contact us](https://github.com/infobyte/faraday/issues)
