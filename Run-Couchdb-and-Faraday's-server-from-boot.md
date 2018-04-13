@@ -1,5 +1,3 @@
-# Run Couchdb and Faraday's server from boot.
-
 * Create a script named ‘docker.sh’ wherever you want.
 * Write the following lines in this script:
 
