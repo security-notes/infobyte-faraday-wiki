@@ -157,7 +157,7 @@ We're almost there. Let's open firewall's port
 
 Finally, let's run the server
 
-    $ ./faraday-server.py (first run to install missing dependencies)
+    $ python2 faraday-server.py (first run to install missing dependencies)
 
 If you get the following error:
 
@@ -165,16 +165,16 @@ If you get the following error:
 
 Don't worry. All you need to do is to run the following command:
 
-    $ pip install Twisted==16.4.1
+    $ sudo pip install Twisted==16.4.1
 
 ### Going for it!
 
 Almost there! Start Faraday's server:
 
     $ cd faraday
-    $ ./faraday-server.py
+    $ python2 faraday-server.py
 
 And in another terminal start the client runing:
 
     $ cd faraday
-    $ ./faraday.py
+    $ python2 faraday.py
