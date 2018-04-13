@@ -28,7 +28,7 @@
   * [[Manage Workspaces]]
   * [[OSINT provider]]
   * [[Proxy]]
-  * [Run CouchDB and Faraday's server from boot](https://github.com/infobyte/faraday/wiki/Run-Couchdb-and-Faraday's-server-from-boot)
+  * [Run CouchDB and Faraday's server on startup](https://github.com/infobyte/faraday/wiki/Run-Couchdb-and-Faraday's-server-on-startup)
   * [[Scripts]]
   * [[Tag Use]]
   * [[Tasks]]
