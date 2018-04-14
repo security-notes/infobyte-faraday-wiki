@@ -53,6 +53,7 @@ Restart=always
 [Install]
 WantedBy=default.target
 ```
+_Note that the paths are defined by the location of Python and the location of the Faraday's server script._
 
 * Enable these unit files.
 
