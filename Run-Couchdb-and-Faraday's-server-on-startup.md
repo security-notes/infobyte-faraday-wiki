@@ -48,7 +48,7 @@ After=couchdb.service
 [Service]
 User=$USER
 Type=simple
-ExecStart=/path/to/faraday/faraday-server.py --nodeps
+ExecStart=/usr/bin/python /path/to/faraday/faraday-server.pyc --nodeps
 Restart=always
 [Install]
 WantedBy=default.target
