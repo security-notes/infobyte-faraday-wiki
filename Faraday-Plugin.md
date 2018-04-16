@@ -36,7 +36,7 @@ Available scripts:
 	- create_vulnweb: Creates a new website vulnerability in a specified service
 	- delAllHost: Deletes all stored hosts
 	- delAllServiceClosed: Deletes all services with a non open port
-	- delAllVulnsWith: Empty
+	- delAllVulnsWith: Delete all vulnerabilities matched with regex
 	- filter_services: Filter services by port
 	- getAllCreds: Get all stored credentials
 	- getAllIps: Get all scanned IPs
@@ -154,7 +154,7 @@ Faraday comes with some presets for bulk actions such as object removal, etc. Th
 * `create_vulnweb`: Creates a new website vulnerability in a specified service
 * `delAllHost`: Deletes all stored hosts
 * `delAllServiceClosed`: Deletes all services with a non open port
-* `delAllVulnsWith`: Empty
+* `delAllVulnsWith`: Delete all vulnerabilities matched with rege
 * `filter_services`: Filter services by port
 * `getAllIpsInterfaces`: Get all scanned interfaces
 * `getExploits`: Get possible exploits from open services
