@@ -67,10 +67,10 @@ And in another terminal start the client runing:
     $ ./faraday.py
 
 ***
-## Redhat 7
+## RedHat 7
 ![](https://raw.githubusercontent.com/wiki/infobyte/faraday/images/faraday_redhat.jpeg)
 
-To configure red hat subscription: https://access.redhat.com/labs/registrationassistant/#!/rhel7/
+To configure RedHat subscription: https://access.redhat.com/labs/registrationassistant/#!/rhel7/
 
 Enable the following repositories:
 
