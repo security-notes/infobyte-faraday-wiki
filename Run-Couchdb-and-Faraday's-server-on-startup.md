@@ -1,5 +1,3 @@
-### NOTE: this guide has been proved only in RedHat. Soon we'll have a complete guide for others distros.
-
 * Create a script named ‘docker.sh’ wherever you want.
 * Write the following lines in this script:
 
