@@ -157,7 +157,7 @@ We're almost there. Let's open firewall's port
 
 Finally, let's run the server
 
-    $ python2 faraday-server.py (first run to install missing dependencies)
+    $ python2 faraday-server.pyc (first run to install missing dependencies)
 
 If you get the following error:
 
@@ -172,9 +172,9 @@ Don't worry. All you need to do is to run the following command:
 Almost there! Start Faraday's server:
 
     $ cd faraday
-    $ python2 faraday-server.py
+    $ python2 faraday-server.pyc
 
 And in another terminal start the client runing:
 
     $ cd faraday
-    $ python2 faraday.py
+    $ python2 faraday.pyc
