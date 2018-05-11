@@ -6,50 +6,14 @@ Using our plugin located in ```$faraday/bin/``` you can do different actions fro
 
 ```
 $ ./fplugin -h
+fplugin --help
 usage: fplugin [-h] [-i] [-w WORKSPACE] [-u URL] [command]
 
 Using our plugin you can do different actions in the command line
 and interact with Faraday. Faraday comes with some presets for bulk
 actions such as object removal, get object information, etc.
-Any parameter not recognized by fplugin, or everything after -- will be passed on
+Any parameter not recognized by fplugin, or everything after -- will be passed on 
 to the called script.
-
-positional arguments:
-  command               Command to execute. Example: ./fplugin getAllIps
-                        (default: None)
-
-optional arguments:
-  -h, --help            show this help message and exit
-  -i, --interactive     Run in interactive mode (default: False)
-  -w WORKSPACE, --workspace WORKSPACE
-                        Workspace to use (default: sebi2)
-  -u URL, --url URL     Faraday Server URL. Example: http://localhost:5985
-                        (default: http://localhost:5985)
-
-Available scripts:
-	- create_cred: Creates new credentials
-	- create_host_and_interface: Creates a new host in current workspace and a new interface in the given host
-	- create_note: Creates a new note
-	- create_service: Creates a new service in a specified interface
-	- create_vuln: Creates a new vulnerability
-	- create_vulnweb: Creates a new website vulnerability in a specified service
-	- delAllHost: Deletes all stored hosts
-	- delAllServiceClosed: Deletes all services with a non open port
-	- delAllVulnsWith: Delete all vulnerabilities matched with regex
-	- filter_services: Filter services by port
-	- getAllCreds: Get all stored credentials
-	- getAllIps: Get all scanned IPs
-	- getAllIpsInterfaces: Get all scanned interfaces
-	- getAllOs: Lists all scanned OSs
-	- getExploits: Get possible exploits from open services
-	- getSeverityByCwe: Get Vulns filtered by Severity and change Severity based in CWE
-```
-
-To view the help ofthe `fplugin`, you can use the `-h` or `--help` arguments. It is also possible to view the help of the individual commands, but as the arguments mentioned will be catched before they reach the command being called, you need to 'escape' them, like this:
-
-```
-$ ./fplugin create_host_and_interface --help -h
-usage: fplugin [-h] [-i] [-w WORKSPACE] [-u URL] [command]
 
 positional arguments:
   command               Command to execute. Example: ./fplugin getAllIps
@@ -63,9 +27,34 @@ optional arguments:
   -u URL, --url URL     Faraday Server URL. Example: http://localhost:5985
                         (default: http://localhost:5985)
 
+Available scripts:
+	- change_vuln_status: Changes Vulns Status (to closed)
+	- create_cred: Creates new credentials
+	- create_host_and_interface: Creates a new host and interface in current workspace
+	- create_note: Creates a new note
+	- create_service: Creates a new service in a specified interface
+	- create_vuln: Creates a new vulnerability
+	- create_vulnweb: Creates a new website vulnerability in a specified service
+	- delAllHost: Deletes all stored hosts
+	- delAllServiceClosed: Deletes all services with a non open port
+	- delAllVulnsWith: Delete all vulnerabilities matched with regex
+	- filter_services: Filter services by port or service name
+	- getAllIpsInterfaces: Get all scanned interfaces
+	- getSeverityByCwe: Get Vulns filtered by Severity and change Severity based in CWE
+	- import_csv: Import Faraday objects from CSV file
+	- import_pcap: Import every host found in a PCAP file for further scanning
+	- list_creds: Get all stored credentials
+	- list_hosts: List hosts
+	- list_ips: List all scanned IPs
+	- list_os: Lists all scanned OSs
+	- screenshot_server: Takes a Screenshot of the ip:ports of a given protocol
+```
 
+To view the help ofthe `fplugin`, you can use the `-h` or `--help` arguments. It is also possible to view the help of the individual commands, but as the arguments mentioned will be catched before they reach the command being called, you need to 'escape' them, like this:
+
+```
+$ ./fplugin create_host_and_interface 
 Creates a new host in current workspace and a new interface in the given host
-
 
 positional arguments:
     host_name
