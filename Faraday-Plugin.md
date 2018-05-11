@@ -48,9 +48,21 @@ Available scripts:
 To view the help ofthe `fplugin`, you can use the `-h` or `--help` arguments. It is also possible to view the help of the individual commands, but as the arguments mentioned will be catched before they reach the command being called, you need to 'escape' them, like this:
 
 ```
-$ ./fplugin create_host -- -h
+$ ./fplugin create_host_and_interface --help -h
+usage: fplugin [-h] [-i] [-w WORKSPACE] [-u URL] [command]
 
-usage: fplugin create_host_and_interface[-h] [-i] [-w WORKSPACE] [-u URL] 
+positional arguments:
+  command               Command to execute. Example: ./fplugin getAllIps
+                        (default: None)
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -i, --interactive     Run in interactive mode (default: False)
+  -w WORKSPACE, --workspace WORKSPACE
+                        Workspace to use (default: burp_pro_original)
+  -u URL, --url URL     Faraday Server URL. Example: http://localhost:5985
+                        (default: http://localhost:5985)
+
 
 Creates a new host in current workspace and a new interface in the given host
 
