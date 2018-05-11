@@ -78,6 +78,8 @@ optional arguments:
 
 Everything after the `--` will be sent to the command, and will not be interpreted by `fplugin`.
 
+```
+
 # Usage Examples
 
 ### Filter hosts by ports or services
