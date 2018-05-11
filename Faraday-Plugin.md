@@ -135,10 +135,8 @@ The advantage of the interactive mode is that you can use the simple string `$la
 
 For example:
 ```
-> create_host 192.154.33.211 Android
-3e02a40e260a1ced7dff6b9fcfa2a8dd31ad293c
-> create_interface $last intname aa:bb:cc:dd:ee:ff
-3e02a40e260a1ced7dff6b9fcfa2a8dd31ad293c.a47084649d94d1fb2f912872dfda906c59a623c4
+$ ./fplugin create_host_and_interface 192.154.33.22 Linux interface 76598709876
+709381e970d2d669ee1d1b4844a6dde9d9b63c77.a47084649d94d1fb2f912872dfda906c59a623c4
 ```
 
 
