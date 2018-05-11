@@ -101,32 +101,22 @@ host            service         ports           protocol        status          
 192.168.20.11   http            443             tcp             open            Linux
 ```
 
-### Create a new host
+### Create a new host and interface
 
 ```
-$ ./fplugin create_host 192.154.33.222 Android
-1a7b2981c7becbcb3d5318056eb29a58817f5e67
+$ ./fplugin create_host_and_interface 192.154.33.22 Linux interface 76598709876
+709381e970d2d669ee1d1b4844a6dde9d9b63c77.a47084649d94d1fb2f912872dfda906c59a623c4
 
 $ echo $?
 0
 
-$ ./fplugin create_host 192.154.33.22 Android
-A host with ID 1a7b2981c7becbcb3d5318056eb29a58817f5e67 already exists!
+$ ./fplugin create_host_and_interface 192.154.33.22 Linux intname aa:bb:cc:dd:ee:ff
+A host with ID 709381e970d2d669ee1d1b4844a6dde9d9b63c77 already exists!
 
 $ echo $?
 2
 ...
 ```
-
-### Create a new interface
-
-```
-./fplugin create_interface 1a7b2981c7becbcb3d5318056eb29a58817f5e67 intname aa:bb:cc:dd:ee:ff
-1a7b2981c7becbcb3d5318056eb29a58817f5e67.a47084649d94d1fb2f912872dfda906c59a623c4
-```
-
-
-As you can see, the commands will return the necessary information to automatize the creation of any of Faraday's data models, or abort in case of failure.
 
 # Interactive mode
 
