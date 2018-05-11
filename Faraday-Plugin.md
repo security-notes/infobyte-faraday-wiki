@@ -28,8 +28,7 @@ optional arguments:
 
 Available scripts:
 	- create_cred: Creates new credentials
-	- create_host: Creates a new host in current workspace
-	- create_interface: Creates a new interface in a specified host
+	- create_host_and_interface: Creates a new host in current workspace and a new interface in the given host
 	- create_note: Creates a new note
 	- create_service: Creates a new service in a specified interface
 	- create_vuln: Creates a new vulnerability
@@ -51,19 +50,30 @@ To view the help ofthe `fplugin`, you can use the `-h` or `--help` arguments. It
 ```
 $ ./fplugin create_host -- -h
 
-usage: fplugin create_host [-h] [--dry-run] name os
+usage: fplugin create_host_and_interface[-h] [-i] [-w WORKSPACE] [-u URL] 
 
-Creates a new host in current workspace
+Creates a new host in current workspace and a new interface in the given host
+
 
 positional arguments:
-  name        Host name
-  os          OS
+    host_name
+    os
+    interface_name
+    mac
 
 optional arguments:
-  -h, --help  show this help message and exit
-  --dry-run   Do not touch the database. Only print the object ID (default:
-              False)
-```
+-h --help 
+--ipv4address IPV4ADDRESS
+--ipv4gateway IPV4GATEWAY
+--ipv4mask IPV4MASK
+--ipv4dns IPV4DNS
+--ipv6address IPV6ADDRESS
+--ipv6prefix IPV6PREFIX
+--ipv6gateway IPV6GATEWAY
+--ipv6dns IPV6DNS
+--netsegment NETSEGMENT
+--hostres HOSTRES
+--dry-run
 
 Everything after the `--` will be sent to the command, and will not be interpreted by `fplugin`.
 
