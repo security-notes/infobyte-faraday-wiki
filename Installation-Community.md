@@ -8,15 +8,11 @@
 <a name="faraday-server-commu"></a>
 ### Faraday Server
 
-Faraday Server is the interface between CouchDB and Faraday Client sessions. The server's responsibility is to transmit information between the client and CouchDB, and make sure that they are kept in sync. It also serves the Web UI client, which allows you to handle enormous workspaces from your favorite web browser. 
+Faraday Server is the interface between PostgreSQL and Faraday Client and WebUI. The server's responsibility is to transmit information between the client or WebUI and PostgeSQL, and make sure that they are kept in sync. The Web UI client, which allows you to handle enormous workspaces from your favorite web browser.
 
 
-**Important:** You should keep in mind that the Faraday server must be installed on the same machine as CouchDB. 
-**Also Important:** make sure to use version 1.7.1 of CouchDB, as Faraday doesn't support CouchDB version 2.0.
+**Important:** You should keep in mind that is recommended to install Faraday server on the same instance as PostgreSQL.
 
-Unfortunately, in various Debian-based systems (Kali, potentially others), CouchDB 1.7.1 does not work (due to upgrades to a new version of Erlang). If this is the case with your OS, we recommend use Couchdb through a [Docker container](https://github.com/infobyte/faraday/wiki/Installation-CouchDB). 
-
-Because of this, we are currently working on migrating to another database engine. 
 
 #### Downloading
 
@@ -35,21 +31,6 @@ Faraday Server is built with minimum requirements. This is by design, so you can
 
 The Python requirements for the server are stored in the [`requirements_server.txt` file](https://github.com/infobyte/faraday/blob/master/requirements_server.txt).
 
-| Dependency | Version |
-|---|---|
-| Python | 2.6 or 2.7 |
-| flask | >= 0.10.1 |
-| twisted | >= 16.1.1 |
-| sqlalchemy | >=1.0.12 |
-| pyopenssl | >16.0.0 |
-| requests | >=2.10.0 |
-| flask | >=0.10.1 |
-| twisted | >=16.1.1 |
-| sqlalchemy | >=1.0.12 |
-| pyopenssl | >=16.0.0 |
-| service_identity | >=16.0.0 |
-| PostgreSQL       | >=9.5 |
-
 <a name="server-system-dependencies"></a>
 #### Installing system dependencies
 
@@ -58,11 +39,11 @@ The Python requirements for the server are stored in the [`requirements_server.t
 You can run the following command to install the required dependencies on any Debian based distribution.
 
 ```
-$ sudo apt-get update
-$ sudo apt-get install build-essential ipython python-setuptools \
-                python-pip python-dev libssl-dev libffi-dev couchdb \
+$ sudo apt update
+$ sudo apt install build-essential ipython python-setuptools \
+                python-pip python-dev libssl-dev libffi-dev sudo \
                 pkg-config libssl-dev libffi-dev libxml2-dev \
-                libxslt1-dev libfreetype6-dev libpng12-dev postgresql
+                libxslt1-dev libfreetype6-dev libpng-dev postgresql
 ```
 
 ##### Kali Linux
@@ -77,15 +58,15 @@ $ sudo apt-get install build-essential ipython python-setuptools \
                 libxslt1-dev libfreetype6-dev libpng-dev
 ```
 
-##### Gentoo 
+##### Gentoo
 If you are running Gentoo, this are the dependencies with Emerge:
 
 ```
-dev-db/couchdb dev-python/flask-sqlalchemy dev-python/service_identity dev-python/twisted \
-dev-python/pyopenssl dev-python/couchdbkit dev-java/mockito dev-python/Whoosh \ 
+dev-python/flask-sqlalchemy dev-python/service_identity dev-python/twisted \
+dev-python/pyopenssl dev-java/mockito dev-python/Whoosh \
 dev-python/configargparse dev-python/restkit dev-python/requests www-servers/tornado \
 dev-python/flask dev-python/colorama dev-python/setuptools dev-python/pip dev-libs/libpqxx \
-libffi-dev 
+libffi-dev
 ```
 
 ##### Others
@@ -102,13 +83,30 @@ $ pip2 install -r requirements_server.txt
 ```
 
 <a name="server-configuration"></a>
+
+#### Initializing PostgreSQL
+
+In order to initialize Postgresql database and generate your main user and a password, run the following command:
+
+```
+python manage.py initdb
+```
+ ***Note:*** you can change these password in Faraday's Web UI.
+
+
+#### Importing from CouchDB
+
+If you want to import your data from CouchDB to PostgreSQL, run the following command:
+
+```
+python manage.py import_from_couchdb
+```
+
+***Note:*** beware of the number of users you have created in CouchDB, remember that you have already created one when you initialized PostgreSQL. The number of users that you have between CouchDB and PostgreSQL should not surpass the number of users you're allow to have according to your license.
+
 #### Configuration
 
-Faraday Server needs to communicate to Couch Databases to function. By default, the server will listen on port **5985**. You may need to edit `user` and `password` on `~/.faraday/config/server.ini` in case you have set up an admin account on your CouchDB.
-
-### Authentication
-
-You can use the CouchDB ***_utils*** interface (located in `http://127.0.0.1:5984/_utils/`) to create administrator users, and then edit the CouchDB url in your instance with the users credentials. For example: `http://faraday:changeme@192.168.1.254:5985/`
+By default, Faraday server will listen on port **5985**. You can edit this on `~/.faraday/config/server.ini`.
 
 #### Exposing the Server
 
@@ -124,12 +122,12 @@ bind_address=0.0.0.0
 
 Then restart the server if you had it running and reload your browser in case you were already trying to access the Web UI form a different IP.
 
+faraday-server.py also allow to use *--bind* and *--port* to override *server.ini* settings.
 
 #### Running
 
-Once everything is installed you need to configure your server properly. Read about [Server Configuration](#server-configuration).
+Once everything is installed and the server is configured, you can proceed to run the Faraday server script:
 
-After configuring, you can proceed to run the Faraday Server script:
 
 ```
 $ python2 faraday-server.py
@@ -171,31 +169,10 @@ Download the [latest tarball](https://github.com/infobyte/faraday/tarball/master
 
 Faraday Client works under any modern Linux distribution or Mac OS X, and needs the following dependencies:
 
-| Dependency | Version |
-|---|---|
-| CouchDB | 1.6 |
-| Python | 2.6 or 2.7 |
-| GTK3 |  |
-| PyGobject | 3.12.0 |
-| Vte | API >= 2.90 |
-| zsh |  |
-| CURL |  |
-| couchdbkit |  |
-| mockito |  |
-| whoosh |  |
-| argparse |  |
-| IPy |  |
-| restkit |  |
-| requests |  |
-| tornado |  |
-| flask |  |
-| colorama |  |
-
 The Python requirements for the client are stored in the [`requirements.txt` file](https://github.com/infobyte/faraday/blob/master/requirements.txt). Some additional requirements are necessary for specific features to work, these are stored in the [`requirements_extras.txt` file](https://github.com/infobyte/faraday/blob/master/requirements_extras.txt).
 
 Out tests include [Debian](#client-debian), [Ubuntu](#client-debian), [Kali](#client-kali), [Backtrack](#client-debian) and [OSX Sierra](https://github.com/infobyte/faraday/wiki/Installation-OSX).
 
-If instead of installing you want to take a quick look at Faraday you can also use [Docker](#client-docker).
 
 <a name="client-system-dependencies"></a>
 #### Installing system dependencies
@@ -206,22 +183,22 @@ If instead of installing you want to take a quick look at Faraday you can also u
 You can run the following command to install the required dependencies on any Debian based distribution.
 
 ```
-$ sudo apt-get update
+$ sudo apt update
 ```
 
 If you are running Ubuntu 12.04 LTS, or Ubuntu 14.04 LTS, please execute this command:
 
 ```
-$ sudo apt-get install libpq-dev python-pip python-dev gir1.2-gtk-3.0 gir1.2-vte-2.90 python-gobject zsh curl
+$ sudo apt install libpq-dev python-pip python-dev gir1.2-gtk-3.0 gir1.2-vte-2.90 python-gobject zsh curl
 ```
 
 If you are any other version, please execute the following command:
 
 ```
-$ sudo apt-get install libpq-dev python-pip python-dev gir1.2-gtk-3.0 gir1.2-vte-2.91 python-gobject zsh curl
+$ sudo apt install libpq-dev python-pip python-dev gir1.2-gtk-3.0 gir1.2-vte-2.91 python-gobject zsh curl
 ```
 
-#### Gentoo 
+#### Gentoo
 
 This are the dependencies for Gentoo with Emerge:
 
@@ -271,9 +248,9 @@ Now you need to configure every Faraday instance so it can connect to the server
 * If you are using the ***--gui=no-gui*** option
 
 Edit the file: `~/.faraday/config/user.xml`
-And search for the following **couch_uri** tag and set it to the server URL, for example:
+And search for the following **api_uri** tag and set it to the server URL, for example:
 
-`<couch_uri>http://127.0.0.1:5985</couch_uri>`
+`<api_uri>http://127.0.0.1:5985</api_uri>`
 
 #### Running
 
@@ -292,18 +269,13 @@ Faraday comes pre-installed in Kali Rolling. The package name is **python-farada
 
 In order to run Faraday in Kali:
 ```
-$ systemctl start couchdb
+$ systemctl start postgres
 $ cd /usr/share/python-faraday
 $ python2 faraday-server.py
 $ python2 faraday.py
 ```
 
 Due to Kali's package updates the pre-installed package may not be the last version. If you want the latest updates use the [Debian install steps](#client-debian).
-
-<a name="client-docker"></a>
-##### Docker
-
-[You can find instructions on how to run the client inside a Docker container here.](https://github.com/infobyte/faraday/wiki/installation-docker)
 
 <a name="client-osx"></a>
 ##### OSX
