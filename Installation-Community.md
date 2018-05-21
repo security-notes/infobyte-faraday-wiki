@@ -41,7 +41,7 @@ You can run the following command to install the required dependencies on any De
 ```
 $ sudo apt update
 $ sudo apt install build-essential ipython python-setuptools \
-                python-pip python-dev libssl-dev libffi-dev sudo \
+                python-pip python-dev libssl-dev libffi-dev \
                 pkg-config libssl-dev libffi-dev libxml2-dev \
                 libxslt1-dev libfreetype6-dev libpng-dev postgresql
 ```
@@ -53,7 +53,7 @@ If you are running Kali, please run the following commands:
 ```
 $ sudo apt-get update
 $ sudo apt-get install build-essential ipython python-setuptools \
-                python-pip python-dev libssl-dev libffi-dev couchdb \
+                python-pip python-dev libssl-dev libffi-dev \
                 pkg-config libssl-dev libffi-dev libxml2-dev \
                 libxslt1-dev libfreetype6-dev libpng-dev
 ```
@@ -91,7 +91,7 @@ In order to initialize Postgresql database and generate your main user and a pas
 ```
 python manage.py initdb
 ```
- ***Note:*** you can change these password in Faraday's Web UI.
+ ***Note:*** if at the moment you run this command, it throws an error, be sure you have sudo installed. Once you have installed it, run the command again.
 
 
 #### Importing from CouchDB
@@ -127,7 +127,6 @@ faraday-server.py also allow to use *--bind* and *--port* to override *server.in
 #### Running
 
 Once everything is installed and the server is configured, you can proceed to run the Faraday server script:
-
 
 ```
 $ python2 faraday-server.py
@@ -167,7 +166,7 @@ Download the [latest tarball](https://github.com/infobyte/faraday/tarball/master
 
 #### Requirements
 
-Faraday Client works under any modern Linux distribution or Mac OS X, and needs the following dependencies:
+Faraday Client works under any modern Linux distribution or Mac OS X, and needs Python 2.6 or 2.7.
 
 The Python requirements for the client are stored in the [`requirements.txt` file](https://github.com/infobyte/faraday/blob/master/requirements.txt). Some additional requirements are necessary for specific features to work, these are stored in the [`requirements_extras.txt` file](https://github.com/infobyte/faraday/blob/master/requirements_extras.txt).
 
@@ -213,7 +212,7 @@ Extras dependencies:
 dev-python/beautifulsoup dev-python/gevent-psycopg2
 ```
 
-#### ArchLinux
+#### ArchLinuxBy default, Faraday server will listen on port **5985**. You can edit this on `~/.faraday/config/server.ini`.
 
 Before installing Faraday you will need to get some user-contributed packages. In order to do this quickly we need an [AUR](https://wiki.archlinux.org/index.php/Arch_User_Repository) wrapper, in this case we will use [Yaourt](http://archlinux.fr/yaourt-en). After installing Yaourt run:
 
