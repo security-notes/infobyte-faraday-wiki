@@ -97,7 +97,7 @@ With this method we can create and add a interface to a host.
 
 **core.PluginBase**
 
-The complete list of methods in the PluginBase are:
+Besides the two methods above, this is the complete list of methods in the PluginBase:
 ```python
     def createAndAddServiceToInterface(self, host_id, interface_id, name, protocol = "tcp?", 
                 ports = [], status = "running", version = "unknown", description = ""):
