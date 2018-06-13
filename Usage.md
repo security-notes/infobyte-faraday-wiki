@@ -14,13 +14,19 @@ GTK+3 is designed to improve on the deprecated QT interface, so nothing should l
 
 To try it, check out our [installation manual](https://github.com/infobyte/faraday/wiki/installation-community).
 
+To access Faraday GTK, run the following command in Faraday's folder:
+
+```
+    $ python faraday.py
+```
+
 #### The main window
 
 ![](https://raw.github.com/wiki/infobyte/faraday/images/Faraday-Gtk-MainWindow.png)
 
 You will be presented with a special version of your own [ZSH terminal](https://en.wikipedia.org/wiki/Z_shell#Origin). Just as with GTK, Faraday intercepts every command you execute and checks if there's a plugin available. If there is, Faraday will interpret all the relevant information like ip adresses, hostnames, services, vulnerabilities, websites, and notes that the command generates.
 
-The menu-bar gives you access to the most common options: you can open a new tab to create a new workspace, toggle the log, or set your CouchDB URL in the preferences dialog (and login to the database if you're using our Pro or Corporate versions). At the rightmost border, you'll be able to import any report by our supported plugins to Faraday.
+The menu-bar gives you access to the most common options: you can open a new tab to create a new workspace, toggle the log, or set your CouchDB URL in the preferences dialog (and login to the database if you're using our Pro or Corporate versions). At the rightmost border, in the folder icon button you'll be able to import any report by our supported plugins to Faraday.
 
 The sidebar has two tabs, one for workspaces and the other for hosts. The workspaces tab allows you to change workspaces, while the hosts tab shows you all the hosts in your current workspace, plus the amount of vulnerabilities found in each one of them inside parenthesis. Clicking on a host will show you more detailed information, see [Host information dialog](#host-information-dialog)
 
@@ -71,15 +77,32 @@ A dialog will open, from which you can select the tool that was used to generate
 All the data in the report will be processed and added to the active Workspace, and the console will show a message when the plugin starts and ends.
 
 
+***
 ### ZSH UI
 
 You can even run Faraday in detached mode connecting with a ZSH terminal to it:
 
+First, you need to run Faraday with no GUI:
+
+``` 
+    $ python faraday.py --gui=no-gui
+```
+
 ![](https://raw.github.com/wiki/infobyte/faraday/images/no-ui.png)
+
+Now, run Faraday Terminal:
+
+```
+    $ ./faraday-terminal.zsh
+```
+
 ![](https://raw.github.com/wiki/infobyte/faraday/images/no-ui2.png)
 
 To import your reports, drag-and-drop them into:
-    $ ~/.faraday/report/workspace_name
+
+    $ ~/.faraday/report/[workspace_name]
+
+Replace [workspace_name] with the workspace's name you're working in.
 
 Faraday will parse your reports and upload the information extracted from them.
 All the available information are viewable through interfaces:
@@ -87,15 +110,16 @@ All the available information are viewable through interfaces:
 * [GTK GUI](#gtk-gui)
 * [Web UI](#web-ui)
 
+***
 ### Web UI
 
 In order to access the Web UI point your browser to: `http://[FARADY-SERVER]:PORT/_ui/`
 
-The current URL address is displayed on console log information
+The current URL address is displayed on console log information:
 
 ![](https://raw.github.com/wiki/infobyte/faraday/images/Console_GUIWeb_Highlight.png)
 
-You can also go directly there from GTK clicking on this icon:
+You can also go to the Web UI directly from Faraday GTK by clicking on this icon:
 
 ![](https://raw.github.com/wiki/infobyte/faraday/images/Visualize-icon.png)
 
@@ -108,7 +132,10 @@ Faraday's dashboard contains a summary of all the data in a Workspace condensed 
 
 ![](https://raw.github.com/wiki/infobyte/faraday/images/GUI_Dashboard_new.png)
 
-###### Top Services View
+
+Let's see in more detail some of these boxes:
+
+###### _Top Services View_
 
 To access a [treemap](https://en.wikipedia.org/wiki/Treemapping) featuring the top services in the Workspace, click on the box title.
 
@@ -117,7 +144,7 @@ To access a [treemap](https://en.wikipedia.org/wiki/Treemapping) featuring the t
 ![](https://raw.github.com/wiki/infobyte/faraday/images/GUI_Services.gif)
 
 <a name="workspace-worth"></a>
-###### Workspace's Worth
+###### _Workspace's Worth_
 
 ![](https://raw.github.com/wiki/infobyte/faraday/images/faraday-dashboard-ws-worth.png)
 
@@ -153,7 +180,7 @@ The Status Report provides several options including vulnerability search, filte
 
 Personalize this view by clicking on the blue buttons to select the columns you wish to see, and remove the ones you don't need with the X's in the table. These changes will be persisted in your browser from session to session, so you only have to apply them once.
 
-###### Search & Filter
+###### _Search & Filter_
 
 To search, type the keyword in the text-box above the table.
 
@@ -161,7 +188,7 @@ You can find the text filter in both the Status Report and Hosts views. Keep in 
 
 ![](https://raw.github.com/wiki/infobyte/faraday/images/search.png)
 
-###### Filter by field
+###### _Filter by field_
 
 To search by field enter the name of field  (e.g. **severity**), continue with a colon  (**:**) and finally put in the word that you want to find.
 
@@ -172,7 +199,7 @@ Examples:
 
 ![](https://raw.github.com/wiki/infobyte/faraday/images/filterByField.png)
 
-###### Filter by many fields
+###### _Filter by many fields_
 
 To search by many fields, use a *SPACE BAR* to separate each field.
 
@@ -183,14 +210,14 @@ Examples:
 
 ![](https://raw.github.com/wiki/infobyte/faraday/images/searchByManyFields.png)
 
-###### Grouping
+###### _Grouping_
 
 To group vulnerabilities by field you can use the **Group By** button. After the vulns are grouped you can select them for easy batch editing.
 
 ![](https://raw.githubusercontent.com/wiki/infobyte/faraday/images/faraday_statusreport_groupby.png)
 
 <a name="manage"></a>
-##### Vulnerability Creation
+##### _Vulnerability Creation_
 To create vulnerabilities manually, you can go to the status report page and click the "New" button at the top right corner. You should see a dialog similar to this:
 
 ![](https://raw.githubusercontent.com/wiki/infobyte/faraday/images/faraday_new.png)
@@ -207,7 +234,7 @@ Tags allow you to organize your vulnerabilities by letting you create and edit c
 
 Tags only apply to an individual workspace, so you can use different tags for different projects.
 
-###### How to tag vulnerabilities
+###### _How to tag vulnerabilities_
 
 Using the specified username/password from the Faraday server configuration, from the Navigator start the session in [Faraday's GUI](#web-ui). Once you have authenticated, click on the “Status Report” icon.
 
@@ -225,13 +252,13 @@ Create the tag that you want (in our case SSL) and click OK
 
 ![](https://raw.github.com/wiki/infobyte/faraday/images/faraday_statusreport_tagsadded.png)
 
-###### Search tagged vulnerabilities
+###### _Search tagged vulnerabilities_
 
 From the Status Report you will be able to search using the different tags. You can add ! in front of the search criteria in order to invert the result. For example _tag:!example_tag_ will result in all vulnerabilities that DON'T have the tag example_tag.
 
 ![](https://raw.github.com/wiki/infobyte/faraday/images/faraday_statusreport_tagssearch.png)
 
-
+***
 ### CLI
 
 It's possible to use Faraday in Command-Line Interface (CLI) mode, allowing you to process your reports in batch. So lets say you want to process the XML output of an **nmap** scan located in ```/tmp/nmap_scan.xml``` and send the results to a workspace called **project_one**. The way to do it using CLI mode would be to run:
@@ -259,7 +286,7 @@ And then run Faraday:
 $ ./faraday.py --cli --workspace project_one --report /tmp/nmap_scan.xml --creds-file /path/to/file/creds.json
 ```
 
-
+***
 <a name="zsh-web"></a>
 ### ZSH web console
 
