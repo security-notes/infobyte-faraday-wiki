@@ -175,7 +175,7 @@ Faraday comes with some presets for bulk actions such as object removal, etc. Th
 
 ```
 __description__ = 'A short command description
-__prettyname__ = 'Comand Name'
+__prettyname__ = 'Command Name'
 
 
 def main(workspace='', args=None, parser=None):
