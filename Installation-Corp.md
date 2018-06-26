@@ -48,7 +48,6 @@ $ sudo apt install build-essential ipython python-setuptools \
                 pkg-config libssl-dev libffi-dev libxml2-dev \
                 libxslt1-dev libfreetype6-dev libpng-dev \
                 postgresql sudo libsasl2-dev libldap2-dev libssl-dev
-
 ```
 
 ##### Kali Linux

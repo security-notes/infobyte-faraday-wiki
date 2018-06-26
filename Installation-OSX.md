@@ -60,6 +60,8 @@ We need Git in order to get Faraday from Github. Run:
     $ brew install git
 
 ### Faraday
+This is the code for our Community edition. 
+Here you have the steps to get the source code for our [ Professional](https://github.com/infobyte/faraday/wiki/Installation-Pro#downloading) and [Corporate](https://github.com/infobyte/faraday/wiki/Installation-Corp#downloading) editions.
 
 Run:
 

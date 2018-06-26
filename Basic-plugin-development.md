@@ -2,7 +2,7 @@ Plugin development is really simple.
 
 All the plugins are in:
 
-    $faraday/plugins/repo/[pluginname]
+    $ faraday/plugins/repo/[pluginname]
 
 In the following example you can see plugin of command ping:
 ``` python
@@ -57,59 +57,67 @@ In this plugin if the host is active we add it to the database
 
 **Key information:**
 
+```python
     self._command_regex
-a regex used to match the command string and determine if the plugin is suitable to handle it
+```
+This is a regex used to match the command string and determine if the plugin is suitable to handle it.
 
+```python
     self._completition
-This have the dict used for intellisense 
+```
+This have the dict used for intellisense. 
 
+```python
     def parseOutputString(self, output, debug = False):
+```
 This method will be called when the command finished executing and
-the complete output will be received to work with it  
-Using the output the plugin can create and add hosts, interfaces, services, vuln, webvuln, credentials, notes.
+the complete output will be received to work with it. 
+Using the output, the plugin can create and add hosts, interfaces, services, vuln, webvuln, credentials, notes.
 
+```python
     def processCommandString(self, username, current_path, command_string):
+```
 With this method a plugin can add additional arguments to the command that
 it's going to be executed.
 
 
 ```python
-    createAndAddHost(self, name, os = "unknown", category = None, update = False, old_hostname = None):
+    createAndAddHost(self, name, os = "unknown", category = None, update = False, old_hostname = None)
 ```
-This method we create and add a host to the database
+With this method we can create and add a host to the database.
 ```python
     createAndAddInterface(self, host_id, name = "", mac = "00:00:00:00:00:00",
                  ipv4_address = "0.0.0.0", ipv4_mask = "0.0.0.0",
                  ipv4_gateway = "0.0.0.0", ipv4_dns = [],
                  ipv6_address = "0000:0000:0000:0000:0000:0000:0000:0000", ipv6_prefix = "00",
                  ipv6_gateway = "0000:0000:0000:0000:0000:0000:0000:0000", ipv6_dns = [],
-                 network_segment = "", hostname_resolution = []):
+                 network_segment = "", hostname_resolution = [])
 ```
-This method we create and add a interface to host
+With this method we can create and add a interface to a host.
 
 **core.PluginBase**
 
-The complete list of methods in the PluginBase are:
-```
+Besides the two methods above, this is the complete list of methods in the PluginBase:
+```python
     def createAndAddServiceToInterface(self, host_id, interface_id, name, protocol = "tcp?", 
                 ports = [], status = "running", version = "unknown", description = ""):
     
+    def createAndAddServiceToHost(self, host_id, protocol="tcp?", status="open", 
+                version="unknown", description=""):
+
     def createAndAddVulnToHost(self, host_id, name, desc="", ref=[], severity=""):
     
     def createAndAddVulnToInterface(self, host_id, interface_id, name, desc="", ref=[], severity=""):
     
-    def createAndAddVulnToApplication(self, host_id, application_id, name, desc="", ref=[], severity=""):
-    
     def createAndAddVulnToService(self, host_id, service_id, name, desc="", ref=[], severity=""):
     
-    def createAndAddVulnWebToService(self, host_id, service_id, name, desc="", ref=[], severity="", website="", path="", request="",
-                                  response="",method="",pname="", params="",query="",category=""):    
+    def createAndAddVulnWebToService(self, host_id, service_id, name, desc="", ref=[], severity="", 
+                website="", path="", request="", response="", method="", pname="", 
+                params="", query="", category=""):    
     
     def createAndAddNoteToHost(self, host_id, name, text):
     
     def createAndAddNoteToInterface(self, host_id, interface_id, name, text):
-    
-    def createAndAddNoteToApplication(self, host_id, application_id, name, text):
     
     def createAndAddNoteToService(self, host_id, service_id, name, text):
     

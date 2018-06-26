@@ -1,5 +1,5 @@
 The recommended way to run Faraday using SSL is through NGINX.
-
+## Nginx
 You can find a detailed guide on how to install it in the [official NGINX documentation](https://www.nginx.com/resources/wiki/start/topics/tutorials/install/).
 
 After installing and configuring NGINX the setup should be as follows:
@@ -8,7 +8,7 @@ After installing and configuring NGINX the setup should be as follows:
 * Faraday Server on port `5985` using HTTP (`~/.faraday/config/server.ini`)
 * GTK using HTTPS (`~/.faraday/config/user.xml`) and run:
 
-        $ python2 faraday.py --cert path_to_cert
+        $ python2 faraday.py --cert path_to_cert(PEM format)
 
 * Web UI using `https://example_domain:port/_ui`
 * NGINX on port `80` redirecting to HTTPS
@@ -76,6 +76,60 @@ Below you can find a sample config file for NGINX. Please keep in mind that you 
 
 For information on *how to generate self signed certificates* you can read [Apache's FAQ on how to do this](https://cwiki.apache.org/confluence/pages/viewpage.action?pageId=48203146).
 
+Even though we recommend the configurations by nginx explained above, we also support SSL through Apache.
+
+## Apache
+Place the Apache configuration file on the respective location.
+
+
+        # Enable session resumption to improve https performance
+        SSLSessionCache shmcb:/var/cache/mod_ssl/scache(512000)
+        SSLSessionCacheTimeout  300
+
+       <VirtualHost *:80> 
+	      Redirect permanent / https://127.0.0.1/ 
+       </VirtualHost>
+
+       <VirtualHost *:443>
+        # Apache logs configuration.
+
+        ServerName localhost
+        ServerAdmin webmaster@localhost
+        ErrorLog ${APACHE_LOG_DIR}/error.log
+        CustomLog ${APACHE_LOG_DIR}/access.log combined
+	
+        SSLEngine On
+	# Dont use SSL
+	SSLProtocol all -SSLv2 -SSLv3
+	# Server-side protection from BEAST attacks
+	SSLHonorCipherOrder on
+	# Use only secure ciphers
+	SSLCipherSuite "ECDHE-RSA-AES256-GCM-SHA384:ECDHE-RSA-AES128-GCM-SHA256:DHE-RSA-AES256-GCM-SHA384:DHE-RSA-AES128-GCM-SHA256:ECDHE-RSA-AES256-SHA384:ECDHE-RSA-AES128-SHA256:ECDHE-RSA-AES256-SHA:ECDHE-RSA-AES128-SHA:DHE-RSA-AES256-SHA256:DHE-RSA-AES128-SHA256:DHE-RSA-AES256-SHA:DHE-RSA-AES128-SHA:ECDHE-RSA-DES-CBC3-SHA:EDH-RSA-DES-CBC3-SHA:AES256-GCM-SHA384:AES128-GCM-SHA256:AES256-SHA256:AES128-SHA256:AES256-SHA:AES128-SHA:DES-CBC3-SHA:HIGH:!aNULL:!eNULL:!EXPORT:!DES:!MD5:!PSK:!RC4"
+        
+	# Set the path to SSL certificate
+        SSLCertificateFile /home/user/ca.crt
+        SSLCertificateKeyFile /home/user/ca.key
+
+	# Reverse proxy configuration
+        ProxyPreserveHost On
+	# ProxyPass /server-status ! 
+        ProxyPass "/" http://127.0.0.1:5985/
+        ProxyPassReverse "/" http://127.0.0.1:5985
+	
+	# Security headers
+	Header set X-Frame-Options SAMEORIGIN
+	Header set X-Content-Type-Options nosniff
+	Header set X-XSS-Protection "1; mode=block"
+	Header set Strict-Transport-Security "max-age=31536000; includeSubdomains;"
+
+	<Location /_utils>
+		Order deny,Allow
+		Allow from localhost
+		Deny from all
+	</Location>
+</VirtualHost>
+
+
 #### Troubleshooting
 
 To ensure that the issue is not with your certificates, test from the command line using
@@ -90,3 +144,24 @@ You can test your certificates separately using:
 Make sure that when you create the certificate the commonName field contains the name of your domain.
 
 If for any chance you get an error stating "SSL certificate validation failure" when running GTK, re-generate the certificate and run again.
+
+#### Certificate signed with internal CA.
+
+If you are using a certificate signed by a internal CA you need follow the next steps for connect the Faraday client to the server using this certificate.
+
+For example, with the following CA chain:
+
+Root CA (root.crt) -> intermediate CA (intermediate.crt) -> server cert (server.crt)
+
+Take all the three certs in PEM format and append all in one file:
+
+touch bundle.crt
+
+cat root.crt >> bundle.crt
+
+cat intermediate.crt >> bundle.crt
+
+cat server.crt >> bundle.crt
+
+Execute faraday:
+python2 ./faraday.py --cert bundle.crt

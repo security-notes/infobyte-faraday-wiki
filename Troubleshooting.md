@@ -54,9 +54,9 @@ IOError: [Errno 2] No such file or directory: '/home/leonardo/VERSION'
 * [I don't remember the Faraday Server password](#recover-password)
 * [Clients can't access the Faraday server](#faraday-server-access-problems)
 * [Error No such file or directory VERSION](#no-such-file-version)
-* [ERROR - [ERROR] XML Plugin: Ip of host unknown](#ip-of-host-unknown)
-* [OSError: [Errno 2] No such file or directory: './reports/executive/templates/'](#executive-report-error)
-
+* [ERROR - XML Plugin: Ip of host unknown](#ip-of-host-unknown)
+* [OSError: Errno 2: No such file or directory: './reports/executive/templates/'](#executive-report-error)
+* [OSx GTK not working IP ERROR](#osx-gtk-not-working)
 
 ### Commercial versions
 
@@ -199,7 +199,35 @@ Make sure you can resolve the domain from the computer where faraday is being ex
 
 [ [index] ](#index)
 
+### OSx GTK not working IP ERROR
+When using OSx it's necessary for the client to assign the localhost address to your hostname.
+Inside a terminal run:
 
+
+`  hostname`
+
+
+And copy the result
+
+Go to your /etc/hosts file and assing 127.0.0.1 to your localmachine hostname.
+
+
+[ [index] ](#index)
+
+### GTK's console is clear
+
+You're using the latest version of Tornado. Faraday doesn't have, at the time, compatibility with that version.
+You need to downgrade it. 
+Run the following command:
+```
+pip2 install tornado==4.5.2
+```
+Now the console should work properly.
+
+[ [index] ](#index)
+
+
+[ [index] ](#index)
 
 ## Answers for Commercial versions
 
@@ -225,6 +253,24 @@ python faraday-server.py
 
 (*) sometimes faraday server was installed in the /usr directory, check the traceback for the full path.
 
+[ [index] ](#index)
+
+<a name="#401-unauthorized-when-importing-a-report-on-the-client"></a>
+## 401 Unauthorized: when importing a report on the client
+(Corp Versions only!)
+
+An additional CouchDB config is necessary. Follow these steps to set it up:
+
+- Turn off Faraday Server (./faraday-server.pyc --stop)
+- Turn off CouchDB (systemctl stop couchdb)
+- Modify the file local.ini usually located in the path /etc/couch/local.ini
+- Add the following lines to the [couch_httpd_auth] part of that file:
+
+      allow_persistent_cookies = true
+      timeout = 9999999
+
+And then run CouchDB and Faraday Server again and you are all set!
+ 
 [ [index] ](#index)
 
 Is your question not listed here? [Contact us](https://github.com/infobyte/faraday/issues)

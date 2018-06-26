@@ -6,12 +6,13 @@ Using our plugin located in ```$faraday/bin/``` you can do different actions fro
 
 ```
 $ ./fplugin -h
+fplugin --help
 usage: fplugin [-h] [-i] [-w WORKSPACE] [-u URL] [command]
 
 Using our plugin you can do different actions in the command line
 and interact with Faraday. Faraday comes with some presets for bulk
 actions such as object removal, get object information, etc.
-Any parameter not recognized by fplugin, or everything after -- will be passed on
+Any parameter not recognized by fplugin, or everything after -- will be passed on 
 to the called script.
 
 positional arguments:
@@ -22,50 +23,62 @@ optional arguments:
   -h, --help            show this help message and exit
   -i, --interactive     Run in interactive mode (default: False)
   -w WORKSPACE, --workspace WORKSPACE
-                        Workspace to use (default: sebi2)
+                        Workspace to use (default: burp_pro_original)
   -u URL, --url URL     Faraday Server URL. Example: http://localhost:5985
                         (default: http://localhost:5985)
 
 Available scripts:
+	- change_vuln_status: Changes Vulns Status (to closed)
 	- create_cred: Creates new credentials
-	- create_host: Creates a new host in current workspace
-	- create_interface: Creates a new interface in a specified host
+	- create_host_and_interface: Creates a new host and interface in current workspace
 	- create_note: Creates a new note
 	- create_service: Creates a new service in a specified interface
 	- create_vuln: Creates a new vulnerability
 	- create_vulnweb: Creates a new website vulnerability in a specified service
 	- delAllHost: Deletes all stored hosts
 	- delAllServiceClosed: Deletes all services with a non open port
-	- delAllVulnsWith: Empty
-	- filter_services: Filter services by port
-	- getAllCreds: Get all stored credentials
-	- getAllIps: Get all scanned IPs
+	- delAllVulnsWith: Delete all vulnerabilities matched with regex
+	- filter_services: Filter services by port or service name
 	- getAllIpsInterfaces: Get all scanned interfaces
-	- getAllOs: Lists all scanned OSs
-	- getExploits: Get possible exploits from open services
 	- getSeverityByCwe: Get Vulns filtered by Severity and change Severity based in CWE
+	- import_csv: Import Faraday objects from CSV file
+	- import_pcap: Import every host found in a PCAP file for further scanning
+	- list_creds: Get all stored credentials
+	- list_hosts: List hosts
+	- list_ips: List all scanned IPs
+	- list_os: Lists all scanned OSs
+	- screenshot_server: Takes a Screenshot of the ip:ports of a given protocol
 ```
 
 To view the help ofthe `fplugin`, you can use the `-h` or `--help` arguments. It is also possible to view the help of the individual commands, but as the arguments mentioned will be catched before they reach the command being called, you need to 'escape' them, like this:
 
 ```
-$ ./fplugin create_host -- -h
-
-usage: fplugin create_host [-h] [--dry-run] name os
-
-Creates a new host in current workspace
+$ ./fplugin create_host_and_interface 
+Creates a new host in current workspace and a new interface in the given host
 
 positional arguments:
-  name        Host name
-  os          OS
+    host_name
+    os
+    interface_name
+    mac
 
 optional arguments:
-  -h, --help  show this help message and exit
-  --dry-run   Do not touch the database. Only print the object ID (default:
-              False)
-```
+-h --help 
+--ipv4address IPV4ADDRESS
+--ipv4gateway IPV4GATEWAY
+--ipv4mask IPV4MASK
+--ipv4dns IPV4DNS
+--ipv6address IPV6ADDRESS
+--ipv6prefix IPV6PREFIX
+--ipv6gateway IPV6GATEWAY
+--ipv6dns IPV6DNS
+--netsegment NETSEGMENT
+--hostres HOSTRES
+--dry-run
 
 Everything after the `--` will be sent to the command, and will not be interpreted by `fplugin`.
+
+```
 
 # Usage Examples
 
@@ -90,32 +103,22 @@ host            service         ports           protocol        status          
 192.168.20.11   http            443             tcp             open            Linux
 ```
 
-### Create a new host
+### Create a new host and interface
 
 ```
-$ ./fplugin create_host 192.154.33.222 Android
-1a7b2981c7becbcb3d5318056eb29a58817f5e67
+$ ./fplugin create_host_and_interface 192.154.33.22 Linux interface 76598709876
+709381e970d2d669ee1d1b4844a6dde9d9b63c77.a47084649d94d1fb2f912872dfda906c59a623c4
 
 $ echo $?
 0
 
-$ ./fplugin create_host 192.154.33.22 Android
-A host with ID 1a7b2981c7becbcb3d5318056eb29a58817f5e67 already exists!
+$ ./fplugin create_host_and_interface 192.154.33.22 Linux intname aa:bb:cc:dd:ee:ff
+A host with ID 709381e970d2d669ee1d1b4844a6dde9d9b63c77 already exists!
 
 $ echo $?
 2
 ...
 ```
-
-### Create a new interface
-
-```
-./fplugin create_interface 1a7b2981c7becbcb3d5318056eb29a58817f5e67 intname aa:bb:cc:dd:ee:ff
-1a7b2981c7becbcb3d5318056eb29a58817f5e67.a47084649d94d1fb2f912872dfda906c59a623c4
-```
-
-
-As you can see, the commands will return the necessary information to automatize the creation of any of Faraday's data models, or abort in case of failure.
 
 # Interactive mode
 
@@ -132,10 +135,8 @@ The advantage of the interactive mode is that you can use the simple string `$la
 
 For example:
 ```
-> create_host 192.154.33.211 Android
-3e02a40e260a1ced7dff6b9fcfa2a8dd31ad293c
-> create_interface $last intname aa:bb:cc:dd:ee:ff
-3e02a40e260a1ced7dff6b9fcfa2a8dd31ad293c.a47084649d94d1fb2f912872dfda906c59a623c4
+$ ./fplugin create_host_and_interface 192.154.33.22 Linux interface 76598709876
+709381e970d2d669ee1d1b4844a6dde9d9b63c77.a47084649d94d1fb2f912872dfda906c59a623c4
 ```
 
 
@@ -154,7 +155,7 @@ Faraday comes with some presets for bulk actions such as object removal, etc. Th
 * `create_vulnweb`: Creates a new website vulnerability in a specified service
 * `delAllHost`: Deletes all stored hosts
 * `delAllServiceClosed`: Deletes all services with a non open port
-* `delAllVulnsWith`: Empty
+* `delAllVulnsWith`: Delete all vulnerabilities matched with rege
 * `filter_services`: Filter services by port
 * `getAllIpsInterfaces`: Get all scanned interfaces
 * `getExploits`: Get possible exploits from open services
@@ -164,6 +165,9 @@ Faraday comes with some presets for bulk actions such as object removal, etc. Th
 * `list_hosts`: List hosts
 * `list_ips`: List all scanned IPs
 * `list_os`: Lists all scanned OSs
+* `change_vuln_status`: Changes all vulns status to close
+
+
 
 # Adding new commands
 
@@ -171,7 +175,7 @@ Faraday comes with some presets for bulk actions such as object removal, etc. Th
 
 ```
 __description__ = 'A short command description
-__prettyname__ = 'Comand Name'
+__prettyname__ = 'Command Name'
 
 
 def main(workspace='', args=None, parser=None):

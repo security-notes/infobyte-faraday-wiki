@@ -5,6 +5,7 @@
   * [Installation - Corporate](https://github.com/infobyte/faraday/wiki/Installation-Corp)
   * [Installation - CouchDB](https://github.com/infobyte/faraday/wiki/Installation-CouchDB)
   * [Installation - OS X](https://github.com/infobyte/faraday/wiki/Installation-OSX)
+  * [Installation - RedHat](https://github.com/infobyte/faraday/wiki/Installation-RedHat)
   * [Installation - Docker](https://github.com/infobyte/faraday/wiki/Installation-Docker)
   * [Using SSL](https://github.com/infobyte/faraday/wiki/SSL)
   * [[Vulnerabilities Database]]
@@ -15,8 +16,10 @@
   * [Chat and Communication](https://github.com/infobyte/faraday/wiki/Chat-and-Communication)
   * [[Continuous-Scanning]]
   * [CSV Exporting](https://github.com/infobyte/faraday/wiki/Exporting-the-information)
+  * [[Cybersecurity Program]]
   * [Data Analysis Tools](https://github.com/infobyte/faraday/wiki/Data-Analysis-Tools)
   * [[Executive Report]]
+  * [[Faraday CSV importer]]
   * [[Helpers]]
   * [JIRA Integration](https://github.com/infobyte/faraday/wiki/Jira-integration)
   * [[LDAP]]
@@ -25,11 +28,14 @@
   * [[Manage Workspaces]]
   * [[OSINT provider]]
   * [[Proxy]]
+  * [Run CouchDB and Faraday's server on startup](https://github.com/infobyte/faraday/wiki/Run-Couchdb-and-Faraday's-server-on-startup)
   * [[Scripts]]
   * [[Tag Use]]
+  * [[Tasks]]
+  * [[Vulnerability Life Cycle]]
   * [[Workspace-Diff]]
   * [[Workspace replication]]
-  * [[Faraday CSV importer (Beta version)]]
+
 
 * [Demos / Videos](https://github.com/infobyte/faraday/wiki/Demos)
 * [[Architecture]]
