@@ -18,7 +18,8 @@ Faraday Server is the interface between PostgreSQL and Faraday Client and WebUI.
 
 Download the [latest tarball](https://github.com/infobyte/faraday/tarball/dev) or clone the [Faraday Git Project](https://github.com/infobyte/faraday) repository and checkout the dev branch:
 
-## For Professional or Corporate version
+
+**For Professional or Corporate version**
 Download both those packages and then:
 
 1. Create a new directory and unpack the **Faraday tarball** there. For example, `/home/user/Infobyte/faraday`.
