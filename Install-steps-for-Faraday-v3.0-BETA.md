@@ -30,7 +30,7 @@ After doing so, make sure to [install system dependencies](#server-system-depend
 
 Faraday Server is built with minimum requirements. This is by design, so you can install it even on the most bare-bones machine you can possibly imagine.
 
-The Python requirements for the server are stored in the [`requirements_server.txt` file](https://github.com/infobyte/faraday/blob/master/requirements_server.txt).
+The Python requirements for the server are stored in the [`requirements_server.txt` file](https://github.com/infobyte/faraday/blob/dev/requirements_server.txt).
 
 <a name="server-system-dependencies"></a>
 #### Installing system dependencies
@@ -170,7 +170,7 @@ Download the [latest tarball](https://github.com/infobyte/faraday/tarball/dev) o
 
 Faraday Client works under any modern Linux distribution or Mac OS X, and needs Python 2.6 or 2.7.
 
-The Python requirements for the client are stored in the [`requirements.txt` file](https://github.com/infobyte/faraday/blob/master/requirements.txt). Some additional requirements are necessary for specific features to work, these are stored in the [`requirements_extras.txt` file](https://github.com/infobyte/faraday/blob/master/requirements_extras.txt).
+The Python requirements for the client are stored in the [`requirements.txt` file](https://github.com/infobyte/faraday/blob/dev/requirements.txt). Some additional requirements are necessary for specific features to work, these are stored in the [`requirements_extras.txt` file](https://github.com/infobyte/faraday/blob/dev/requirements_extras.txt).
 
 Out tests include [Debian](#client-debian), [Ubuntu](#client-debian), [Kali](#client-kali), [Backtrack](#client-debian).
 
