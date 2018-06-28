@@ -18,6 +18,17 @@ Faraday Server is the interface between PostgreSQL and Faraday Client and WebUI.
 
 Download the [latest tarball](https://github.com/infobyte/faraday/tarball/dev) or clone the [Faraday Git Project](https://github.com/infobyte/faraday) repository and checkout the dev branch:
 
+## For Professional or Corporate version
+Download both those packages and then:
+
+1. Create a new directory and unpack the **Faraday tarball** there. For example, `/home/user/Infobyte/faraday`.
+
+1. Unpack the **License Package** and place its contents in the `doc` directory. For example, using the path from **Step 1**, you should place the **License files** in `/home/user/Infobyte/faraday/doc`.
+
+After doing so, make sure to [install system dependencies](#client-system-dependencies), [install Python dependencies](#client-python-dependencies) and [configure the Client](#client-configuration).
+
+
+
 ```
 $ git clone https://github.com/infobyte/faraday.git faraday-dev
 $ cd faraday-dev
