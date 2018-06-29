@@ -8,7 +8,7 @@
 <a name="faraday-server-commu"></a>
 ### Faraday Server
 
-Faraday Server is the interface between PostgreSQL and Faraday Client and WebUI. The server's responsibility is to transmit information between the client or WebUI and PostgeSQL, and make sure that they are kept in sync. The Web UI client, which allows you to handle enormous workspaces from your favorite web browser.
+Faraday Server is the interface between PostgreSQL and Faraday Client and WebUI. The server's responsibility is to transmit information between the client or WebUI and PostgreSQL, and make sure that they are kept in sync. The Web UI client, which allows you to handle enormous workspaces from your favorite web browser.
 
 
 **Important:** You should keep in mind that is recommended to install Faraday server on the same instance as PostgreSQL.
