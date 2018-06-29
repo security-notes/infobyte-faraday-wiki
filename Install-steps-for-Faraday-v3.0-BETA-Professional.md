@@ -78,7 +78,7 @@ $ pip2 install -r requirements_server.txt
 In order to initialize Postgresql database and generate your main user and a password, run the following command:
 
 ```
-python manage.py initdb
+python manage.pyc initdb
 ```
  ***Note:*** if at the moment you run this command, it throws an error, be sure you have sudo installed. Once you have installed it, run the command again.
 
@@ -87,7 +87,7 @@ python manage.py initdb
 If you want to import your data from CouchDB to PostgreSQL, run the following command:
 
 ```
-python manage.py import_from_couchdb
+python manage.pyc import_from_couchdb
 ```
 
 ***Note:*** beware of the number of users you have created in CouchDB, remember that you have already created one when you initialized PostgreSQL. The number of users that you have between CouchDB and PostgreSQL should not surpass the number of users you're allow to have according to your license.
