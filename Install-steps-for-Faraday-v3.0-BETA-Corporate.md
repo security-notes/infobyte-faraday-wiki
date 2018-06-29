@@ -77,23 +77,63 @@ $ pip2 install -r requirements_server.txt
 ```
 #### Initializing PostgreSQL
 
-In order to initialize Postgresql database and generate your main user and a password, run the following command:
+In order to initialize Postgresql database, run the following command:
 
 ```
 python manage.pyc initdb
 ```
- ***Note:*** if at the moment you run this command, it throws an error, be sure you have sudo installed. Once you have installed it, run the command again.
+If you don't have CouchDB configured we assume this is a new installation, so a
+new user will be created.
+
+With CouchDB configured in the `server.ini` file, it will import all the data
+you had from the 2.7.2 version, including the users and its hashed passwords.
+
+ ***Warning:*** Keep in mind that this is a beta version, so it isn't
+production ready. Anyway, because the CouchDB data won't be touched, we suggest
+you to import your production database and check that it is correct in this new
+version.
+
+ ***Note:*** You sould have the PostgreSQL service started. To do it run
+`systemctl start postgresql` or the equivalant command for your GNU/Linux
+distro.
+
+ ***Note:*** if at the moment you run this command, it throws an error, be sure
+you have sudo installed. Once you have installed it, run the command again.
+
+#### Manual PostgreSQL configuration
+
+If you need an advance configuration of the postgres database, like having a
+custom database name or run it in a separate host, the `./manage.pyc initdb`
+command probably won't be enough for you, so you should configure it manually
+by doing something like this:
+
+```
+sudo -u postgres psql -c "CREATE ROLE faraday_postgresql WITH LOGIN PASSWORD 'YOURPASSWORD'"
+sudo -u postgres createdb -O faraday_postgresql faraday
+```
+
+Then, edit the `~/.faraday/config/server.ini` by adding the connection string
+to the database:
+
+```
+[database]
+connection_string = postgresql+psycopg2://faraday_postgresql:YOURPASSWORD@localhost/faraday
+```
+
+Then you should run `./manage.pyc create_tables` to create all the required
+tables to make faraday work, and `./manage.pyc createsuperuser` to create an
+admin user.
 
 
-#### Importing from CouchDB
+#### Manually importing from CouchDB
 
-If you want to import your data from CouchDB to PostgreSQL, run the following command:
+If you were using Faraday 2.7.2 and setup the database manually instead of
+using the `./manage.pyc initdb`, you should run the following command to import
+the data from CouchDB:
 
 ```
 python manage.pyc import_from_couchdb
 ```
-
-***Note:*** beware of the number of users you have created in CouchDB, remember that you have already created one when you initialized PostgreSQL. The number of users that you have between CouchDB and PostgreSQL should not surpass the number of users you're allow to have according to your license.
 
 <a name="server-configuration"></a>
 #### Configuration
@@ -137,7 +177,9 @@ This is the recommended way to do this. Other methods like using the bash `&` co
 
 #### Web UI
 
-Once the server is running, you can access Faraday's Web UI using any browser: just point it to `http://SERVER_IP:SERVER_PORT/_ui` and you can start playing with Faraday.
+Once the server is running, you can access Faraday's Web UI using any browser:
+just point it to `http://SERVER_IP:SERVER_PORT/` (by default it will be
+http://localhost:5985/) and you can start playing with Faraday.
 
 
 <a name="faraday-client"></a>
