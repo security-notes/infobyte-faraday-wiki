@@ -56,7 +56,7 @@ Methodologies contains tasks, this tasks include the following fields:
 
 With that, you can assign a specific task with a end date to a pentester.
 Also, tag a chunk of task for a better appreciation in the kanban view.
-![Edit Task](https://raw.github.com/wiki/infobyte/faraday/images/tasks/faraday_edit_task.png) 
+![Edit Task](https://raw.github.com/wiki/infobyte/faraday/images/tasks/edit_task.png) 
 
 
 
