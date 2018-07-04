@@ -59,16 +59,6 @@ $ sudo apt-get install build-essential ipython python-setuptools \
                 libxslt1-dev libfreetype6-dev libpng-dev
 ```
 
-##### Gentoo
-If you are running Gentoo, this are the dependencies with Emerge:
-
-```
-dev-python/flask-sqlalchemy dev-python/service_identity dev-python/twisted \
-dev-python/pyopenssl dev-java/mockito dev-python/Whoosh \
-dev-python/configargparse dev-python/restkit dev-python/requests www-servers/tornado \
-dev-python/flask dev-python/colorama dev-python/setuptools dev-python/pip dev-libs/libpqxx \
-libffi-dev
-```
 
 ##### Others
 
@@ -327,3 +317,13 @@ $ python2 faraday.py
 
 Due to Kali's package updates the pre-installed package may not be the last version. If you want the latest updates use the [Debian install steps](#client-debian).
 
+##### Gentoo
+If you are running Gentoo, this are the dependencies with Emerge:
+
+```
+dev-python/flask-sqlalchemy dev-python/service_identity dev-python/twisted \
+dev-python/pyopenssl dev-java/mockito dev-python/Whoosh \
+dev-python/configargparse dev-python/restkit dev-python/requests www-servers/tornado \
+dev-python/flask dev-python/colorama dev-python/setuptools dev-python/pip dev-libs/libpqxx \
+libffi-dev
+```
