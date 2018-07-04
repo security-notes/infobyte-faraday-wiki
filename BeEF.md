@@ -4,10 +4,10 @@ This plugin can be set from Faraday's Plugin Configuration, where the informatio
 [Host]  
 
 
-![](https://raw.github.com/wiki/infobyte/faraday/images/Beef-Plugin.png)
+![](https://raw.github.com/wiki/infobyte/faraday/images/plugins/beef/plugin.png)
 
 By default this plugin is disabled, change the enable boolean in order to use it  
 
 The information required for connecting to BeEF is generated when you start it:
 
-![](https://raw.github.com/wiki/infobyte/faraday/images/Beef-starting.png)
+![](https://raw.github.com/wiki/infobyte/faraday/images/plugins/beef/starting.png)

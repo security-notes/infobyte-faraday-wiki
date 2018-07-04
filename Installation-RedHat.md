@@ -68,7 +68,7 @@ And in another terminal start the client runing:
 
 ***
 ## RedHat 7
-![](https://raw.githubusercontent.com/wiki/infobyte/faraday/images/redhat.jpeg)
+![](https://raw.githubusercontent.com/wiki/infobyte/faraday/images/platform/redhat.jpeg)
 
 To configure RedHat subscription: https://access.redhat.com/labs/registrationassistant/#!/rhel7/
 

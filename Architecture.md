@@ -2,7 +2,7 @@ Faraday is composed by the Faraday Server and the Faraday Client with a Server
 Centric approach. The client talks almost exclusively with the server, and the 
 server is used to syncronize the state of the program between instances.
 
-Faraday uses SQLAlchemy to map objects to relational databases. We support and recommend PostgreSQL as a database engine.
+Faraday uses PostgreSQL as a database engine.
 
 The server provides everything else using a REST API. You can also make queries over
 the relational databse structured according to our Host/Services/Vulnerability models (server/models.py). Our
@@ -13,13 +13,13 @@ server acts as a web server build upon Twisted which provides websockets, wsgi a
 
 Every user connects to the same Faraday server, which is itself connected to a PostgreSQL database.
 This permits seamless data sharing and syncronization.
-![Sincronize_2](https://user-images.githubusercontent.com/568181/33737838-42252c90-db76-11e7-9d04-fb27afcb03bb.png)
+![Sincronize_2](https://raw.github.com/wiki/infobyte/faraday/images/architecture/faraday_schema.png)
 
 
 ## Plugin Engine
 
 The following diagram explains the plugins architecture:
-![Plugin_Controller](https://raw.github.com/wiki/infobyte/faraday/images/plugin_controller.png)
+![Plugin_Controller](https://raw.github.com/wiki/infobyte/faraday/images/architecture/plugin_controller.png)
 
 Plugin engine has the following components:
 
@@ -30,7 +30,7 @@ Plugin engine has the following components:
 
 The interaction of these components can be see in the following graph:
 
-![Plugin Architecture](https://user-images.githubusercontent.com/568181/33733681-34e296ba-db69-11e7-94b8-8f3e9fda7a55.png)
+![Plugin Architecture](https://raw.github.com/wiki/infobyte/faraday/images/architecture/plugin_architecture.png)
 
 Plugins, Report and Persistence Model each run in a separete Thread.
 Communication between threads are made by queues.

@@ -24,7 +24,7 @@ To utilize this feature follow the necessary steps on our [start up configuratio
 
 To manage your reports you need to access Faraday's Web Interface and click on **Executive Report** icon (the one that looks like a suitcase).
 
-![](https://raw.github.com/wiki/infobyte/faraday/images/faraday_report_icon.png)
+![](https://raw.github.com/wiki/infobyte/faraday/images/executive_reports/icon.png)
 
 All the reports will be listed, including their info, status and link to download.
 
@@ -32,7 +32,7 @@ To edit a report, select it and click on the **Edit** button. A modal will appea
 
 If, instead, you want a new report that is exactly like an existing one but with the current data of your workspace, you can click on the **Regenerate** button in the reports list.
 
-![](https://raw.github.com/wiki/infobyte/faraday/images/faraday_report_regenerate_button.png)
+![](https://raw.github.com/wiki/infobyte/faraday/images/executive_reports/regenerate_button.png)
 
 Reports can only be regenerated one at a time, so the regeneration buttons are disabled while this action is being performed.
 
@@ -54,11 +54,11 @@ The following are a sort of placeholder fields for information that's commonly a
 * **Conclusions**
 * **Recommendations**
 
-![](https://raw.github.com/wiki/infobyte/faraday/images/faraday_report_new.png)
+![](https://raw.github.com/wiki/infobyte/faraday/images/executive_reports/new.png)
 
 Faraday processes all the information and spits out a shiny new report that is automatically available for download.
 
-![](https://raw.github.com/wiki/infobyte/faraday/images/faraday_report_word.png)
+![](https://raw.github.com/wiki/infobyte/faraday/images/executive_reports/word.png)
 
 #### Filtering
 
@@ -72,12 +72,12 @@ At least one vulnerability must be tagged in order to have the option to generat
 
 These two parameters (confirmed and tags) can be mixed to create different outcomes.
 
-![](https://raw.github.com/wiki/infobyte/faraday/images/faraday_report_using_tags.png)
+![](https://raw.github.com/wiki/infobyte/faraday/images/executive_reports/using_tags.png)
 
 ### Eliminating a report
 
 From the Executive Report window, select the document and click on **Delete**
-![](https://raw.github.com/wiki/infobyte/faraday/images/faraday_report_delete_button.png)
+![](https://raw.github.com/wiki/infobyte/faraday/images/executive_reports/delete_button.png)
 
 
 ### Templates
@@ -90,7 +90,7 @@ The template uses Jinja2 syntax so we strongly recommend reading the [official d
 
 An example of how the template cover looks like
 
-![](https://raw.github.com/wiki/infobyte/faraday/images/faraday_report_template_example.png)
+![](https://raw.github.com/wiki/infobyte/faraday/images/executive_reports/template_example.png)
 
 #### Datasets
 
@@ -102,7 +102,7 @@ The *grouped dataset* groups vulnerabilities by **name and description**. If two
 
 By default all of the reports are created using the *generic dataset*. To create a report using the *grouped dataset*, select the checkxbox "grouped report" when creating it, as shown below.
 
-![](https://raw.github.com/wiki/infobyte/faraday/images/faraday_report_using_grouped_vulns.png)
+![](https://raw.github.com/wiki/infobyte/faraday/images/executive_reports/using_grouped_vulns.png)
 
 Keep in mind that each template should be designed for a specific dataset and that these are not interchangeable. 
 

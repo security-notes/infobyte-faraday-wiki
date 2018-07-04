@@ -23,7 +23,11 @@ Download both those packages and then:
 
 1. Create a new directory and unpack the **Faraday tarball** there. For example, `/home/user/Infobyte/faraday`.
 
-1. Unpack the **License Package** and place its contents in the `doc` directory. For example, using the path from **Step 1**, you should place the **License files** in `/home/user/Infobyte/faraday/doc`.
+1. Unpack the **License Package** and place its contents in the `doc` directory. For example, using the path from **Step 1**, you should place the **License files** in `/home/user/Infobyte/faraday/doc`. Or run: 
+
+    ```
+    $ faraday-sever --license-path path/to/license
+    ```
 
 After doing so, make sure to [install system dependencies](#server-system-dependencies), [install Python dependencies](#server-python-dependencies) and [configure the Server](#server-configuration).
 
@@ -82,6 +86,8 @@ In order to initialize Postgresql database and generate your main user and a pas
 python manage.py initdb
 ```
  ***Note:*** if at the moment you run this command, it throws an error, be sure you have sudo installed. Once you have installed it, run the command again.
+ 
+ **Warning:** This commmand is only to be executed when you run Faraday for the first time. 
 
 
 #### Importing from CouchDB

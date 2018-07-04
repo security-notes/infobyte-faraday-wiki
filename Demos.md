@@ -51,6 +51,7 @@ _Using the platform:_
 
 [![ScreenShot](https://raw.github.com/wiki/infobyte/faraday/images/newytlogo.png) - Using Faraday's Reporting features ](http://bit.ly/2xsVdMC) 
 
+
 _Faraday using plugins:_
 
 [![ScreenShot](https://raw.github.com/wiki/infobyte/faraday/images/newytlogo.png) - Acunetix](http://bit.ly/2pYsNKv)
