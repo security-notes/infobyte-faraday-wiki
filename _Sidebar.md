@@ -1,9 +1,9 @@
 * [Home](https://github.com/infobyte/faraday/wiki)
 
-* [Installation](https://github.com/infobyte/faraday/wiki/First-Steps)
+* [**Installation**](https://github.com/infobyte/faraday/wiki/First-Steps)
   * [Installation - Community](https://github.com/infobyte/faraday/wiki/Installation-Community)
   * [Installation - Professional](https://github.com/infobyte/faraday/wiki/Installation-Pro)
-  * [Installation - Corporate](https://github.com/infobyte/faraday/wiki/Installation-Corp)
+  * [Installation Faraday- Corporate](https://github.com/infobyte/faraday/wiki/Installation-Corp)
   * [Installation - Docker](https://github.com/infobyte/faraday/wiki/Installation-Docker)
   * [Installation - OS X](https://github.com/infobyte/faraday/wiki/Installation-OSX)
   * [Installation - RedHat](https://github.com/infobyte/faraday/wiki/Installation-RedHat)
@@ -50,7 +50,7 @@
   * [LDAP](https://github.com/infobyte/faraday/wiki/LDAP)
   * [OSINT Provider](https://github.com/infobyte/faraday/wiki/OSINT-Provider)
 
-* [Plugins](https://github.com/infobyte/faraday/wiki/Plugin-List)
+* [**Plugins**](https://github.com/infobyte/faraday/wiki/Plugin-List)
   
   * [Basic Plugin Development](https://github.com/infobyte/faraday/wiki/Basic-plugin-development)
   * [Burp Proxy Extender](https://github.com/infobyte/faraday/wiki/Burp-proxy-extender)

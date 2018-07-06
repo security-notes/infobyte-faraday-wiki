@@ -227,13 +227,7 @@ Now the console should work properly.
 [ [index] ](#index)
 
 
-[ [index] ](#index)
-
 ## Answers for Commercial versions
-
-<a name="edit-workspaces-wui"></a>
-### I can't edit Workspaces from the Web UI
-Make sure that the configuration file for the server contains the credentials for an **administrative user** in the ```user``` and ```password``` fields inside the ```[couchdb]``` section of the configuration file located in ```~/.faraday/config/server.ini```.
 
 [ [index] ](#index)
 
@@ -255,22 +249,5 @@ python faraday-server.py
 
 [ [index] ](#index)
 
-<a name="#401-unauthorized-when-importing-a-report-on-the-client"></a>
-## 401 Unauthorized: when importing a report on the client
-(Corp Versions only!)
-
-An additional CouchDB config is necessary. Follow these steps to set it up:
-
-- Turn off Faraday Server (./faraday-server.pyc --stop)
-- Turn off CouchDB (systemctl stop couchdb)
-- Modify the file local.ini usually located in the path /etc/couch/local.ini
-- Add the following lines to the [couch_httpd_auth] part of that file:
-
-      allow_persistent_cookies = true
-      timeout = 9999999
-
-And then run CouchDB and Faraday Server again and you are all set!
- 
-[ [index] ](#index)
 
 Is your question not listed here? [Contact us](https://github.com/infobyte/faraday/issues)

@@ -1,22 +1,5 @@
 In ```$FARADAY/helpers``` you can find several scripts developed to help you load and manage Faraday data. None of them are included as part of the Faraday core, and using them can usually mean deleting content from the database in a permanent way, so **be careful when executing any of them and always make sure to have a fresh backup**.
 
-<a name="pushCwe"></a>
-### pushCwe.py
-
-```
-$ python helpers/pushCwe.py --help
-usage: pushCwe [-h] [-c COUCHDB]
-
-optional arguments:
-  -h, --help            show this help message and exit
-  -c COUCHDB, --couchdburi COUCHDB
-                        Couchdb URL (default http://127.0.0.1:5984)
-
-Example: ./pushCwe.py
-```
-
-This script allows you to upload your Vulnerability templates database to CouchDB. Read more about it [here](https://github.com/infobyte/faraday/wiki/Vulnerabilities-Database).
-
 <a name="cfdbToCsv"></a>
 ### cfdbToCsv.py
 
@@ -53,50 +36,3 @@ python $FARADAY/helpers/cleanXML.py broken_file.xml
 ```
 
 To install BeautifulSoup you can use the [`requirements_extras.txt` file](https://github.com/infobyte/faraday/blob/master/requirements_extras.txt).
-
-
-<a name="removeBySeverity"></a>
-### removeBySeverity.py
-
-```
-$ python helpers/removeBySeverity.py --help
-usage: removeBySeverity [-h] [-c COUCHDB] -d DB -s SEVERITY [-t] [-v]
-
-optional arguments:
-  -h, --help            show this help message and exit
-  -c COUCHDB, --couchdburi COUCHDB
-                        Couchdb URL as
-                        http://user:password@couch_ip:couch_port (defaults to
-                        http://127.0.0.1:5984)
-  -d DB, --db DB        DB to process
-  -s SEVERITY, --severity SEVERITY
-                        Vulnerability severity
-  -t, --test            Dry run, does everything except updating the DB
-  -v, --verbose         Extended output
-
-Example: ./removeBySeverity.py
-```
-
-Removes all vulnerabilities with selected severity. Faraday has 6 levels of severity defined from highest to lowest:
-
-* critical
-* high
-* med
-* low
-* info
-* unclassified
-
-To use this plugin follow this behavior:
-
-
-1)Stop Faraday’s Server but keep couchdb running.
-
-2)Run the script removeBySeverity.py.
-
-3)Now delete Sqlite database, run:
-
- 	 rm faraday/server/workspaces/WORSPACE_NAME.db
-
-
-4)Run faraday’s server again and you're all set. 
-
