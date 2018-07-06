@@ -22,7 +22,7 @@ To access Faraday GTK, run the following command in Faraday's folder:
 
 #### The main window
 
-![](https://raw.github.com/wiki/infobyte/faraday/images/Faraday-Gtk-MainWindow.png)
+![](https://raw.github.com/wiki/infobyte/faraday/images/usage/gtk_main_window.png)
 
 You will be presented with a special version of your own [ZSH terminal](https://en.wikipedia.org/wiki/Z_shell#Origin). Just as with GTK, Faraday intercepts every command you execute and checks if there's a plugin available. If there is, Faraday will interpret all the relevant information like ip adresses, hostnames, services, vulnerabilities, websites, and notes that the command generates.
 
@@ -37,7 +37,7 @@ The log console works just as you'd expect, showing you what Faraday's doing in 
 <a name="host-information-dialog"></a>
 #### Host information dialog
 
-![](https://raw.github.com/wiki/infobyte/faraday/images/Faraday-Gtk-HostInfoDialog.png)
+![](https://raw.github.com/wiki/infobyte/faraday/imagesusage/gtk_host_info_dialog.png)
 
 When you click on a host in the Host tab of the sidebar, you'll be presented with a window like the one above. The leftmost tree represents the Host itself, with all its interfaces as children. The interfaces, too, have children, which are the services of each interface. All of these items have the number of vulnerabilities discovered, inside parentheses.
 
@@ -48,7 +48,7 @@ The rightmost side of the windows shows detailed information of the host, the se
 <a name="conflicts-dialog"></a>
 #### Conflicts resolution dialog
 
-![](https://raw.github.com/wiki/infobyte/faraday/images/Faraday-Gtk-ConflictsDialog.png)
+![](https://raw.github.com/wiki/infobyte/faraday/images/usage/gtk_conflict_dialog.png)
 
 When Faraday finds an object which clashes with one you have already saved, it will inform you there's a conflict. Imagine you have a host marked as a Windows machine, but a tool detects a Linux installation. It's a conflict!
 
@@ -57,7 +57,7 @@ Faraday will show you the two conflicting objects, with its differences highligh
 <a name="notifications-dialog"></a>
 #### Notifications dialog
 
-![](https://raw.github.com/wiki/infobyte/faraday/images/Faraday-Gtk-NotificationsDialog.png)
+![](https://raw.github.com/wiki/infobyte/faraday/images/usage/gtk_notifications_dialog.png)
 
 Faraday is a **multi-user** integrated penetration test environment. That's why keeping up with changes coming from your collaborators is so important, and its why the notifications dialog exists.
 
@@ -68,11 +68,11 @@ While working, the notifications counter will increase as new changes come from 
 
 If you wish to add a report from a previous scan, you can also do it from the GTK Client.
 
-To do so, click on the Report Button ![](https://raw.github.com/wiki/infobyte/faraday/images/faraday_gtk_report_button.png)
+To do so, click on the Report Button ![](https://raw.github.com/wiki/infobyte/faraday/images/gtk/report_button.png)
 
 A dialog will open, from which you can select the tool that was used to generate the Report:
 
-![](https://raw.github.com/wiki/infobyte/faraday/images/faraday_gtk_report_list.png)
+![](https://raw.github.com/wiki/infobyte/faraday/images/gtk/plugins_list.png)
 
 All the data in the report will be processed and added to the active Workspace, and the console will show a message when the plugin starts and ends.
 
@@ -88,7 +88,7 @@ First, you need to run Faraday with no GUI:
     $ python faraday.py --gui=no-gui
 ```
 
-![](https://raw.github.com/wiki/infobyte/faraday/images/no-ui.png)
+![](https://raw.github.com/wiki/infobyte/faraday/images/usage/no-ui.png)
 
 Now, run Faraday Terminal:
 
@@ -96,7 +96,7 @@ Now, run Faraday Terminal:
     $ ./faraday-terminal.zsh
 ```
 
-![](https://raw.github.com/wiki/infobyte/faraday/images/no-ui2.png)
+![](https://raw.github.com/wiki/infobyte/faraday/images/usage/no-ui2.png)
 
 To import your reports, drag-and-drop them into:
 
@@ -117,11 +117,11 @@ In order to access the Web UI point your browser to: `http://[FARADY-SERVER]:POR
 
 The current URL address is displayed on console log information:
 
-![](https://raw.github.com/wiki/infobyte/faraday/images/Console_GUIWeb_Highlight.png)
+![](https://raw.github.com/wiki/infobyte/faraday/images/usage/console_log_info.png)
 
 You can also go to the Web UI directly from Faraday GTK by clicking on this icon:
 
-![](https://raw.github.com/wiki/infobyte/faraday/images/Visualize-icon.png)
+![](https://raw.github.com/wiki/infobyte/faraday/images/usage/visualize-icon.png)
 
 
 #### Faraday Community Version
@@ -130,23 +130,15 @@ You can also go to the Web UI directly from Faraday GTK by clicking on this icon
 
 Faraday's dashboard contains a summary of all the data in a Workspace condensed into different boxes. Each box is a visualization a specific aspect of the collected data.
 
-![](https://raw.github.com/wiki/infobyte/faraday/images/GUI_Dashboard_new.png)
+![](https://raw.github.com/wiki/infobyte/faraday/images/usage/dashboard.png)
 
 
 Let's see in more detail some of these boxes:
 
-###### _Top Services View_
-
-To access a [treemap](https://en.wikipedia.org/wiki/Treemapping) featuring the top services in the Workspace, click on the box title.
-
-![](https://raw.github.com/wiki/infobyte/faraday/images/GUI_Dashboard_new_Services.png)
-
-![](https://raw.github.com/wiki/infobyte/faraday/images/GUI_Services.gif)
-
 <a name="workspace-worth"></a>
 ###### _Workspace's Worth_
 
-![](https://raw.github.com/wiki/infobyte/faraday/images/faraday-dashboard-ws-worth.png)
+![](https://raw.github.com/wiki/infobyte/faraday/images/usage/dashboard_ws_worth.png)
 
 This visualization is specially helpful when contributing in a bug bounty program. You can estimate how much your Workspace is worth according to the severity of your vulnerabilities.
 
@@ -174,7 +166,7 @@ Learn more about using Faraday for [[Bug bounties]].
 
 To view a full list of findings you can access the Status Report.
 
-![](https://raw.githubusercontent.com/wiki/infobyte/faraday/images/UI_Web_Status_Report.png)
+![](https://raw.githubusercontent.com/wiki/infobyte/faraday/images/usage/status_report.png)
 
 The Status Report provides several options including vulnerability search, filtering and management.
 
@@ -186,7 +178,7 @@ To search, type the keyword in the text-box above the table.
 
 You can find the text filter in both the Status Report and Hosts views. Keep in mind that field values are **case-insensitive**.
 
-![](https://raw.github.com/wiki/infobyte/faraday/images/search.png)
+![](https://raw.github.com/wiki/infobyte/faraday/images/usage/search.png)
 
 ###### _Filter by field_
 
@@ -197,7 +189,7 @@ Examples:
 * severity:unclassified
 * name:Nessus scan info
 
-![](https://raw.github.com/wiki/infobyte/faraday/images/filterByField.png)
+![](https://raw.github.com/wiki/infobyte/faraday/images/usage/filter_by_field.png)
 
 ###### _Filter by many fields_
 
@@ -208,19 +200,19 @@ Examples:
 * `severity:unclassified target:173.252.100.18`
 * `severity:low service:443 target:173.252`
 
-![](https://raw.github.com/wiki/infobyte/faraday/images/searchByManyFields.png)
+![](https://raw.github.com/wiki/infobyte/faraday/images/usage/search_by_many_fields.png)
 
 ###### _Grouping_
 
 To group vulnerabilities by field you can use the **Group By** button. After the vulns are grouped you can select them for easy batch editing.
 
-![](https://raw.githubusercontent.com/wiki/infobyte/faraday/images/faraday_statusreport_groupby.png)
+![](https://raw.githubusercontent.com/wiki/infobyte/faraday/images/usage/vulns_group_by.png)
 
 <a name="manage"></a>
 ##### _Vulnerability Creation_
 To create vulnerabilities manually, you can go to the status report page and click the "New" button at the top right corner. You should see a dialog similar to this:
 
-![](https://raw.githubusercontent.com/wiki/infobyte/faraday/images/faraday_new.png)
+![](https://raw.githubusercontent.com/wiki/infobyte/faraday/images/usage/new_vuln.png)
 
 Make sure you select a host (and a service if the vulnerability applies to it), and the correct type. If you create a web vulnerability, you will have a couple more fields available, such as path, method, request, response and so on.
 
@@ -238,25 +230,25 @@ Tags only apply to an individual workspace, so you can use different tags for di
 
 Using the specified username/password from the Faraday server configuration, from the Navigator start the session in [Faraday's GUI](#web-ui). Once you have authenticated, click on the “Status Report” icon.
 
-![](https://raw.github.com/wiki/infobyte/faraday/images/faraday_statusreport_list.png)
+![](https://raw.github.com/wiki/infobyte/faraday/images/usage/status_report.png)
 
 Select the vulnerabilities that you want to tag (for example those that have to do with SSL protocol)
 
-![](https://raw.github.com/wiki/infobyte/faraday/images/faraday_statusreport_listselected.png)
+![](https://raw.github.com/wiki/infobyte/faraday/images/usage/vulns_selected.png)
 
 After picking one of the vulnerabilities click on the "Tags" button
 
-![](https://raw.github.com/wiki/infobyte/faraday/images/faraday_statusreport_tagsadd.png)
+![](https://raw.github.com/wiki/infobyte/faraday/images/usage/add_tags.png)
 
 Create the tag that you want (in our case SSL) and click OK
 
-![](https://raw.github.com/wiki/infobyte/faraday/images/faraday_statusreport_tagsadded.png)
+![](https://raw.github.com/wiki/infobyte/faraday/images/usage/added_tags.png)
 
 ###### _Search tagged vulnerabilities_
 
 From the Status Report you will be able to search using the different tags. You can add ! in front of the search criteria in order to invert the result. For example _tag:!example_tag_ will result in all vulnerabilities that DON'T have the tag example_tag.
 
-![](https://raw.github.com/wiki/infobyte/faraday/images/faraday_statusreport_tagssearch.png)
+![](https://raw.github.com/wiki/infobyte/faraday/images/usage/search_tags.png)
 
 ***
 ### CLI
@@ -312,4 +304,4 @@ Of course, you need to set the path of the folder in which you have Faraday (the
 
 Now, open a new tab from the web-shell icon in the web UI's sidebar, and you should see the zsh shell up and running!
 
-![](https://raw.github.com/wiki/infobyte/faraday/images/butterfly_webshell.png)
+![](https://raw.github.com/wiki/infobyte/faraday/images/usage/webshell.png)

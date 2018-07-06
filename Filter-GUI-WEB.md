@@ -9,7 +9,7 @@ You can find the text filter on:
 
 **Field values are not case-sensitive**
 
-![](https://raw.github.com/wiki/infobyte/faraday/images/search.png)
+![](https://raw.github.com/wiki/infobyte/faraday/images/usage/search.png)
 
 ## How to filter by field
 
@@ -17,10 +17,9 @@ To search by field, enter the name of field  (e.g. **severity**) , continue a co
 
 Examples: 
 
-* severity:unclassified
-* name:Nessus scan info
+* severity:low
 
-![](https://raw.github.com/wiki/infobyte/faraday/images/filterByField.png)
+![](https://raw.github.com/wiki/infobyte/faraday/images/usage/filter_by_field.png)
 
 ## How to filter by many fields
 
@@ -29,7 +28,6 @@ Just a SPACE BAR in the middle of the consult.
 
 Examples:
 
-* severity:unclassified target:173.252.100.18
-* severity:low service:443 target:173.252
+* severity:high name:Weak owner:faraday
 
-![](https://raw.github.com/wiki/infobyte/faraday/images/searchByManyFields.png)
+![](https://raw.github.com/wiki/infobyte/faraday/images/usage/search_by_many_fields.png)

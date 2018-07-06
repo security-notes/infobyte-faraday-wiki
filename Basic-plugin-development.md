@@ -82,7 +82,7 @@ it's going to be executed.
 
 
 ```python
-    createAndAddHost(self, name, os = "unknown", category = None, update = False, old_hostname = None)
+    createAndAddHost(self, name, os="unknown", hostnames=None)
 ```
 With this method we can create and add a host to the database.
 ```python
@@ -99,31 +99,98 @@ With this method we can create and add a interface to a host.
 
 Besides the two methods above, this is the complete list of methods in the PluginBase:
 ```python
-    def createAndAddServiceToInterface(self, host_id, interface_id, name, protocol = "tcp?", 
-                ports = [], status = "running", version = "unknown", description = ""):
+    def createAndAddServiceToInterface(self, 
+                host_id, 
+                interface_id, 
+                name, 
+                protocol = "tcp?", 
+                ports = [], 
+                status = "running", 
+                version = "unknown", 
+                description = ""):
     
-    def createAndAddServiceToHost(self, host_id, protocol="tcp?", status="open", 
-                version="unknown", description=""):
+    def createAndAddServiceToHost(self, 
+                host_id, 
+                name,
+                protocol="tcp?", 
+                ports=[],
+                status="open", 
+                version="unknown",
+                description=""):
 
-    def createAndAddVulnToHost(self, host_id, name, desc="", ref=[], severity=""):
+    def createAndAddVulnToHost(self, 
+                host_id,
+                name,
+                desc="", 
+                ref=[],
+                severity="", 
+                resolution=""):
     
-    def createAndAddVulnToInterface(self, host_id, interface_id, name, desc="", ref=[], severity=""):
+    def createAndAddVulnToInterface(self, 
+                host_id,
+                interface_id, 
+                name,
+                desc="", 
+                ref=[], 
+                severity="",
+                resolution=""):
     
-    def createAndAddVulnToService(self, host_id, service_id, name, desc="", ref=[], severity=""):
+    def createAndAddVulnToService(self,
+                host_id, 
+                service_id, 
+                name, 
+                desc="",                  
+                ref=[], 
+                severity="", 
+                resolution=""):
     
-    def createAndAddVulnWebToService(self, host_id, service_id, name, desc="", ref=[], severity="", 
-                website="", path="", request="", response="", method="", pname="", 
-                params="", query="", category=""):    
+    def createAndAddVulnWebToService(self, 
+                host_id, 
+                service_id, 
+                name, 
+                desc="",
+                ref=[], 
+                severity="", 
+                resolution="",                     
+                website="", 
+                path="", 
+                request="",
+                response="", 
+                method="", 
+                pname="",
+                params="", 
+                query="", 
+                category=""):    
     
-    def createAndAddNoteToHost(self, host_id, name, text):
+    def createAndAddNoteToHost(self, 
+                host_id, 
+                name, 
+                text):
     
-    def createAndAddNoteToInterface(self, host_id, interface_id, name, text):
+    def createAndAddNoteToInterface(self, 
+                host_id, 
+                interface_id, 
+                name, 
+                text):
     
-    def createAndAddNoteToService(self, host_id, service_id, name, text):
+    def createAndAddNoteToService(self,
+                host_id, 
+                service_id, 
+                name,
+                text):
     
-    def createAndAddNoteToNote(self, host_id, service_id, note_id, name, text):
+    def createAndAddNoteToNote(self, 
+                host_id, 
+                service_id, 
+                note_id, 
+                name, 
+                text):
     
-    def createAndAddCredToService(self, host_id, service_id, username, password):
+    def createAndAddCredToService(self, 
+                host_id, 
+                service_id, 
+                username, 
+                password):
         
     def log(self, msg, level='INFO'):
     

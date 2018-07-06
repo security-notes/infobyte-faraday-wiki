@@ -4,15 +4,15 @@ The workspaces are used to hold the information re-collected from the different 
 
 ### How to manage the Workspace
 
-To manage your workspaces you need to access [Faraday's Web Interface](https://github.com/infobyte/faraday/wiki/Usage#web-ui) click on the **faraday** slider menu on the right of the screen ![](https://raw.github.com/wiki/infobyte/faraday/images/faraday_workspace_icono.png)
+To manage your workspaces you need to access [Faraday's Web Interface](https://github.com/infobyte/faraday/wiki/Usage#web-ui) click on the **faraday** slider menu on the right of the screen ![](https://raw.github.com/wiki/infobyte/faraday/images/workspaces/icon.png)
 and then on **Wokspaces**
-![](https://raw.github.com/wiki/infobyte/faraday/images/faraday_workspace_menu.png)
+![](https://raw.github.com/wiki/infobyte/faraday/images/workspaces/menu.png)
 
 
 
 The workspaces you can see on a list, where you can create, edit or eliminate them as you wish.
 
-![workspaces](https://raw.github.com/wiki/infobyte/faraday/images/faraday_workspace_list.png)
+![workspaces](https://raw.github.com/wiki/infobyte/faraday/images/workspaces/list.png)
 
 ## How to make a Workspace
 
@@ -26,18 +26,18 @@ From the workspaces window click on **New** and complete
 * Scope of workspace
 * Users that can access the workspace
 
-![](https://raw.github.com/wiki/infobyte/faraday/images/faraday_workspace_new.png)
+![](https://raw.github.com/wiki/infobyte/faraday/images/workspaces/new.png)
 
 ### GTK
 On the General view in the GTW interface click on the New Workspace icon 
-![](https://github.com/infobyte/faraday/wiki/images/new-workspace-icon-gtk.png)
+![](https://raw.github.com/wiki/infobyte/faraday/images/workspaces/gtk_new_workspace_icon.png)
 and complete the fields:
 
 *Workspace Name
 
 *Description
 
-![](https://github.com/infobyte/faraday/wiki/images/Gtk-new-workspace-dialog.png)
+![](https://raw.github.com/wiki/infobyte/faraday/images/workspaces/gtk_new_workspace_dialog.png)
 
 ### Scripting
 
@@ -79,11 +79,11 @@ the path to the xml file you want to import, which in this example is named nmap
 
 From the workspace window click on **Edit**
 
-![](https://raw.github.com/wiki/infobyte/faraday/images/faraday_workspace_edit.png)
+![](https://raw.github.com/wiki/infobyte/faraday/images/workspaces/edit.png)
 
 ### Deleting Workspaces
 
 From the workspaces window click on **Delete**
 
-![](https://raw.github.com/wiki/infobyte/faraday/images/faraday_workspace_delete.png)
+![](https://raw.github.com/wiki/infobyte/faraday/images/workspaces/delete.png)
 
