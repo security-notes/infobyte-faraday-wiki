@@ -68,6 +68,11 @@ $ sudo apt install build-essential ipython python-setuptools \
 Please consult with your distribution documentation to install the dependencies listed above.
 
 <a name="server-python-dependencies"></a>
+
+#### Backup .faraday directory
+
+Plase make a copy of you .faraday directory before installing Beta version.
+
 #### Installing Python 2 dependencies
 
 Once you have the required system dependencies, you just have to install the Python modules needed to run the server using `pip`:
