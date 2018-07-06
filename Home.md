@@ -1,27 +1,3 @@
-## Installation
-
-The following platforms are supported:
-
-![platform](https://raw.github.com/wiki/infobyte/faraday/images/platform/supported.png) 
-
-[Read more about this](https://github.com/infobyte/faraday/wiki/installation-community).
-
-#### Quick install
-
-For many OSes, you can quickly install Faraday by either downloading the [latest tarball](https://github.com/infobyte/faraday/tarball/master) or cloning the [Faraday Git Project](https://github.com/infobyte/faraday), and running:
-
-```
-$ git clone https://github.com/infobyte/faraday.git faraday-dev
-$ cd faraday-dev
-
-$ pip2 install -r requirements_server.txt
-$ ./faraday-server.py
-
-$ pip2 install -r requirements.txt
-$ ./faraday.py
-```
-[Read more about the installation process](https://github.com/infobyte/faraday/wiki/installation-community).
-
 ## About
 
 Faraday introduces a new concept - IPE (Integrated Penetration-Test Environment) a multiuser Penetration test IDE. Designed for distributing, indexing, and analyzing the data generated during a security audit.
@@ -88,6 +64,7 @@ Faraday GTK Client.
 ![](https://raw.githubusercontent.com/wiki/infobyte/faraday/images/faraday_gui_notifi.png)
 
 ### CSV Exporting
+Faraday supports CSV Exporting from its WEB UI.
 [More information](Exporting-the-information)
 
 ## Links
