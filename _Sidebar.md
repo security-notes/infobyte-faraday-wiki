@@ -4,10 +4,10 @@
   * [Installation - Community](https://github.com/infobyte/faraday/wiki/Installation-Community)
   * [Installation - Professional](https://github.com/infobyte/faraday/wiki/Installation-Pro)
   * [Installation - Corporate](https://github.com/infobyte/faraday/wiki/Installation-Corp)
-  * [Installation - CouchDB](https://github.com/infobyte/faraday/wiki/Installation-CouchDB)
+  * [Installation - Docker](https://github.com/infobyte/faraday/wiki/Installation-Docker)
   * [Installation - OS X](https://github.com/infobyte/faraday/wiki/Installation-OSX)
   * [Installation - RedHat](https://github.com/infobyte/faraday/wiki/Installation-RedHat)
-  * [Installation - Docker](https://github.com/infobyte/faraday/wiki/Installation-Docker)
+
     
 * [[Updates]]
 

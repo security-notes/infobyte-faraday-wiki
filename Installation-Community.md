@@ -3,6 +3,11 @@
 * [Server](#faraday-server-commu)
 * [Client](#faraday-client-commu)
 
+The following platforms are supported:
+
+![platform](https://raw.github.com/wiki/infobyte/faraday/images/platform/supported.png) 
+
+
 ## Topics
 
 <a name="faraday-server-commu"></a>
