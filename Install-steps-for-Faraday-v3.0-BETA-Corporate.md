@@ -71,7 +71,7 @@ Please consult with your distribution documentation to install the dependencies 
 
 #### Backup .faraday directory
 
-Plase make a copy of you .faraday directory before installing Beta version.
+Please make a copy of your .faraday directory before installing Beta version.
 
 #### Installing Python 2 dependencies
 
