@@ -13,7 +13,7 @@ To access Faraday GTK, run the following command in Faraday's folder:
 
 #### The main window
 
-![](https://raw.github.com/wiki/infobyte/faraday/images/Faraday-Gtk-MainWindow.png)
+![](https://raw.github.com/wiki/infobyte/faraday/images/client/gtk_main_window.png)
 
 You will be presented with a special version of your own [ZSH terminal](https://en.wikipedia.org/wiki/Z_shell#Origin). Just as with GTK, Faraday intercepts every command you execute and checks if there's a plugin available. If there is, Faraday will interpret all the relevant information like ip adresses, hostnames, services, vulnerabilities, websites, and notes that the command generates.
 
@@ -28,7 +28,7 @@ The log console works just as you'd expect, showing you what Faraday's doing in 
 <a name="host-information-dialog"></a>
 #### Host information dialog
 
-![](https://raw.github.com/wiki/infobyte/faraday/images/Faraday-Gtk-HostInfoDialog.png)
+![](https://raw.github.com/wiki/infobyte/faraday/images/client/gtk_host_info_dialog.png)
 
 When you click on a host in the Host tab of the sidebar, you'll be presented with a window like the one above. The leftmost tree represents the Host itself, with all its interfaces as children. The interfaces, too, have children, which are the services of each interface. All of these items have the number of vulnerabilities discovered, inside parentheses.
 
@@ -39,7 +39,7 @@ The rightmost side of the windows shows detailed information of the host, the se
 <a name="conflicts-dialog"></a>
 #### Conflicts resolution dialog
 
-![](https://raw.github.com/wiki/infobyte/faraday/images/Faraday-Gtk-ConflictsDialog.png)
+![](https://raw.github.com/wiki/infobyte/faraday/images/client/gtk_conflicts_dialog.png)
 
 When Faraday finds an object which clashes with one you have already saved, it will inform you there's a conflict. Imagine you have a host marked as a Windows machine, but a tool detects a Linux installation. It's a conflict!
 
@@ -48,7 +48,8 @@ Faraday will show you the two conflicting objects, with its differences highligh
 <a name="notifications-dialog"></a>
 #### Notifications dialog
 
-![](https://raw.github.com/wiki/infobyte/faraday/images/Faraday-Gtk-NotificationsDialog.png)
+![](https://raw.github.com/wiki/infobyte/faraday/images/client/gtk_notifications_dialog.png)
+
 
 Faraday is a **multi-user** integrated penetration test environment. That's why keeping up with changes coming from your collaborators is so important, and its why the notifications dialog exists.
 
@@ -59,10 +60,10 @@ While working, the notifications counter will increase as new changes come from 
 
 If you wish to add a report from a previous scan, you can also do it from the GTK Client.
 
-To do so, click on the Report Button ![](https://raw.github.com/wiki/infobyte/faraday/images/faraday_gtk_report_button.png)
+To do so, click on the Report Button ![](https://raw.github.com/wiki/infobyte/faraday/images/client/report_button.png)
 
 A dialog will open, from which you can select the tool that was used to generate the Report:
 
-![](https://raw.github.com/wiki/infobyte/faraday/images/faraday_gtk_report_list.png)
+![](https://raw.github.com/wiki/infobyte/faraday/images/client/plugins_list.png)
 
 All the data in the report will be processed and added to the active Workspace, and the console will show a message when the plugin starts and ends.

@@ -2,7 +2,7 @@
 
 To view a full list of findings you can access the Status Report.
 
-![](https://raw.githubusercontent.com/wiki/infobyte/faraday/images/UI_Web_Status_Report.png)
+![](https://raw.githubusercontent.com/wiki/infobyte/faraday/images/status_report/status_report.png)
 
 The Status Report provides several options including vulnerability search, filtering and management.
 
@@ -11,7 +11,7 @@ Personalize this view by clicking on the blue buttons to select the columns you 
 ## _Vulnerability Creation_
 To create vulnerabilities manually, you can go to the status report page and click the "New" button at the top right corner. You should see a dialog similar to this:
 
-![](https://raw.githubusercontent.com/wiki/infobyte/faraday/images/faraday_new.png)
+![](https://raw.githubusercontent.com/wiki/infobyte/faraday/images/status_report/new_vuln.png)
 
 Make sure you select a host (and a service if the vulnerability applies to it), and the correct type. If you create a web vulnerability, you will have a couple more fields available, such as path, method, request, response and so on.
 

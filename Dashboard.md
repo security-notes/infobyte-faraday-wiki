@@ -2,23 +2,15 @@
 
 Faraday's dashboard contains a summary of all the data in a Workspace condensed into different boxes. Each box is a visualization a specific aspect of the collected data.
 
-![](https://raw.github.com/wiki/infobyte/faraday/images/GUI_Dashboard_new.png)
+![](https://raw.github.com/wiki/infobyte/faraday/images/dashboard/dashboard.png)
 
 
 Let's see in more detail some of these boxes:
 
-###### _Top Services View_
-
-To access a [treemap](https://en.wikipedia.org/wiki/Treemapping) featuring the top services in the Workspace, click on the box title.
-
-![](https://raw.github.com/wiki/infobyte/faraday/images/GUI_Dashboard_new_Services.png)
-
-![](https://raw.github.com/wiki/infobyte/faraday/images/GUI_Services.gif)
-
 <a name="workspace-worth"></a>
-###### _Workspace's Worth_
+### _Workspace's Worth_
 
-![](https://raw.github.com/wiki/infobyte/faraday/images/faraday-dashboard-ws-worth.png)
+![](https://raw.github.com/wiki/infobyte/faraday/images/dashboard/dashboard_ws_worth.png)
 
 This visualization is specially helpful when contributing in a bug bounty program. You can estimate how much your Workspace is worth according to the severity of your vulnerabilities.
 
@@ -40,4 +32,4 @@ Then your Workspace will be worth
 
 The length of the colored bars shows the proportion that severity represents in the final worth of your workspace.
 
-Learn more about using Faraday for [[Bug bounties]].
+Learn more about using Faraday for [Bug bounties](https://raw.github.com/wiki/infobyte/faraday/Bug-bounties).

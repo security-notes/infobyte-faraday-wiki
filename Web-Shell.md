@@ -23,4 +23,4 @@ Of course, you need to set the path of the folder in which you have Faraday (the
 
 Now, open a new tab from the web-shell icon in the web UI's sidebar, and you should see the zsh shell up and running!
 
-![](https://raw.github.com/wiki/infobyte/faraday/images/butterfly_webshell.png)
+![](https://raw.github.com/wiki/infobyte/faraday/images/client/webshell.png)

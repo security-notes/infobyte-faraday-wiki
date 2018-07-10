@@ -22,7 +22,7 @@ Go to Extender->Extensions and click in the Add button.
 
 In the Extension Details section, the extension type should be Ruby, and the extension file should be the path to the faraday-burp.rb file (it's in plugins/repo/burp/ folder). Click Next, and if everything went well, you should see no errors and you can close the window. Then make sure the extension is loaded in the Extensions tab.
 
-![](https://raw.github.com/wiki/infobyte/faraday/images/plugins/burp/faraday_add_extension.png)
+![](https://raw.github.com/wiki/infobyte/faraday/images/plugins/burp/add_extension.png)
 
 ![](https://raw.github.com/wiki/infobyte/faraday/images/plugins/burp/loaded.png)
 
@@ -30,7 +30,7 @@ In the Extension Details section, the extension type should be Ruby, and the ext
 
 Once the Faraday extension is loaded into your Burp, you will see a new tab called "Faraday".
 
-![](https://raw.github.com/wiki/infobyte/faraday/images/plugins/burp/faraday_configuration.png)
+![](https://raw.github.com/wiki/infobyte/faraday/images/plugins/burp/configuration.png)
 
 From there, you can:
 
@@ -46,6 +46,6 @@ From there, you can:
 
 Also, we've added the possibility to send the issues and requests to Faraday with a new option in the context menu
 
-![](https://raw.github.com/wiki/infobyte/faraday/images/plugins/burp/faraday_send_to.png)
+![](https://raw.github.com/wiki/infobyte/faraday/images/plugins/burp/send_to.png)
 
 

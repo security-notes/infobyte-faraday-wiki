@@ -8,14 +8,21 @@ Faraday was made to let you take advantage of the available tools in the communi
 
 Designed for simplicity, users should notice no difference between their own terminal application and the one included in Faraday. Developed with a specialized set of functionalities, users improve their own work. Do you remember the last time you programmed without an IDE? What IDEs are to programming, Faraday is to pentesting.
 
-![GUI - GTK](https://raw.github.com/wiki/infobyte/faraday/images/Faraday-Gtk-MainWindow.png)
+![GUI - GTK](https://raw.github.com/wiki/infobyte/faraday/images/client/gtk_main_window.png)
 
 Faraday crunches the data you load into different visualizations that are useful to managers and pentesters alike.
 
-![GUI - Web](https://raw.github.com/wiki/infobyte/faraday/images/GUI_Dashboard_new.png)
+![GUI - Web](https://raw.github.com/wiki/infobyte/faraday/images/dashboard/dashboard.png)
 
 To read about the latest features check out the [release notes](https://github.com/infobyte/faraday/blob/master/RELEASE.md)!
 
+## Installation
+
+Check out our documentacion for datailed information on how to install Faraday in all of our supported platforms:
+
+![Supported Os](https://raw.github.com/wiki/infobyte/faraday/images/platform/supported.png)
+
+To begin the instalation process check our out [First Step](https://raw.github.com/wiki/infobyte/faraday/First-steps) Wiki.
 ## Plugins list
 
 You feed data to Faraday from your favorite tools through Plugins. Right now there are more than [60+ supported tools](https://github.com/infobyte/faraday/wiki/Plugin-List), among which you will find: 
@@ -58,7 +65,7 @@ Read more about the [Faraday Plugin](https://github.com/infobyte/faraday/wiki/fa
 Updating objects on other Faraday instances result in notifications on your
 Faraday GTK Client.
 
-![](https://raw.github.com/wiki/infobyte/faraday/images/Faraday-Gtk-NotificationsDialog.png)
+![](https://raw.github.com/wiki/infobyte/faraday/images/client/gtk_notifications_dialog.png)
 
 
 ### CSV Exporting

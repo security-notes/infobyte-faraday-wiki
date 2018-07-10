@@ -9,7 +9,7 @@ You can find the text filter on:
 
 **Field values are not case-sensitive**
 
-![](https://raw.github.com/wiki/infobyte/faraday/images/search.png)
+![](https://raw.github.com/wiki/infobyte/faraday/images/status_report/search.png)
 
 ## How to filter by field
 
@@ -20,7 +20,7 @@ Examples:
 * severity:unclassified
 * name:Nessus scan info
 
-![](https://raw.github.com/wiki/infobyte/faraday/images/filterByField.png)
+![](https://raw.github.com/wiki/infobyte/faraday/images/status_report/filter_by_field.png)
 
 ## How to filter by many fields
 
@@ -32,12 +32,12 @@ Examples:
 * severity:unclassified target:173.252.100.18
 * severity:low service:443 target:173.252
 
-![](https://raw.github.com/wiki/infobyte/faraday/images/searchByManyFields.png)
+![](https://raw.github.com/wiki/infobyte/faraday/images/status_report/search_by_many_fields.png)
 
 ## Grouping
 
 To group vulnerabilities by field you can use the **Group By** button. After the vulns are grouped you can select them for easy batch editing.
 
-![](https://raw.githubusercontent.com/wiki/infobyte/faraday/images/faraday_statusreport_groupby.png)
+![](https://raw.githubusercontent.com/wiki/infobyte/faraday/images/status_report/vulns_group_by.png)
 
 <a name="manage"></a>

@@ -49,7 +49,7 @@ Yes, we have a community version which is totally free, you can [download it fro
 
 We also develop two [commercial versions](https://www.faradaysec.com/#download).
 
-![](https://www.faradaysec.com/images/Features-Comparation.png)
+![](https://www.faradaysec.com/images/workspace-diff/features-comparation.png)
 
 [ [index] ](#index)
 
