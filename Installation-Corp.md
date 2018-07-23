@@ -130,7 +130,14 @@ Then restart the server if you had it running and reload your browser in case yo
 
 #### Running
 
-Once everything is installed and the server is configured, you can proceed to run the Faraday server script:
+Once everything is installed and the server is configured, you need to first run:
+
+```
+$ python2 faraday.pyc
+```
+This will fail but it will create the file user.xml on .faraday/config which we need to start the server.
+
+You can now proceed to run the Faraday server script:
 
 ```
 $ python2 faraday-server.pyc
