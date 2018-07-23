@@ -1,180 +1,181 @@
-## Redhat 6
+## Redhat 7
 ![](https://raw.githubusercontent.com/wiki/infobyte/faraday/images/faraday_redhat.jpeg)
-### Docker
-Install Docker using EPEL.
-Now, go to the terminal and run this command-lines:
 
-    $  wget https://dl.fedoraproject.org/pub/epel/epel-release-latest-6.noarch.rpm
-
-    $  rpm -ivh epel-release-latest-6.noarch.rpm
-
-Create a folder _docker_ with two sub-folders: 
-
-   1. _data_
-   2. _conf_
-
-Now you'll need the paths of those folders for the next command.
-
-     $ sudo docker run --name couchdb_faraday -v /home/USER/docker/conf/:/usr/local/etc/couchdb/local.d -v /home/USER/docker/data/:/usr/local/var/lib/couchdb -d -p 5984:5984 couchdb:1.7.1
-
-
-
-
-
-***
-You'll need to have your RedHat's official credentials for the next step
-***
-
-    $  subscription-manager repos --enable=rhel-server-rhscl-6-rpms
-
-    $  subscription-manager repos --enable=rhel-6-server-optional-rpms
-
-### System Dependencies 
-
-It's time to install some system dependencies Faraday needs!
-
-    $  yum install gcc libffi-devel openssl-devel python27-python python27-python-devel libxml2-devel libxslt-devel 
-
-    $  yum install freetype-devel libpng-devel libsodium-devel
-  
-    $  scl enable python27 bash
-
-    $   yum install -y python-pip
-
-    $   pip install --upgrade pip
-
-### Python libraries via PIP
-
-    $  pip install -r requirements_server.txt
-
-    $  pip install -r requirements.txt
-
-## Faraday
-Final step! Now all you need to do is Run the server:
-
-    $  python faraday-server.py (first run to install missing dependencies)
-
-### Going for it!
-
-Almost there! Start Faraday's server:
-
-    $ cd faraday
-    $ ./faraday-server.py
-
-And in another terminal start the client runing:
-
-    $ cd faraday
-    $ ./faraday.py
-
-***
-## RedHat 7
-![](https://raw.githubusercontent.com/wiki/infobyte/faraday/images/platform/redhat.jpeg)
-
-To configure RedHat subscription: https://access.redhat.com/labs/registrationassistant/#!/rhel7/
-
-Enable the following repositories:
-
-    $ subscription-manager repos --enable=rhel-7-server-rpms
-
-    $ subscription-manager repos --enable=rhel-7-server-extras-rpms
-
-    $ subscription-manager repos --enable=rhel-7-server-optional-rpms
-
-Run the following command to install the requirements:
-
-    $ sudo yum install python-devel gcc mailcap vte3 xorg-x11-xauth gcc python-devel zsh
-
-    Note: mailcap is for mime types.
-
-### Installing Docker
-
-Let's install Docker: 
-
-    $ sudo yum install docker
-
-Now we need to start Docker:
-
-    $ systemctl start docker.service
-
-If you want to configure Docker to start on boot, run the following command:
-
-    $ systemctl enable docker.service
-
-### Use Couchdb in a Docker container
-
-Create a folder _docker_ with two sub-folders: 
-
-   1. _data_
-   2. _conf_
-
-Now you'll need the paths of those folders for the next command.
-
-    $ sudo docker run --name couchdb_faraday -v /home/USER/docker/conf/:/usr/local/etc/couchdb/local.d -v /home/USER/docker/data/:/usr/local/var/lib/couchdb -d -p 5984:5984 couchdb:1.7.1
-
-In case you can’t start Couchdb container, type the following command:
-
-    $ sudo docker logs xxx   (where ‘xxx’ are the first three characters of the container’s ID)
-
-Now check if it shows the following error:
-
-    Error: chown: cannot read directory '/usr/local/var/lib/couchdb': Permission denied
-
-In this case, run the following commands: 
-
-    $ su -c "setenforce 0"
-
-    $ chcon -Rt svirt_sandbox_file_t $HOME/docker
-
-### Create couchdb admin
-
-    $ curl -s -X PUT http://{IP}:{PORT}/_config/admins/{ADMIN_NAME} -d '"{ADMIN_PASSWORD}"'
-
-Example:
-
-    $ curl -s -X PUT http://localhost:5984/_config/admins/rob -d '"123456"'
-
-
-### Install Epel 
-
-We require epel Installing for python-pip. Please run the following commands:
-
-    $ wget https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
-
-    $ rpm -ivh epel-release-latest-7.noarch.rpm
-
-
-### Python libraries via PIP
-
-    $ sudo pip install -r requirements_server.txt
-
-We're almost there. Let's open firewall's port
-
-    $ sudo firewall-cmd --zone=public --add-port=5985/tcp --permanent
-
-    $ sudo firewall-cmd --reload
-
-## Faraday
-
-Finally, let's run the server
-
-    $ python2 faraday-server.pyc (first run to install missing dependencies)
-
-If you get the following error:
-
-    Error : AttributeError: 'module' object has no attribute 'OP_NO_TLSv1_1'
-
-Don't worry. All you need to do is to run the following command:
-
-    $ sudo pip install Twisted==16.4.1
-
-### Going for it!
-
-Almost there! Start Faraday's server:
-
-    $ cd faraday
-    $ python2 faraday-server.pyc
-
-And in another terminal start the client runing:
-
-    $ cd faraday
-    $ python2 faraday.pyc
+#### Enable EPEL and REMI repositories for installing all needed deps.
+```bash
+wget http://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
+rpm -Uvh epel-release-latest-7.noarch.rpm
+```
+#### Install the default development tools to easy compile/install couchdb
+```bash
+yum groupinstall 'Development Tools'
+```
+
+#### Install Faraday dependencies.
+```bash
+yum install ipython python-setuptools python-pip libffi-devel python-devel openssl-devel openldap-devel curl zsh libxslt-devel pkgconfig postgresql postgresql-libs libxml2-devel libxslt-devel libxml++-devel pygobject2-devel freetype-devel libjpeg-devel gtk+-devel gtk3-devel gtk2-devel vte-devel mailcap
+```
+
+#### Create the inital set of databases for postgres to function
+```
+postgresql-setup initdb
+```
+
+#### Modify the localhost authenication type from ident to md5 witin hba config 
+```bash
+nano /var/lib/pgsql/data/pg_hba.conf
+```
+Change host IPV4 local and IPV6 local from ident to md5 
+```
+# IPv4 local connections:
+host    all             all             127.0.0.1/32            md5
+# IPv6 local connections:
+host    all             all             ::1/128                 md5
+```
+
+#### Setup Database and create faraday postgres user
+
+Either execute :
+```
+./manage.py initdb
+```
+or to do it manually:
+```
+sudo -u postgres psql -c "CREATE ROLE faraday_postgresql WITH LOGIN PASSWORD 'PASSWORD'"
+sudo -u postgres createdb -O faraday_postgresql faraday
+```
+
+#### Get a list of active zones. You might have more than the defaults.
+```bash
+firewall-cmd --get-active-zones
+```
+
+#### If it's the default centos install,  you'll need to enable and start firewall.
+```bash
+sudo systemctl start firewalld
+sudo systemctl enable firewalld
+```
+
+#### Firewalld command to allow this port open to dmz:
+```bash
+firewall-cmd --zone=public --add-port=5985/tcp   --permanent
+```
+
+#### If it's the default centos install, you'll likely want to also allow connections to ss.
+```bash
+firewall-cmd --zone=public --add-port=22/tcp   --permanent
+```
+
+#### Restart the firewalld service
+```bash
+firewall-cmd --reload
+```
+
+#### Update the version of pip included within setuptools
+```bash
+pip install --upgrade pip
+```
+
+#### Install virtualenv to nicely contain our python app 
+```bash
+pip install virtualenv
+```
+
+#### Create a new faraday user to run our python app
+```bash
+sudo adduser -r --home /opt/faraday/ -m --shell /bin/bash --comment "Faraday Service Account" faraday
+```
+
+#### Grab the latest version of faraday and put it within users home directory
+```bash
+cd /opt/
+git clone https://github.com/infobyte/faraday.git
+```
+#### Make the faraday user the owner of the application files 
+```bash
+chown -R faraday:faraday faraday/
+```
+
+#### Switch to the faraday user to setup local enviroment
+```bash
+su - faraday
+```
+
+#### Create a new virtual project for our faraday install and activate it
+```bash
+virtualenv faraday
+source faraday/bin/activate
+```
+
+#### install all of the required python packages
+```bash
+pip2 install -r requirements_server.txt
+```
+
+#### Start the server for the first time and exit once it fails
+```bash
+./faraday-server.py
+```
+
+#### Edit the default configuration file to bind on all local interfaces and add our couchdb credentials
+```bash
+vi /opt/faraday/.faraday/config/server.ini
+```
+The following can be used as a guide
+```text
+[faraday_server]
+port=5985
+bind_address=0.0.0.0
+
+[couchdb]
+host=localhost
+port=5984
+ssl_port=6984
+user=<user>
+password=<password>
+protocol=http
+
+[database]
+connection_string = postgresql+psycopg2://faraday_postgresql:<password>@localhost/faraday
+```
+
+#### Build out the database and your admin user
+```bash
+python2 manage.pyc create_tables
+python2 manage.pyc createsuperuse
+```
+
+#### Then if needed, you can import from couchdb
+```bash
+python2 manage.pyc import_from_couchdb
+```
+
+#### Exit the faraday user shell and create a service unit to control the faraday server
+```bash
+exit
+sudo nano /usr/lib/systemd/system/faraday-server.service
+```
+The following service unit can be used as a templete
+```text
+[Unit]
+Description=Faraday Web Server
+After=network.target
+
+[Service]
+Type=forking
+ExecStart=/opt/faraday/faraday/bin/python2 /opt/faraday/faraday-server.py
+Restart=always
+RestartSec=30
+StartLimitInterval=600
+StartLimitBurst=3
+User=faraday
+TimeoutSec=1200
+
+[Install]
+WantedBy=multi-user.target
+```
+
+License
+----
+
+MIT
