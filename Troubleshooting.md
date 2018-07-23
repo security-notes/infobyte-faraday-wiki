@@ -56,7 +56,7 @@ IOError: [Errno 2] No such file or directory: '/home/leonardo/VERSION'
 * [Error No such file or directory VERSION](#no-such-file-version)
 * [ERROR - XML Plugin: Ip of host unknown](#ip-of-host-unknown)
 * [OSError: Errno 2: No such file or directory: './reports/executive/templates/'](#executive-report-error)
-* [Server error user.xml file not found](#user.xml-not-found)
+* [[Errno 2] No such file or directory: '/home/john/.faraday/config/config.xml'](#user.xml-not-found)
 * [OSx GTK not working IP ERROR](#osx-gtk-not-working)
 
 ### Commercial versions
@@ -216,7 +216,7 @@ Go to your /etc/hosts file and assing 127.0.0.1 to your localmachine hostname.
 [ [index] ](#index)
 
 <a name=#user.xml-not-found></a>
-### Server error user.xml file not found
+### [Errno 2] No such file or directory: '/home/john/.faraday/config/config.xml'
 Before running the server for the first time you need to execute:
 ```
 python faraday.py
