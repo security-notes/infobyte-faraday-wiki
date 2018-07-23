@@ -56,6 +56,7 @@ IOError: [Errno 2] No such file or directory: '/home/leonardo/VERSION'
 * [Error No such file or directory VERSION](#no-such-file-version)
 * [ERROR - XML Plugin: Ip of host unknown](#ip-of-host-unknown)
 * [OSError: Errno 2: No such file or directory: './reports/executive/templates/'](#executive-report-error)
+* [Server error user.xml file not found](#user.xml-not-found)
 * [OSx GTK not working IP ERROR](#osx-gtk-not-working)
 
 ### Commercial versions
@@ -214,15 +215,14 @@ Go to your /etc/hosts file and assing 127.0.0.1 to your localmachine hostname.
 
 [ [index] ](#index)
 
-### GTK's console is clear
-
-You're using the latest version of Tornado. Faraday doesn't have, at the time, compatibility with that version.
-You need to downgrade it. 
-Run the following command:
+<a name=#user.xml-not-found></a>
+### Server error user.xml file not found
+Before running the server for the first time you need to execute:
 ```
-pip2 install tornado==4.5.2
+python faraday.py
 ```
-Now the console should work properly.
+This will throw an error and exit but before doing that the file user.xml will be created in your .faraday/config directory.
+Now run the server again, and enjoy faraday!
 
 [ [index] ](#index)
 
@@ -248,6 +248,5 @@ python faraday-server.py
 (*) sometimes faraday server was installed in the /usr directory, check the traceback for the full path.
 
 [ [index] ](#index)
-
 
 Is your question not listed here? [Contact us](https://github.com/infobyte/faraday/issues)
