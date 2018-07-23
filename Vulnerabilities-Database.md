@@ -46,19 +46,24 @@ A modal dialog will pop up asking you to choose a CSV file to upload, select it,
 
 #### Script
 
-To upload the CSV to faraday using the script go to your Faraday Server installation root directory and run:
+This has been deprecated, CSV gets uploaded automatically on Faraday v3.
+
+<del>To upload the CSV to faraday using the script go to your Faraday Server installation root directory and run:
 
 ```
 $ ./helpers/pushCwe.py
 ```
 
-Use the paramater `-c` if you have a username and password for Faraday.
+<del>Use the paramater `-c` if you have a username and password for Faraday.
+
+
 
 ```        
 $ ./pushCwe.py -c 'http://USERNAME:PASSWORD@HOSTNAME:PORT/'
 ```
 
-Also, if you need add your own CSV file, put the CSV inside `$FARADAY/data/cwe.csv`. And run pushCWE. Make sure you run the `pushCwe.py` script before use and that's it!
+<del>Also, if you need add your own CSV file, put the CSV inside `$FARADAY/data/cwe.csv`. And run pushCWE. Make sure you run the `pushCwe.py` script before use and that's it!
+
 
 <a name="manually"></a>
 ### Manually Adding Templates
