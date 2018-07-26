@@ -1,8 +1,8 @@
 * [About](https://github.com/infobyte/faraday/wiki)
 * [[First steps]]
-  * [Installation - v3.0 Community](https://github.com/infobyte/faraday/wiki/Install-steps-for-Faraday-v3.0-BETA)
-  * [Installation - v3.0 Professional](https://github.com/infobyte/faraday/wiki/Install-steps-for-Faraday-v3.0-BETA-Professional)
-  * [Installation - v3.0 Corporate](https://github.com/infobyte/faraday/wiki/Install-steps-for-Faraday-v3.0-BETA-Corporate)
+  * [Installation - v3.0 Community](https://github.com/infobyte/faraday/wiki/Install-steps-for-Faraday-v3.0)
+  * [Installation - v3.0 Professional](https://github.com/infobyte/faraday/wiki/Install-steps-for-Faraday-v3.0-Professional)
+  * [Installation - v3.0 Corporate](https://github.com/infobyte/faraday/wiki/Install-steps-for-Faraday-v3.0-Corporate)
   * [Installation - Community](https://github.com/infobyte/faraday/wiki/Installation-Community)
   * [Installation - Professional](https://github.com/infobyte/faraday/wiki/Installation-Pro)
   * [Installation - Corporate](https://github.com/infobyte/faraday/wiki/Installation-Corp)
