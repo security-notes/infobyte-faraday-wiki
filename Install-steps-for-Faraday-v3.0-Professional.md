@@ -86,11 +86,6 @@ new user will be created.
 With CouchDB configured in the `server.ini` file, it will import all the data
 you had from the 2.7.2 version, including the users and its hashed passwords.
 
- ***Warning:*** Keep in mind that this is a beta version, so it isn't
-production ready. Anyway, because the CouchDB data won't be touched, we suggest
-you to import your production database and check that it is correct in this new
-version.
-
  ***Note:*** You sould have the PostgreSQL service started. To do it run
 `systemctl start postgresql` or the equivalant command for your GNU/Linux
 distro.
