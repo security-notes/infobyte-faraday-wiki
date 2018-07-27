@@ -150,7 +150,7 @@ python manage.py import_from_couchdb
 
 #### Updating Nginx configuration
 
-***Note:*** This only applies if you are using nginx and https.
+***Note:*** This only applies if you are using Nginx and https.
 
 Please, make sure you have this settings on your Nginx config:
 
