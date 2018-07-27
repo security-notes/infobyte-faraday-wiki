@@ -148,6 +148,14 @@ the data from CouchDB:
 python manage.py import_from_couchdb
 ```
 
+#### Updating Nginx configuration
+
+***Note:*** This only applies if you are using nginx and https.
+
+Please, make sure you have this settings on your Nginx config:
+
+    proxy_pass http://localhost:5985/;
+    proxy_redirect http:// $scheme://;
 
 #### Configuration
 
