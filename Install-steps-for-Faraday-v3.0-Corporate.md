@@ -78,7 +78,7 @@ Please make a copy of your .faraday directory before installing version.
 Once you have the required system dependencies, you just have to install the Python modules needed to run the server using `pip`:
 
 ```
-$ pip2 install -r requirements_server.txt
+$ pip2 install -r requirements_server.txt -U
 ```
 #### Initializing PostgreSQL
 
@@ -261,7 +261,7 @@ $ yaourt -S python2-dateutil python2-pip mime-types python2-gobject gtk3 vte3 po
 Once you have the required system dependencies, you just have to install the Python modules needed to run the client using `pip`:
 
 ```
-$ pip2 install -r requirements.txt
+$ pip2 install -r requirements.txt -U
 ```
 
 <a name="client-configuration"></a>
