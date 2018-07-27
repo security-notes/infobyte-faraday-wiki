@@ -21,7 +21,6 @@ Download the [latest tarball](https://github.com/infobyte/faraday/tarball/dev) o
 ```
 $ git clone https://github.com/infobyte/faraday.git faraday-dev
 $ cd faraday-dev
-$ git checkout dev
 ```
 
 After doing so, make sure to [install system dependencies](#server-system-dependencies), [install Python dependencies](#server-python-dependencies) and [configure the Server](#server-configuration).
