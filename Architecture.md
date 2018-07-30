@@ -2,12 +2,17 @@ Faraday is composed by the Faraday Server and the Faraday Client with a Server
 Centric approach. The client talks almost exclusively with the server, and the 
 server is used to syncronize the state of the program between instances.
 
+Execute:
+```
+./manage.py database_schema
+```
+For an image explaining the schema of our database.
+
 Faraday uses PostgreSQL as a database engine.
 
 The server provides everything else using a REST API. You can also make queries over
 the relational databse structured according to our Host/Services/Vulnerability models (server/models.py). Our
 server acts as a web server build upon Twisted which provides websockets, wsgi and serves static files.
-
 
 ## Server Centric approach
 
