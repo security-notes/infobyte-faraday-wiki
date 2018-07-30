@@ -87,23 +87,7 @@ new user will be created.
 With CouchDB configured in the `server.ini` file, it will import all the data
 you had from the 2.7.2 version, including the users and its hashed passwords.
 
-***Note:*** If you can't login into to Faraday after running the command above due to invalid credentials, you can change your password through the PostgreSQL shell that Faraday has in it. Follow the next instructions in order to change your password and be able to login:
-
-Run the following command in order to execute PostgreSQL shell:
-
-    $ python manage.py sql_shell
-
-Once you got into the sql_shell, let's take a look inside the table _faraday_user_ to see the users information. **It is important to be sure of the username we want to change the password.**
-
-    SELECT * FROM faraday_user
-
-Assuming your username is '_faraday_' and the new password you want to set is '_changeme_', run the following command:
-
-    UPDATE faraday_user SET PASSWORD='changeme' WHERE username='faraday'
-
-This command will update your user's password.
-
-Now you can login to Faraday without a problem.
+***Note:*** If you can't login into to Faraday after running the command above due to invalid credentials, you can change your password through the PostgreSQL shell that Faraday has in it. Follow the next instructions in order to change your password and be able to login.
 
  ***Note:*** You sould have the PostgreSQL service started. To do it run
 `systemctl start postgresql` or the equivalant command for your GNU/Linux
