@@ -3,17 +3,12 @@
 * [Server](#faraday-server-commu)
 * [Client](#faraday-client-commu)
 
-The following platforms are supported:
-
-![platform](https://raw.github.com/wiki/infobyte/faraday/images/platform/supported.png) 
-
-
 ## Topics
 
 <a name="faraday-server-commu"></a>
 ### Faraday Server
 
-Faraday Server is the interface between PostgreSQL and Faraday Client and WebUI. The server's responsibility is to transmit information between the client or WebUI and PostgeSQL, and make sure that they are kept in sync. The Web UI client, which allows you to handle enormous workspaces from your favorite web browser.
+Faraday Server is the interface between PostgreSQL and Faraday Client and WebUI. The server's responsibility is to transmit information between the client or WebUI and PostgreSQL, and make sure that they are kept in sync. The Web UI client, which allows you to handle enormous workspaces from your favorite web browser.
 
 
 **Important:** You should keep in mind that is recommended to install Faraday server on the same instance as PostgreSQL.
@@ -21,7 +16,7 @@ Faraday Server is the interface between PostgreSQL and Faraday Client and WebUI.
 
 #### Downloading
 
-Download the [latest tarball](https://github.com/infobyte/faraday/tarball/master) or clone the [Faraday Git Project](https://github.com/infobyte/faraday) repository:
+Download the [latest tarball](https://github.com/infobyte/faraday/tarball/dev) or clone the [Faraday Git Project](https://github.com/infobyte/faraday) repository and checkout the dev branch:
 
 ```
 $ git clone https://github.com/infobyte/faraday.git faraday-dev
@@ -34,7 +29,7 @@ After doing so, make sure to [install system dependencies](#server-system-depend
 
 Faraday Server is built with minimum requirements. This is by design, so you can install it even on the most bare-bones machine you can possibly imagine.
 
-The Python requirements for the server are stored in the [`requirements_server.txt` file](https://github.com/infobyte/faraday/blob/master/requirements_server.txt).
+The Python requirements for the server are stored in the [`requirements_server.txt` file](https://github.com/infobyte/faraday/blob/dev/requirements_server.txt).
 
 <a name="server-system-dependencies"></a>
 #### Installing system dependencies
@@ -63,16 +58,6 @@ $ sudo apt-get install build-essential ipython python-setuptools \
                 libxslt1-dev libfreetype6-dev libpng-dev
 ```
 
-##### Gentoo
-If you are running Gentoo, this are the dependencies with Emerge:
-
-```
-dev-python/flask-sqlalchemy dev-python/service_identity dev-python/twisted \
-dev-python/pyopenssl dev-java/mockito dev-python/Whoosh \
-dev-python/configargparse dev-python/restkit dev-python/requests www-servers/tornado \
-dev-python/flask dev-python/colorama dev-python/setuptools dev-python/pip dev-libs/libpqxx \
-libffi-dev
-```
 
 ##### Others
 
@@ -84,30 +69,93 @@ Please consult with your distribution documentation to install the dependencies 
 Once you have the required system dependencies, you just have to install the Python modules needed to run the server using `pip`:
 
 ```
-$ pip2 install -r requirements_server.txt
+$ pip2 install -r requirements_server.txt -U
 ```
 
 <a name="server-configuration"></a>
 
 #### Initializing PostgreSQL
 
-In order to initialize Postgresql database and generate your main user and a password, run the following command:
+In order to initialize Postgresql database, run the following command:
 
 ```
 python manage.py initdb
 ```
- ***Note:*** if at the moment you run this command, it throws an error, be sure you have sudo installed. Once you have installed it, run the command again.
+If you don't have CouchDB configured we assume this is a new installation, so a
+new user will be created.
+
+With CouchDB configured in the `server.ini` file, it will import all the data
+you had from the 2.7.2 version, including the users and its hashed passwords.
+
+***Note:*** If you can't login into to Faraday after running the command above due to invalid credentials, you can change your password through the PostgreSQL shell that Faraday has in it. Follow the next instructions in order to change your password and be able to login:
+
+Run the following command in order to execute PostgreSQL shell:
+
+    $ python manage.py sql_shell
+
+Once you got into the sql_shell, let's take a look inside the table _faraday_user_ to see the users information. **It is important to be sure of the username we want to change the password.**
+
+    SELECT * FROM faraday_user
+
+Assuming your username is '_faraday_' and the new password you want to set is '_changeme_', run the following command:
+
+    UPDATE faraday_user SET PASSWORD='changeme' WHERE username='faraday'
+
+This command will update your user's password.
+
+Now you can login to Faraday without a problem.
+
+ ***Note:*** You sould have the PostgreSQL service started. To do it run
+`systemctl start postgresql` or the equivalant command for your GNU/Linux
+distro.
+
+ ***Note:*** if at the moment you run this command, it throws an error, be sure
+you have sudo installed. Once you have installed it, run the command again.
 
 
-#### Importing from CouchDB
+#### Manual PostgreSQL configuration
 
-If you want to import your data from CouchDB to PostgreSQL, run the following command:
+If you need an advance configuration of the postgres database, like having a
+custom database name or run it in a separate host, the `./manage.py initdb`
+command probably won't be enough for you, so you should configure it manually
+by doing something like this:
+
+```
+sudo -u postgres psql -c "CREATE ROLE faraday_postgresql WITH LOGIN PASSWORD 'YOURPASSWORD'"
+sudo -u postgres createdb -O faraday_postgresql faraday
+```
+
+Then, edit the `~/.faraday/config/server.ini` by adding the connection string
+to the database:
+
+```
+[database]
+connection_string = postgresql+psycopg2://faraday_postgresql:YOURPASSWORD@localhost/faraday
+```
+
+Then you should run `./manage.py create_tables` to create all the required
+tables to make faraday work, and `./manage.py createsuperuser` to create an
+admin user.
+
+
+#### Manually importing from CouchDB
+
+If you were using Faraday 2.7.2 and setup the database manually instead of
+using the `./manage.py initdb`, you should run the following command to import
+the data from CouchDB:
 
 ```
 python manage.py import_from_couchdb
 ```
 
-***Note:*** beware of the number of users you have created in CouchDB, remember that you have already created one when you initialized PostgreSQL. The number of users that you have between CouchDB and PostgreSQL should not surpass the number of users you're allow to have according to your license.
+#### Updating Nginx configuration
+
+***Note:*** This only applies if you are using Nginx and https.
+
+Please, make sure you have this settings on your Nginx config:
+
+    proxy_pass http://localhost:5985/;
+    proxy_redirect http:// $scheme://;
 
 #### Configuration
 
@@ -131,14 +179,8 @@ faraday-server.py also allow to use *--bind* and *--port* to override *server.in
 
 #### Running
 
-Once everything is installed and the server is configured, you need to first run:
+Once everything is installed and the server is configured, you can proceed to run the Faraday server script:
 
-```
-$ python2 faraday.pyc
-```
-This will fail but it will create the file user.xml on .faraday/config which we need to start the server.
-
-You can now proceed to run the Faraday server script:
 ```
 $ python2 faraday-server.py
 ```
@@ -153,7 +195,9 @@ This is the recommended way to do this. Other methods like using the bash `&` co
 
 #### Web UI
 
-Once the server is running, you can access Faraday's Web UI using any browser: just point it to `http://SERVER_IP:SERVER_PORT/_ui` and you can start playing with Faraday.
+Once the server is running, you can access Faraday's Web UI using any browser:
+just point it to `http://SERVER_IP:SERVER_PORT/` (by default it will be
+http://localhost:5985/) and you can start playing with Faraday.
 
 
 <a name="faraday-client-commu"></a>
@@ -169,9 +213,10 @@ The client is bundled in the same package as the server, so if you have already 
 
 #### Downloading
 
-Download the [latest tarball](https://github.com/infobyte/faraday/tarball/master) or clone the [Faraday Git Project](https://github.com/infobyte/faraday) repository:
+Download the [latest tarball](https://github.com/infobyte/faraday/tarball/dev) or clone the [Faraday Git Project](https://github.com/infobyte/faraday) repository and checkout dev branch:
 
     $ git clone https://github.com/infobyte/faraday.git faraday-dev
+    $ git checkout dev
     $ cd faraday-dev
 
 
@@ -179,9 +224,9 @@ Download the [latest tarball](https://github.com/infobyte/faraday/tarball/master
 
 Faraday Client works under any modern Linux distribution or Mac OS X, and needs Python 2.6 or 2.7.
 
-The Python requirements for the client are stored in the [`requirements.txt` file](https://github.com/infobyte/faraday/blob/master/requirements.txt). Some additional requirements are necessary for specific features to work, these are stored in the [`requirements_extras.txt` file](https://github.com/infobyte/faraday/blob/master/requirements_extras.txt).
+The Python requirements for the client are stored in the [`requirements.txt` file](https://github.com/infobyte/faraday/blob/dev/requirements.txt). Some additional requirements are necessary for specific features to work, these are stored in the [`requirements_extras.txt` file](https://github.com/infobyte/faraday/blob/dev/requirements_extras.txt).
 
-Out tests include [Debian](#client-debian), [Ubuntu](#client-debian), [Kali](#client-kali), [Backtrack](#client-debian) and [OSX Sierra](https://github.com/infobyte/faraday/wiki/Installation-OSX).
+Out tests include [Debian](#client-debian), [Ubuntu](#client-debian), [Kali](#client-kali), [Backtrack](#client-debian).
 
 
 <a name="client-system-dependencies"></a>
@@ -223,7 +268,8 @@ Extras dependencies:
 dev-python/beautifulsoup dev-python/gevent-psycopg2
 ```
 
-#### ArchLinuxBy default, Faraday server will listen on port **5985**. You can edit this on `~/.faraday/config/server.ini`.
+#### ArchLinux
+By default, Faraday server will listen on port **5985**. You can edit this on `~/.faraday/config/server.ini`.
 
 Before installing Faraday you will need to get some user-contributed packages. In order to do this quickly we need an [AUR](https://wiki.archlinux.org/index.php/Arch_User_Repository) wrapper, in this case we will use [Yaourt](http://archlinux.fr/yaourt-en). After installing Yaourt run:
 
@@ -237,7 +283,7 @@ $ yaourt -S python2-dateutil python2-pip mime-types python2-gobject gtk3 vte3 po
 Once you have the required system dependencies, you just have to install the Python modules needed to run the client using `pip`:
 
 ```
-$ pip2 install -r requirements.txt
+$ pip2 install -r requirements.txt -U
 ```
 
 If you are working inside a Virtual Machine you need to follow this extra steps for GTK to work:
@@ -275,11 +321,11 @@ Some distributions or installations require additional steps, so look down below
 <a name="client-kali"></a>
 ##### Kali
 
-Faraday comes pre-installed in Kali Rolling. The package name is **python-faraday**. Keep in mind that this package can only be used for the **Community edition**, if you've purchased a **Commercial license** please refer to our documentation for [Pro](http://github.com/infobyte/faraday/wiki/installation-pro) or [Corp](http://github.com/infobyte/faraday/wiki/installation-corp) installation.
+Faraday comes pre-installed in Kali Rolling. The package name is **python-faraday**. Keep in mind that this package can only be used for the **Community edition**.
 
 In order to run Faraday in Kali:
 ```
-$ systemctl start postgres
+$ systemctl start postgresql.service
 $ cd /usr/share/python-faraday
 $ python2 faraday-server.py
 $ python2 faraday.py
@@ -287,11 +333,13 @@ $ python2 faraday.py
 
 Due to Kali's package updates the pre-installed package may not be the last version. If you want the latest updates use the [Debian install steps](#client-debian).
 
-<a name="client-osx"></a>
-##### OSX
+##### Gentoo
+If you are running Gentoo, this are the dependencies with Emerge:
 
-[You can find instructions on how to run the client under Mac OSX here.](https://github.com/infobyte/faraday/wiki/Installation-OSX)
-
-##### Chef
-
-If you want to deploy Faraday using Chef, [Sliim](https://github.com/Sliim) made a cookbook for it! You can find it [here](https://github.com/sliim-cookbooks/faraday/).
+```
+dev-python/flask-sqlalchemy dev-python/service_identity dev-python/twisted \
+dev-python/pyopenssl dev-java/mockito dev-python/Whoosh \
+dev-python/configargparse dev-python/restkit dev-python/requests www-servers/tornado \
+dev-python/flask dev-python/colorama dev-python/setuptools dev-python/pip dev-libs/libpqxx \
+libffi-dev
+```
