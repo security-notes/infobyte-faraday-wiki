@@ -41,6 +41,7 @@
   * [Helpers](https://github.com/infobyte/faraday/wiki/Helpers)
   * [Proxy](https://github.com/infobyte/faraday/wiki/Proxy)
   * [Scripts](https://github.com/infobyte/faraday/wiki/Scripts)
+  * [Manage.py](https://github.com/infobyte/faraday/wiki/Manage.py)
 
 * **Special Features**
   * [CSV Importer](https://github.com/infobyte/faraday/wiki/CSV-Importer)
