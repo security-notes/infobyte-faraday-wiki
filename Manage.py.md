@@ -4,6 +4,10 @@ With Faraday V3 we released a new Backend feature.
 
 ![](https://raw.githubusercontent.com/wiki/infobyte/faraday/images/manage.py/Option-view.png)
 
+Usage: manage.py [OPTIONS] COMMAND [ARGS]...
+
+### Avaibable commands explained:
+
 ## create_tables
 This command allows the user to manually create a table on Faraday's Database. It would come in handly if something in the initdb fails for example.
 
@@ -24,7 +28,27 @@ This comand needs to only be executed when installing Faraday. It Will create th
 If you try to execute this a second time it will indeed fail.
 Warning: Please do not lose the ramdom password that this command will print on the screen. It will be necesary to log in into Faraday.
 
-## process_reports
-
 ## show_urls
 This will print a list of all the URL available to communicate will our API Rest. 
+
+## sql_shell
+This will open a postgres sql shell, already automatically configured with Faradays user and configuration.
+
+
+## status_check
+This command will check a the state in which Faraday is.
+Checks that:
+* postgresql is running
+* Faraday server and client are running
+* the configuration is okay
+* the dependencies are installed
+
+You can run this command with this parameters:
+
+--check_postgresql
+
+--check_faraday
+
+--check_dependencies
+
+--check_config

@@ -40,49 +40,54 @@ Next copy this CSV file (either cfdb.csv or vulndb.csv) to [/data/cwe.csv](data/
 
 #### Manual Import
 
-Go to the **Web UI** and click on the **import** icon ![](https://raw.github.com/wiki/infobyte/faraday/images/faraday_vulntemplates_import_icon.png)
+Go to the **Web UI** and click on the **import** icon ![](https://raw.github.com/wiki/infobyte/faraday/images/vulnerability_database/import_icon.png)
 
 A modal dialog will pop up asking you to choose a CSV file to upload, select it, click **ok** and you're done!
 
 #### Script
 
-To upload the CSV to CouchDB using the script go to your Faraday Server installation root directory and run:
+This has been deprecated, CSV gets uploaded automatically on Faraday v3.
+
+<del>To upload the CSV to faraday using the script go to your Faraday Server installation root directory and run:
 
 ```
 $ ./helpers/pushCwe.py
 ```
 
-Use the paramater `-c` if you have a username and password for Faraday.
+<del>Use the paramater `-c` if you have a username and password for Faraday.
+
+
 
 ```        
 $ ./pushCwe.py -c 'http://USERNAME:PASSWORD@HOSTNAME:PORT/'
 ```
 
-Also, if you need add your own CSV file, put the CSV inside `$FARADAY/data/cwe.csv`. And run pushCWE. Make sure you run the `pushCwe.py` script before use and that's it!
+<del>Also, if you need add your own CSV file, put the CSV inside `$FARADAY/data/cwe.csv`. And run pushCWE. Make sure you run the `pushCwe.py` script before use and that's it!
+
 
 <a name="manually"></a>
 ### Manually Adding Templates
 
-You can also create templates manually in the Web UI. Click on the **vulnerability templates** icon ![](https://raw.github.com/wiki/infobyte/faraday/images/faraday_vulntemplates_icon.png)
+You can also create templates manually in the Web UI. Click on the **vulnerability templates** icon ![](https://raw.github.com/wiki/infobyte/faraday/images/vulnerability_database/icon.png)
 
 You will get a list of the existing templates in your installation
 
-![](https://raw.github.com/wiki/infobyte/faraday/images/faraday_vulntemplates_list.png)
+![](https://raw.github.com/wiki/infobyte/faraday/images/vulnerability_database/list.png)
 
 <a name="usage"></a>
 ### Usage
 
 Login to your Faraday Web UI and create or edit a vulnerability. A search field will allow you to find your templates, as shown in the picture below.
 
-![](https://raw.githubusercontent.com/wiki/infobyte/faraday/images/faraday_statusreport_vuln_creation_templates_list.png)
+![](https://raw.githubusercontent.com/wiki/infobyte/faraday/images/vulnerability_database/vuln_creation_templates_list.png)
 
 You can also duplicate vulnerabilities easily by saving them as a template.
 
-![](https://raw.github.com/wiki/infobyte/faraday/images/faraday_vulntemplates_create.png)
+![](https://raw.github.com/wiki/infobyte/faraday/images/vulnerability_database/create.png)
 
 and later on importing the template:
 
-![](https://raw.github.com/wiki/infobyte/faraday/images/faraday_vulntemplates_import.png)
+![](https://raw.github.com/wiki/infobyte/faraday/images/vulnerability_database/import.png)
 
 
 

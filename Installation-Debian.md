@@ -18,9 +18,7 @@ To install the Faraday Server you have to execute the following commands:
 
 This will install the server, along with all the needed dependencies to run it.
 
-If you are using a commercial version, a configuration dialog will be shown asking you to enter the CouchDB URL and the admin password:
-
-![](https://raw.githubusercontent.com/wiki/infobyte/faraday/images/apt-configure-couch.png)
+If you are using a commercial version, a configuration dialog will be shown asking you to enter the Faraday URL and the admin password:
 
 The package automatically creates the admin user in the configuration step, and installs the backup cronjob, so executing the setup script (`setup-server.py`) is not required.
 
@@ -71,7 +69,7 @@ And we can undo this by executing:
 
 Upgrading your server version is as simple as installing the newest `.deb` using dpkg. If a new dependency is needed you will be warned, as well as if there is any conflict.
 
-If you are installing the server from the `.deb`, but you already were running it from another source, all you have to do is run the server following this instructions. You will experience no data loss, as the Server will automatically regenerate your workspaces from CouchDB.
+If you are installing the server from the `.deb`, but you already were running it from another source, all you have to do is run the server following this instructions. You will experience no data loss, as the Server will automatically regenerate your workspaces from Postgresql.
 
 ## Installing Faraday Client
 

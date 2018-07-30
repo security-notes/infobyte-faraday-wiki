@@ -1,27 +1,3 @@
-## Installation
-
-The following platforms are supported:
-
-![platform](https://raw.github.com/wiki/infobyte/faraday/images/platform/supported.png) 
-
-[Read more about this](https://github.com/infobyte/faraday/wiki/installation-community).
-
-#### Quick install
-
-For many OSes, you can quickly install Faraday by either downloading the [latest tarball](https://github.com/infobyte/faraday/tarball/master) or cloning the [Faraday Git Project](https://github.com/infobyte/faraday), and running:
-
-```
-$ git clone https://github.com/infobyte/faraday.git faraday-dev
-$ cd faraday-dev
-
-$ pip2 install -r requirements_server.txt
-$ ./faraday-server.py
-
-$ pip2 install -r requirements.txt
-$ ./faraday.py
-```
-[Read more about the installation process](https://github.com/infobyte/faraday/wiki/installation-community).
-
 ## About
 
 Faraday introduces a new concept - IPE (Integrated Penetration-Test Environment) a multiuser Penetration test IDE. Designed for distributing, indexing, and analyzing the data generated during a security audit.
@@ -32,13 +8,26 @@ Faraday was made to let you take advantage of the available tools in the communi
 
 Designed for simplicity, users should notice no difference between their own terminal application and the one included in Faraday. Developed with a specialized set of functionalities, users improve their own work. Do you remember the last time you programmed without an IDE? What IDEs are to programming, Faraday is to pentesting.
 
-![GUI - GTK](https://raw.github.com/wiki/infobyte/faraday/images/Faraday-Gtk-MainWindow.png)
+![GUI - GTK](https://raw.github.com/wiki/infobyte/faraday/images/client/gtk_main_window.png)
 
 Faraday crunches the data you load into different visualizations that are useful to managers and pentesters alike.
 
-![GUI - Web](https://raw.github.com/wiki/infobyte/faraday/images/GUI_Dashboard_new.png)
+![GUI - Web](https://raw.github.com/wiki/infobyte/faraday/images/dashboard/dashboard.png)
 
 To read about the latest features check out the [release notes](https://github.com/infobyte/faraday/blob/master/RELEASE.md)!
+
+## Getting Started!
+
+Check out our documentacion for datailed information on how to install Faraday in all of our supported platforms:
+
+![Supported Os](https://raw.github.com/wiki/infobyte/faraday/images/platform/supported.png)
+
+To begin the instalation process check our out [First Step](https://raw.github.com/wiki/infobyte/faraday/First-steps) Wiki.
+
+## New Features!
+All of Faraday's latest features and updates are always available on our [blog](http://blog.infobytesec.com/search/label/english).
+There are new entries every few weeks, don't forget to check out our amaizing new improvements on it's last entry!
+
 
 ## Plugins list
 
@@ -82,13 +71,15 @@ Read more about the [Faraday Plugin](https://github.com/infobyte/faraday/wiki/fa
 Updating objects on other Faraday instances result in notifications on your
 Faraday GTK Client.
 
-![](https://raw.github.com/wiki/infobyte/faraday/images/Faraday-Gtk-NotificationsDialog.png)
+![](https://raw.github.com/wiki/infobyte/faraday/images/client/gtk_notifications_dialog.png)
 
-#### ZSH UI no-gui notifications
-![](https://raw.githubusercontent.com/wiki/infobyte/faraday/images/faraday_gui_notifi.png)
 
 ### CSV Exporting
+Faraday supports CSV Exporting from its WEB UI.
 [More information](Exporting-the-information)
+
+### Old Wiki
+To access our previous wiki with Couchdb Informatoin click [here](https://github.com/infobyte/faraday/wiki/Old-Wiki).
 
 ## Links
 

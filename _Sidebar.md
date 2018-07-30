@@ -1,61 +1,78 @@
-* [About](https://github.com/infobyte/faraday/wiki)
-* [[First steps]]
-  * [Installation - BETA v3.0 Community](https://github.com/infobyte/faraday/wiki/Install-steps-for-Faraday-v3.0-BETA)
-  * [Installation - BETA v3.0 Professional](https://github.com/infobyte/faraday/wiki/Install-steps-for-Faraday-v3.0-BETA-Professional)
-  * [Installation - BETA v3.0 Corporate](https://github.com/infobyte/faraday/wiki/Install-steps-for-Faraday-v3.0-BETA-Corporate)
+* [Home](https://github.com/infobyte/faraday/wiki)
+
+* [**Installation**](https://github.com/infobyte/faraday/wiki/First-Steps)
   * [Installation - Community](https://github.com/infobyte/faraday/wiki/Installation-Community)
   * [Installation - Professional](https://github.com/infobyte/faraday/wiki/Installation-Pro)
-  * [Installation - Corporate](https://github.com/infobyte/faraday/wiki/Installation-Corp)
-  * [Installation - CouchDB](https://github.com/infobyte/faraday/wiki/Installation-CouchDB)
+  * [Installation Faraday- Corporate](https://github.com/infobyte/faraday/wiki/Installation-Corp)
+  * [Installation - Docker](https://github.com/infobyte/faraday/wiki/Installation-Docker)
   * [Installation - OS X](https://github.com/infobyte/faraday/wiki/Installation-OSX)
   * [Installation - RedHat](https://github.com/infobyte/faraday/wiki/Installation-RedHat)
-  * [Installation - Docker](https://github.com/infobyte/faraday/wiki/Installation-Docker)
-  * [Using SSL](https://github.com/infobyte/faraday/wiki/SSL)
-  * [[Vulnerabilities Database]]
-* [[Updates]]
-* [[Usage]]
-  * [Backup](https://github.com/infobyte/faraday/wiki/Backup-Workspaces)
-  * [Bug bounties](https://github.com/infobyte/faraday/wiki/Bug-bounties)
-  * [Chat and Communication](https://github.com/infobyte/faraday/wiki/Chat-and-Communication)
-  * [[Continuous-Scanning]]
-  * [CSV Exporting](https://github.com/infobyte/faraday/wiki/Exporting-the-information)
-  * [[Cybersecurity Program]]
+
+    
+* [Updates](https://github.com/infobyte/faraday/wiki/Updates)
+
+* **Server**
+  * [CSV Exporting](https://github.com/infobyte/faraday/wiki/CSV-Exporter)
+  * [Credentials](https://github.com/infobyte/faraday/wiki/Credentials)
   * [Data Analysis Tools](https://github.com/infobyte/faraday/wiki/Data-Analysis-Tools)
-  * [[Executive Report]]
-  * [[Faraday CSV importer]]
-  * [[Helpers]]
-  * [JIRA Integration](https://github.com/infobyte/faraday/wiki/Jira-integration)
-  * [[LDAP]]
-  * [[Manage Hosts and Services GUI WEB]]
-  * [[Manage Users]]
-  * [[Manage Workspaces]]
-  * [[OSINT provider]]
-  * [[Proxy]]
-  * [Run CouchDB and Faraday's server on startup](https://github.com/infobyte/faraday/wiki/Run-Couchdb-and-Faraday's-server-on-startup)
-  * [[Scripts]]
-  * [[Tag Use]]
-  * [[Tasks]]
-  * [[Vulnerability Life Cycle]]
-  * [[Workspace-Diff]]
-  * [[Workspace replication]]
+  * [Executive Report](https://github.com/infobyte/faraday/wiki/Executive-Report)
+  * [Hosts & Services](https://github.com/infobyte/faraday/wiki/Hosts-&-Services)
+  * [Users](https://github.com/infobyte/faraday/wiki/Users)
+  * [Workspaces](https://github.com/infobyte/faraday/wiki/Workspaces)
+  * [**Status Report**](https://github.com/infobyte/faraday/wiki/Status-Report)
+    * [Tag Use](https://github.com/infobyte/faraday/wiki/Tag-Use)
+    * [Export to Csv](https://github.com/infobyte/faraday/wiki/CSV-Exporter)
+    * [Search & Filter](https://github.com/infobyte/faraday/wiki/Search-&-Filter)
+  * [Tasks](https://github.com/infobyte/faraday/wiki/Tasks)
+  * [Vulnerabilities Database](https://github.com/infobyte/faraday/wiki/Vulnerabilities-Database)
+  * [Workspace Comparison](https://github.com/infobyte/faraday/wiki/Workspace-Diff)
+  * [Web Shell](https://github.com/infobyte/faraday/wiki/Web-Shell)
+  
+* **Client**
+  * [GTK](https://github.com/infobyte/faraday/wiki/GTK)
+  * [ZSH - Terminal](https://github.com/infobyte/faraday/wiki/ZSH)
+  * [CLI - Mode](https://github.com/infobyte/faraday/wiki/CLI)
 
+* **Backend**
+  * [Architecture](https://github.com/infobyte/faraday/wiki/Achitecture)
+  * [APIs](https://github.com/infobyte/faraday/wiki/APIs)
+  * [Backup](https://github.com/infobyte/faraday/wiki/Backup)
+  * [Helpers](https://github.com/infobyte/faraday/wiki/Helpers)
+  * [Proxy](https://github.com/infobyte/faraday/wiki/Proxy)
+  * [Scripts](https://github.com/infobyte/faraday/wiki/Scripts)
 
-* [Demos / Videos](https://github.com/infobyte/faraday/wiki/Demos)
-* [[Architecture]]
-* [Plugins](https://github.com/infobyte/faraday/wiki/Plugin-List)
-  * [Burp Proxy Extender](https://github.com/infobyte/faraday/wiki/Burp-proxy-extender)
-  * [[BeEF]]
-  * [[Evilgrade]]
-  * [[Faraday Plugin]]
-  * [[Immunitys-CANVAS]]
-  * [[Metasploit]]
-  * [[Nessus]]
-  * [More +60 plugins](https://github.com/infobyte/faraday/wiki/Plugin-List#list)
-* **Development**
-  * [[APIs]]
+* **Special Features**
+  * [CSV Importer](https://github.com/infobyte/faraday/wiki/CSV-Importer)
+  * [Continuous Scanning](https://github.com/infobyte/faraday/wiki/Continuous-Scanning)
+
+* **Integrations**
+  * [JIRA](https://github.com/infobyte/faraday/wiki/Jira)
+  * [LDAP](https://github.com/infobyte/faraday/wiki/LDAP)
+  * [OSINT Provider](https://github.com/infobyte/faraday/wiki/OSINT-Provider)
+
+* [**Plugins**](https://github.com/infobyte/faraday/wiki/Plugin-List)
+  
   * [Basic Plugin Development](https://github.com/infobyte/faraday/wiki/Basic-plugin-development)
-* [[Faraday Awards]]
-* [[FAQ]]
-* [[Troubleshooting]]
-* [[Security]]
-* [[Contact us]]
+  * [Burp Proxy Extender](https://github.com/infobyte/faraday/wiki/Burp-proxy-extender)
+  * [BeEF](https://github.com/infobyte/faraday/wiki/BeEF)
+  * [Evilgrade](https://github.com/infobyte/faraday/wiki/Evilgrade)
+  * [Faraday Plugin](https://github.com/infobyte/faraday/wiki/Faraday-Plugin)
+  * [Immunitys-CANVAS](https://github.com/infobyte/faraday/wiki/Inmunity-CANVAS)
+  * [Metasploit](https://github.com/infobyte/faraday/wiki/Metasploit)
+  * [Nessus](https://github.com/infobyte/faraday/wiki/Nessus)
+  * [More +60 plugins](https://github.com/infobyte/faraday/wiki/Plugin-List#list)
+
+
+* [**Security**](https://github.com/infobyte/faraday/wiki/Security)
+  * [Using SSL](https://github.com/infobyte/faraday/wiki/SSL)
+  * [Bug bounties](https://github.com/infobyte/faraday/wiki/Bug-bounties)
+  * [Cybersecurity Program](https://github.com/infobyte/faraday/wiki/Cybersecurity-Program)
+  
+* **Help**
+  * [FAQ](https://github.com/infobyte/faraday/wiki/FAQ)
+  * [Troubleshooting](https://github.com/infobyte/faraday/wiki/Troubleshooting)
+  * [Demos / Videos](https://github.com/infobyte/faraday/wiki/Demos)
+
+* **About us**
+  * [Faraday Awards](https://github.com/infobyte/faraday/wiki/Faraday-Awards)
+  * [Contact us](https://github.com/infobyte/faraday/wiki/Contact-Us)

@@ -4,17 +4,17 @@ One of the big goals in every internal pentest is gathering service credentials 
 ### Host
 In the hosts view you have a special column that says credentials and has a number with the amount of credentials you have already created. Click on that number.
 
-![](https://raw.githubusercontent.com/wiki/infobyte/faraday/images/faraday_creds_hosts_view.png)
+![](https://raw.githubusercontent.com/wiki/infobyte/faraday/images/hosts&services/hosts_view.png)
 
 ### Service
 To add it to a Service after entering the Hosts view click on the desired target and follow the steps bellow:
-![](https://raw.githubusercontent.com/wiki/infobyte/faraday/images/faraday_creds_service_view.png)
+![](https://raw.githubusercontent.com/wiki/infobyte/faraday/images/hosts&services/service_view.png)
 
-Next just click on the green New button ![](https://raw.githubusercontent.com/wiki/infobyte/faraday/images/faraday_report_new_button.png)
+Next just click on the green New button ![](https://raw.githubusercontent.com/wiki/infobyte/faraday/images/credentials/new_button.png)
 
-![](https://raw.githubusercontent.com/wiki/infobyte/faraday/images/faraday_creds_new.png)
+![](https://raw.githubusercontent.com/wiki/infobyte/faraday/images/credentials/new.png)
 And just complete the data like it shows in the picture above!
 
 ## View all the Credentials
 When you go to the Credentials View you will see all the credentials you have for every target on that workspace:
-![](https://raw.githubusercontent.com/wiki/infobyte/faraday/images/faraday_creds_view.png)
+![](https://raw.githubusercontent.com/wiki/infobyte/faraday/images/credentials/general_view.png)

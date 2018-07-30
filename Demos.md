@@ -34,8 +34,6 @@ _Installation:_
 
 [![ScreenShot](https://raw.github.com/wiki/infobyte/faraday/images/newytlogo.png) -  Configure Faraday with SSL ](https://bit.ly/2h1cjN3)
 
-[![ScreenShot](https://raw.github.com/wiki/infobyte/faraday/images/newytlogo.png) - First couchdb configuration ](https://bit.ly/SkwwwV)
-
 [![ScreenShot](https://raw.github.com/wiki/infobyte/faraday/images/newytlogo.png) -  Faraday installation in macOS Sierra ](https://bit.ly/2gK8Gur)
    
    
@@ -52,6 +50,7 @@ _Using the platform:_
 [![ScreenShot](https://raw.github.com/wiki/infobyte/faraday/images/newytlogo.png) - A fast class C domain scanner ](https://bit.ly/U16Gzt)
 
 [![ScreenShot](https://raw.github.com/wiki/infobyte/faraday/images/newytlogo.png) - Using Faraday's Reporting features ](http://bit.ly/2xsVdMC) 
+
 
 _Faraday using plugins:_
 

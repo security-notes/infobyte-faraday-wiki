@@ -8,7 +8,7 @@ Run:
 
     $ sudo docker run -t -i infobyte/faraday /root/run.sh
 
-This command runs the container with Faraday and CouchDB using a test Workspace called "workspace". Inside, Faraday is started with `./faraday.py -gui=no-gui --update` which means without a graphic environment and checking for  updates.
+This command runs the container with Faraday using a test Workspace called "workspace". Inside, Faraday is started with `./faraday.py -gui=no-gui --update` which means without a graphic environment and checking for  updates.
 
 Now to obtain the container's IP address run:
 

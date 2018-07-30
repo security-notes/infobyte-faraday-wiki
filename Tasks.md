@@ -15,7 +15,7 @@ A few of our default methodologies:
 ## Loading a default methodology:
 
 Use the button "New" and select the option "From template", give to this new methodology a name and ready!
-![New methodology](https://raw.github.com/wiki/infobyte/faraday/images/new_methodology.png) 
+![New methodology](https://raw.github.com/wiki/infobyte/faraday/images/tasks/new_methodology.png) 
 
 
 ## Creating you own methodology:
@@ -27,7 +27,7 @@ Create a CSV file with the following fields:
 
 Then, use the "Import" button and select your new CSV to load your custom methodology to Faraday.
 
-![Methodologies](https://raw.github.com/wiki/infobyte/faraday/images/methodologies_list.png) 
+![Methodologies](https://raw.github.com/wiki/infobyte/faraday/images/tasks/methodologies_list.png) 
 
 ## Downloading your prefered methodology:
 
@@ -35,7 +35,7 @@ Do you have a custom methodology created from scratch? Click in "Download CSV fo
 
 
 ## Kanban view
-![Kanban](https://raw.github.com/wiki/infobyte/faraday/images/kanban_methodologies.png) 
+![Kanban](https://raw.github.com/wiki/infobyte/faraday/images/tasks/kanban_methodologies.png) 
 
 If you click in the methodology name, you go to the kanban view of that methodology.
 
@@ -56,6 +56,7 @@ Methodologies contains tasks, this tasks include the following fields:
 
 With that, you can assign a specific task with a end date to a pentester.
 Also, tag a chunk of task for a better appreciation in the kanban view.
+![Edit Task](https://raw.github.com/wiki/infobyte/faraday/images/tasks/edit_task.png) 
 
 
 
