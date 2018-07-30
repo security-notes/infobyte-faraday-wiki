@@ -1,4 +1,4 @@
-# Vulnerability Status Report
+# Vulnerabilities
 
 To view a full list of findings you can access the Status Report.
 
