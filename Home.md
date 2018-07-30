@@ -46,7 +46,7 @@ Information is organized into various **Workspaces**. Each Workspace contains a 
 ### Conflicts
 If two plugins produce clashing information for an individual element, a conflict that the user will have to resolve is generated.  An example is if **user1** incorporates host *127.0.0.1 OS:Linux* and **user2** incorporates *127.0.0.1 OS: Linux Ubuntu 13.10*. 
 
-On our [GTK interface](https://github.com/infobyte/faraday/wiki/GTK#conflicts-resolution-dialog) there's a button on the bottom right corner of the main window displaying the number of conflicts in the current workspace. To resolve them, just click on the button and a window will open where you can edit the conflicting objects and select which one to keep. 
+On our [GTK interface](https://github.com/infobyte/faraday/wiki/GTK) there's a button on the bottom right corner of the main window displaying the number of conflicts in the current workspace. To resolve them, just click on the button and a window will open where you can edit the conflicting objects and select which one to keep. 
 
 ### Faraday plugin
 
