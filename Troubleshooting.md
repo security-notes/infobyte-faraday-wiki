@@ -57,7 +57,7 @@ IOError: [Errno 2] No such file or directory: '/home/leonardo/VERSION'
 * [ERROR - XML Plugin: Ip of host unknown](#ip-of-host-unknown)
 * [[Errno 2] No such file or directory: '/home/john/.faraday/config/config.xml'](#user.xml-not-found)
 * [OSx GTK not working IP ERROR](#osx-gtk-not-working)
-* [Can't login after Couch Import](#cant-login-after-couch-import
+* [Can't login after Couch Import](#cant-login-after-couch-import)
 
 ### Commercial versions
 
