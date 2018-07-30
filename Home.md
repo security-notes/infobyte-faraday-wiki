@@ -78,6 +78,9 @@ Faraday GTK Client.
 Faraday supports CSV Exporting from its WEB UI.
 [More information](Exporting-the-information)
 
+### Old Wiki
+To access our previous wiki with Couchdb Informatoin click [here](https://github.com/infobyte/faraday/wiki/Old-Wiki).
+
 ## Links
 
 * Homepage: https://www.faradaysec.com
