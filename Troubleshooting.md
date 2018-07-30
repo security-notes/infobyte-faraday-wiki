@@ -58,6 +58,7 @@ IOError: [Errno 2] No such file or directory: '/home/leonardo/VERSION'
 * [[Errno 2] No such file or directory: '/home/john/.faraday/config/config.xml'](#user.xml-not-found)
 * [OSx GTK not working IP ERROR](#osx-gtk-not-working)
 * [Can't login after Couch Import](#cant-login-after-couch-import)
+* [Updating Nginx Configuration](#updating-nginx-configuration)
 
 ## Answers
 
@@ -233,6 +234,18 @@ Assuming your username is '_faraday_' and the new password you want to set is '_
 This command will update your user's password.
 
 Now you can login to Faraday without a problem.
+
+[ [index] ](#index)
+
+<a name="updating-nginx-configuration"></a>
+### Updating Nginx configuration
+
+***Note:*** This only applies if you are using Nginx and https.
+
+Please, make sure you have this settings on your Nginx config:
+
+    proxy_pass http://localhost:5985/;
+    proxy_redirect http:// $scheme://;
 
 [ [index] ](#index)
 
