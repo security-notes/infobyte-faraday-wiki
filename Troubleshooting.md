@@ -64,21 +64,15 @@ IOError: [Errno 2] No such file or directory: '/home/leonardo/VERSION'
 <a name="cant-access-web"></a>
 ### I can't access the web GUI
 
-Is Faraday Server running? Try something like this, replacing the URL and port
-with those of your Faraday Server:
-
+Is Faraday Server running? Try running:
 ```
-curl http://127.0.0.1:5985/_api/info
+./manage.py status_check
 ```
-
-The reply should look something like
-
-```json
-{"Faraday Server":"Running"}
+That will give some information about the state Faraday is in at the moment.
+If the server is not running try:
 ```
-
-If not, maybe try the [Faraday Server Installation](https://github.com/infobyte/faraday/wiki/Installation-Community#server-configuration).
-
+./faraday-server.py
+```
 [ [index] ](#index)
 
 <a name="import"></a>
