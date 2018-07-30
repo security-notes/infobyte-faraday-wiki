@@ -93,6 +93,10 @@ If you want to import your data from CouchDB to PostgreSQL, run the following co
 ```
 python manage.py import_from_couchdb
 ```
+With CouchDB configured in the `server.ini` file, it will import all the data
+you had from the 2.7.2 version, including the users and its hashed passwords.
+
+***Note:*** If you can't login into to Faraday after running the command above due to invalid credentials, you can change your password through the PostgreSQL shell that Faraday has in it. Follow the next [instructions](https://github.com/infobyte/faraday/wiki/Troubleshooting#cant-login-after-importing-from-couch) in order to change your password and be able to login.
 
 ***Note:*** beware of the number of users you have created in CouchDB, remember that you have already created one when you initialized PostgreSQL. The number of users that you have between CouchDB and PostgreSQL should not surpass the number of users you're allow to have according to your license.
 
