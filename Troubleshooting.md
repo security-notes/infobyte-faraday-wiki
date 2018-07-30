@@ -59,13 +59,6 @@ IOError: [Errno 2] No such file or directory: '/home/leonardo/VERSION'
 * [OSx GTK not working IP ERROR](#osx-gtk-not-working)
 * [Can't login after Couch Import](#cant-login-after-couch-import)
 
-### Commercial versions
-
-* [I can't edit Workspaces in the web UI](#edit-workspaces-wui)
-* [OSError: [Errno 2] No such file or directory: './reports/executive/templates/'](#executive-report-error)
-* [401 Unauthorized: when importing a report on the client](#401-unauthorized-when-importing-a-report-on-the-client)
-
-
 ## Answers
 
 <a name="cant-access-web"></a>
