@@ -55,9 +55,9 @@ IOError: [Errno 2] No such file or directory: '/home/leonardo/VERSION'
 * [Clients can't access the Faraday server](#faraday-server-access-problems)
 * [Error No such file or directory VERSION](#no-such-file-version)
 * [ERROR - XML Plugin: Ip of host unknown](#ip-of-host-unknown)
-* [OSError: Errno 2: No such file or directory: './reports/executive/templates/'](#executive-report-error)
 * [[Errno 2] No such file or directory: '/home/john/.faraday/config/config.xml'](#user.xml-not-found)
 * [OSx GTK not working IP ERROR](#osx-gtk-not-working)
+* [Can't login after Couch Import](#cant-login-after-couch-import
 
 ### Commercial versions
 
@@ -226,26 +226,26 @@ Now run the server again, and enjoy faraday!
 
 [ [index] ](#index)
 
+<a name="cant-login-after-couch-import"></a>
+### Can't Login after Importing from Couch
 
-## Answers for Commercial versions
+There's a change the password on your server.ini wasn't updated or wrong. We must change the password for your user on the database.
 
-[ [index] ](#index)
+Run the following command in order to execute PostgreSQL shell:
 
-<a name="executive-report-error"></a>
-### OSError: [Errno 2] No such file or directory: './reports/executive/templates/'
+    $ python manage.py sql_shell
 
-When you click "New" on the executive report and the modal doest not appear, be sure to check the logs for errors.
+Once you got into the sql_shell, let's take a look inside the table _faraday_user_ to see the users information. **It is important to be sure of the username we want to change the password.**
 
-This happens when the faraday is executed outside the directory where it resides. This issue was solved on v2.6.
+    SELECT * FROM faraday_user
 
+Assuming your username is '_faraday_' and the new password you want to set is '_changeme_', run the following command:
 
-To solve this issue execute *faraday-server.py* on the correct directory as shown below:
-```python
-cd /home/username/faraday # or where the faraday-server was installed
-python faraday-server.py
-```
+    UPDATE faraday_user SET PASSWORD='changeme' WHERE username='faraday'
 
-(*) sometimes faraday server was installed in the /usr directory, check the traceback for the full path.
+This command will update your user's password.
+
+Now you can login to Faraday without a problem.
 
 [ [index] ](#index)
 
