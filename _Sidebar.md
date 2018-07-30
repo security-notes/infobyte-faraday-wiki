@@ -4,7 +4,7 @@
 * [**Installation**](https://github.com/infobyte/faraday/wiki/First-Steps)
   * [Installation - Community](https://github.com/infobyte/faraday/wiki/Installation-Community)
   * [Installation - Professional](https://github.com/infobyte/faraday/wiki/Installation-Pro)
-  * [Installation Faraday- Corporate](https://github.com/infobyte/faraday/wiki/Installation-Corp)
+  * [Installation - Corporate](https://github.com/infobyte/faraday/wiki/Installation-Corp)
   * [Installation - Docker](https://github.com/infobyte/faraday/wiki/Installation-Docker)
   * [Installation - OS X](https://github.com/infobyte/faraday/wiki/Installation-OSX)
   * [Installation - RedHat](https://github.com/infobyte/faraday/wiki/Installation-RedHat)
