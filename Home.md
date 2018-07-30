@@ -79,7 +79,7 @@ Faraday supports CSV Exporting from its WEB UI.
 [More information](CSV-Exporter)
 
 ### Old Wiki
-To access our previous wiki with Couchdb Informatoin click [here](https://github.com/infobyte/faraday/wiki/Faraday-V2.7).
+To access our previous wiki with CouchDB Information, click [here](https://github.com/infobyte/faraday/wiki/Faraday-V2.7).
 
 ## Links
 
