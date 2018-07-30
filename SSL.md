@@ -29,7 +29,7 @@ Below you can find a sample config file for NGINX. Please keep in mind that you 
         https://themes.googleusercontent.com; frame-src https://assets.zendesk.com https://www.facebook.com 
         https://s-static.ak.facebook.com https://tautt.zendesk.com; object-src 'none'";
 
-server {
+        server {
         listen *:443;
         server_name example_domain.com;
 
