@@ -1,11 +1,11 @@
 ## Index
 
-* [Server](#faraday-server)
-* [Client](#faraday-client)
+* [Server](#faraday-server-pro)
+* [Client](#faraday-client-pro)
 
 ## Topics
 
-<a name="faraday-server"></a>
+<a name="faraday-server-pro"></a>
 ### Faraday Server
 
 Faraday Server is the interface between PostgreSQL and Faraday Client and WebUI. The server's responsibility is to transmit information between the client or WebUI and PostgreSQL, and make sure that they are kept in sync. The Web UI client, which allows you to handle enormous workspaces from your favorite web browser.
@@ -46,9 +46,7 @@ $ sudo apt update
 $ sudo apt install build-essential ipython python-setuptools \
                 python-pip python-dev libssl-dev libffi-dev \
                 pkg-config libssl-dev libffi-dev libxml2-dev \
-                libxslt1-dev libfreetype6-dev libpng-dev \
-                postgresql sudo libsasl2-dev libldap2-dev libssl-dev
-
+                libxslt1-dev libfreetype6-dev libpng-dev postgresql
 ```
 
 ##### Kali Linux
@@ -73,34 +71,95 @@ Please consult with your distribution documentation to install the dependencies 
 Once you have the required system dependencies, you just have to install the Python modules needed to run the server using `pip`:
 
 ```
-$ pip2 install -r requirements_server.txt
+$ pip2 install -r requirements_server.txt -U
 ```
 #### Initializing PostgreSQL
 
-In order to initialize Postgresql database and generate your main user and a password, run the following command:
+In order to initialize Postgresql database, run the following command:
 
 ```
 python manage.pyc initdb
 ```
- ***Note:*** if at the moment you run this command, it throws an error, be sure you have sudo installed. Once you have installed it, run the command again.
+If you don't have CouchDB configured we assume this is a new installation, so a
+new user will be created.
+
+With CouchDB configured in the `server.ini` file, it will import all the data
+you had from the 2.7.2 version, including the users and its hashed passwords.
+
+***Note:*** If you can't login into to Faraday after running the command above due to invalid credentials, you can change your password through the PostgreSQL shell that Faraday has in it. Follow the next instructions in order to change your password and be able to login:
+
+Run the following command in order to execute PostgreSQL shell:
+
+    $ python manage.pyc sql_shell
+
+Once you got into the sql_shell, let's take a look inside the table _faraday_user_ to see the users information. **It is important to be sure of the username we want to change the password.**
+
+    SELECT * FROM faraday_user
+
+Assuming your username is '_faraday_' and the new password you want to set is '_changeme_', run the following command:
+
+    UPDATE faraday_user SET PASSWORD='changeme' WHERE username='faraday'
+
+This command will update your user's password.
+
+Now you can login to Faraday without a problem.
+
+ ***Note:*** You sould have the PostgreSQL service started. To do it run
+`systemctl start postgresql` or the equivalant command for your GNU/Linux
+distro.
+
+ ***Note:*** if at the moment you run this command, it throws an error, be sure
+you have sudo installed. Once you have installed it, run the command again.
+
+#### Manual PostgreSQL configuration
+
+If you need an advance configuration of the postgres database, like having a
+custom database name or run it in a separate host, the `./manage.pyc initdb`
+command probably won't be enough for you, so you should configure it manually
+by doing something like this:
+
+```
+sudo -u postgres psql -c "CREATE ROLE faraday_postgresql WITH LOGIN PASSWORD 'YOURPASSWORD'"
+sudo -u postgres createdb -O faraday_postgresql faraday
+```
+
+Then, edit the `~/.faraday/config/server.ini` by adding the connection string
+to the database:
+
+```
+[database]
+connection_string = postgresql+psycopg2://faraday_postgresql:YOURPASSWORD@localhost/faraday
+```
+
+Then you should run `./manage.pyc create_tables` to create all the required
+tables to make faraday work, and `./manage.pyc createsuperuser` to create an
+admin user.
 
 
-#### Importing from CouchDB
+#### Manually importing from CouchDB
 
-If you want to import your data from CouchDB to PostgreSQL, run the following command:
+If you were using Faraday 2.7.2 and setup the database manually instead of
+using the `./manage.pyc initdb`, you should run the following command to import
+the data from CouchDB:
 
 ```
 python manage.pyc import_from_couchdb
 ```
+#### Updating Nginx configuration
 
-***Note:*** beware of the number of users you have created in CouchDB, remember that you have already created one when you initialized PostgreSQL. The number of users that you have between CouchDB and PostgreSQL should not surpass the number of users you're allow to have according to your license.
+***Note:*** This only applies if you are using Nginx and https.
+
+Please, make sure you have this settings on your Nginx config:
+
+    proxy_pass http://localhost:5985/;
+    proxy_redirect http:// $scheme://;
 
 <a name="server-configuration"></a>
 #### Configuration
 
 By default, Faraday server will listen on port **5985**. You can edit this on `~/.faraday/config/server.ini`.
 
-### Authentication
+#### Authentication
 
 You can create different types of users through the web UI. Those users can login though the same web UI or though a Faraday client using the `--login` flag (Faraday will ask for the credentials later)
 
@@ -121,7 +180,9 @@ Then restart the server if you had it running and reload your browser in case yo
 
 #### Running
 
-Once everything is installed and the server is configured, you can proceed to run the Faraday server script:
+Once everything is installed you need to configure your server properly. 
+
+After configuring, you can proceed to run the Faraday Server script:
 
 ```
 $ python2 faraday-server.pyc
@@ -137,10 +198,12 @@ This is the recommended way to do this. Other methods like using the bash `&` co
 
 #### Web UI
 
-Once the server is running, you can access Faraday's Web UI using any browser: just point it to `http://SERVER_IP:SERVER_PORT/_ui` and you can start playing with Faraday.
+Once the server is running, you can access Faraday's Web UI using any browser:
+just point it to `http://SERVER_IP:SERVER_PORT/` (by default it will be
+http://localhost:5985/) and you can start playing with Faraday.
 
 
-<a name="faraday-client"></a>
+<a name="faraday-client-pro"></a>
 ### Faraday Client
 
 Faraday Client is the software which will allow you to work with your favorite security tools and capture their output in an organized manner. It works under a GTK+3 interface with the popular VTE terminal with a custom ZSH shell that respects the user's configuration (yes, that means you get to keep your exact ZSH terminal inside Faraday, even if you use ZPrezto or Oh My ZSH).
@@ -168,7 +231,7 @@ After doing so, make sure to [install system dependencies](#client-system-depend
 
 #### Requirements
 
-Faraday Client works under any modern Linux distribution or Mac OS X, and needs Pyython 2.6 or 2.7.
+Faraday Client works under any modern Linux distribution or Mac OS X, and needs Python 2.6 or 2.7.
 
 The Python requirements for the client are stored in the [`requirements.txt` file](https://github.com/infobyte/faraday/blob/master/requirements.txt). Some additional requirements are necessary for specific features to work, these are stored in the [`requirements_extras.txt` file](https://github.com/infobyte/faraday/blob/master/requirements_extras.txt).
 
@@ -185,7 +248,7 @@ If instead of installing you want to take a quick look at Faraday you can also u
 You can run the following command to install the required dependencies on any Debian based distribution.
 
 ```
-$ sudo apt-get update
+$ sudo apt update
 ```
 
 If you are running Ubuntu 12.04 LTS, or Ubuntu 14.04 LTS, please execute this command:
@@ -219,7 +282,7 @@ $ yaourt -S python2-dateutil python2-pip mime-types python2-gobject gtk3 vte3 po
 Once you have the required system dependencies, you just have to install the Python modules needed to run the client using `pip`:
 
 ```
-$ pip2 install -r requirements.txt
+$ pip2 install -r requirements.txt -U
 ```
 
 <a name="client-configuration"></a>

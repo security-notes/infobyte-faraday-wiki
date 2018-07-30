@@ -83,7 +83,8 @@ If you have issues building psycopg2 (needed for Metasploit Online Module)
 
 We need a few other packages from brew before you can use the client:
 
-    $ brew install vte3 pygobject3
+    $ brew install vte3 
+    $ brew install pygobject3 --with-python@2
 
 ### CouchDB
 

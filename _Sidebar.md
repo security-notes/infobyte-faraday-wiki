@@ -1,3 +1,4 @@
+
 * [Home](https://github.com/infobyte/faraday/wiki)
 
 * [**Installation**](https://github.com/infobyte/faraday/wiki/First-Steps)

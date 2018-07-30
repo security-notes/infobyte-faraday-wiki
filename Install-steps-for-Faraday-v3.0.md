@@ -21,7 +21,6 @@ Download the [latest tarball](https://github.com/infobyte/faraday/tarball/dev) o
 ```
 $ git clone https://github.com/infobyte/faraday.git faraday-dev
 $ cd faraday-dev
-$ git checkout dev
 ```
 
 After doing so, make sure to [install system dependencies](#server-system-dependencies), [install Python dependencies](#server-python-dependencies) and [configure the Server](#server-configuration).
@@ -59,16 +58,6 @@ $ sudo apt-get install build-essential ipython python-setuptools \
                 libxslt1-dev libfreetype6-dev libpng-dev
 ```
 
-##### Gentoo
-If you are running Gentoo, this are the dependencies with Emerge:
-
-```
-dev-python/flask-sqlalchemy dev-python/service_identity dev-python/twisted \
-dev-python/pyopenssl dev-java/mockito dev-python/Whoosh \
-dev-python/configargparse dev-python/restkit dev-python/requests www-servers/tornado \
-dev-python/flask dev-python/colorama dev-python/setuptools dev-python/pip dev-libs/libpqxx \
-libffi-dev
-```
 
 ##### Others
 
@@ -80,30 +69,93 @@ Please consult with your distribution documentation to install the dependencies 
 Once you have the required system dependencies, you just have to install the Python modules needed to run the server using `pip`:
 
 ```
-$ pip2 install -r requirements_server.txt
+$ pip2 install -r requirements_server.txt -U
 ```
 
 <a name="server-configuration"></a>
 
 #### Initializing PostgreSQL
 
-In order to initialize Postgresql database and generate your main user and a password, run the following command:
+In order to initialize Postgresql database, run the following command:
 
 ```
 python manage.py initdb
 ```
- ***Note:*** if at the moment you run this command, it throws an error, be sure you have sudo installed. Once you have installed it, run the command again.
+If you don't have CouchDB configured we assume this is a new installation, so a
+new user will be created.
+
+With CouchDB configured in the `server.ini` file, it will import all the data
+you had from the 2.7.2 version, including the users and its hashed passwords.
+
+***Note:*** If you can't login into to Faraday after running the command above due to invalid credentials, you can change your password through the PostgreSQL shell that Faraday has in it. Follow the next instructions in order to change your password and be able to login:
+
+Run the following command in order to execute PostgreSQL shell:
+
+    $ python manage.py sql_shell
+
+Once you got into the sql_shell, let's take a look inside the table _faraday_user_ to see the users information. **It is important to be sure of the username we want to change the password.**
+
+    SELECT * FROM faraday_user
+
+Assuming your username is '_faraday_' and the new password you want to set is '_changeme_', run the following command:
+
+    UPDATE faraday_user SET PASSWORD='changeme' WHERE username='faraday'
+
+This command will update your user's password.
+
+Now you can login to Faraday without a problem.
+
+ ***Note:*** You sould have the PostgreSQL service started. To do it run
+`systemctl start postgresql` or the equivalant command for your GNU/Linux
+distro.
+
+ ***Note:*** if at the moment you run this command, it throws an error, be sure
+you have sudo installed. Once you have installed it, run the command again.
 
 
-#### Importing from CouchDB
+#### Manual PostgreSQL configuration
 
-If you want to import your data from CouchDB to PostgreSQL, run the following command:
+If you need an advance configuration of the postgres database, like having a
+custom database name or run it in a separate host, the `./manage.py initdb`
+command probably won't be enough for you, so you should configure it manually
+by doing something like this:
+
+```
+sudo -u postgres psql -c "CREATE ROLE faraday_postgresql WITH LOGIN PASSWORD 'YOURPASSWORD'"
+sudo -u postgres createdb -O faraday_postgresql faraday
+```
+
+Then, edit the `~/.faraday/config/server.ini` by adding the connection string
+to the database:
+
+```
+[database]
+connection_string = postgresql+psycopg2://faraday_postgresql:YOURPASSWORD@localhost/faraday
+```
+
+Then you should run `./manage.py create_tables` to create all the required
+tables to make faraday work, and `./manage.py createsuperuser` to create an
+admin user.
+
+
+#### Manually importing from CouchDB
+
+If you were using Faraday 2.7.2 and setup the database manually instead of
+using the `./manage.py initdb`, you should run the following command to import
+the data from CouchDB:
 
 ```
 python manage.py import_from_couchdb
 ```
 
-***Note:*** beware of the number of users you have created in CouchDB, remember that you have already created one when you initialized PostgreSQL. The number of users that you have between CouchDB and PostgreSQL should not surpass the number of users you're allow to have according to your license.
+#### Updating Nginx configuration
+
+***Note:*** This only applies if you are using Nginx and https.
+
+Please, make sure you have this settings on your Nginx config:
+
+    proxy_pass http://localhost:5985/;
+    proxy_redirect http:// $scheme://;
 
 #### Configuration
 
@@ -143,7 +195,9 @@ This is the recommended way to do this. Other methods like using the bash `&` co
 
 #### Web UI
 
-Once the server is running, you can access Faraday's Web UI using any browser: just point it to `http://SERVER_IP:SERVER_PORT/_ui` and you can start playing with Faraday.
+Once the server is running, you can access Faraday's Web UI using any browser:
+just point it to `http://SERVER_IP:SERVER_PORT/` (by default it will be
+http://localhost:5985/) and you can start playing with Faraday.
 
 
 <a name="faraday-client-commu"></a>
@@ -229,7 +283,7 @@ $ yaourt -S python2-dateutil python2-pip mime-types python2-gobject gtk3 vte3 po
 Once you have the required system dependencies, you just have to install the Python modules needed to run the client using `pip`:
 
 ```
-$ pip2 install -r requirements.txt
+$ pip2 install -r requirements.txt -U
 ```
 
 If you are working inside a Virtual Machine you need to follow this extra steps for GTK to work:
@@ -271,7 +325,7 @@ Faraday comes pre-installed in Kali Rolling. The package name is **python-farada
 
 In order to run Faraday in Kali:
 ```
-$ systemctl start postgres
+$ systemctl start postgresql.service
 $ cd /usr/share/python-faraday
 $ python2 faraday-server.py
 $ python2 faraday.py
@@ -279,3 +333,13 @@ $ python2 faraday.py
 
 Due to Kali's package updates the pre-installed package may not be the last version. If you want the latest updates use the [Debian install steps](#client-debian).
 
+##### Gentoo
+If you are running Gentoo, this are the dependencies with Emerge:
+
+```
+dev-python/flask-sqlalchemy dev-python/service_identity dev-python/twisted \
+dev-python/pyopenssl dev-java/mockito dev-python/Whoosh \
+dev-python/configargparse dev-python/restkit dev-python/requests www-servers/tornado \
+dev-python/flask dev-python/colorama dev-python/setuptools dev-python/pip dev-libs/libpqxx \
+libffi-dev
+```
