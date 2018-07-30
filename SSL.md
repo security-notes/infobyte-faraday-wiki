@@ -12,9 +12,11 @@ After installing and configuring NGINX the setup should be as follows:
 * Web UI using `https://example_domain:port/_ui`
 * NGINX on port `80` redirecting to HTTPS
 
-Below you can find a sample config file for NGINX. Please keep in mind that you need to change `example_domain`, `example_cert` and `example_key` to your domain, cert and key.
-# Faraday conf
-# don't send the nginx version number in error pages and Server header
+Below you can find a sample config file for NGINX. Please keep in mind that you need to change `example_domain`, 
+`example_cert` and `example_key` to your domain, cert and key.
+
+ Faraday conf
+ don't send the nginx version number in error pages and Server header
 server_tokens off;
 
 add_header X-Content-Type-Options nosniff;
