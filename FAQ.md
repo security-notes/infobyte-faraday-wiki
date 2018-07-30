@@ -137,7 +137,7 @@ Check out our [[Vulnerabilities Database]] config page.
 
 <a name="adding-manually"></a>
 ### What if I want to add a Vulnerability manually?
-You can do this using our WEB UI, read our documentation on [manually adding vulnerabilities](https://github.com/infobyte/faraday/wiki/Usage#vulnerability-creation).
+You can do this using our WEB UI, read our documentation on [manually adding vulnerabilities](https://github.com/infobyte/faraday/wiki/Status-Report#vulnerability-creation).
 
 
 [ [index] ](#index)
