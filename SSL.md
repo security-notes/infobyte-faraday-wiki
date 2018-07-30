@@ -66,8 +66,16 @@ Below you can find a sample config file for NGINX. Please keep in mind that you 
 	}
 }
 
+### Updating Nginx configuration
 
-For information on *how to generate self signed certificates* you can read [Apache's FAQ on how to do this](https://cwiki.apache.org/confluence/pages/viewpage.action?pageId=48203146).
+Please, make sure you have this settings on your Nginx config:
+```
+proxy_pass http://localhost:5985/;
+proxy_redirect http:// $scheme://;
+```
+
+
+***Note:*** For information on *how to generate self signed certificates* you can read [Apache's FAQ on how to do this](https://cwiki.apache.org/confluence/pages/viewpage.action?pageId=48203146).
 
 Even though we recommend the configurations by nginx explained above, we also support SSL through Apache.
 
