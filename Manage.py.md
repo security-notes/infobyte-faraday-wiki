@@ -1,7 +1,5 @@
 With Faraday V3 we released a new Backend feature.
 
-# The manage.py!
-
 ![](https://raw.githubusercontent.com/wiki/infobyte/faraday/images/manage.py/Option-view.png)
 
 Usage: manage.py [OPTIONS] COMMAND [ARGS]...
