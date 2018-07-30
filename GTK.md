@@ -1,5 +1,5 @@
 
-## GTK GUI
+## GTK
 
 GTK+3 is designed to improve on the deprecated QT interface, so nothing should look out of place if you were already using Faraday. If you weren't, don't worry, it's pretty simple.
 
