@@ -35,7 +35,7 @@
   * [CLI - Mode](https://github.com/infobyte/faraday/wiki/CLI)
 
 * **Backend**
-  * [Architecture](https://github.com/infobyte/faraday/wiki/Achitecture)
+  * [Architecture](https://github.com/infobyte/faraday/wiki/Architecture)
   * [APIs](https://github.com/infobyte/faraday/wiki/APIs)
   * [Backup](https://github.com/infobyte/faraday/wiki/Backup)
   * [Helpers](https://github.com/infobyte/faraday/wiki/Helpers)
