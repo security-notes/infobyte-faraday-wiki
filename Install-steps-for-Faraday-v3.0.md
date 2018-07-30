@@ -148,15 +148,6 @@ the data from CouchDB:
 python manage.py import_from_couchdb
 ```
 
-#### Updating Nginx configuration
-
-***Note:*** This only applies if you are using Nginx and https.
-
-Please, make sure you have this settings on your Nginx config:
-
-    proxy_pass http://localhost:5985/;
-    proxy_redirect http:// $scheme://;
-
 #### Configuration
 
 By default, Faraday server will listen on port **5985**. You can edit this on `~/.faraday/config/server.ini`.
