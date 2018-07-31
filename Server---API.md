@@ -1,0 +1,187 @@
+## Faraday Server API
+Faraday has one API on the server:
+-  A **Server RESTful API** by default running on 127.0.0.1:5985
+
+There are a number of examples on using this on our [[Faraday Plugin]] wiki page.
+
+### Methods: 
+
+- **POST:** creates objects
+
+- **GET:** get list of objects or get one object given its object_id
+
+- **PUT:** update object
+
+- **DELETE:** delete object
+
+### Endpoints:
+
+**Host:**
+
+    (HEAD, OPTIONS, GET) -> '/v2/ws/<workspace_name>/hosts/' ->
+    (POST, OPTIONS) -> '/v2/ws/<workspace_name>/hosts/'
+    (HEAD, OPTIONS, GET) -> '/v2/ws/<workspace_name>/hosts/count/'
+    (HEAD, OPTIONS, GET) -> '/v2/ws/<workspace_name>/hosts/countVulns/'
+    (OPTIONS, DELETE) -> '/v2/ws/<workspace_name>/hosts/<object_id>/'
+    (HEAD, OPTIONS, GET) -> '/v2/ws/<workspace_name>/hosts/<object_id>/'
+    (PUT, OPTIONS) -> '/v2/ws/<workspace_name>/hosts/<object_id>/'
+    (HEAD, OPTIONS, GET) -> '/v2/ws/<workspace_name>/hosts/<host_id>/services/'
+
+Json Body: 
+
+    {"ip":"test","hostnames": [],"mac":"00:00:00:00:00:00","description":"","default_gateway":"None","os":"","owned":false,"owner":""}
+
+**Services:**
+
+    (HEAD, OPTIONS, GET) -> '/v2/ws/<workspace_name>/services/'
+    (POST, OPTIONS) -> '/v2/ws/<workspace_name>/services/'
+    (HEAD, OPTIONS, GET) -> '/v2/ws/<workspace_name>/services/count/'
+    (OPTIONS, DELETE) -> '/v2/ws/<workspace_name>/services/<object_id>/'
+    (HEAD, OPTIONS, GET) -> '/v2/ws/<workspace_name>/services/<object_id>/'  
+    (PUT, OPTIONS) -> '/v2/ws/<workspace_name>/services/<object_id>/'
+
+Json Body:
+
+    {"name":"test","description":"","owned":false,"owner":"","ports":[8080],"protocol":"tcp","parent":1156,"status":"open","version":"","metadata":{"update_time":1533074261.944,"update_user":"","update_action":0,"creator":"","create_time":1533074261.944,"update_controller_action":"UI Web New","owner":""},"type":"Service"}
+
+**Status Report:**
+
+    (HEAD, OPTIONS, GET) -> '/v2/ws/<workspace_name>/vulns/'
+    (POST, OPTIONS) -> '/v2/ws/<workspace_name>/vulns/'
+    (HEAD, OPTIONS, GET) -> '/v2/ws/<workspace_name>/vulns/count/'
+    (HEAD, OPTIONS, GET) -> '/v2/ws/<workspace_name>/vulns/timeline/'
+    (OPTIONS, DELETE) -> '/v2/ws/<workspace_name>/vulns/<object_id>/'
+    (HEAD, OPTIONS, GET) -> '/v2/ws/<workspace_name>/vulns/<object_id>/'
+    (PUT, OPTIONS) -> '/v2/ws/<workspace_name>/vulns/<object_id>/'
+    (HEAD, OPTIONS, GET) -> '/v2/ws/<workspace_name>/vulns/<vuln_id>/attachment/<attachment_filename>/' 
+    (POST, OPTIONS) -> '/v2/ws/<workspace>/upload_report'
+    (HEAD, OPTIONS, GET) -> '/v2/ws/<workspace_name>/tags/'
+
+Json Body:
+
+    {"metadata":{"update_time":1533074349.898,"update_user":"","update_action":0,"creator":"UI Web","create_time":1533074349.898,"update_controller_action":"UI Web New","owner":"faraday"},"obj_id":"","owner":"faraday","parent":1156,"parent_type":"Host","type":"Vulnerability","ws":"api","confirmed":true,"data":"","desc":"Testing API","impact":{"accountability":false,"availability":false,"confidentiality":false,"integrity":false},"name":"test","owned":false,"policyviolations":[],"refs":[],"resolution":"","severity":"high","issuetracker":"","status":"opened","_attachments":{},"description":"","protocol":"","version":""}
+
+**Tasks:**
+
+    (HEAD, OPTIONS, GET) -> '/v2/ws/<workspace_name>/tasks/'
+    (POST, OPTIONS) -> '/v2/ws/<workspace_name>/tasks/'
+    (HEAD, OPTIONS, GET) -> '/v2/ws/<workspace_name>/tasks/count/'
+    (OPTIONS, DELETE) -> '/v2/ws/<workspace_name>/tasks/<object_id>/'
+    (HEAD, OPTIONS, GET) -> '/v2/ws/<workspace_name>/tasks/<object_id>/'
+    (PUT, OPTIONS) -> '/v2/ws/<workspace_name>/tasks/<object_id>/'
+    (PUT, OPTIONS) -> '/v2/ws/<workspace_name>/taskGroups/manualimport/'
+    (HEAD, OPTIONS, GET) -> '/v2/ws/<workspace_name>/taskGroups/import/'
+    (HEAD, OPTIONS, GET) -> '/v2/ws/<workspace_name>/taskGroups/count/'
+    (OPTIONS, DELETE) -> '/v2/ws/<workspace_name>/taskGroups/<object_id>/'
+    (HEAD, OPTIONS, GET) -> '/v2/ws/<workspace_name>/taskGroups/<object_id>/'
+    (PUT, OPTIONS) -> '/v2/ws/<workspace_name>/taskGroups/<object_id>/'
+    (HEAD, OPTIONS, GET) -> '/v2/ws/<workspace_name>/taskGroups/'
+    (POST, OPTIONS) -> '/v2/ws/<workspace_name>/taskGroups/'
+    (HEAD, OPTIONS, GET) -> '/v2/task_template/'
+    (POST, OPTIONS) -> '/v2/task_template/'
+    (OPTIONS, DELETE) -> '/v2/task_template/<object_id>/'
+    (HEAD, OPTIONS, GET) -> '/v2/task_template/<object_id>/'
+    (PUT, OPTIONS) -> '/v2/task_template/<object_id>/'
+    (OPTIONS, DELETE) -> '/v2/methodology_template/<object_id>/'
+    (HEAD, OPTIONS, GET) -> '/v2/methodology_template/<object_id>/'
+    (PUT, OPTIONS) -> '/v2/methodology_template/<object_id>/'
+    (HEAD, OPTIONS, GET) -> '/v2/methodology_template/'
+    (POST, OPTIONS) -> '/v2/methodology_template/'
+
+Json Body:
+
+    {"name":"test", "type":"TaskGroup", "group_type":"instance", "instance_of":"", "tCompletedtasks":0, "totaltasks":0}
+
+
+**Reports:**
+
+    (HEAD, OPTIONS, GET) -> '/v2/ws/<workspace_name>/reports/'
+    (POST, OPTIONS) -> '/v2/ws/<workspace_name>/reports/'
+    (HEAD, OPTIONS, GET) -> '/v2/ws/<workspace_name>/reports/count/'
+    (HEAD, OPTIONS, GET) -> '/v2/ws/<workspace_name>/reports/countVulns/'
+    (HEAD, OPTIONS, GET) -> '/v2/ws/<workspace_name>/reports/listTemplates/'
+    (OPTIONS, DELETE) -> '/v2/ws/<workspace_name>/reports/<object_id>/'
+    (HEAD, OPTIONS, GET) -> '/v2/ws/<workspace_name>/reports/<object_id>/'
+    (PUT, OPTIONS) -> '/v2/ws/<workspace_name>/reports/<object_id>/'
+    (HEAD, OPTIONS, GET) -> '/v2/ws/<workspace_name>/reports/<report_id>/download/'
+
+Json Body:
+
+    {"name":"Testing-API","tags":[],"title":"Network XYZ","enterprise":"ACME INC","scope":"Scope","objectives":"Objetives","summary":"Summ","confirmed":false,"conclusions":"Conclusions","recommendations":"Recommendations","vuln_count":4,"template_name":"generic_default.docx","grouped":false}
+
+**Vulnerability Template:**
+
+    (HEAD, OPTIONS, GET) -> '/v2/vulnerability_template/'
+    (POST, OPTIONS) -> '/v2/vulnerability_template/'
+    (OPTIONS, DELETE) -> '/v2/vulnerability_template/<object_id>/'
+    (HEAD, OPTIONS, GET) -> '/v2/vulnerability_template/<object_id>/'
+    (PUT, OPTIONS) -> '/v2/vulnerability_template/<object_id>/'
+
+Json Body:
+
+    {"id":"","cwe":"","description":"Test","desc":"","exploitation":"high","name":"Testing API","references":[],"refs":[],"resolution":"","type":"vulnerability_template"}
+
+**Faraday Config:**
+
+    (HEAD, OPTIONS, GET) -> '/session'
+    (HEAD, POST, OPTIONS, GET) -> '/login' 
+    (HEAD, OPTIONS, GET) -> '/logout' 
+    (HEAD, POST, OPTIONS, GET) -> '/change' 
+    (HEAD, OPTIONS, GET) -> '/config' 
+    (HEAD, OPTIONS, GET) -> '/v2/licenses/'
+    (POST, OPTIONS) -> '/v2/licenses/'
+    (OPTIONS, DELETE) -> '/v2/licenses/<object_id>/'
+    (HEAD, OPTIONS, GET) -> '/v2/licenses/<object_id>/'
+    (PUT, OPTIONS) -> '/v2/licenses/<object_id>/'
+    (OPTIONS, DELETE) -> '/v2/users/<object_id>/'
+    (HEAD, OPTIONS, GET) -> '/v2/users/<object_id>/'
+    (PUT, OPTIONS) -> '/v2/users/<object_id>/'
+    (HEAD, OPTIONS, GET) -> '/v2/users/'
+    (POST, OPTIONS) -> '/v2/users/'
+    (HEAD, OPTIONS, GET) -> '/v2/in
+    (HEAD, OPTIONS, GET) -> '/v2/ws/'
+    (POST, OPTIONS) -> '/v2/ws/'
+    (OPTIONS, DELETE) -> '/v2/ws/<object_id>/'
+    (HEAD, OPTIONS, GET) -> '/v2/ws/<object_id>/'
+    (PUT, OPTIONS) -> '/v2/ws/<object_id>/'
+
+
+**Credentials:**
+
+    (OPTIONS, DELETE) -> '/v2/ws/<workspace_name>/credential/<object_id>/'
+    (HEAD, OPTIONS, GET) -> '/v2/ws/<workspace_name>/credential/<object_id>/'
+    (PUT, OPTIONS) -> '/v2/ws/<workspace_name>/credential/<object_id>/'
+    (HEAD, OPTIONS, GET) -> '/v2/ws/<workspace_name>/credential/'
+    (POST, OPTIONS) -> '/v2/ws/<workspace_name>/credential/'
+    (HEAD, OPTIONS, GET) -> '/v2/ws/<workspace_name>/credential/count/'
+
+Json Body: 
+
+    {"name":"Test","username":"faraday","metadata":{"update_time":1533075258220,"update_user":"","update_action":0,"creator":"UI Web","create_time":1533075258220,"update_controller_action":"","owner":""},"password":"changeme","type":"Cred","parent_type":"Host","parent":"1147","owner":"","description":""}
+
+**Comments:**
+
+    (HEAD, OPTIONS, GET) -> '/v2/ws/<workspace_name>/comment/count/'
+    (OPTIONS, DELETE) -> '/v2/ws/<workspace_name>/comment/<object_id>/'
+    (HEAD, OPTIONS, GET) -> '/v2/ws/<workspace_name>/comment/<object_id>/'
+    (PUT, OPTIONS) -> '/v2/ws/<workspace_name>/comment/<object_id>/'
+    (HEAD, OPTIONS, GET) -> '/v2/ws/<workspace_name>/comment/'
+    (POST, OPTIONS) -> '/v2/ws/<workspace_name>/comment/'
+
+**Commands:**
+
+    (HEAD, OPTIONS, GET) -> '/v2/ws/<workspace_name>/commands/count/'
+    (HEAD, OPTIONS, GET) -> '/v2/ws/<workspace_name>/commands/activity_feed/'
+    (OPTIONS, DELETE) -> '/v2/ws/<workspace_name>/commands/<object_id>/'
+    (HEAD, OPTIONS, GET) -> '/v2/ws/<workspace_name>/commands/<object_id>/'
+    (PUT, OPTIONS) -> '/v2/ws/<workspace_name>/commands/<object_id>/'
+    (HEAD, OPTIONS, GET) -> '/v2/ws/<workspace_name>/commands/'
+    (POST, OPTIONS) -> '/v2/ws/<workspace_name>/commands/'
+
+**To retrieve information from vulners:**
+
+    (HEAD, OPTIONS, GET) -> '/v2/vulners/exploits/<cveid>'
+
+**Others:**
+
+    (POST, OPTIONS) -> '/v2/ws/<workspace_name>/comment_unique/'
