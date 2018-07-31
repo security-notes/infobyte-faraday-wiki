@@ -33,7 +33,7 @@
   * [GTK](https://github.com/infobyte/faraday/wiki/GTK)
   * [ZSH - Terminal](https://github.com/infobyte/faraday/wiki/ZSH)
   * [CLI - Mode](https://github.com/infobyte/faraday/wiki/CLI)
-  * [Client's API](https://github.com/infobyte/faraday/wiki/Clients-API)
+  * [API - Client](https://github.com/infobyte/faraday/wiki/Client-API)
 
 * **Backend**
   * [Architecture](https://github.com/infobyte/faraday/wiki/Architecture)
