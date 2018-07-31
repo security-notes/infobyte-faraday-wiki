@@ -21,7 +21,7 @@ Now, run Faraday Terminal:
 
 To import your reports, drag-and-drop them into:
 
-    $ ~/.faraday/uploaded_reports/[workspace_name]
+    $ ~/.faraday/reports/[workspace_name]
 
 Replace [workspace_name] with the workspace's name you're working in.
 
