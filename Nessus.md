@@ -6,7 +6,7 @@ We run the Nessus scan that we want to import to Faraday and we export it in XML
 
 In order to put the report in our Faraday path, we must copy the downloaded report to the following PATH.
 
-`mv $HOME/Downloads/report.nessus $HOME/.faraday/uploaded_reports/myworkspace/report.nessus`
+`mv $HOME/Downloads/report.nessus $HOME/.faraday/reports/myworkspace/report.nessus`
 
 Faraday will process the output and load the vulnerabilities inside the Faraday Workspace.
 
