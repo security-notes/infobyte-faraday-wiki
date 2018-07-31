@@ -13,7 +13,6 @@
 * [Updates](https://github.com/infobyte/faraday/wiki/Updates)
 
 * **Web UI**
-  * [CSV Exporting](https://github.com/infobyte/faraday/wiki/CSV-Exporter)
   * [Credentials](https://github.com/infobyte/faraday/wiki/Credentials)
   * [Data Analysis Tools](https://github.com/infobyte/faraday/wiki/Data-Analysis-Tools)
   * [Executive Report](https://github.com/infobyte/faraday/wiki/Executive-Report)
