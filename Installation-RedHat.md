@@ -2,17 +2,17 @@
 ![](https://raw.githubusercontent.com/wiki/infobyte/faraday/images/platform/faraday_redhat.jpeg)
 
 #### Enable EPEL and REMI repositories for installing all needed deps.
-```bash
+```
 wget http://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
 rpm -Uvh epel-release-latest-7.noarch.rpm
 ```
 #### Install the default development tools to easy compile/install couchdb
-```bash
+```
 yum groupinstall 'Development Tools'
 ```
 
 #### Install Faraday dependencies.
-```bash
+```
 yum install ipython python-setuptools python-pip libffi-devel python-devel openssl-devel openldap-devel curl zsh libxslt-devel pkgconfig postgresql postgresql-libs libxml2-devel libxslt-devel libxml++-devel pygobject2-devel freetype-devel libjpeg-devel gtk+-devel gtk3-devel gtk2-devel vte-devel mailcap
 ```
 
@@ -22,7 +22,7 @@ postgresql-setup initdb
 ```
 
 #### Modify the localhost authenication type from ident to md5 witin hba config 
-```bash
+```
 nano /var/lib/pgsql/data/pg_hba.conf
 ```
 Change host IPV4 local and IPV6 local from ident to md5 
@@ -46,88 +46,89 @@ sudo -u postgres createdb -O faraday_postgresql faraday
 ```
 
 #### Get a list of active zones. You might have more than the defaults.
-```bash
+```
 firewall-cmd --get-active-zones
 ```
 
 #### If it's the default centos install,  you'll need to enable and start firewall.
-```bash
+```
 sudo systemctl start firewalld
 sudo systemctl enable firewalld
 ```
 
 #### Firewalld command to allow this port open to dmz:
-```bash
+```
 firewall-cmd --zone=public --add-port=5985/tcp   --permanent
 ```
 
 #### If it's the default centos install, you'll likely want to also allow connections to ss.
-```bash
+```
 firewall-cmd --zone=public --add-port=22/tcp   --permanent
 ```
 
 #### Restart the firewalld service
-```bash
+```
 firewall-cmd --reload
 ```
 
 #### Update the version of pip included within setuptools
-```bash
+```
 pip install --upgrade pip
 ```
 
 #### Install virtualenv to nicely contain our python app 
-```bash
+```
 pip install virtualenv
 ```
 
 #### Create a new faraday user to run our python app
-```bash
+```
 sudo adduser -r --home /opt/faraday/ -m --shell /bin/bash --comment "Faraday Service Account" faraday
 ```
 
 #### Grab the latest version of faraday and put it within users home directory
-```bash
+```
 cd /opt/
 git clone https://github.com/infobyte/faraday.git
 ```
 #### Make the faraday user the owner of the application files 
-```bash
+```
 chown -R faraday:faraday faraday/
 ```
 
 #### Switch to the faraday user to setup local enviroment
-```bash
+```
 su - faraday
 ```
 
 #### Create a new virtual project for our faraday install and activate it
-```bash
+```
 virtualenv faraday
 source faraday/bin/activate
 ```
 
 #### install all of the required python packages
-```bash
+```
 pip2 install -r requirements_server.txt
 ```
 
 #### Start the server for the first time and exit once it fails
-```bash
+```
 ./faraday-server.py
 ```
 
 #### Edit the default configuration file to bind on all local interfaces and add our couchdb credentials
-```bash
+```
 vi /opt/faraday/.faraday/config/server.ini
 ```
 The following can be used as a guide
-```text
+```
 [faraday_server]
 port=5985
 bind_address=0.0.0.0
 
 [couchdb]
+#Deprecated config
 host=localhost
 port=5984
 ssl_port=6984
@@ -140,23 +141,23 @@ connection_string = postgresql+psycopg2://faraday_postgresql:<password>@localhos
 ```
 
 #### Build out the database and your admin user
-```bash
+```
 python2 manage.pyc create_tables
 python2 manage.pyc createsuperuse
 ```
 
 #### Then if needed, you can import from couchdb
-```bash
+```
 python2 manage.pyc import_from_couchdb
 ```
 
 #### Exit the faraday user shell and create a service unit to control the faraday server
-```bash
+```
 exit
 sudo nano /usr/lib/systemd/system/faraday-server.service
 ```
 The following service unit can be used as a templete
-```text
+```
 [Unit]
 Description=Faraday Web Server
 After=network.target
