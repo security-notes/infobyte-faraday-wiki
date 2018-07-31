@@ -36,7 +36,7 @@
 
 * **Server**
   * [Architecture](https://github.com/infobyte/faraday/wiki/Architecture)
-  * [APIs](https://github.com/infobyte/faraday/wiki/APIs)
+  * [API - Server](https://github.com/infobyte/faraday/wiki/API-Server)
   * [Backup](https://github.com/infobyte/faraday/wiki/Backup)
   * [Helpers](https://github.com/infobyte/faraday/wiki/Helpers)
   * [Proxy](https://github.com/infobyte/faraday/wiki/Proxy)
