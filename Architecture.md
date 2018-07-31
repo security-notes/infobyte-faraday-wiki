@@ -43,7 +43,7 @@ Report Processor is a process and it could be one process for each workspace.
 
 ### Report Processor
 
-Search for files in the .faraday/uploaded_reports directory looking for external tools reports.
+Search for files in the .faraday/reports directory looking for external tools reports.
 Report Processor will call the plugin controller using the method ProcessReport with the filename of the report.
 
 ### Plugin Controller
