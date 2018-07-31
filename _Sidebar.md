@@ -1,5 +1,5 @@
 
-* [Home](https://github.com/infobyte/faraday/wiki)
+* [Home](https://github.com/infobyte/faraday/wiki/Home)
 
 * [**Installation**](https://github.com/infobyte/faraday/wiki/First-Steps)
   * [Installation - Community](https://github.com/infobyte/faraday/wiki/Installation-Community)
