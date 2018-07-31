@@ -70,9 +70,9 @@ And now, to import xml files to your newly created workspace run this in the ter
 ./faraday.py --cli --workspace workspacename -r report/tmp/nmap_scan.xml
 ```
 Where:
-```workspacename```
+`workspacename`
 the name of your newly-created workspace and
-```report/tmp/nmap_scan.xml```
+`report/tmp/nmap_scan.xml`
 the path to the xml file you want to import, which in this example is named nmap_scan.xml
 
 ### Editing a Workspace
