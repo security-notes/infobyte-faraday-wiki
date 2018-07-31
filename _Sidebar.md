@@ -12,7 +12,7 @@
     
 * [Updates](https://github.com/infobyte/faraday/wiki/Updates)
 
-* **Server**
+* **Web UI**
   * [CSV Exporting](https://github.com/infobyte/faraday/wiki/CSV-Exporter)
   * [Credentials](https://github.com/infobyte/faraday/wiki/Credentials)
   * [Data Analysis Tools](https://github.com/infobyte/faraday/wiki/Data-Analysis-Tools)
@@ -35,7 +35,7 @@
   * [CLI - Mode](https://github.com/infobyte/faraday/wiki/CLI)
   * [API - Client](https://github.com/infobyte/faraday/wiki/Client-API)
 
-* **Backend**
+* **Server**
   * [Architecture](https://github.com/infobyte/faraday/wiki/Architecture)
   * [APIs](https://github.com/infobyte/faraday/wiki/APIs)
   * [Backup](https://github.com/infobyte/faraday/wiki/Backup)
