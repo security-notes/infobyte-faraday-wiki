@@ -18,6 +18,31 @@ To see information about the Client API, follow this link: https://github.com/in
 
 ### Endpoints:
 
+**Faraday Config:**
+
+    (HEAD, POST, OPTIONS, GET) -> '/login' 
+    (HEAD, OPTIONS, GET) -> '/logout' 
+    (HEAD, OPTIONS, GET) -> '/session'
+    (HEAD, POST, OPTIONS, GET) -> '/change' 
+    (HEAD, OPTIONS, GET) -> '/config' 
+    (HEAD, OPTIONS, GET) -> '/v2/licenses/'
+    (POST, OPTIONS) -> '/v2/licenses/'
+    (OPTIONS, DELETE) -> '/v2/licenses/<object_id>/'
+    (HEAD, OPTIONS, GET) -> '/v2/licenses/<object_id>/'
+    (PUT, OPTIONS) -> '/v2/licenses/<object_id>/'
+    (OPTIONS, DELETE) -> '/v2/users/<object_id>/'
+    (HEAD, OPTIONS, GET) -> '/v2/users/<object_id>/'
+    (PUT, OPTIONS) -> '/v2/users/<object_id>/'
+    (HEAD, OPTIONS, GET) -> '/v2/users/'
+    (POST, OPTIONS) -> '/v2/users/'
+    (HEAD, OPTIONS, GET) -> '/v2/in
+    (HEAD, OPTIONS, GET) -> '/v2/ws/'
+    (POST, OPTIONS) -> '/v2/ws/'
+    (OPTIONS, DELETE) -> '/v2/ws/<object_id>/'
+    (HEAD, OPTIONS, GET) -> '/v2/ws/<object_id>/'
+    (PUT, OPTIONS) -> '/v2/ws/<object_id>/'
+
+
 **Host:**
 
     (HEAD, OPTIONS, GET) -> '/v2/ws/<workspace_name>/hosts/'
@@ -33,6 +58,7 @@ Json Body:
 
     {"ip":"test","hostnames": [],"mac":"00:00:00:00:00:00","description":"","default_gateway":"None","os":"","owned":false,"owner":""}
 
+
 **Services:**
 
     (HEAD, OPTIONS, GET) -> '/v2/ws/<workspace_name>/services/'
@@ -45,6 +71,7 @@ Json Body:
 Json Body:
 
     {"name":"test","description":"","owned":false,"owner":"","ports":[8080],"protocol":"tcp","parent":1156,"status":"open","version":"","metadata":{"update_time":1533074261.944,"update_user":"","update_action":0,"creator":"","create_time":1533074261.944,"update_controller_action":"UI Web New","owner":""},"type":"Service"}
+
 
 **Status Report:**
 
@@ -62,6 +89,7 @@ Json Body:
 Json Body:
 
     {"metadata":{"update_time":1533074349.898,"update_user":"","update_action":0,"creator":"UI Web","create_time":1533074349.898,"update_controller_action":"UI Web New","owner":"faraday"},"obj_id":"","owner":"faraday","parent":1156,"parent_type":"Host","type":"Vulnerability","ws":"api","confirmed":true,"data":"","desc":"Testing API","impact":{"accountability":false,"availability":false,"confidentiality":false,"integrity":false},"name":"test","owned":false,"policyviolations":[],"refs":[],"resolution":"","severity":"high","issuetracker":"","status":"opened","_attachments":{},"description":"","protocol":"","version":""}
+
 
 **Tasks:**
 
@@ -111,6 +139,7 @@ Json Body:
 
     {"name":"Testing-API","tags":[],"title":"Network XYZ","enterprise":"ACME INC","scope":"Scope","objectives":"Objetives","summary":"Summ","confirmed":false,"conclusions":"Conclusions","recommendations":"Recommendations","vuln_count":4,"template_name":"generic_default.docx","grouped":false}
 
+
 **Vulnerability Template:**
 
     (HEAD, OPTIONS, GET) -> '/v2/vulnerability_template/'
@@ -122,30 +151,6 @@ Json Body:
 Json Body:
 
     {"id":"","cwe":"","description":"Test","desc":"","exploitation":"high","name":"Testing API","references":[],"refs":[],"resolution":"","type":"vulnerability_template"}
-
-**Faraday Config:**
-
-    (HEAD, OPTIONS, GET) -> '/session'
-    (HEAD, POST, OPTIONS, GET) -> '/login' 
-    (HEAD, OPTIONS, GET) -> '/logout' 
-    (HEAD, POST, OPTIONS, GET) -> '/change' 
-    (HEAD, OPTIONS, GET) -> '/config' 
-    (HEAD, OPTIONS, GET) -> '/v2/licenses/'
-    (POST, OPTIONS) -> '/v2/licenses/'
-    (OPTIONS, DELETE) -> '/v2/licenses/<object_id>/'
-    (HEAD, OPTIONS, GET) -> '/v2/licenses/<object_id>/'
-    (PUT, OPTIONS) -> '/v2/licenses/<object_id>/'
-    (OPTIONS, DELETE) -> '/v2/users/<object_id>/'
-    (HEAD, OPTIONS, GET) -> '/v2/users/<object_id>/'
-    (PUT, OPTIONS) -> '/v2/users/<object_id>/'
-    (HEAD, OPTIONS, GET) -> '/v2/users/'
-    (POST, OPTIONS) -> '/v2/users/'
-    (HEAD, OPTIONS, GET) -> '/v2/in
-    (HEAD, OPTIONS, GET) -> '/v2/ws/'
-    (POST, OPTIONS) -> '/v2/ws/'
-    (OPTIONS, DELETE) -> '/v2/ws/<object_id>/'
-    (HEAD, OPTIONS, GET) -> '/v2/ws/<object_id>/'
-    (PUT, OPTIONS) -> '/v2/ws/<object_id>/'
 
 
 **Credentials:**
@@ -161,6 +166,7 @@ Json Body:
 
     {"name":"Test","username":"faraday","metadata":{"update_time":1533075258220,"update_user":"","update_action":0,"creator":"UI Web","create_time":1533075258220,"update_controller_action":"","owner":""},"password":"changeme","type":"Cred","parent_type":"Host","parent":"1147","owner":"","description":""}
 
+
 **Comments:**
 
     (HEAD, OPTIONS, GET) -> '/v2/ws/<workspace_name>/comment/count/'
@@ -169,6 +175,7 @@ Json Body:
     (PUT, OPTIONS) -> '/v2/ws/<workspace_name>/comment/<object_id>/'
     (HEAD, OPTIONS, GET) -> '/v2/ws/<workspace_name>/comment/'
     (POST, OPTIONS) -> '/v2/ws/<workspace_name>/comment/'
+
 
 **Commands:**
 
@@ -187,6 +194,7 @@ Json Body:
 **Others:**
 
     (POST, OPTIONS) -> '/v2/ws/<workspace_name>/comment_unique/'
+
 
 ## Examples:
 
