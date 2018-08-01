@@ -1,5 +1,5 @@
 ## Redhat 7
-![](https://raw.githubusercontent.com/wiki/infobyte/faraday/images/platform/faraday_redhat.jpeg)
+![](https://raw.githubusercontent.com/wiki/infobyte/faraday/images/platform/redhat.jpeg)
 
 #### Enable EPEL and REMI repositories for installing all needed deps.
 ```
