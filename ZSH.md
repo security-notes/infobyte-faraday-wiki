@@ -1,4 +1,3 @@
-***
 ### ZSH UI
 
 You can even run Faraday in detached mode connecting with a ZSH terminal to it:
