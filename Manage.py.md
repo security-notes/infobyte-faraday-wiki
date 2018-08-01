@@ -2,7 +2,7 @@ With Faraday V3 we released a new Backend feature.
 
 ![](https://raw.githubusercontent.com/wiki/infobyte/faraday/images/backend/Option-view.png)
 
-### Avaibable commands explained:
+# Avaibable commands explained:
 
 ## create_tables
 This command allows the user to manually create a table on Faraday's Database. It would come in handly if something in the initdb fails for example.
