@@ -1,4 +1,4 @@
-With **Faraday V3**, we released a new backend feature.
+With **Faraday V3**, we released a new Backend feature.
 
 ![](https://raw.githubusercontent.com/wiki/infobyte/faraday/images/backend/Option-view.png)
 
