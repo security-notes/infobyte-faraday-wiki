@@ -4,6 +4,8 @@ Faraday has one API on the server:
 
 There are a number of examples on using this on our [[Faraday Plugin]] wiki page.
 
+To see information about the Client API, follow this link: https://github.com/infobyte/faraday/wiki/API-Client
+
 ### Methods: 
 
 - **POST:** creates objects
@@ -18,7 +20,7 @@ There are a number of examples on using this on our [[Faraday Plugin]] wiki page
 
 **Host:**
 
-    (HEAD, OPTIONS, GET) -> '/v2/ws/<workspace_name>/hosts/' ->
+    (HEAD, OPTIONS, GET) -> '/v2/ws/<workspace_name>/hosts/'
     (POST, OPTIONS) -> '/v2/ws/<workspace_name>/hosts/'
     (HEAD, OPTIONS, GET) -> '/v2/ws/<workspace_name>/hosts/count/'
     (HEAD, OPTIONS, GET) -> '/v2/ws/<workspace_name>/hosts/countVulns/'
@@ -185,3 +187,59 @@ Json Body:
 **Others:**
 
     (POST, OPTIONS) -> '/v2/ws/<workspace_name>/comment_unique/'
+
+## Examples:
+
+Assuming that our credentials are: **username:** "faraday" - **password:** "changeme"
+
+**Login:** in order to be able to login through the API, you must supply your credentials and store them in a cookie file just as the following example:
+
+    curl -s 'http://127.0.0.1:5985/_api/login' \
+        -H 'Origin: http://127.0.0.1:5985' -H 'Accept-Encoding: gzip, deflate, br' \
+        -H 'Accept-Language: en-US,en;q=0.9' \
+        -H 'Content-Type: application/json' \
+        -H 'Accept: application/json, text/javascript, */*; q=0.01' \
+        -H 'Referer: http://127.0.0.1:5985/' -H 'X-Requested-With: XMLHttpRequest' \
+        -H 'Connection: keep-alive' \
+        --data-binary '{"email":"faraday","password": "changeme"}' \
+        --compressed -c cookie.txt > /dev/null
+
+
+**Creating a host:** assuming our workspace name is **test**
+
+    curl -X POST http://127.0.0.1:5985/_api/v2/ws/test/hosts/ \
+        -d '{"ip":"127.0.0.1","hostnames":["testing"], "mac":"00:00:00:00:00:00","description":"Testing API", "default_gateway":"None", "os":"Linux", "owned":true, "owner":""}' \
+        -b cookie.txt \
+        -H 'Content-Type: application/json'
+
+**Getting a list of hosts:**
+
+    curl -X GET http://127.0.0.1:5985/_api/v2/ws/test/hosts/ -b cookie.txt
+
+**Creating a service:**
+
+    curl -X POST http://127.0.0.1:5985/_api/v2/ws/test/services/ \
+        -d '{"name":"Test","description":"Testing API", "owned":true, "owner":"","ports":[8080],"protocol":"tcp","parent":1157,"status":"open","version":"","metadata":{"update_time":1533152663.994,"update_user":"","update_action":0,"creator":"","create_time":1533152663.994,"update_controller_action":"UI Web New","owner":""},"type":"Service"}' \
+        -b cookie.txt \
+        -H 'Content-Type: application/json'
+
+**Creating a vuln:**
+
+    curl -X POST http://127.0.0.1:5985/_api/v2/ws/test/vulns/ \
+        -d '{"metadata":{"update_time":1533152883.927, "update_user":"", "update_action":0,"creator":"UI Web", "create_time":1533152883.927, "update_controller_action":"UI Web New", "owner":"faraday"}, "obj_id":"", "owner":"faraday", "parent":1157, "parent_type":"Host","type":"Vulnerability","ws":"test","confirmed":true,"data":"","desc":"New vulnerability created for API purposes","easeofresolution":"simple","impact":{"accountability":false, "availability":false, "confidentiality":false, "integrity":false},"name":"New Vuln - Testing API","owned":false,"policyviolations":[],"refs":[], "resolution":"", "severity":"critical", "issuetracker":"", "status":"opened","_attachments":{},"description":"","protocol":"","version":""}' \
+        -b cookie.txt \
+        -H 'Content-Type: application/json'
+
+**Creating a user:**
+
+    curl -X POST http://127.0.0.1:5985/_api/v2/users/ \
+        -d '{"name":"faraday", "password":"changeme", "roles":["admin"], "type":"user", "role":"admin"}' \
+        -b cookie.txt \
+        -H 'Content-Type: application/json'
+
+**Generating a report:**
+
+    curl -X POST http://127.0.0.1:5985/_api/v2/ws/test/reports/ \
+        -d '{"name":"Testing-API","tags":[], "title":"", "enterprise":"", "scope":"", "objectives":"", "summary":"", "confirmed":false, "conclusions":"", "recommendations":"", "vuln_count":2, "template_name":"generic_default.docx", "grouped":false}' \
+        -b cookie.txt \
+        -H 'Content-Type: application/json'
