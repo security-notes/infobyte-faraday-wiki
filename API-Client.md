@@ -1,6 +1,6 @@
 ## Faraday's APIs
 Faraday has 2 APIs on the Client:
-- An **RPC GTK API Service** by default running on 127.0.0.1:9876.
+- An **RPC GTK API Service** by default running on 127.0.0.1:9876. (This API will be soon deprecated)
 - and a **RESTful GTK API Service** by default running on 127.0.0.1:9977.
 
 and one API on the Server:
@@ -9,6 +9,7 @@ and one API on the Server:
 To see information about the Server API, follow this link: https://github.com/infobyte/faraday/wiki/API-Server
 
 There are a number of examples on using this on our [[Faraday Plugin]] wiki page. There's further information on the persistance server documentation available in the _persistence/server/docs_ directory.
+
 ## Configuration
 
 You can configure both ports and the IP address binded to them. 
