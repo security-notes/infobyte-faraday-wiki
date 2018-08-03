@@ -12,10 +12,15 @@ After installing and configuring NGINX the setup should be as follows:
 * Web UI using `https://example_domain:port/_ui`
 * NGINX on port `80` redirecting to HTTPS
 
-Below you can find a sample config file for NGINX. Please keep in mind that you need to change `example_domain`, 
-`example_cert` and `example_key` to your domain, cert and key.
+In order to generate self signed certificates, run the following command:  
 
-### Faraday conf
+    $ sudo openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout /etc/ssl/faraday.key -out /etc/ssl/faraday.crt
+
+For further information about certificates, follow this [link](https://www.digitalocean.com/community/tutorials/how-to-create-a-self-signed-ssl-certificate-for-apache-in-ubuntu-16-04)
+
+Below you can find a sample config file for NGINX. 
+
+### Faraday conf:
 
         #don't send the nginx version number in error pages and Server header
         server_tokens off;
@@ -31,11 +36,11 @@ Below you can find a sample config file for NGINX. Please keep in mind that you 
 
         server {
         listen *:443;
-        server_name example_domain.com;
+        server_name _; #Change with the proper domain
 
         ssl on;
-        ssl_certificate /etc/ssl/ca.crt;
-        ssl_certificate_key /etc/ssl/ca.key;
+        ssl_certificate /etc/ssl/faraday.crt;
+        ssl_certificate_key /etc/ssl/faraday.key;
         # enable session resumption to improve https performance
         # http://vincent.bernat.im/en/blog/2011-ssl-session-reuse-rfc5077.html
         ssl_session_cache shared:SSL:50m;
