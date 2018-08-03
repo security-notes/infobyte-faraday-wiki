@@ -11,7 +11,7 @@ More information [HERE](https://github.com/infobyte/faraday/wiki/SSL)
 
 Send us a email with all relevant information about your discovery at:
 
-![](https://raw.github.com/wiki/infobyte/faraday/images/security-email.png) 
+![](https://raw.github.com/wiki/infobyte/faraday/images/extras/security-email.png) 
 
 To encrypt your communications, or to verify signed messages you receive from us you can use the PGP key below.
 
