@@ -1,4 +1,4 @@
-You can view all our videos on the following [Youtube Playlist ![](https://raw.github.com/wiki/infobyte/faraday/images/newytlogo.png)](https://www.youtube.com/playlist?list=PLVnFEI9HluLqEAhjFPFTjEFxTzYXlcrle)  
+You can view all our videos on the following [Youtube Playlist ![](https://raw.github.com/wiki/infobyte/faraday/images/extras/newytlogo.png)](https://www.youtube.com/playlist?list=PLVnFEI9HluLqEAhjFPFTjEFxTzYXlcrle)  
  
 *** 
 
