@@ -1,5 +1,5 @@
 The recommended way to run Faraday using SSL is through NGINX.
-## Nginx
+## NGINX
 You can find a detailed guide on how to install it in the [official NGINX documentation](https://www.nginx.com/resources/wiki/start/topics/tutorials/install/).
 
 After installing and configuring NGINX the setup should be as follows:
@@ -16,11 +16,11 @@ In order to generate self signed certificates, run the following command:
 
     $ sudo openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout /etc/ssl/faraday.key -out /etc/ssl/faraday.crt
 
-For further information about certificates, follow this [link](https://www.digitalocean.com/community/tutorials/how-to-create-a-self-signed-ssl-certificate-for-apache-in-ubuntu-16-04)
+For further information about certificates, follow this [link](https://www.digitalocean.com/community/tutorials/how-to-create-a-self-signed-ssl-certificate-for-apache-in-ubuntu-16-04).
 
 Below you can find a sample config file for NGINX. 
 
-### Faraday conf:
+### Faraday configuration for NGINX:
 
         #don't send the nginx version number in error pages and Server header
         server_tokens off;
@@ -68,8 +68,8 @@ Below you can find a sample config file for NGINX.
                 proxy_set_header Host $host;
                 proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
                 proxy_set_header X-Forwarded-Ssl on;
-	}
-}
+	        }
+        }
 
 ### Updating Nginx configuration
 
@@ -79,10 +79,7 @@ proxy_pass http://localhost:5985/;
 proxy_redirect http:// $scheme://;
 ```
 
-
-***Note:*** For information on *how to generate self signed certificates* you can read [Apache's FAQ on how to do this](https://cwiki.apache.org/confluence/pages/viewpage.action?pageId=48203146).
-
-Even though we recommend the configurations by nginx explained above, we also support SSL through Apache.
+Even though we recommend the configurations by NGINX explained above, we also support SSL through Apache.
 
 ## Apache
 Place the Apache configuration file on the respective location.
