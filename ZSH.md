@@ -8,7 +8,7 @@ First, you need to run Faraday with no GUI:
     $ python faraday.py --gui=no-gui
 ```
 
-![](https://raw.github.com/wiki/infobyte/faraday/images/client/no-ui.png)
+![](https://raw.github.com/wiki/infobyte/faraday/images/client/no_ui.png)
 
 Now, run Faraday Terminal:
 
@@ -16,7 +16,7 @@ Now, run Faraday Terminal:
     $ ./faraday-terminal.zsh
 ```
 
-![](https://raw.github.com/wiki/infobyte/faraday/images/client/no-ui2.png)
+![](https://raw.github.com/wiki/infobyte/faraday/images/client/no_ui2.png)
 
 To import your reports, drag-and-drop them into:
 
