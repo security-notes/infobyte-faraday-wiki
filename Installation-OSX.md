@@ -8,7 +8,7 @@ Tested on OSX Maverick 10.9.2.
 
 Go to AppStore and install Xcode. If you run `brew install` first, it'll ask to install Xcode too.
 
-![](https://raw.github.com/wiki/infobyte/faraday/images/xcode.png)
+![](https://raw.github.com/wiki/infobyte/faraday/images/installation/xcode.png)
 
 Keep in mind that Xcode is 2+ Gb so it can take a while to download. After this is done go to **Preferences** and install command line tools or open a terminal console and run:
 
@@ -16,7 +16,7 @@ Keep in mind that Xcode is 2+ Gb so it can take a while to download. After this 
 
 A dialog box will appear asking to install additional tools as shown in the image below. Click install.
 
-![](https://raw.github.com/wiki/infobyte/faraday/images/confirm.png)
+![](https://raw.github.com/wiki/infobyte/faraday/images/installation/confirm.png)
 
 **Important!** Before proceeding with the rest of this guide you need to **open Xcode at least once** in order to accept the License Agreement. Please make sure you do that or else some of the dependencies will fail to install.
 
