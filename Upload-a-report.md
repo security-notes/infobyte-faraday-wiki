@@ -2,8 +2,7 @@ This wiki will help you to learn the different ways that Faraday has to import a
 
 ## Through the Web UI.
 
-* Go to the tab **Status Report** and click on the button 
-![](https://raw.github.com/wiki/infobyte/faraday/images/status_report/upload_report.png).
+* Go to the tab **Status Report** and click on the button ![](https://raw.github.com/wiki/infobyte/faraday/images/status_report/upload_report.png).
 * Click on **Select File** in order to select the report that you are going to upload.
 * Once you have selected the report, click on **Upload File** and your file will be uploaded.
 
