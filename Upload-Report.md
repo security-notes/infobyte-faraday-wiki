@@ -8,7 +8,7 @@ This wiki will help you to learn the different ways that Faraday has to import a
 
 ### Through GTK Client
 
-If you wish to add a report from a previous scan, you can do it from the GTK Client.
+If you wish to add a report from a previous scan, you can do it also from the GTK Client.
 
 To do so, click on the Report Button and a dialog will open, from which you can select the tool that was used to generate the Report:
 
