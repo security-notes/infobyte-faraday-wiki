@@ -12,7 +12,7 @@ If you wish to add a report from a previous scan, you can do it from the GTK Cli
 
 To do so, click on the Report Button and a dialog will open, from which you can select the tool that was used to generate the Report:
 
-![](https://raw.github.com/wiki/infobyte/faraday/images/status_report/importing_report-2018-06-19_13.40.12.mp4)
+![](https://raw.github.com/wiki/infobyte/faraday/images/status_report/upload_report_GTK.gif)
 
 Once you click OK, select the file you want to import and all the data in the report will be processed and added to the active Workspace, and the console will show a message when the plugin starts and ends.
 
