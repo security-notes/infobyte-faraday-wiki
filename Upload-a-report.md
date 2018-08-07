@@ -2,18 +2,17 @@ This wiki will help you to learn the different ways that Faraday has to import a
 
 ## Through the Web UI.
 
-* Go to the tab **Status Report** and click on the button ![](https://raw.github.com/wiki/infobyte/faraday/images/status_report/upload_report.png).
+* Go to the tab **Status Report** and click on the button:  ![](https://raw.github.com/wiki/infobyte/faraday/images/status_report/upload_report.png).
 * Click on **Select File** in order to select the report that you are going to upload.
 * Once you have selected the report, click on **Upload File** and your file will be uploaded.
 
 ## Through GTK Client
-### Report Button
 
 If you wish to add a report from a previous scan, you can do it from the GTK Client.
 
 To do so, click on the Report Button and a dialog will open, from which you can select the tool that was used to generate the Report:
 
-![](/home/javier/importing_report-2018-06-19_13.40.12.mp4)
+![](https://raw.github.com/wiki/infobyte/faraday/images/status_report/importing_report-2018-06-19_13.40.12.mp4)
 
 Once you click OK, select the file you want to import and all the data in the report will be processed and added to the active Workspace, and the console will show a message when the plugin starts and ends.
 
