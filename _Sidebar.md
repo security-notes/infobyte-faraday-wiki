@@ -23,6 +23,7 @@
     * [Export to Csv](https://github.com/infobyte/faraday/wiki/CSV-Exporter)
     * [Search & Filter](https://github.com/infobyte/faraday/wiki/Search-and-Filter)
   * [Tasks](https://github.com/infobyte/faraday/wiki/Tasks)
+  * [Upload Report](https://github.com/infobyte/faraday/wiki/Upload-Report)
   * [Vulnerabilities Database](https://github.com/infobyte/faraday/wiki/Vulnerabilities-Database)
   * [Workspaces](https://github.com/infobyte/faraday/wiki/Workspaces)
   * [Workspace Comparison](https://github.com/infobyte/faraday/wiki/Workspace-Diff)
