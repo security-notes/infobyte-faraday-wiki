@@ -86,20 +86,6 @@ We need a few other packages from brew before you can use the client:
     $ brew install vte3 
     $ brew install pygobject3 --with-python@2
 
-### CouchDB
-
-There are two options for this package; [Prebuild Package](http://www.apache.org/dyn/closer.cgi?path=/couchdb/binary/mac/1.6.1/Apache-CouchDB-1.6.1.zip) or use brew:
-
-    $ brew install couchdb
-
-On Maverick 10.9.2:
-
-    $ sudo ARCHFLAGS=-Wno-error=unused-command-line-argument-hard-error-in-future pip install -r requirements.txt
-
-To make sure that it is running, start/restart the service with this command:
-
-    $ brew services restart couchdb
-
 ### ZSH
 
 Faraday needs [ZSH](http://www.zsh.org/) and curl to connect to the server. To install it run:
