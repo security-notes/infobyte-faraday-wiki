@@ -31,7 +31,7 @@ In the following example you can see plugin of command ping:
             """
             This method will be called when the command finished executing and
             the complete output will be received to work with it
-            Using the output the plugin can create and add hosts, interfaces, services, etc.
+            Using the output the plugin can create and add hosts, services, etc.
             """
             reg=re.search(r"PING ([\w\.-:]+)( |)\(([\w\.:]+)\)", output)
             if re.search("0 received|unknown host",output) is None and reg is not None:
@@ -39,7 +39,8 @@ In the following example you can see plugin of command ping:
                 ip_address = reg.group(3)
                 hostname=reg.group(1)
                 h_id = self.createAndAddHost(ip_address)
-                i_id = self.createAndAddInterface(h_id, ip_address, ipv4_address=ip_address, hostname_resolution=[hostname])
+                s_id = self.createAndAddServiceToHost(self,h_id, service_name, protocol="tcp?", ports=[], status="open", version="unknown", description="")
+                
     
             return True
     
@@ -72,7 +73,7 @@ This have the dict used for intellisense.
 ```
 This method will be called when the command finished executing and
 the complete output will be received to work with it. 
-Using the output, the plugin can create and add hosts, interfaces, services, vuln, webvuln, credentials, notes.
+Using the output, the plugin can create and add hosts, services, vuln, webvuln, credentials, notes.
 
 ```python
     def processCommandString(self, username, current_path, command_string):
@@ -86,30 +87,7 @@ it's going to be executed.
 ```
 With this method we can create and add a host to the database.
 ```python
-    createAndAddInterface(self, host_id, name = "", mac = "00:00:00:00:00:00",
-                 ipv4_address = "0.0.0.0", ipv4_mask = "0.0.0.0",
-                 ipv4_gateway = "0.0.0.0", ipv4_dns = [],
-                 ipv6_address = "0000:0000:0000:0000:0000:0000:0000:0000", ipv6_prefix = "00",
-                 ipv6_gateway = "0000:0000:0000:0000:0000:0000:0000:0000", ipv6_dns = [],
-                 network_segment = "", hostname_resolution = [])
-```
-With this method we can create and add a interface to a host.
-
-**core.PluginBase**
-
-Besides the two methods above, this is the complete list of methods in the PluginBase:
-```python
-    def createAndAddServiceToInterface(self, 
-                host_id, 
-                interface_id, 
-                name, 
-                protocol = "tcp?", 
-                ports = [], 
-                status = "running", 
-                version = "unknown", 
-                description = ""):
-    
-    def createAndAddServiceToHost(self, 
+    createAndAddServiceToHost(self, 
                 host_id, 
                 name,
                 protocol="tcp?", 
@@ -117,22 +95,19 @@ Besides the two methods above, this is the complete list of methods in the Plugi
                 status="open", 
                 version="unknown",
                 description=""):
+```
+With this method we can create and add a service to a host.
 
+**core.PluginBase**
+
+Besides the two methods above, this is the complete list of methods in the PluginBase:
+```python
     def createAndAddVulnToHost(self, 
                 host_id,
                 name,
                 desc="", 
                 ref=[],
                 severity="", 
-                resolution=""):
-    
-    def createAndAddVulnToInterface(self, 
-                host_id,
-                interface_id, 
-                name,
-                desc="", 
-                ref=[], 
-                severity="",
                 resolution=""):
     
     def createAndAddVulnToService(self,
@@ -164,12 +139,6 @@ Besides the two methods above, this is the complete list of methods in the Plugi
     
     def createAndAddNoteToHost(self, 
                 host_id, 
-                name, 
-                text):
-    
-    def createAndAddNoteToInterface(self, 
-                host_id, 
-                interface_id, 
                 name, 
                 text):
     
