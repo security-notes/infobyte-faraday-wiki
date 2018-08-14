@@ -204,10 +204,11 @@ Go to your /etc/hosts file and assing 127.0.0.1 to your localmachine hostname.
 
 [ [index] ](#index)
 
-<a name=#osx-gtk-depencencies></a>
+<a name=osx-gtk-depencencies></a>
 ### OSx GTK not working AttributeError: 'module' object has no attribute 'require_version'
-traceback:
-> Traceback (most recent call last):
+Traceback:
+```
+Traceback (most recent call last):
   File "faraday.py", line 635, in <module>
     main()
   File "faraday.py", line 631, in main
@@ -221,7 +222,9 @@ traceback:
   File "/Users/myuser/tools/faraday/gui/gtk/application.py", line 26, in <module>
     gi.require_version('Gtk', '3.0')
 AttributeError: 'module' object has no attribute 'require_version'
+```
 
+If you see this error all you need to do is re-install the [dependencies](https://github.com/infobyte/faraday/wiki/Installation-OSX#dependencies-and-other-python-libraries-via-pip) using brew.
 
 <a name=#user.xml-not-found></a>
 ### [Errno 2] No such file or directory: '/home/john/.faraday/config/config.xml'
