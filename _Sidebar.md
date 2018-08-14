@@ -2,12 +2,12 @@
 * [Home](https://github.com/infobyte/faraday/wiki/Home)
 
 * [**Installation**](https://github.com/infobyte/faraday/wiki/First-Steps)
-  * [Installation - Community](https://github.com/infobyte/faraday/wiki/Installation-Community)
-  * [Installation - Professional](https://github.com/infobyte/faraday/wiki/Installation-Pro)
-  * [Installation - Corporate](https://github.com/infobyte/faraday/wiki/Installation-Corp)
-  * [Installation - Docker](https://github.com/infobyte/faraday/wiki/Installation-Docker)
-  * [Installation - OS X](https://github.com/infobyte/faraday/wiki/Installation-OSX)
-  * [Installation - RedHat](https://github.com/infobyte/faraday/wiki/Installation-RedHat)
+  * [Install - Community](https://github.com/infobyte/faraday/wiki/Installation-Community)
+  * [Install - Professional](https://github.com/infobyte/faraday/wiki/Installation-Pro)
+  * [Install - Corporate](https://github.com/infobyte/faraday/wiki/Installation-Corp)
+  * [Install - Docker](https://github.com/infobyte/faraday/wiki/Installation-Docker)
+  * [Install - OS X](https://github.com/infobyte/faraday/wiki/Installation-OSX)
+  * [Install - RedHat](https://github.com/infobyte/faraday/wiki/Installation-RedHat)
 
     
 * [Updates](https://github.com/infobyte/faraday/wiki/Updates)
