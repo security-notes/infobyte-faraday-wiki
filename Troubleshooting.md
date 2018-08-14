@@ -187,7 +187,7 @@ While importing reports faraday need to be able to resolve domain or else it wil
 Make sure you can resolve the domain from the computer where faraday is being executed.
 
 [ [index] ](#index)
-
+<a name=osx-gtk-not-working></a>
 ### OSx GTK not working IP ERROR
 When using OSx it's necessary for the client to assign the localhost address to your hostname.
 Inside a terminal run:
