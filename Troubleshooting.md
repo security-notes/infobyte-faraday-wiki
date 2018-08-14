@@ -57,6 +57,7 @@ IOError: [Errno 2] No such file or directory: '/home/leonardo/VERSION'
 * [ERROR - XML Plugin: Ip of host unknown](#ip-of-host-unknown)
 * [[Errno 2] No such file or directory: '/home/john/.faraday/config/config.xml'](#user.xml-not-found)
 * [OSx GTK not working IP ERROR](#osx-gtk-not-working)
+* [How to fix GTK error on faraday using OSX](#osx-gtk-depencencies)
 * [Can't login after Couch Import](#cant-login-after-couch-import)
 * [Updating Nginx Configuration](#updating-nginx-configuration)
 
@@ -202,6 +203,25 @@ Go to your /etc/hosts file and assing 127.0.0.1 to your localmachine hostname.
 
 
 [ [index] ](#index)
+
+<a name=#osx-gtk-depencencies></a>
+### OSx GTK not working AttributeError: 'module' object has no attribute 'require_version'
+traceback:
+> Traceback (most recent call last):
+  File "faraday.py", line 635, in <module>
+    main()
+  File "faraday.py", line 631, in main
+    startFaraday()
+  File "faraday.py", line 303, in startFaraday
+    main_app = MainApplication(args)
+  File "/Users/myuser/tools/faraday/model/application.py", line 135, in __init__
+    self.args.gui)
+  File "/Users/myuser/tools/faraday/gui/gui_app.py", line 19, in create
+    from gui.gtk.application import GuiApp
+  File "/Users/myuser/tools/faraday/gui/gtk/application.py", line 26, in <module>
+    gi.require_version('Gtk', '3.0')
+AttributeError: 'module' object has no attribute 'require_version'
+
 
 <a name=#user.xml-not-found></a>
 ### [Errno 2] No such file or directory: '/home/john/.faraday/config/config.xml'
