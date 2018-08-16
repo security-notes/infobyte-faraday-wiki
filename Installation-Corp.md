@@ -30,7 +30,7 @@ Download both those packages and then:
 1. Unpack the **License Package** and place its contents in the `doc` directory. For example, using the path from **Step 1**, you should place the **License files** in `/home/user/Infobyte/faraday/doc`. Or run: 
 
     ```
-    $ faraday-sever --license-path path/to/license
+    $ faraday-server --license-path path/to/license
     ```
 
 After doing so, make sure to [install system dependencies](#server-system-dependencies), [install Python dependencies](#server-python-dependencies) and [configure the Server](#server-configuration).
@@ -87,7 +87,7 @@ $ pip2 install -r requirements_server.txt
 In order to initialize Postgresql database and generate your main user and a password, run the following command:
 
 ```
-python manage.py initdb
+$ python manage.pyc initdb
 ```
  ***Note:*** if at the moment you run this command, it throws an error, be sure you have sudo installed. Once you have installed it, run the command again.
  
@@ -99,7 +99,7 @@ python manage.py initdb
 If you want to import your data from CouchDB to PostgreSQL, run the following command:
 
 ```
-python manage.py import_from_couchdb
+$ python manage.pyc import_from_couchdb
 ```
 
 With CouchDB configured in the `server.ini` file, it will import all the data
