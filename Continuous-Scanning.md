@@ -60,7 +60,7 @@ After listing the intended targets and reviewing the config.py file, you should 
 # crontab -l
 
 
-0 0 * * * bash /root/dev/cscan/cscan.py ; mv /root/dev/cscan/output/* /root/.faraday/report/workspace_name/
+0 0 * * * /path/to/python /root/dev/cscan/cscan.py ; mv /root/dev/cscan/output/* /root/.faraday/report/workspace_name/
 ```
 
 Another options is to configure the scripts with Jenkins. For example, you could set it up so every time a new merge or release is detected, Jenkins would run the scripts. 
