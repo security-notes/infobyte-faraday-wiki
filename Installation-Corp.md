@@ -84,38 +84,84 @@ $ pip2 install -r requirements_server.txt
 ```
 #### Initializing PostgreSQL
 
-In order to initialize Postgresql database and generate your main user and a password, run the following command:
+In order to initialize PostgreSQL database, generate your main _user_ and a __password__ and import your data from CouchDB (if it's the case), run the following command:
 
 ```
 $ python manage.pyc initdb
 ```
- ***Note:*** if at the moment you run this command, it throws an error, be sure you have sudo installed. Once you have installed it, run the command again.
- 
- **Warning:** This commmand is only to be executed when you run Faraday for the first time. 
+If you don't have CouchDB configured we assume this is a new installation, so a
+new user will be created.
+
+With CouchDB configured in the `server.ini` file, it will import all the data
+you had from the 2.7.2 version, including the users and its hashed passwords. 
+
+If you want to manually import the data from CouchDB, follow this [step](https://github.com/infobyte/faraday/wiki/Installation-Corp/_edit#importing-from-couchdb)
+
+Keep in mind the following items:
+
+* This commmand must be executed only when you run Faraday for the first time. 
+* If you can't login into to Faraday after running the command above due to invalid credentials, you can change your password through the PostgreSQL shell that Faraday has in it. Follow the next [instructions](https://github.com/infobyte/faraday/wiki/Troubleshooting#cant-login-after-importing-from-couch) in order to change your password and be able to login.
+
+* You should have the PostgreSQL service started. To do it run
+`systemctl start postgresql` or the equivalent command for your GNU/Linux
+distro.
+
+*  If at the moment you run this command, it throws an error, be sure
+you have sudo installed. Once you have installed it, run the command again.
 
 
-#### Importing from CouchDB
+#### Manual PostgreSQL configuration
 
-If you want to import your data from CouchDB to PostgreSQL, run the following command:
+If you need an advance configuration of the postgres database, like having a
+custom database name or run it in a separate host, the `python manage.pyc initdb`
+command probably won't be enough for you, so you should configure it manually
+by doing something like this:
+
+```
+sudo -u postgres psql -c "CREATE ROLE faraday_postgresql WITH LOGIN PASSWORD 'YOURPASSWORD'"
+sudo -u postgres createdb -O faraday_postgresql faraday
+```
+
+Then, edit the `~/.faraday/config/server.ini` by adding the connection string
+to the database:
+
+```
+[database]
+connection_string = postgresql+psycopg2://faraday_postgresql:YOURPASSWORD@localhost/faraday
+```
+
+Then you should run `python manage.pyc create_tables` to create all the required
+tables to make Faraday work, and `python manage.pyc createsuperuser` to create an
+admin user.
+
+
+#### Manually importing from CouchDB
+
+If you were using Faraday 2.7.2 and setup the database manually instead of
+using the `python manage.pyc initdb`, you should run the following command to import
+the data from CouchDB:
 
 ```
 $ python manage.pyc import_from_couchdb
 ```
-
-With CouchDB configured in the `server.ini` file, it will import all the data
-you had from the 2.7.2 version, including the users and its hashed passwords.
-
-***Note:*** If you can't login into to Faraday after running the command above due to invalid credentials, you can change your password through the PostgreSQL shell that Faraday has in it. Follow the next [instructions](https://github.com/infobyte/faraday/wiki/Troubleshooting#cant-login-after-importing-from-couch) in order to change your password and be able to login.
-
-
 ***Note:*** beware of the number of users you have created in CouchDB, remember that you have already created one when you initialized PostgreSQL. The number of users that you have between CouchDB and PostgreSQL should not surpass the number of users you're allow to have according to your license.
+
+#### Updating Nginx configuration
+
+***Note:*** This only applies if you are using Nginx and https.
+
+Please, make sure you have this settings on your Nginx config:
+
+    proxy_pass http://localhost:5985/;
+    proxy_redirect http:// $scheme://;
+
 
 <a name="server-configuration"></a>
 #### Configuration
 
 By default, Faraday server will listen on port **5985**. You can edit this on `~/.faraday/config/server.ini`.
 
-### Authentication
+#### Authentication
 
 You can create different types of users through the web UI. Those users can login though the same web UI or though a Faraday client using the `--login` flag (Faraday will ask for the credentials later)
 
