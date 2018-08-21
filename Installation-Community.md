@@ -79,7 +79,7 @@ $ pip2 install -r requirements_server.txt -U
 In order to initialize Postgresql database, run the following command:
 
 ```
-python manage.py initdb
+$ python manage.py initdb
 ```
 If you don't have CouchDB configured we assume this is a new installation, so a
 new user will be created.
@@ -129,7 +129,7 @@ using the `./manage.py initdb`, you should run the following command to import
 the data from CouchDB:
 
 ```
-python manage.py import_from_couchdb
+$ python manage.py import_from_couchdb
 ```
 
 #### Updating Nginx configuration
