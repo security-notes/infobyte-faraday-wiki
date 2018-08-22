@@ -63,7 +63,7 @@
   * [Immunitys-CANVAS](https://github.com/infobyte/faraday/wiki/Inmunity-CANVAS)
   * [Metasploit](https://github.com/infobyte/faraday/wiki/Metasploit)
   * [Nessus](https://github.com/infobyte/faraday/wiki/Nessus)
-  * [More +60 plugins](https://github.com/infobyte/faraday/wiki/Plugin-List#list)
+  * [More +70 plugins](https://github.com/infobyte/faraday/wiki/Plugin-List#list)
 
 
 * [**Security**](https://github.com/infobyte/faraday/wiki/Security)
