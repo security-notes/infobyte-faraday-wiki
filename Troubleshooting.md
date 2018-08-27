@@ -60,6 +60,7 @@ IOError: [Errno 2] No such file or directory: '/home/leonardo/VERSION'
 * [How to fix GTK error on faraday using OSX](#osx-gtk-depencencies)
 * [Can't login after Couch Import](#cant-login-after-couch-import)
 * [Updating Nginx Configuration](#updating-nginx-configuration)
+* [Error while making backup of the database](#backup-error)
 
 ## Answers
 
@@ -272,4 +273,21 @@ Please, make sure you have this settings on your Nginx config:
 
 [ [index] ](#index)
 
+<a name="backup-error"></a>
+### Error while backuping the database
+If you get this error:
+
+` “pci_q1” failed: FATAL: role “root” does not exist`
+
+while trying to execute:
+
+`pg_dump <name of workspace> > <name of what I want the backup file to be>`
+
+Run:
+
+`sudo -u postgres -i`
+
+And then try again.
+
+[ [index] ](#index)
 Is your question not listed here? [Contact us](https://github.com/infobyte/faraday/issues)
