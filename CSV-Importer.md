@@ -1,31 +1,12 @@
 The idea is to import an CSV file into Faraday's server uploading all the information into one of your workspaces.
 
-The CSV file should have an special kind of formatting...
+The CSV file should have an special kind of formatting, so take in consideration the following rules:
 
-First of all:
-
-The names of columns are:
-
+**1)** The names of columns are:
 * Host fields:
     * **host_name**
     * host_description
     * host_owned
-    * host_os
-
-* Interface fields:
-    * **interface_name**
-    * interface_description
-    * interface_hostnames
-    * interface_mac
-    * interface_network_segment
-    * interface_ipv4_address
-    * interface_ipv4_gateway
-    * interface_ipv4_mask
-    * interface_ipv4_dns
-    * interface_ipv6_address
-    * interface_ipv6_gateway
-    * interface_ipv6_prefix
-    * interface_ipv6_dns
 
 * Services fields:
     * **service_name**
@@ -65,11 +46,11 @@ The names of columns are:
     * vulnerability_web_resolution
     * vulnerability_web_policyviolations
     * vulnerability_web_path
-    * vulnerability_web_tags
+    * vulnerability_web_tagstags
 
-(**mandatory fields**)
+_**Note:**_ those in **bold** are mandatory fields.
 
-The following columns names have a special format that you need to follow.
+**2)** The following fields have a special format that you need to follow:
 
 * Boolean (true or false):
     * host_owned
@@ -79,7 +60,6 @@ The following columns names have a special format that you need to follow.
 
 
 * List (Values separated by comma):
-    * interface_hostnames
     * service_port
     * vulnerability_refs
     * vulnerability_policyviolations
@@ -87,62 +67,63 @@ The following columns names have a special format that you need to follow.
     * vulnerability_web_policyviolations
     * vulnerability_web_tags
 
-Possible values for vulnerability and vulnerability web SEVERITY:
+**3)** Possible values for vulnerability and vulnerability web SEVERITY:
 * info
 * low
 * med
 * high
 * critical
 
-Possible values for vulnerability and vulnerability web STATUS:
+**4)** Possible values for vulnerability and vulnerability web STATUS:
 * opened
 * closed
 * re-opened
 * risk-accepted
 
-Possible values for service STATUS:
+**5)** Possible values for service STATUS:
 * open
 * filtered
 * close
 
-WARNINGS:
-1) Unicode chars not supported.
-2) host_name not can be empty.
-3) Anything not numeric entered on Port will be ignored
 
-A few important concepts you should keep in mind before importing an csv file:
+**Warnings:** keep in mind the following concepts before importing an CSV file:
 
-1) Hosts must ALWAYS have a interface associated.
+1) Hosts must ALWAYS have an interface associated.
 
 2) Vulnerabilities must always have either a host OR a service associated to them.
 
-3) Web Vulnerabilities must always be associated with BOTH a host AND a service.
+3) Web Vulnerabilities must always be associated with a host AND a service.
+
+4) Unicode chars not supported.
+
+5) Anything not numeric entered on **service_port** will be ignored
 
 
+***
 
 
-Command for Community:
+#### Command for Community version:
 ~~~~
 python2 ./bin/fplugin import_csv -u http://username:password@127.0.0.1:5985/ --csv /path/to/file/file.csv -w WORSKPACE_NAME
 ~~~~
+_Options:_
+ * --csv: the name and path of your CSV.
+ * -w: Faraday's workspace where all the information will go to.
 
- --csv The name and path of your csv.
 
- -w Faraday's workspace where all the information will go to.
-
-
-Command for Commercial Versions:
+#### Command for Commercial versions:
 ~~~~
 python2 ./bin/fplugin import_csv -u http://127.0.0.1:5985/ --csv /path/to/file/file.csv -w WORSKPACE_NAME --username USERNAME --password PASSWORD
 ~~~~
 
- --csv The name and path of your csv.
-
- -w Faraday's workspace where all the information will go to.
-
- --username  Username of an Admin User.
- --password  Password of an Admin User.
+_Options:_
+ * --csv: the name and path of your CSV.
+ * -w: Faraday's workspace where all the information will go to.
+ * --username: username of an Admin User.
+ * --password: password of an Admin User.
  
-Here you have an file example:
+#### Example file
+
+Here you have an example file:
 
 [file.csv](https://raw.githubusercontent.com/wiki/infobyte/faraday/files/file.csv)
