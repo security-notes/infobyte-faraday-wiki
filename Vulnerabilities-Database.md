@@ -1,5 +1,5 @@
 ## Intro
-Find yourself writing the same descriptions over and over again? Tired of typos coming up in your reports? Faraday provides a simple solution; unify criteria for naming vulnerabilities and save time and effort to yourself and your team.
+Find yourself writing the same descriptions over and over again? Tired of typos coming up in your reports? Faraday provides a simple solution: unify criteria for naming vulnerabilities and save time and effort to yourself and your team.
 
 > Write vulns once and use them forever!
 
