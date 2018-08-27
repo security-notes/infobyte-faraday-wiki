@@ -49,9 +49,10 @@
   * [Continuous Scanning](https://github.com/infobyte/faraday/wiki/Continuous-Scanning)
 
 * **Integrations**
-  * [JIRA](https://github.com/infobyte/faraday/wiki/Jira)
+  * [Jira](https://github.com/infobyte/faraday/wiki/Jira)
   * [LDAP](https://github.com/infobyte/faraday/wiki/LDAP)
   * [OSINT Provider](https://github.com/infobyte/faraday/wiki/OSINT-Provider)
+  * [ThreadFix](https://github.com/infobyte/faraday/wiki/ThreadFix)
 
 * [**Plugins**](https://github.com/infobyte/faraday/wiki/Plugin-List)
   
