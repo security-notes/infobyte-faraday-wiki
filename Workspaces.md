@@ -1,10 +1,10 @@
 ### Workspace
 
-The workspaces are used to hold the information re-collected from the different tools and/ or commands used in the "actions" for each Penetration Test. Each workspace integrates all the results from pentesters from a given project in the Web console allowing you to to identify and manage your information in one place.
+The workspaces are used to hold the information re-collected from the different tools and/ or commands used in the "actions" for each Penetration Test. Each workspace integrates all the results from pentesters from a given project in the Web console allowing you to identify and manage your information in one place.
 
 ### How to manage the Workspace
 
-To manage your workspaces you need to access [Faraday's Web Interface](https://github.com/infobyte/faraday/wiki/Status-report) click on the **faraday** slider menu on the right of the screen ![](https://raw.github.com/wiki/infobyte/faraday/images/workspaces/icon.png)
+To manage your workspaces you need to access [Faraday's Web Interface](https://github.com/infobyte/faraday/wiki/Status-report) and click on the **Faraday** slider menu on the right of the screen ![](https://raw.github.com/wiki/infobyte/faraday/images/workspaces/icon.png)
 and then on **Wokspaces**
 ![](https://raw.github.com/wiki/infobyte/faraday/images/workspaces/menu.png)
 
@@ -29,7 +29,7 @@ From the workspaces window click on **New** and complete
 ![](https://raw.github.com/wiki/infobyte/faraday/images/workspaces/new.png)
 
 ### GTK
-On the General view in the GTW interface click on the New Workspace icon 
+On the General view in the GTK interface click on the New Workspace icon 
 ![](https://raw.github.com/wiki/infobyte/faraday/images/workspaces/gtk_new_workspace_icon.png)
 and complete the fields:
 
