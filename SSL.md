@@ -16,6 +16,8 @@ In order to generate self signed certificates, run the following command:
 
     $ sudo openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout /etc/ssl/faraday.key -out /etc/ssl/faraday.crt
 
+**NOTE:** be sure to type the Common Name of this certificate. If you don't type a Common Name, then Faraday GTK will not be launched.
+
 For further information about certificates, follow this [link](https://www.digitalocean.com/community/tutorials/how-to-create-a-self-signed-ssl-certificate-for-apache-in-ubuntu-16-04).
 
 Below you can find a sample config file for NGINX. 

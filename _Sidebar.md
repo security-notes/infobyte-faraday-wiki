@@ -2,12 +2,12 @@
 * [Home](https://github.com/infobyte/faraday/wiki/Home)
 
 * [**Installation**](https://github.com/infobyte/faraday/wiki/First-Steps)
-  * [Installation - Community](https://github.com/infobyte/faraday/wiki/Installation-Community)
-  * [Installation - Professional](https://github.com/infobyte/faraday/wiki/Installation-Pro)
-  * [Installation - Corporate](https://github.com/infobyte/faraday/wiki/Installation-Corp)
-  * [Installation - Docker](https://github.com/infobyte/faraday/wiki/Installation-Docker)
-  * [Installation - OS X](https://github.com/infobyte/faraday/wiki/Installation-OSX)
-  * [Installation - RedHat](https://github.com/infobyte/faraday/wiki/Installation-RedHat)
+  * [Install - Community](https://github.com/infobyte/faraday/wiki/Installation-Community)
+  * [Install - Professional](https://github.com/infobyte/faraday/wiki/Installation-Pro)
+  * [Install - Corporate](https://github.com/infobyte/faraday/wiki/Installation-Corp)
+  * [Install - Docker](https://github.com/infobyte/faraday/wiki/Installation-Docker)
+  * [Install - OS X](https://github.com/infobyte/faraday/wiki/Installation-OSX)
+  * [Install - RedHat](https://github.com/infobyte/faraday/wiki/Installation-RedHat)
 
     
 * [Updates](https://github.com/infobyte/faraday/wiki/Updates)
@@ -23,6 +23,7 @@
     * [Export to Csv](https://github.com/infobyte/faraday/wiki/CSV-Exporter)
     * [Search & Filter](https://github.com/infobyte/faraday/wiki/Search-and-Filter)
   * [Tasks](https://github.com/infobyte/faraday/wiki/Tasks)
+  * [Upload Report](https://github.com/infobyte/faraday/wiki/Upload-Report)
   * [Vulnerabilities Database](https://github.com/infobyte/faraday/wiki/Vulnerabilities-Database)
   * [Workspaces](https://github.com/infobyte/faraday/wiki/Workspaces)
   * [Workspace Comparison](https://github.com/infobyte/faraday/wiki/Workspace-Diff)
@@ -62,7 +63,7 @@
   * [Immunitys-CANVAS](https://github.com/infobyte/faraday/wiki/Inmunity-CANVAS)
   * [Metasploit](https://github.com/infobyte/faraday/wiki/Metasploit)
   * [Nessus](https://github.com/infobyte/faraday/wiki/Nessus)
-  * [More +60 plugins](https://github.com/infobyte/faraday/wiki/Plugin-List#list)
+  * [More +70 plugins](https://github.com/infobyte/faraday/wiki/Plugin-List#list)
 
 
 * [**Security**](https://github.com/infobyte/faraday/wiki/Security)

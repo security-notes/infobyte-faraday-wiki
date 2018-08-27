@@ -22,7 +22,7 @@ Check out our documentacion for datailed information on how to install Faraday i
 
 ![Supported Os](https://raw.github.com/wiki/infobyte/faraday/images/platform/supported.png)
 
-To begin the instalation process check our out [First Step](https://raw.github.com/wiki/infobyte/faraday/First-steps) Wiki.
+To begin the instalation process check our out [First Step](https://github.com/infobyte/faraday/wiki/First-Steps) Wiki.
 
 ## New Features!
 All of Faraday's latest features and updates are always available on our [blog](http://blog.infobytesec.com/search/label/english).
@@ -31,7 +31,7 @@ There are new entries every few weeks, don't forget to check out our amaizing ne
 
 ## Plugins list
 
-You feed data to Faraday from your favorite tools through Plugins. Right now there are more than [60+ supported tools](https://github.com/infobyte/faraday/wiki/Plugin-List), among which you will find: 
+You feed data to Faraday from your favorite tools through Plugins. Right now there are more than [70+ supported tools](https://github.com/infobyte/faraday/wiki/Plugin-List), among which you will find: 
 ![](https://raw.github.com/wiki/infobyte/faraday/images/plugins/Plugins.png)
 
 There are three Plugin types: **console** plugins which intercept and interpret the output of the tools you execute, **report** plugins which allows you to import previously generated XMLs, and **online** plugins which access Faraday's API or allow Faraday to connect to external APIs and databases.

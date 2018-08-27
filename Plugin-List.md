@@ -19,27 +19,7 @@ If Faraday is not capable to detect the plugin needed to process the report, you
 
 For example, if the **Burp** report named ```burp_1456983368.xml``` is not being recognized, try renaming it to ```Burp_1456983368_faraday_Burp.xml```. Now copy it to the Workspace directory and Faraday should now run the plugin and import all vulnerabilities.
 
-Keep in mind that this functionality is **case sensitive**. The names of the available plugins are:
-
-
-* Acunetix
-* Arachni
-* Burp
-* Core Impact
-* Maltego
-* Metasploit
-* Nessus 
-* Netsparker
-* Nexpose
-* NexposeFull
-* Nikto
-* Nmap
-* Openvas
-* Qualysguard
-* Retina
-* W3af
-* X1
-* Zap
+Keep in mind that this functionality is **case sensitive**.
 
 
 ### API
@@ -56,10 +36,12 @@ If you think your favourite tool is missing [code your own plugin](https://githu
 * [Arachni](https://twitter.com/ArachniScanner) (REPORT, CONSOLE) (XML)
 * [arp-scan](http://linux.die.net/man/1/arp-scan) (CONSOLE)
 * [BeEF](https://twitter.com/beefproject) (API)
+* [Brutexss](https://github.com/rajeshmajumdar/BruteXSS) (REPORT)
 * [Burp, BurpPro](https://twitter.com/Burp_Suite) (REPORT, API) (XML)
 * [Core Impact, Core Impact](https://twitter.com/CoreSecurity) (REPORT) (XML)
 * Dig (CONSOLE)
 * [Dirb](http://tools.kali.org/web-applications/dirb) (CONSOLE)
+* Dirsearch (REPORT,CONSOLE)
 * [Dnsenum](https://github.com/fwaeytens/dnsenum) (CONSOLE)
 * [Dnsmap](https://github.com/makefu/dnsmap) (CONSOLE)
 * [Dnsrecon](https://github.com/darkoperator/dnsrecon) (CONSOLE)
@@ -72,7 +54,8 @@ If you think your favourite tool is missing [code your own plugin](https://githu
 * [hping3](http://tools.kali.org/information-gathering/hping3) (CONSOLE)
 * [Hydra](https://www.thc.org/thc-hydra) (CONSOLE) (XML)
 * [Immunity Canvas](http://www.immunityinc.com/products/canvas/) (API)
-* Linys (REPORT)
+* Ip360 (REPORT)
+* [Linys](https://cisofy.com/lynis/) (REPORT)
 * Listurls (CONSOLE)
 * [Maltego](https://www.paterva.com/web6/products/maltego.php) (REPORT)
 * [masscan](https://twitter.com/ErrataRob) (REPORT, CONSOLE) (XML)
@@ -94,6 +77,7 @@ If you think your favourite tool is missing [code your own plugin](https://githu
 * ping (CONSOLE)
 * [propecia](http://packetstormsecurity.com/files/14232/propecia.c.html) (CONSOLE)
 * [Qualysguard](https://www.qualys.com/) (REPORT) (XML)
+* [Recon-NG](https://hackertarget.com/recon-ng-tutorial/) (REPORT)
 * [Retina](http://www.beyondtrust.com/Products/RetinaNetworkSecurityScanner/) (REPORT) (XML)
 * [Reverseraider](http://sourceforge.net/projects/complemento/files/) (CONSOLE)
 * Sentinel (API)
@@ -102,6 +86,8 @@ If you think your favourite tool is missing [code your own plugin](https://githu
 * [Sqlmap](https://twitter.com/sqlmap) (CONSOLE)
 * [SSHdefaultscan](https://github.com/atarantini/sshdefaultscan) (CONSOLE)
 * SSLcheck (CONSOLE)
+* [SSLyze](https://github.com/nabla-c0d3/sslyze) (CONSOLE)
+* [Sublist3r](https://github.com/aboul3la/Sublist3r) (REPORT,CONSOLE)
 * Telnet (CONSOLE)
 * [Theharvester](https://github.com/laramies/theHarvester) (CONSOLE)
 * Traceroute (CONSOLE)
@@ -109,8 +95,10 @@ If you think your favourite tool is missing [code your own plugin](https://githu
 * [Wapiti](http://wapiti.sourceforge.net/) (CONSOLE)
 * Wcscan (CONSOLE)
 * [Webfuzzer](http://gunzip.altervista.org/g.php?f=projects#webfuzzer) (CONSOLE)
+* [WebInspect](https://resources.infosecinstitute.com/webinspect/#gref) (REPORT,CONSOLE)
+* [Wfuzz](https://wfuzz.readthedocs.io/en/latest/index.html) (CONSOLE)
 * whois (CONSOLE)
 * [WPScan](https://wpscan.org/) (CONSOLE)
+* [Xsssniper](https://github.com/gbrindisi/xsssniper) (REPORT)
 * [X1, Onapsis](https://twitter.com/onapsis) (REPORT) (XML)
 * [Zap](https://twitter.com/zaproxy) (REPORT) (XML)
-

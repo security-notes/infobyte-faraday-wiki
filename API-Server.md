@@ -251,3 +251,17 @@ Assuming that our credentials are: **username:** "faraday" - **password:** "chan
         -d '{"name":"Testing-API","tags":[], "title":"", "enterprise":"", "scope":"", "objectives":"", "summary":"", "confirmed":false, "conclusions":"", "recommendations":"", "vuln_count":2, "template_name":"generic_default.docx", "grouped":false}' \
         -b cookie.txt \
         -H 'Content-Type: application/json'
+
+**Uploading a report:**
+
+In order to be able to upload a report, you need the CSRF token and session's cookies. To get session's cookie, go to the WebUI's tab: **Status Report**, and take it from _Request Headers_ section of the console. And to get the CSRF token, in the same console, go to the tab _Response_.
+
+On the first **--form** parameter, put the path of the file that you want to upload.
+
+    curl  'http://127.0.0.1:5985/_api/v2/ws/api/upload_report' \
+       -H 'Content-Type: multipart/form-data' \
+       --cookie "session=.eJw90M2KwjAQB_BXWXL2YGu9CB6UlGJhpgSCZeZS2FpNJ2YXqkI24rtv18O-wO__8VTdeRpuTm3u02NYqG48qc1TfXyqjWK9SyyUYVsWmMrUWDei9Etsj4FaDKydw-Qj5KZo9CWSNUu2uzXktQM5XSnxyJVZgTaRrYkk-xEt5ZQfVmT3DmcfKvrhcBQUKMgeIoQysb0knjMh-QIEliyQQzJZ0-IV_kx7DWDZY1WPmNCD9Fv1Wqj-Np27-7cfvv4noNTSVCZjXSaYK2KgiLqMTTtX1H7daMpmPnLFgtpHSk7YbN_c4zZM7ztUoV6_3rRiDA.DkoypQ.q7eGzh1oof8dKnbF4q6xD_n1d6o" \
+       --form "file=@PATH/TO/FILE" \
+       --form "csrf_token=IjYyYzhkNWQxMzA4MTZmMTQxMTliYTA5OTg2NWYzMWRmYzQ5MWM4Y2Ui.Dko4Zw.sZ-LLdGoxaNFUaySFFQMvyLecxc" \
+       --compressed
+
