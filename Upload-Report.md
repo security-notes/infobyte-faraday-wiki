@@ -14,7 +14,7 @@ To do so, click on the Report Button and a dialog will open, from which you can 
 
 ![](https://raw.github.com/wiki/infobyte/faraday/images/status_report/upload_report_GTK.gif)
 
-Once you click OK, select the file you want to import and all the data in the report will be processed and added to the active Workspace, and the console will show a message when the plugin starts and ends.
+Once you click OK, select the file you want to import and all the data in the report will be processed and added to the active workspace, and the console will show a message when the plugin starts and ends.
 
 ### Through ZSH UI
 
@@ -31,9 +31,9 @@ It's possible to use Faraday in Command-Line Interface (CLI) mode, allowing you 
 
     $ ./faraday.py --cli --workspace project_one --report /tmp/nmap_scan.xml
 
-**Professional and corporate versions:**
+**Professional and Corporate versions:**
 
-If you're using a professional or corporate version, you'll probably need to run Faraday as a certain user, with permissions to access your workspaces. You can pass your credentials using a simple json file the contains both your username and password. You have a template in the directory of your Faraday installation called credentials.json, but you are allowed to use any path and filename for this json file. The structure is this:
+If you're using a Professional or Corporate version, you'll probably need to run Faraday as a certain user, with permissions to access your workspaces. You can pass your credentials using a simple json file that contains both your username and password. You have a template in the directory of your Faraday installation called credentials.json, but you are allowed to use any path and filename for this json file. The structure is this:
 
     {
         "username": "your_user_here",
