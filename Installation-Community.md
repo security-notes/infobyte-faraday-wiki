@@ -292,6 +292,8 @@ And search for the following **api_uri** tag and set it to the server URL, for e
 
 `<api_uri>http://127.0.0.1:5985</api_uri>`
 
+If you are using SSL you need to use https in your configuration. For example use https://192.168.0.20 when you are using an nginx server with SSL enabled and faraday-server is listening on 192.168.0.20. 
+
 #### Running
 
 Once you have already configured the client and have Faraday Server running, you simply have to run:
