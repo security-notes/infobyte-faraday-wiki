@@ -16,7 +16,9 @@ To do so, click on the Report Button and a dialog will open, from which you can 
 
 Once you click OK, select the file you want to import and all the data in the report will be processed and added to the active workspace, and the console will show a message when the plugin starts and ends.
 
-### Through ZSH UI
+#### Import multiple reports
+
+**Note:** Be sure Faraday Client is running. 
 
 To import your reports, drag-and-drop them into:
 
