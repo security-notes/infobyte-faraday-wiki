@@ -28,6 +28,16 @@ To import your reports, drag-and-drop them into:
 Replace [workspace_name] with the workspace's name you're working in.
 Faraday will parse your reports and upload the information extracted from them.
 
+If the client has problems detecting the plugin that should parse the report,
+you should change the report filename by adding `_faraday_PLUGINNAME` just before
+the extension. For example, if you have an Openvas plugin called `myreport.xml` and
+it isn't detected correctly, rename it to `myreport_faraday_Openvas.xml`.
+
+***Note:*** The plugin name must be one that appears in the plugin list that
+is showed when you click on "Import report" in the GTK client. Remember that
+it is case sensitive.
+
+
 #### CLI (Community)
 
 It's possible to use Faraday in Command-Line Interface (CLI) mode, allowing you to process your reports in batch. So lets say you want to process the XML output of an nmap scan located in **/tmp/nmap_scan.xml** and send the results to a workspace called **project_one**. The way to do it using CLI mode would be to run:
