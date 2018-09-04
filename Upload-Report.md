@@ -34,8 +34,9 @@ the extension. For example, if you have an Openvas plugin called `myreport.xml` 
 it isn't detected correctly, rename it to `myreport_faraday_Openvas.xml`.
 
 ***Note:*** The plugin name must be one that appears in the plugin list that
-is showed when you click on "Import report" in the GTK client. Remember that
-it is case sensitive.
+is showed when you click on "Import report" in the GTK client:
+![](https://raw.github.com/wiki/infobyte/faraday/images/client/plugin_names.png)
+**Remember that it is case sensitive**.
 
 
 #### CLI (Community)
