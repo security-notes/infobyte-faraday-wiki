@@ -61,7 +61,7 @@ IOError: [Errno 2] No such file or directory: '/home/leonardo/VERSION'
 * [Can't login after Couch Import](#cant-login-after-couch-import)
 * [Updating Nginx Configuration](#updating-nginx-configuration)
 * [Error while making backup of the database](#backup-error)
-
+* [GTK Error: No ports available](#no-ports-available)
 ## Answers
 
 <a name="cant-access-web"></a>
@@ -288,6 +288,25 @@ Run:
 `sudo -u postgres -i`
 
 And then try again.
+
+<a name='no-ports-available'></a>
+### No ports available
+If you see this traceback:
+
+Traceback (most recent call last):
+File "/usr/share/python-faraday/model/application.py", line 145, in start
+CONF.getApiRestfulConInfoPort()
+File "/usr/share/python-faraday/apis/rest/api.py", line 67, in startAPIs
+raise Exception("No ports available!")
+Exception: No ports available!
+
+Go into the file user.xml locates in .faraday/config/
+
+ ~<api_con_info_host>localhost</api_con_info_host>~
+** <api_con_info_host>127.0.0.1</api_con_info_host>**
+  <api_con_info_port>9876</api_con_info_port>
+  <api_restful_con_info_port>9977</api_restful_con_info_port>
+
 
 [ [index] ](#index)
 Is your question not listed here? [Contact us](https://github.com/infobyte/faraday/issues)
