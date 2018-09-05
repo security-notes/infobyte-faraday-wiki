@@ -289,6 +289,8 @@ Run:
 
 And then try again.
 
+[ [index] ](#index)
+
 <a name='no-ports-available'></a>
 ### No ports available
 If you see this traceback:
@@ -303,10 +305,11 @@ Exception: No ports available!
 Go into the file user.xml locates in .faraday/config/
 
  ~<api_con_info_host>localhost</api_con_info_host>~
-** <api_con_info_host>127.0.0.1</api_con_info_host>**
+**<api_con_info_host>127.0.0.1</api_con_info_host>**
   <api_con_info_port>9876</api_con_info_port>
   <api_restful_con_info_port>9977</api_restful_con_info_port>
 
+Change localhost for 127.0.0.1 and try again.
 
 [ [index] ](#index)
 Is your question not listed here? [Contact us](https://github.com/infobyte/faraday/issues)
