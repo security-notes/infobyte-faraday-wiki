@@ -171,7 +171,7 @@ The data available to the Report template is:
     * name
 
 #### Vulnerability Variables
-**counter_severity** - a dictionary with all the severities and the amount of vulns for each onevulnerability piecharts
+* **counter_severity** - a dictionary with all the severities and the amount of vulns for each onevulnerability piecharts
 * **vulns_amount** - an int containing the amount of vulnerabilities in the Workspace except for vulns with severity _unclassified_, which are not included
 * **vulns** - a dictionary with all the vulnerabilities in the Workspace except for vulns with severity _unclassified_, which are not included
     * update_user
