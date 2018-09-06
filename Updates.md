@@ -6,7 +6,6 @@ If you have Faraday Client and Server running in the same box and you are using 
 
 ```
 git pull
-python manage.py migrate
 ``` 
 
 That's it! You're ready to go!
@@ -17,7 +16,6 @@ If the client and the server don't run on the same machine, first update the ser
 
  ```
 git pull
-python manage.py migrate
 ``` 
 
 If you cloned the repo, or download and untar otherwise.
