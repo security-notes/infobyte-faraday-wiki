@@ -18,7 +18,7 @@ To see information about the Client API, follow this link: https://github.com/in
 
 ### Headers
 
-Our api end points supports json and you must always include the header:
+Our api end points supports json and you must **always include the header**:
 
 ```json
 Content-Type: application/json
