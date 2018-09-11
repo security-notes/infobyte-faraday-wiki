@@ -16,6 +16,24 @@ To see information about the Client API, follow this link: https://github.com/in
 
 - **DELETE:** delete object
 
+### Headers
+
+Our api end points supports json and you must always include the header:
+
+```json
+Content-Type: application/json
+```
+
+### Authentication
+
+The server API requires authentication. Currently we support cookie authentication.
+
+The endpoint for login is **/_api/login** and the json payload is:
+
+```json
+{"email": "USERNAME", "password": "SECRET_PASSWORD"}
+```
+
 ### Endpoints:
 
 **Faraday Config:**
@@ -69,9 +87,9 @@ Json Body:
     (PUT, OPTIONS) -> '/v2/ws/<workspace_name>/services/<object_id>/'
 
 Json Body:
-
+```json
     {"name":"test","description":"","owned":false,"owner":"","ports":[8080],"protocol":"tcp","parent":1156,"status":"open","version":"","metadata":{"update_time":1533074261.944,"update_user":"","update_action":0,"creator":"","create_time":1533074261.944,"update_controller_action":"UI Web New","owner":""},"type":"Service"}
-
+```
 
 **Status Report:**
 
@@ -88,8 +106,9 @@ Json Body:
 
 Json Body:
 
+```json
     {"metadata":{"update_time":1533074349.898,"update_user":"","update_action":0,"creator":"UI Web","create_time":1533074349.898,"update_controller_action":"UI Web New","owner":"faraday"},"obj_id":"","owner":"faraday","parent":1156,"parent_type":"Host","type":"Vulnerability","ws":"api","confirmed":true,"data":"","desc":"Testing API","impact":{"accountability":false,"availability":false,"confidentiality":false,"integrity":false},"name":"test","owned":false,"policyviolations":[],"refs":[],"resolution":"","severity":"high","issuetracker":"","status":"opened","_attachments":{},"description":"","protocol":"","version":""}
-
+```
 
 **Tasks:**
 
@@ -120,8 +139,9 @@ Json Body:
 
 Json Body:
 
+```json
     {"name":"test", "type":"TaskGroup", "group_type":"instance", "instance_of":"", "tCompletedtasks":0, "totaltasks":0}
-
+```
 
 **Reports:**
 
@@ -137,8 +157,9 @@ Json Body:
 
 Json Body:
 
+```json
     {"name":"Testing-API","tags":[],"title":"Network XYZ","enterprise":"ACME INC","scope":"Scope","objectives":"Objetives","summary":"Summ","confirmed":false,"conclusions":"Conclusions","recommendations":"Recommendations","vuln_count":4,"template_name":"generic_default.docx","grouped":false}
-
+```
 
 **Vulnerability Template:**
 
@@ -150,8 +171,9 @@ Json Body:
 
 Json Body:
 
+```json
     {"id":"","cwe":"","description":"Test","desc":"","exploitation":"high","name":"Testing API","references":[],"refs":[],"resolution":"","type":"vulnerability_template"}
-
+```
 
 **Credentials:**
 
@@ -164,8 +186,9 @@ Json Body:
 
 Json Body: 
 
+```json
     {"name":"Test","username":"faraday","metadata":{"update_time":1533075258220,"update_user":"","update_action":0,"creator":"UI Web","create_time":1533075258220,"update_controller_action":"","owner":""},"password":"changeme","type":"Cred","parent_type":"Host","parent":"1147","owner":"","description":""}
-
+```
 
 **Comments:**
 
@@ -202,6 +225,7 @@ Assuming that our credentials are: **username:** "faraday" - **password:** "chan
 
 **Login:** in order to be able to login through the API, you must supply your credentials and store them in a cookie file just as the following example:
 
+``` bash
     curl -s 'http://127.0.0.1:5985/_api/login' \
         -H 'Origin: http://127.0.0.1:5985' -H 'Accept-Encoding: gzip, deflate, br' \
         -H 'Accept-Language: en-US,en;q=0.9' \
@@ -211,57 +235,63 @@ Assuming that our credentials are: **username:** "faraday" - **password:** "chan
         -H 'Connection: keep-alive' \
         --data-binary '{"email":"faraday","password": "changeme"}' \
         --compressed -c cookie.txt > /dev/null
-
+```
 
 **Creating a host:** assuming our workspace name is **test**
 
+``` bash
     curl -X POST http://127.0.0.1:5985/_api/v2/ws/test/hosts/ \
         -d '{"ip":"127.0.0.1","hostnames":["testing"], "mac":"00:00:00:00:00:00","description":"Testing API", "default_gateway":"None", "os":"Linux", "owned":true, "owner":""}' \
         -b cookie.txt \
         -H 'Content-Type: application/json'
+```
 
 **Getting a list of hosts:**
 
+```json
     curl -X GET http://127.0.0.1:5985/_api/v2/ws/test/hosts/ -b cookie.txt
-
+```
 **Creating a service:**
 
+```json
     curl -X POST http://127.0.0.1:5985/_api/v2/ws/test/services/ \
         -d '{"name":"Test","description":"Testing API", "owned":true, "owner":"","ports":[8080],"protocol":"tcp","parent":1157,"status":"open","version":"","metadata":{"update_time":1533152663.994,"update_user":"","update_action":0,"creator":"","create_time":1533152663.994,"update_controller_action":"UI Web New","owner":""},"type":"Service"}' \
         -b cookie.txt \
         -H 'Content-Type: application/json'
+```
 
 **Creating a vuln:**
-
+```json
     curl -X POST http://127.0.0.1:5985/_api/v2/ws/test/vulns/ \
         -d '{"metadata":{"update_time":1533152883.927, "update_user":"", "update_action":0,"creator":"UI Web", "create_time":1533152883.927, "update_controller_action":"UI Web New", "owner":"faraday"}, "obj_id":"", "owner":"faraday", "parent":1157, "parent_type":"Host","type":"Vulnerability","ws":"test","confirmed":true,"data":"","desc":"New vulnerability created for API purposes","easeofresolution":"simple","impact":{"accountability":false, "availability":false, "confidentiality":false, "integrity":false},"name":"New Vuln - Testing API","owned":false,"policyviolations":[],"refs":[], "resolution":"", "severity":"critical", "issuetracker":"", "status":"opened","_attachments":{},"description":"","protocol":"","version":""}' \
         -b cookie.txt \
         -H 'Content-Type: application/json'
+```
 
 **Creating a user:**
-
+```
     curl -X POST http://127.0.0.1:5985/_api/v2/users/ \
         -d '{"name":"faraday", "password":"changeme", "roles":["admin"], "type":"user", "role":"admin"}' \
         -b cookie.txt \
         -H 'Content-Type: application/json'
-
+```
 **Generating a report:**
-
+```json
     curl -X POST http://127.0.0.1:5985/_api/v2/ws/test/reports/ \
         -d '{"name":"Testing-API","tags":[], "title":"", "enterprise":"", "scope":"", "objectives":"", "summary":"", "confirmed":false, "conclusions":"", "recommendations":"", "vuln_count":2, "template_name":"generic_default.docx", "grouped":false}' \
         -b cookie.txt \
         -H 'Content-Type: application/json'
-
+```
 **Uploading a report:**
 
 In order to be able to upload a report, you need the CSRF token and session's cookies. To get session's cookie, go to the WebUI's tab: **Status Report**, and take it from _Request Headers_ section of the console. And to get the CSRF token, in the same console, go to the tab _Response_.
 
 On the first **--form** parameter, put the path of the file that you want to upload.
-
+```json
     curl  'http://127.0.0.1:5985/_api/v2/ws/api/upload_report' \
        -H 'Content-Type: multipart/form-data' \
        --cookie "session=.eJw90M2KwjAQB_BXWXL2YGu9CB6UlGJhpgSCZeZS2FpNJ2YXqkI24rtv18O-wO__8VTdeRpuTm3u02NYqG48qc1TfXyqjWK9SyyUYVsWmMrUWDei9Etsj4FaDKydw-Qj5KZo9CWSNUu2uzXktQM5XSnxyJVZgTaRrYkk-xEt5ZQfVmT3DmcfKvrhcBQUKMgeIoQysb0knjMh-QIEliyQQzJZ0-IV_kx7DWDZY1WPmNCD9Fv1Wqj-Np27-7cfvv4noNTSVCZjXSaYK2KgiLqMTTtX1H7daMpmPnLFgtpHSk7YbN_c4zZM7ztUoV6_3rRiDA.DkoypQ.q7eGzh1oof8dKnbF4q6xD_n1d6o" \
        --form "file=@PATH/TO/FILE" \
        --form "csrf_token=IjYyYzhkNWQxMzA4MTZmMTQxMTliYTA5OTg2NWYzMWRmYzQ5MWM4Y2Ui.Dko4Zw.sZ-LLdGoxaNFUaySFFQMvyLecxc" \
        --compressed
-
+```
