@@ -76,7 +76,7 @@ Json Body:
 
 ```json
     {"ip":"test",
-     "hostnames: [],
+     "hostnames": [],
      "mac":"00:00:00:00:00:00",
      "description":"",
      "default_gateway":"None",
@@ -124,7 +124,30 @@ Json Body:
 Json Body:
 
 ```json
-    {"metadata":{"update_time":1533074349.898,"update_user":"","update_action":0,"creator":"UI Web","create_time":1533074349.898,"update_controller_action":"UI Web New","owner":"faraday"},"obj_id":"","owner":"faraday","parent":1156,"parent_type":"Host","type":"Vulnerability","ws":"api","confirmed":true,"data":"","desc":"Testing API","impact":{"accountability":false,"availability":false,"confidentiality":false,"integrity":false},"name":"test","owned":false,"policyviolations":[],"refs":[],"resolution":"","severity":"high","issuetracker":"","status":"opened","_attachments":{},"description":"","protocol":"","version":""}
+    {
+ "owner":"faraday",
+ "parent":1156,
+ "parent_type":"Host",
+ "type":"Vulnerability",
+ "ws":"api",
+ "confirmed":true,
+ "data":"",
+ "desc":"Testing API",
+ "impact": 
+ {"accountability":false,"availability":false,"confidentiality":false,"integrity":false},
+ "name":"test",
+ "owned":false,
+ "policyviolations":[],
+ "refs":[],
+ "resolution":"",
+ "severity":"high",
+ "issuetracker":"",
+ "status":"opened",
+ "_attachments":{},
+ "description":"",
+ "protocol":"",
+ "version":""
+}
 ```
 
 **Tasks:**
@@ -157,7 +180,13 @@ Json Body:
 Json Body:
 
 ```json
-    {"name":"test", "type":"TaskGroup", "group_type":"instance", "instance_of":"", "tCompletedtasks":0, "totaltasks":0}
+    {
+"name":"test", 
+"type":"TaskGroup", 
+"group_type":"instance", 
+"instance_of":"", 
+"tCompletedtasks":0, 
+"totaltasks":0}
 ```
 
 **Reports:**
@@ -175,7 +204,20 @@ Json Body:
 Json Body:
 
 ```json
-    {"name":"Testing-API","tags":[],"title":"Network XYZ","enterprise":"ACME INC","scope":"Scope","objectives":"Objetives","summary":"Summ","confirmed":false,"conclusions":"Conclusions","recommendations":"Recommendations","vuln_count":4,"template_name":"generic_default.docx","grouped":false}
+    {
+"name":"Testing-API",
+"tags":[],
+"title":"Network XYZ",
+"enterprise":"ACMEINC",
+"scope":"Scope",
+"objectives":"Objetives",
+"summary":"Summ",
+"confirmed":false,
+"conclusions":"Conclusions",
+"recommendations":"Recommendations",
+"vuln_count":4,
+"template_name":"generic_default.docx",
+"grouped":false}
 ```
 
 **Vulnerability Template:**
@@ -189,7 +231,17 @@ Json Body:
 Json Body:
 
 ```json
-    {"id":"","cwe":"","description":"Test","desc":"","exploitation":"high","name":"Testing API","references":[],"refs":[],"resolution":"","type":"vulnerability_template"}
+    {
+"cwe":"",
+"description":"Test",
+"desc":"",
+"exploitation":"high",
+"name":"Testing API",
+"references":[],
+"refs":[],
+"resolution":"",
+"type":"vulnerability_template"
+}
 ```
 
 **Credentials:**
@@ -204,7 +256,16 @@ Json Body:
 Json Body: 
 
 ```json
-    {"name":"Test","username":"faraday","metadata":{"update_time":1533075258220,"update_user":"","update_action":0,"creator":"UI Web","create_time":1533075258220,"update_controller_action":"","owner":""},"password":"changeme","type":"Cred","parent_type":"Host","parent":"1147","owner":"","description":""}
+    {
+"name":"Test",
+"username":"faraday",
+"password":"changeme",
+"type":"Cred",
+"parent_type":"Host",
+"parent":"1147",
+"owner":"",
+"description":""
+}
 ```
 
 **Comments:**
