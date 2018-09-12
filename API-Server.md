@@ -45,6 +45,8 @@ The endpoint for login is **/_api/login** and the json payload is:
 
 **Faraday Config:**
 
+Here are the list of API endpoints for license, users, workspace and authentication:
+
     (HEAD, POST, OPTIONS, GET) -> '/login' 
     (HEAD, OPTIONS, GET) -> '/logout' 
     (HEAD, OPTIONS, GET) -> '/session'
