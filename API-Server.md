@@ -4,8 +4,8 @@ Faraday has one API on the server:
 
 There are a number of examples on using this on our [[Faraday Plugin]] wiki page.
 
-To see information about the Client API, follow this link: https://github.com/infobyte/faraday/wiki/API-Client
-We recomment to use the new server API.
+To see information about the Client API, follow this link: https://github.com/infobyte/faraday/wiki/API-Client.
+We recommend to use the new server API, documented on this page.
 
 You can check all api endpoints with the command:
 
