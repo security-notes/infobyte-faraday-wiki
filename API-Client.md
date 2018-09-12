@@ -7,6 +7,7 @@ and one API on the Server:
 -  A **Server RESTful API** by default running on 127.0.0.1:5985
 
 To see information about the Server API, follow this link: https://github.com/infobyte/faraday/wiki/API-Server
+We recommend to use the server API instead of the client API.
 
 There are a number of examples on using this on our [[Faraday Plugin]] wiki page. There's further information on the persistance server documentation available in the _persistence/server/docs_ directory.
 
