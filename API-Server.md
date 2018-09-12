@@ -5,6 +5,11 @@ Faraday has one API on the server:
 There are a number of examples on using this on our [[Faraday Plugin]] wiki page.
 
 To see information about the Client API, follow this link: https://github.com/infobyte/faraday/wiki/API-Client
+You can check all api endpoints with the command:
+
+``` bash
+python manage.pyc show_urls
+```
 
 ### Methods: 
 
@@ -63,6 +68,8 @@ The endpoint for login is **/_api/login** and the json payload is:
 
 **Host:**
 
+This API endpoints allows you to change the Host objects: 
+
     (HEAD, OPTIONS, GET) -> '/v2/ws/<workspace_name>/hosts/'
     (POST, OPTIONS) -> '/v2/ws/<workspace_name>/hosts/'
     (HEAD, OPTIONS, GET) -> '/v2/ws/<workspace_name>/hosts/count/'
@@ -72,7 +79,7 @@ The endpoint for login is **/_api/login** and the json payload is:
     (PUT, OPTIONS) -> '/v2/ws/<workspace_name>/hosts/<object_id>/'
     (HEAD, OPTIONS, GET) -> '/v2/ws/<workspace_name>/hosts/<host_id>/services/'
 
-Json Body: 
+Json Body of the Host object: 
 
 ```json
     {"ip":"test",
@@ -86,6 +93,8 @@ Json Body:
 
 **Services:**
 
+This API endpoints allows you to change the Service objects: 
+
     (HEAD, OPTIONS, GET) -> '/v2/ws/<workspace_name>/services/'
     (POST, OPTIONS) -> '/v2/ws/<workspace_name>/services/'
     (HEAD, OPTIONS, GET) -> '/v2/ws/<workspace_name>/services/count/'
@@ -93,7 +102,8 @@ Json Body:
     (HEAD, OPTIONS, GET) -> '/v2/ws/<workspace_name>/services/<object_id>/'  
     (PUT, OPTIONS) -> '/v2/ws/<workspace_name>/services/<object_id>/'
 
-Json Body:
+Json Body of the Service object:
+
 ```json
     {
       "name":"test",
@@ -108,7 +118,8 @@ Json Body:
       "type":"Service"}
 ```
 
-**Status Report:**
+**Vulnerability:**
+This API endpoints allows you to change the Vulnerability objects: 
 
     (HEAD, OPTIONS, GET) -> '/v2/ws/<workspace_name>/vulns/'
     (POST, OPTIONS) -> '/v2/ws/<workspace_name>/vulns/'
@@ -121,7 +132,11 @@ Json Body:
     (POST, OPTIONS) -> '/v2/ws/<workspace>/upload_report'
     (HEAD, OPTIONS, GET) -> '/v2/ws/<workspace_name>/tags/'
 
-Json Body:
+Json Body of the Vulnerability object:
+
+type values can be:
+* vulnerability: Normal vulnerability, parent could be a service or a host.
+* vulnerability_web: Web vulnerability, parent can only be a service.
 
 ```json
     {
@@ -152,6 +167,8 @@ Json Body:
 
 **Tasks:**
 
+This API endpoints allows you to change the Task objects: 
+
     (HEAD, OPTIONS, GET) -> '/v2/ws/<workspace_name>/tasks/'
     (POST, OPTIONS) -> '/v2/ws/<workspace_name>/tasks/'
     (HEAD, OPTIONS, GET) -> '/v2/ws/<workspace_name>/tasks/count/'
@@ -177,7 +194,7 @@ Json Body:
     (HEAD, OPTIONS, GET) -> '/v2/methodology_template/'
     (POST, OPTIONS) -> '/v2/methodology_template/'
 
-Json Body:
+Json Body of the task object:
 
 ```json
     {
@@ -191,6 +208,8 @@ Json Body:
 
 **Reports:**
 
+This api endoint allows you to create reports from the API and download them:
+
     (HEAD, OPTIONS, GET) -> '/v2/ws/<workspace_name>/reports/'
     (POST, OPTIONS) -> '/v2/ws/<workspace_name>/reports/'
     (HEAD, OPTIONS, GET) -> '/v2/ws/<workspace_name>/reports/count/'
@@ -201,7 +220,7 @@ Json Body:
     (PUT, OPTIONS) -> '/v2/ws/<workspace_name>/reports/<object_id>/'
     (HEAD, OPTIONS, GET) -> '/v2/ws/<workspace_name>/reports/<report_id>/download/'
 
-Json Body:
+Json Body of the reports objects:
 
 ```json
     {
@@ -221,6 +240,7 @@ Json Body:
 ```
 
 **Vulnerability Template:**
+This API endpoints allows you to change the Vulnerability Template (VulnDB) objects: 
 
     (HEAD, OPTIONS, GET) -> '/v2/vulnerability_template/'
     (POST, OPTIONS) -> '/v2/vulnerability_template/'
@@ -246,6 +266,8 @@ Json Body:
 
 **Credentials:**
 
+This API endpoints allows you to change the Credential objects: 
+
     (OPTIONS, DELETE) -> '/v2/ws/<workspace_name>/credential/<object_id>/'
     (HEAD, OPTIONS, GET) -> '/v2/ws/<workspace_name>/credential/<object_id>/'
     (PUT, OPTIONS) -> '/v2/ws/<workspace_name>/credential/<object_id>/'
@@ -269,6 +291,7 @@ Json Body:
 ```
 
 **Comments:**
+This API endpoints allows you to change the Comment objects: 
 
     (HEAD, OPTIONS, GET) -> '/v2/ws/<workspace_name>/comment/count/'
     (OPTIONS, DELETE) -> '/v2/ws/<workspace_name>/comment/<object_id>/'
