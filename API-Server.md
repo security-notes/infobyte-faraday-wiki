@@ -74,8 +74,15 @@ The endpoint for login is **/_api/login** and the json payload is:
 
 Json Body: 
 
-    {"ip":"test","hostnames": [],"mac":"00:00:00:00:00:00","description":"","default_gateway":"None","os":"","owned":false,"owner":""}
-
+```json
+    {"ip":"test",
+     "hostnames: [],
+     "mac":"00:00:00:00:00:00",
+     "description":"",
+     "default_gateway":"None",
+     "os":"",
+     "owned":false,"owner":""}
+```
 
 **Services:**
 
@@ -88,7 +95,17 @@ Json Body:
 
 Json Body:
 ```json
-    {"name":"test","description":"","owned":false,"owner":"","ports":[8080],"protocol":"tcp","parent":1156,"status":"open","version":"","metadata":{"update_time":1533074261.944,"update_user":"","update_action":0,"creator":"","create_time":1533074261.944,"update_controller_action":"UI Web New","owner":""},"type":"Service"}
+    {
+      "name":"test",
+      "description":"",
+      "owned":false,
+      "owner":"",
+      "ports":[8080],
+      "protocol":"tcp",
+      "parent":1156,
+      "status":"open",
+      "version":"",
+      "type":"Service"}
 ```
 
 **Status Report:**
