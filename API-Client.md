@@ -315,3 +315,5 @@ The following endpoints are available:
 * GET /_api/ws/**workspace\_name**/doc/**doc\_id**: Get a generic object
 * PUT /_api/ws/**workspace\_name**/doc/**doc\_id**: Update or create a generic object
 * DELETE /_api/ws/**workspace\_name**/doc/**doc\_id**: Delete a generic object
+
+Here you can see an example script that creates a new Workspace:
