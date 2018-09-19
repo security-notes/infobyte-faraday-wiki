@@ -68,7 +68,9 @@ To use searcher tool, we must keep in mind some elements to specify such as curr
 
 
 Rules configurations examples
+
  1- We are going to change the severity to critical and confirmed to True all vulnerabilities that it name begin with ‘Device’ and its parent be ’50.56.220.123’ just if in this same host exists other vulnerability that have severity equals to info, and other vulnerability which creator be Nessus and it name begin with ‘OS’
+
     {
         'id': 'CLIENT_TEST_3',
         'model': 'Vulnerability',
@@ -77,15 +79,20 @@ Rules configurations examples
         'conditions': ["severity=info", "creator=Nessus"],
         'actions': ["--UPDATE:refs=VCritical", "--UPDATE:confirmed=True"]
     }
+
  2- In this example we are adding the item VCritical to more old vulnerability’s refs field  with creator Nessus, also set its confirmed value to True if in its parent with id '320131ea90e3986c8221291c683d6d19bfe8503b' exists another vulnerability with severity=info and creator=Nessus
+
     {
         'id': 'CU3A',
         'model': 'Vulnerability',
         'fields': ['name'],
         'actions': ["--UPDATE:confirmed=False"]
     }
+
  3- With this rule we can search pairs of similar vulnerabilities by name inside a same level and then to confirm the more recent of them, Ex ‘Auth error’ and ‘Auth error 2’
+
  4- This rule is similar to example 3, just we are going to select the more old vulnerability from current pair.
+
     {
         'id': 'CU3B',
         'model': 'Vulnerability',
@@ -93,13 +100,16 @@ Rules configurations examples
         'object': "--old",
         'actions': ["--UPDATE:confirmed=True"]    
     }
+
  5- We are going to apply the template “EN-Cifrado Debil (SSL weak ciphers)” to all vulnerabilities with name = “OS Identification”.
+
     {
             'id': 'CU5B',
             'model': 'Vulnerability',
             'object': " name=OS%Identification",
             'actions': ["--UPDATE:template=EN-Cifrado Debil (SSL weak ciphers)"]
     }
+
  6- We can remove all services with name “http” from the workspace
 
 
