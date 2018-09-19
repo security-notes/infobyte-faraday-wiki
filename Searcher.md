@@ -67,7 +67,7 @@ To use searcher tool, we must keep in mind some elements to specify such as curr
 
 
 
-Rules configurations examples
+## Rules configurations examples
 
  1- We are going to change the severity to critical and confirmed to True all vulnerabilities that it name begin with ‘Device’ and its parent be ’50.56.220.123’ just if in this same host exists other vulnerability that have severity equals to info, and other vulnerability which creator be Nessus and it name begin with ‘OS’
 
