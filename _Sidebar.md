@@ -25,6 +25,7 @@
   * [Tasks](https://github.com/infobyte/faraday/wiki/Tasks)
   * [Upload Report](https://github.com/infobyte/faraday/wiki/Upload-Report)
   * [Vulnerabilities Database](https://github.com/infobyte/faraday/wiki/Vulnerabilities-Database)
+  * [Searcher](https://github.com/infobyte/faraday/wiki/Searcher)
   * [Workspaces](https://github.com/infobyte/faraday/wiki/Workspaces)
   * [Workspace Comparison](https://github.com/infobyte/faraday/wiki/Workspace-Diff)
   * [Web Shell](https://github.com/infobyte/faraday/wiki/Web-Shell)
