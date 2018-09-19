@@ -1,4 +1,4 @@
-##Searcher script
+## Searcher script
 In order to search specifics objects inside your faraday workspace and then to execute several actions over it, we created searcher.
 
     $ ./searcher.py -h
@@ -15,7 +15,7 @@ In order to search specifics objects inside your faraday workspace and then to e
 
 This tool has some options, that can be printed with the following command line
 
-##How it works?
+## How it works?
 Searcher needs a rules list to be used, these rules allows to determinate concepts such as, specific object to select and actions that will be executed, if some conditions are met inside the current faraday workspace.
 Basically a rule has a structure like this:
 
