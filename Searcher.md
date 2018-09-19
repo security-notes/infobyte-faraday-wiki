@@ -58,7 +58,7 @@ Each rule has optional and mandatory fields, it depends of our purpose,
 
 
 Usage examples
-To use searcher tool, we must keep in mind some elements to specify such as current workspace (mandatory), faraday user and faraday password, these elements could be omitted if we are using the community version.
+To use searcher tool, we must keep in mind some elements to specify such as current workspace.
 
     $ ./searcher.py –w=my_workspace –s=http://127.0.0.1:5984 –u=faraday –p=changeme
     $ ./searcher.py –w=my_workspace (Community version)
