@@ -7,7 +7,7 @@ In order to search specifics objects inside your faraday workspace and then to e
     optional arguments:
     -h, --help            show this help message and exit
     -w WORKSPACE, --workspace WORKSPACE Search duplicated objects into this workspace
-    -s SERVER, --server SERVER Couchdb server
+    -s SERVER, --server SERVER server
     -u USER, --user USER Faraday user
     -p PASSWORD, --password PASSWORD Faraday password
     -o OUTPUT, --output OUTPUT Choose a custom output directory
@@ -58,7 +58,7 @@ Each rule has optional and mandatory fields, it depends of our purpose,
 
 
 Usage examples
-To use searcher tool, we must keep in mind some elements to specify such as current workspace (mandatory), couchDB server, faraday user and faraday password, these elements could be omitted if we are using the community version.
+To use searcher tool, we must keep in mind some elements to specify such as current workspace (mandatory), faraday user and faraday password, these elements could be omitted if we are using the community version.
 
     $ ./searcher.py –w=my_workspace –s=http://127.0.0.1:5984 –u=faraday –p=changeme
     $ ./searcher.py –w=my_workspace (Community version)
