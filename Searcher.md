@@ -1,5 +1,5 @@
 ## Searcher script
-In order to search specifics objects inside your faraday workspace and then to execute several actions over it, we created searcher.
+In order to search specifics objects inside your Faraday workspace and then to execute several actions over it, we created Searcher. This tool has some options, that can be printed with the following command line:
 
     $ ./searcher.py -h
     usage: searcher.py [-h] -w WORKSPACE [-s SERVER] [-u USER] [-p PASSWORD]  [-o OUTPUT] [-l LOG]
@@ -13,11 +13,10 @@ In order to search specifics objects inside your faraday workspace and then to e
     -o OUTPUT, --output OUTPUT Choose a custom output directory
     -l LOG, --log LOG     Choose a custom log level
 
-This tool has some options, that can be printed with the following command line
 
 ## How it works?
-Searcher needs a rules list to be used, these rules allows to determinate concepts such as, specific object to select and actions that will be executed, if some conditions are met inside the current faraday workspace.
-Basically a rule has a structure like this:
+Searcher needs a rules list to be used, these rules allows to determinate concepts such as, specific object to select and actions that will be executed, if some conditions are met inside the current Faraday workspace.
+Basically, a rule has a structure like this:
 
     [OBJECT]
     [IF]
@@ -42,8 +41,9 @@ With this in mind, we use this global structure of rule:
 
 Where the fields 'model', 'parent', 'fields' and 'object' allows to get the object that will be processed, and conditions field tells us when the actions can be executed.
 
-Rule description
-Each rule has optional and mandatory fields, it depends of our purpose,
+### Rule description
+
+Each rule has optional and mandatory fields, it depends of our purpose:
 
 |  			Field 		      |  			Description 		                                                                                                                                                                                                                      |  			Mandatory 		 |  			Examples 		                                                                                                                                                                               |  			Allowed values 		               |
 |--------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------|
@@ -57,19 +57,20 @@ Each rule has optional and mandatory fields, it depends of our purpose,
 
 
 
-Usage examples
-To use searcher tool, we must keep in mind some elements to specify such as current workspace.
+### Usage examples
+
+To use Searcher tool, we must keep in mind some elements to specify such as current workspace.
 
     $ ./searcher.py –w=my_workspace –s=http://127.0.0.1:5984 –u=faraday –p=changeme
     $ ./searcher.py –w=my_workspace (Community version)
 
-(mandatory) faraday user and faraday password, these elements could be omitted if we are using the community version.
+**Mandatory:** Faraday's user and password. These elements could be omitted if we are using the community version.
 
 
 
 ## Rules configurations examples
 
- 1- We are going to change the severity to critical and confirmed to True all vulnerabilities that it name begin with ‘Device’ and its parent be ’50.56.220.123’ just if in this same host exists other vulnerability that have severity equals to info, and other vulnerability which creator be Nessus and it name begin with ‘OS’
+ 1- We are going to change the severity to critical and the confirmed status to True to all the vulnerabilities whose names begin with ‘Device’ and parent be ’50.56.220.123’. The condition to make this change is that if in this same host exists another vulnerability that has its severity equals to info, and another vulnerability which creator is Nessus and its name begin with ‘OS’:
 
     {
         'id': 'CLIENT_TEST_3',
