@@ -1,5 +1,5 @@
 ## Searcher script
-In order to search specifics objects inside your Faraday workspace and then to execute several actions over it, we created Searcher. This tool has some options, that can be printed with the following command line:
+In order to search specific objects inside your Faraday workspace and execute several actions over them, we created **Searcher**. This tool has some options which can be printed with the following command:
 
     $ ./searcher.py -h
     usage: searcher.py [-h] -w WORKSPACE [-s SERVER] [-u USER] [-p PASSWORD]  [-o OUTPUT] [-l LOG]
@@ -14,8 +14,8 @@ In order to search specifics objects inside your Faraday workspace and then to e
     -l LOG, --log LOG     Choose a custom log level
 
 
-## How it works?
-Searcher needs a rules list to be used, these rules allows to determinate concepts such as, specific object to select and actions that will be executed, if some conditions are met inside the current Faraday workspace.
+## How does it work?
+**Searcher** needs a rule list to be used, these rules determine concepts such as _specific object to select_ and _actions that will be executed_ if some conditions are met inside the current Faraday workspace.
 Basically, a rule has a structure like this:
 
     [OBJECT]
@@ -39,11 +39,11 @@ With this in mind, we use this global structure of rule:
     }
 
 
-Where the fields 'model', 'parent', 'fields' and 'object' allows to get the object that will be processed, and conditions field tells us when the actions can be executed.
+Where the fields 'model', 'parent', 'fields' and 'object' allow to get the object that will be processed, and conditions field tells us when the actions can be executed.
 
 ### Rule description
 
-Each rule has optional and mandatory fields, it depends of our purpose:
+Each rule has optional and mandatory fields, it depends on our purpose:
 
 |  			Field 		      |  			Description 		                                                                                                                                                                                                                      |  			Mandatory 		 |  			Examples 		                                                                                                                                                                               |  			Allowed values 		               |
 |--------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------|
@@ -64,13 +64,13 @@ To use Searcher tool, we must keep in mind some elements to specify such as curr
     $ ./searcher.py –w=my_workspace –s=http://127.0.0.1:5984 –u=faraday –p=changeme
     $ ./searcher.py –w=my_workspace (Community version)
 
-**Mandatory:** Faraday's user and password. These elements could be omitted if we are using the community version.
+**Mandatory:** Faraday's user and password. These elements could be omitted if we are using the Community version.
 
 
 
 ## Rules configurations examples
 
- 1- We are going to change the severity to critical and the confirmed status to True to all the vulnerabilities whose names begin with ‘Device’ and parent be ’50.56.220.123’. The condition to make this change is that if in this same host exists another vulnerability that has its severity equals to info, and another vulnerability which creator is Nessus and its name begin with ‘OS’:
+ 1- We are going to change the severity to "critical" and the confirmed status to True on all the vulnerabilities whose names begin with ‘Device’ and parent is ’50.56.220.123’. The conditions to make this change is that there should be another vulnerability with severity "info" in this same host and another vulnerability which creator is Nessus and its name begin with ‘OS’:
 
     {
         'id': 'CLIENT_TEST_3',
@@ -81,7 +81,7 @@ To use Searcher tool, we must keep in mind some elements to specify such as curr
         'actions': ["--UPDATE:refs=VCritical", "--UPDATE:confirmed=True"]
     }
 
- 2- In this example we are adding the item VCritical to more old vulnerability’s refs field  with creator Nessus, also set its confirmed value to True if in its parent with id '320131ea90e3986c8221291c683d6d19bfe8503b' exists another vulnerability with severity=info and creator=Nessus
+ 2- In this example we are adding the item VCritical to older vulnerability’s refs field with creator Nessus, also set its confirmed value to True if in its parent with id '320131ea90e3986c8221291c683d6d19bfe8503b' exists another vulnerability with severity "info" and creator Nessus.
 
     {
         'id': 'CU3A',
@@ -92,7 +92,7 @@ To use Searcher tool, we must keep in mind some elements to specify such as curr
 
  3- With this rule we can search pairs of similar vulnerabilities by name inside a same level and then to confirm the more recent of them, Ex ‘Auth error’ and ‘Auth error 2’
 
- 4- This rule is similar to example 3, just we are going to select the more old vulnerability from current pair.
+ 4- This rule is similar to example 3, just we are going to select the older vulnerability from current pair.
 
     {
         'id': 'CU3B',
