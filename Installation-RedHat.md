@@ -16,7 +16,7 @@ yum groupinstall 'Development Tools'
 yum install ipython python-setuptools python-pip libffi-devel python-devel openssl-devel openldap-devel curl zsh libxslt-devel pkgconfig postgresql postgresql-libs libxml2-devel libxslt-devel libxml++-devel pygobject2-devel freetype-devel libjpeg-devel gtk+-devel gtk3-devel gtk2-devel vte-devel mailcap
 ```
 
-#### Create the inital set of databases for postgres to function
+#### Create the initial set of databases for postgres to function
 ```
 postgresql-setup initdb
 ```
@@ -37,7 +37,7 @@ host    all             all             ::1/128                 md5
 
 Either execute :
 ```
-./manage.py initdb
+python2 manage.py initdb
 ```
 or to do it manually:
 ```
@@ -114,7 +114,7 @@ pip2 install -r requirements_server.txt
 
 #### Start the server for the first time and exit once it fails
 ```
-./faraday-server.py
+python2 faraday-server.py
 ```
 
 #### Edit the default configuration file to bind on all local interfaces and add our couchdb credentials
@@ -156,7 +156,7 @@ python2 manage.pyc import_from_couchdb
 exit
 sudo nano /usr/lib/systemd/system/faraday-server.service
 ```
-The following service unit can be used as a templete
+The following service unit can be used as a template
 ```
 [Unit]
 Description=Faraday Web Server
