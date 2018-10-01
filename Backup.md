@@ -19,4 +19,6 @@ To restore a previously created backup turn again Faraday Client and Faraday Ser
 psql faraday < backup_file
 ```
 
+Remember: To restore the back you need to have the database empty.
+
 Check [more information about PostgreSQL](https://www.postgresql.org/docs/9.1/static/backup-dump.html) backups if you need more help.
