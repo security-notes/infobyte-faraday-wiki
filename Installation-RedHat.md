@@ -142,13 +142,13 @@ connection_string = postgresql+psycopg2://faraday_postgresql:<password>@localhos
 
 #### Build out the database and your admin user
 ```
-python2 manage.pyc create_tables
+python2 manage.pyc create-tables
 python2 manage.pyc createsuperuse
 ```
 
 #### Then if needed, you can import from couchdb
 ```
-python2 manage.pyc import_from_couchdb
+python2 manage.pyc import-from-couchdb
 ```
 
 #### Exit the faraday user shell and create a service unit to control the faraday server

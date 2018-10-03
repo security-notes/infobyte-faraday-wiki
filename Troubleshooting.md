@@ -69,7 +69,7 @@ IOError: [Errno 2] No such file or directory: '/home/leonardo/VERSION'
 
 Is Faraday Server running? Try running:
 ```
-./manage.py status_check
+./manage.py status-check
 ```
 That will give some information about the state Faraday is in at the moment.
 If the server is not running try:
@@ -245,7 +245,7 @@ There's a change the password on your server.ini wasn't updated or wrong. We mus
 
 Run the following command in order to execute PostgreSQL shell:
 
-    $ python manage.py sql_shell
+    $ python manage.py sql-shell
 
 Once you got into the sql_shell, let's take a look inside the table _faraday_user_ to see the users information. **It is important to be sure of the username we want to change the password.**
 

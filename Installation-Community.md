@@ -117,7 +117,7 @@ to the database:
 connection_string = postgresql+psycopg2://faraday_postgresql:YOURPASSWORD@localhost/faraday
 ```
 
-Then you should run `./manage.py create_tables` to create all the required
+Then you should run `./manage.py create-tables` to create all the required
 tables to make faraday work, and `./manage.py createsuperuser` to create an
 admin user.
 
@@ -129,7 +129,7 @@ using the `./manage.py initdb`, you should run the following command to import
 the data from CouchDB:
 
 ```
-$ python manage.py import_from_couchdb
+$ python manage.py import-from-couchdb
 ```
 
 #### Updating Nginx configuration

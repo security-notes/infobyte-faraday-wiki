@@ -10,7 +10,7 @@ We recommend to use the new server API, documented on this page.
 You can check all api endpoints with the command:
 
 ``` bash
-python manage.pyc show_urls
+python manage.pyc show-urls
 ```
 
 ### Methods: 

@@ -125,7 +125,7 @@ to the database:
 connection_string = postgresql+psycopg2://faraday_postgresql:YOURPASSWORD@localhost/faraday
 ```
 
-Then you should run `python manage.pyc create_tables` to create all the required
+Then you should run `python manage.pyc create-tables` to create all the required
 tables to make Faraday work, and `python manage.pyc createsuperuser` to create an
 admin user.
 
@@ -137,7 +137,7 @@ using the `python manage.pyc initdb`, you should run the following command to im
 the data from CouchDB:
 
 ```
-$ python manage.pyc import_from_couchdb
+$ python manage.pyc import-from-couchdb
 ```
 ***Note:*** beware of the number of users you have created in CouchDB, remember that you have already created one when you initialized PostgreSQL. The number of users that you have between CouchDB and PostgreSQL should not surpass the number of users you're allow to have according to your license.
 

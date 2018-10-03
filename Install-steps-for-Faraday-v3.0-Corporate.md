@@ -97,7 +97,7 @@ you had from the 2.7.2 version, including the users and its hashed passwords.
 
 Run the following command in order to execute PostgreSQL shell:
 
-    $ python manage.py sql_shell
+    $ python manage.py sql-shell
 
 Once you got into the sql_shell, let's take a look inside the table _faraday_user_ to see the users information. **It is important to be sure of the username we want to change the password.**
 
@@ -138,7 +138,7 @@ to the database:
 connection_string = postgresql+psycopg2://faraday_postgresql:YOURPASSWORD@localhost/faraday
 ```
 
-Then you should run `./manage.pyc create_tables` to create all the required
+Then you should run `./manage.pyc create-tables` to create all the required
 tables to make faraday work, and `./manage.pyc createsuperuser` to create an
 admin user.
 
@@ -150,7 +150,7 @@ using the `./manage.pyc initdb`, you should run the following command to import
 the data from CouchDB:
 
 ```
-python manage.pyc import_from_couchdb
+python manage.pyc import-from-couchdb
 ```
 
 #### Updating Nginx configuration
