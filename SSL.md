@@ -40,6 +40,7 @@ Below you can find a sample config file for NGINX.
         listen *:443;
         server_name _; #Change with the proper domain
 
+        client_max_body_size 50M;
         ssl on;
         ssl_certificate /etc/ssl/faraday.crt;
         ssl_certificate_key /etc/ssl/faraday.key;
