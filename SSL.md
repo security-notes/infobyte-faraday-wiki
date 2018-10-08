@@ -2,7 +2,7 @@ The recommended way to run Faraday using SSL is through NGINX.
 ## NGINX
 You can find a detailed guide on how to install it in the [official NGINX documentation](https://www.nginx.com/resources/wiki/start/topics/tutorials/install/).
 
-After installing and configuring NGINX the setup should be as follows:
+After installing and configuring NGINX, the setup should be as follows:
 
 * Faraday Server on port `5985` using HTTP (`~/.faraday/config/server.ini`)
 * GTK using HTTPS (`~/.faraday/config/user.xml`) and run:
