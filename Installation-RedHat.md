@@ -1,31 +1,59 @@
 ## Redhat 7
 ![](https://raw.githubusercontent.com/wiki/infobyte/faraday/images/platform/redhat.jpeg)
 
-#### Enable EPEL and REMI repositories for installing all needed deps.
+<a name="faraday-server"></a>
+### Faraday Server
+
+Faraday Server is the interface between PostgreSQL and Faraday Client and WebUI. The server's responsibility is to transmit information between the client or WebUI and PostgreSQL, and make sure that they are kept in sync. The Web UI client, which allows you to handle enormous workspaces from your favorite web browser.
+
+**Important:** You should keep in mind that is recommended to install Faraday server on the same instance as PostgreSQL.
+
+#### Downloading
+
+After the purchase you will receive an email with your credentials and a link to our **Customers Portal**. Use those credentials to log in to the site and you will get two links:
+
+* Download License - this is the tarball for the **Faraday License**
+* Download Faraday - this is the tarball for the actual **Faraday Code**
+
+Download both those packages and then:
+
+1. Create a new directory and unpack the **Faraday tarball** there. For example, `/home/user/Infobyte/faraday`.
+
+1. Unpack the **License Package** and place its contents in the `doc` directory. For example, using the path from **Step 1**, you should place the **License files** in `/home/user/Infobyte/faraday/doc`. Or run: 
+
+    ```
+    $ faraday-server --license-path path/to/license
+    ```
+
+After doing so, make sure to [install system dependencies](#server-system-dependencies), [install Python dependencies](#server-python-dependencies) and [configure the Server](#server-configuration).
+
+
+<a name="server-system-dependencies"></a>
+#### Installing system dependencies
+
+* Enable EPEL and REMI repositories for installing all needed deps.
 ```
 $ sudo wget http://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
 $ sudo rpm -Uvh epel-release-latest-7.noarch.rpm
 ```
-#### Install the default development tools to easy compile/install couchdb
+* Install the default development tools:
 ```
 $ sudo yum groupinstall 'Development Tools'
 ```
-
-#### Install Faraday dependencies.
+* Now, install the dependencies:
 ```
-$ sudo yum install ipython python-setuptools python-pip libffi-devel python-devel openssl-devel openldap-devel curl zsh libxslt-devel pkgconfig postgresql postgresql-libs libxml2-devel libxslt-devel libxml++-devel pygobject2-devel freetype-devel libjpeg-devel gtk+-devel gtk3-devel gtk2-devel vte-devel mailcap
-```
-
-#### Create the initial set of databases for postgres to function
-```
-postgresql-setup initdb
+$ sudo yum install python-setuptools python-pip libffi-devel python-devel openssl-devel openldap-devel curl zsh libxslt-devel pkgconfig postgresql postgresql-server postgresql-libs libxml2-devel libxslt-devel freetype-devel libjpeg-devel gtk+-devel gtk3-devel gtk2-devel mailcap
 ```
 
-#### Modify the localhost authenication type from ident to md5 witin hba config 
+* Create the initial set of databases for PostgreSQL to function:
 ```
-nano /var/lib/pgsql/data/pg_hba.conf
+$ sudo postgresql-setup initdb
 ```
-Change host IPV4 local and IPV6 local from ident to md5 
+
+* Modify the localhost authenication type from "ident" to "md5" within hba config. Change host IPV4 local and IPV6 local from "ident" to "md5":
+```
+# nano /var/lib/pgsql/data/pg_hba.conf
+```
 ```
 # IPv4 local connections:
 host    all             all             127.0.0.1/32            md5
@@ -33,150 +61,167 @@ host    all             all             127.0.0.1/32            md5
 host    all             all             ::1/128                 md5
 ```
 
-#### Setup Database and create faraday postgres user
 
-Either execute :
+<a name="server-python-dependencies"></a>
+#### Installing Python 2 dependencies
+
+Once you have the required system dependencies, you just have to install the Python modules needed to run the server using pip:
 ```
-python2 manage.py initdb
-```
-or to do it manually:
-```
-sudo -u postgres psql -c "CREATE ROLE faraday_postgresql WITH LOGIN PASSWORD 'PASSWORD'"
-sudo -u postgres createdb -O faraday_postgresql faraday
+$ sudo pip2 install -r requirements_server.txt -U
 ```
 
-#### Get a list of active zones. You might have more than the defaults.
+<a name="server-configuration"></a>
+#### Configuring Faraday Server
+
+#### Initializing PostgreSQL
+
+In order to initialize PostgreSQL database, generate your main _user_ and a __password__ and import your data from CouchDB (if it's the case), run the following command:
+
 ```
-firewall-cmd --get-active-zones
+$ python manage.pyc initdb
+```
+If you don't have CouchDB configured we assume this is a new installation, so a
+new user will be created.
+
+With CouchDB configured in the `server.ini` file, it will import all the data
+you had from the 2.7.2 version, including the users and its hashed passwords. 
+
+If you want to manually import the data from CouchDB, follow this [step](https://github.com/infobyte/faraday/wiki/Installation-RedHat/_edit#manually-importing-from-couchdb)
+
+Keep in mind the following items:
+
+* This commmand must be executed only when you run Faraday for the first time. 
+* If you can't login into to Faraday after running the command above due to invalid credentials, you can change your password through the PostgreSQL shell that Faraday has in it. Follow the next [instructions](https://github.com/infobyte/faraday/wiki/Troubleshooting#cant-login-after-importing-from-couch) in order to change your password and be able to login.
+
+* You should have the PostgreSQL service started. To do it run
+`systemctl start postgresql.service`.
+
+*  If at the moment you run this command, it throws an error, be sure
+you have sudo installed. Once you have installed it, run the command again.
+
+
+#### Manual PostgreSQL configuration
+
+If you need an advance configuration of the PostgreSQL database, like having a
+custom database name or run it in a separate host, the `python manage.pyc initdb`
+command probably won't be enough for you, so you should configure it manually
+by doing something like this:
+
+```
+$ sudo -u postgres psql -c "CREATE ROLE faraday_postgresql WITH LOGIN PASSWORD 'YOURPASSWORD'"
+$ sudo -u postgres createdb -O faraday_postgresql faraday
 ```
 
-#### If it's the default centos install,  you'll need to enable and start firewall.
-```
-sudo systemctl start firewalld
-sudo systemctl enable firewalld
-```
+Then, edit the `~/.faraday/config/server.ini` by adding the connection string
+to the database:
 
-#### Firewalld command to allow this port open to dmz:
 ```
-firewall-cmd --zone=public --add-port=5985/tcp   --permanent
-```
-
-#### If it's the default centos install, you'll likely want to also allow connections to ss.
-```
-firewall-cmd --zone=public --add-port=22/tcp   --permanent
-```
-
-#### Restart the firewalld service
-```
-firewall-cmd --reload
-```
-
-#### Update the version of pip included within setuptools
-```
-pip install --upgrade pip
-```
-
-#### Install virtualenv to nicely contain our python app 
-```
-pip install virtualenv
-```
-
-#### Create a new faraday user to run our python app
-```
-sudo adduser -r --home /opt/faraday/ -m --shell /bin/bash --comment "Faraday Service Account" faraday
-```
-
-#### Grab the latest version of faraday and put it within users home directory
-```
-cd /opt/
-git clone https://github.com/infobyte/faraday.git
-```
-#### Make the faraday user the owner of the application files 
-```
-chown -R faraday:faraday faraday/
-```
-
-#### Switch to the faraday user to setup local enviroment
-```
-su - faraday
-```
-
-#### Create a new virtual project for our faraday install and activate it
-```
-virtualenv faraday
-source faraday/bin/activate
-```
-
-#### install all of the required python packages
-```
-pip2 install -r requirements_server.txt
-```
-
-#### Start the server for the first time and exit once it fails
-```
-python2 faraday-server.py
-```
-
-#### Edit the default configuration file to bind on all local interfaces and add our couchdb credentials
-```
-vi /opt/faraday/.faraday/config/server.ini
-```
-The following can be used as a guide
-```
-[faraday_server]
-port=5985
-bind_address=0.0.0.0
-
-[couchdb]
-#Deprecated config
-host=localhost
-port=5984
-ssl_port=6984
-user=<user>
-password=<password>
-protocol=http
-
 [database]
-connection_string = postgresql+psycopg2://faraday_postgresql:<password>@localhost/faraday
+connection_string = postgresql+psycopg2://faraday_postgresql:YOURPASSWORD@localhost/faraday
 ```
 
-#### Build out the database and your admin user
+Then you should run `python manage.pyc create-tables` to create all the required
+tables to make Faraday work, and `python manage.pyc createsuperuser` to create an
+admin user.
+
+
+#### Manually importing from CouchDB
+
+If you were using Faraday 2.7.2 and setup the database manually instead of
+using the `python manage.pyc initdb`, you should run the following command to import
+the data from CouchDB:
+
 ```
-python2 manage.pyc create-tables
-python2 manage.pyc createsuperuse
+$ python manage.pyc import-from-couchdb
+```
+***Note:*** beware of the number of users you have created in CouchDB, remember that you have already created one when you initialized PostgreSQL. The number of users that you have between CouchDB and PostgreSQL should not surpass the number of users you're allow to have according to your license.
+
+#### Exposing the Server
+
+In order to access Faraday server from a different box, you need to expose the server. In order to do so, follow these instructions:
+
+*  Edit the file located in ~/.faraday/config/server.ini and under the section [faraday-server] set the param bind-address to 0.0.0.0, it should look something like this:
+
+```
+[faraday-server]
+...
+bind_address=0.0.0.0
 ```
 
-#### Then if needed, you can import from couchdb
+*  Get a list of active zones. You might have more than the defaults.
 ```
-python2 manage.pyc import-from-couchdb
-```
-
-#### Exit the faraday user shell and create a service unit to control the faraday server
-```
-exit
-sudo nano /usr/lib/systemd/system/faraday-server.service
-```
-The following service unit can be used as a template
-```
-[Unit]
-Description=Faraday Web Server
-After=network.target
-
-[Service]
-Type=forking
-ExecStart=/opt/faraday/faraday/bin/python2 /opt/faraday/faraday-server.py
-Restart=always
-RestartSec=30
-StartLimitInterval=600
-StartLimitBurst=3
-User=faraday
-TimeoutSec=1200
-
-[Install]
-WantedBy=multi-user.target
+$ firewall-cmd --get-active-zones
 ```
 
-License
-----
+*  If it's the default CentOS install,  you'll need to enable and start firewall.
+```
+$ sudo systemctl start firewalld
+$ sudo systemctl enable firewalld
+```
+*  Firewalld command to add port 5985 (port used by Faraday):
+```
+$ firewall-cmd --zone=public --add-port=5985/tcp --permanent
+```
 
-MIT
+*  If it's the default centos install, you'll likely want to also allow connections to ss:
+```
+$ firewall-cmd --zone=public --add-port=22/tcp --permanent
+```
+
+*  Restart the firewalld service:
+```
+$ firewall-cmd --reload
+```
+#### Running
+
+Once everything is installed and the server is configured, you can now proceed to run the Faraday server script:
+
+```
+$ python2 faraday-server.pyc
+```
+
+If you want to run the server in background mode, you should use the `--start` option:
+
+```
+$ python2 faraday-server.pyc --start
+```
+
+This is the recommended way to do this. Other methods like using the bash `&` could cause unexpected IOErrors and other related exceptions.
+
+***
+
+### Faraday Client
+<a name="client-python-dependencies"></a>
+#### Installing Python 2 dependencies
+
+Once you have the required system dependencies, you just have to install the Python modules needed to run the client using `pip`:
+
+```
+$ pip2 install -r requirements.txt
+```
+
+<a name="client-configuration"></a>
+#### Configuration
+
+Now you need to configure every Faraday instance so it can connect to the server.
+
+* If you're using the GTK interface click on the Preferences icon ![](https://raw.github.com/wiki/infobyte/faraday/images/installation/gtk_preferences_icon.png) and fill in the server URL, for example **http://127.0.0.1:5985**
+
+![](https://raw.github.com/wiki/infobyte/faraday/images/installation/gtk_preferences_dialog.png)
+
+* If you are using the ***--gui=no-gui*** option
+
+Edit the file: `~/.faraday/config/user.xml`
+And search for the following **api_uri** tag and set it to the server URL, for example:
+
+`<api_uri>http://127.0.0.1:5985</api_uri>`
+
+#### Running
+
+Once you have already configured the client and have Faraday Server running, you simply have to run:
+
+```
+$ python2 faraday.pyc
+```
+
+Some distributions or installations require additional steps, so look down below if you are using something different than Debian or Ubuntu, or if you need to apply some configuration to the client.
