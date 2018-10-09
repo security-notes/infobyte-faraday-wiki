@@ -3,17 +3,17 @@
 
 #### Enable EPEL and REMI repositories for installing all needed deps.
 ```
-wget http://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
-rpm -Uvh epel-release-latest-7.noarch.rpm
+$ sudo wget http://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
+$ sudo rpm -Uvh epel-release-latest-7.noarch.rpm
 ```
 #### Install the default development tools to easy compile/install couchdb
 ```
-yum groupinstall 'Development Tools'
+$ sudo yum groupinstall 'Development Tools'
 ```
 
 #### Install Faraday dependencies.
 ```
-yum install ipython python-setuptools python-pip libffi-devel python-devel openssl-devel openldap-devel curl zsh libxslt-devel pkgconfig postgresql postgresql-libs libxml2-devel libxslt-devel libxml++-devel pygobject2-devel freetype-devel libjpeg-devel gtk+-devel gtk3-devel gtk2-devel vte-devel mailcap
+$ sudo yum install ipython python-setuptools python-pip libffi-devel python-devel openssl-devel openldap-devel curl zsh libxslt-devel pkgconfig postgresql postgresql-libs libxml2-devel libxslt-devel libxml++-devel pygobject2-devel freetype-devel libjpeg-devel gtk+-devel gtk3-devel gtk2-devel vte-devel mailcap
 ```
 
 #### Create the initial set of databases for postgres to function
