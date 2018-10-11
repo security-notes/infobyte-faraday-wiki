@@ -225,3 +225,27 @@ $ python2 faraday.pyc
 ```
 
 Some distributions or installations require additional steps, so look down below if you are using something different than Debian or Ubuntu, or if you need to apply some configuration to the client.
+
+***
+
+### Troubleshooting
+ 
+If you were installing Python dependencies and suddenly you got this message:
+
+> Cannot uninstall [dependency]. It is a distutils installed project and thus we cannot accurately determine which files belong to it which would lead to only a partial uninstall.
+
+You should delete that dependency in order to be able to upgrade it to the version that is required by Faraday. Please follow these instructions:
+
+* Search the right name of the dependency to be uninstall:
+```
+    $ yum list installed | grep [dependency]
+```
+* Once you have the right name of the dependency, uninstall it:
+```
+    $ sudo yum remove [dependency]
+```
+* Install Python dependencies by running this command again:
+```
+    $ sudo pip2 install -r requirements_server.txt -U
+```
+**Note:** if after trying to install the dependencies again, you have the same issue but with another dependency, repeat the instructions above.
