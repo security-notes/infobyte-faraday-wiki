@@ -2,7 +2,7 @@
 
 Saving backups is always a good choice, whether it is to keep data safe or to share with others.
 
-## Faraday configuration and evidence
+## Faraday configuration and evidence backup
 Faraday server stores configuration, processed reports and saves evidence in the directory .faraday.
 Remember to do a backup of the .faraday directory of the user running faraday-server.py.
 
