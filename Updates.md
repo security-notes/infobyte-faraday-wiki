@@ -6,27 +6,29 @@ If you have Faraday Client and Server running in the same box and you are using 
 
 ```
 git pull
+pip install -r requirements.txt -U
+pip install -r requirements_server.txt -U
 ``` 
 
 That's it! You're ready to go!
 
-#### For separate Client and Server instances
+#### Update Faraday server
 
-If the client and the server don't run on the same machine, first update the server run:
+Faraday server update commands:
 
  ```
 git pull
+pip install -r requirements_server.txt -U
 ``` 
 
-If you cloned the repo, or download and untar otherwise.
+#### Update Faraday client
 
-After updating the server, run 
+Faraday client update commands:
 
-```
+ ```
 git pull
+pip install -r requirements.txt -U
 ``` 
-
-to update the client.
 
 
 ### Commercial version update
@@ -41,7 +43,9 @@ to update the client.
 
 1. In some cases it is necessary to update the license (when you upgrade your subscription, for example). If that is the case, download the new license from the **Faraday Customer Portal** and unpack its contents in `~/.faraday/doc/`.
 
-1. Run ```pip install -r requirements.txt -U``` in the client box and ```pip install -r requirements_server.txt -U``` in the server to update the Python Dependencies.
+1. Run ```pip install -r requirements.txt -U``` in the client box
+
+1. Run ```pip install -r requirements_server.txt -U``` in the server to update the Python Dependencies.
 
 1. Run the server using ```./faraday-server.pyc ```.
 
