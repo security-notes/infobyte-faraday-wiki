@@ -40,4 +40,10 @@ To group vulnerabilities by field you can use the **Group By** button. After the
 
 ![](https://raw.githubusercontent.com/wiki/infobyte/faraday/images/status_report/vulns_group_by.png)
 
-<a name="manage"></a>
+## Confirmed
+
+You can filter your vulnerabilities by confirmed, unconfirmed or all as shown in this gif:
+![](https://raw.githubusercontent.com/wiki/infobyte/faraday/images/status_report/Unconfirmed.gif)
+
+
+
