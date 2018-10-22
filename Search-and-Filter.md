@@ -34,6 +34,7 @@ Examples:
 
 ![](https://raw.github.com/wiki/infobyte/faraday/images/status_report/search_by_many_fields.png)
 
+![](https://raw.github.com/wiki/infobyte/faraday/images/status_report/multiple-search.gif)
 ## Grouping
 
 To group vulnerabilities by field you can use the **Group By** button. After the vulns are grouped you can select them for easy batch editing.
@@ -44,6 +45,5 @@ To group vulnerabilities by field you can use the **Group By** button. After the
 
 You can filter your vulnerabilities by confirmed, unconfirmed or all as shown in this gif:
 ![](https://raw.githubusercontent.com/wiki/infobyte/faraday/images/status_report/Unconfirmed.gif)
-
 
 
