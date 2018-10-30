@@ -51,14 +51,13 @@ After doing the modifications save the file and run the `./faraday-server.pyc --
 
 ### Configuration example
 
-Assuming that our domain name is: "example.com" and our groups are defined as: "fadmin", "fclient" and "fpentester", this is how our LDAP configuration should look like this: 
-
-![](https://raw.github.com/wiki/infobyte/faraday/images/ldap/user_view.png)
-
-Now, assuming that the user "admin_user" is member of group "fadmin", the user's properties should look like this:
+Assuming that our domain name is: **example.com** and our groups are defined as: _fadmin_, _fclient_ and _fpentester_; our LDAP configuration should look like this: 
 
 ![](https://raw.github.com/wiki/infobyte/faraday/images/ldap/domain_view.png)
 
+Now, assuming that the user _admin_user_ is a member of group _fadmin_, the user's properties should look like this:
+
+![](https://raw.github.com/wiki/infobyte/faraday/images/ldap/user_view.png)
 
 ### Migrating to LDAP
 
