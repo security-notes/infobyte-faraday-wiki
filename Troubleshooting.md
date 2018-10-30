@@ -62,6 +62,8 @@ IOError: [Errno 2] No such file or directory: '/home/leonardo/VERSION'
 * [Updating Nginx Configuration](#updating-nginx-configuration)
 * [Error while making backup of the database](#backup-error)
 * [GTK Error: No ports available](#no-ports-available)
+* [Burp Plugin Crashes](#burp-plugin-crashes)
+
 ## Answers
 
 <a name="cant-access-web"></a>
@@ -310,6 +312,17 @@ Go into the file user.xml locates in .faraday/config/
   <api_restful_con_info_port>9977</api_restful_con_info_port>
 
 Change localhost for 127.0.0.1 and try again.
+
+[ [index] ](#index)
+
+<a name='burp-plugin-crashes'></a>
+### Burp Plugin Crashes
+There's a problem with the last version of jruby JRuby (9.2.0.0).
+You must downgrade to the version JRuby 9.1.17.0.
+
+Here you have the GitHub Issue:
+https://github.com/jruby/jruby/issues/5269
+
 
 [ [index] ](#index)
 Is your question not listed here? [Contact us](https://github.com/infobyte/faraday/issues)
