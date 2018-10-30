@@ -49,6 +49,17 @@ disconnect_timeout = 2.0
 
 After doing the modifications save the file and run the `./faraday-server.pyc --write-config` to apply the changes. Run this command every time you change the LDAP configuration.
 
+### Configuration example
+
+Assuming that our domain name is: "example.com" and our groups are defined as: "fadmin", "fclient" and "fpentester", this is how our LDAP configuration should look like this: 
+
+![](https://raw.github.com/wiki/infobyte/faraday/images/ldap/user_view.png)
+
+Now, assuming that the user "admin_user" is member of group "fadmin", the user's properties should look like this:
+
+![](https://raw.github.com/wiki/infobyte/faraday/images/ldap/domain_view.png)
+
+
 ### Migrating to LDAP
 
 1. Logout all clients (WEBUI and GTK) and users and then stop Faraday Server.
