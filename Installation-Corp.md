@@ -80,7 +80,7 @@ Please consult with your distribution documentation to install the dependencies 
 Once you have the required system dependencies, you just have to install the Python modules needed to run the server using `pip`:
 
 ```
-$ pip2 install -r requirements_server.txt
+$ pip2 install -r requirements_server.txt -U
 ```
 #### Initializing PostgreSQL
 
