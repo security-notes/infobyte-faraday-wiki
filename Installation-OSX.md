@@ -127,8 +127,8 @@ command probably won't be enough for you, so you should configure it manually
 by doing something like this:
 
 ```
-sudo -u postgres psql -c "CREATE ROLE faraday_postgresql WITH LOGIN PASSWORD 'YOURPASSWORD'"
-sudo -u postgres createdb -O faraday_postgresql faraday
+psql -c "CREATE ROLE faraday_postgresql WITH LOGIN PASSWORD 'YOURPASSWORD'"
+createdb -O faraday_postgresql faraday
 ```
 
 Then, edit the `~/.faraday/config/server.ini` by adding the connection string
