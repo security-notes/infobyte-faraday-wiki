@@ -157,7 +157,7 @@ $ python manage.pyc import-from-couchdb
 ***Note:*** beware of the number of users you have created in CouchDB, remember that you have already created one when you initialized PostgreSQL. The number of users that you have between CouchDB and PostgreSQL should not surpass the number of users you're allow to have according to your license.
 
 
-Almost there! Start Faraday's server:
+## Almost there! Start Faraday's server:
 
     $ cd faraday-dev
     $ ./faraday.py --gui=nogui
