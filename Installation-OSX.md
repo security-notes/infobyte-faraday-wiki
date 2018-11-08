@@ -52,6 +52,47 @@ If this is not the case you can change the PATH to use the /usr/local/bin:
 
 If you want to revert this change just delete the link executed in the previous command.
 
+### Git
+
+We need Git in order to get Faraday from Github. Run:
+
+    $ brew install git
+
+### Faraday
+This is the code for our Community edition. 
+Here you have the steps to get the source code for our [ Professional](https://github.com/infobyte/faraday/wiki/Installation-Pro#downloading) and [Corporate](https://github.com/infobyte/faraday/wiki/Installation-Corp#downloading) editions.
+
+Run:
+
+    $ git clone https://github.com/infobyte/faraday.git faraday-dev
+
+### Dependencies and other Python libraries via PIP
+
+Installing Python via brew will also install pip. Now we need to use pip to install the requirements:
+
+`pip install -r requirements.txt`
+
+If you have issues building psycopg2:
+
+    $ brew install postgresql
+    $ pip install psycopg2
+
+
+### GTK
+
+We need a few other packages from brew before you can use the client:
+
+    $ brew install vte3 
+    $ brew install pygobject3 --with-python@2
+
+### ZSH
+
+Faraday needs [ZSH](http://www.zsh.org/) and curl to connect to the server. To install it run:
+
+    $ brew install zsh curl
+
+### Going for it!
+
 #### Initializing PostgreSQL
 
 In order to initialize PostgreSQL database, generate your main _user_ and a __password__ and import your data from CouchDB (if it's the case), run the following command:
@@ -78,7 +119,6 @@ distro.
 
 *  If at the moment you run this command, it throws an error, be sure
 you have sudo installed. Once you have installed it, run the command again.
-
 
 #### Manual PostgreSQL configuration
 
@@ -116,48 +156,6 @@ $ python manage.pyc import-from-couchdb
 ```
 ***Note:*** beware of the number of users you have created in CouchDB, remember that you have already created one when you initialized PostgreSQL. The number of users that you have between CouchDB and PostgreSQL should not surpass the number of users you're allow to have according to your license.
 
-
-
-### Git
-
-We need Git in order to get Faraday from Github. Run:
-
-    $ brew install git
-
-### Faraday
-This is the code for our Community edition. 
-Here you have the steps to get the source code for our [ Professional](https://github.com/infobyte/faraday/wiki/Installation-Pro#downloading) and [Corporate](https://github.com/infobyte/faraday/wiki/Installation-Corp#downloading) editions.
-
-Run:
-
-    $ git clone https://github.com/infobyte/faraday.git faraday-dev
-
-### Dependencies and other Python libraries via PIP
-
-Installing Python via brew will also install pip. Now we need to use pip to install the requirements:
-
-`pip install -r requirements.txt`
-
-If you have issues building psycopg2 (needed for Metasploit Online Module)
-
-    $ brew install postgresql
-    $ pip install psycopg2
-
-
-### GTK
-
-We need a few other packages from brew before you can use the client:
-
-    $ brew install vte3 
-    $ brew install pygobject3 --with-python@2
-
-### ZSH
-
-Faraday needs [ZSH](http://www.zsh.org/) and curl to connect to the server. To install it run:
-
-    $ brew install zsh curl
-
-### Going for it!
 
 Almost there! Start Faraday's server:
 
