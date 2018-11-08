@@ -114,8 +114,7 @@ Keep in mind the following items:
 * If you can't login into to Faraday after running the command above due to invalid credentials, you can change your password through the PostgreSQL shell that Faraday has in it. Follow the next [instructions](https://github.com/infobyte/faraday/wiki/Troubleshooting#cant-login-after-importing-from-couch) in order to change your password and be able to login.
 
 * You should have the PostgreSQL service started. To do it run
-`systemctl start postgresql` or the equivalent command for your GNU/Linux
-distro.
+`brew services start postgresql`
 
 *  If at the moment you run this command, it throws an error, be sure
 you have sudo installed. Once you have installed it, run the command again.
