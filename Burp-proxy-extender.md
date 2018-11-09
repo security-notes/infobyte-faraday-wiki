@@ -1,7 +1,7 @@
 This plugin is a script developed in JRuby as a extender to the Burp Proxy API (Pro/Community).
 
 ### Dependencies
-Use the last JRuby Version Complete [[http://www.jruby.org/download]]
+Get the last JRuby Version Complete [[http://www.jruby.org/download]]
 
 To load the ruby interpreter in burp, go to Extender->Options, and in the Ruby Environment section set the PATH of the jruby-complete.jar file.
 
