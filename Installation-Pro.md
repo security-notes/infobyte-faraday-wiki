@@ -27,7 +27,11 @@ Download both those packages and then:
 
 1. Create a new directory and unpack the **Faraday tarball** there. For example, `/home/user/Infobyte/faraday`.
 
-1. Unpack the **License Package** and place its contents in the `doc` directory. For example, using the path from **Step 1**, you should place the **License files** in `/home/user/Infobyte/faraday/doc`.
+1. Unpack the **License Package** and place its contents in the `doc` directory. For example, using the path from **Step 1**, you should place the **License files** in `/home/user/Infobyte/faraday/doc`. Or run: 
+
+    ```
+    $ python2 faraday-server.pyc --license-path path/to/license
+    ```
 
 After doing so, make sure to [install system dependencies](#server-system-dependencies), [install Python dependencies](#server-python-dependencies) and [configure the Server](#server-configuration).
 
