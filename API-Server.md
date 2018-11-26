@@ -52,36 +52,36 @@ Here are the list of API endpoints for license, users, workspace and authenticat
     (HEAD, OPTIONS, GET) -> '/session'
     (HEAD, POST, OPTIONS, GET) -> '/change' 
     (HEAD, OPTIONS, GET) -> '/config' 
-    (HEAD, OPTIONS, GET) -> '/_api/vs/licenses/'
-    (POST, OPTIONS) -> '/_api/vs/licenses/'
-    (OPTIONS, DELETE) -> '/_api/vs/licenses/<object_id>/'
-    (HEAD, OPTIONS, GET) -> '/_api/vs/licenses/<object_id>/'
-    (PUT, OPTIONS) -> '/_api/vs/licenses/<object_id>/'
-    (OPTIONS, DELETE) -> '/_api/vs/users/<object_id>/'
-    (HEAD, OPTIONS, GET) -> '/_api/vs/users/<object_id>/'
-    (PUT, OPTIONS) -> '/_api/vs/users/<object_id>/'
-    (HEAD, OPTIONS, GET) -> '/_api/vs/users/'
-    (POST, OPTIONS) -> '/_api/vs/users/'
-    (HEAD, OPTIONS, GET) -> '/_api/vs/in
-    (HEAD, OPTIONS, GET) -> '/_api/vs/ws/'
-    (POST, OPTIONS) -> '/_api/vs/ws/'
-    (OPTIONS, DELETE) -> '/_api/vs/ws/<object_id>/'
-    (HEAD, OPTIONS, GET) -> '/_api/vs/ws/<object_id>/'
-    (PUT, OPTIONS) -> '/_api/vs/ws/<object_id>/'
+    (HEAD, OPTIONS, GET) -> '/_api/v2/licenses/'
+    (POST, OPTIONS) -> '/_api/v2/licenses/'
+    (OPTIONS, DELETE) -> '/_api/v2/licenses/<object_id>/'
+    (HEAD, OPTIONS, GET) -> '/_api/v2/licenses/<object_id>/'
+    (PUT, OPTIONS) -> '/_api/v2/licenses/<object_id>/'
+    (OPTIONS, DELETE) -> '/_api/v2/users/<object_id>/'
+    (HEAD, OPTIONS, GET) -> '/_api/v2/users/<object_id>/'
+    (PUT, OPTIONS) -> '/_api/v2/users/<object_id>/'
+    (HEAD, OPTIONS, GET) -> '/_api/v2/users/'
+    (POST, OPTIONS) -> '/_api/v2/users/'
+    (HEAD, OPTIONS, GET) -> '/_api/v2/in
+    (HEAD, OPTIONS, GET) -> '/_api/v2/ws/'
+    (POST, OPTIONS) -> '/_api/v2/ws/'
+    (OPTIONS, DELETE) -> '/_api/v2/ws/<object_id>/'
+    (HEAD, OPTIONS, GET) -> '/_api/v2/ws/<object_id>/'
+    (PUT, OPTIONS) -> '/_api/v2/ws/<object_id>/'
 
 
 **Host:**
 
 This API endpoints allows you to change the Host objects: 
 
-    (HEAD, OPTIONS, GET) -> '/_api/vs/ws/<workspace_name>/hosts/'
-    (POST, OPTIONS) -> '/_api/vs/ws/<workspace_name>/hosts/'
-    (HEAD, OPTIONS, GET) -> '/_api/vs/ws/<workspace_name>/hosts/count/'
-    (HEAD, OPTIONS, GET) -> '/_api/vs/ws/<workspace_name>/hosts/countVulns/'
-    (OPTIONS, DELETE) -> '/_api/vs/ws/<workspace_name>/hosts/<object_id>/'
-    (HEAD, OPTIONS, GET) -> '/_api/vs/ws/<workspace_name>/hosts/<object_id>/'
-    (PUT, OPTIONS) -> '/_api/vs/ws/<workspace_name>/hosts/<object_id>/'
-    (HEAD, OPTIONS, GET) -> '/_api/vs/ws/<workspace_name>/hosts/<host_id>/services/'
+    (HEAD, OPTIONS, GET) -> '/_api/v2/ws/<workspace_name>/hosts/'
+    (POST, OPTIONS) -> '/_api/v2/ws/<workspace_name>/hosts/'
+    (HEAD, OPTIONS, GET) -> '/_api/v2/ws/<workspace_name>/hosts/count/'
+    (HEAD, OPTIONS, GET) -> '/_api/v2/ws/<workspace_name>/hosts/countVulns/'
+    (OPTIONS, DELETE) -> '/_api/v2/ws/<workspace_name>/hosts/<object_id>/'
+    (HEAD, OPTIONS, GET) -> '/_api/v2/ws/<workspace_name>/hosts/<object_id>/'
+    (PUT, OPTIONS) -> '/_api/v2/ws/<workspace_name>/hosts/<object_id>/'
+    (HEAD, OPTIONS, GET) -> '/_api/v2/ws/<workspace_name>/hosts/<host_id>/services/'
 
 Json Body of the Host object: 
 
@@ -99,12 +99,12 @@ Json Body of the Host object:
 
 This API endpoints allows you to change the Service objects: 
 
-    (HEAD, OPTIONS, GET) -> '/_api/vs/ws/<workspace_name>/services/'
-    (POST, OPTIONS) -> '/_api/vs/ws/<workspace_name>/services/'
-    (HEAD, OPTIONS, GET) -> '/_api/vs/ws/<workspace_name>/services/count/'
-    (OPTIONS, DELETE) -> '/_api/vs/ws/<workspace_name>/services/<object_id>/'
-    (HEAD, OPTIONS, GET) -> '/_api/vs/ws/<workspace_name>/services/<object_id>/'  
-    (PUT, OPTIONS) -> '/_api/vs/ws/<workspace_name>/services/<object_id>/'
+    (HEAD, OPTIONS, GET) -> '/_api/v2/ws/<workspace_name>/services/'
+    (POST, OPTIONS) -> '/_api/v2/ws/<workspace_name>/services/'
+    (HEAD, OPTIONS, GET) -> '/_api/v2/ws/<workspace_name>/services/count/'
+    (OPTIONS, DELETE) -> '/_api/v2/ws/<workspace_name>/services/<object_id>/'
+    (HEAD, OPTIONS, GET) -> '/_api/v2/ws/<workspace_name>/services/<object_id>/'  
+    (PUT, OPTIONS) -> '/_api/v2/ws/<workspace_name>/services/<object_id>/'
 
 Json Body of the Service object:
 
@@ -125,16 +125,16 @@ Json Body of the Service object:
 **Vulnerability:**
 This API endpoints allows you to change the Vulnerability objects: 
 
-    (HEAD, OPTIONS, GET) -> '/_api/vs/ws/<workspace_name>/vulns/'
-    (POST, OPTIONS) -> '/_api/vs/ws/<workspace_name>/vulns/'
-    (HEAD, OPTIONS, GET) -> '/_api/vs/ws/<workspace_name>/vulns/count/'
-    (HEAD, OPTIONS, GET) -> '/_api/vs/ws/<workspace_name>/vulns/timeline/'
-    (OPTIONS, DELETE) -> '/_api/vs/ws/<workspace_name>/vulns/<object_id>/'
-    (HEAD, OPTIONS, GET) -> '/_api/vs/ws/<workspace_name>/vulns/<object_id>/'
-    (PUT, OPTIONS) -> '/_api/vs/ws/<workspace_name>/vulns/<object_id>/'
-    (HEAD, OPTIONS, GET) -> '/_api/vs/ws/<workspace_name>/vulns/<vuln_id>/attachment/<attachment_filename>/' 
-    (POST, OPTIONS) -> '/_api/vs/ws/<workspace>/upload_report'
-    (HEAD, OPTIONS, GET) -> '/_api/vs/ws/<workspace_name>/tags/'
+    (HEAD, OPTIONS, GET) -> '/_api/v2/ws/<workspace_name>/vulns/'
+    (POST, OPTIONS) -> '/_api/v2/ws/<workspace_name>/vulns/'
+    (HEAD, OPTIONS, GET) -> '/_api/v2/ws/<workspace_name>/vulns/count/'
+    (HEAD, OPTIONS, GET) -> '/_api/v2/ws/<workspace_name>/vulns/timeline/'
+    (OPTIONS, DELETE) -> '/_api/v2/ws/<workspace_name>/vulns/<object_id>/'
+    (HEAD, OPTIONS, GET) -> '/_api/v2/ws/<workspace_name>/vulns/<object_id>/'
+    (PUT, OPTIONS) -> '/_api/v2/ws/<workspace_name>/vulns/<object_id>/'
+    (HEAD, OPTIONS, GET) -> '/_api/v2/ws/<workspace_name>/vulns/<vuln_id>/attachment/<attachment_filename>/' 
+    (POST, OPTIONS) -> '/_api/v2/ws/<workspace>/upload_report'
+    (HEAD, OPTIONS, GET) -> '/_api/v2/ws/<workspace_name>/tags/'
 
 Json Body of the Vulnerability object:
 
@@ -173,30 +173,30 @@ type values can be:
 
 This API endpoints allows you to change the Task objects: 
 
-    (HEAD, OPTIONS, GET) -> '/_api/vs/ws/<workspace_name>/tasks/'
-    (POST, OPTIONS) -> '/_api/vs/ws/<workspace_name>/tasks/'
-    (HEAD, OPTIONS, GET) -> '/_api/vs/ws/<workspace_name>/tasks/count/'
-    (OPTIONS, DELETE) -> '/_api/vs/ws/<workspace_name>/tasks/<object_id>/'
-    (HEAD, OPTIONS, GET) -> '/_api/vs/ws/<workspace_name>/tasks/<object_id>/'
-    (PUT, OPTIONS) -> '/_api/vs/ws/<workspace_name>/tasks/<object_id>/'
-    (PUT, OPTIONS) -> '/_api/vs/ws/<workspace_name>/taskGroups/manualimport/'
-    (HEAD, OPTIONS, GET) -> '/_api/vs/ws/<workspace_name>/taskGroups/import/'
-    (HEAD, OPTIONS, GET) -> '/_api/vs/ws/<workspace_name>/taskGroups/count/'
-    (OPTIONS, DELETE) -> '/_api/vs/ws/<workspace_name>/taskGroups/<object_id>/'
-    (HEAD, OPTIONS, GET) -> '/_api/vs/ws/<workspace_name>/taskGroups/<object_id>/'
-    (PUT, OPTIONS) -> '/_api/vs/ws/<workspace_name>/taskGroups/<object_id>/'
-    (HEAD, OPTIONS, GET) -> '/_api/vs/ws/<workspace_name>/taskGroups/'
-    (POST, OPTIONS) -> '/_api/vs/ws/<workspace_name>/taskGroups/'
-    (HEAD, OPTIONS, GET) -> '/_api/vs/task_template/'
-    (POST, OPTIONS) -> '/_api/vs/task_template/'
-    (OPTIONS, DELETE) -> '/_api/vs/task_template/<object_id>/'
-    (HEAD, OPTIONS, GET) -> '/_api/vs/task_template/<object_id>/'
-    (PUT, OPTIONS) -> '/_api/vs/task_template/<object_id>/'
-    (OPTIONS, DELETE) -> '/_api/vs/methodology_template/<object_id>/'
-    (HEAD, OPTIONS, GET) -> '/_api/vs/methodology_template/<object_id>/'
-    (PUT, OPTIONS) -> '/_api/vs/methodology_template/<object_id>/'
-    (HEAD, OPTIONS, GET) -> '/_api/vs/methodology_template/'
-    (POST, OPTIONS) -> '/_api/vs/methodology_template/'
+    (HEAD, OPTIONS, GET) -> '/_api/v2/ws/<workspace_name>/tasks/'
+    (POST, OPTIONS) -> '/_api/v2/ws/<workspace_name>/tasks/'
+    (HEAD, OPTIONS, GET) -> '/_api/v2/ws/<workspace_name>/tasks/count/'
+    (OPTIONS, DELETE) -> '/_api/v2/ws/<workspace_name>/tasks/<object_id>/'
+    (HEAD, OPTIONS, GET) -> '/_api/v2/ws/<workspace_name>/tasks/<object_id>/'
+    (PUT, OPTIONS) -> '/_api/v2/ws/<workspace_name>/tasks/<object_id>/'
+    (PUT, OPTIONS) -> '/_api/v2/ws/<workspace_name>/taskGroups/manualimport/'
+    (HEAD, OPTIONS, GET) -> '/_api/v2/ws/<workspace_name>/taskGroups/import/'
+    (HEAD, OPTIONS, GET) -> '/_api/v2/ws/<workspace_name>/taskGroups/count/'
+    (OPTIONS, DELETE) -> '/_api/v2/ws/<workspace_name>/taskGroups/<object_id>/'
+    (HEAD, OPTIONS, GET) -> '/_api/v2/ws/<workspace_name>/taskGroups/<object_id>/'
+    (PUT, OPTIONS) -> '/_api/v2/ws/<workspace_name>/taskGroups/<object_id>/'
+    (HEAD, OPTIONS, GET) -> '/_api/v2/ws/<workspace_name>/taskGroups/'
+    (POST, OPTIONS) -> '/_api/v2/ws/<workspace_name>/taskGroups/'
+    (HEAD, OPTIONS, GET) -> '/_api/v2/task_template/'
+    (POST, OPTIONS) -> '/_api/v2/task_template/'
+    (OPTIONS, DELETE) -> '/_api/v2/task_template/<object_id>/'
+    (HEAD, OPTIONS, GET) -> '/_api/v2/task_template/<object_id>/'
+    (PUT, OPTIONS) -> '/_api/v2/task_template/<object_id>/'
+    (OPTIONS, DELETE) -> '/_api/v2/methodology_template/<object_id>/'
+    (HEAD, OPTIONS, GET) -> '/_api/v2/methodology_template/<object_id>/'
+    (PUT, OPTIONS) -> '/_api/v2/methodology_template/<object_id>/'
+    (HEAD, OPTIONS, GET) -> '/_api/v2/methodology_template/'
+    (POST, OPTIONS) -> '/_api/v2/methodology_template/'
 
 Json Body of the task object:
 
@@ -214,15 +214,15 @@ Json Body of the task object:
 
 This api endoint allows you to create reports from the API and download them:
 
-    (HEAD, OPTIONS, GET) -> '/_api/vs/ws/<workspace_name>/reports/'
-    (POST, OPTIONS) -> '/_api/vs/ws/<workspace_name>/reports/'
-    (HEAD, OPTIONS, GET) -> '/_api/vs/ws/<workspace_name>/reports/count/'
-    (HEAD, OPTIONS, GET) -> '/_api/vs/ws/<workspace_name>/reports/countVulns/'
-    (HEAD, OPTIONS, GET) -> '/_api/vs/ws/<workspace_name>/reports/listTemplates/'
-    (OPTIONS, DELETE) -> '/_api/vs/ws/<workspace_name>/reports/<object_id>/'
-    (HEAD, OPTIONS, GET) -> '/_api/vs/ws/<workspace_name>/reports/<object_id>/'
-    (PUT, OPTIONS) -> '/_api/vs/ws/<workspace_name>/reports/<object_id>/'
-    (HEAD, OPTIONS, GET) -> '/_api/vs/ws/<workspace_name>/reports/<report_id>/download/'
+    (HEAD, OPTIONS, GET) -> '/_api/v2/ws/<workspace_name>/reports/'
+    (POST, OPTIONS) -> '/_api/v2/ws/<workspace_name>/reports/'
+    (HEAD, OPTIONS, GET) -> '/_api/v2/ws/<workspace_name>/reports/count/'
+    (HEAD, OPTIONS, GET) -> '/_api/v2/ws/<workspace_name>/reports/countVulns/'
+    (HEAD, OPTIONS, GET) -> '/_api/v2/ws/<workspace_name>/reports/listTemplates/'
+    (OPTIONS, DELETE) -> '/_api/v2/ws/<workspace_name>/reports/<object_id>/'
+    (HEAD, OPTIONS, GET) -> '/_api/v2/ws/<workspace_name>/reports/<object_id>/'
+    (PUT, OPTIONS) -> '/_api/v2/ws/<workspace_name>/reports/<object_id>/'
+    (HEAD, OPTIONS, GET) -> '/_api/v2/ws/<workspace_name>/reports/<report_id>/download/'
 
 Json Body of the reports objects:
 
@@ -246,11 +246,11 @@ Json Body of the reports objects:
 **Vulnerability Template:**
 This API endpoints allows you to change the Vulnerability Template (VulnDB) objects: 
 
-    (HEAD, OPTIONS, GET) -> '/_api/vs/vulnerability_template/'
-    (POST, OPTIONS) -> '/_api/vs/vulnerability_template/'
-    (OPTIONS, DELETE) -> '/_api/vs/vulnerability_template/<object_id>/'
-    (HEAD, OPTIONS, GET) -> '/_api/vs/vulnerability_template/<object_id>/'
-    (PUT, OPTIONS) -> '/_api/vs/vulnerability_template/<object_id>/'
+    (HEAD, OPTIONS, GET) -> '/_api/v2/vulnerability_template/'
+    (POST, OPTIONS) -> '/_api/v2/vulnerability_template/'
+    (OPTIONS, DELETE) -> '/_api/v2/vulnerability_template/<object_id>/'
+    (HEAD, OPTIONS, GET) -> '/_api/v2/vulnerability_template/<object_id>/'
+    (PUT, OPTIONS) -> '/_api/v2/vulnerability_template/<object_id>/'
 
 Json Body:
 
@@ -272,12 +272,12 @@ Json Body:
 
 This API endpoints allows you to change the Credential objects: 
 
-    (OPTIONS, DELETE) -> '/_api/vs/ws/<workspace_name>/credential/<object_id>/'
-    (HEAD, OPTIONS, GET) -> '/_api/vs/ws/<workspace_name>/credential/<object_id>/'
-    (PUT, OPTIONS) -> '/_api/vs/ws/<workspace_name>/credential/<object_id>/'
-    (HEAD, OPTIONS, GET) -> '/_api/vs/ws/<workspace_name>/credential/'
-    (POST, OPTIONS) -> '/_api/vs/ws/<workspace_name>/credential/'
-    (HEAD, OPTIONS, GET) -> '/_api/vs/ws/<workspace_name>/credential/count/'
+    (OPTIONS, DELETE) -> '/_api/v2/ws/<workspace_name>/credential/<object_id>/'
+    (HEAD, OPTIONS, GET) -> '/_api/v2/ws/<workspace_name>/credential/<object_id>/'
+    (PUT, OPTIONS) -> '/_api/v2/ws/<workspace_name>/credential/<object_id>/'
+    (HEAD, OPTIONS, GET) -> '/_api/v2/ws/<workspace_name>/credential/'
+    (POST, OPTIONS) -> '/_api/v2/ws/<workspace_name>/credential/'
+    (HEAD, OPTIONS, GET) -> '/_api/v2/ws/<workspace_name>/credential/count/'
 
 Json Body: 
 
@@ -297,31 +297,31 @@ Json Body:
 **Comments:**
 This API endpoints allows you to change the Comment objects: 
 
-    (HEAD, OPTIONS, GET) -> '/_api/vs/ws/<workspace_name>/comment/count/'
-    (OPTIONS, DELETE) -> '/_api/vs/ws/<workspace_name>/comment/<object_id>/'
-    (HEAD, OPTIONS, GET) -> '/_api/vs/ws/<workspace_name>/comment/<object_id>/'
-    (PUT, OPTIONS) -> '/_api/vs/ws/<workspace_name>/comment/<object_id>/'
-    (HEAD, OPTIONS, GET) -> '/_api/vs/ws/<workspace_name>/comment/'
-    (POST, OPTIONS) -> '/_api/vs/ws/<workspace_name>/comment/'
+    (HEAD, OPTIONS, GET) -> '/_api/v2/ws/<workspace_name>/comment/count/'
+    (OPTIONS, DELETE) -> '/_api/v2/ws/<workspace_name>/comment/<object_id>/'
+    (HEAD, OPTIONS, GET) -> '/_api/v2/ws/<workspace_name>/comment/<object_id>/'
+    (PUT, OPTIONS) -> '/_api/v2/ws/<workspace_name>/comment/<object_id>/'
+    (HEAD, OPTIONS, GET) -> '/_api/v2/ws/<workspace_name>/comment/'
+    (POST, OPTIONS) -> '/_api/v2/ws/<workspace_name>/comment/'
 
 
 **Commands:**
 
-    (HEAD, OPTIONS, GET) -> '/_api/vs/ws/<workspace_name>/commands/count/'
-    (HEAD, OPTIONS, GET) -> '/_api/vs/ws/<workspace_name>/commands/activity_feed/'
-    (OPTIONS, DELETE) -> '/_api/vs/ws/<workspace_name>/commands/<object_id>/'
-    (HEAD, OPTIONS, GET) -> '/_api/vs/ws/<workspace_name>/commands/<object_id>/'
-    (PUT, OPTIONS) -> '/_api/vs/ws/<workspace_name>/commands/<object_id>/'
-    (HEAD, OPTIONS, GET) -> '/_api/vs/ws/<workspace_name>/commands/'
-    (POST, OPTIONS) -> '/_api/vs/ws/<workspace_name>/commands/'
+    (HEAD, OPTIONS, GET) -> '/_api/v2/ws/<workspace_name>/commands/count/'
+    (HEAD, OPTIONS, GET) -> '/_api/v2/ws/<workspace_name>/commands/activity_feed/'
+    (OPTIONS, DELETE) -> '/_api/v2/ws/<workspace_name>/commands/<object_id>/'
+    (HEAD, OPTIONS, GET) -> '/_api/v2/ws/<workspace_name>/commands/<object_id>/'
+    (PUT, OPTIONS) -> '/_api/v2/ws/<workspace_name>/commands/<object_id>/'
+    (HEAD, OPTIONS, GET) -> '/_api/v2/ws/<workspace_name>/commands/'
+    (POST, OPTIONS) -> '/_api/v2/ws/<workspace_name>/commands/'
 
 **To retrieve information from vulners:**
 
-    (HEAD, OPTIONS, GET) -> '/_api/vs/vulners/exploits/<cveid>'
+    (HEAD, OPTIONS, GET) -> '/_api/v2/vulners/exploits/<cveid>'
 
 **Others:**
 
-    (POST, OPTIONS) -> '/_api/vs/ws/<workspace_name>/comment_unique/'
+    (POST, OPTIONS) -> '/_api/v2/ws/<workspace_name>/comment_unique/'
 
 
 ## Examples:
@@ -345,7 +345,7 @@ Assuming that our credentials are: **username:** "faraday" - **password:** "chan
 **Creating a host:** assuming our workspace name is **test**
 
 ``` bash
-    curl -X POST http://127.0.0.1:5985/_api/_api/vs/ws/test/hosts/ \
+    curl -X POST http://127.0.0.1:5985/_api/v2/ws/test/hosts/ \
         -d '{"ip":"127.0.0.1","hostnames":["testing"], "mac":"00:00:00:00:00:00","description":"Testing API", "default_gateway":"None", "os":"Linux", "owned":true, "owner":""}' \
         -b cookie.txt \
         -H 'Content-Type: application/json'
@@ -354,12 +354,12 @@ Assuming that our credentials are: **username:** "faraday" - **password:** "chan
 **Getting a list of hosts:**
 
 ```json
-    curl -X GET http://127.0.0.1:5985/_api/_api/vs/ws/test/hosts/ -b cookie.txt
+    curl -X GET http://127.0.0.1:5985/_api/v2/ws/test/hosts/ -b cookie.txt
 ```
 **Creating a service:**
 
 ```json
-    curl -X POST http://127.0.0.1:5985/_api/_api/vs/ws/test/services/ \
+    curl -X POST http://127.0.0.1:5985/_api/v2/ws/test/services/ \
         -d '{"name":"Test","description":"Testing API", "owned":true, "owner":"","ports":[8080],"protocol":"tcp","parent":1157,"status":"open","version":"","metadata":{"update_time":1533152663.994,"update_user":"","update_action":0,"creator":"","create_time":1533152663.994,"update_controller_action":"UI Web New","owner":""},"type":"Service"}' \
         -b cookie.txt \
         -H 'Content-Type: application/json'
@@ -367,7 +367,7 @@ Assuming that our credentials are: **username:** "faraday" - **password:** "chan
 
 **Creating a vuln:**
 ```json
-    curl -X POST http://127.0.0.1:5985/_api/_api/vs/ws/test/vulns/ \
+    curl -X POST http://127.0.0.1:5985/_api/v2/ws/test/vulns/ \
         -d '{"metadata":{"update_time":1533152883.927, "update_user":"", "update_action":0,"creator":"UI Web", "create_time":1533152883.927, "update_controller_action":"UI Web New", "owner":"faraday"}, "obj_id":"", "owner":"faraday", "parent":1157, "parent_type":"Host","type":"Vulnerability","ws":"test","confirmed":true,"data":"","desc":"New vulnerability created for API purposes","easeofresolution":"simple","impact":{"accountability":false, "availability":false, "confidentiality":false, "integrity":false},"name":"New Vuln - Testing API","owned":false,"policyviolations":[],"refs":[], "resolution":"", "severity":"critical", "issuetracker":"", "status":"opened","_attachments":{},"description":"","protocol":"","version":""}' \
         -b cookie.txt \
         -H 'Content-Type: application/json'
@@ -375,14 +375,14 @@ Assuming that our credentials are: **username:** "faraday" - **password:** "chan
 
 **Creating a user:**
 ```
-    curl -X POST http://127.0.0.1:5985/_api/_api/vs/users/ \
+    curl -X POST http://127.0.0.1:5985/_api/v2/users/ \
         -d '{"name":"faraday", "password":"changeme", "roles":["admin"], "type":"user", "role":"admin"}' \
         -b cookie.txt \
         -H 'Content-Type: application/json'
 ```
 **Generating a report:**
 ```json
-    curl -X POST http://127.0.0.1:5985/_api/_api/vs/ws/test/reports/ \
+    curl -X POST http://127.0.0.1:5985/_api/v2/ws/test/reports/ \
         -d '{"name":"Testing-API","tags":[], "title":"", "enterprise":"", "scope":"", "objectives":"", "summary":"", "confirmed":false, "conclusions":"", "recommendations":"", "vuln_count":2, "template_name":"generic_default.docx", "grouped":false}' \
         -b cookie.txt \
         -H 'Content-Type: application/json'
@@ -393,7 +393,7 @@ In order to be able to upload a report, you need the CSRF token and session's co
 
 On the first **--form** parameter, put the path of the file that you want to upload.
 ```json
-    curl  'http://127.0.0.1:5985/_api/_api/vs/ws/api/upload_report' \
+    curl  'http://127.0.0.1:5985/_api/v2/ws/api/upload_report' \
        -H 'Content-Type: multipart/form-data' \
        --cookie "session=.eJw90M2KwjAQB_BXWXL2YGu9CB6UlGJhpgSCZeZS2FpNJ2YXqkI24rtv18O-wO__8VTdeRpuTm3u02NYqG48qc1TfXyqjWK9SyyUYVsWmMrUWDei9Etsj4FaDKydw-Qj5KZo9CWSNUu2uzXktQM5XSnxyJVZgTaRrYkk-xEt5ZQfVmT3DmcfKvrhcBQUKMgeIoQysb0knjMh-QIEliyQQzJZ0-IV_kx7DWDZY1WPmNCD9Fv1Wqj-Np27-7cfvv4noNTSVCZjXSaYK2KgiLqMTTtX1H7daMpmPnLFgtpHSk7YbN_c4zZM7ztUoV6_3rRiDA.DkoypQ.q7eGzh1oof8dKnbF4q6xD_n1d6o" \
        --form "file=@PATH/TO/FILE" \
@@ -433,7 +433,7 @@ def create_workspace(username, password, server_address, workspace_name):
             "description":""
             }
 
-    res = session.post(server_address + '/_api/vs/ws/', json=ws_payload)
+    res = session.post(server_address + '/_api/v2/ws/', json=ws_payload)
     assert res.status_code == 201
     print('Workspace {0} created'.format(workspace_name))
 
