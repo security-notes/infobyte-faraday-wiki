@@ -50,7 +50,7 @@ port = 389
 disconnect_timeout = 2.0
 ```
 
-After doing the modifications save the file and run the `./faraday-server.pyc --write-config` to apply the changes. Run this command every time you change the LDAP configuration.
+After doing the modifications save the file and restart Faraday Server.
 
 ### Configuration example
 
