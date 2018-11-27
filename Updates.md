@@ -5,9 +5,9 @@
 If you have Faraday Client and Server running in the same box and you are using community, run:
 
 ```
-git pull
-pip install -r requirements.txt -U
-pip install -r requirements_server.txt -U
+$ git pull
+$ pip install -r requirements.txt -U
+$ pip install -r requirements_server.txt -U
 ``` 
 
 That's it! You're ready to go!
@@ -19,15 +19,15 @@ If you have Faraday Client and Server running in different boxes, update them se
 * Faraday Server update commands:
 
  ```
-git pull
-pip install -r requirements_server.txt -U
+$ git pull
+$ pip install -r requirements_server.txt -U
 ``` 
 
 * Faraday Client update commands:
 
  ```
-git pull
-pip install -r requirements.txt -U
+$ git pull
+$ pip install -r requirements.txt -U
 ``` 
 
 ***
