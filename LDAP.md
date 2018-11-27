@@ -29,10 +29,10 @@ To configure Faraday with LDAP/AD edit `~/.faraday/config/server.ini` and comple
 * use_start_tls ( set up the starttls function)
 * port (ldap port)
 * disconnect_timeout (maximum wait time for a session of the domain user)
-* use_local_roles (Use faraday roles stored in postgresql database)
+* use_local_roles (Use Faraday roles stored in PostgreSQL database)
 * default_local_role (The default role for authenticated users, only works when use_local_roles is True)
 ```
-**WARNING** If use_local_roles is set to True any user on the AD will allow to use faraday.
+**WARNING:** If use_local_roles is set to True, any user on the AD will be allowed to use Faraday.
 
 The following example shows a basic AD configuration:
 
@@ -48,6 +48,8 @@ use_ldaps = false
 use_start_tls = false
 port = 389
 disconnect_timeout = 2.0
+use_local_roles = false
+default_local_role = none
 ```
 
 After doing the modifications save the file and restart Faraday Server.
