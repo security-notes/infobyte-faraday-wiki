@@ -2,17 +2,17 @@
 
 For the time being Faraday doesn't support a hybrid installation using both LDAP and local users. Enabling LDAP disables local users and vice versa. However, local users are not deleted, only banned from login. Disabling LDAP unlocks the login for local users. For this reason, after enabling LDAP the permissions for local users over Workspaces are erased, which makes these Workspaces publicly available immediately after restarting the server.
 
-### Dependencies
+### Dependency
 
-The following packages are required:
+The following package is required:
 
 | Dependency | Version |
 |---|---|
-| libsasl | 2.1.26 |
-| libldap | 2.4.22 |
 | python-ldap | 2.4.32 |
 
-To install the Python lib, run pip using the file [`requirements_server_extras.txt`](https://github.com/infobyte/faraday/blob/master/requirements_server_extras.txt).
+To install this package, run the following command using the file [`requirements_server_extras.txt`](https://github.com/infobyte/faraday/blob/master/requirements_server_extras.txt):
+
+    $ pip2 install -r requirements_server_extras.txt -U
 
 ### Configuration
 
@@ -32,7 +32,7 @@ To configure Faraday with LDAP/AD edit `~/.faraday/config/server.ini` and comple
 * use_local_roles (Use Faraday roles stored in PostgreSQL database)
 * default_local_role (The default role for authenticated users, only works when use_local_roles is True)
 ```
-**WARNING:** If use_local_roles is set to True, any user on the AD will be allowed to use Faraday.
+**WARNING:** If _use_local_roles_ is set to _true_, any user on the AD will be allowed to use Faraday.
 
 The following example shows a basic AD configuration:
 
@@ -52,7 +52,7 @@ use_local_roles = false
 default_local_role = none
 ```
 
-After doing the modifications save the file and restart Faraday Server.
+After doing the modifications, save the file and restart Faraday Server.
 
 ### Configuration example
 
