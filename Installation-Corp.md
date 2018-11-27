@@ -52,10 +52,10 @@ You can run the following command to install the required dependencies on any De
 ```
 $ sudo apt update
 $ sudo apt install build-essential ipython python-setuptools \
-                python-pip python-dev libssl-dev libffi-dev \
-                pkg-config libssl-dev libffi-dev libxml2-dev \
+                python-pip python-dev pkg-config \
+                libssl-dev libffi-dev libxml2-dev \
                 libxslt1-dev libfreetype6-dev libpng-dev \
-                postgresql sudo libsasl2-dev libldap2-dev libssl-dev
+                postgresql sudo libsasl2-dev libldap2-dev 
 ```
 
 ##### Kali Linux
