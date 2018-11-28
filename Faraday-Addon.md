@@ -40,7 +40,7 @@ Now add Faraday Server's URL and click on Connect. (The URL must have this forma
 
 Faraday Addon also allows you to set scopes using regular expressions, thus allowing you to capture certain requests. For example, if you only want to capture every _faradaysec.com_ subdomains:
 
-*.faradaysec.com
+    *.faradaysec.com
 
 Now you are ready for capturing requests with Faraday Addon.
 
