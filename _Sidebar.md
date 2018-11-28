@@ -48,12 +48,13 @@
 * **Special Features**
   * [CSV Importer](https://github.com/infobyte/faraday/wiki/CSV-Importer)
   * [Continuous Scanning](https://github.com/infobyte/faraday/wiki/Continuous-Scanning)
+  * [Faraday Addon](https://github.com/infobyte/faraday/wiki/Faraday-Addon)
 
 * **Integrations**
   * [Jira](https://github.com/infobyte/faraday/wiki/Jira)
   * [LDAP](https://github.com/infobyte/faraday/wiki/LDAP)
   * [OSINT Provider](https://github.com/infobyte/faraday/wiki/OSINT-Provider)
-  * [ThreadFix](https://github.com/infobyte/faraday/wiki/ThreadFix)
+  * [ThreadFix](https://github.com/infobyte/faraday/wiki/ThreadFix-Integration)
 
 * [**Plugins**](https://github.com/infobyte/faraday/wiki/Plugin-List)
   
