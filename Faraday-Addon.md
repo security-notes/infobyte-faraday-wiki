@@ -1,5 +1,3 @@
-## About
-
 Faraday Addon is a simple addon for automate reporting vulnerabilities from the browser to your own Faraday instance. Faraday Addon intercepts every single request from the browser, adding a functionality for accessing each one of them and treating them as a vulnerability. In this way, a pentester only has to use the addon to send potential vulnerables requests to Faraday, instead of copy-paste them into the server.
 
 ## Compatibility
