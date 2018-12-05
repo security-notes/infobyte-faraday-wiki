@@ -460,3 +460,5 @@ while read -r line; do
         -b cookie.txt
 done < "users.txt"
 ```
+
+[file.csv](https://raw.githubusercontent.com/wiki/infobyte/faraday/files/users.txt)
