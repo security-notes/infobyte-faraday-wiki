@@ -440,3 +440,23 @@ def create_workspace(username, password, server_address, workspace_name):
 
 create_workspace()
 ```
+# Using the API to create users in bulk
+```
+curl -s  'http://127.0.0.1:5985/_api/login' \
+        -H 'Origin: http://127.0.0.1:5985' -H 'Accept-Encoding: gzip, deflate, br' \
+        -H 'Accept-Language: en-US,en;q=0.9' \
+        -H 'Content-Type: application/json' \
+        -H 'Accept: application/json, text/javascript, */*; q=0.01' \
+        -H 'Referer: http://127.0.0.1:5985/' -H 'X-Requested-With: XMLHttpRequest' \
+        -H 'Connection: keep-alive' \
+        --data-binary '{"email":"faraday","password": "changeme"}' \
+        --compressed -c cookie.txt 
+
+
+while read -r line; do
+    curl -X POST http://127.0.0.1:5985/_api/v2/users/ \
+        -d '{"name":"'$line'","password":"Password123","roles":["client"],"type":"user","role":"client"}' \
+        -H 'Content-Type: application/json' \
+        -b cookie.txt
+done < "users.txt"
+```
