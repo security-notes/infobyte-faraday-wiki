@@ -4,7 +4,7 @@ Video about install Faraday in macOS Sierra: [Installation in macOS Sierra.](htt
 
 Tested on OSX Maverick 10.9.2.
 
-### Xcode
+### Installing Xcode
 
 Go to AppStore and install Xcode. If you run `brew install` first, it'll ask to install Xcode too.
 
@@ -20,57 +20,77 @@ A dialog box will appear asking to install additional tools as shown in the imag
 
 **Important!** Before proceeding with the rest of this guide you need to **open Xcode at least once** in order to accept the License Agreement. Please make sure you do that or else some of the dependencies will fail to install.
 
-### Brew
+### Installing Brew
 
 To install [Brew](http://brew.sh) run:
 
 
     $ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
-### Install Python & PIP
+### Installing Python & PIP
 
-Run:
+In order to install Python run the following command:
 
     $ brew install python
 
-Remember never to run brew as root.
+Important:
 
-More info about [Python in OSX](http://docs.python-guide.org/en/latest/starting/install/osx/).
+* Remember never to run brew as root.
+* Installing Python through brew, will also install PIP.
+* You can find more info about Python in OSX following this [link](http://docs.python-guide.org/en/latest/starting/install/osx/).
 
-*Important* Make sure that you are using the python interpreter that brew installed and not the one shipped with the OS.
-To know which python you are using execute:
+#### Setting Python interpreter
+Make sure that you are using the Python interpreter that brew installed and not the one shipped with the OS.
+
+To know which Python you are using, execute the following command:
 
     $ which python
 
-it should return:
+Th should return:
 
-    $ /usr/local/bin/python
+    /usr/local/bin/python
 
-If this is not the case you can change the PATH to use the /usr/local/bin:
+If this is not the case, you can change the PATH and use `/usr/local/bin` by running this command:
 
     $ ln -s /usr/local/bin/python2 /usr/local/bin/python
 
 If you want to revert this change just delete the link executed in the previous command.
 
-### Git
+### Downloading Faraday
 
-We need Git in order to get Faraday from Github. Run:
+#### Community version
+
+First of all, we need Git in order to get Faraday from Github. Run:
 
     $ brew install git
 
-### Faraday
-This is the code for our Community edition. 
-Here you have the steps to get the source code for our [ Professional](https://github.com/infobyte/faraday/wiki/Installation-Pro#downloading) and [Corporate](https://github.com/infobyte/faraday/wiki/Installation-Corp#downloading) editions.
-
-Run:
+Now clone Faraday's repository by running the following command:
 
     $ git clone https://github.com/infobyte/faraday.git faraday-dev
 
-### Dependencies and other Python libraries via PIP
+Done!
 
-Installing Python via brew will also install pip. Now we need to use pip to install the requirements:
+#### Professional and Corporate versions
 
-`pip install -r requirements.txt`
+After the purchase you will receive an email with your credentials and a link to our **Customers Portal**. Use those credentials to log in to the site and you will get two links:
+
+* Download License - this is the tarball for the **Faraday License**
+* Download Faraday - this is the tarball for the actual **Faraday Code**
+
+Download both those packages and then:
+
+1. Create a new directory and unpack the **Faraday tarball** there. For example, `/home/user/Infobyte/faraday`.
+
+1. Unpack the **License Package** and place its contents in the `doc` directory. For example, using the path from **Step 1**, you should place the **License files** in `/home/user/Infobyte/faraday/doc`.
+
+Done! 
+
+### Installing Faraday's dependencies and other Python libraries via PIP
+
+Installing Python via brew will also install PIP. Now we need to use PIP in order to install Faraday's requirements. Get into the folder _/faraday_ and run the following commands:
+
+    $ pip2 install -r requirements_server.txt -U
+    $ pip2 install -r requirements.txt -U
 
 If you have issues building psycopg2:
 
@@ -78,16 +98,16 @@ If you have issues building psycopg2:
     $ pip install psycopg2
 
 
-### GTK
+#### Installing Faraday GTK dependencies
 
-We need a few other packages from brew before you can use the client:
+We need a few other packages from brew before we can use the client:
 
     $ brew install vte3 
     $ brew install pygobject3 --with-python@2
 
-### ZSH
+#### Installing ZSH and curl
 
-Faraday needs [ZSH](http://www.zsh.org/) and curl to connect to the server. To install it run:
+Faraday needs [ZSH](http://www.zsh.org/) and _curl_ in order to be able to connect to the server. In order to install them, run:
 
     $ brew install zsh curl
 
@@ -111,13 +131,12 @@ If you want to manually import the data from CouchDB, follow this [step](https:/
 Keep in mind the following items:
 
 * This commmand must be executed only when you run Faraday for the first time. 
+* If at the moment you run this command, it throws an error, be sure you have sudo installed. Once you have installed it, run the command again.
 * If you can't login into to Faraday after running the command above due to invalid credentials, you can change your password through the PostgreSQL shell that Faraday has in it. Follow the next [instructions](https://github.com/infobyte/faraday/wiki/Troubleshooting#cant-login-after-importing-from-couch) in order to change your password and be able to login.
+* You should have the PostgreSQL service started. To start it, run this command:
 
-* You should have the PostgreSQL service started. To do it run
-`brew services start postgresql`
+    $ brew services start postgresql
 
-*  If at the moment you run this command, it throws an error, be sure
-you have sudo installed. Once you have installed it, run the command again.
 
 #### Manual PostgreSQL configuration
 
@@ -156,12 +175,31 @@ $ python manage.pyc import-from-couchdb
 ***Note:*** beware of the number of users you have created in CouchDB, remember that you have already created one when you initialized PostgreSQL. The number of users that you have between CouchDB and PostgreSQL should not surpass the number of users you're allow to have according to your license.
 
 
-### Almost there! Start Faraday's server:
+### Starting Faraday's server:
 
-    $ cd faraday-dev
-    $ ./faraday.py --gui=nogui
+Inside the folder _/faraday_, run the following command:
 
-And in another terminal run:
+    $ python faraday-server.py
 
-    $ cd faraday-dev
+### Starting Faraday's Client:
+
+**Note:** in order to run the Client, Faraday's server must be running.
+
+#### Running the Client with GUI:
+
+Inside the folder _/faraday_, run:
+
+    $ python faraday.py
+
+#### Running the Client without GUI
+
+Inside the folder _/faraday_, run:
+ 
+    $ python faraday.py --gui=nogui
+
+Now in another terminal and inside the same folder as above, run:
+ 
     $ ./faraday-terminal.zsh
+
+
+We are done. Enjoy Faraday!
