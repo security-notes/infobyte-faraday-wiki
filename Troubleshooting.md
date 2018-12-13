@@ -63,6 +63,8 @@ IOError: [Errno 2] No such file or directory: '/home/leonardo/VERSION'
 * [Error while making backup of the database](#backup-error)
 * [GTK Error: No ports available](#no-ports-available)
 * [Burp Plugin Crashes](#burp-plugin-crashes)
+* [UnicodeEncodeError: 'ascii' codec can't encode character](#unicode-error)
+
 
 ## Answers
 
@@ -322,6 +324,28 @@ You must downgrade to the version JRuby 9.1.17.0.
 
 Here you have the GitHub Issue:
 https://github.com/jruby/jruby/issues/5269
+
+
+[ [index] ](#index)
+
+<a name='unicode-error'></a>
+If you see a Tracebacks that ends somewhat like this:
+UnicodeEncodeError: 'ascii' codec can't encode character u'\xf3' in position 1: ordinal not in range(128)
+Go into your Faraday Root folder and execute:
+
+python manage.py sql-shell
+
+and once inside:
+
+SHOW SERVER_ENCODING
+
+If you are using symbols not supported by ascii, you need to change the db's encoding to UTF-8.
+1. Dump your database
+2. Drop your database,
+3. Create new database with the different encoding
+4. Reload your data.
+
+Make sure the client encoding is set correctly during all this.
 
 
 [ [index] ](#index)
