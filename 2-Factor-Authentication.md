@@ -1,4 +1,4 @@
-Faraday supports 2 Factor Authentication. We support any apps, e.g
+Faraday supports 2 Factor Authentication. We support any apps, e.g:
 
 * [Google Authenticator (Android)](https://play.google.com/store/apps/details?id=com.google.android.apps.authenticator2&hl=en)
 * [Google Authenticator (iOS)](https://itunes.apple.com/us/app/google-authenticator/id388497605?mt=8)
