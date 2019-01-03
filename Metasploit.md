@@ -12,4 +12,7 @@ This plugin can be set from Faraday's Plugin Configuration Dialog, selecting the
 
 This plugin is disabled by default. To enable it, change the boolean `Enabled` to `1`.
 
-The information required for connecting to Metasploit is generated dynamically and stored in `/opt/metasploit/apps/pro/ui/config/database.yml`.
+The information required for connecting to Metasploit is generated dynamically and stored in:
+
+* `/opt/metasploit/apps/pro/ui/config/database.yml`.
+* `/opt/metasploit-framework/embedded/framework/config/database.yml`.
