@@ -4,8 +4,8 @@ This is feature that allows you to send data from Faraday to JIRA. In order to d
 
 ![](https://raw.githubusercontent.com/wiki/infobyte/faraday/images/jira/button.png)
 
-Once the JIRA dialog opens, fill in all fields and click **OK**.
+Once the JIRA dialog opens, fill in all fields and click **OK** (you should use your JIRA's Username and Password).
 
 ![](https://raw.githubusercontent.com/wiki/infobyte/faraday/images/jira/dialog.png)
 
-After the vuln has been sent to JIRA the list will be updated with a link to the ticket.
+After the vulnerability has been sent to JIRA, add the column _issuetracker_ so you can see a link that will lead you to this same issue but in JIRA.
