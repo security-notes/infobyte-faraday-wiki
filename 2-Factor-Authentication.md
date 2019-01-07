@@ -4,6 +4,7 @@ Faraday supports 2 Factor Authentication. We support any apps, e.g:
 * [Google Authenticator (iOS)](https://itunes.apple.com/us/app/google-authenticator/id388497605?mt=8)
 * [Authy (Android)](https://play.google.com/store/apps/details?id=com.authy.authy&hl=en)
 * [Authy (iOS)](https://itunes.apple.com/us/app/authy/id494168017?mt=8)
+* [OTP Authenticator (Android, Open Source)](https://github.com/0xbb/otp-authenticator)
 
 ## Activate 2FA
 
