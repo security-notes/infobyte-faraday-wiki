@@ -97,51 +97,66 @@ To access our previous wiki with CouchDB Information, click [here](https://githu
 
 ## Presentations
 
-* Ekoparty Security Conference - 2017:
-   * http://blog.infobytesec.com/2017/10/ekoparty-2017-review_23.html
+* Ekoparty:
+    [2010](http://vimeo.com/16516987) -
+    [2014](https://www.youtube.com/watch?v=_j0T2S6Ppfo) -
+    [2017](http://blog.infobytesec.com/2017/10/ekoparty-2017-review_23.html) -
+    [2018](http://blog.infobytesec.com/2018/10/ekoparty-2018-review_18.html)
 
-* Black Hat Arsenal Asia - 2017:
-   * https://www.blackhat.com/asia-17/arsenal.html#faraday
+* Black Hat Arsenal
+    * USA:
+        [2011](http://www.infobytesec.com/down/Faraday_BH2011_Arsenal.pdf) -
+        [2015](https://www.blackhat.com/us-15/arsenal.html#faraday) ([BLOG](http://blog.infobytesec.com/2015/08/blackhat-2015_24.html)) -
+        [2016](https://www.blackhat.com/us-16/arsenal.html#faraday) -
+        [2017](https://www.blackhat.com/us-17/event-sponsors.html#faraday) -
+        [2018](https://www.blackhat.com/us-18/event-sponsors.html#faraday)
 
-* Zero Nights - 2016
-   * https://www.slideshare.net/AlexanderLeonov2/enterprise-vulnerability-management-zeronights16
+    * Asia:
+        [2016](https://www.blackhat.com/asia-16/arsenal.html#faraday) -
+        [2017](https://www.blackhat.com/asia-17/arsenal.html#faraday) -
+        [2018](https://www.blackhat.com/asia-18/arsenal.html#faraday-v3-collaborative-penetration-test-and-vulnerability-management-platform)
 
-* AV Tokio - 2016:
-   * http://en.avtokyo.org/avtokyo2016/event
+    * Europe:
+        [2015](https://www.blackhat.com/eu-15/arsenal.html#faraday) -
+        [2016](https://www.blackhat.com/eu-16/arsenal.html#faraday)
 
-* Black Hat Arsenal USA - 2016:
+* AVTokyo:
+    [2016](http://en.avtokyo.org/avtokyo2016/event) -
+    [2018](http://en.avtokyo.org/avtokyo2018/event)
 
-   * https://www.blackhat.com/us-16/arsenal.html#faraday
+* Tel Aviv-Yafo:
+   [2018](https://www.meetup.com/infobyte/events/254031671/)
 
-* Black Hat Arsenal Europe - 2016
-   * https://www.blackhat.com/eu-16/arsenal.html#faraday
+* SECCON:
+   [2018](https://2018.seccon.jp/seccon/yorozu2018.html)
 
-* SecurityWeekly - 2016:
-   * http://securityweekly.com/2016/08/02/security-weekly-475-federico-kirschbaum/
+* HITBSecConf Dubai:
+   [2018](https://conference.hitb.org/hitbsecconf2018dxb/hitb-armory/)
 
-* Bsides Latam - 2016:
-   * http://www.infobytesec.com/down/Faraday_BsideLatam_2016.pdf
+* PyConAr:
+   [2018](https://eventos.python.org.ar/events/pyconar2018/activity/75/)
 
-* Black Hat Arsenal Asia - 2016:
-   * https://www.blackhat.com/asia-16/arsenal.html#faraday
+* 8.8 Chile:
+   [2018](http://blog.infobytesec.com/2018/11/chronicles-of-trip-to-santiago-88-review.html)
 
-* Black Hat Arsenal Europe - 2015:
-   * https://www.blackhat.com/eu-15/arsenal.html#faraday
+* CharruaCon:
+   [2018](https://charrua.org/presentaciones2018/Love_is_in_the_air__Reverse_Engineering_a_hitty_drone.pdf)
 
-* Black Hat Arsenal USA - 2015:
-   * https://www.blackhat.com/us-15/arsenal.html#faraday
-   * http://blog.infobytesec.com/2015/08/blackhat-2015_24.html
+* NotPinkCon:
+   [2018](https://twitter.com/NotPinkCon)
 
-* RSA - 2015:
-   * http://www.rsaconference.com/events/us15/expo-sponsors/exhibitor-list/1782/infobyte-llc
-   * http://blog.infobytesec.com/2015/05/infobyte-en-la-rsa-2015.html
+* plusCODE:
+   [2018](http://pluscode.cc/portfolio_page/introduccion-practica-al-hardware-hacking/)
 
-* Ekoparty Security Conference - 2014:
-   * https://www.youtube.com/watch?v=_j0T2S6Ppfo
+* BSides LATAM:
+   [2016](http://www.infobytesec.com/down/Faraday_BsideLatam_2016.pdf)
 
-* Black Hat Arsenal - 2011
-   * http://www.infobytesec.com/down/Faraday_BH2011_Arsenal.pdf
+* SecurityWeekly:
+   [2016](http://securityweekly.com/2016/08/02/security-weekly-475-federico-kirschbaum/)
 
-* Ekoparty Security Conference - 2010:
-   * http://prezi.com/fw46zt6_zgi8/faraday/
-   * http://vimeo.com/16516987
+* Zero Nights:
+   [2016](https://www.slideshare.net/AlexanderLeonov2/enterprise-vulnerability-management-zeronights16)
+
+* RSA USA:
+    [2015](https://www.rsaconference.com/events/us15/expo-sponsors/exhibitor-list/1782/infobyte-llc) ([BLOG](http://blog.infobytesec.com/2015/05/infobyte-en-la-rsa-2015.html))
+
