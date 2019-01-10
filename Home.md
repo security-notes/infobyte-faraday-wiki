@@ -103,7 +103,7 @@ To access our previous wiki with CouchDB Information, click [here](https://githu
     [2017](http://blog.infobytesec.com/2017/10/ekoparty-2017-review_23.html) -
     [2018](http://blog.infobytesec.com/2018/10/ekoparty-2018-review_18.html)
 
-* Black Hat Arsenal
+* Black Hat Arsenal:
     * USA:
         [2011](http://www.infobytesec.com/down/Faraday_BH2011_Arsenal.pdf) -
         [2015](https://www.blackhat.com/us-15/arsenal.html#faraday) ([BLOG](http://blog.infobytesec.com/2015/08/blackhat-2015_24.html)) -
