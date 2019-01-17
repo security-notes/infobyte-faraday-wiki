@@ -229,7 +229,8 @@ Some distributions or installations require additional steps, so look down below
 ***
 
 ### Troubleshooting
- 
+
+#### Cannot uninstall [dependency]
 If you were installing Python dependencies and suddenly you got this message:
 
 > Cannot uninstall [dependency]. It is a distutils installed project and thus we cannot accurately determine which files belong to it which would lead to only a partial uninstall.
@@ -248,4 +249,17 @@ You should delete that dependency in order to be able to upgrade it to the versi
 ```
     $ sudo pip2 install -r requirements_server.txt -U
 ```
-**Note:** if after trying to install the dependencies again, you have the same issue but with another dependency, repeat the instructions above.
+If after trying to install the dependencies again, you have the same issue but with another dependency, repeat the instructions above.
+
+#### AttributeError: 'module' object has no attribute
+
+If you get the following error:
+
+> Error : AttributeError: 'module' object has no attribute 'OP_NO_TLSv1_1'
+
+Run the following command:
+```
+pip install Twisted==16.4.1
+```
+
+Now start Faraday Server.
