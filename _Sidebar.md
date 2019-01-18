@@ -14,6 +14,7 @@
 
 * **Web UI**
   * [Credentials](https://github.com/infobyte/faraday/wiki/Credentials)
+  * [Custom Fields](https://github.com/infobyte/faraday/wiki/Custom-Fields)
   * [Data Analysis Tools](https://github.com/infobyte/faraday/wiki/Data-Analysis-Tools)
   * [Executive Report](https://github.com/infobyte/faraday/wiki/Executive-Report)
   * [Hosts & Services](https://github.com/infobyte/faraday/wiki/Hosts-and-Services)
@@ -57,6 +58,12 @@
   * [OSINT Provider](https://github.com/infobyte/faraday/wiki/OSINT-Provider)
   * [ThreadFix](https://github.com/infobyte/faraday/wiki/ThreadFix-Integration)
 
+* [**Security**](https://github.com/infobyte/faraday/wiki/Security)
+  * [2 Factor Authentication](https://github.com/infobyte/faraday/wiki/2-Factor-Authentication)
+  * [Using SSL](https://github.com/infobyte/faraday/wiki/SSL)
+  * [Bug bounties](https://github.com/infobyte/faraday/wiki/Bug-bounties)
+  * [Cybersecurity Program](https://github.com/infobyte/faraday/wiki/Cybersecurity-Program)
+
 * [**Plugins**](https://github.com/infobyte/faraday/wiki/Plugin-List)
   
   * [Basic Plugin Development](https://github.com/infobyte/faraday/wiki/Basic-plugin-development)
@@ -69,12 +76,6 @@
   * [Metasploit](https://github.com/infobyte/faraday/wiki/Metasploit)
   * [Nessus](https://github.com/infobyte/faraday/wiki/Nessus)
   * [More +70 plugins](https://github.com/infobyte/faraday/wiki/Plugin-List#list)
-
-
-* [**Security**](https://github.com/infobyte/faraday/wiki/Security)
-  * [Using SSL](https://github.com/infobyte/faraday/wiki/SSL)
-  * [Bug bounties](https://github.com/infobyte/faraday/wiki/Bug-bounties)
-  * [Cybersecurity Program](https://github.com/infobyte/faraday/wiki/Cybersecurity-Program)
   
 * **Help**
   * [FAQ](https://github.com/infobyte/faraday/wiki/FAQ)
