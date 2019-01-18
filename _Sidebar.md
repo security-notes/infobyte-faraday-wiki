@@ -49,6 +49,7 @@
   * [CSV Importer](https://github.com/infobyte/faraday/wiki/CSV-Importer)
   * [Continuous Scanning](https://github.com/infobyte/faraday/wiki/Continuous-Scanning)
   * [Faraday Addon](https://github.com/infobyte/faraday/wiki/Faraday-Addon)
+  * [Custom fields](https://github.com/infobyte/faraday/wiki/Custom-fields)
 
 * **Integrations**
   * [Jira](https://github.com/infobyte/faraday/wiki/Jira)
