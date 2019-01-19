@@ -8,6 +8,7 @@ If you have Faraday Client and Server running in the same box and you are using 
 $ git pull
 $ pip install -r requirements.txt -U
 $ pip install -r requirements_server.txt -U
+$ python manage.py migrate
 ``` 
 
 That's it! You're ready to go!
@@ -21,6 +22,7 @@ If you have Faraday Client and Server running in different boxes, update them se
  ```
 $ git pull
 $ pip install -r requirements_server.txt -U
+$ python manage.py migrate
 ``` 
 
 * Faraday Client update commands:
@@ -47,6 +49,8 @@ $ pip install -r requirements.txt -U
 1. Run ```pip install -r requirements.txt -U``` in the client box to update the Python dependencies for Faraday Client.
 
 1. Run ```pip install -r requirements_server.txt -U``` in the server box to update the Python dependencies for Faraday Server.
+
+1. Run ```$ python manage.py migrate``` in the server box to apply database migrations.
 
 1. Run the server using ```python2 faraday-server.pyc ```
 
