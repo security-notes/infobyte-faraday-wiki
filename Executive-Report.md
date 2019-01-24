@@ -136,6 +136,7 @@ The data available to the Report template is:
     * default_gateway
     * ip
     * owned
+    * tags
     * name
     * services
     * mac
@@ -147,7 +148,7 @@ The data available to the Report template is:
     * id
     * os
     * id
-    *metadata
+    * metadata
 
 #### Service Variables
 * **services_amount** - an int containing the amount of services in the Workspace
