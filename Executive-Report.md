@@ -205,6 +205,16 @@ The data available to the Report template is:
     * target
     * resolution
 
+#### Workspace Variables
+* **workspace.scope** - a list containing the different scopes of the workspace. 
+* **workspace** - a dictionary with all workspace informartion.
+    *name
+    *description
+    *id
+    *start_date
+    *end_date
+    *users
+
 Grouped reports will have an additional field:
 
 * **vulns_grouped_amount** - an int containing the total amount of vulnerabilities after grouping
