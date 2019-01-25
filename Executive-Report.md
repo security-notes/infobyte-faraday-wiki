@@ -82,7 +82,9 @@ From the Executive Report window, select the document and click on **Delete**
 
 ### Templates
 
-All report templates are located in ```reports/executive/templates``` in your Faraday installation directory. The default one is ```generic_default.docx```, you can modify it to get customized reports.
+All report templates are located in ```reports/executive/templates``` in your Faraday installation directory. The default one is ```generic_default.docx```, you can modify it to get customized reports. 
+
+You can also save your custom templates in ```~/.faraday/executive_reports_templates/```. This way, you will not lose your templates after an update.
 
 You can download an example report [here](https://github.com/infobyte/faraday/wiki/files/example_report.docx) and its corresponding template [here](https://github.com/infobyte/faraday/wiki/files/generic_default.docx).
 
