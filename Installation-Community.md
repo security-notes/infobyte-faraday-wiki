@@ -47,7 +47,7 @@ $ sudo apt install build-essential ipython python-setuptools \
                 libxslt1-dev libfreetype6-dev libpng-dev postgresql
 
 ```
-Warning: If you already have **postgresql** installed, please corroborate the version is uppder than 9.6.
+**Warning**: If you already have **postgresql** installed, please corroborate the version is upper than 9.4.
 
 ##### Kali Linux
 
