@@ -40,11 +40,14 @@ You can run the following command to install the required dependencies on any De
 
 ```
 $ sudo apt update
+
 $ sudo apt install build-essential ipython python-setuptools \
                 python-pip python-dev libssl-dev \
                 libffi-dev pkg-config libxml2-dev \
                 libxslt1-dev libfreetype6-dev libpng-dev postgresql
+
 ```
+Warning: If you already have **postgresql** installed, please corroborate the version is uppder than 9.6.
 
 ##### Kali Linux
 
