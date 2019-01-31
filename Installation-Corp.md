@@ -58,7 +58,7 @@ $ sudo apt install build-essential ipython python-setuptools \
                 postgresql sudo libsasl2-dev libldap2-dev \
                 libkrb5-dev
 ```
-
+**Warning**: If you already have **postgresql** installed, please corroborate the version is upper than 9.4.
 ##### Kali Linux
 
 If you are running Kali, please run the following commands:
