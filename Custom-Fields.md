@@ -38,3 +38,5 @@ New CustomField will be added to vulnerability -> Order 0 (cvss,CVSS,str) <-, co
 ```
 vuln.custom_fields["CVSS"] 
 ```
+
+Note: use the display name in the report
