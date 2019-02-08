@@ -1,20 +1,20 @@
-Custom fields allows you to extend the vulnerability's model with more fields. Custom fields type can be int, str and list.
+Custom Fields allows you to extend the vulnerability's model by adding more fields. Custom Fields type can be int, str or list.
 You can [learn more about custom fields creation on this wiki page](https://github.com/infobyte/faraday/wiki/Custom-fields).
 
-In this small tutorial, we are going to use python requests to authenticate, create a vuln and modify custom fields.
+In this small tutorial, we are going to use Python's library _Requests_ and Faraday's API to authenticate, create a vulnerability and modify its Custom Fields.
 
-# Step 1: Authentication
+## Step 1: Authentication
 
-For authentication, we are going to use a function called faraday_authentication. This function will return an authenticated request session.
+To authenticate in Faraday, we are going to use a function called faraday_authentication(). This function will return an authenticated request session.
 
 ``` python
 def faraday_authentication(host, username, password):
     """
-       @host: faraday server host, ex. http://127.0.0.1:5985
-       @username: faraday username
-       @password: the password of the username
+       @host: Faraday server host, e.g: http://127.0.0.1:5985
+       @username: Faraday username
+       @password: username's password
 
-       return requests session object
+       Return requests session object
     """
     session = requests.Session()
     headers = {
@@ -26,13 +26,15 @@ def faraday_authentication(host, username, password):
     return session
 ```
 
-# Step 2: Create custom fields
+## Step 2: Create Custom Fields
 
-Please [follow the steps of this wiki page](https://github.com/infobyte/faraday/wiki/Custom-fields#how-to-use-custom-fields).
+Currently, you can't create a Custom Field through the API. In order to create a new Custom Field, follow the steps specified in this [wiki page](https://github.com/infobyte/faraday/wiki/Custom-fields#how-to-use-custom-fields).
 
-# Step 3: Create a vulnerability from the api
+## Step 3: Create a vulnerability from the API
 
-Before using the API you need to understand how to send the data to the server. Faraday server accepts json and the vulnerability format is the following:
+Before using the API, you need to understand how to send the data to the server. Faraday Server accepts JSON. Assuming that you created a custom field with the following data:
+`Field name: cvss`, 
+`Display name: CVSS` and assuming that this vulnerability has as CVSS, the score "4", the JSON format for creating this vulnerability is the following:
 
 ```
 {
@@ -69,7 +71,9 @@ Before using the API you need to understand how to send the data to the server. 
   "severity": "unclassified",
   "issuetracker": "",
   "status": "opened",
-  "custom_fields": {},
+  "custom_fields": {
+    "CVSS" : "4"
+  },
   "_attachments": {},
   "description": "",
   "protocol": "",
@@ -77,106 +81,64 @@ Before using the API you need to understand how to send the data to the server. 
 }
 ```
 
-Note that we have a key called "custom_fields" with an empty dictionary.
+**Important**
+* Note that we have a key called "custom_fields" with its display name and its value:
 ```
-"custom_fields": {}
+"custom_fields": {
+  "CVSS" : "4"
+}
 ```
 
-Another important field to understand is the parent_id and parent_type. In the json avobe we used "Host" with parent "24" since in our database we have a host with id 24.
-You can [learn more about the API here](https://github.com/infobyte/faraday/wiki/API-Server)
+* Two important fields that we need to understand are _parent_id_ and _parent_type_. In the JSON above, we specified them as follow:
+```
+ "parent_type" : "Host"
+ "parent_id" : "24" 
+```
+This mean that in our database we have a _Host_ with id _24_. If you don't specify this two fields, you will get an invalid response.
+
+You can learn more about the API Server by following this [link](https://github.com/infobyte/faraday/wiki/API-Server)
 
 
-Here is a code sample that will create a new vulnerability called "Test"
-NOTE: we use the workspace called "demo_workspace" in all the examples. 
+### Code sample for creating a vulnerability
+
+Now, let's see a code sample that will create a new vulnerability called _Test_ inside a workspace named _demo_workspace_. As _vuln_payload_ we will use the JSON that we specified above:
 
 ``` python
 faraday_host = 'http://127.0.0.1:5985'
 session = faraday_authentication(faraday_host, 'faraday', 'secret')
 vulnerability_url = '{0}//_api/v2/ws/demo_workspace/vulns/386/'.format(faraday_host)
-vuln_payload = '{"metadata":{"update_time":1549569790.632,"update_user":"","update_action":0,"creator":"UI Web","create_time":1549569790.632,"update_controller_action":"UI Web New","owner":"faraday"},"obj_id":"","owner":"faraday","parent":24,"parent_type":"Host","type":"Vulnerability","ws":"demo_workspace","confirmed":true,"data":"","desc":"dsadsadsa","easeofresolution":null,"impact":{"accountability":false,"availability":false,"confidentiality":false,"integrity":false},"name":"Test","owned":false,"policyviolations":[],"refs":[],"resolution":"","severity":"unclassified","issuetracker":"","status":"opened","custom_fields":{},"_attachments":{},"description":"","protocol":"","version":""}'
+vuln_payload = '{"metadata":{"update_time":1549569790.632,"update_user":"","update_action":0,"creator":"UI Web","create_time":1549569790.632,"update_controller_action":"UI Web New","owner":"faraday"},"obj_id":"","owner":"faraday","parent":24,"parent_type":"Host","type":"Vulnerability","ws":"demo_workspace","confirmed":true,"data":"","desc":"dsadsadsa","easeofresolution":null,"impact":{"accountability":false,"availability":false,"confidentiality":false,"integrity":false},"name":"Test","owned":false,"policyviolations":[],"refs":[],"resolution":"","severity":"unclassified","issuetracker":"","status":"opened","custom_fields":{"CVSS" : "4"},"_attachments":{},"description":"","protocol":"","version":""}'
 response = session.post(vulnerability_url, json=vuln_payload)
 ```
 
-The server is going to answer with the created vulnerability and it will return status code 201 or 409 (conflict).
-In our case it returned the id 386 on the key "_id".
+The server is going to answer with the created vulnerability and it will return status code "201" (if the creation was successfull) or "409" (if there was any conflict). In our case it returned the status code "201" and a JSON with the response. 
 
-When you create the vuln you can send the custom fields information. Suppose you create a custom field with the following data:
+We can get the vulnerability id by getting the key "_id" from the JSON response. In this case, the vulnerability id is _386_. 
 
-`Field name: cvss`
-`Display name: CVSS`
+**Important:** If you didn't create the Custom Field by running python manage.py add-custom-field to add the custom field (see step 2), it will not be seen in the vulnerability. Remember to create the custom field first.
 
-Now on the field "custom_fields" you can send the following:
+### Getting the vulnerability by its ID using the API
 
-```
-{
-  "metadata": {
-    "update_time": 1549570358.149,
-    "update_user": "",
-    "update_action": 0,
-    "creator": "UI Web",
-    "create_time": 1549570358.149,
-    "update_controller_action": "UI Web New",
-    "owner": "faraday"
-  },
-  "obj_id": "",
-  "owner": "faraday",
-  "parent": 24,
-  "parent_type": "Host",
-  "type": "Vulnerability",
-  "ws": "demo_workspace",
-  "confirmed": true,
-  "data": "",
-  "desc": "dsadsa",
-  "easeofresolution": null,
-  "impact": {
-    "accountability": false,
-    "availability": false,
-    "confidentiality": false,
-    "integrity": false
-  },
-  "name": "Test",
-  "owned": false,
-  "policyviolations": [],
-  "refs": [],
-  "resolution": "",
-  "severity": "unclassified",
-  "issuetracker": "",
-  "status": "opened",
-  "custom_fields": {
-    "CVSS": "4"
-  },
-  "_attachments": {},
-  "description": "",
-  "protocol": "",
-  "version": ""
-}
-```
-
-Note that the custom field has new data:
-
-```
-"custom_fields": {
-    "CVSS": "4"
-  },
-```
-
-NOTE: If you didn't use python manage.py add-custom-field to add CVSS field, it will no have any effect on the vuln. Remember to create the custom field first.
-
-Now you can try to do a get on the following url to see the vulnerability in json format with custom fields:
+Now you can do a GET request on the following url to see the vulnerability in JSON format. Note that we are using the same id as the one we get above (386):
 
 `http://localhost:5985/_api/v2/ws/demo_workspace/vulns/386/`
 
-Remember to change the ID in the URL to the correct one on your database.
 
-# Step 3: Update custom fields
+## Step 3: Update Custom Fields
 
-In the next example we are going to update the custom field CVSS of the vulnerability 386. The new value will be "5". 
-NOTE: When you update a vulnerability you need to send the full json body of the vulnerability.
+In the next example, we are going to update the Custom Field "CVSS" located in the vulnerability 386. The new value will be "5". 
+**Note:** When you update a vulnerability, you need to send the full JSON body of the vulnerability.
 
 ``` python
 faraday_host = 'http://127.0.0.1:5985'
 session = faraday_authentication(faraday_host, 'faraday', 'secret')
 vulnerability_url = '{0}/_api/v2/ws/demo_workspace/vulns/386/'.format(faraday_host)
 vuln_payload = '{"metadata":{"update_time":1549569790.632,"update_user":"","update_action":0,"creator":"UI Web","create_time":1549569790.632,"update_controller_action":"UI Web New","owner":"faraday"},"obj_id":"","owner":"faraday","parent":24,"parent_type":"Host","type":"Vulnerability","ws":"demo_workspace","confirmed":true,"data":"","desc":"dsadsadsa","easeofresolution":null,"impact":{"accountability":false,"availability":false,"confidentiality":false,"integrity":false},"name":"Test","owned":false,"policyviolations":[],"refs":[],"resolution":"","severity":"unclassified","issuetracker":"","status":"opened","custom_fields":"CVSS": "5","_attachments":{},"description":"","protocol":"","version":""}'
-response = session.post(vulnerability_url, json=vuln_payload)
+response = session.put(vulnerability_url, json=vuln_payload)
 ```
+
+Note that we have changed the value of "CVSS" on the JSON:
+```
+"custom_fields": {
+  "CVSS" : "5"
+}
