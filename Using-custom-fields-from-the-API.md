@@ -1,5 +1,5 @@
 Custom Fields allows you to extend the vulnerability's model by adding more fields. Custom Fields type can be int, str or list.
-You can [learn more about custom fields creation on this wiki page](https://github.com/infobyte/faraday/wiki/Custom-fields).
+You can learn more about Custom Fields creation on this [wiki page](https://github.com/infobyte/faraday/wiki/Custom-fields).
 
 In this small tutorial, we are going to use Python's library _Requests_ and Faraday's API to authenticate, create a vulnerability and modify its Custom Fields.
 
@@ -99,7 +99,7 @@ This mean that in our database we have a _Host_ with id _24_. If you don't speci
 You can learn more about the API Server by following this [link](https://github.com/infobyte/faraday/wiki/API-Server)
 
 
-### Code sample for creating a vulnerability
+#### Code sample for creating a vulnerability
 
 Now, let's see a code sample that will create a new vulnerability called _Test_ inside a workspace named _demo_workspace_. As _vuln_payload_ we will use the JSON that we specified above:
 
@@ -117,14 +117,14 @@ We can get the vulnerability id by getting the key "_id" from the JSON response.
 
 **Important:** If you didn't create the Custom Field by running python manage.py add-custom-field to add the custom field (see step 2), it will not be seen in the vulnerability. Remember to create the custom field first.
 
-### Getting the vulnerability by its ID using the API
+#### Getting the vulnerability by its ID using the API
 
 Now you can do a GET request on the following url to see the vulnerability in JSON format. Note that we are using the same id as the one we get above (386):
 
 `http://localhost:5985/_api/v2/ws/demo_workspace/vulns/386/`
 
 
-## Step 3: Update Custom Fields
+## Step 4: Update Custom Fields
 
 In the next example, we are going to update the Custom Field "CVSS" located in the vulnerability 386. The new value will be "5". 
 **Note:** When you update a vulnerability, you need to send the full JSON body of the vulnerability.
