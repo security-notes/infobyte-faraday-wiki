@@ -2,6 +2,7 @@ Custom fields allows you to extend the vulnerability's model with more fields. C
 
 With our [Professional and Corporate](https://www.faradaysec.com/#download) versions, you can use the custom fields in the executive report.
 
+Check here [how to useFaraday custom fields using the API](https://github.com/infobyte/faraday/wiki/Using-custom-fields-from-the-API)
 
 ## How to use custom fields
 
