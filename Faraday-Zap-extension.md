@@ -28,6 +28,7 @@ Once you are logged in, you can go to the _Configuration_ tab and select the wor
 Now that you have configured Faraday Zap extension, you can proceed to send issues into Faraday:
 
 * Sending a request:
+
 ![](https://raw.github.com/wiki/infobyte/faraday/images/plugins/zap/send-request.png)
 
 * Sending an alert:
