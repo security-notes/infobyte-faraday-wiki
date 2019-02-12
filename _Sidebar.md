@@ -68,7 +68,7 @@
   
   * [Basic Plugin Development](https://github.com/infobyte/faraday/wiki/Basic-plugin-development)
   * [Burp Proxy Extender](https://github.com/infobyte/faraday/wiki/Burp-proxy-extender)
-  * [ZAP Extension](https://github.com/infobyte/faraday/wiki/Zap-extension)
+  * [Faraday Zap Extension](https://github.com/infobyte/faraday/wiki/Faraday-Zap-extension)
   * [BeEF](https://github.com/infobyte/faraday/wiki/BeEF)
   * [Evilgrade](https://github.com/infobyte/faraday/wiki/Evilgrade)
   * [Faraday Plugin](https://github.com/infobyte/faraday/wiki/Faraday-Plugin)
