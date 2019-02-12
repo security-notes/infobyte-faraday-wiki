@@ -5,8 +5,10 @@
 
 With Faraday Zap Extension, you are able to send new issues directly from OWASP Zap into Faraday. 
 
+### Download Faraday Zap Extension
 The first thing we need to do is to download [Faraday Zap Extension](https://github.com/infobyte/faraday/releases/download/v3.3/zap-plugin.zap).
 
+### Configuring Faraday Zap Extension
 Once we have downloaded it, we need to load it into OWASP Zap. You can load an add-on as the sample image below or by typing [Ctrl + L]:
 
 ![](https://raw.github.com/wiki/infobyte/faraday/images/plugins/zap/load-add-on.png)
@@ -25,6 +27,7 @@ Once you are logged in, you can go to the _Configuration_ tab and select the wor
 
 **Note:** by clicking on _Refresh_, you can update your workspaces from Faraday.
 
+### Sending requests and alerts into Faraday
 Now that you have configured Faraday Zap extension, you can proceed to send issues into Faraday:
 
 * Sending a request:
@@ -35,7 +38,7 @@ Now that you have configured Faraday Zap extension, you can proceed to send issu
 
 ![](https://raw.github.com/wiki/infobyte/faraday/images/plugins/zap/send-alert.png)
 
-## Uninstalling Faraday Zap Extension
+### Uninstalling Faraday Zap Extension
 
 To uninstall the extension, go into _Manage Add-ons_, select the extension named _Faraday_ and then click on _Uninstall Selected_
 
