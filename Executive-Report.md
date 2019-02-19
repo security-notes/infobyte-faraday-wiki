@@ -115,11 +115,11 @@ If you want to add a new template make sure to follow the naming guidelines as f
 * **generic_{customName}.docx** for generic reports - all the vulnerabilities will be listed as individual items in these reports
 * **group_{customName}.docx** for grouped reports - vulnerabilities will be grouped by name and description
 
-### Data
+## Data
 
 The data available to the Report template is:
 
-#### General Variables
+### General Variables
 * **conclusions** - contains the text loaded when [creating the report](#making-a-report)
 * **date** - the date when the Report was created, as the name of the month and four digits for the year
 * **objectives** - contains the text loaded when [creating the report](#making-a-report)
@@ -130,7 +130,7 @@ The data available to the Report template is:
 * **scope** - contains the text loaded when [creating the report](#making-a-report)
 * **overview_images** - a [sub-document](http://docxtpl.readthedocs.io/en/latest/#sub-documents) containing * 
 
-#### Hosts Variables
+### Hosts Variables
 * **hosts_amount** - an int containing the amount of hosts in the Workspace
 * **hosts** - a dictionary with all the hosts in the Workspace
     * type
@@ -152,7 +152,7 @@ The data available to the Report template is:
     * id
     * metadata
 
-#### Service Variables
+### Service Variables
 * **services_amount** - an int containing the amount of services in the Workspace
 * **services** - a dictionary with all the services in the Workspace
     * status
@@ -173,7 +173,7 @@ The data available to the Report template is:
     * ports
     * name
 
-#### Vulnerability Variables
+### Vulnerability Variables
 * **counter_severity** - a dictionary with all the severities and the amount of vulns for each onevulnerability piecharts
 * **vulns_amount** - an int containing the amount of vulnerabilities in the Workspace except for vulns with severity _unclassified_, which are not included
 * **vulns** - a dictionary with all the vulnerabilities in the Workspace except for vulns with severity _unclassified_, which are not included
@@ -211,7 +211,7 @@ Grouped reports will have an additional field:
 * **vulns_grouped_amount** - an int containing the total amount of vulnerabilities after grouping
 
 
-#### Workspace Variables
+### Workspace Variables
 * **workspace.scope** - a list containing the different scopes of the workspace. 
 * **workspace** - a dictionary with all workspace informartion.
 
