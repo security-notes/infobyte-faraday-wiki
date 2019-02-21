@@ -56,6 +56,7 @@
   * [Jira](https://github.com/infobyte/faraday/wiki/Jira)
   * [LDAP](https://github.com/infobyte/faraday/wiki/LDAP)
   * [OSINT Provider](https://github.com/infobyte/faraday/wiki/OSINT-Provider)
+  * [ServiceNow](https://github.com/infobyte/faraday/wiki/ServiceNow)
   * [ThreadFix](https://github.com/infobyte/faraday/wiki/ThreadFix-Integration)
 
 * [**Security**](https://github.com/infobyte/faraday/wiki/Security)
