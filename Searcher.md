@@ -1,4 +1,3 @@
-# Searcher script
 In order to search specific objects inside your Faraday workspace and execute several actions over them, we created **Searcher**. To explain how we can use it, lets to propose some cases to resolve, but first to all is important to know which is the structure of searcher and how or where we must make changes to have a good result.
 
 Searcher has the following structure:
