@@ -1,27 +1,43 @@
-## Searcher script
-In order to search specific objects inside your Faraday workspace and execute several actions over them, we created **Searcher**. This tool has some options which can be printed with the following command:
+# Searcher script
+In order to search specific objects inside your Faraday workspace and execute several actions over them, we created **Searcher**. To explain how we can use it, lets to propose some cases to resolve, but first to all is important to know which is the structure of searcher and how or where we must make changes to have a good result.
 
-    $ ./searcher.py -h
-    usage: searcher.py [-h] -w WORKSPACE [-s SERVER] [-u USER] [-p PASSWORD]  [-o OUTPUT] [-l LOG]
-    Search duplicated objects on Faraday
-    optional arguments:
-    -h, --help            show this help message and exit
-    -w WORKSPACE, --workspace WORKSPACE Search duplicated objects into this workspace
-    -s SERVER, --server SERVER server
-    -u USER, --user USER Faraday user
-    -p PASSWORD, --password PASSWORD Faraday password
-    -o OUTPUT, --output OUTPUT Choose a custom output directory
-    -l LOG, --log LOG     Choose a custom log level
+Searcher has the following structure:
 
+![](https://raw.githubusercontent.com/wiki/infobyte/faraday/images/searcher/searcher_structure.png)
 
-## How does it work?
-**Searcher** needs a rule list to be used, these rules determine concepts such as _specific object to select_ and _actions that will be executed_ if some conditions are met inside the current Faraday workspace.
+**output:** Contains all outputs that searcher might have, in that case, is an SQLite DB to store each executed rule with data such as time, affected model and applied action.
+
+**log:** Contains all searcher log files.
+
+**searcher.py:** It’s the main file, it contains all logic to use Searcher and we must execute this file passing some arguments in the command line.
+
+**rule.py:** It’s another important file to execute searcher, it contains all rules to be processed by searcher.py.
+
+**validator.py:** This file is to validate that each rule written by the user is correct, the validator watch for semantics and syntactic structure in the rules.py file and it can notify to the user how and where fix the wrong rule.
+
+**api.py:** it’s an auxiliary file and it’s used to communicate with Faraday API.
+
+Now is the moment to propose a simple example that can help us to learn about Searcher, we are going to change all vulnerabilities which severity value be **low** to **medium** value.
+
+First let's check the severity values distribution in our workspace, in my case with name _**develop**_.
+
+![](https://raw.githubusercontent.com/wiki/infobyte/faraday/images/searcher/severity_report.png)
+
+![](https://raw.githubusercontent.com/wiki/infobyte/faraday/images/searcher/status_report_low.png)
+
+## Step 1
+
+After that, we can proceed to write the rule that allows execute the change of severity value. it could be something like: 
+
+“TO CHANGE ALL VULNERABILITIES WHICH SEVERITY VALUE IS LOW TO SEVERITY MEDIUM VALUE”
+
+Good !, with this expression we have all that we need to build a rule. Searcher needs a rule list to be used, these rules determine concepts such as specific object to select and actions that will be executed if some conditions are met inside the current Faraday workspace.
 
 Basically, a rule has a structure like this:
 
-    [OBJECT]
-    [IF]
-    [THEN]
+     [OBJECT]
+     [IF]
+     [THEN]
 
 With this in mind, we use this global structure of rule:
 
@@ -30,17 +46,29 @@ With this in mind, we use this global structure of rule:
         ‘id’: ‘CU1’,
         
         ‘model’:’Vulnerability’,
-        ‘parent’: ‘192.168.42.55’OBJECT
+        ‘parent’: ‘192.168.42.55’                                 OBJECT
         ‘fields’:[‘name’,’desc’,’description’]
         ‘object’:’creator=Nmap ref=nmap-10’,
 
-        ‘conditions’:[“refs=nessus-333”,”name=smb-vuln-056”], IF
+        ‘conditions’:[“refs=nessus-333”,”name=smb-vuln-056”],      IF
 
-        ‘actions’:[“--UPDATE:confirmed=True”]THEN
+        ‘actions’:[“--UPDATE:confirmed=True”]                      THEN
     }
 
 
-Where the fields 'model', 'parent', 'fields' and 'object' allow to get the object that will be processed, and field 'conditions0 tells us when the actions can be executed.
+Where the fields 'model', 'parent', 'fields' and 'object' allow to get the object that will be processed, and field 'conditions' tells us when the actions can be executed.
+
+Now let’s write our rule from the initial expression in the file rules.py.
+
+TO CHANGE ALL **VULNERABILITIES (model)** WHICH **SEVERITY VALUE IS LOW (object)** **TO SEVERITY MEDIUM VALUE” (action)**
+
+    {
+         'id': 'CHANGE_SEVERITY',
+         'model': 'Vulnerability',
+         'object': "severity=low",        
+         'actions': ["--UPDATE:severity=med"]
+    }
+
 
 ### Rule description
 
@@ -57,19 +85,80 @@ Each rule has optional and mandatory fields, it depends on our purpose:
 |  			actions 		    |  			The actions are the response that 			each rule gives having account the desire goal. There are 4 kinds 			of actions: 			UPDATE, ALERT, DELETE and EXECUTE, these will be explained 			later 		                                                 |  			Yes 		       |  			--UPDATE:severity=critical 			--UPDATE:confirmed=True 			--UPDATE:refs=nessus-333 			--UPDATE:-refs=nmap-10 			--UPDATE:template=tempId 			--ALERT:test@gmail.com 			--EXECUTE:/create_task.sh 			--DELETE: 		 |  			Specific format 		              |
 
 
+## Step 2
 
-### Usage examples
+Now we can run searcher, it’s important to know all the options that it has to get a desired result, to do this we can type  _**$ ./searcher.py -h**_ in the terminal.
 
-To use Searcher tool, we must keep in mind some elements to specify such as current workspace.
+    usage: searcher.py [-h] -w WORKSPACE [-s SERVER] [-u USER] [-p PASSWORD]
+                   [-o OUTPUT] [-e EMAIL] [-ep EMAIL_PASS] [-mp MAIL_PROTOCOL]
+                   [-pp PORT_PROTOCOL] [-l LOG]
 
-    $ ./searcher.py –w=my_workspace –s=http://127.0.0.1:5985 –u=faraday –p=changeme
-    $ ./searcher.py –w=my_workspace (Community version)
+     Search duplicated objects on Faraday
 
-**Mandatory:** Faraday's user and password. These elements could be omitted if we are using the Community version.
+    optional arguments:
+      -h, --help            show this help message and exit
+      -w WORKSPACE, --workspace WORKSPACE Search duplicated objects into this workspace
+      -s SERVER, --server SERVER Faraday server
+      -u USER, --user USER  Faraday user
+      -p PASSWORD, --password PASSWORD Faraday password
+      -o OUTPUT, --output OUTPUT Choose a custom output directory
+      -e EMAIL, --email EMAIL Custom email
+      -ep EMAIL_PASS, --email_pass EMAIL_PASS Email password
+      -mp MAIL_PROTOCOL, --mail_protocol MAIL_PROTOCOL Email protocol
+      -pp PORT_PROTOCOL, --port_protocol PORT_PROTOCOL Port protocol
+      -l LOG, --log LOG     Choose a custom log level
+
+
+To run our example _**searcher.py -w develop -p <MY_PASS>**_ after that we can check the log file and database to see all changes. 
+
+
+    03/06/2019 03:42:24 PM - Faraday searcher - INFO: Started
+    03/06/2019 03:42:24 PM - Faraday searcher - INFO: Searching objects into workspace develop
+    03/06/2019 03:42:31 PM - Faraday searcher - DEBUG: Getting hosts ...
+    03/06/2019 03:42:33 PM - Faraday searcher - DEBUG: Getting services ...
+    03/06/2019 03:42:34 PM - Faraday searcher - DEBUG: Getting vulnerabilities ...
+    03/06/2019 03:42:36 PM - Faraday searcher - INFO: --> Validating rules ...
+    03/06/2019 03:42:36 PM - Faraday searcher - INFO: <-- Rules OK
+    03/06/2019 03:42:36 PM - Faraday searcher - DEBUG: --> Start Process vulnerabilities
+    03/06/2019 03:42:36 PM - Faraday searcher - DEBUG: Getting models
+    03/06/2019 03:42:36 PM - Faraday searcher - DEBUG: Getting object
+    03/06/2019 03:42:36 PM - Faraday searcher - INFO: Running actions of rule 'CHANGE_SEVERITY' :
+    03/06/2019 03:42:36 PM - Faraday searcher - INFO: Changing property severity to med in vulnerability 'Login page         password-guessing attack' with id 47
+    03/06/2019 03:42:37 PM - Faraday searcher - INFO: Done
+    03/06/2019 03:42:37 PM - Faraday searcher - DEBUG: Inserting rule CHANGE_SEVERITY into SQlite database ...
+    03/06/2019 03:42:37 PM - Faraday searcher - DEBUG: Done
+    03/06/2019 03:42:37 PM - Faraday searcher - INFO: Changing property severity to med in vulnerability 'Session Cookie     without Secure flag set' with id 41
+    03/06/2019 03:42:37 PM - Faraday searcher - INFO: Done
+    03/06/2019 03:42:37 PM - Faraday searcher - DEBUG: Inserting rule CHANGE_SEVERITY into SQlite database ...
+    03/06/2019 03:42:37 PM - Faraday searcher - DEBUG: Done
+    03/06/2019 03:42:37 PM - Faraday searcher - INFO: Changing property severity to med in vulnerability 'Login page     password-guessing attack' with id 44
+    03/06/2019 03:42:38 PM - Faraday searcher - INFO: Done
+    03/06/2019 03:42:38 PM - Faraday searcher - DEBUG: Inserting rule CHANGE_SEVERITY into SQlite database ...
+    03/06/2019 03:42:38 PM - Faraday searcher - DEBUG: Done
+    03/06/2019 03:42:38 PM - Faraday searcher - INFO: Changing property severity to med in vulnerability 'OPTIONS method     is enabled' with id 22
+    03/06/2019 03:42:38 PM - Faraday searcher - INFO: Done
+    03/06/2019 03:42:38 PM - Faraday searcher - DEBUG: Inserting rule CHANGE_SEVERITY into SQlite database ...
+    03/06/2019 03:42:38 PM - Faraday searcher - DEBUG: Done
+    03/06/2019 03:42:38 PM - Faraday searcher - INFO: Changing property severity to med in vulnerability 'Clickjacking:     X-Frame-Options header missing' with id 3
+    03/06/2019 03:42:38 PM - Faraday searcher - INFO: Done
+    03/06/2019 03:42:38 PM - Faraday searcher - DEBUG: Inserting rule CHANGE_SEVERITY into SQlite database ...
+    03/06/2019 03:42:38 PM - Faraday searcher - DEBUG: Done
+    03/06/2019 03:42:38 PM - Faraday searcher - DEBUG: <-- Finish Process vulnerabilities
+    03/06/2019 03:42:38 PM - Faraday searcher - DEBUG: --> Start Process services
+    03/06/2019 03:42:38 PM - Faraday searcher - DEBUG: <-- Finish Process services
+    03/06/2019 03:42:38 PM - Faraday searcher - DEBUG: --> Start Process Hosts
+    03/06/2019 03:42:38 PM - Faraday searcher - DEBUG: <-- Finish Process Hosts
+    03/06/2019 03:42:38 PM - Faraday searcher - INFO: Finished
+
+## Step 3
+
+Let’s check Faraday !
+
+![](https://raw.githubusercontent.com/wiki/infobyte/faraday/images/searcher/severity_report_changed.png)
 
 
 
-## Rules configurations examples
+### Rules configurations examples
 
  **1-** We are going to change the severity to "critical" and the confirmed status to "True" on all the vulnerabilities whose names begin with ‘Device’ and parent is ’50.56.220.123’. The conditions to make this change is that there should be another vulnerability with severity="info" in this same host and another vulnerability which creator is Nessus and its name begin with ‘OS’:
 
