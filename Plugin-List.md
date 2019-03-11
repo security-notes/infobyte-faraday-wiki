@@ -47,7 +47,7 @@ If you think your favourite tool is missing [code your own plugin](https://githu
 * [Dnsrecon](https://github.com/darkoperator/dnsrecon) (CONSOLE)
 * [Dnswalk](https://github.com/leebaird/discover) (CONSOLE)
 * [evilgrade](http://twitter.com/infobytesec) (API)
-* [Fierce](http://tools.kali.org/information-gathering/fierce) (CONSOLE)
+* [Fierce](http://tools.kali.org/information-gathering/fierce) (CONSOLE, REPORT)
 * [Fruitywifi](http://www.fruitywifi.com/index_eng.html) (API)
 * ftp (CONSOLE)
 * [Goohost](http://www.aldeid.com/wiki/Goohost) (REPORT, CONSOLE) (XML)
