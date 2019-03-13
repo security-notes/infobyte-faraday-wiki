@@ -244,6 +244,7 @@ Json Body of the reports objects:
 ```
 
 **Vulnerability Template:**
+
 This API endpoints allows you to change the Vulnerability Template (VulnDB) objects: 
 
     (HEAD, OPTIONS, GET) -> '/_api/v2/vulnerability_template/'
@@ -293,8 +294,20 @@ Json Body:
 "description":""
 }
 ```
+**Activity Feed:**
+
+This API endpoints allows you to change the Activity Feed (from Dashboard) objects:
+
+    (HEAD, OPTIONS, GET) -> '/v2/ws/<workspace_name>/activities/count/'
+    (HEAD, OPTIONS, GET) ->  '/v2/ws/<workspace_name>/commands/activity_feed/'
+    (OPTIONS, DELETE) -> '/v2/ws/<workspace_name>/activities/<object_id>/'
+    (HEAD, OPTIONS, GET) -> '/v2/ws/<workspace_name>/activities/<object_id>/'
+    (PUT, OPTIONS) -> '/v2/ws/<workspace_name>/activities/<object_id>/'
+    (HEAD, OPTIONS, GET) -> '/v2/ws/<workspace_name>/activities/'
+    (POST, OPTIONS) -> '/v2/ws/<workspace_name>/activities/'
 
 **Comments:**
+
 This API endpoints allows you to change the Comment objects: 
 
     (HEAD, OPTIONS, GET) -> '/_api/v2/ws/<workspace_name>/comment/count/'
@@ -308,7 +321,6 @@ This API endpoints allows you to change the Comment objects:
 **Commands:**
 
     (HEAD, OPTIONS, GET) -> '/_api/v2/ws/<workspace_name>/commands/count/'
-    (HEAD, OPTIONS, GET) -> '/_api/v2/ws/<workspace_name>/commands/activity_feed/'
     (OPTIONS, DELETE) -> '/_api/v2/ws/<workspace_name>/commands/<object_id>/'
     (HEAD, OPTIONS, GET) -> '/_api/v2/ws/<workspace_name>/commands/<object_id>/'
     (PUT, OPTIONS) -> '/_api/v2/ws/<workspace_name>/commands/<object_id>/'
