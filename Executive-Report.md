@@ -5,6 +5,7 @@
 * [Requirements](#requirements)
 * [Managing Executive Reports](#managing-executive-reports)
 * [Making a Report](#making-a-report)
+* [Using markdown on a report](#using-markdown-on-a-report)
 * [Eliminating a Report](#eliminating-a-report)
 * [Templates](#templates)
 
@@ -73,6 +74,41 @@ At least one vulnerability must be tagged in order to have the option to generat
 These two parameters (confirmed and tags) can be mixed to create different outcomes.
 
 ![](https://raw.github.com/wiki/infobyte/faraday/images/executive_reports/using_tags.png)
+
+### Using markdown on a report
+
+Executive reports supports markdown (v3.7 or higher). Currently we do not support all markdown lenguage.
+Executive report supports markdown on the following fields:
+
+* Vulnerability description
+* Vulnerability data
+* Executive report scope
+* Executive report objectives
+* Executive report summary
+* Executive report conclusions
+* Executive report recommendations
+
+You can use inline evidence in the fields above using the following:
+
+(evidence:evidence_filename.png).
+
+For example suppose the you want to explain how to reproduce the issue in the vulnerability description:
+
+
+```
+The Vulnerability is triggered by opening the following url:
+
+(evidence:web_app_step_1.jpg)
+
+After you open the vulnerable url, enter the following on the form:
+
+(evidence:web_app_step_2.jpg).
+
+The following screenshot shows the database contents:
+
+(evidence:database_table_names.jpg)
+
+```
 
 ### Eliminating a report
 
