@@ -67,7 +67,7 @@ Below you can find a sample config file for NGINX.
 
         location / {
                 proxy_pass http://localhost:5985/;
-                proxy_redirect http:// $scheme://;
+                proxy_redirect http:// https://;
                 proxy_set_header Host $host;
                 proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
                 proxy_set_header X-Forwarded-Ssl on;
