@@ -5,24 +5,24 @@ If you already tried Faraday and you are ready to use it for real we strongly re
 ##### Starting up Faraday
 
 Run:
+    $ sudo docket pull infobyte/faraday
+    $ sudo docker run infobyte/faraday -v /home/USERNAME/database:/var/lib/postgresql/10/main
 
-    $ sudo docker run -t -i infobyte/faraday /root/run.sh
-
-This command runs the container with Faraday and CouchDB using a test Workspace called "workspace". Inside, Faraday is started with `./faraday.py -gui=no-gui --update` which means without a graphic environment and checking for  updates.
+This command runs the container with Faraday and PostgreSQL. For a production environmnet we recommend to use a docker only for faraday-server and another with PostgreSQL. Note that we used a volume for the database data directory.
 
 Now to obtain the container's IP address run:
 
     $ docker inspect $(docker ps -lq) | grep \"IPAddress
 
-For the purpose of this guide lets use `192.168.0.10`.
+For the purpose of this guide lets use `172.17.0.2`.
 
 ##### Web UI
 
-Direct the browser to `http://192.168.0.10:5985/_ui/`
+Direct the browser to `http://172.17.0.2:5985/_ui/`
 
 ##### ZSH
 
-    $ ssh root@192.168.0.10
+    $ ssh root@172.17.0.2
 
     $ cd faraday/
     $ ./faraday-terminal.zsh
@@ -37,9 +37,9 @@ And now in a different console, get the IP address:
 
     $ sudo docker inspect $(docker ps -lq) | grep \"IPAddress
 
-Again, for the purpose of this guide lets use `192.168.0.10`.
+Again, for the purpose of this guide lets use `172.17.0.2`.
 
-    # ssh -X root@192.168.0.10
+    # ssh -X root@172.17.0.2
     # cd faraday/
     # ./faraday.py
 
