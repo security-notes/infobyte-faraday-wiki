@@ -1,5 +1,7 @@
 This plugin is a script developed in JRuby as a extender to the Burp Proxy API (Pro/Community).
 
+[Download Link](https://github.com/infobyte/faraday/releases/download/v3.6.0/faraday-burp-plugin-v2.jar) 
+
 ### Dependencies
 Get the last JRuby Version Complete [[http://www.jruby.org/download]]
 
