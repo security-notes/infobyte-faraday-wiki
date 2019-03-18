@@ -55,7 +55,7 @@ If you think your favourite tool is missing [code your own plugin](https://githu
 * [Hydra](https://www.thc.org/thc-hydra) (CONSOLE) (XML)
 * [Immunity Canvas](http://www.immunityinc.com/products/canvas/) (API)
 * Ip360 (REPORT)
-* [Linys](https://cisofy.com/lynis/) (REPORT)
+* [Lynis](https://cisofy.com/lynis/) (REPORT)
 * Listurls (CONSOLE)
 * [Maltego](https://www.paterva.com/web6/products/maltego.php) (REPORT)
 * [masscan](https://twitter.com/ErrataRob) (REPORT, CONSOLE) (XML)
