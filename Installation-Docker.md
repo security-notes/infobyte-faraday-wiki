@@ -6,7 +6,7 @@ If you already tried Faraday and you are ready to use it for real we strongly re
 
 Run:
  ```
-    $ sudo docket pull infobyte/faraday
+    $ sudo docker pull infobyte/faraday
     $ sudo docker run infobyte/faraday -v /home/USERNAME/database:/var/lib/postgresql/10/main
  ```
 This command runs the container with Faraday and PostgreSQL. For a production environmnet we recommend to use a docker only for faraday-server and another with PostgreSQL. Note that we used a volume for the database data directory.
