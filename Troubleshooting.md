@@ -354,4 +354,18 @@ Make sure the client encoding is set correctly during this process.
 
 [ [index] ](#index)
 
+<a name="change-password"></a>
+### Change Password
+
+If you forgot the password or you don't know faraday server password, then follow this steps.
+You can use the command manage.py (or faraday-manage) to change your password:
+
+```
+python manage.py change-password
+```
+
+When you execute the previous command a wizard will help yo change the user password.
+
+[ [index] ](#index)
+
 Is your question not listed here? [Contact us](https://github.com/infobyte/faraday/issues)
