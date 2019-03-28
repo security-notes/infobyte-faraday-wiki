@@ -58,7 +58,7 @@ Run standalone:
       -e PGSQL_HOST='192.168.20.29' \
       -e PGSQL_PASSWD='mypgsqlpassword' \
       -e LISTEN_ADDR='0.0.0.0' \
-      faradaycorp:latest
+      faraday:latest
  ```
 Check container
 `
@@ -86,7 +86,6 @@ Check service
      $ docker service ls
      $ docker service logs faraday_server
 `
-
 
 ##### Web UI
 
