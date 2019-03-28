@@ -1,6 +1,7 @@
 This installation is intended for our commercial version of Faraday. For our community version, please check this [installation guide](https://github.com/infobyte/faraday/wiki/Installation-Docker)
 
-Once you have downloaded our image from [infobytesec portal](portal.faradaysec.com) you'll need to load it in docker:
+#### Image
+Once you have downloaded our image and docker-compose file from [infobytesec portal](portal.faradaysec.com) you'll need to load it in docker:
 
 ```
     $ docker load -i <path to image tar file>
@@ -12,9 +13,9 @@ Check Image
     $ docker image ls | grep faraday
 ```
 
-Starting Up Faraday
+#### Configuration
 
-This image can be run as a service or as a standalone container. Both runs Faraday Server. You will note that we used two volumes /faraday-license and /faraday-storage for the license and storage respectively and environment variables for faraday configuration.
+This image can be run as a service or as a standalone container. Both runs Faraday Server. You will note that we are using two volumes /faraday-license and /faraday-storage, for the license and storage respectively, and environment variables (below) for Faraday configuration.
 
 You'll need to customize the following variables depending on your installation config.
 
@@ -24,7 +25,7 @@ You'll need to customize the following variables depending on your installation 
       - PGSQL_DBNAME=faraday
       - LISTEN_ADDR=0.0.0.0
 
-For license and storage current user's ~/.faraday/doc and ~/.faraday/storage folders are mounted by default. In case you have a different installation please replace them with proper ones in
+For license and storage, current user's ~/.faraday/doc and ~/.faraday/storage folders are mounted by default. In case you have a different installation please replace them with proper ones in
 
 ```
     $ docker run \
@@ -47,17 +48,13 @@ For license and storage current user's ~/.faraday/doc and ~/.faraday/storage fol
         - path_to_my_storage_folde:/faraday-storage
       ...
 ```
-Running image as a service, credentials can be configured with docker secrets or plain text
-
-With secrets (default):
-
-The simplest way to create a secret is reading from standard input but you should take care of bash history.
+Credentials can be configured with docker secrets (default in docker-compose.yml) or plain text. The simplest way to create a secret is reading from standard input (you should take care of bash history).
 
 ```
     $ printf mypgsqlpassword | docker secret create pgsql_passwd -
 ```
 
-Edit docker-compose.yml and set:
+Once created, edit docker-compose.yml and set:
 
 ```
     $ vim docker-compose.yml
@@ -71,9 +68,9 @@ Edit docker-compose.yml and set:
       ...
 ```
       
-For more advanced examples about secrets check [docker web page](https://docs.docker.com/engine/swarm/secrets/#intermediate-example-use-secrets-with-a-nginx-service)
+For more about secrets check [docker web page](https://docs.docker.com/engine/swarm/secrets/)
 
-## Running Faraday as a standalone container
+#### Running Faraday as a standalone container
 
  ```
     $ docker run \
@@ -91,7 +88,7 @@ Check container
     $ docker container ls
 ```
 
-## Runnig Faraday as a service:
+#### Running Faraday as a service
 
 Initialize Swarm
 
@@ -118,7 +115,7 @@ Check service
     $ docker service logs faraday_server
 ```
 
-##### Web UI
+#### Web UI
 
 Now to obtain the container's IP address run:
 
