@@ -2,12 +2,12 @@ Download tar image from our portal
 
 Load Image:
 ```
-    $ sudo docker load -i <path to image tar file>
+    $ docker load -i <path to image tar file>
 ```
 
 Check Image
 `
-     $ sudo docker image ls | grep faraday
+    $ docker image ls | grep faraday
 `
 
 ##### Starting up Faraday
@@ -40,7 +40,7 @@ With secrets (default):
 The simplest way to create a secret is reading from standard input but you should take care of bash history.
 
 ```
-   $ printf mypgsqlpassword | sudo docker secret create pgsql_passwd -
+   $ printf mypgsqlpassword | docker secret create pgsql_passwd -
 ```
 
 Edit docker-compose.yml and set:
@@ -51,7 +51,7 @@ For more advanced examples about secrets check [docker web page](https://docs.do
 
 Run standalone:
  ```
-    $ sudo docker run \
+    $ docker run \
       -v ~/.faraday/doc:/faraday-license \
       -v ~/.faraday/storage:/faraday-storage \
       -p 5985:5985 \
@@ -62,29 +62,29 @@ Run standalone:
  ```
 Check container
 `
-     $ sudo docker container ls
+     $ docker container ls
 `
 Run as service:
 
 Initialize Swarm
 
 ```
-    $ sudo docker swarm init
+    $ docker swarm init
 ```
 
 In case you have more than one ip addr configured in your machine you have to specify which one to use.
 ```
-    $ sudo docker swarm init --advertise-addr=192.168.20.29
+    $ docker swarm init --advertise-addr=192.168.20.29
 ```
 
 Deploy:
 ```
-     $ sudo docker stack deploy -c docker-compose.yml faraday
+     $ docker stack deploy -c docker-compose.yml faraday
 ```
 Check service
 `
-     $ sudo docker service ls
-     $ sudo docker service logs faraday_server
+     $ docker service ls
+     $ docker service logs faraday_server
 `
 
 
@@ -92,7 +92,7 @@ Check service
 
 Now to obtain the container's IP address run:
 ```
-    $ sudo docker inspect $(docker ps -lq) | grep \"IPAddress
+    $ docker inspect $(docker ps -lq) | grep \"IPAddress
 ```
 For the purpose of this guide lets use `172.17.0.2`.
 
