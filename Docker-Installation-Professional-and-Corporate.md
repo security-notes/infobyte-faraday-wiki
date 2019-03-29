@@ -1,6 +1,6 @@
 This installation is intended for our commercial version of Faraday. For our community version, please check this [installation guide](https://github.com/infobyte/faraday/wiki/Installation-Docker)
 
-#### Image
+#### Loading Image
 Once you have downloaded our image and docker-compose file from [infobytesec portal](portal.faradaysec.com) you'll need to load it in docker:
 
 ```
@@ -15,40 +15,19 @@ Check Image
 
 #### Configuration
 
-This image can be run as a service or as a standalone container. Both runs Faraday Server. You will note that we are using two volumes /faraday-license and /faraday-storage, for the license and storage respectively, and environment variables (below) for Faraday configuration.
+This image can be run as a service or as a standalone container. Both runs Faraday Server with out Postgres. You will note that we created /faraday-license and /faraday-storage volumes (for mount your license and storage) and environment variables (below) for Faraday configuration.
 
-You'll need to customize the following variables depending on your installation config.
+##### Database Connection
 
-      - PGSQL_HOST=192.168.20.29
+The following variables came with default values. You'll need to customize them depending on your installation config. 
+
+      - PGSQL_HOST=172.2.0.1
       - PGSQL_USER=faraday_postgresql
       - PGSQL_PASSWD=mypgsqlpassword
       - PGSQL_DBNAME=faraday
-      - LISTEN_ADDR=0.0.0.0
-
-For license and storage, current user's ~/.faraday/doc and ~/.faraday/storage folders are mounted by default. In case you have a different installation please replace them with proper ones in
 
 ```
-    $ docker run \
-    ....
-    -v path_to_my_doc_folder:/faraday-license \
-    -v path_to_my_storage_folder:/faraday-storage \
-    ....
-```
-    or
-
-```
-    $ vim docker-compose.yml
-
-    version: '3.7'
-
-    services:
-      ...
-      volumes:
-        - path_to_my_doc_folder:/faraday-license
-        - path_to_my_storage_folde:/faraday-storage
-      ...
-```
-Credentials can be configured with docker secrets (default in docker-compose.yml) or plain text. The simplest way to create a secret is reading from standard input (you should take care of bash history).
+PGSQL_PASSWD can be configured with docker secrets (default in docker-compose.yml) or plain text. The simplest way to create a secret is reading from standard input (you should take care of bash history).
 
 ```
     $ printf mypgsqlpassword | docker secret create pgsql_passwd -
@@ -69,6 +48,32 @@ Once created, edit docker-compose.yml and set:
 ```
       
 For more about secrets check [docker web page](https://docs.docker.com/engine/swarm/secrets/)
+
+##### Volumes
+
+Current user's ~/.faraday/doc and ~/.faraday/storage folders are mounted by default. In case you have a different installation please replace them with proper ones in
+
+```
+    [standalone]
+    $ docker run \
+    ....
+    -v /path/to/my_doc_folder:/faraday-license \
+    -v /path/to/my_storage_folder:/faraday-storage \
+    ....
+    or
+
+    [service]
+    $ vim docker-compose.yml
+
+    version: '3.7'
+
+    services:
+      ...
+      volumes:
+        - /path/to/my_doc_folder:/faraday-license
+        - /path/to/my_storage_folde:/faraday-storage
+      ...
+
 
 #### Running Faraday as a standalone container
 
@@ -117,11 +122,13 @@ Check service
 
 #### Web UI
 
-Now to obtain the container's IP address run:
+Once Faraday Server is running you'll need to obtain the container's IP address. For this, run:
 
 ```
     $ docker inspect $(docker ps -lq) | grep \"IPAddress
-```
-For the purpose of this guide lets use `172.17.0.2`.
+    [output]
+            "IPAddress": "172.17.0.2",
+                    "IPAddress": "172.17.0.2",
 
-Direct the browser to `http://172.17.0.2:5985/_ui/`
+```
+Now you can direct your browser to `http://172.17.0.2:5985/_ui/`
