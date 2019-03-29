@@ -86,7 +86,7 @@ Current user's ~/.faraday/doc and ~/.faraday/storage folders are mounted by defa
       -e PGSQL_HOST='192.168.20.29' \
       -e PGSQL_PASSWD='mypgsqlpassword' \
       -e LISTEN_ADDR='0.0.0.0' \
-      faraday:latest
+      faraday:black
  ```
 Check container
 
@@ -117,7 +117,7 @@ version: '3.7'
  
 services: 
   server: 
-    image: faradaycorp:latest 
+    image: faraday:black 
     environment: 
       - LISTEN_ADDR=0.0.0.0 
       - PGSQL_HOST=192.168.20.29 
