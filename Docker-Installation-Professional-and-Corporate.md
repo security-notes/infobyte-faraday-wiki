@@ -16,7 +16,7 @@ Check Image
 
 #### Configuration
 
-This image can be run as a service or as a standalone container. Both runs Faraday Server without Postgres. You will note that we created /faraday-license and /faraday-storage volumes (for mount your license and storage) and environment variables (below) for Faraday configuration.
+This image can be run as a service or as a standalone container. Both run Faraday Server without PostgreSQL. You will note that we have created `/faraday-license` and `/faraday-storage` volumes (for mount your license and storage). We have also created environment variables (below) for Faraday configuration.
 
 ##### Database Connection
 
