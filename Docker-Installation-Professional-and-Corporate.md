@@ -1,10 +1,10 @@
 This installation is intended for our commercial version of Faraday. For our community version, please check this [installation guide](https://github.com/infobyte/faraday/wiki/Installation-Docker)
 
 #### Loading Image
-Once you have downloaded our image tar file from [infobytesec portal](portal.faradaysec.com) you'll need to load it in docker:
+Once you have downloaded our image file from [infobytesec portal](portal.faradaysec.com) you'll need to load it in docker:
 
 ```
-    $ docker load -i <path to image tar file>
+    $ docker load -i <path to image tar.gz file>
 ```
 
 Check Image
