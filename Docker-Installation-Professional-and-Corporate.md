@@ -15,11 +15,11 @@ Check Image
 
 #### Configuration
 
-This image can be run as a service or as a standalone container. Both runs Faraday Server with out Postgres. You will note that we created /faraday-license and /faraday-storage volumes (for mount your license and storage) and environment variables (below) for Faraday configuration.
+This image can be run as a service or as a standalone container. Both runs Faraday Server without Postgres. You will note that we created /faraday-license and /faraday-storage volumes (for mount your license and storage) and environment variables (below) for Faraday configuration.
 
 ##### Database Connection
 
-The following variables came with default values. You'll need to customize them depending on your installation config. 
+The following variables came with default values so you'll need to customize some or all of them depending on your installation config. 
 
       - PGSQL_HOST=172.2.0.1
       - PGSQL_USER=faraday_postgresql
@@ -27,7 +27,7 @@ The following variables came with default values. You'll need to customize them 
       - PGSQL_DBNAME=faraday
 
 ```
-PGSQL_PASSWD can be configured with docker secrets (default in docker-compose.yml) or plain text. The simplest way to create a secret is reading from standard input (you should take care of bash history).
+When Faraday runs as a service PGSQL_PASSWD can be configured with docker secrets (default in docker-compose.yml). The simplest way to create a secret is reading from standard input (you should take care of bash history).
 
 ```
     $ printf mypgsqlpassword | docker secret create pgsql_passwd -
@@ -74,8 +74,9 @@ Current user's ~/.faraday/doc and ~/.faraday/storage folders are mounted by defa
         - /path/to/my_storage_folde:/faraday-storage
       ...
 
+#### Running Faraday
 
-#### Running Faraday as a standalone container
+##### As a standalone container
 
  ```
     $ docker run \
@@ -93,7 +94,7 @@ Check container
     $ docker container ls
 ```
 
-#### Running Faraday as a service
+##### As a service
 
 Initialize Swarm
 
@@ -122,7 +123,7 @@ Check service
 
 #### Web UI
 
-Once Faraday Server is running you'll need to obtain the container's IP address. For this, run:
+Once Faraday Server is running you'll have to obtain the container's IP address. For this, run:
 
 ```
     $ docker inspect $(docker ps -lq) | grep \"IPAddress
