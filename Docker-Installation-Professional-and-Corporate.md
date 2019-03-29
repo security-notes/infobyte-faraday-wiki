@@ -92,7 +92,7 @@ To check container, run the following command:
 ```
 As you can see, Faraday Server is running in port 5985.
 
-#### As a service:
+#### As a service
 
 **1.** Initialize a Swarm:
 
