@@ -1,6 +1,6 @@
 This installation is intended for our commercial version of Faraday. For our community version, please check this [installation guide](https://github.com/infobyte/faraday/wiki/Installation-Docker-Community)
 
-#### Loading Image
+### Loading Image
 
 Once you have downloaded our image file from [faraday portal](http://portal.faradaysec.com) you'll need to load it in docker:
 
@@ -14,59 +14,31 @@ Check Image
     $ docker image ls | grep faraday
 ```
 
-#### Configuration
+### Configuration
 
-This image can be run as a service or as a standalone container. Both run Faraday Server without PostgreSQL. You will note that we have created `/faraday-license` and `/faraday-storage` volumes (for mount your license and storage). We have also created environment variables (below) for Faraday configuration.
+This image can be run as a service or as a standalone container. Both run Faraday Server without PostgreSQL. You will note that we have created `/faraday-license` and `/faraday-storage` volumes (for mount your license and storage). We have also created environment variables for Faraday configuration.
 
-##### Database Connection
+We will get more in detail of these volumes and environment variables:
 
-The following variables came with default values so you'll need to customize some or all of them depending on your installation config. 
+#### Volumes
 
-```
-
-      - PGSQL_HOST=172.2.0.1
-      - PGSQL_USER=faraday_postgresql
-      - PGSQL_PASSWD=mypgsqlpassword
-      - PGSQL_DBNAME=faraday
+Current user's ~/.faraday/doc and ~/.faraday/storage folders are mounted by default. In case you have these folders in a different place, please replace them with proper path at the moment you run Faraday whether as a standalone container or as a service:
 
 ```
-
-When Faraday runs as a service PGSQL_PASSWD can be configured with docker secrets (default in docker-compose.yml). The simplest way to create a secret is reading from standard input (you should take care of bash history).
-
+    /path/to/my_doc_folder:/faraday-license 
+    /path/to/my_storage_folder:/faraday-storage 
 ```
-    $ printf mypgsqlpassword | docker secret create pgsql_passwd -
+Example:
 ```
-
-Once created, edit docker-compose.yml and set:
-
-```
-    $ vim docker-compose.yml
-
-    version: '3.7'
-
-    services:
-      ...
-      environment:
-        - PGSQL_PASSWD=/run/secrets/pgsql_passwd  
-      ...
-```
-      
-For more about secrets check [docker web page](https://docs.docker.com/engine/swarm/secrets/)
-
-##### Volumes
-
-Current user's ~/.faraday/doc and ~/.faraday/storage folders are mounted by default. In case you have a different installation please replace them with proper ones in
-
-```
-    [standalone]
+    [Running Faraday as a standalone container]
     $ docker run \
     ....
     -v /path/to/my_doc_folder:/faraday-license \
     -v /path/to/my_storage_folder:/faraday-storage \
     ....
-    or
-
-    [service]
+```
+```
+    [Running Faraday as a service]
     $ vim docker-compose.yml
 
     version: '3.7'
@@ -79,9 +51,28 @@ Current user's ~/.faraday/doc and ~/.faraday/storage folders are mounted by defa
       ...
 ```
 
-#### Running Faraday
+We will get more in details about this configuration below. 
 
-##### As a standalone container
+#### Enviroment Variables
+
+The following variables came with default values so you'll need to customize some or all of them depending on your installation config. 
+
+```
+
+      - PGSQL_HOST=172.2.0.1 # PostgreSQL server host.
+      - PGSQL_USER=faraday_postgresql # PostgreSQL user
+      - PGSQL_PASSWD=mypgsqlpassword # PostgreSQL user's password.
+      - PGSQL_DBNAME=faraday # Faraday's database name
+
+```
+
+### Running Faraday
+
+Now that we have learn about the volumes and the enviroment variables above, let's run Faraday assuming we want to connect into PostreSQL's address _192.168.20.29_ and that we have located Faraday's config folder in its default location: ~/.faraday.
+
+#### As a standalone container
+
+Run the following command specifying the correct information:
 
  ```
     $ docker run \
@@ -93,15 +84,17 @@ Current user's ~/.faraday/doc and ~/.faraday/storage folders are mounted by defa
       -e LISTEN_ADDR='0.0.0.0' \
       faraday:black
  ```
-Check container
+
+To check container, run the following command:
 
 ```
     $ docker container ls
 ```
+As you can see, Faraday Server is running in port 5985.
 
-##### As a service
+#### As a service:
 
-Initialize a Swarm
+**1.** Initialize a Swarm:
 
 ```
     $ docker swarm init
@@ -113,9 +106,9 @@ In case you have more than one ip addr configured in your machine you have to sp
     $ docker swarm init --advertise-addr=192.168.20.29
 ```
 
-Docker Compose File:
+**2.** Docker Compose File:
 
-Use this docker-compose as example if you want to:
+Now, you need to create a **docker-compose.yml** file. You can use this docker-compose as example:
 
 ```
 version: '3.7' 
@@ -145,28 +138,56 @@ secrets:
     external: true
 ```
 
-Deploy:
+When Faraday runs as a service, PGSQL_PASSWD can be configured with docker secrets (default in docker-compose.yml). The simplest way to create a secret is reading from standard input (you should take care of bash history).
+
+```
+    $ printf mypgsqlpassword | docker secret create pgsql_passwd -
+```
+
+Once you have created the secret, edit you docker-compose.yml and set:
+
+```
+    $ vim docker-compose.yml
+
+    version: '3.7'
+
+    services:
+      ...
+      environment:
+        - PGSQL_PASSWD=/run/secrets/pgsql_passwd  
+      ...
+```
+      
+For more information about secrets, check [docker web page](https://docs.docker.com/engine/swarm/secrets/)
+
+**3.** Deploy:
+
+Once you are done setting up your docker-compile.yml file, let's deploy by running the following command:
 
 ```
     $ docker stack deploy -c docker-compose.yml faraday
 ```
 
-Check service
+**4.** Check service:
+
+To check the service, run the following command:
 
 ```
     $ docker service ls
     $ docker service logs faraday_server
 ```
 
-#### Web UI
+### Web UI
 
 Once Faraday Server is running you'll have to obtain the container's IP address. For this, run:
 
 ```
     $ docker inspect $(docker ps -lq) | grep \"IPAddress
-    [output]
+```
+This command will throw the following output:
+```
             "IPAddress": "172.17.0.2",
                     "IPAddress": "172.17.0.2",
-
 ```
+
 Now you can direct your browser to `http://172.17.0.2:5985/_ui/`
