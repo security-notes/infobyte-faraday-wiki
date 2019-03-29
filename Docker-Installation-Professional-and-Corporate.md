@@ -2,7 +2,7 @@ This installation is intended for our commercial version of Faraday. For our com
 
 #### Loading Image
 
-Once you have downloaded our image file from [faraday portal](portal.faradaysec.com) you'll need to load it in docker:
+Once you have downloaded our image file from [faraday portal](http://portal.faradaysec.com) you'll need to load it in docker:
 
 ```
     $ docker load -i <path to image tar.gz file>
