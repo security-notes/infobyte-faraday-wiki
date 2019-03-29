@@ -1,6 +1,7 @@
 This installation is intended for our commercial version of Faraday. For our community version, please check this [installation guide](https://github.com/infobyte/faraday/wiki/Installation-Docker-Community)
 
 #### Loading Image
+
 Once you have downloaded our image file from [faraday portal](portal.faradaysec.com) you'll need to load it in docker:
 
 ```
@@ -21,12 +22,15 @@ This image can be run as a service or as a standalone container. Both runs Farad
 
 The following variables came with default values so you'll need to customize some or all of them depending on your installation config. 
 
+```
+
       - PGSQL_HOST=172.2.0.1
       - PGSQL_USER=faraday_postgresql
       - PGSQL_PASSWD=mypgsqlpassword
       - PGSQL_DBNAME=faraday
 
 ```
+
 When Faraday runs as a service PGSQL_PASSWD can be configured with docker secrets (default in docker-compose.yml). The simplest way to create a secret is reading from standard input (you should take care of bash history).
 
 ```
@@ -73,6 +77,7 @@ Current user's ~/.faraday/doc and ~/.faraday/storage folders are mounted by defa
         - /path/to/my_doc_folder:/faraday-license
         - /path/to/my_storage_folde:/faraday-storage
       ...
+```
 
 #### Running Faraday
 
@@ -96,7 +101,7 @@ Check container
 
 ##### As a service
 
-Initialize Swarm
+Initialize a Swarm
 
 ```
     $ docker swarm init
