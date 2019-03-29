@@ -1,7 +1,7 @@
 This installation is intended for our commercial version of Faraday. For our community version, please check this [installation guide](https://github.com/infobyte/faraday/wiki/Installation-Docker)
 
 #### Loading Image
-Once you have downloaded our image and docker-compose file from [infobytesec portal](portal.faradaysec.com) you'll need to load it in docker:
+Once you have downloaded our image tar file from [infobytesec portal](portal.faradaysec.com) you'll need to load it in docker:
 
 ```
     $ docker load -i <path to image tar file>
@@ -106,6 +106,38 @@ In case you have more than one ip addr configured in your machine you have to sp
 
 ```
     $ docker swarm init --advertise-addr=192.168.20.29
+```
+
+Docker Compose File:
+
+Use this docker-compose as example if you want to:
+
+```
+version: '3.7' 
+ 
+services: 
+  server: 
+    image: faradaycorp:latest 
+    environment: 
+      - LISTEN_ADDR=0.0.0.0 
+      - PGSQL_HOST=192.168.20.29 
+      - PGSQL_USER=faraday_postgresql 
+      - PGSQL_PASSWD=/run/secrets/pgsql_passwd 
+      - PGSQL_DBNAME=faraday 
+    secrets: 
+      - pgsql_passwd 
+    ports: 
+      - 5985:5985 
+    volumes: 
+      - ~/.faraday/doc:/faraday-license 
+      - ~/.faraday/storage:/faraday-storage 
+    deploy: 
+      replicas: 1 
+      placement: 
+        constraints: [node.role == manager] 
+secrets: 
+  pgsql_passwd: 
+    external: true
 ```
 
 Deploy:
