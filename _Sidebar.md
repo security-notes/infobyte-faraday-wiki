@@ -5,7 +5,7 @@
   * [Install - Community](https://github.com/infobyte/faraday/wiki/Installation-Community)
   * [Install - Professional](https://github.com/infobyte/faraday/wiki/Installation-Pro)
   * [Install - Corporate](https://github.com/infobyte/faraday/wiki/Installation-Corp)
-  * [Install - Docker](https://github.com/infobyte/faraday/wiki/Installation-Docker)
+  * [Install - Docker](https://github.com/infobyte/faraday/wiki/Installation-Docker-Community)
   * [Install - Docker Pro/Corp](https://github.com/infobyte/faraday/wiki/Docker-installation-professional-and-corporate)
   * [Install - OS X](https://github.com/infobyte/faraday/wiki/Installation-OSX)
   * [Install - RedHat](https://github.com/infobyte/faraday/wiki/Installation-RedHat)
