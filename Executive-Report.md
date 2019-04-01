@@ -109,15 +109,15 @@ For example suppose the you want to explain how to reproduce the issue in the vu
 ```
 The Vulnerability is triggered by opening the following url:
 
-(evidence:web_app_step_1.jpg)
+(evidence:vulnerability:ID:web_app_step_1.jpg)
 
 After you open the vulnerable url, enter the following on the form:
 
-(evidence:web_app_step_2.jpg).
+(evidence:vulnerability:ID:web_app_step_2.jpg).
 
 The following screenshot shows the database contents:
 
-(evidence:database_table_names.jpg)
+(evidence:vulnerability:ID:database_table_names.jpg)
 
 ```
 
