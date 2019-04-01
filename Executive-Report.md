@@ -254,8 +254,8 @@ Grouped reports will have an additional field:
     * name
     * description
     * id
-    * start_date
-    * end_date
+    * duration.start_date
+    * duration.end_date
     * users
 
 
