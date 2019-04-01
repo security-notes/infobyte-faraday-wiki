@@ -77,6 +77,13 @@ These two parameters (confirmed and tags) can be mixed to create different outco
 
 ### Using markdown on a report
 
+For using markdown on executive reports, please enable it on server.ini by adding:
+
+```
+[executive_report]                                                                                                                                           
+markdown = true   
+```
+
 Executive reports supports markdown (v3.7 or higher). Currently we do not support all markdown lenguage.
 Executive report supports markdown on the following fields:
 
@@ -90,7 +97,11 @@ Executive report supports markdown on the following fields:
 
 You can use inline evidence in the fields above using the following:
 
-(evidence:evidence_filename.png).
+(evidence:vulnerability:ID:evidence_filename.png).
+
+Note: You can copy this custom markdown from the evidence tab of the vulnerability.
+
+
 
 For example suppose the you want to explain how to reproduce the issue in the vulnerability description:
 
