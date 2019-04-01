@@ -85,6 +85,13 @@ markdown = true
 ```
 
 Executive reports supports markdown (v3.7 or higher). Currently we do not support all markdown lenguage.
+We support the following markdown:
+
+* Titles
+* Tables
+* Faraday Inline evidence (with custom markdown)
+* Bold and italic
+
 Executive report supports markdown on the following fields:
 
 * Vulnerability description
