@@ -1,8 +1,8 @@
 * [Intro](#intro)
-* [Usage Examples](#usage-examples)
 * [Interactive Mode](#interactive-mode)
 * [Available Commands](#available-commands)
 * [Adding New Commands](#adding-new-commands)
+* [Usage Examples](#usage-examples)
 
 ## Intro
 
@@ -91,68 +91,6 @@ Everything after the `--` will be sent to the command, and will not be interpret
 
 ```
 
-## Usage Examples
-
-### Filter hosts by ports or services
-
-The following command will list all running services exposed on common HTTP ports (services with ports 80, 8080, 443, 8443 open).
-
-```
- $ ./fplugin filter_services http ssh -p 21 -a
-Filtering services for ports: 21, 22, 80, 443, 8080, 8443
-host            service         ports           protocol        status          host_os
-------------------------------------------------------------------------------------------------
-192.168.20.7    ssh             22              tcp             open            Linux
-192.168.20.7    http            443             tcp             open            Linux
-192.168.20.15   upnp            80              tcp             open            Linux
-192.168.20.22   ssh             22              tcp             open            Linux
-192.168.20.48   ssh             22              tcp             open            None
-192.168.20.123  ssh             22              tcp             open            Linux
-192.168.20.123  http            443             tcp             open            Linux
-192.168.20.11   ssh             22              tcp             open            Linux
-192.168.20.11   http            80              tcp             open            Linux
-192.168.20.11   http            443             tcp             open            Linux
-```
-
-### Create a new host and interface
-
-```
-$ ./fplugin create_host_and_interface 192.154.33.22 Linux interface 76598709876
-709381e970d2d669ee1d1b4844a6dde9d9b63c77.a47084649d94d1fb2f912872dfda906c59a623c4
-
-$ echo $?
-0
-
-$ ./fplugin create_host_and_interface 192.154.33.22 Linux intname aa:bb:cc:dd:ee:ff
-A host with ID 709381e970d2d669ee1d1b4844a6dde9d9b63c77 already exists!
-
-$ echo $?
-2
-...
-```
-
-### Close vulns if a certain time has passed
-
-The following command will close all vulns in workspace if a certain time has passed since their creation.
-
-```
-$ python bin/fplugin autoclose_vulns --username [USERNAME] --password [PASSWORD] --workspace [WORKSPACE] --vuln_duration [VULN_DURATION]
-```
-
-**--vuln_duration**: the elapsed time **in seconds** that you want that a vuln remain opened. Those vulns that were created before this elapsed time will be closed. 
-
-For example: if you want to close those vulns that were created more than 30 days ago, you should pass this time in seconds:
-
-```
-30 days = 2592000 seconds
-```
-
-So the command would be like this (assuming that _faraday_, _changeme_, _ws-test_ are your username, password and workspace respectively):
-
-```
-$ python bin/fplugin autoclose_vulns --username faraday --password changeme --workspace ws-test --vuln_duration 2592000
-```
-
 ## Interactive mode
 
 This version of `fplugin` comes with an interactive mode which will help you quickly perform any of the available actions in a virtual interpreter.
@@ -173,7 +111,7 @@ $ ./fplugin create_host_and_interface 192.154.33.22 Linux interface 76598709876
 ```
 
 
-Additionaly, it has a command history of the last 1000 issued commands, for quick access. Just as with any terminal, you can cycle through it using the `UP` and `DOWN` arrow keys.
+Additionally, it has a command history of the last 1000 issued commands, for quick access. Just as with any terminal, you can cycle through it using the `UP` and `DOWN` arrow keys.
 
 ## Available commands
 
@@ -217,15 +155,15 @@ def main(workspace='', args=None, parser=None):
     pass
 ```
 
-The `__description__` and `__prettyname__` variables will be dinamically extracted to build the available command list, and show valuable information in the help and GTK views.
+The `__description__` and `__prettyname__` variables will be dynamically extracted to build the available command list, and show valuable information in the help and GTK views.
 
-The 3 parameters of the `main` function are detailed bellow:
+The 3 parameters of the `main` function are detailed below:
 
 * `workspace`: Workspace being worked on
 * `args`: A Python list of arguments not parsed by `fplugin`. This corresponds to arguments passed on to the command. You will probably want to send them to the `parser` after adding the required arguments.
-* `parser`: An [ArgumentParser](https://docs.python.org/2/library/argparse.html#argumentparser-objects) instance with pre-filled data about the command being executed. It is the task of the command to populate the parser with the optional or required arguments and call [parser.parse_args](https://docs.python.org/2/library/argparse.html#the-parse-args-method) to either print the help page and stop the execution, or to get a Namespace object with the parsed arguments. If no arguments are required, you can safely discard this argument. As `sys.argv` will contain additional arguments not needed by your command, you should pass the `args` list to the `parse_args` call.
+* `parser`: An [ArgumentParser](https://docs.python.org/2/library/argparse.html#argumentparser-objects) instance with pre-filled data about the command being executed. It is the task of the command to populate the parser with the optional or required arguments and call [parser.parse_args](https://docs.python.org/2/library/argparse.html#the-parse-args-method) to either print the help page and stop the execution or to get a Namespace object with the parsed arguments. If no arguments are required, you can safely discard this argument. As `sys.argv` will contain additional arguments not needed by your command, you should pass the `args` list to the `parse_args` call.
 
-The function should return a tuple with the exit code of the command (0 if execution finished without errors, ~0 otherwise), and, if an object was created, the ID of said object, or None in any other case.
+The function should return a tuple with the exit code of the command (0 if execution finished without errors, ~0 otherwise), and, if an object was created, the ID of the said object, or None in any other case.
 
 Here is a simple example showing the `create_host` command:
 
@@ -255,4 +193,90 @@ def main(workspace='', args=None, parser=None):
 
 As you can see, arguments are added to the `parser` object, and the `parser.parse_args` is called with the `args` argument passed on by `fplugin`
 
-Additionaly, if an object (in this case a Host) is created, we return a value of 0, and the ID of the created Host. If a host with the same IP already exists, we return an error code of 2, and None.
+Additionally, if an object (in this case a Host) is created, we return a value of 0, and the ID of the created Host. If a host with the same IP already exists, we return an error code of 2, and None.
+
+## Usage Examples
+
+### Filter hosts by ports or services
+
+The following command will list all running services exposed on common HTTP ports (services with ports 80, 8080, 443, 8443 open).
+
+```
+ $ ./fplugin filter_services http ssh -p 21 -a
+Filtering services for ports: 21, 22, 80, 443, 8080, 8443
+host            service         ports           protocol        status          host_os
+------------------------------------------------------------------------------------------------
+192.168.20.7    ssh             22              tcp             open            Linux
+192.168.20.7    http            443             tcp             open            Linux
+192.168.20.15   upnp            80              tcp             open            Linux
+192.168.20.22   ssh             22              tcp             open            Linux
+192.168.20.48   ssh             22              tcp             open            None
+192.168.20.123  ssh             22              tcp             open            Linux
+192.168.20.123  http            443             tcp             open            Linux
+192.168.20.11   ssh             22              tcp             open            Linux
+192.168.20.11   http            80              tcp             open            Linux
+192.168.20.11   http            443             tcp             open            Linux
+```
+
+### Create a new host and interface
+
+```
+$ ./fplugin create_host_and_interface 192.154.33.22 Linux interface 76598709876
+709381e970d2d669ee1d1b4844a6dde9d9b63c77.a47084649d94d1fb2f912872dfda906c59a623c4
+
+$ echo $?
+0
+
+$ ./fplugin create_host_and_interface 192.154.33.22 Linux intname aa:bb:cc:dd:ee:ff
+A host with ID 709381e970d2d669ee1d1b4844a6dde9d9b63c77 already exists!
+
+$ echo $?
+2
+...
+```
+
+### Close vulns if a certain time has passed
+
+The following command will close all vulns in a workspace if a certain time has passed since their creation.
+
+```
+$ python bin/fplugin autoclose_vulns --username [USERNAME] --password [PASSWORD] --workspace [WORKSPACE] --vuln_duration [VULN_DURATION]
+```
+
+**--vuln_duration**: the elapsed time **in seconds** that you want that a vuln to remain opened. Those vulns that were created before this elapsed time will be closed. 
+
+For example: if you want to close those vulns that were created more than 30 days ago, you should pass this time in seconds:
+
+```
+30 days = 2592000 seconds
+```
+
+So the command would be like this (assuming that _faraday_, _changeme_, _ws-test_ are your username, password and workspace respectively):
+
+```
+$ python bin/fplugin autoclose_vulns --username faraday --password changeme --workspace ws-test --vuln_duration 2592000
+```
+
+#### Configure Crontab
+
+You can configure crontab to automatically run the command above. Let's assume that you have crontab installed. You can display your crontab file's contents by running:
+
+```
+$ crontab -l
+```
+
+Let's set the cronjob that will run the command above. To edit or create your crontab file, run the following command:
+
+```
+$ crontab -e
+```
+
+If you want your cronjob to run **the first day of every two months at 10:00 am**, so that the vulnerabilities created in the first month are closed, you should specify the following cronjob inside your crontab file:
+
+```
+0 10 1 */2 * /path/to/python /path/to/faraday/bin/fplugin autoclose_vulns --username faraday --password changeme --workspace ws-test --vuln_duration 2592000
+```
+
+Note that you need to specify Python executable's path and Faraday folder's path.
+
+For more information about Crontab, follow this [link](https://www.adminschoice.com/crontab-quick-reference)
