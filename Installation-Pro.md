@@ -54,7 +54,7 @@ $ sudo apt update
 $ sudo apt install build-essential ipython python-setuptools \
                 python-pip python-dev libssl-dev \
                 libffi-dev pkg-config libxml2-dev \
-                libxslt1-dev libfreetype6-dev libpng-dev postgresql
+                libxslt1-dev libfreetype6-dev libpng-dev postgresql pandoc
 ```
 **Warning**: If you already have **postgresql** installed, please corroborate the version is upper than 9.4.
 
