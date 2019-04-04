@@ -28,19 +28,22 @@ optional arguments:
                         (default: http://localhost:5985)
 
 Available scripts:
+	- autoclose_vulns: Closes vulns from current workspace if a certain time has passed
 	- change_vuln_status: Changes Vulns Status (to closed)
 	- create_cred: Creates new credentials
-	- create_host_and_interface: Creates a new host and interface in current workspace
-	- create_note: Creates a new note
+	- create_executive_report: Creates a new executive report in current workspace
+	- create_host: Creates a new host in current workspace
 	- create_service: Creates a new service in a specified interface
 	- create_vuln: Creates a new vulnerability
 	- create_vulnweb: Creates a new website vulnerability in a specified service
-	- delAllHost: Deletes all stored hosts
-	- delAllServiceClosed: Deletes all services with a non open port
-	- delAllVulnsWith: Delete all vulnerabilities matched with regex
+	- create_xlsx_report: Creates a xls report from current workspace
+	- del_all_hosts: Deletes all stored hosts
+	- del_all_services_closed: Deletes all services with a non open port
+	- del_all_vulns_with: Delete all vulnerabilities matched with regex
+	- fbruteforce_services: Script to perform a brute force attack on different services in a workspace
 	- filter_services: Filter services by port or service name
-	- getAllIpsInterfaces: Get all scanned interfaces
-	- getSeverityByCwe: Get Vulns filtered by Severity and change Severity based in CWE
+	- get_all_ips: Get all scanned interfaces
+	- get_severitiy_by_cwe: Get Vulns filtered by Severity and change Severity based in CWE
 	- import_csv: Import Faraday objects from CSV file
 	- import_pcap: Import every host found in a PCAP file for further scanning
 	- list_creds: Get all stored credentials
