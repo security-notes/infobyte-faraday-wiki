@@ -149,26 +149,30 @@ Additionaly, it has a command history of the last 1000 issued commands, for quic
 
 Faraday comes with some presets for bulk actions such as object removal, etc. These are usually necessary when managing large Workspaces. The current presets are:
 
+* `autoclose_vulns`: Closes vulns from current workspace if a certain time has passed
+* `change_vuln_status`: Changes Vulns Status (to closed)
 * `create_cred`: Creates new credentials
+* `create_executive_report`: Creates a new executive report in current workspace
 * `create_host`: Creates a new host in current workspace
-* `create_interface`: Creates a new interface in a specified host
-* `create_note`: Creates a new note
 * `create_service`: Creates a new service in a specified interface
 * `create_vuln`: Creates a new vulnerability
 * `create_vulnweb`: Creates a new website vulnerability in a specified service
-* `delAllHost`: Deletes all stored hosts
-* `delAllServiceClosed`: Deletes all services with a non open port
-* `delAllVulnsWith`: Delete all vulnerabilities matched with rege
+* `create_xlsx_report`: Creates a xls report from current workspace
+* `del_all_hosts`: Deletes all stored hosts
+* `del_all_services_closed`: Deletes all services with a non open port
+* `del_all_vulns_with`: Delete all vulnerabilities matched with regex
+* `fbruteforce_services`: Script to perform a brute force attack on different services in a workspace
 * `filter_services`: Filter services by port
-* `getAllIpsInterfaces`: Get all scanned interfaces
-* `getExploits`: Get possible exploits from open services
-* `getSeverityByCwe`: Get Vulns filtered by Severity and change Severity based in CWE
+* `get_all_ips`: Get all scanned interfaces
+* `get_severitiy_by_cwe`: Get Vulns filtered by Severity and change Severity based in CWE
+* `import_csv`: Import Faraday objects from CSV file
 * `import_pcap`: Import every host found in a PCAP file for further scanning
 * `list_creds`: Get all stored credentials
 * `list_hosts`: List hosts
 * `list_ips`: List all scanned IPs
 * `list_os`: Lists all scanned OSs
-* `change_vuln_status`: Changes all vulns status to close
+* `screenshot_server`: Takes a Screenshot of the ip:ports of a given protocol
+
 
 
 
