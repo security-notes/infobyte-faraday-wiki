@@ -1,6 +1,10 @@
+* [Intro](#intro)
+* [Usage Examples](#usage-examples)
+* [Interactive Mode](#interactive-mode)
+* [Available Commands](#available-commands)
+* [Adding New Commands](#adding-new-commands)
 
-
-# Introduction
+## Intro
 
 In order to manage, add, and list information stored in faraday, we created _fplugin_, a simple plugin that allows you to interact directly with our Python API from the command line.
 
@@ -87,7 +91,7 @@ Everything after the `--` will be sent to the command, and will not be interpret
 
 ```
 
-# Usage Examples
+## Usage Examples
 
 ### Filter hosts by ports or services
 
@@ -149,7 +153,7 @@ So the command would be like this (assuming that _faraday_, _changeme_, _ws-test
 $ python bin/fplugin autoclose_vulns --username faraday --password changeme --workspace ws-test --vuln_duration 2592000
 ```
 
-# Interactive mode
+## Interactive mode
 
 This version of `fplugin` comes with an interactive mode which will help you quickly perform any of the available actions in a virtual interpreter.
 
@@ -171,7 +175,7 @@ $ ./fplugin create_host_and_interface 192.154.33.22 Linux interface 76598709876
 
 Additionaly, it has a command history of the last 1000 issued commands, for quick access. Just as with any terminal, you can cycle through it using the `UP` and `DOWN` arrow keys.
 
-# Available commands
+## Available commands
 
 Faraday comes with some presets for bulk actions such as object removal, etc. These are usually necessary when managing large Workspaces. The current presets are:
 
@@ -200,9 +204,7 @@ Faraday comes with some presets for bulk actions such as object removal, etc. Th
 * `screenshot_server`: Takes a Screenshot of the ip:ports of a given protocol
 
 
-
-
-# Adding new commands
+## Adding new commands
 
 `fplugin` will scan the `bin` folder of the Faraday root, so adding a new command is as simple as creating a new Python2 file following this standard:
 
