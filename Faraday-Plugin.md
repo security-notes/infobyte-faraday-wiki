@@ -1,3 +1,7 @@
+
+
+# Introduction
+
 In order to manage, add, and list information stored in faraday, we created _fplugin_, a simple plugin that allows you to interact directly with our Python API from the command line.
 
 It gives Faraday powerful scripting features, and allows you to query the database without leaving your favourite workspace, be it the GTK interface, or a terminal.
