@@ -82,7 +82,7 @@ Run the following command specifying the correct information:
       -e PGSQL_HOST='192.168.20.29' \
       -e PGSQL_PASSWD='mypgsqlpassword' \
       -e LISTEN_ADDR='0.0.0.0' \
-      faraday:black
+      faraday:c_v:3.7
  ```
 
 To check container, run the following command:
@@ -115,7 +115,7 @@ version: '3.7'
  
 services: 
   server: 
-    image: faraday:black 
+    image: faraday:c_v3.7 
     environment: 
       - LISTEN_ADDR=0.0.0.0 
       - PGSQL_HOST=192.168.20.29 
