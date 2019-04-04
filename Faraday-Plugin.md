@@ -123,6 +123,28 @@ $ echo $?
 ...
 ```
 
+### Close vulns if a certain time has passed
+
+The following command will close all vulns in workspace if a certain time has passed since their creation.
+
+```
+$ python bin/fplugin autoclose_vulns --username [USERNAME] --password [PASSWORD] --workspace [WORKSPACE] --vuln_duration [VULN_DURATION]
+```
+
+**--vuln_duration**: the elapsed time **in seconds** that you want that a vuln remain opened. Those vulns that were created before this elapsed time will be closed. 
+
+For example: if you want to close those vulns that were created more than 30 days ago, you should pass this time in seconds:
+
+```
+30 days = 2592000 seconds
+```
+
+So the command would be like this (assuming that _faraday_, _changeme_, _ws-test_ are your username, password and workspace respectively):
+
+```
+$ python bin/fplugin autoclose_vulns --username faraday --password changeme --workspace ws-test --vuln_duration 2592000
+```
+
 # Interactive mode
 
 This version of `fplugin` comes with an interactive mode which will help you quickly perform any of the available actions in a virtual interpreter.
