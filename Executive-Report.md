@@ -279,9 +279,9 @@ Grouped reports will have an additional field:
 **Note:** _start_date_ and _end_date_ are displayed in timestamp format. If you want to change their format, you can use datetimeformat() function and pass the desired format as parameter. E.g.:
 
 ```
-    duration.start_date|datetimeformat('%M-%d-%Y')
+    workspace.duration.start_date|datetimeformat('%M-%d-%Y')
 
-    duration.end_date|datetimeformat('%B %Y')
+    workspace.duration.end_date|datetimeformat('%B %Y')
 ```
 
 
