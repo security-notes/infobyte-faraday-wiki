@@ -84,6 +84,13 @@ For using markdown on executive reports, please enable it on server.ini by addin
 markdown = true   
 ```
 
+IMPORTANT! On your templates to render the markdown use:
+
+```
+{{ p vuln.description }}
+```
+
+
 Executive reports supports markdown (v3.7 or higher). Currently we do not support all markdown lenguage.
 We support the following markdown:
 
