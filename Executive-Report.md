@@ -291,4 +291,4 @@ Grouped reports will have an additional field:
     workspace.duration.end_date|datetimeformat('%B %Y')
 ```
 
-
+For more information about date format [check python docs](https://docs.python.org/2/library/datetime.html#strftime-and-strptime-behavior)
