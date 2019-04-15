@@ -74,9 +74,9 @@ Both depending on your needs. For more information you can contact us at sales@i
 
 <a name="systemreq"></a>
 ### What are the system requirements to run Faraday?
-CPU: 1 Dualcore 2GHz Intel CPU  
-Disk: 30 GB  
-Memory: 2 GB RAM (4 GB RAM recommended)  
+CPU: 2 Dualcore 2GHz Intel CPU  
+Disk: 40 GB  
+Memory: 4 GB RAM (8 GB RAM recommended)  
 
 Current tests include ​Debian​, ​Ubuntu​, ​Kali​, ​Backtrack​ and ​OSX Maverick 10.9.2​.
 
