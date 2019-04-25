@@ -44,7 +44,7 @@
   * [Backup](https://github.com/infobyte/faraday/wiki/Backup)
   * [Helpers](https://github.com/infobyte/faraday/wiki/Helpers)
   * [Proxy](https://github.com/infobyte/faraday/wiki/Proxy)
-  * [Run Faraday as Service from boot](https://github.com/infobyte/faraday/wiki/Run-As-Service)
+  * [Run as Service](https://github.com/infobyte/faraday/wiki/Run-As-Service)
   * [Scripts](https://github.com/infobyte/faraday/wiki/Scripts)
   * [Manage.py](https://github.com/infobyte/faraday/wiki/Manage.py)
 
