@@ -6,7 +6,7 @@
 Description=Faraday
 After=postgresql.service
 [Service]
-User=$USER
+User=YOUR_SYSTEM_USER
 Type=simple
 ExecStart=/usr/bin/python /path/to/faraday/faraday-server.pyc --nodeps
 Restart=always
