@@ -177,13 +177,13 @@ $ firewall-cmd --reload
 Once everything is installed and the server is configured, you can now proceed to run the Faraday server script:
 
 ```
-$ python2 faraday-server.pyc
+$ faraday-server
 ```
 
 If you want to run the server in background mode, you should use the `--start` option:
 
 ```
-$ python2 faraday-server.pyc --start
+$ faraday-server--start
 ```
 
 This is the recommended way to do this. Other methods like using the bash `&` could cause unexpected IOErrors and other related exceptions.
@@ -221,7 +221,7 @@ And search for the following **api_uri** tag and set it to the server URL, for e
 Once you have already configured the client and have Faraday Server running, you simply have to run:
 
 ```
-$ python2 faraday.pyc
+$ faraday-client
 ```
 
 Some distributions or installations require additional steps, so look down below if you are using something different than Debian or Ubuntu, or if you need to apply some configuration to the client.
