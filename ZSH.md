@@ -5,7 +5,7 @@ You can even run Faraday in detached mode connecting with a ZSH terminal to it:
 First, you need to run Faraday with no GUI:
 
 ``` 
-    $ python faraday.py --gui=no-gui
+    $ faraday-client --gui=no-gui
 ```
 
 ![](https://raw.github.com/wiki/infobyte/faraday/images/client/no_ui.png)
