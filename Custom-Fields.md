@@ -37,7 +37,7 @@ New CustomField will be added to vulnerability -> Order 0 (cvss,CVSS,str) <-, co
 **Note:** If you have a commercial version of Faraday, you can access the custom fields on the docx templates like a dictionary:
 
 ```
-vuln.custom_fields["CVSS"] 
+vuln.custom_fields["cvss"] 
 ```
 
-Note: use the display name in the report
+**Note:** use the **field name** in the report
