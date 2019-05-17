@@ -22,7 +22,7 @@ To configure Faraday with LDAP/AD edit `~/.faraday/config/server.ini` and comple
 * enabled (turn off or on the support with AD/LDAP)
 * server (IP Address of the server, Domain Controler or LDAP Server)
 * domain_dn (Domain path for AD)
-* domain default domain to use for logging, if not specified you can use username@domain. If you use @domain while logging this will override the default domain set on the server.ini.
+* domain default domain. Set to false if you don't need it.
 * admin_group (name of the group for AD that corresponds to the Admin role)
 * pentester_group (name of the group for AD that corresponds to the Pentester role)
 * client_group (name of the group for AD that corresponds to the Client role)
