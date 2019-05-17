@@ -44,6 +44,7 @@ The following example shows a basic AD configuration:
 enabled = true
 server = 127.0.0.1
 domain_dn = DC=example,DC=com
+domain = example.com
 admin_group = fadmin
 pentester_group = fpentester
 client_group = fclient
