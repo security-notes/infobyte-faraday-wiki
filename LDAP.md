@@ -22,6 +22,7 @@ To configure Faraday with LDAP/AD edit `~/.faraday/config/server.ini` and comple
 * enabled (turn off or on the support with AD/LDAP)
 * server (IP Address of the server, Domain Controler or LDAP Server)
 * domain_dn (Domain path for AD)
+* domain default domain. Set to false if you don't need it.
 * admin_group (name of the group for AD that corresponds to the Admin role)
 * pentester_group (name of the group for AD that corresponds to the Pentester role)
 * client_group (name of the group for AD that corresponds to the Client role)
@@ -34,6 +35,8 @@ To configure Faraday with LDAP/AD edit `~/.faraday/config/server.ini` and comple
 ```
 **WARNING:** If _use_local_roles_ is set to _true_, any user on the AD will be allowed to use Faraday.
 
+
+
 The following example shows a basic AD configuration:
 
 ```
@@ -41,6 +44,7 @@ The following example shows a basic AD configuration:
 enabled = true
 server = 127.0.0.1
 domain_dn = DC=example,DC=com
+domain = example.com
 admin_group = fadmin
 pentester_group = fpentester
 client_group = fclient

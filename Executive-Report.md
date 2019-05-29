@@ -80,8 +80,8 @@ These two parameters (confirmed and tags) can be mixed to create different outco
 For using markdown on executive reports, please enable it on server.ini by adding:
 
 ```
-[executive_report]                                                                                                                                           
-markdown = true   
+[executive_report]
+markdown = true
 ```
 
 IMPORTANT! On your templates to render the markdown use:
