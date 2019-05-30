@@ -52,7 +52,7 @@ $ sudo postgresql-setup initdb
 
 * Modify the localhost authenication type from "ident" to "md5" within hba config. Change host IPV4 local and IPV6 local from "ident" to "md5":
 ```
-# nano /var/lib/pgsql/VFERSION/data/pg_hba.conf
+# nano /var/lib/pgsql/VERSION/data/pg_hba.conf
 ```
 ```
 # IPv4 local connections:
