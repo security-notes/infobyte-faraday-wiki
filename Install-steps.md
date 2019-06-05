@@ -10,6 +10,10 @@ Then download faraday's installer from [our web site](https://portal.faradaysec.
 ```
 sudo apt install ./faraday-server_amd64.deb
 ```
+Once installed, let's create database and tables with:
+```
+
+```
 
 # CentOS/RedHat
 
