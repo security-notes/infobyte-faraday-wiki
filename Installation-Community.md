@@ -164,7 +164,7 @@ bind_address=0.0.0.0
 
 Then restart the server if you had it running and reload your browser in case you were already trying to access the Web UI form a different IP.
 
-faraday-server.py also allow to use *--bind* and *--port* to override *server.ini* settings.
+faraday-server also allow to use *--bind* and *--port* to override *server.ini* settings.
 
 #### Running
 

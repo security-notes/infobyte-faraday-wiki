@@ -78,7 +78,7 @@ Is Faraday Server running? Try running:
 That will give some information about the state Faraday is in at the moment.
 If the server is not running try:
 ```
-./faraday-server.py
+faraday-server
 ```
 [ [index] ](#index)
 

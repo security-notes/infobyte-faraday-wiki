@@ -27,4 +27,4 @@ $ echo https_proxy
 This should show you the value or those variables.
 
 
-And in the end, when everything else is done run either `faraday-client` or `./faraday-server.py`.
+And in the end, when everything else is done run either `faraday-client` or `faraday-server`.
