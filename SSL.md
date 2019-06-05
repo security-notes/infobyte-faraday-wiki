@@ -165,4 +165,4 @@ cat intermediate.crt >> bundle.crt
 cat server.crt >> bundle.crt
 
 Execute faraday:
-python2 ./faraday.py --cert bundle.crt
+faraday-client --cert bundle.crt

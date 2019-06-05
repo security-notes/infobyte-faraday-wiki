@@ -29,11 +29,11 @@ Via the CLI, part of the current help shows us how to do it:
 So if you want to make your custom configuration, you can specify new ports and bind faraday on broadcast for example:
 
 ```
-./faraday.py --hostname 0.0.0.0 --port 9999
+faraday-client --hostname 0.0.0.0 --port 9999
 ```
 There's also a shorter alias for each command flag: 
 ```
-./faraday.py -n 192.168.20.32 -p 9999
+faraday-client -n 192.168.20.32 -p 9999
 ```
 
 ## Manual configuration (persistent)
@@ -144,7 +144,7 @@ You can see the finished tool in $faraday/scripts/shodan_faraday.py
 
 ## Client RESTful API
 
-When you start the CLI or GTK client it also starts a local RESTful API listening on localhost (so other devices connected to your network won't be able to use it), on port 9984 by default. You can check it's running in the output of `./faraday.py` or in the logs:
+When you start the CLI or GTK client it also starts a local RESTful API listening on localhost (so other devices connected to your network won't be able to use it), on port 9984 by default. You can check it's running in the output of `faraday-client` or in the logs:
 
 `2017-07-07 17:41:47,541 - faraday - INFO - REST API server configured on ('localhost',9984)`
 

@@ -101,7 +101,7 @@ Read more about cleaning XMLs [here](https://github.com/infobyte/faraday/wiki/He
 Then open Faraday's GTK interface running the following in your installation root:
 
 ```
-./faraday.py
+faraday-client
 ```
 
 Open the Workspaces perspective and select your workspace. Then copy the report file into the active workspace's directory in ```~/.faraday/report/{workspacename}/``` (replacing **{workspacename}** with the actual name of your Workspace) in the client. Faraday will only process requests for the active workspace.
