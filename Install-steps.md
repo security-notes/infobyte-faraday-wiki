@@ -6,7 +6,7 @@ sudo apt install postgresql
 #Verify postgres version > 9.5
 psql --version
 ```
-Then download faraday's installer from [our web site](portal.faradaysec.com)
+Then download faraday's installer from [our web site](https://portal.faradaysec.com)
 ```
 sudo apt install ./faraday-server_amd64.deb
 ```
