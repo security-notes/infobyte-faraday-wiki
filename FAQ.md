@@ -86,15 +86,17 @@ If instead of installing you want to take a quick look at Faraday you can also u
 
 <a name="after-purchase"></a>
 ### I purchased a License, now what?
-You will receive an email with a link to download two tarballs. One will be your Faraday License and the other the version you selected. Uncompress both and place the contents of the license tar inside **$FARADAY/doc/**. 
+You will receive an email with a link to download the license and the faraday product (deb,rpm or binary). One will be your Faraday License and the other the version you selected. Uncompress both and place the contents of the license tar inside **/home/faraday/.faraday/doc/**. 
 
-Read more on how to install - [Pro Installation](https://github.com/infobyte/faraday/wiki/installation-pro) and [Corp Installation](https://github.com/infobyte/faraday/wiki/installation-corp).
+Read more on how to install - [Faraday Installation](https://github.com/infobyte/faraday/wiki/Installation-Guide).
 
 [ [index] ](#index)
 
 <a name="upgrade-kali"></a>
 ### Can I keep using the Kali version with my newly bought Professional/Corporate license?
 In a nutshell, yes. Even though the Kali Faraday version is incompatible with both the **Professional** and **Corporate** licenses, you can upgrade the platform in the same box without losing all your data.
+
+You will need to remove the package `python-faraday` and then you need to install the pro/corp .deb with `apt install ./faraday-server_amd64.deb`
 
 Follow the [commercial update instructions](https://github.com/infobyte/faraday/wiki/Updates#commercial-version-update) to upgrade.
 
