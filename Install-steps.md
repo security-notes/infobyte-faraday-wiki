@@ -1,7 +1,7 @@
 
 # Ubuntu/Kali
 
-#### Postgres
+#### Database
 
 First of all, you'll need to install postgresql > 9.5 locally or in a remote server. You can run:
 ```
