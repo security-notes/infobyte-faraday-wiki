@@ -79,7 +79,7 @@ Is Faraday Server running? Try running:
 That will give some information about the state Faraday is in at the moment.
 If the server is not running try:
 ```
-./faraday-server.py
+faraday-server
 ```
 [ [index] ](#index)
 
@@ -102,7 +102,7 @@ Read more about cleaning XMLs [here](https://github.com/infobyte/faraday/wiki/He
 Then open Faraday's GTK interface running the following in your installation root:
 
 ```
-./faraday.py
+faraday-client
 ```
 
 Open the Workspaces perspective and select your workspace. Then copy the report file into the active workspace's directory in ```~/.faraday/report/{workspacename}/``` (replacing **{workspacename}** with the actual name of your Workspace) in the client. Faraday will only process requests for the active workspace.
@@ -174,7 +174,7 @@ After version v2.6 this issue was solved.
 To solve this issue execute *faraday-server.py* on the correct directory as shown below:
 ```python
 cd /home/username/faraday # or where the faraday-server was installed(*)
-python faraday-server.py
+faraday-server
 ```
 
 (*) sometimes faraday server was installed in the /usr directory, check the traceback for the full path.
@@ -250,7 +250,7 @@ If you see this error all you need to do is re-install the [dependencies](https:
 ### [Errno 2] No such file or directory: '/home/john/.faraday/config/config.xml'
 Before running the server for the first time you need to execute:
 ```
-python faraday.py
+faraday-client
 ```
 This will throw an error and exit but before doing that the file user.xml will be created in your .faraday/config directory.
 Now run the server again, and enjoy faraday!

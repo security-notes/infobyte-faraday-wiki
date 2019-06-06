@@ -36,7 +36,9 @@ The Python requirements for the server are stored in the [`requirements_server.t
 
 ##### Debian based distributions (Debian, Ubuntu, Backtrack, etc)
 
-You can run the following command to install the required dependencies on any Debian based distribution.
+Running the `install.sh` script will install system dependencies.
+
+Or if you wanna do it manually you can run the following command to install the required dependencies on any Debian based distribution.
 
 ```
 $ sudo apt update
@@ -72,7 +74,7 @@ Please consult with your distribution documentation to install the dependencies 
 Once you have the required system dependencies, you just have to install the Python modules needed to run the server using `pip`:
 
 ```
-$ pip2 install -r requirements_server.txt -U
+$ python setup.py install
 ```
 
 <a name="server-configuration"></a>
@@ -162,20 +164,20 @@ bind_address=0.0.0.0
 
 Then restart the server if you had it running and reload your browser in case you were already trying to access the Web UI form a different IP.
 
-faraday-server.py also allow to use *--bind* and *--port* to override *server.ini* settings.
+faraday-server also allow to use *--bind* and *--port* to override *server.ini* settings.
 
 #### Running
 
 Once everything is installed and the server is configured, you can proceed to run the Faraday server script:
 
 ```
-$ python2 faraday-server.py
+$ faraday-server
 ```
 
 If you want to run the server in background mode, you should use the `--start` option:
 
 ```
-$ python2 faraday-server.py --start
+$ faraday-server --start
 ```
 
 This is the recommended way to do this. Other methods like using the bash `&` could cause unexpected IOErrors and other related exceptions.
@@ -302,7 +304,7 @@ And search for the following **api_uri** tag and set it to the server URL, for e
 Once you have already configured the client and have Faraday Server running, you simply have to run:
 
 ```
-$ python2 faraday.py
+$ faraday-client
 ```
 
 Some distributions or installations require additional steps, so look down below if you are using something different than Debian or Ubuntu, or if you need to apply some configuration to the client.
@@ -316,8 +318,8 @@ In order to run Faraday in Kali:
 ```
 $ systemctl start postgresql.service
 $ cd /usr/share/python-faraday
-$ python2 faraday-server.py
-$ python2 faraday.py
+$ faraday-server
+$ faraday-client
 ```
 
 Due to Kali's package updates the pre-installed package may not be the last version. If you want the latest updates use the [Debian install steps](#client-debian).

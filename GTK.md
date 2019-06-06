@@ -8,7 +8,7 @@ To try it, check out our [installation manual](https://github.com/infobyte/farad
 To access Faraday GTK, run the following command in Faraday's folder:
 
 ```
-    $ python faraday.py
+    $ faraday-client
 ```
 
 #### The main window

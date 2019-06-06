@@ -63,7 +63,7 @@ Faraday processes all the information and spits out a shiny new report that is a
 
 #### Filtering
 
-There are two main ways to manage the data that goes into the final report - *confirming vulns* and *tagging them**.
+There are two main ways to manage the data that goes into the final report - *confirming vulns* and *tagging them*.
 
 By default all of the vulnerabilities added manually are set as *confirmed* and all of those added by a Plugin are set as *false positives*. If the checkbox "use only confirmed vulns" is selected, the report will only contain confirmed findings.
 
@@ -143,11 +143,24 @@ From the Executive Report window, select the document and click on **Delete**
 
 ### Templates
 
-All report templates are located in ```reports/executive/templates``` in your Faraday installation directory. The default one is ```generic_default.docx```, you can modify it to get customized reports. 
+You can create your custom templates and save them in
+`~/.faraday/executive_reports_templates/`. They should be located in a
+subdirectory named `generic`, `grouped`, `markdown_generic` or
+`markdown_grouped` depending of the type of template you are creating.
 
-You can also save your custom templates in ```~/.faraday/executive_reports_templates/```. This way, you will not lose your templates after an update.
+Here are the default docx templates we provide:
 
-You can download an example report [here](https://github.com/infobyte/faraday/wiki/files/example_report.docx) and its corresponding template [here](https://github.com/infobyte/faraday/wiki/files/generic_default.docx).
+* [generic\_default.docx][generic\_default.docx]
+* [grouped\_default.docx][grouped\_default.docx]
+* [generic\_default.docx (for markdown reports)][markdown_generic\_default.docx]
+* [grouped\_default.docx (for markdown reports)][markdown_grouped\_default.docx]
+
+[generic\_default.docx]: https://github.com/infobyte/faraday/wiki/files/templates/generic_default.docx
+[grouped\_default.docx]: https://github.com/infobyte/faraday/wiki/files/templates/grouped_default.docx
+[markdown_generic\_default.docx]: https://github.com/infobyte/faraday/wiki/files/templates/markdown/generic_default.docx
+[markdown_grouped\_default.docx]: https://github.com/infobyte/faraday/wiki/files/templates/markdown/grouped_default.docx
+
+You can download an example report [here](https://github.com/infobyte/faraday/wiki/files/example_report.docx) and its corresponding template [here](https://github.com/infobyte/faraday/wiki/files/templates/generic_default.docx).
 
 The template uses Jinja2 syntax so we strongly recommend reading the [official documentation](http://jinja.pocoo.org/docs/dev/templates/) before modifying the document. The library used to create the report is **python-docx-template** available via [Github](https://github.com/elapouya/python-docx-template/). All Jinja2 tags are available, although there are some [restrictions](http://docxtpl.readthedocs.io/en/latest/#restrictions).
 

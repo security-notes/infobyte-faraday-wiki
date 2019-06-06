@@ -30,7 +30,7 @@ Download both those packages and then:
 1. Unpack the **License Package** and place its contents in the `doc` directory. For example, using the path from **Step 1**, you should place the **License files** in `/home/user/Infobyte/faraday/doc`. Or run: 
 
     ```
-    $ python2 faraday-server.pyc --license-path path/to/license
+    $ faraday-server --license-path path/to/license
     ```
 
 After doing so, make sure to [install system dependencies](#server-system-dependencies), [install Python dependencies](#server-python-dependencies) and [configure the Server](#server-configuration).
@@ -47,7 +47,9 @@ The Python requirements for the server are stored in the [`requirements_server.t
 
 ##### Debian based distributions (Debian, Ubuntu, Backtrack, etc)
 
-You can run the following command to install the required dependencies on any Debian based distribution.
+Running the `install.sh` script will install system dependencies.
+
+Or if you wanna do it manually you can run the following command to install the required dependencies on any Debian based distribution.
 
 ```
 $ sudo apt update
@@ -81,14 +83,14 @@ Please consult with your distribution documentation to install the dependencies 
 Once you have the required system dependencies, you just have to install the Python modules needed to run the server using `pip`:
 
 ```
-$ pip2 install -r requirements_server.txt -U
+$ python setup.py install
 ```
 #### Initializing PostgreSQL
 
 In order to initialize PostgreSQL database, generate your main _user_ and a __password__ and import your data from CouchDB (if it's the case), run the following command:
 
 ```
-$ python manage.pyc initdb
+$ faraday-manage initdb
 ```
 If you don't have CouchDB configured we assume this is a new installation, so a
 new user will be created.
@@ -114,7 +116,7 @@ you have sudo installed. Once you have installed it, run the command again.
 #### Manual PostgreSQL configuration
 
 If you need an advance configuration of the postgres database, like having a
-custom database name or run it in a separate host, the `python manage.pyc initdb`
+custom database name or run it in a separate host, the `faraday-manage  initdb`
 command probably won't be enough for you, so you should configure it manually
 by doing something like this:
 
@@ -131,19 +133,19 @@ to the database:
 connection_string = postgresql+psycopg2://faraday_postgresql:YOURPASSWORD@localhost/faraday
 ```
 
-Then you should run `python manage.pyc create-tables` to create all the required
-tables to make Faraday work, and `python manage.pyc createsuperuser` to create an
+Then you should run `faraday-manage create-tables` to create all the required
+tables to make Faraday work, and `faraday-manage createsuperuser` to create an
 admin user.
 
 
 #### Manually importing from CouchDB
 
 If you were using Faraday 2.7.2 and setup the database manually instead of
-using the `python manage.pyc initdb`, you should run the following command to import
+using the `faraday-manage  initdb`, you should run the following command to import
 the data from CouchDB:
 
 ```
-$ python manage.pyc import-from-couchdb
+$ faraday-manage  import-from-couchdb
 ```
 ***Note:*** beware of the number of users you have created in CouchDB, remember that you have already created one when you initialized PostgreSQL. The number of users that you have between CouchDB and PostgreSQL should not surpass the number of users you're allow to have according to your license.
 
@@ -186,20 +188,20 @@ Then restart the server if you had it running and reload your browser in case yo
 Once everything is installed and the server is configured, you need to first run:
 
 ```
-$ python2 faraday.pyc
+$ faraday-client
 ```
 This will fail but it will create the file user.xml on .faraday/config which we need to start the server.
 
 You can now proceed to run the Faraday server script:
 
 ```
-$ python2 faraday-server.pyc
+$ faraday-server
 ```
 
 If you want to run the server in background mode, you should use the `--start` option:
 
 ```
-$ python2 faraday-server.pyc --start
+$ faraday-server --start
 ```
 
 This is the recommended way to do this. Other methods like using the bash `&` could cause unexpected IOErrors and other related exceptions.
@@ -312,7 +314,7 @@ And search for the following **api_uri** tag and set it to the server URL, for e
 Once you have already configured the client and have Faraday Server running, you simply have to run:
 
 ```
-$ python2 faraday.pyc
+$ faraday-client
 ```
 
 Some distributions or installations require additional steps, so look down below if you are using something different than Debian or Ubuntu, or if you need to apply some configuration to the client.

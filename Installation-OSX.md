@@ -179,7 +179,7 @@ $ python manage.pyc import-from-couchdb
 
 Inside the folder _/faraday_, run the following command:
 
-    $ python faraday-server.py
+    $ faraday-server
 
 ### Starting Faraday's Client:
 
@@ -189,13 +189,13 @@ Inside the folder _/faraday_, run the following command:
 
 Inside the folder _/faraday_, run:
 
-    $ python faraday.py
+    $ faraday-client
 
 #### Running the Client without GUI
 
 Inside the folder _/faraday_, run:
  
-    $ python faraday.py --gui=nogui
+    $ faraday-client --gui=nogui
 
 Now in another terminal and inside the same folder as above, run:
  

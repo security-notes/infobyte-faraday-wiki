@@ -42,7 +42,7 @@ Again, for the purpose of this guide lets use `172.17.0.2`.
 
     # ssh -X root@172.17.0.2
     # cd faraday/
-    # ./faraday.py
+    # faraday-client
 
 Keep in mind that all tools must be installed inside the Docker container in order to work.
 

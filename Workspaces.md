@@ -67,7 +67,7 @@ The see the various things you can do with scripting, take a look at (in your Fa
 
 And now, to import xml files to your newly created workspace run this in the terminal:
 ```
-./faraday.py --cli --workspace workspacename -r report/tmp/nmap_scan.xml
+faraday-client --cli --workspace workspacename -r report/tmp/nmap_scan.xml
 ```
 Where:
 `workspacename`

@@ -52,9 +52,9 @@ $ pip install -r requirements.txt -U
 
 1. Run ```$ python manage.py migrate``` in the server box to apply database migrations.
 
-1. Run the server using ```python2 faraday-server.pyc ```
+1. Run the server using ```faraday-server```
 
-1. Run the client using ```python2 faraday.pyc --login```
+1. Run the client using ```faraday-client --login```
 
 In order for the update to work, these steps must be followed in every instance of Faraday.
 

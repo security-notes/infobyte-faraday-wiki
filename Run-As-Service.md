@@ -8,7 +8,7 @@ After=postgresql.service
 [Service]
 User=YOUR_SYSTEM_USER
 Type=simple
-ExecStart=/usr/bin/python /path/to/faraday/faraday-server.pyc --nodeps
+ExecStart=/usr/bin/python  /path/to/venv/bin/faraday-server/faraday-server
 Restart=always
 [Install]
 WantedBy=default.target
