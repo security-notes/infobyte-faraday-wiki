@@ -7,7 +7,7 @@
 <a name="linux"></a>
 ## Debian/Ubuntu/Kali
 
-#### Installing the Database
+#### Installing the database
 
 First of all, you'll need to install **postgresql > 9.5** (locally or in a remote server). In order to install PostgreSQL, you can run the following command:
 
