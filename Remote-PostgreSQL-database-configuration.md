@@ -49,7 +49,7 @@ Now on the faraday server instance, open the file `/home/faraday/.faraday/config
 
 ```
 [database]
-connection_string = postgresql+psycopg2://faraday_postgresql:SECRETE_PASSWORD@localhost/faraday
+connection_string = postgresql+psycopg2://faraday_postgresql:SECRETE_PASSWORD@REMOTE_IP/faraday
 ```
 
 # Step 4: Create tables
