@@ -3,6 +3,8 @@
 * [CentOS7/RedHat7](#centos/redhat)
 * [MacOS DMG](#macos)
 * [Binary Files](#binary-files)
+* [Installation from git repo](#git-repo)
+
 
 <a name="linux"></a>
 ## Debian/Ubuntu/Kali
@@ -134,4 +136,34 @@ In order to install Faraday, please run the file **faraday-server**:
 
 ```
 $ ./faraday-server
+```
+
+## Installation from pypi
+
+You can install faradaysec from pipy using:
+
+```
+pip install faradaysec
+```
+
+<a name="git-repo"></a>
+## Installation from git repo
+
+You can use pip to install faraday:
+
+```
+# create a virtualenv (optional)
+pip install virtualenv
+virtualenv -p python2 faraday_venv
+pip install git+git@github.com:infobyte/faraday.git
+```
+
+If you want to clone the repository, execute:
+
+```
+git clone git@github.com:infobyte/faraday.git
+# create a virtualenv (optional)
+pip install virtualenv
+virtualenv -p python2 faraday_venv
+python setup.py install
 ```
