@@ -64,17 +64,7 @@ host    all             all             ::1/128                 md5
 ```
 sudo faraday-manage initdb
 ```
-Otherwise, configure [database] section on /home/faraday/.faraday/server.ini with correct postgresql string:
-```
-sudo vim /home/faraday/.faraday/server.ini
-.
-.
-[database]
-postgresql+psycopg2://faraday_postgresql:PASSWORD@IPADDR/faraday
-.
-.
-sudo faraday-manage create-tables
-```
+Otherwise, [follow this guide](https://github.com/infobyte/faraday/wiki/Remote-PostgreSQL-database-configuration)
 
 # MacOS DMG
 
