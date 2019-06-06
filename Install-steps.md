@@ -19,17 +19,7 @@ After installation, if postgres is running locally:
 ```
 sudo faraday-manage initdb
 ```
-Otherwise, configure [database] section on /home/faraday/.faraday/server.ini with correct postgresql string:
-```
-sudo vim /home/faraday/.faraday/server.ini
-.
-.
-[database]
-postgresql+psycopg2://faraday_postgresql:PASSWORD@IPADDR/faraday
-.
-.
-sudo faraday-manage create-tables
-```
+Otherwise, [follow this guide](https://github.com/infobyte/faraday/wiki/Remote-PostgreSQL-database-configuration)
 # CentOS7/RedHat7
 
 #### Before install
@@ -63,7 +53,7 @@ After installation, if postgres is running locally:
 
 * Modify the localhost authenication type from "ident" to "md5" within hba config. Change host IPV4 local and IPV6 local from "ident" to "md5"
 ```
-# nano /var/lib/pgsql/VERSION/data/pg_hba.conf
+# vim /var/lib/pgsql/VERSION/data/pg_hba.conf
 
 # IPv4 local connections:
 host    all             all             127.0.0.1/32            md5
