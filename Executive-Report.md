@@ -91,7 +91,7 @@ IMPORTANT! On your templates to render the markdown use:
 ```
 
 
-Executive reports supports markdown (v3.7 or higher). Currently we do not support all markdown lenguage.
+Executive reports supports markdown (v3.7 or higher). Currently we do not support all markdown language.
 We support the following markdown:
 
 * Titles
