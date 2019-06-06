@@ -2,7 +2,7 @@
 * [Home](https://github.com/infobyte/faraday/wiki/Home)
 
 * [**Installation**](https://github.com/infobyte/faraday/wiki/First-Steps)
-  * [Install Steps](https://github.com/infobyte/faraday/wiki/Install-Steps)
+  * [Install Steps](https://github.com/infobyte/faraday/wiki/Installation-Guide)
   * [Install - Docker Comm.](https://github.com/infobyte/faraday/wiki/Installation-Docker-Community)
   * [Install - Docker Pro/Corp](https://github.com/infobyte/faraday/wiki/Docker-installation-professional-and-corporate)
   * [Install - OS X](https://github.com/infobyte/faraday/wiki/Installation-OSX)
