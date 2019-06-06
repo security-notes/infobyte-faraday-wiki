@@ -51,7 +51,7 @@ IOError: [Errno 2] No such file or directory: '/home/leonardo/VERSION'
 * [I can't access the web GUI](#cant-access-web)
 * [Faraday is not importing my report](#import)
 * [A plugin added too much information to my database](#remove-by-severity)
-* [I don't remember the Faraday Server password](#recover-password)
+* [I don't remember the Faraday Server password](#change-password)
 * [Clients can't access the Faraday server](#faraday-server-access-problems)
 * [Error No such file or directory VERSION](#no-such-file-version)
 * [ERROR - XML Plugin: Ip of host unknown](#ip-of-host-unknown)
@@ -64,6 +64,7 @@ IOError: [Errno 2] No such file or directory: '/home/leonardo/VERSION'
 * [GTK Error: No ports available](#no-ports-available)
 * [Burp Plugin Crashes](#burp-plugin-crashes)
 * [UnicodeEncodeError: 'ascii' codec can't encode character](#unicode-error)
+* [Database encoding incompatibility executing initdb](#database-encoding-incompatibility-initdb)
 
 
 ## Answers
@@ -124,6 +125,20 @@ For example, say you want to remove all vulnerabilities of severity **critical**
 ```./removeBySeverity.py -d messedup -s critical```
 
 Read more about it [here](https://github.com/infobyte/faraday/wiki/helpers#removeBySeverity).
+
+[ [index] ](#index)
+
+<a name="change-password"></a>
+### I don't remember the Faraday Server password
+
+If you forgot the password or you don't know faraday server password, then follow this steps.
+You can use the command manage.py (or faraday-manage) to change your password:
+
+```
+python manage.py change-password
+```
+
+When you execute the previous command a wizard will help yo change the user password.
 
 [ [index] ](#index)
 
@@ -354,18 +369,23 @@ Make sure the client encoding is set correctly during this process.
 
 [ [index] ](#index)
 
-<a name="change-password"></a>
-### Change Password
+<a name="database-encoding-incompatibility-initdb"></a>
+### Database enconding incompatibility executing initdb
 
-If you forgot the password or you don't know faraday server password, then follow this steps.
-You can use the command manage.py (or faraday-manage) to change your password:
+If you got the following error when running the command `faraday-manage initdb`:
 
 ```
-python manage.py change-password
+ERROR: createdb: database creation failed: ERROR:  new encoding (UTF8) is incompatible with the encoding of the template database (SQL_ASCII)
+HINT:  Use the same encoding as in the template database, or use template0 as template.
 ```
 
-When you execute the previous command a wizard will help yo change the user password.
+You can follow the instructions provided in this [link](https://gist.github.com/amolkhanorkar/8706915#file-pg-error-error-new-encoding-utf8-is-incompatible)
 
+Once you get the solution above, you can try to initialize the database once more:
+
+```
+faraday-manage initdb
+``` 
 [ [index] ](#index)
 
 Is your question not listed here? [Contact us](https://github.com/infobyte/faraday/issues)
