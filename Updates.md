@@ -48,4 +48,10 @@ Faraday will be **installed as a service** if you use deb or rpm.
 
 In order for the update to work, these steps must be followed in every instance of Faraday.
 
+Once you have updated Faraday, you can take a look at Faraday's server status by running:
+
+```
+$ service faraday-server status
+```
+
 Now you're ready to go!
