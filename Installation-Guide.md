@@ -145,6 +145,9 @@ In order to install Faraday, please run the file **faraday-server**:
 ```
 $ ./faraday-server
 ```
+#### License
+
+Copy your license to ~/.faraday/doc
 
 <a name="pypi"></a>
 ## Installation from PyPI
