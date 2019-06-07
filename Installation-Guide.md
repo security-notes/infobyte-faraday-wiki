@@ -3,7 +3,8 @@
 * [CentOS7/RedHat7](#centos/redhat)
 * [MacOS DMG](#macos)
 * [Binary Files](#binary-files)
-* [Installation from git repo](#git-repo)
+* [Installation from PyPI](#pypi)
+* [Installation from Git repo](#git-repo)
 
 
 <a name="linux"></a>
@@ -138,32 +139,40 @@ In order to install Faraday, please run the file **faraday-server**:
 $ ./faraday-server
 ```
 
-## Installation from pypi
+<a name="pypi"></a>
+## Installation from PyPI
 
-You can install faradaysec from pipy using:
+You can install faradaysec from PyPI by running the following command:
 
 ```
-pip install faradaysec
+$ pip install faradaysec
 ```
 
 <a name="git-repo"></a>
 ## Installation from git repo
 
-You can use pip to install faraday:
+In order to install Faraday's community version, you can use pip to install Faraday or you can clone the repository. 
+
+Before installing Faraday, we recommend you to run Faraday inside a virtualenv (optional). In order to install and create a virtualenv, run the following commands:
 
 ```
-# create a virtualenv (optional)
-pip install virtualenv
-virtualenv -p python2 faraday_venv
-pip install git+git@github.com:infobyte/faraday.git
+$ pip install virtualenv
+$ virtualenv -p python2 faraday_venv
 ```
 
-If you want to clone the repository, execute:
+For more information about virtualenv, please follow this [link](https://virtualenv.pypa.io/en/latest/userguide/)
+
+**Installing Faraday**
+
+* Installing using Pip
+```
+$ pip install git+git@github.com:infobyte/faraday.git
+```
+
+* Cloning the repository:
 
 ```
-git clone git@github.com:infobyte/faraday.git
-# create a virtualenv (optional)
-pip install virtualenv
-virtualenv -p python2 faraday_venv
-python setup.py install
+$ git clone git@github.com:infobyte/faraday.git
+$ cd faraday-dev/
+$ python setup.py install
 ```
