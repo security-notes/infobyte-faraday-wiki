@@ -26,7 +26,9 @@ $ psql --version
 
 #### Installing Faraday
 
-Download Faraday's installer from [our web site](https://portal.faradaysec.com).
+* **Community version:** Download Faraday's installer from our Github [project](https://github.com/infobyte/faraday/releases)
+
+* **Commercial versions:** Download Faraday's installer from [our web site](https://portal.faradaysec.com).
 
 Once you have downloaded the installer, run the following command:
 
@@ -48,9 +50,10 @@ Once the installation is completed, follow these instructions according to where
 
     Please, [follow this guide](https://github.com/infobyte/faraday/wiki/Remote-PostgreSQL-database-configuration)
 
-#### License
+#### License for commercial versions
 
-Copy your license to /home/faraday/.faraday/doc
+1. Download your Faraday's license from [our web site](https://portal.faradaysec.com).
+2. Untar your license inside the folder `/home/faraday/.faraday/doc/`
 
 <a name="centos/redhat"></a>
 ## CentOS7/RedHat7
@@ -65,7 +68,7 @@ $ curl -o epel.rpm http://dl.fedoraproject.org/pub/epel/epel-release-latest-7.no
 $ rpm -Uvh epel.rpm
 ```
 
-#### PostgreSQL installation (https://yum.postgresql.org/)
+#### Installing the database (https://yum.postgresql.org/)
 
 You'll need to install **postgresql > 9.5** (locally or in a remote server). In order to install PostgreSQL, run the following commands:
 
@@ -77,9 +80,11 @@ $ systemctl start postgresql-9.5
 $ systemctl enable postgresql-9.5
 ```
 
-#### Faraday installation
+#### Installing Faraday
 
-Download Faraday's installer from [our web site](https://portal.faradaysec.com).
+* **Community version:** Download Faraday's installer from our Github [project](https://github.com/infobyte/faraday/releases)
+
+* **Commercial versions:** Download Faraday's installer from [our web site](https://portal.faradaysec.com).
 
 Once you have downloaded the installer, run the following command:
 
@@ -114,9 +119,10 @@ Once the installation is completed, follow these instructions according to where
 
   Please, [follow this guide](https://github.com/infobyte/faraday/wiki/Remote-PostgreSQL-database-configuration)
 
-#### License
+#### License for commercial versions
 
-Copy your license to /home/faraday/.faraday/doc
+1. Download your Faraday's license from [our web site](https://portal.faradaysec.com).
+2. Untar your license inside the folder `/home/faraday/.faraday/doc/`
 
 <a name="macos"></a>
 ## MacOS DMG
@@ -126,7 +132,9 @@ Instructions for Faraday's installation in MacOS will be specified soon. Meanwhi
 <a name="binary-files"></a>
 ## Binary files
 
-Download Faraday's binary package from [our web site](https://portal.faradaysec.com).
+* **Community version:** Download Faraday's installer from our Github [project](https://github.com/infobyte/faraday/releases)
+
+* **Commercial versions:** Download Faraday's installer from [our web site](https://portal.faradaysec.com).
 
 Once you have downloaded the package, you need to unzip it:
 
@@ -145,12 +153,15 @@ In order to install Faraday, please run the file **faraday-server**:
 ```
 $ ./faraday-server
 ```
-#### License
+#### License for commercial versions
 
-Copy your license to ~/.faraday/doc
+1. Download your Faraday's license from [our web site](https://portal.faradaysec.com).
+2. Untar your license inside the folder `/home/faraday/.faraday/doc/`
 
 <a name="pypi"></a>
 ## Installation from PyPI
+
+Installation guide for **community version**
 
 You can install faradaysec from PyPI by running the following command:
 
@@ -160,6 +171,8 @@ $ pip install faradaysec
 
 <a name="git-repo"></a>
 ## Installation from git repo
+
+Installation guide for **community version**
 
 In order to install Faraday's community version, you can use pip to install Faraday or you can clone the repository. 
 
