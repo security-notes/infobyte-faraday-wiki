@@ -48,6 +48,10 @@ Once the installation is completed, follow these instructions according to where
 
     Please, [follow this guide](https://github.com/infobyte/faraday/wiki/Remote-PostgreSQL-database-configuration)
 
+#### License
+
+Copy your license to /home/faraday/.faraday/doc
+
 <a name="centos/redhat"></a>
 ## CentOS7/RedHat7
 
@@ -110,6 +114,9 @@ Once the installation is completed, follow these instructions according to where
 
   Please, [follow this guide](https://github.com/infobyte/faraday/wiki/Remote-PostgreSQL-database-configuration)
 
+#### License
+
+Copy your license to /home/faraday/.faraday/doc
 
 <a name="macos"></a>
 ## MacOS DMG
