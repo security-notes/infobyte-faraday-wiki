@@ -1,3 +1,5 @@
+This is an old wiki, please check the [new faraday install steps](https://github.com/infobyte/faraday/wiki/Installation-Guide)
+
 ## Index
 
 * [Server](#faraday-server-commu)
