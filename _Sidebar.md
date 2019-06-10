@@ -11,6 +11,7 @@
 
 * **Web UI**
   * [Credentials](https://github.com/infobyte/faraday/wiki/Credentials)
+  * [Comments](https://github.com/infobyte/faraday/wiki/Comments)
   * [Custom Fields](https://github.com/infobyte/faraday/wiki/Custom-Fields)
   * [Data Analysis Tools](https://github.com/infobyte/faraday/wiki/Data-Analysis-Tools)
   * [Executive Report](https://github.com/infobyte/faraday/wiki/Executive-Report)
