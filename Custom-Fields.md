@@ -4,8 +4,26 @@ With our [Professional and Corporate](https://www.faradaysec.com/#download) vers
 
 If you want to learn more about the usage of Custom Fields through Faraday's API, follow this [link](https://github.com/infobyte/faraday/wiki/Using-custom-fields-from-the-API).
 
-## How to use custom fields
+## How to create custom fields
 
+### From Web UI
+
+You can create/edit/delete a Custom Field from [Settings](https://github.com/infobyte/faraday/wiki/Settings). Let's create one as an example:
+
+![](https://raw.githubusercontent.com/wiki/infobyte/faraday/images/settings/custom_field_new.png)
+
+You must fill the following fields in order to create a Custom Field:
+* _Display name_: the display name that you will see on the vulnerability form.
+* _Name_: the name of the field (must be unique).
+* _Type_: data type of the field, it can be: **int**, **str** or **list**.
+
+    ![](https://raw.githubusercontent.com/wiki/infobyte/faraday/images/settings/custom_field_creating.png)
+
+Once you create a Custom Field, you will see it listed as below:
+
+![](https://raw.githubusercontent.com/wiki/infobyte/faraday/images/settings/custom_field_list.png)
+
+### From Terminal
 **Step 1:** Add custom field
 
 ```
