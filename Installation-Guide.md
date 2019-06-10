@@ -189,6 +189,7 @@ Before installing Faraday, we recommend you to run Faraday inside a virtualenv (
 ```
 $ pip install virtualenv
 $ virtualenv -p python2 faraday_venv
+$ source faraday_env/bin/activate 
 ```
 
 For more information about virtualenv, please follow this [link](https://virtualenv.pypa.io/en/latest/userguide/)
