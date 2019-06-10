@@ -2,7 +2,7 @@ Now, you can enrich Vuln data by leaving Comments and Notes, while mentioning ot
 
 The idea behind this is promoting better ways to get involved with your co-workers by improving communication and daily results. 
 
-    ![](https://raw.githubusercontent.com/wiki/infobyte/faraday/images/comments/comments.gif)
+![](https://raw.githubusercontent.com/wiki/infobyte/faraday/images/comments/comments.gif)
 
 ## Usage
 
