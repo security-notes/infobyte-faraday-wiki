@@ -4,7 +4,7 @@ The idea behind this is promoting better ways to get involved with your co-worke
 
 ![](https://raw.githubusercontent.com/wiki/infobyte/faraday/images/comments/comments.gif)
 
-**Usage**
+## Usage
 
 Go into the vulnerability preview (by clicking in the name of the vulnerability). Then click on **Comments** tab: 
 
