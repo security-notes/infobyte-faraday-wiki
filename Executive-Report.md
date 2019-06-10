@@ -17,10 +17,6 @@
 The Executive Reports  feature lets you create (as the name implies) reports using the results obtained in each workspace.
 When an Executive Report is created, all the data from the Status Report is automatically processed and placed in a Word compatible document that can then be downloaded.
 
-### Requirements
-
-To utilize this feature follow the necessary steps on our [start up configuration](https://github.com/infobyte/faraday/wiki/first-steps).
-
 ### Managing Executive Reports
 
 To manage your reports you need to access Faraday's Web Interface and click on **Executive Report** icon (the one that looks like a sheet).
