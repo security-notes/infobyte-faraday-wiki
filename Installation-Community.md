@@ -1,4 +1,4 @@
-### _This is an old wiki, please check the [new Faraday's Install guide](https://github.com/infobyte/faraday/wiki/Installation-Guide) _
+### This is an old wiki, please check the [new Faraday's Install guide](https://github.com/infobyte/faraday/wiki/Installation-Guide)
 
 ## Index
 
