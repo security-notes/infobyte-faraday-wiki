@@ -3,6 +3,7 @@
 * [How to create Custom Fields](#cf_creation)
 * [Custom Fields in Executive Report](#cf_in_exec_report)
 
+### Intro
 Custom Fields allow you to extend the vulnerability's model with more fields. Custom fields type can be **int**, **str** and **list**.
 
 With our [Professional and Corporate](https://www.faradaysec.com/#download) versions, you can use the custom fields in the executive report.
