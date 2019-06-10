@@ -4,6 +4,8 @@ To go into Settings, click on User's menu and then click on Settings:
 
 ![](https://raw.githubusercontent.com/wiki/infobyte/faraday/images/settings/settings_in_menu.png)
 
+As you can see, for now we have two sections: Custom Fields and Ticketing Tools.
+
 ![](https://raw.githubusercontent.com/wiki/infobyte/faraday/images/settings/settings_overview.png)
 
 ### Custom Fields
@@ -17,7 +19,7 @@ You must fill the following fields in order to create a Custom Field:
 * Name: the name of the field (must be unique).
 * Type: data type of the field, it can be: int, str or list.
 
-![](https://raw.githubusercontent.com/wiki/infobyte/faraday/images/settings/custom_field_creating.png)
+    ![](https://raw.githubusercontent.com/wiki/infobyte/faraday/images/settings/custom_field_creating.png)
 
 Once you create a Custom Field, you will see it listed as below:
 
