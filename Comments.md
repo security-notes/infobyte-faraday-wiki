@@ -14,6 +14,8 @@ Write the comment you want to add and mention other users by adding the "@" symb
 
 ![](https://raw.githubusercontent.com/wiki/infobyte/faraday/images/comments/writing_comment.png)
 
+Add the comment by click in **Comment**:
+
 ![](https://raw.githubusercontent.com/wiki/infobyte/faraday/images/comments/adding_comment.png)
 
 Once you have added the comment, the user that you mentioned, will received a notification on its workspace:
