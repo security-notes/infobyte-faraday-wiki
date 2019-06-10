@@ -10,6 +10,12 @@
 <a name="linux"></a>
 ## Debian/Ubuntu/Kali
 
+#### Downloading Faraday
+
+* **For Community version:** Download Faraday's installer from our Github [project](https://github.com/infobyte/faraday/releases)
+
+* **For Commercial versions:** Download Faraday's installer from [our web site](https://portal.faradaysec.com).
+
 #### Installing the database
 
 First of all, you'll need to install **postgresql > 9.5** (locally or in a remote server). In order to install PostgreSQL, you can run the following command:
@@ -26,11 +32,7 @@ $ psql --version
 
 #### Installing Faraday
 
-* **Community version:** Download Faraday's installer from our Github [project](https://github.com/infobyte/faraday/releases)
-
-* **Commercial versions:** Download Faraday's installer from [our web site](https://portal.faradaysec.com).
-
-Once you have downloaded the installer, run the following command:
+Once you have downloaded Faraday's installer and installed PostgreSQL, run the following command:
 
 ```
 $ sudo apt install ./faraday-server_amd64.deb
@@ -68,6 +70,12 @@ $ curl -o epel.rpm http://dl.fedoraproject.org/pub/epel/epel-release-latest-7.no
 $ rpm -Uvh epel.rpm
 ```
 
+#### Downloading Faraday
+
+* **For Community version:** Download Faraday's installer from our Github [project](https://github.com/infobyte/faraday/releases)
+
+* **For Commercial versions:** Download Faraday's installer from [our web site](https://portal.faradaysec.com).
+
 #### Installing the database (https://yum.postgresql.org/)
 
 You'll need to install **postgresql > 9.5** (locally or in a remote server). In order to install PostgreSQL, run the following commands:
@@ -82,11 +90,7 @@ $ systemctl enable postgresql-9.5
 
 #### Installing Faraday
 
-* **Community version:** Download Faraday's installer from our Github [project](https://github.com/infobyte/faraday/releases)
-
-* **Commercial versions:** Download Faraday's installer from [our web site](https://portal.faradaysec.com).
-
-Once you have downloaded the installer, run the following command:
+Once you have downloaded Faraday's installer and installed PostgreSQL, run the following command:
 
 ```
 $ sudo yum install ./faraday-server_amd64.rpm
@@ -132,6 +136,8 @@ Instructions for Faraday's installation in MacOS will be specified soon. Meanwhi
 <a name="binary-files"></a>
 ## Binary files
 
+#### Downloading Faraday
+
 * **Community version:** Download Faraday's installer from our Github [project](https://github.com/infobyte/faraday/releases)
 
 * **Commercial versions:** Download Faraday's installer from [our web site](https://portal.faradaysec.com).
@@ -147,6 +153,8 @@ This binary package contains three executable files:
 * faraday-client
 * faraday-server
 * faraday-manage
+
+#### Installing Faraday
 
 In order to install Faraday, please run the file **faraday-server**:
 
