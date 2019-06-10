@@ -6,19 +6,19 @@ The idea behind this is promoting better ways to get involved with your co-worke
 
 ## Usage
 
-Go into the vulnerability preview (by clicking in the name of the vulnerability). Then click on **Comments** tab: 
+* Go into the vulnerability preview (by clicking in the name of the vulnerability). Then click on **Comments** tab: 
 
 ![](https://raw.githubusercontent.com/wiki/infobyte/faraday/images/comments/comments_tab.png)
 
-Write the comment you want to add and mention other users by adding the "@" symbol before the user's name:
+* Write the comment you want to add and mention other users by adding the "@" symbol before the user's name:
 
 ![](https://raw.githubusercontent.com/wiki/infobyte/faraday/images/comments/writing_comment.png)
 
-Add the comment by click in **Comment**:
+* Add the comment by click in **Comment**:
 
 ![](https://raw.githubusercontent.com/wiki/infobyte/faraday/images/comments/adding_comment.png)
 
-Once you have added the comment, the user that you mentioned, will received a notification on its workspace:
+* Once you have added the comment, the user that you mentioned, will receive a notification on its workspace:
 
 ![](https://raw.githubusercontent.com/wiki/infobyte/faraday/images/comments/comment_notification.png)
 
