@@ -12,9 +12,9 @@
 
 #### Downloading Faraday
 
-* **For Community version:** Download Faraday's installer from our Github [project](https://github.com/infobyte/faraday/releases)
+* **Community version:** Download Faraday's installer from our Github [project](https://github.com/infobyte/faraday/releases)
 
-* **For Commercial versions:** Download Faraday's installer from [our web site](https://portal.faradaysec.com).
+* **Commercial versions:** Download Faraday's installer from [customers portal](https://portal.faradaysec.com).
 
 #### Installing the database
 
