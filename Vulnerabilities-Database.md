@@ -38,12 +38,9 @@ Next copy this CSV file (either cfdb.csv or vulndb.csv) to [/data/cwe.csv](data/
 <a name="upload"></a>
 ### Upload CSV file
 
-#### Manual Import
-
-Go to the **Web UI** and click on the **import** icon ![](https://raw.github.com/wiki/infobyte/faraday/images/vulnerability_database/import_icon.png)
+Go to the **Vulnerability Templates**  tab in the Web UI and click on the **import** icon ![](https://raw.github.com/wiki/infobyte/faraday/images/vulnerability_database/import_icon.png)
 
 A modal dialog will pop up asking you to choose a CSV file to upload, select it, click **ok** and you're done!
-
 
 
 <a name="manually"></a>
