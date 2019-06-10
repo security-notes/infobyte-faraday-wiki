@@ -18,13 +18,13 @@ To read about the latest features check out the [release notes](https://github.c
 
 ## Getting Started!
 
-Check out our documentacion for datailed information on how to install Faraday in all of our supported platforms:
+Check out our documentation for detailed information on how to [install Faraday](https://github.com/infobyte/faraday/wiki/Installation-Guide) in all of our supported platforms:
 
 ![Supported Os](https://raw.github.com/wiki/infobyte/faraday/images/platform/supported.png)
 
 ## New Features!
 All of Faraday's latest features and updates are always available on our [blog](http://blog.infobytesec.com/search/label/english).
-There are new entries every few weeks, don't forget to check out our amaizing new improvements on it's last entry!
+There are new entries every few weeks, don't forget to check out our amazing new improvements on its last entry!
 
 
 ## Plugins list
