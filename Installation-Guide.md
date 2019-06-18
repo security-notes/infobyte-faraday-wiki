@@ -5,6 +5,7 @@
 * [Binary Files](#binary-files)
 * [Installation from PyPI](#pypi)
 * [Installation from Git repo](#git-repo)
+* [How to run Faraday](#how-to-run-faraday)
 
 
 <a name="linux"></a>
@@ -56,6 +57,16 @@ Once the installation is completed, follow these instructions according to where
 
 1. Download your Faraday's license from [our web site](https://portal.faradaysec.com).
 2. Untar your license inside the folder `/home/faraday/.faraday/doc/`
+
+#### After installation
+
+Once the installation is completed and the license is located in the right folder (for commercial versions), we can start Faraday's server by running: 
+
+```
+$ systemctl start faraday-server
+```
+
+To know how to run Faraday's multiple commands, please follow this [link](#how-to-run-faraday).
 
 <a name="centos/redhat"></a>
 ## CentOS7/RedHat7
@@ -128,6 +139,16 @@ Once the installation is completed, follow these instructions according to where
 1. Download your Faraday's license from [our web site](https://portal.faradaysec.com).
 2. Untar your license inside the folder `/home/faraday/.faraday/doc/`
 
+#### After installation
+
+Once the installation is completed and the license is located in the right folder (for commercial versions), we can start Faraday's server by running: 
+
+```
+$ systemctl start faraday-server
+```
+
+To know how to run Faraday's multiple commands, please follow this [link](#how-to-run-faraday).
+
 <a name="macos"></a>
 ## MacOS DMG
 
@@ -148,11 +169,12 @@ Once you have downloaded the package, you need to unzip it:
 $ unzip linux_binaries.zip
 ```
 
-This binary package contains three executable files:
+This binary package contains four executable files:
 
 * faraday-client
 * faraday-server
 * faraday-manage
+* faraday-fplugin
 
 #### Installing Faraday
 
@@ -166,6 +188,31 @@ $ ./faraday-server
 1. Download your Faraday's license from [our web site](https://portal.faradaysec.com).
 2. Untar your license inside the folder `/home/faraday/.faraday/doc/`
 
+#### After installation
+
+Once the installation is completed, we can run every executable file as follow: 
+
+* To run Faraday's Server:
+
+    ```
+    $ ./faraday-server
+    ```
+
+* To run Faraday's Client:
+    ```
+    $ ./faraday-client
+    ```
+
+* To run Faraday's Manage:
+    ```
+    $ ./faraday-manage
+    ```
+
+* * To run Faraday's Plugin:
+    ```
+    $ ./faraday-fplugin
+    ```
+
 <a name="pypi"></a>
 ## Installation from PyPI
 
@@ -176,6 +223,16 @@ You can install faradaysec from PyPI by running the following command:
 ```
 $ pip install faradaysec
 ```
+
+#### After installation
+
+Once the installation is completed, we can start Faraday's server by running: 
+
+```
+$ faraday-server
+```
+
+To know how to run Faraday's multiple commands, please follow this [link](#how-to-run-faraday).
 
 <a name="git-repo"></a>
 ## Installation from git repo
@@ -208,3 +265,45 @@ $ git clone git@github.com:infobyte/faraday.git
 $ cd faraday-dev/
 $ python setup.py install
 ```
+
+#### After installation
+
+Once the installation is completed, we can start Faraday's server by running: 
+
+```
+$ faraday-server
+```
+
+To know how to run Faraday's multiple commands, please follow this [link](#how-to-run-faraday).
+
+***
+
+
+<a name="how-to-run-faraday"></a>
+### How to run Faraday
+
+Faraday v3.8.0 brings a new way to run Faraday. Take a look at the new Faraday's commands:
+
+* To run Faraday Server:
+
+    ```
+    $ faraday-server
+    ```
+
+* To run Faraday Client:
+
+    ```
+    $ faraday-client
+    ```
+
+* To run Faraday Manage:
+
+    ```
+    $ faraday-manage
+    ```
+
+* To run Faraday Plugin:
+
+    ```
+    $ faraday-fplugin
+    ```
