@@ -1,4 +1,18 @@
+### Intro
 In order to search specific objects inside your Faraday workspace and execute several actions over them, we have created **Searcher**. To explain how we can use it, we will propose some cases to resolve, but first let's give it a look to the structure of Searcher and how or where we must make changes to have a good result.
+
+<a name="index"></a>
+### Index
+* [Searcher's structure](#structure)
+* [Example](#example)
+  * [Step 1 - Creating the rule](#step-1)
+  * [Step 2 - Running the Searcher](#step-2)
+  * [Step 3 - Checking Faraday](#step-3)
+* [Rules Configurations Examples](#rules-configs-example)
+
+
+<a name="structure"></a>
+### Searcher's structure
 
 Searcher has the following structure:
 
@@ -16,6 +30,8 @@ Searcher has the following structure:
 
 * **api.py:** it’s an auxiliary file and it’s used to communicate with Faraday API.
 
+<a name="example"></a>
+### Example
 Now, let's propose a simple example that can help us to learn about Searcher, we are going to change every vulnerabilities that has as a **low** severity to a **medium** severity.
 
 First, let's check the severity values distribution in our workspace, in my case with name _**develop**_.
@@ -24,6 +40,7 @@ First, let's check the severity values distribution in our workspace, in my case
 
 ![](https://raw.githubusercontent.com/wiki/infobyte/faraday/images/searcher/status_report_low.png)
 
+<a name="step-1"></a>
 ### Step 1 - Creating the rule
 
 After that, we can proceed to write the rule that allows us to execute the change of the severity value. The expression of this rule could be something like: 
@@ -82,7 +99,7 @@ We can take a look at the following table that contains a brief description of e
 |  			conditions 		 |  			The conditions help us to decide if the actions can be executed 			or no, it are a list of matching between keys an values of current 			model, if each conditions are met, the action will run. 		                                       |  			No 		        |  			refs=nessus-333 			name=smb-vul-056 		                                                                                                                                                       |  			Specific format 		              |
 |  			actions 		    |  			The actions are the response that 			each rule gives having account the desire goal. There are 4 kinds 			of actions: 			UPDATE, ALERT, DELETE and EXECUTE, these will be explained 			later 		                                                 |  			Yes 		       |  			--UPDATE:severity=critical 			--UPDATE:confirmed=True 			--UPDATE:refs=nessus-333 			--UPDATE:-refs=nmap-10 			--UPDATE:template=tempId 			--ALERT:test@gmail.com 			--EXECUTE:/create_task.sh 			--DELETE: 		 |  			Specific format 		              |
 
-
+<a name="step-2"></a>
 ### Step 2 - Running the Searcher
 
 Now we can run Searcher, it’s important to know all the options it needs to get a desired result, to do this we can execute `./searcher.py -h` in the terminal.
@@ -148,15 +165,17 @@ Let's run the Searcher with our usage case: `./searcher.py -w develop -p <MY_PAS
     03/06/2019 03:42:38 PM - Faraday searcher - DEBUG: <-- Finish Process Hosts
     03/06/2019 03:42:38 PM - Faraday searcher - INFO: Finished
 
+<a name="step-3"></a>
 ### Step 3 - Checking Faraday
 
 Let’s check Faraday !
 
 ![](https://raw.githubusercontent.com/wiki/infobyte/faraday/images/searcher/severity_report_changed.png)
 
+***
 
-
-## Rules configurations examples
+<a name="rules-configs-example"></a>
+### Rules configuration examples
 
  **1-** We are going to change the severity to "critical" and the confirmed status to "True" on all the vulnerabilities whose names begin with ‘Device’ and parent is ’50.56.220.123’. The conditions to make this change is that there should be another vulnerability with severity="info" in this same host and another vulnerability which creator is Nessus and its name begin with ‘OS’:
 
