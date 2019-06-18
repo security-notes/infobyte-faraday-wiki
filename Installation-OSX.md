@@ -118,7 +118,7 @@ Faraday needs [ZSH](http://www.zsh.org/) and _curl_ in order to be able to conne
 In order to initialize PostgreSQL database, generate your main _user_ and a __password__ and import your data from CouchDB (if it's the case), run the following command:
 
 ```
-$ python manage.pyc initdb
+$ faraday-manage initdb
 ```
 If you don't have CouchDB configured we assume this is a new installation, so a
 new user will be created.
@@ -170,7 +170,7 @@ using the `python manage.pyc initdb`, you should run the following command to im
 the data from CouchDB:
 
 ```
-$ python manage.pyc import-from-couchdb
+$ faraday-manage import-from-couchdb
 ```
 ***Note:*** beware of the number of users you have created in CouchDB, remember that you have already created one when you initialized PostgreSQL. The number of users that you have between CouchDB and PostgreSQL should not surpass the number of users you're allow to have according to your license.
 
