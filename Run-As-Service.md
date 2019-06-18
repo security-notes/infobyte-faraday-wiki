@@ -1,6 +1,6 @@
 # Please Read!
 
-After Faraday v3.8 the .deb or .rpm will install faraday-server as a service and the next steps are not required anymore.
+After Faraday v3.8.0, Faraday's installers (.deb or .rpm) will install Faraday's server as a service, so the followings steps are **not** required anymore.
 Please check our [new installation guide](https://github.com/infobyte/faraday/wiki/Installation-Guide)
 
 # DEPRECATED!
