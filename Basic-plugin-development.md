@@ -2,7 +2,7 @@ Plugin development is really simple.
 
 All the plugins are in:
 
-    $ faraday/plugins/repo/[pluginname]
+    $ faraday/faraday/client/plugins/repo/[pluginname]
 
 In the following example you can see plugin of command ping:
 ``` python
