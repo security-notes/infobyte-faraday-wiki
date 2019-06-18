@@ -14,8 +14,7 @@ Follow these instructions in order to activate the 2 Factor Authentication:
 
 * Click on the Faraday slider menu on the right of the screen and select _Account_
 ![](https://raw.github.com/wiki/infobyte/faraday/images/2FA/account.png)
-* As you can see below, you have the option to activate the 2FA:
-![](https://raw.github.com/wiki/infobyte/faraday/images/2FA/change_password.png)
+* Select **Two Factor Authentication** tab.
 * Once you activate the 2FA, Faraday will show you the QR code and thus you can scan it with one of the apps above shown.
 ![](https://raw.github.com/wiki/infobyte/faraday/images/2FA/2fa_activate.png)
 
