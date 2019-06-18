@@ -1,4 +1,16 @@
+### Intro
+
 The idea is to import an CSV file into Faraday's server uploading all the information into one of your workspaces.
+
+### Index
+* [CSV Format](#csv-format)
+* [Command for Community version](#command-for-community-version)
+* [Command for Commercial versions](#command-for-commercial-versions)
+* [Sample File](#sample-file)
+
+***
+
+### CSV Format
 
 The CSV file should have an special kind of formatting, so take in consideration the following rules:
 
@@ -98,22 +110,18 @@ _**Note:**_ those in **bold** are mandatory fields.
 
 5) Anything not numeric entered on **service_port** will be ignored
 
-
-***
-
-
-#### Command for Community version:
+### Command for Community version
 ~~~~
-python2 ./bin/fplugin import_csv -u http://username:password@127.0.0.1:5985/ --csv /path/to/file/file.csv -w WORSKPACE_NAME
+faraday-fplugin import_csv -u http://username:password@127.0.0.1:5985/ --csv /path/to/file/file.csv -w WORSKPACE_NAME
 ~~~~
 _Options:_
  * --csv: the name and path of your CSV.
  * -w: Faraday's workspace where all the information will go to.
 
 
-#### Command for Commercial versions:
+### Command for Commercial versions
 ~~~~
-python2 ./bin/fplugin import_csv -u http://127.0.0.1:5985/ --csv /path/to/file/file.csv -w WORSKPACE_NAME --username USERNAME --password PASSWORD
+faraday-fplugin import_csv -u http://127.0.0.1:5985/ --csv /path/to/file/file.csv -w WORSKPACE_NAME --username USERNAME --password PASSWORD
 ~~~~
 
 _Options:_
@@ -122,7 +130,7 @@ _Options:_
  * --username: username of an Admin User.
  * --password: password of an Admin User.
  
-#### Example file
+### Sample file
 
 Here you have an example file:
 
