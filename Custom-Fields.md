@@ -38,7 +38,7 @@ You can create/edit/delete a Custom Field from [Settings](https://github.com/inf
 **Step 1:** Add custom field
 
 ```
-python manage.py add-custom-field 
+$ faraday-manage add-custom-field 
 ```
 
 **Step 2:** After the command execution, you will be prompted by a wizard where you must input the following information:
