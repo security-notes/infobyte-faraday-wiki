@@ -4,7 +4,7 @@ server is used to syncronize the state of the program between instances.
 
 Execute:
 ```
-./manage.py database-schema
+faraday-manage database-schema
 ```
 For an image explaining the schema of our database.
 
