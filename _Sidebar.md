@@ -44,7 +44,7 @@
   * [Proxy](https://github.com/infobyte/faraday/wiki/Proxy)
   * [Run as Service](https://github.com/infobyte/faraday/wiki/Run-As-Service)
   * [Scripts](https://github.com/infobyte/faraday/wiki/Scripts)
-  * [Manage.py](https://github.com/infobyte/faraday/wiki/Manage.py)
+  * [Faraday Manage](https://github.com/infobyte/faraday/wiki/Faraday-Manage)
 
 * **Special Features**
   * [CSV Importer](https://github.com/infobyte/faraday/wiki/CSV-Importer)
