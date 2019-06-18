@@ -5,7 +5,7 @@
 * [How to filter by many fields](#filter-by-many-fields)
 * [Grouping Vulnerabilities](#grouping)
 * [Confirmed Vulnerabilities](#confirmed)
-* [Usage Case](#usage-case)
+* [Usage Cases](#usage-cases)
 
 <a name="intro"></a>
 ## Intro
@@ -76,8 +76,8 @@ You can filter your vulnerabilities by confirmed, unconfirmed or all by clicking
 ![](https://raw.githubusercontent.com/wiki/infobyte/faraday/images/status_report/confirmed_vulns.png)
 
 
-<a name="usage-case"></a>
-## Usage case
+<a name="usage-cases"></a>
+## Usage cases
 
 Now, let's take a look at which fields are available for filtering with an example. All of them are searched through the search field.
 
