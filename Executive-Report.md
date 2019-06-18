@@ -2,7 +2,6 @@
 <a name="index"></a>
 
 * [Intro](#intro)
-* [Requirements](#requirements)
 * [Managing Executive Reports](#managing-executive-reports)
 * [Making a Report](#making-a-report)
 * [Using markdown on a report](#using-markdown-on-a-report)
