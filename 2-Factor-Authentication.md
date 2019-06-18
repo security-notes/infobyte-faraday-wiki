@@ -1,4 +1,4 @@
-**This feature is only available for our [Professional version](https://www.faradaysec.com/#download).**
+**This feature is only available for our [commercial versions](https://www.faradaysec.com/#download).**
 
 Faraday supports 2 Factor Authentication. We support any apps, e.g:
 
