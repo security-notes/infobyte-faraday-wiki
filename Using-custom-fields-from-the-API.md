@@ -28,7 +28,7 @@ def faraday_authentication(host, username, password):
 
 ## Step 2: Create Custom Fields
 
-Currently, you can't create a Custom Field through the API. In order to create a new Custom Field, follow the steps specified in this [wiki page](https://github.com/infobyte/faraday/wiki/Custom-fields#how-to-use-custom-fields).
+In order to create a new Custom Field, follow the steps specified in this [wiki page](https://github.com/infobyte/faraday/wiki/Custom-fields#how-to-create-custom-fields).
 
 ## Step 3: Create a vulnerability from the API
 
@@ -115,7 +115,7 @@ The server is going to answer with the created vulnerability and it will return 
 
 We can get the vulnerability id by getting the key "_id" from the JSON response. In this case, the vulnerability id is _386_. 
 
-**Important:** If you didn't create the Custom Field by running python manage.py add-custom-field to add the custom field (see step 2), it will not be seen in the vulnerability. Remember to create the custom field first.
+**Important:** If you didn't create the Custom Field (see step 2), it will not be seen in the vulnerability. Remember to create the custom field first.
 
 #### Getting the vulnerability by its ID using the API
 
