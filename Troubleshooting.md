@@ -94,7 +94,7 @@ Keep in mind that Plugins don't run on the server, so if you're trying to copy t
 Is your XML valid? Try opening it in a browser, if the browser complains then you can try our XML Cleaning script (make sure to have [BeautifulSoup](http://www.crummy.com/software/BeautifulSoup/bs4/doc/)):
 
 ```
-python $FARADAY/helpers/cleanXML.py broken_file.xml
+python $FARADAY/faraday/client/helpers/cleanXML.py broken_file.xml
 ```
 
 Read more about cleaning XMLs [here](https://github.com/infobyte/faraday/wiki/Helpers#cleanXML).
