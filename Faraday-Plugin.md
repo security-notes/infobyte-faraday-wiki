@@ -8,14 +8,15 @@
 
 In order to manage, add, and list information stored in faraday, we created _fplugin_, a simple plugin that allows you to interact directly with our Python API from the command line.
 
-It gives Faraday powerful scripting features, and allows you to query the database without leaving your favourite workspace, be it the GTK interface, or a terminal.
+It gives Faraday powerful scripting features and allows you to query the database without leaving your favorite workspace, be it the GTK interface, or a terminal.
 
-Using our plugin located in ```$faraday/bin/``` you can do different actions from the command line
+You can perform different actions from the command line by running our Faraday Plugin command: `faraday-fplugin`
 
 ```
-$ ./fplugin -h
-fplugin --help
-usage: fplugin [-h] [-i] [-w WORKSPACE] [-u URL] [command]
+$ faraday-fplugin -h
+usage: faraday-fplugin [-h] [-i] [-w WORKSPACE] [-u URL] --username USERNAME
+                       --password PASSWORD
+                       [command]
 
 Using our plugin you can do different actions in the command line
 and interact with Faraday. Faraday comes with some presets for bulk
@@ -31,20 +32,19 @@ optional arguments:
   -h, --help            show this help message and exit
   -i, --interactive     Run in interactive mode (default: False)
   -w WORKSPACE, --workspace WORKSPACE
-                        Workspace to use (default: burp_pro_original)
+                        Workspace to use (default: command)
   -u URL, --url URL     Faraday Server URL. Example: http://localhost:5985
                         (default: http://localhost:5985)
+  --username USERNAME
+  --password PASSWORD
 
 Available scripts:
-	- autoclose_vulns: Closes vulns from current workspace if a certain time has passed
 	- change_vuln_status: Changes Vulns Status (to closed)
 	- create_cred: Creates new credentials
-	- create_executive_report: Creates a new executive report in current workspace
 	- create_host: Creates a new host in current workspace
 	- create_service: Creates a new service in a specified interface
 	- create_vuln: Creates a new vulnerability
 	- create_vulnweb: Creates a new website vulnerability in a specified service
-	- create_xlsx_report: Creates a xls report from current workspace
 	- del_all_hosts: Deletes all stored hosts
 	- del_all_services_closed: Deletes all services with a non open port
 	- del_all_vulns_with: Delete all vulnerabilities matched with regex
@@ -61,55 +61,32 @@ Available scripts:
 	- screenshot_server: Takes a Screenshot of the ip:ports of a given protocol
 ```
 
-To view the help ofthe `fplugin`, you can use the `-h` or `--help` arguments. It is also possible to view the help of the individual commands, but as the arguments mentioned will be catched before they reach the command being called, you need to 'escape' them, like this:
+**NOTE:** In order to use Faraday Plugin, you need to specify your Faraday's credentials when running `faraday-fplugin`:
 
 ```
-$ ./fplugin create_host_and_interface 
-Creates a new host in current workspace and a new interface in the given host
-
-positional arguments:
-    host_name
-    os
-    interface_name
-    mac
-
-optional arguments:
--h --help 
---ipv4address IPV4ADDRESS
---ipv4gateway IPV4GATEWAY
---ipv4mask IPV4MASK
---ipv4dns IPV4DNS
---ipv6address IPV6ADDRESS
---ipv6prefix IPV6PREFIX
---ipv6gateway IPV6GATEWAY
---ipv6dns IPV6DNS
---netsegment NETSEGMENT
---hostres HOSTRES
---dry-run
-
-Everything after the `--` will be sent to the command, and will not be interpreted by `fplugin`.
-
+$ faraday-fplugin list_os --username USERNAME --password PASSWORD
 ```
 
 ## Interactive mode
 
-This version of `fplugin` comes with an interactive mode which will help you quickly perform any of the available actions in a virtual interpreter.
+This version of `fplugin` comes with an interactive mode which will help you quickly perform any of the available actions in a virtual interpreter. In order to access the interactive mode, you need to specify your Faraday's credentials as follow:
 
 ```
- $ ./fplugin -i
+ $ faraday-fplugin -i --username USERNAME --password PASSWORD
 Welcome to interactive Faraday!
 Press CTRL-D to quit.
-> |
+> 
 ```
 
-The advantage of the interactive mode is that you can use the simple string `$last` to refer to the ID of the last added object.
+Now you can run any `fplugin` script from here as follow:
 
-For example:
 ```
-$ ./fplugin create_host_and_interface 192.154.33.22 Linux interface 76598709876
-709381e970d2d669ee1d1b4844a6dde9d9b63c77.a47084649d94d1fb2f912872dfda906c59a623c4
+> get_all_ips
+127.0.0.1
+127.0.0.2
+127.0.0.3
+127.0.0.4
 ```
-
 
 Additionally, it has a command history of the last 1000 issued commands, for quick access. Just as with any terminal, you can cycle through it using the `UP` and `DOWN` arrow keys.
 
@@ -120,15 +97,15 @@ Faraday comes with some presets for bulk actions such as object removal, etc. Th
 * `autoclose_vulns`: Closes vulns from current workspace if a certain time has passed
 * `change_vuln_status`: Changes Vulns Status (to closed)
 * `create_cred`: Creates new credentials
-* `create_executive_report`: Creates a new executive report in current workspace
-* `create_host`: Creates a new host in current workspace
+* `create_executive_report`: Creates a new executive report in the current workspace
+* `create_host`: Creates a new host in the current workspace
 * `create_service`: Creates a new service in a specified interface
 * `create_vuln`: Creates a new vulnerability
 * `create_vulnweb`: Creates a new website vulnerability in a specified service
 * `create_xlsx_report`: Creates a xls report from current workspace
 * `del_all_hosts`: Deletes all stored hosts
 * `del_all_services_closed`: Deletes all services with a non open port
-* `del_all_vulns_with`: Delete all vulnerabilities matched with regex
+* `del_all_vulns_with`: Delete all vulnerabilities matched with the regex
 * `fbruteforce_services`: Script to perform a brute force attack on different services in a workspace
 * `filter_services`: Filter services by port
 * `get_all_ips`: Get all scanned interfaces
@@ -202,7 +179,7 @@ Additionally, if an object (in this case a Host) is created, we return a value o
 The following command will list all running services exposed on common HTTP ports (services with ports 80, 8080, 443, 8443 open).
 
 ```
- $ ./fplugin filter_services http ssh -p 21 -a
+ $ faraday-fplugin filter_services http ssh -p 21 -a
 Filtering services for ports: 21, 22, 80, 443, 8080, 8443
 host            service         ports           protocol        status          host_os
 ------------------------------------------------------------------------------------------------
@@ -218,22 +195,9 @@ host            service         ports           protocol        status          
 192.168.20.11   http            443             tcp             open            Linux
 ```
 
-### Create a new host and interface
+### CSV Importer
 
-```
-$ ./fplugin create_host_and_interface 192.154.33.22 Linux interface 76598709876
-709381e970d2d669ee1d1b4844a6dde9d9b63c77.a47084649d94d1fb2f912872dfda906c59a623c4
-
-$ echo $?
-0
-
-$ ./fplugin create_host_and_interface 192.154.33.22 Linux intname aa:bb:cc:dd:ee:ff
-A host with ID 709381e970d2d669ee1d1b4844a6dde9d9b63c77 already exists!
-
-$ echo $?
-2
-...
-```
+Check our CSV Importer [wiki](https://github.com/infobyte/faraday/wiki/CSV-Importer) to see how to use Faraday Plugin to import a CSV file into your workspace.
 
 ### Close vulns if a certain time has passed
 
