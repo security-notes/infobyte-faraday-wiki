@@ -115,14 +115,17 @@ If the use of a Virtualized environment is a must-have, then we recommend doing 
 
 <a name="faraday-version"></a>
 ### How do I know which Faraday Version I'm using?
-So if you already have a Faraday Installation there are many ways to know which version you're using:
+If you already have Faraday installed, there are many ways to know which version you're using:
 
-* Using the `--version` or `-v` argument in both the Client and Server.
+* Using the `--version` or `-v` argument in both the Client and Server by running:
+
+  ```
+  $ faraday-server --version
+  $ faraday-client -v
+  ```
 
 * Using the Web UI - If you place the pointer over the Faraday Logo you will get a tooltip containing the version number ![](https://raw.githubusercontent.com/wiki/infobyte/faraday/images/FAQ/webui_version.png)
 
-* Checking the contents of the file `VERSION` in the root of the Faraday Installation
-![](https://raw.githubusercontent.com/wiki/infobyte/faraday/images/FAQ/version_file.png)
 
 To get the latest available version:
 
@@ -146,7 +149,7 @@ You can do this using our WEB UI, read our documentation on [manually adding vul
 
 <a name="0.0.0.0"></a>
 ### How do I bind Faraday to 0.0.0.0?
-Just go to ```~/.faraday/config/server.ini``` and inside the ```[faraday-server]``` section write:
+Just go to ```/home/faraday/.faraday/config/server.ini``` and inside the ```[faraday-server]``` section write:
 
 `bind_address=0.0.0.0`
 
