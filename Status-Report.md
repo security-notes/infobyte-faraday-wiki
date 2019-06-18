@@ -1,11 +1,3 @@
-<a name="index"></a>
-### Index
-* [Intro](#intro)
-* [Vulnerability Creation](#vuln-creation)
-* [Vulnerability Edition](#vuln-edition)
-* [Vulnerability Search and Filter](#search-and-filter)
-* [Upload a report](#upload-a-report)
-
 <a name="intro"></a>
 ### Intro
 To view a full list of findings you can access the Status Report.
@@ -15,6 +7,14 @@ To view a full list of findings you can access the Status Report.
 The Status Report provides several options including vulnerability search, filtering and management.
 
 Personalize this view by clicking on the blue buttons to select the columns you wish to see and remove the ones you don't need with the X's in the table. These changes will be persisted in your browser from session to session, so you only have to apply them once.
+
+<a name="index"></a>
+### Index
+* [Intro](#intro)
+* [Vulnerability Creation](#vuln-creation)
+* [Vulnerability Edition](#vuln-edition)
+* [Vulnerability Search and Filter](#search-and-filter)
+* [Upload a report](#upload-a-report)
 
 <a name="vuln-creation"></a>
 ### Vulnerability Creation
