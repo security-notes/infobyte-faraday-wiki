@@ -71,7 +71,7 @@
   * [BeEF](https://github.com/infobyte/faraday/wiki/BeEF)
   * [Evilgrade](https://github.com/infobyte/faraday/wiki/Evilgrade)
   * [Faraday Plugin](https://github.com/infobyte/faraday/wiki/Faraday-Plugin)
-  * [Immunitys-CANVAS](https://github.com/infobyte/faraday/wiki/Inmunity-CANVAS)
+  * [Immunitys-CANVAS](https://github.com/infobyte/faraday/wiki/Immunitys-CANVAS)
   * [Metasploit](https://github.com/infobyte/faraday/wiki/Metasploit)
   * [Nessus](https://github.com/infobyte/faraday/wiki/Nessus)
   * [More +70 plugins](https://github.com/infobyte/faraday/wiki/Plugin-List#list)
