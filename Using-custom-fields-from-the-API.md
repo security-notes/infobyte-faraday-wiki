@@ -1,4 +1,4 @@
-Custom Fields allows you to extend the vulnerability's model by adding more fields. Custom Fields type can be int, str or list.
+Custom Fields allows you to extend the vulnerability's model by adding more fields. Custom Fields type can be **int**, **str** or **list**.
 You can learn more about Custom Fields creation on this [wiki page](https://github.com/infobyte/faraday/wiki/Custom-fields).
 
 In this small tutorial, we are going to use Python's library _Requests_ and Faraday's API to authenticate, create a vulnerability and modify its Custom Fields.
