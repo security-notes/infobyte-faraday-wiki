@@ -1,4 +1,4 @@
-**Only available for our [commercial Corporate version](https://www.faradaysec.com/#download).**
+**This feature is only available for our [commercial versions](https://www.faradaysec.com/#download).**
 
 This is a feature that allows you to send data from Faraday to JIRA. In order to do it, go into our [Status Report](https://github.com/infobyte/faraday/wiki/Status-report), select the desired vulnerabilities, click on the **Tools** button and then click on the **JIRA** option. Keep in mind that only confirmed vulnerabilities can be sent.
 
