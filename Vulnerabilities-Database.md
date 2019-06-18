@@ -23,14 +23,14 @@ Faraday ships with a **CSV of the original Mitre project** included in its tree 
 Execute the following command to get a CSV for CFDB
 
 ```
-$ ./helpers/cfdbToCsv.py
+$ $FARADAY/faraday/client/helpers/cfdbToCsv.py
 ```
 
 * VulnDb
 Execute the following command to get a CSV for VulnDB
 
 ```
-$ ./helpers/vulndbToCsv.py
+$ $FARADAY/faraday/client/helpers/vulndbToCsv.py
 ```
 
 Next copy this CSV file (either cfdb.csv or vulndb.csv) to [/data/cwe.csv](data/cwe.csv).
