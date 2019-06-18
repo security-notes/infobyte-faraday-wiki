@@ -1,15 +1,15 @@
 <a name="index"></a>
 ### Index
-* [Community Version Updates](#community)
-* [Commercial Version Update](#corporate)
-* [New Faraday's Commands](#new_commands)
+* [Community Version Updates](#community-version-updates)
+* [Commercial Version Update](#commercial-version-update)
+* [New Faraday's Commands](#new-faradays-commands)
 
 
 ***
 
 
-<a name="community"></a>
-### Community version updates
+<a name="community-version-updates"></a>
+### Community Version Updates
 
 #### For single box instances
 
@@ -49,7 +49,7 @@ Once you have installed Faraday, you can take a look at the new [Faraday's comma
 
 ***
 
-<a name="corporate"></a>
+<a name="commercial-version-update"></a>
 ### Commercial version update
 
 **This guide is for our [commercial versions](https://www.faradaysec.com/#download) only.**
@@ -78,7 +78,7 @@ Once you have installed Faraday, take a look at the new [Faraday's commands](htt
 ***
 
 
-<a name="new_commands"></a>
+<a name="new-faradays-commands"></a>
 ### New Faraday's Commands
 
 Faraday v3.8.0 brings a new way to run Faraday. Take a look at the new Faraday's commands:
