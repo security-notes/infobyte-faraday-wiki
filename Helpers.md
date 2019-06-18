@@ -1,4 +1,4 @@
-In ```$FARADAY/helpers``` you can find several scripts developed to help you load and manage Faraday data. None of them are included as part of the Faraday core, and using them can usually mean deleting content from the database in a permanent way, so **be careful when executing any of them and always make sure to have a fresh backup**.
+Inside the folder ```$FARADAY/faraday/client/helpers/``` you can find several scripts developed to help you load and manage Faraday data. None of them are included as part of the Faraday core, and using them can usually mean deleting content from the database in a permanent way, so **be careful when executing any of them and always make sure to have a fresh backup**.
 
 <a name="cfdbToCsv"></a>
 ### cfdbToCsv.py
@@ -16,7 +16,7 @@ Read more about it [here](https://github.com/infobyte/faraday/wiki/Vulnerabiliti
 ### cleanXML.py
 
 ```
-$ python helpers/cleanXML.py --help
+$ python faraday/client/helpers/cleanXML.py --help
 usage: cleanXML [-h] -i INFILE [-o OUTFILE]
 
 optional arguments:
