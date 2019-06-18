@@ -1,5 +1,7 @@
 ## Search & Filter
 
+You can search or filter your data by specifying a keyword or multiple keywords.
+
 You can find the text filter on:
 
 * Status Report
@@ -52,8 +54,8 @@ To group vulnerabilities by field you can use the **Group By** button. After the
 
 ## Confirmed
 
-You can filter your vulnerabilities by confirmed, unconfirmed or all as shown in this gif:
+You can filter your vulnerabilities by confirmed, unconfirmed or all by clicking on the **All** button:
 
-![](https://raw.githubusercontent.com/wiki/infobyte/faraday/images/status_report/Unconfirmed.gif)
+![](https://raw.githubusercontent.com/wiki/infobyte/faraday/images/status_report/confirmed_vulns.png)
 
 
