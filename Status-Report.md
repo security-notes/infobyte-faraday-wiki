@@ -1,4 +1,3 @@
-<a name="intro"></a>
 ### Intro
 To view a full list of findings you can access the Status Report.
 
@@ -10,7 +9,6 @@ Personalize this view by clicking on the blue buttons to select the columns you 
 
 <a name="index"></a>
 ### Index
-* [Intro](#intro)
 * [Vulnerability Creation](#vuln-creation)
 * [Vulnerability Edition](#vuln-edition)
 * [Vulnerability Search and Filter](#search-and-filter)
