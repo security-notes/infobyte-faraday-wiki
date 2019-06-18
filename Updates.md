@@ -1,3 +1,14 @@
+<a name="index"></a>
+### Index
+* [Community Version Updates](#community)
+* [Commercial Version Update](#corporate)
+* [New Faraday's Commands](#new_commands)
+
+
+***
+
+
+<a name="community"></a>
 ### Community version updates
 
 #### For single box instances
@@ -32,8 +43,13 @@ python setup.py install
 faraday-client
 ``` 
 
+#### After Installation
+
+Once you have installed Faraday, you can take a look at the new [Faraday's commands](https://github.com/infobyte/faraday/wiki/Updates#new_commands).
+
 ***
 
+<a name="corporate"></a>
 ### Commercial version update
 
 **This guide is for our [commercial versions](https://www.faradaysec.com/#download) only.**
@@ -54,4 +70,39 @@ Once you have updated Faraday, you can take a look at Faraday's server status by
 $ service faraday-server status
 ```
 
-Now you're ready to go!
+#### After Installation
+
+Once you have installed Faraday, take a look at the new [Faraday's commands](https://github.com/infobyte/faraday/wiki/Updates#new_commands).
+
+
+***
+
+
+<a name="new_commands"></a>
+### New Faraday's Commands
+
+Faraday v3.8.0 brings a new way to run Faraday. Take a look at the new Faraday's commands:
+
+* To run Faraday Server:
+
+    ```
+    $ faraday-server
+    ```
+
+* To run Faraday Client:
+
+    ```
+    $ faraday-client
+    ```
+
+* To run Faraday Manage:
+
+    ```
+    $ faraday-manage
+    ```
+
+* To run Faraday Plugin:
+
+    ```
+    $ faraday-fplugin
+    ```
