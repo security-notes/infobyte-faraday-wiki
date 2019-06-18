@@ -10,7 +10,7 @@ We recommend to use the new server API, documented on this page.
 You can check all API endpoints with the command:
 
 ``` bash
-python manage.pyc show-urls
+$ faraday-manage show-urls
 ```
 
 ### Methods: 
