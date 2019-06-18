@@ -1,3 +1,13 @@
+<a name="index"></a>
+### Index
+* [Intro](#intro)
+* [Vulnerability Creation](#vuln-creation)
+* [Vulnerability Edition](#vuln-edition)
+* [Vulnerability Search and Filter](#search-and-filter)
+* [Upload a report](#upload-a-report)
+
+<a name="intro"></a>
+### Intro
 To view a full list of findings you can access the Status Report.
 
 ![](https://raw.githubusercontent.com/wiki/infobyte/faraday/images/status_report/status_report.png)
@@ -6,6 +16,7 @@ The Status Report provides several options including vulnerability search, filte
 
 Personalize this view by clicking on the blue buttons to select the columns you wish to see and remove the ones you don't need with the X's in the table. These changes will be persisted in your browser from session to session, so you only have to apply them once.
 
+<a name="vuln-creation"></a>
 ### Vulnerability Creation
 To create vulnerabilities manually, you can go to the status report page and click the "New" button at the top left corner. You should see a dialog similar to this:
 
@@ -29,6 +40,7 @@ Make sure you select a host (and a service if the vulnerability applies to it), 
 
 This version includes advanced visualizations, tags, pentest comparison, pentester ranking among others.
 
+<a name="vuln-edition"></a>
 ### Vulnerability Edition
 You can edit the vulnerabilities that you have created. You have multiple ways to edit them:
 
@@ -49,9 +61,11 @@ You can edit multiple vulnerabilities with just one click. Next, to the edit but
 
 ![](https://raw.githubusercontent.com/wiki/infobyte/faraday/images/status_report/edit_multiple_vulns.png)
 
+<a name="search-and-filter"></a>
 ### Vulnerability Search and Filter
 Status Report allows you to filter vulnerabilities so you can have a better workflow. In order to check how the search field works, you can check this [wiki page](https://github.com/infobyte/faraday/wiki/Search-and-Filter)
 
+<a name="upload-a-report"></a>
 ### Upload a report
 You can upload a scan report of your favorite tool to Faraday and have a nice look at your findings through the Status Report. You can see a list of the tools that Faraday supports by clicking on this [link](https://github.com/infobyte/faraday/wiki/Plugin-List#list).
 
