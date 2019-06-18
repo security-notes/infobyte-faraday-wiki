@@ -19,7 +19,7 @@ https://forum.faradaysec.com
 https://groups.google.com/d/forum/faradaysec
 
 #### IRC
-Freenode: [#faraday-dev] (http://webchat.freenode.net/?channels=faraday-dev)
+Freenode: [#faraday-dev](http://webchat.freenode.net/?channels=faraday-dev)
 
 #### Twitter
 http://twitter.com/faradaysec
