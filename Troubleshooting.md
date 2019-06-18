@@ -74,12 +74,12 @@ IOError: [Errno 2] No such file or directory: '/home/leonardo/VERSION'
 
 Is Faraday Server running? Try running:
 ```
-./manage.py status-check
+$ faraday-manage status-check
 ```
 That will give some information about the state Faraday is in at the moment.
 If the server is not running try:
 ```
-faraday-server
+$ faraday-server
 ```
 [ [index] ](#index)
 
@@ -132,10 +132,10 @@ Read more about it [here](https://github.com/infobyte/faraday/wiki/helpers#remov
 ### I don't remember the Faraday Server password
 
 If you forgot the password or you don't know faraday server password, then follow this steps.
-You can use the command manage.py (or faraday-manage) to change your password:
+You can use the command `faraday-manage` to change your password:
 
 ```
-python manage.py change-password
+$ faraday-manage change-password
 ```
 
 When you execute the previous command a wizard will help yo change the user password.
@@ -264,7 +264,7 @@ There's a change the password on your server.ini wasn't updated or wrong. We mus
 
 Run the following command in order to execute PostgreSQL shell:
 
-    $ python manage.py sql-shell
+    $ faraday-manage sql-shell
 
 Once you got into the sql_shell, let's take a look inside the table _faraday_user_ to see the users information. **It is important to be sure of the username we want to change the password.**
 
@@ -352,7 +352,7 @@ If you see a Tracebacks that ends somewhat like this:
 
 Go into your Faraday folder and run the following command:
 
-    $ python manage.py sql-shell
+    $ faraday-manage sql-shell
 
 Once inside the shell execute:
 
