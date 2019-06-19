@@ -125,7 +125,11 @@ Once the installation is completed, follow these instructions according to where
     # IPv6 local connections:
     host    all             all             ::1/128                 md5
     ```
-  * Once you have edited the file, let's initialize the database by running the following command:
+  * Restart PostgreSQL server:
+    ```
+    $ sudo sysmtectl restart postgresql-9.5
+    ```
+  * Once you have edited the file and restarted PostgreSQL server, let's initialize the database by running the following command:
     ```
     $ sudo faraday-manage initdb
     ```
