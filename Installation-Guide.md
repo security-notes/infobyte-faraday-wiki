@@ -73,10 +73,15 @@ To know how to run Faraday's multiple commands, please follow this [link](#how-t
 
 #### Before installation
 
-Please note that PostgreSQL YUM repository and Faraday, depend on EPEL repository for some packages. Users with RHEL, CentOS, etc. should install EPEL repo RPM along with PGDG repo RPMs to satisfy dependencies. In order to do that, you should run the following commands:
+Please note that PostgreSQL YUM repository and Faraday, depend on EPEL repository for some packages. Users with RHEL, CentOS, etc. should install EPEL repo RPM along with PGDG repo RPMs to satisfy dependencies. In order to do that, follow these instructions:
 
+If you are using RHEL, first run the following command:
 ```
 $ subscription-manager repos --enable rhel-7-server-optional-rpms --enable rhel-7-server-extras-rpms
+```
+
+Run the following commands to install EPEL repo in RHEL or CentOS:
+```
 $ curl -o epel.rpm http://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
 $ rpm -Uvh epel.rpm
 ```
