@@ -33,7 +33,7 @@ For further information about certificates, follow this [link](https://www.digit
 #### Sample Configuration File
 
 Below you can find a sample config file for NGINX. You can use this same configuration by pasting it inside the folder `/etc/nginx/sites-enabled/` and naming the file as you want.
-
+```
         #don't send the nginx version number in error pages and Server header
         server_tokens off;
 
@@ -83,6 +83,7 @@ Below you can find a sample config file for NGINX. You can use this same configu
                 proxy_set_header X-Forwarded-Ssl on;
 	        }
         }
+```
 
 #### Updating Nginx configuration
 
