@@ -59,7 +59,8 @@
 
 * [**Security**](https://github.com/infobyte/faraday/wiki/Security)
   * [2 Factor Authentication](https://github.com/infobyte/faraday/wiki/2-Factor-Authentication)
-  * [Using SSL](https://github.com/infobyte/faraday/wiki/SSL)
+  * [Nginx setup](https://github.com/infobyte/faraday/wiki/SSL)
+  * [Apache setup](https://github.com/infobyte/faraday/wiki/Faraday-apache-setup)
   * [Bug bounties](https://github.com/infobyte/faraday/wiki/Bug-bounties)
   * [Cybersecurity Program](https://github.com/infobyte/faraday/wiki/Cybersecurity-Program)
 
