@@ -1,28 +1,38 @@
 The recommended way to run Faraday using SSL is through NGINX.
 ## NGINX
+
+#### Installing NGINX
+
 You can find a detailed guide on how to install it in the [official NGINX documentation](https://www.nginx.com/resources/wiki/start/topics/tutorials/install/).
 
-After installing and configuring NGINX, the setup should be as follows:
+#### Configurating Faraday to use NGINX
 
-* Faraday Server on port `5985` using HTTP (`~/.faraday/config/server.ini`)
-* GTK using HTTPS (`~/.faraday/config/user.xml`) and run:
+After installing and configuring NGINX, Faraday's setup should be as follows:
+
+* For Faraday Server:
+  * Faraday Server on port `5985` using HTTP. You can find this configuration inside the file `~/.faraday/config/server.ini` in section **[faraday_server]**.
+  * Web UI using `https://example_domain:port/_ui`
+
+* For Faraday Client:
+  * GTK using HTTPS (`~/.faraday/config/user.xml`) and run:
 
         $ faraday-client --cert path_to_cert(PEM format)
 
-* Web UI using `https://example_domain:port/_ui`
-* NGINX on port `80` redirecting to HTTPS
+**Note:** For both cases, NGINX on port `80` redirecting to HTTPS.
+
+#### Generating Certificates
 
 In order to generate self signed certificates, run the following command:  
 
     $ sudo openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout /etc/ssl/faraday.key -out /etc/ssl/faraday.crt
 
-**NOTE:** be sure to type the Common Name of this certificate. If you don't type a Common Name, then Faraday GTK will not be launched.
+Be sure to type the Common Name of this certificate. If you don't type a Common Name, then Faraday GTK will not be launched.
 
 For further information about certificates, follow this [link](https://www.digitalocean.com/community/tutorials/how-to-create-a-self-signed-ssl-certificate-for-apache-in-ubuntu-16-04).
 
-Below you can find a sample config file for NGINX. 
+#### Sample Configuration File
 
-### Faraday configuration for NGINX:
+Below you can find a sample config file for NGINX. You can use this same configuration by pasting it inside the folder `/etc/nginx/sites-enabled/` and naming the file as you want.
 
         #don't send the nginx version number in error pages and Server header
         server_tokens off;
@@ -74,18 +84,19 @@ Below you can find a sample config file for NGINX.
 	        }
         }
 
-### Updating Nginx configuration
+#### Updating Nginx configuration
 
-Please, make sure you have this settings on your Nginx config:
+Please, make sure you have these settings on your Nginx config:
 ```
 proxy_pass http://localhost:5985/;
 proxy_redirect http:// $scheme://;
 ```
 
-Even though we recommend the configurations by NGINX explained above, we also support SSL through Apache.
-
 ## Apache
-Place the Apache configuration file on the respective location.
+
+Before you continue, we recommend the configurations by NGINX explained above.
+
+If you prefer to use Apache, then place the Apache configuration file on the respective location.
 
 
         # Enable session resumption to improve https performance
