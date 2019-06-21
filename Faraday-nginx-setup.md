@@ -108,6 +108,17 @@ Make sure that when you create the certificate the commonName field contains the
 
 If for any chance you get an error stating "SSL certificate validation failure" when running GTK, re-generate the certificate and run again.
 
+# Websocket SSL setup
+
+When you are using nginx with SSL, you will need to edit the `/home/faraday/.faraday/config/server.ini` and configure websockets to use the same certificate as nginx:
+
+```
+[websocket_ssl]
+keyfile = /etc/ssl/faraday.crt
+certificate = /etc/ssl/faraday.key
+enabled = true
+```
+
 #### Certificate signed with internal CA.
 
 If you are using a certificate signed by a internal CA you need follow the next steps for connect the Faraday client to the server using this certificate.
