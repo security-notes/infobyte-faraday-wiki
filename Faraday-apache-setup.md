@@ -1,0 +1,50 @@
+
+## Apache
+
+Before you continue, we recommend the configurations by NGINX explained above.
+
+If you prefer to use Apache, then place the Apache configuration file on the respective location.
+
+
+        # Enable session resumption to improve https performance
+        SSLSessionCache shmcb:/var/cache/mod_ssl/scache(512000)
+        SSLSessionCacheTimeout  300
+
+       <VirtualHost *:80>
+	      Redirect permanent / https://127.0.0.1/
+       </VirtualHost>
+
+       <VirtualHost *:443>
+        # Apache logs configuration.
+
+        ServerName localhost
+        ServerAdmin webmaster@localhost
+        ErrorLog ${APACHE_LOG_DIR}/error.log
+        CustomLog ${APACHE_LOG_DIR}/access.log combined
+
+        SSLEngine On
+	# Dont use SSL
+	SSLProtocol all -SSLv2 -SSLv3
+	# Server-side protection from BEAST attacks
+	SSLHonorCipherOrder on
+	# Use only secure ciphers
+	SSLCipherSuite "ECDHE-RSA-AES256-GCM-SHA384:ECDHE-RSA-AES128-GCM-SHA256:DHE-RSA-AES256-GCM-SHA384:DHE-RSA-AES128-GCM-SHA256:ECDHE-RSA-AES256-SHA384:ECDHE-RSA-AES128-SHA256:ECDHE-RSA-AES256-SHA:ECDHE-RSA-AES128-SHA:DHE-RSA-AES256-SHA256:DHE-RSA-AES128-SHA256:DHE-RSA-AES256-SHA:DHE-RSA-AES128-SHA:ECDHE-RSA-DES-CBC3-SHA:EDH-RSA-DES-CBC3-SHA:AES256-GCM-SHA384:AES128-GCM-SHA256:AES256-SHA256:AES128-SHA256:AES256-SHA:AES128-SHA:DES-CBC3-SHA:HIGH:!aNULL:!eNULL:!EXPORT:!DES:!MD5:!PSK:!RC4"
+
+	# Set the path to SSL certificate
+        SSLCertificateFile /home/user/ca.crt
+        SSLCertificateKeyFile /home/user/ca.key
+
+	# Reverse proxy configuration
+        ProxyPreserveHost On
+	# ProxyPass /server-status !
+        ProxyPass "/" http://127.0.0.1:5985/
+        ProxyPassReverse "/" http://127.0.0.1:5985
+
+	# Security headers
+	Header set X-Frame-Options SAMEORIGIN
+	Header set X-Content-Type-Options nosniff
+	Header set X-XSS-Protection "1; mode=block"
+	Header set Strict-Transport-Security "max-age=31536000; includeSubdomains;"
+
+</VirtualHost>
+
