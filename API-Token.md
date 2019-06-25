@@ -10,12 +10,11 @@ curl 'http://localhost:5985/_api/login'  -H 'Content-Type: application/json' --d
 After successful login , the server will answer with a json that contains the api token.
 
 ```
-{"code":200,"response":{"user":{"authentication_token":"WyIxIiwiJDUkcm91bmRzPTUzNTAwMCRHLkZQZUl0SjFEd0FsWjh2JEt5S01pS2h4elJJVzZUWmJVaTlzN2x1ZEx1eTVyZkxyM2E5V015QzB3QkMiXQ.XRJP_w.Pe9RBV0WAS6xOPrtHZUpx-j5MCY"}},"success":true}
+{"code":200,"response":{"user":{"authentication_token":"AUTH_TOKEN"}},"success":true}
 ```
 
 Now that you got the auth token you can start using it on every request to the api:
 
 ```
-curl 'http://localhost:5985/_api/v2/ws/wonderland' -H 'Authentication-Token:WyIxIiwiJDUkcm91bmRzPTUzNTAwMCRPeno4LkcvQmVwZm9nV0NuJHcxcE5pcXpCa1NtZTFFL05LTzBtTHpNdEZ2QVZVTkNEcUVaUG
-43LjJoR0QiXQ.XRJQ1g.v21C5QNYZlMoM6M26_QLX7UAQc4'
+curl 'http://localhost:5985/_api/v2/ws/wonderland' -H 'Authentication-Token:AUTH_TOKEN'
 ```
