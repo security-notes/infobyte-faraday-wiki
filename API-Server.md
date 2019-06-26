@@ -473,4 +473,25 @@ while read -r line; do
 done < "users.txt"
 ```
 
+# Upload evidence to vulnerability
+
+```
+curl -s  'http://127.0.0.1:5985/_api/login' \
+        -H 'Content-Type: application/json' \
+        -H 'Accept: application/json, text/javascript, */*; q=0.01' \
+        -H 'Referer: http://127.0.0.1:5985/' -H 'X-Requested-With: XMLHttpRequest' \
+        -H 'Connection: keep-alive' \
+        --data-binary '{"email":"faraday","password": "changeme"}' \
+        --compressed -c cookie.txt 
+
+# obtain csrf token to upload files
+curl 'http://localhost:5985/_api/session' --compressed  -c cookie.txt 
+
+# Upload the file evidence.png
+curl 'http://localhost:5985/_api/v2/ws/demo_workspace/vulns/251/attachment/' \
+          -H 'Content-Type: application/json' \
+          -H 'Connection: keep-alive' --data-binary $'------WebKitFormBoundary4RCsZGBu1aaCqyxT\r\nContent-Disposition: form-data;name="csrf_token"\r\n\r\nIjE5NGJlZmZhZmQzYWU0YzE3ZmE3MGEyOGQ1YjgwNGFmMWQwNGJiNTQi.XRPX1A.FgPW6X4O9VlWYx63MrAm3zbd5ws\r\n------WebKitFormBoundary4RCsZGBu1aaCqyxT\r\nContent-Disposition: form-data; name="file"; filename="evidence.png"\r\nContent-Type: image/png\r\n\r\n\r\n------WebKitFormBoundary4RCsZGBu1aaCqyxT--\r\n' \ 
+          --compressed -c cookie.txt 
+```
+
 [file.csv](https://raw.githubusercontent.com/wiki/infobyte/faraday/files/users.txt)
