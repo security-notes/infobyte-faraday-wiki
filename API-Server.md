@@ -487,12 +487,12 @@ curl -s  'http://127.0.0.1:5985/_api/login' \
         --compressed -c cookie.txt 
 
 # obtain csrf token to upload files
-csrf_token=$(curl -s -X GET http://127.0.0.1:5985/_api/session -b cookie.txt | python -c "import sys, json; print json.load(sys.stdin)['csrf_token']")
+csrf_token=$(curl -s -X GET http://127.0.0.1:5985/_api/session -b cookie.txt  -c csrf_cookie.txt| python -c "import sys, json; print json.load(sys.stdin)['csrf_token']")
 
 # Upload the file evidence.png
 curl 'http://localhost:5985/_api/v2/ws/demo_workspace/vulns/251/attachment/' \
           -H 'Connection: keep-alive' --data-binary $'------WebKitFormBoundary4RCsZGBu1aaCqyxT\r\nContent-Disposition: form-data;name="csrf_token"\r\n\r\$csrf_token\r\n------WebKitFormBoundary4RCsZGBu1aaCqyxT\r\nContent-Disposition: form-data; name="file"; filename="evidence.png"\r\nContent-Type: image/png\r\n\r\n\r\n------WebKitFormBoundary4RCsZGBu1aaCqyxT--\r\n' \ 
-          --compressed -c cookie.txt 
+          --compressed -c csrf_cookie.txt
 ```
 
 # Upload reports (xml results from tools) using curl
