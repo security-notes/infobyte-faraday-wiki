@@ -22,11 +22,12 @@ We will get more in detail of these volumes and environment variables:
 
 #### Volumes
 
-Current user's ~/.faraday/doc and ~/.faraday/storage folders are mounted by default. In case you have these folders in a different place, please replace them with proper path at the moment you run Faraday whether as a standalone container or as a service:
+Current user's ~/.faraday/doc, ~/.faraday/storage and ~/.faraday/config folders are mounted by default. In case you have these folders in a different place, please replace them with proper path at the moment you run Faraday whether as a standalone container or as a service:
 
 ```
     /path/to/my_doc_folder:/faraday-license 
     /path/to/my_storage_folder:/faraday-storage 
+    /path/to/my_storage_folder:/faraday-config
 ```
 Example:
 ```
@@ -35,6 +36,7 @@ Example:
     ....
     -v /path/to/my_doc_folder:/faraday-license \
     -v /path/to/my_storage_folder:/faraday-storage \
+    - /path/to/my_config_folder:/faraday-config
     ....
 ```
 ```
@@ -47,7 +49,8 @@ Example:
       ...
       volumes:
         - /path/to/my_doc_folder:/faraday-license
-        - /path/to/my_storage_folde:/faraday-storage
+        - /path/to/my_storage_folder:/faraday-storage
+        - /path/to/my_config_folder:/faraday-config
       ...
 ```
 
@@ -78,6 +81,7 @@ Run the following command specifying the correct information:
     $ docker run \
       -v ~/.faraday/doc:/faraday-license \
       -v ~/.faraday/storage:/faraday-storage \
+      -v ~/.faraday/config:/faraday-config \
       -p 5985:5985 \
       -e PGSQL_HOST='192.168.20.29' \
       -e PGSQL_PASSWD='mypgsqlpassword' \
@@ -129,6 +133,7 @@ services:
     volumes: 
       - ~/.faraday/doc:/faraday-license 
       - ~/.faraday/storage:/faraday-storage 
+      - ~/.faraday/config:/faraday-config 
     deploy: 
       replicas: 1 
       placement: 
