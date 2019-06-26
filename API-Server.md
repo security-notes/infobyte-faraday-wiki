@@ -491,8 +491,7 @@ csrf_token=$(curl -s -X GET http://127.0.0.1:5985/_api/session -b cookie.txt | p
 
 # Upload the file evidence.png
 curl 'http://localhost:5985/_api/v2/ws/demo_workspace/vulns/251/attachment/' \
-          -H 'Content-Type: application/json' \
-          -H 'Connection: keep-alive' --data-binary $'------WebKitFormBoundary4RCsZGBu1aaCqyxT\r\nContent-Disposition: form-data;name="csrf_token"\r\n\r\nIjE5NGJlZmZhZmQzYWU0YzE3ZmE3MGEyOGQ1YjgwNGFmMWQwNGJiNTQi.XRPX1A.FgPW6X4O9VlWYx63MrAm3zbd5ws\r\n------WebKitFormBoundary4RCsZGBu1aaCqyxT\r\nContent-Disposition: form-data; name="file"; filename="evidence.png"\r\nContent-Type: image/png\r\n\r\n\r\n------WebKitFormBoundary4RCsZGBu1aaCqyxT--\r\n' \ 
+          -H 'Connection: keep-alive' --data-binary $'------WebKitFormBoundary4RCsZGBu1aaCqyxT\r\nContent-Disposition: form-data;name="csrf_token"\r\n\r\$csrf_token\r\n------WebKitFormBoundary4RCsZGBu1aaCqyxT\r\nContent-Disposition: form-data; name="file"; filename="evidence.png"\r\nContent-Type: image/png\r\n\r\n\r\n------WebKitFormBoundary4RCsZGBu1aaCqyxT--\r\n' \ 
           --compressed -c cookie.txt 
 ```
 
