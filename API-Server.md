@@ -495,4 +495,39 @@ curl 'http://localhost:5985/_api/v2/ws/demo_workspace/vulns/251/attachment/' \
           --compressed -c cookie.txt 
 ```
 
+# Upload reports (xml results from tools) using curl
+
+Please check the urls and use the correct workspace name!
+
+```
+curl -s  'http://127.0.0.1:5985/_api/login' \
+        -H 'Origin: http://127.0.0.1:5985' -H 'Accept-Encoding: gzip, deflate, br' \
+        -H 'Accept-Language: en-US,en;q=0.9' \
+        -H 'Content-Type: application/json' \
+        -H 'Accept: application/json, text/javascript, */*; q=0.01' \
+        -H 'Referer: http://127.0.0.1:5985/' -H 'X-Requested-With: XMLHttpRequest' \
+        -H 'Connection: keep-alive' \
+        --data-binary '{"email":"faraday","password": "changeme"}' \
+        --compressed -c cookie.txt 
+
+csrf_token=$(curl -s -X GET http://127.0.0.1:5985/_api/session -b cookie.txt -c csrf_cookie.txt | python -c "import sys, son; print json.load(sys.stdin)['csrf_token']")
+echo $csrf_token
+
+echo ";currentUrl=%2Fstatus%2Fws%2Ftest1; currentComponent=status" >> cookie.txt
+curl -i -v http://127.0.0.1:5985/_api/v2/ws/test1/upload_report \
+        -H "Connection: keep-alive" \
+        -H "Pragma: no-cache" \
+        -H "Cache-Control: no-cache" \
+        -H "Accept: application/json, text/plain, */*" \
+        -H "Origin: http://127.0.0.1:5985" \
+        -H "User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.157 Safari/537.36" \
+        -H "Content-Type: multipart/form-data" \
+        -H "Referer: http://127.0.0.1:5985/" \
+        -H "Accept-Encoding: gzip, deflate, br" \
+        -H "Accept-Language:  en-US,en;q=0.9,es;q=0.8" \
+        --form "csrf_token=$csrf_token" \
+        --form "file=@/home/javier/Infobyte/Useful/acunetix_report.xml" \
+        -b csrf_cookie.txt 
+```
+
 [file.csv](https://raw.githubusercontent.com/wiki/infobyte/faraday/files/users.txt)
