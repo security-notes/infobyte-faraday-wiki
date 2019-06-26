@@ -495,9 +495,9 @@ curl 'http://localhost:5985/_api/v2/ws/demo_workspace/vulns/251/attachment/' \
           --compressed -c csrf_cookie.txt
 ```
 
-# Upload reports (xml results from tools) using curl
+# Upload reports (XML results from tools) using curl
 
-Please check the urls and use the correct workspace name!
+Please check the URLs and use the correct workspace name!
 
 ```
 curl -s  'http://127.0.0.1:5985/_api/login' \
@@ -526,7 +526,7 @@ curl -i -v http://127.0.0.1:5985/_api/v2/ws/test1/upload_report \
         -H "Accept-Encoding: gzip, deflate, br" \
         -H "Accept-Language:  en-US,en;q=0.9,es;q=0.8" \
         --form "csrf_token=$csrf_token" \
-        --form "file=@/home/javier/Infobyte/Useful/acunetix_report.xml" \
+        --form "file=@/PATH/TO/FILE" \
         -b csrf_cookie.txt 
 ```
 
