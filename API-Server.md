@@ -475,6 +475,8 @@ done < "users.txt"
 
 # Upload evidence to vulnerability
 
+Remember to change the workspace name in the urls and vuln id to attach evidence.
+
 ```
 curl -s  'http://127.0.0.1:5985/_api/login' \
         -H 'Content-Type: application/json' \
@@ -485,7 +487,7 @@ curl -s  'http://127.0.0.1:5985/_api/login' \
         --compressed -c cookie.txt 
 
 # obtain csrf token to upload files
-curl 'http://localhost:5985/_api/session' --compressed  -c cookie.txt 
+csrf_token=$(curl -s -X GET http://127.0.0.1:5985/_api/session -b cookie.txt | python -c "import sys, json; print json.load(sys.stdin)['csrf_token']")
 
 # Upload the file evidence.png
 curl 'http://localhost:5985/_api/v2/ws/demo_workspace/vulns/251/attachment/' \
