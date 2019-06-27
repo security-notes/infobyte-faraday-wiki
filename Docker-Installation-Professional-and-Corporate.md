@@ -36,7 +36,7 @@ Example:
     ....
     -v /path/to/my_doc_folder:/faraday-license \
     -v /path/to/my_storage_folder:/faraday-storage \
-    - /path/to/my_config_folder:/faraday-config
+    -v /path/to/my_config_folder:/faraday-config
     ....
 ```
 ```
