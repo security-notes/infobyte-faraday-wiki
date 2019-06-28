@@ -58,7 +58,7 @@ We will get more in details about this configuration below.
 
 #### Enviroment Variables
 
-In case you don't have a configuration file you'll need to set some env variables. These come with default values so you'll need to customize some or all of them depending on your installation config. 
+In case you don't have a configuration file you'll need to set some environment variables. These come with default values so you'll need to customize some or all of them depending on your installation config. 
 
 ```
 
@@ -77,7 +77,7 @@ Now that we have learn about the volumes and the enviroment variables above, let
 
 Run the following command specifying the correct information:
 
-With env variables
+With environment variables
  ```
     $ docker run \
       -v ~/.faraday/doc:/faraday-license \
@@ -124,7 +124,7 @@ In case you have more than one ip addr configured in your machine you have to sp
 Now, you need to create a **docker-compose.yml** file. You can use this docker-compose as example:
 
 
-With env variables
+With environment variables
 ```
 version: '3.7' 
  
