@@ -16,7 +16,7 @@ Check Image
 
 ### Configuration
 
-This image can be run as a service or as a standalone container. Both run Faraday Server without PostgreSQL. You will note that we have created `/faraday-license` and `/faraday-storage` volumes (for mount your license and storage). We have also created environment variables for Faraday configuration.
+This image can be run as a service or as a standalone container. Both run Faraday Server without PostgreSQL. You will note that we have created `/faraday-license`, `/faraday-storage` and `/faraday-config` volumes (for mount your license , storage and configuration). We have also created environment variables for Faraday configuration in case you don't mount a config volume.
 
 We will get more in detail of these volumes and environment variables:
 
@@ -58,7 +58,7 @@ We will get more in details about this configuration below.
 
 #### Enviroment Variables
 
-The following variables came with default values so you'll need to customize some or all of them depending on your installation config. 
+In case you don't have a configuration file you'll need to set some env variables. These come with default values so you'll need to customize some or all of them depending on your installation config. 
 
 ```
 
@@ -77,15 +77,24 @@ Now that we have learn about the volumes and the enviroment variables above, let
 
 Run the following command specifying the correct information:
 
+With env variables
+ ```
+    $ docker run \
+      -v ~/.faraday/doc:/faraday-license \
+      -v ~/.faraday/storage:/faraday-storage \
+      -p 5985:5985 \
+      -e PGSQL_HOST='192.168.20.29' \
+      -e PGSQL_PASSWD='mypgsqlpassword' \
+      -e LISTEN_ADDR='0.0.0.0' \
+      faraday:c_v3.7
+ ```
+With config volume mounted
  ```
     $ docker run \
       -v ~/.faraday/doc:/faraday-license \
       -v ~/.faraday/storage:/faraday-storage \
       -v ~/.faraday/config:/faraday-config \
       -p 5985:5985 \
-      -e PGSQL_HOST='192.168.20.29' \
-      -e PGSQL_PASSWD='mypgsqlpassword' \
-      -e LISTEN_ADDR='0.0.0.0' \
       faraday:c_v3.7
  ```
 
@@ -114,6 +123,8 @@ In case you have more than one ip addr configured in your machine you have to sp
 
 Now, you need to create a **docker-compose.yml** file. You can use this docker-compose as example:
 
+
+With env variables
 ```
 version: '3.7' 
  
@@ -133,7 +144,6 @@ services:
     volumes: 
       - ~/.faraday/doc:/faraday-license 
       - ~/.faraday/storage:/faraday-storage 
-      - ~/.faraday/config:/faraday-config 
     deploy: 
       replicas: 1 
       placement: 
@@ -142,7 +152,6 @@ secrets:
   pgsql_passwd: 
     external: true
 ```
-
 When Faraday runs as a service, PGSQL_PASSWD can be configured with docker secrets (default in docker-compose.yml). The simplest way to create a secret is reading from standard input (you should take care of bash history).
 
 ```
@@ -164,6 +173,27 @@ Once you have created the secret, edit you docker-compose.yml and set:
 ```
       
 For more information about secrets, check [docker web page](https://docs.docker.com/engine/swarm/secrets/)
+
+With config volume mounted
+```
+version: '3.7' 
+ 
+services: 
+  server: 
+    image: faraday:c_v3.7 
+    ports: 
+      - 5985:5985 
+    volumes: 
+      - ~/.faraday/doc:/faraday-license 
+      - ~/.faraday/storage:/faraday-storage 
+      - ~/.faraday/config:/faraday-config 
+    deploy: 
+      replicas: 1 
+      placement: 
+        constraints: [node.role == manager] 
+```
+
+
 
 **3.** Deploy:
 
