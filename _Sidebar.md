@@ -15,6 +15,7 @@
     * [CLI - (Headless importation)](https://github.com/infobyte/faraday/wiki/CLI-(Headless-importation))
   * [Updating Faraday](https://github.com/infobyte/faraday/wiki/Updates)
 
+
 * **Securing your instance**
   * [2nd Factor Authentication](https://github.com/infobyte/faraday/wiki/2-Factor-Authentication)
   * **Using SSL**
@@ -23,6 +24,7 @@
   * [Setting up a Proxy](https://github.com/infobyte/faraday/wiki/Proxy)
   * [Report a Security Vulnerability](https://github.com/infobyte/faraday/wiki/Security)
   * [Backup](https://github.com/infobyte/faraday/wiki/Backup)
+
 
 * **Getting Started**
   * [Managing Users](https://github.com/infobyte/faraday/wiki/Users)
@@ -34,6 +36,7 @@
   * [Settings](https://github.com/infobyte/faraday/wiki/Settings)
   * [Custom Fields](https://github.com/infobyte/faraday/wiki/Custom-Fields)
 
+
 * **Plugins**
   * [Plugin List](https://github.com/infobyte/faraday/wiki/Plugin-List)
   * [Burp Proxy Extender](https://github.com/infobyte/faraday/wiki/Burp-proxy-extender)
@@ -42,6 +45,7 @@
   * [Evilgrade](https://github.com/infobyte/faraday/wiki/Evilgrade)
   * [Immunitys-CANVAS](https://github.com/infobyte/faraday/wiki/Immunitys-CANVAS)
   * [Metasploit](https://github.com/infobyte/faraday/wiki/Metasploit)
+
 
 * **Understanding the Web UI**
   * [**Status Report**](https://github.com/infobyte/faraday/wiki/Status-Report)
@@ -56,6 +60,8 @@
   * [Vulnerability Templates](https://github.com/infobyte/faraday/wiki/Vulnerabilities-Database)
   * [Data Analysis](https://github.com/infobyte/faraday/wiki/Data-Analysis-Tools)
 
+* [**Executive Report Feature**](https://github.com/infobyte/faraday/wiki/Executive-Report)
+
 * **Using Faraday**
   * [Cybersecurity Program (Use Case)](https://github.com/infobyte/faraday/wiki/Cybersecurity-Program)
   * [Searcher (Automation)](https://github.com/infobyte/faraday/wiki/Searcher)
@@ -63,8 +69,6 @@
   * [Helpers](https://github.com/infobyte/faraday/wiki/Helpers)
   * [Scripts](https://github.com/infobyte/faraday/wiki/Scripts)
   * [Faraday Manage](https://github.com/infobyte/faraday/wiki/Faraday-Manage)
-
-* [**Executive Report Feature**](https://github.com/infobyte/faraday/wiki/Executive-Report)
 
 * **Integrations**
   * [LDAP](https://github.com/infobyte/faraday/wiki/LDAP)
@@ -75,11 +79,13 @@
   * [Bug bounties](https://github.com/infobyte/faraday/wiki/Bug-bounties)
   * [Continuous Scanning](https://github.com/infobyte/faraday/wiki/Continuous-Scanning)
 
+
 * **Developer Space**
   * [Faraday Plugin](https://github.com/infobyte/faraday/wiki/Faraday-Plugin)
   * [Basic Plugin Development](https://github.com/infobyte/faraday/wiki/Basic-plugin-development)
   * [API - Server](https://github.com/infobyte/faraday/wiki/API-Server)
   * [API - Client](https://github.com/infobyte/faraday/wiki/API-Client)
+
 
 * **Troubleshooting & FAQs**
   * [FAQs](https://github.com/infobyte/faraday/wiki/FAQ)
