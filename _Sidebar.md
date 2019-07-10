@@ -84,6 +84,7 @@
   * [Faraday Plugin](https://github.com/infobyte/faraday/wiki/Faraday-Plugin)
   * [Basic Plugin Development](https://github.com/infobyte/faraday/wiki/Basic-plugin-development)
   * [API - Server](https://github.com/infobyte/faraday/wiki/API-Server)
+  * [API Token](https://github.com/infobyte/faraday/wiki/API-Token)
   * [API - Client](https://github.com/infobyte/faraday/wiki/API-Client)
 
 
