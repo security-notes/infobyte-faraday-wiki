@@ -1,7 +1,10 @@
 Upon faraday v3.9 we included an API Token for our api.
 The token for the API will expire when the user changes the password.
 
-You can configure token expiration in the `[server]` section of the configuration with the option `api_token_expiration` expressed in seconds
+You can configure token expiration in the `[server]` section of the configuration with the option `api_token_expiration` expressed in seconds.
+
+Token expires by timeout or when the user changes the password.
+Each token is associated to the user who requests the token.
 
 The token can be retrieved when the user logs into the application using:
 
