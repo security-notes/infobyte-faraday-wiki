@@ -298,13 +298,13 @@ Json Body:
 
 This API endpoints allows you to change the Activity Feed (from Dashboard) objects:
 
-    (HEAD, OPTIONS, GET) -> '/v2/ws/<workspace_name>/activities/count/'
-    (HEAD, OPTIONS, GET) ->  '/v2/ws/<workspace_name>/commands/activity_feed/'
-    (OPTIONS, DELETE) -> '/v2/ws/<workspace_name>/activities/<object_id>/'
-    (HEAD, OPTIONS, GET) -> '/v2/ws/<workspace_name>/activities/<object_id>/'
-    (PUT, OPTIONS) -> '/v2/ws/<workspace_name>/activities/<object_id>/'
-    (HEAD, OPTIONS, GET) -> '/v2/ws/<workspace_name>/activities/'
-    (POST, OPTIONS) -> '/v2/ws/<workspace_name>/activities/'
+    (HEAD, OPTIONS, GET) -> '/_api/v2/ws/<workspace_name>/activities/count/'
+    (HEAD, OPTIONS, GET) ->  '/_api/v2/ws/<workspace_name>/commands/activity_feed/'
+    (OPTIONS, DELETE) -> '/_api/v2/ws/<workspace_name>/activities/<object_id>/'
+    (HEAD, OPTIONS, GET) -> '/_api/v2/ws/<workspace_name>/activities/<object_id>/'
+    (PUT, OPTIONS) -> '/_api/v2/ws/<workspace_name>/activities/<object_id>/'
+    (HEAD, OPTIONS, GET) -> '/_api/v2/ws/<workspace_name>/activities/'
+    (POST, OPTIONS) -> '/_api/v2/ws/<workspace_name>/activities/'
 
 **Comments:**
 
