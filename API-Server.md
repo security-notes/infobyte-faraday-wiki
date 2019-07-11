@@ -510,7 +510,7 @@ curl -s  'http://127.0.0.1:5985/_api/login' \
         --data-binary '{"email":"faraday","password": "changeme"}' \
         --compressed -c cookie.txt 
 
-csrf_token=$(curl -s -X GET http://127.0.0.1:5985/_api/session -b cookie.txt -c csrf_cookie.txt | python -c "import sys, son; print json.load(sys.stdin)['csrf_token']")
+csrf_token=$(curl -s -X GET http://127.0.0.1:5985/_api/session -b cookie.txt -c csrf_cookie.txt | python -c "import sys, json; print json.load(sys.stdin)['csrf_token']")
 echo $csrf_token
 
 echo ";currentUrl=%2Fstatus%2Fws%2Ftest1; currentComponent=status" >> cookie.txt
