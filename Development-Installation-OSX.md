@@ -1,5 +1,7 @@
 ## OSX
 
+If you want to use Faraday in OSX [please check this guide]()
+
 Video about install Faraday in macOS Sierra: [Installation in macOS Sierra.](https://www.youtube.com/watch?v=F44RnB3Ru24)
 
 Tested on OSX Maverick 10.9.2.
