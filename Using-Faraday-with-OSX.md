@@ -8,3 +8,11 @@ The dmg contains the following binaries:
 * faraday-server
 * faraday-terminal
 * faraday-searcher
+
+# Starting the server
+
+You can start the server with the command:
+
+```
+faraday-server --port 5985 --bind 0.0.0.0
+```
