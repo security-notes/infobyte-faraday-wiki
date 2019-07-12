@@ -4,7 +4,7 @@
 * **Installing Faraday**
   * [Architecture](https://github.com/infobyte/faraday/wiki/Architecture)
   * [Install Guide](https://github.com/infobyte/faraday/wiki/Installation-Guide)
-  * [Install - OS X](https://github.com/infobyte/faraday/wiki/Installation-OSX)
+  * [Install - OS X](https://github.com/infobyte/faraday/wiki/Development-Installation-OSX)
   * **Docker**
     * [Community](https://github.com/infobyte/faraday/wiki/Installation-Docker-Community)
     * [Pro/Corp](https://github.com/infobyte/faraday/wiki/Docker-installation-professional-and-corporate)
