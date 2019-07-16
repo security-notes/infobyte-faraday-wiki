@@ -161,7 +161,7 @@ To know how to run Faraday's multiple commands, please follow this [link](#how-t
 <a name="macos"></a>
 ## MacOS DMG
 
-Instructions for Faraday's installation in MacOS will be specified soon. Meanwhile, you can use former installation guide for MacOS by following this [link](https://github.com/infobyte/faraday/wiki/Installation-OSX).
+Instructions for Faraday's installation in MacOS are specified in this [installation guide](https://github.com/infobyte/faraday/wiki/Development-Installation-OSX).
 
 <a name="binary-files"></a>
 ## Binary files
