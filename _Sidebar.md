@@ -9,6 +9,7 @@
   * **Docker**
     * [Community](https://github.com/infobyte/faraday/wiki/Installation-Docker-Community)
     * [Pro/Corp](https://github.com/infobyte/faraday/wiki/Docker-installation-professional-and-corporate)
+  * [How to run Faraday](https://github.com/infobyte/faraday/wiki/How-to-run-Faraday)
   * [Run as Service](https://github.com/infobyte/faraday/wiki/Run-As-Service)
   * **Faraday Client**
     * [GTK](https://github.com/infobyte/faraday/wiki/GTK)
