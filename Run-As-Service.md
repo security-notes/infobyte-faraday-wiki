@@ -3,6 +3,8 @@
 After Faraday v3.8.0, Faraday's installers (.deb or .rpm) will install Faraday's server as a service, so the followings steps are **not** required anymore.
 Please check our [new installation guide](https://github.com/infobyte/faraday/wiki/Installation-Guide)
 
+For more information about how to run Faraday, you can check this [guide](https://github.com/infobyte/faraday/wiki/How-to-run-Faraday#run-faraday-server)
+
 # DEPRECATED!
 
 * Go to the folder: /etc/systemd/system/
