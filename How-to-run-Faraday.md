@@ -1,3 +1,4 @@
+### Index
 <a name="index"></a>
 * [Run Faraday Server](#run-faraday-server)
 * [Run binary files](#run-binary-files)
