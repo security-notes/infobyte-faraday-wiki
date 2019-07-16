@@ -30,7 +30,7 @@ Faraday's commands are installed at the moment you install Faraday using the **.
 
 To keep this guide short and clear, we will show you Faraday's current commands but remember that the binary files work the same way:
  
-* **Faraday Client**
+* #### Faraday Client
 
     Faraday Client is the software which will allow you to work with your favorite security tools and capture their output in an organized manner. For more information about Faraday Client, take a look at this [wiki](https://github.com/infobyte/faraday/wiki/GTK).
 
