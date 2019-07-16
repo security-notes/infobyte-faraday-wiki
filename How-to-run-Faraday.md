@@ -15,32 +15,50 @@ You can now run Faraday Server as a service:
 <a name="run-binary-files"></a>
 ### Run binary files
 
-You can run Faraday Client, Faraday ZSH Terminal, Faraday Manage and Faraday Plugin (fplugin) by using their binary files:
+In order to download Faraday's binary files, check our [installation guide](https://github.com/infobyte/faraday/wiki/Installation-Guide#binary-files). These are Faraday's current binary files:
  
-* To run Faraday Client:
+* **Faraday Client**
 
+    Faraday Client is the software which will allow you to work with your favorite security tools and capture their output in an organized manner. For more information about Faraday Client, take a look at this [wiki](https://github.com/infobyte/faraday/wiki/GTK).
+
+    To run Faraday Client binary file, execute the following command:
     ```
     $ faraday-client
     ```
 
-* To run Faraday ZSH Terminal:
+* **Faraday ZSH Terminal**
 
-    **Note:** In order to run Faraday ZSH Terminal, you need to run first Faraday Client without GUI:
+    You can run Faraday in detached mode connecting with a ZSH terminal to it. For more information, take a look at this [wiki](https://github.com/infobyte/faraday/wiki/ZSH).
+
+    To run Faraday ZSH Terminal binary file, follow this instruction:
+
+    * First, you need to run first Faraday Client without GUI:
+
+        ```
+        $ faraday-client --gui=no-gui
+        ```
+
+    * Once you run the command above, you can run Faraday ZSH Terminal:
+
+        ```
+        $ faraday-terminal
+        ```
+
+* **Faraday Manage**
+
+    Faraday Manage is a backend tool that gives us a hand with Faraday's configuration. For more information, take a look at this [wiki](https://github.com/infobyte/faraday/wiki/Faraday-Manage).
+    
+    To run Faraday Manage binary file, execute the following command:
+
     ```
-    $ faraday-client --gui=no-gui
-    ```
-    Once you run the command above, you can run Faraday ZSH Terminal:
-    ```
-    $ faraday-terminal
+    $ ./faraday-manage
     ```
 
-* To run Faraday Manage:
+* **Faraday Plugin**
 
-    ```
-    $ faraday-manage
-    ```
+    Faraday Plugin (fplugin) allows you to interact directly with our Python API from the command line. For more information, take a look at this [wiki](https://github.com/infobyte/faraday/wiki/Faraday-Plugin).
 
-* To run Faraday Plugin:
+    To run Faraday Plugin binary file, execute the following command:
 
     ```
     $ faraday-fplugin
