@@ -15,12 +15,23 @@ You can now run Faraday Server as a service:
 <a name="run-binary-files"></a>
 ### Run binary files
 
-You can run Faraday Client, Faraday Manage and Faraday Plugin (fplugin) by using their binary files:
+You can run Faraday Client, Faraday ZSH Terminal, Faraday Manage and Faraday Plugin (fplugin) by using their binary files:
  
 * To run Faraday Client:
 
     ```
     $ faraday-client
+    ```
+
+* To run Faraday ZSH Terminal:
+
+    **Note:** In order to run Faraday ZSH Terminal, you need to run first Faraday Client without GUI:
+    ```
+    $ faraday-client --gui=no-gui
+    ```
+    Once you run the command above, you can run Faraday ZSH Terminal:
+    ```
+    $ faraday-terminal
     ```
 
 * To run Faraday Manage:
