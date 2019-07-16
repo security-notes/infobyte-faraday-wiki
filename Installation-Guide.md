@@ -291,28 +291,4 @@ To know how to run Faraday's multiple commands, please follow this [link](#how-t
 <a name="how-to-run-faraday"></a>
 ### How to run Faraday
 
-Faraday v3.8.0 brings a new way to run Faraday. Take a look at the new Faraday's commands:
-
-* To run Faraday Server:
-
-    ```
-    $ faraday-server
-    ```
-
-* To run Faraday Client:
-
-    ```
-    $ faraday-client
-    ```
-
-* To run Faraday Manage:
-
-    ```
-    $ faraday-manage
-    ```
-
-* To run Faraday Plugin:
-
-    ```
-    $ faraday-fplugin
-    ```
+In order to check how to run Faraday, please follow this [link]
