@@ -26,7 +26,6 @@
 
 
 * **Getting Started**
-  * [Managing Users](https://github.com/infobyte/faraday/wiki/Users)
   * [Managing Workspaces](https://github.com/infobyte/faraday/wiki/Workspaces)
   * **Importing Information**
     * [Upload Report](https://github.com/infobyte/faraday/wiki/Upload-Report)
