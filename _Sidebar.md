@@ -52,7 +52,6 @@
   * [Hosts & Services](https://github.com/infobyte/faraday/wiki/Hosts-and-Services)
   * [Credentials](https://github.com/infobyte/faraday/wiki/Credentials)
   * [Vulnerability Templates](https://github.com/infobyte/faraday/wiki/Vulnerabilities-Database)
-  * [Data Analysis](https://github.com/infobyte/faraday/wiki/Data-Analysis-Tools)
 
 * [**Executive Report Feature**](https://github.com/infobyte/faraday/wiki/Executive-Report)
 
