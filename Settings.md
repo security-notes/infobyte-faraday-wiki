@@ -27,12 +27,6 @@ Once you create a Custom Field, you will see it listed as below:
 
 ### Ticketing Tools
 
-If you want to use JIRA's or ServiceNow's integration, you can set their configuration through Settings:
+**This feature is only available for our [Professional and Corporate](https://www.faradaysec.com/#download) versions.**
 
-**For JIRA**:
-
-![](https://raw.githubusercontent.com/wiki/infobyte/faraday/images/settings/ticketing_tools_JIRA.png)
-
-**For ServiceNow**:
-
-![](https://raw.githubusercontent.com/wiki/infobyte/faraday/images/settings/ticketing_tools_ServiceNow.png)
+If you're already a client and want to know more about this feature, please visit our [Knowledge Base](https://support.faradaysec.com/portal/kb/articles/settings#Ticketing_Tools).
