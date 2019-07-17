@@ -59,7 +59,6 @@
   * [Cybersecurity Program (Use Case)](https://github.com/infobyte/faraday/wiki/Cybersecurity-Program)
   * [Searcher (Automation)](https://github.com/infobyte/faraday/wiki/Searcher)
   * [Comments & Notifications](https://github.com/infobyte/faraday/wiki/Comments)
-  * [Scripts](https://github.com/infobyte/faraday/wiki/Scripts)
   * [Faraday Manage](https://github.com/infobyte/faraday/wiki/Faraday-Manage)
 
 * **Integrations**
