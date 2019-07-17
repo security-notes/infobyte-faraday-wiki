@@ -1,12 +1,11 @@
 <a name="index"></a>
 ### Index
 * [How to create Custom Fields](#cf_creation)
-* [Custom Fields in Executive Report](#cf_in_exec_report)
 
 ### Intro
 Custom Fields allow you to extend the vulnerability's model with more fields. Custom fields type can be **int**, **str** and **list**.
 
-With our [Professional and Corporate](https://www.faradaysec.com/#download) versions, you can use the custom fields in the executive report.
+With our [Professional and Corporate](https://www.faradaysec.com/#download) versions, you can use the Custom Fields in the [Executive Report](https://github.com/infobyte/faraday/wiki/Executive-Report).
 
 If you want to learn more about the usage of Custom Fields through Faraday's API, follow this [link](https://github.com/infobyte/faraday/wiki/Using-custom-fields-from-the-API).
 
@@ -62,14 +61,3 @@ New CustomField will be added to vulnerability -> Order 0 (cvss,CVSS,str) <-, co
 **Step 3:** After successfully creating the custom field, you will see it on the vulneraibity form:
 
 ![Vulnerability custom fields](https://user-images.githubusercontent.com/568181/51412576-c0f01480-1b4a-11e9-961f-69b80b8ba325.png)
-
-<a name="cf_in_exec_report"></a>
-## Custom Fields in Executive Report
-
-If you have a commercial version of Faraday, you can access the custom fields on the docx templates like a dictionary and by the field name:
-
-```
-vuln.custom_fields["cvss"] 
-```
-
-**Note:** use the **field name** in the report
