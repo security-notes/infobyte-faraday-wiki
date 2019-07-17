@@ -22,13 +22,10 @@ Searcher has the following structure:
 
 * **log:** Contains all searcher log files.
 
-* **searcher.py:** It’s the main file, it contains all logic to use Searcher and we must execute this file passing some arguments in the command line.
+* **faraday-searcher:** It’s the main file, it contains all logic to use Searcher and we must execute this file passing some arguments in the command line.
 
-* **rules.py:** It’s another important file to execute searcher, it contains all rules to be processed by searcher.py. This is the file were we create new rules.
+* **rules.json:** Faraday searcher uses a json file with a list of rules to process against Faraday data.
 
-* **validator.py:** This file is to validate that each rule written by the user is correct, the validator watch for semantics and syntactic structure in the rules.py file and it can notify to the user how and where fix the wrong rule.
-
-* **api.py:** it’s an auxiliary file and it’s used to communicate with Faraday API.
 
 <a name="example"></a>
 ### Example
@@ -74,7 +71,7 @@ With this in mind, we use this global structure of a rule:
 
 Where the fields 'model', 'parent', 'fields' and 'object' allow you to get the object that will be processed, and field 'conditions' tells us when the actions can be executed.
 
-Now, let’s write our rule inside the **rules.py** file by following the expression that we created above:
+Now, let’s write our rule inside the **rules.json** file by following the expression that we created above:
 
 TO CHANGE ALL **VULNERABILITIES (model)** WHICH **SEVERITY VALUE IS LOW (object)** **TO SEVERITY MEDIUM VALUE” (action)**
 
@@ -102,11 +99,11 @@ We can take a look at the following table that contains a brief description of e
 <a name="step-2"></a>
 ### Step 2 - Running the Searcher
 
-Now we can run Searcher, it’s important to know all the options it needs to get a desired result, to do this we can execute `./searcher.py -h` in the terminal.
+Now we can run Searcher, it’s important to know all the options it needs to get a desired result, to do this we can execute `faraday-searcher -h` in the terminal.
 
-    usage: searcher.py [-h] -w WORKSPACE [-s SERVER] [-u USER] [-p PASSWORD]
+    usage: faraday-searcher [-h] -w WORKSPACE [-s SERVER] [-u USER] [-p PASSWORD]
                    [-o OUTPUT] [-e EMAIL] [-ep EMAIL_PASS] [-mp MAIL_PROTOCOL]
-                   [-pp PORT_PROTOCOL] [-l LOG]
+                   [-pp PORT_PROTOCOL] [-l LOG] [-r RULES_FILENAME]
 
      Search duplicated objects on Faraday
 
@@ -124,7 +121,7 @@ Now we can run Searcher, it’s important to know all the options it needs to ge
       -l LOG, --log LOG     Choose a custom log level
 
 
-Let's run the Searcher with our usage case: `./searcher.py -w develop -p <MY_PASS>`. Once we have run the previous command, we can check the log file and database to see all changes. 
+Let's run the Searcher with our usage case: `faraday-searcher -w develop -p <MY_PASS>`. Once we have run the previous command, we can check the log file and database to see all changes. 
 
 
     03/06/2019 03:42:24 PM - Faraday searcher - INFO: Started
