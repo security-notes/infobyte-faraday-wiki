@@ -17,7 +17,6 @@
 
 
 * **Securing your instance**
-  * [2nd Factor Authentication](https://github.com/infobyte/faraday/wiki/2-Factor-Authentication)
   * **Using SSL**
     * [NGINX setup](https://github.com/infobyte/faraday/wiki/NGINX-Setup)
     * [Apache setup](https://github.com/infobyte/faraday/wiki/Faraday-apache-setup)
