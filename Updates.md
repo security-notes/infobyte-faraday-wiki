@@ -52,57 +52,10 @@ Once you have installed Faraday, you can take a look at the new [Faraday's comma
 <a name="commercial-version-update"></a>
 ### Commercial version update
 
-**This guide is for our [commercial versions](https://www.faradaysec.com/#download) only.**
-
-Faraday will be **installed as a service** if you use deb or rpm.
-
-1. Download the deb or rpm files from the portal.
-
-1. Run `apt install ./faraday-server_amd64.deb` or `yum install ./faraday-server_amd64.rpm`
-
-1. (optional) Run the client using ```faraday-client --login```
-
-In order for the update to work, these steps must be followed in every instance of Faraday.
-
-Once you have updated Faraday, you can take a look at Faraday's server status by running:
-
-```
-$ service faraday-server status
-```
-
-#### After Installation
-
-Once you have installed Faraday, take a look at the new [Faraday's commands](https://github.com/infobyte/faraday/wiki/Updates#new_commands).
-
-
-***
+If you have a [Professional](https://www.faradaysec.com/#download) or [Corporate](https://www.faradaysec.com/#download) version of Faraday, please head over to our [Knowledge Base](https://support.faradaysec.com/portal/kb/articles/updating-faraday-lo-i) for information on updating your instance.
 
 
 <a name="new-faradays-commands"></a>
 ### New Faraday's Commands
 
-Faraday v3.8.0 brings a new way to run Faraday. Take a look at the new Faraday's commands:
-
-* To run Faraday Server:
-
-    ```
-    $ faraday-server
-    ```
-
-* To run Faraday Client:
-
-    ```
-    $ faraday-client
-    ```
-
-* To run Faraday Manage:
-
-    ```
-    $ faraday-manage
-    ```
-
-* To run Faraday Plugin:
-
-    ```
-    $ faraday-fplugin
-    ```
+Faraday v3.8.0 brings a new way to run Faraday. Take a look at the new Faraday's commands [here](https://github.com/infobyte/faraday/wiki/How-to-run-Faraday).
