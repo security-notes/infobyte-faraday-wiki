@@ -30,7 +30,6 @@
   * **Importing Information**
     * [Upload Report](https://github.com/infobyte/faraday/wiki/Upload-Report)
     * [CSV Importer](https://github.com/infobyte/faraday/wiki/CSV-Importer)
-    * [Nessus](https://github.com/infobyte/faraday/wiki/Nessus)
   * [Settings](https://github.com/infobyte/faraday/wiki/Settings)
   * [Custom Fields](https://github.com/infobyte/faraday/wiki/Custom-Fields)
 
