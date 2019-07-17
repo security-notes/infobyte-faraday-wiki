@@ -67,7 +67,6 @@
   * [ServiceNow](https://github.com/infobyte/faraday/wiki/ServiceNow)
   * [OSINT Provider](https://github.com/infobyte/faraday/wiki/OSINT-Provider)
   * [Faraday Add-on](https://github.com/infobyte/faraday/wiki/Faraday-Addon)
-  * [Bug bounties](https://github.com/infobyte/faraday/wiki/Bug-bounties)
   * [Continuous Scanning](https://github.com/infobyte/faraday/wiki/Continuous-Scanning)
 
 
