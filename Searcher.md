@@ -55,7 +55,7 @@ Basically, a rule has a structure like this:
 With this in mind, we use this global structure of a rule:
 
 
-    {
+    [{
         ‘id’: ‘CU1’,
         
         ‘model’:’Vulnerability’,
@@ -66,7 +66,7 @@ With this in mind, we use this global structure of a rule:
         ‘conditions’:[“refs=nessus-333”,”name=smb-vuln-056”],       IF
 
         ‘actions’:[“--UPDATE:confirmed=True”]                      THEN
-    }
+    }]
 
 
 Where the fields 'model', 'parent', 'fields' and 'object' allow you to get the object that will be processed, and field 'conditions' tells us when the actions can be executed.
@@ -75,12 +75,12 @@ Now, let’s write our rule inside the **rules.json** file by following the expr
 
 TO CHANGE ALL **VULNERABILITIES (model)** WHICH **SEVERITY VALUE IS LOW (object)** **TO SEVERITY MEDIUM VALUE” (action)**
 
-    {
+    [{
          'id': 'CHANGE_SEVERITY',
          'model': 'Vulnerability',
          'object': "severity=low",        
          'actions': ["--UPDATE:severity=med"]
-    }
+    }]
 
 #### Rule description
 
@@ -176,59 +176,59 @@ Let’s check Faraday !
 
  **1-** We are going to change the severity to "critical" and the confirmed status to "True" on all the vulnerabilities whose names begin with ‘Device’ and parent is ’50.56.220.123’. The conditions to make this change is that there should be another vulnerability with severity="info" in this same host and another vulnerability which creator is Nessus and its name begin with ‘OS’:
 
-    {
+    [{
         'id': 'CLIENT_TEST',
         'model': 'Vulnerability',
         'parent': '50.56.220.123',
         'object': "regex=^Device",
         'conditions': ["severity=info", "creator=Nessus regex=^OS"],
         'actions': ["--UPDATE:severity=critical", "--UPDATE:confirmed=True"]
-    }
+    }]
 
  **2-** In this example we are adding the item VCritical to old vulnerability’s refs field with creator=Nessus, also we are setting its confirmed value to "True" if in its parent, whose id is '320131ea90e3986c8221291c683d6d19bfe8503b', exists another vulnerability with severity "info" and creator=Nessus:
 
-    {
+    [{
         'id': 'CLIENT_TEST_3',
         'model': 'Vulnerability',
         'parent': '320131ea90e3986c8221291c683d6d19bfe8503b',
         'object': "creator=Nessus --old",
         'conditions': ["severity=info", "creator=Nessus"],
         'actions': ["--UPDATE:refs=VCritical", "--UPDATE:confirmed=True"]
-    }
+    }]
 
  **3-** With this rule we can search pairs of similar vulnerabilities by name inside a same level and then to confirm the more recent of them, Ex ‘Auth error’ and ‘Auth error 2’:
 
-    {
+    [{
         'id': 'CU3A',
         'model': 'Vulnerability',
         'fields': ['name'],
         'actions': ["--UPDATE:confirmed=False"]
-    }
+    }]
 
  **4-** This rule is similar to example 3, but now we are going to select the older vulnerability from the current pair:
 
-    {
+    [{
         'id': 'CU3B',
         'model': 'Vulnerability',
         'fields': ['name'],
         'object': "--old",
         'actions': ["--UPDATE:confirmed=True"]    
-    }
+    }]
 
  **5-** We are going to apply the template “EN-Cifrado Debil (SSL weak ciphers)” to all vulnerabilities with name “OS Identification”:
 
-    {
+    [{
         'id': 'CU5B',
         'model': 'Vulnerability',
         'object': "name=OS%Identification",
         'actions': ["--UPDATE:template=EN-Cifrado Debil (SSL weak ciphers)"]
-    }
+    }]
 
  **6-** We can remove all services with name “http” from the workspace:
 
-    {
+    [{
         'id': 'CU6',
         'model': 'Service',
         'object': "name=http",
         'actions': ["--DELETE:"]
-    }
+    }]
