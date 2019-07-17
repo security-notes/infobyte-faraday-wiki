@@ -62,9 +62,6 @@
   * [Faraday Manage](https://github.com/infobyte/faraday/wiki/Faraday-Manage)
 
 * **Integrations**
-  * [LDAP](https://github.com/infobyte/faraday/wiki/LDAP)
-  * [Jira](https://github.com/infobyte/faraday/wiki/Jira)
-  * [ServiceNow](https://github.com/infobyte/faraday/wiki/ServiceNow)
   * [OSINT Provider](https://github.com/infobyte/faraday/wiki/OSINT-Provider)
   * [Faraday Add-on](https://github.com/infobyte/faraday/wiki/Faraday-Addon)
   * [Continuous Scanning](https://github.com/infobyte/faraday/wiki/Continuous-Scanning)
