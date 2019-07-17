@@ -51,7 +51,6 @@
     * [Search & Filter](https://github.com/infobyte/faraday/wiki/Search-and-Filter)
   * [Hosts & Services](https://github.com/infobyte/faraday/wiki/Hosts-and-Services)
   * [Credentials](https://github.com/infobyte/faraday/wiki/Credentials)
-  * [Workspace Comparison](https://github.com/infobyte/faraday/wiki/Workspace-Diff)
   * [Web Shell](https://github.com/infobyte/faraday/wiki/Web-Shell)
   * [Vulnerability Templates](https://github.com/infobyte/faraday/wiki/Vulnerabilities-Database)
   * [Data Analysis](https://github.com/infobyte/faraday/wiki/Data-Analysis-Tools)
