@@ -9,7 +9,6 @@ It is recommended to install Faraday Server on the same instance as PostgreSQL.
 * [Binary Files](#binary-files)
 * [Installation from PyPI](#pypi)
 * [Installation from Git repo](#git-repo)
-* [How to run Faraday](#how-to-run-faraday)
 
 
 <a name="linux"></a>
@@ -228,9 +227,3 @@ $ faraday-server
 To know how to run Faraday's multiple commands, please follow this [link](https://github.com/infobyte/faraday/wiki/How-to-run-Faraday).
 
 ***
-
-
-<a name="how-to-run-faraday"></a>
-### How to run Faraday
-
-In order to check how to run Faraday, please follow refer to [How to run Faraday](https://github.com/infobyte/faraday/wiki/How-to-run-Faraday) wiki.
