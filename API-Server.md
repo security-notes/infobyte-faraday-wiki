@@ -138,9 +138,9 @@ This API endpoints allows you to change the Vulnerability objects:
 
 Json Body of the Vulnerability object:
 
-type values can be:
-* vulnerability: Normal vulnerability, parent could be a service or a host.
-* vulnerability_web: Web vulnerability, parent can only be a service.
+Key named **types** can be:
+* vulnerability: Normal vulnerability, the parent could be a service or a host.
+* vulnerability_web: Web vulnerability, the parent can only be a service.
 
 ```json
     {
