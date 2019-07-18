@@ -13,14 +13,14 @@ First, you need to run Faraday with no GUI:
 Now, run Faraday Terminal:
 
 ```
-    $ ./faraday-terminal.zsh
+    $ faraday-terminal
 ```
 
 ![](https://raw.github.com/wiki/infobyte/faraday/images/client/no_ui2.png)
 
 To import your reports, drag-and-drop them into:
 
-    $ ~/.faraday/reports/[workspace_name]
+    $ /home/faraday/.faraday/reports/[workspace_name]
 
 Replace [workspace_name] with the workspace's name you're working in.
 
