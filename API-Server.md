@@ -93,7 +93,8 @@ Json Body of the Host object:
     "description":"",
     "default_gateway":"None",
     "os":"",
-    "owned":false,"owner":""
+    "owned":false,
+    "owner":""
 }
 ```
 
