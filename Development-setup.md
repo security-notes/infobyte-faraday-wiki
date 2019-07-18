@@ -70,6 +70,18 @@ $ sudo apt-get install build-essential ipython python-setuptools \
 
 Please consult with your distribution documentation to install the dependencies listed above.
 
+#### Creating virtualenv
+
+Before installing Faraday, we need to create a virtualenv so Faraday runs in it. In order to install and create a virtualenv, run the following commands:
+
+```
+$ pip install virtualenv
+$ virtualenv -p python2 faraday_venv
+$ source faraday_env/bin/activate 
+```
+
+For more information about virtualenv, please follow this [link](https://virtualenv.pypa.io/en/latest/userguide/).
+
 <a name="server-python-dependencies"></a>
 #### Installing Python 2 dependencies
 
