@@ -217,7 +217,7 @@ Once the installation is completed, we can run every executable file as follow:
     $ ./faraday-manage
     ```
 
-* * To run Faraday's Plugin:
+* To run Faraday's Plugin:
     ```
     $ ./faraday-fplugin
     ```
