@@ -248,9 +248,9 @@ To know how to run Faraday's multiple commands, please follow this [link](#how-t
 
 Installation guide for **community version**
 
-In order to install Faraday's community version, you can use pip to install Faraday or you can clone the repository. 
+In order to install Faraday's community version, you can use pip to install Faraday or you can clone the repository.
 
-Before installing Faraday, we need to run Faraday inside a virtualenv. In order to install and create a virtualenv, run the following commands:
+Before installing Faraday, we need to create a virtualenv so Faraday runs in it. In order to install and create a virtualenv, run the following commands:
 
 ```
 $ pip install virtualenv
