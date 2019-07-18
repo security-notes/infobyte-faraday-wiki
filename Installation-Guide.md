@@ -291,4 +291,4 @@ To know how to run Faraday's multiple commands, please follow this [link](#how-t
 <a name="how-to-run-faraday"></a>
 ### How to run Faraday
 
-In order to check how to run Faraday, please follow this [link]
+In order to check how to run Faraday, please follow refer to [How to run Faraday](https://github.com/infobyte/faraday/wiki/How-to-run-Faraday) wiki.
