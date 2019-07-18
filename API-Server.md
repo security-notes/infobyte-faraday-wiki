@@ -473,6 +473,9 @@ while read -r line; do
 done < "users.txt"
 ```
 
+File used in example: [users.txt](https://raw.githubusercontent.com/wiki/infobyte/faraday/files/users.txt)
+
+
 # Upload evidence to vulnerability
 
 Remember to change the workspace name in the urls and vuln id to attach evidence.
@@ -529,5 +532,3 @@ curl -i -v http://127.0.0.1:5985/_api/v2/ws/test1/upload_report \
         --form "file=@/PATH/TO/FILE" \
         -b csrf_cookie.txt 
 ```
-
-[file.csv](https://raw.githubusercontent.com/wiki/infobyte/faraday/files/users.txt)
