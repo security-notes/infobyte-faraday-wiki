@@ -41,7 +41,7 @@ The endpoint for login is **/_api/login** and the json payload is:
 {"email": "USERNAME", "password": "SECRET_PASSWORD"}
 ```
 
-### Endpoints:
+## Endpoints:
 
 **Faraday Config:**
 
@@ -413,7 +413,8 @@ On the first **--form** parameter, put the path of the file that you want to upl
        --compressed
 ```
 
-# Using the API to create a workspace
+## Usage Cases
+### Using the API to create a workspace
 
 Here we provide a python script using requests to create a new workspace:
 
@@ -452,7 +453,7 @@ def create_workspace(username, password, server_address, workspace_name):
 
 create_workspace()
 ```
-# Using the API to create users in bulk
+### Using the API to create users in bulk
 ```
 curl -s  'http://127.0.0.1:5985/_api/login' \
         -H 'Origin: http://127.0.0.1:5985' -H 'Accept-Encoding: gzip, deflate, br' \
@@ -476,7 +477,7 @@ done < "users.txt"
 File used in example: [users.txt](https://raw.githubusercontent.com/wiki/infobyte/faraday/files/users.txt)
 
 
-# Upload evidence to vulnerability
+### Upload evidence to vulnerability
 
 Remember to change the workspace name in the urls and vuln id to attach evidence.
 
@@ -489,16 +490,16 @@ curl -s  'http://127.0.0.1:5985/_api/login' \
         --data-binary '{"email":"faraday","password": "changeme"}' \
         --compressed -c cookie.txt 
 
-# obtain csrf token to upload files
+### obtain csrf token to upload files
 csrf_token=$(curl -s -X GET http://127.0.0.1:5985/_api/session -b cookie.txt  -c csrf_cookie.txt| python -c "import sys, json; print json.load(sys.stdin)['csrf_token']")
 
-# Upload the file evidence.png
+### Upload the file evidence.png
 curl 'http://localhost:5985/_api/v2/ws/demo_workspace/vulns/251/attachment/' \
           -H 'Connection: keep-alive' --data-binary $'------WebKitFormBoundary4RCsZGBu1aaCqyxT\r\nContent-Disposition: form-data;name="csrf_token"\r\n\r\$csrf_token\r\n------WebKitFormBoundary4RCsZGBu1aaCqyxT\r\nContent-Disposition: form-data; name="file"; filename="evidence.png"\r\nContent-Type: image/png\r\n\r\n\r\n------WebKitFormBoundary4RCsZGBu1aaCqyxT--\r\n' \ 
           --compressed -c csrf_cookie.txt
 ```
 
-# Upload reports (XML results from tools) using curl
+### Upload reports (XML results from tools) using curl
 
 Please check the URLs and use the correct workspace name!
 
