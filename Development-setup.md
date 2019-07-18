@@ -38,8 +38,6 @@ The Python requirements for the server are stored in the [`requirements_server.t
 
 ##### Debian based distributions (Debian, Ubuntu, Backtrack, etc)
 
-Running the `install.sh` script will install system dependencies.
-
 Or if you wanna do it manually you can run the following command to install the required dependencies on any Debian based distribution.
 
 ```
