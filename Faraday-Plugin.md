@@ -204,7 +204,7 @@ Check our CSV Importer [wiki](https://github.com/infobyte/faraday/wiki/CSV-Impor
 The following command will close all vulns in a workspace if a certain time has passed since their creation.
 
 ```
-$ python bin/fplugin autoclose_vulns --username [USERNAME] --password [PASSWORD] --workspace [WORKSPACE] --vuln_duration [VULN_DURATION]
+$ faraday-fplugin autoclose_vulns --username [USERNAME] --password [PASSWORD] --workspace [WORKSPACE] --vuln_duration [VULN_DURATION]
 ```
 
 **--vuln_duration**: the elapsed time **in seconds** that you want that a vuln to remain opened. Those vulns that were created before this elapsed time will be closed. 
@@ -218,7 +218,7 @@ For example: if you want to close those vulns that were created more than 30 day
 So the command would be like this (assuming that _faraday_, _changeme_, _ws-test_ are your username, password and workspace respectively):
 
 ```
-$ python bin/fplugin autoclose_vulns --username faraday --password changeme --workspace ws-test --vuln_duration 2592000
+$ faraday-fplugin autoclose_vulns --username faraday --password changeme --workspace ws-test --vuln_duration 2592000
 ```
 
 #### Configure Crontab
@@ -238,7 +238,7 @@ $ crontab -e
 If you want your cronjob to run **the first day of every two months at 10:00 am**, so that the vulnerabilities created in the first month are closed, you should specify the following cronjob inside your crontab file:
 
 ```
-0 10 1 */2 * /path/to/python /path/to/faraday/bin/fplugin autoclose_vulns --username faraday --password changeme --workspace ws-test --vuln_duration 2592000
+0 10 1 */2 * faraday-fplugin autoclose_vulns --username faraday --password changeme --workspace ws-test --vuln_duration 2592000
 ```
 
 Note that you need to specify Python executable's path and Faraday folder's path.
