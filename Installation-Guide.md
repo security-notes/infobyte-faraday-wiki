@@ -250,7 +250,7 @@ Installation guide for **community version**
 
 In order to install Faraday's community version, you can use pip to install Faraday or you can clone the repository. 
 
-Before installing Faraday, we recommend you to run Faraday inside a virtualenv (optional). In order to install and create a virtualenv, run the following commands:
+Before installing Faraday, we need to run Faraday inside a virtualenv. In order to install and create a virtualenv, run the following commands:
 
 ```
 $ pip install virtualenv
@@ -258,7 +258,7 @@ $ virtualenv -p python2 faraday_venv
 $ source faraday_env/bin/activate 
 ```
 
-For more information about virtualenv, please follow this [link](https://virtualenv.pypa.io/en/latest/userguide/)
+For more information about virtualenv, please follow this [link](https://virtualenv.pypa.io/en/latest/userguide/).
 
 **Installing Faraday**
 
