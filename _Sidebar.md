@@ -15,7 +15,6 @@
     * [CLI - (Headless importation)](https://github.com/infobyte/faraday/wiki/CLI-(Headless-importation))
   * [Updating Faraday](https://github.com/infobyte/faraday/wiki/Updates)
 
-
 * **Securing your instance**
   * **Using SSL**
     * [NGINX setup](https://github.com/infobyte/faraday/wiki/NGINX-Setup)
@@ -24,7 +23,6 @@
   * [Report a Security Vulnerability](https://github.com/infobyte/faraday/wiki/Security)
   * [Backup](https://github.com/infobyte/faraday/wiki/Backup)
 
-
 * **Getting Started**
   * [Managing Workspaces](https://github.com/infobyte/faraday/wiki/Workspaces)
   * **Importing Information**
@@ -32,17 +30,6 @@
     * [CSV Importer](https://github.com/infobyte/faraday/wiki/CSV-Importer)
   * [Settings](https://github.com/infobyte/faraday/wiki/Settings)
   * [Custom Fields](https://github.com/infobyte/faraday/wiki/Custom-Fields)
-
-
-* **Plugins**
-  * [Plugin List](https://github.com/infobyte/faraday/wiki/Plugin-List)
-  * [Burp Proxy Extender](https://github.com/infobyte/faraday/wiki/Burp-proxy-extender)
-  * [Faraday Zap Extension](https://github.com/infobyte/faraday/wiki/Faraday-Zap-extension)
-  * [BeEF](https://github.com/infobyte/faraday/wiki/BeEF)
-  * [Evilgrade](https://github.com/infobyte/faraday/wiki/Evilgrade)
-  * [Immunitys-CANVAS](https://github.com/infobyte/faraday/wiki/Immunitys-CANVAS)
-  * [Metasploit](https://github.com/infobyte/faraday/wiki/Metasploit)
-
 
 * **Understanding the Web UI**
   * [**Status Report**](https://github.com/infobyte/faraday/wiki/Status-Report)
@@ -61,11 +48,19 @@
   * [Comments & Notifications](https://github.com/infobyte/faraday/wiki/Comments)
   * [Faraday Manage](https://github.com/infobyte/faraday/wiki/Faraday-Manage)
 
+* **Plugins**
+  * [Plugin List](https://github.com/infobyte/faraday/wiki/Plugin-List)
+  * [Burp Proxy Extender](https://github.com/infobyte/faraday/wiki/Burp-proxy-extender)
+  * [Faraday Zap Extension](https://github.com/infobyte/faraday/wiki/Faraday-Zap-extension)
+  * [BeEF](https://github.com/infobyte/faraday/wiki/BeEF)
+  * [Evilgrade](https://github.com/infobyte/faraday/wiki/Evilgrade)
+  * [Immunitys-CANVAS](https://github.com/infobyte/faraday/wiki/Immunitys-CANVAS)
+  * [Metasploit](https://github.com/infobyte/faraday/wiki/Metasploit)
+
 * **Integrations**
   * [OSINT Provider](https://github.com/infobyte/faraday/wiki/OSINT-Provider)
   * [Faraday Add-on](https://github.com/infobyte/faraday/wiki/Faraday-Addon)
   * [Continuous Scanning](https://github.com/infobyte/faraday/wiki/Continuous-Scanning)
-
 
 * **Developer Space**
   * [Faraday Plugin](https://github.com/infobyte/faraday/wiki/Faraday-Plugin)
@@ -74,11 +69,9 @@
   * [API Token](https://github.com/infobyte/faraday/wiki/API-Token)
   * [API - Client](https://github.com/infobyte/faraday/wiki/API-Client)
 
-
 * **Troubleshooting & FAQs**
   * [Troubleshooting](https://github.com/infobyte/faraday/wiki/Troubleshooting)
   * [FAQs](https://github.com/infobyte/faraday/wiki/FAQ)
   * [Contact us](https://github.com/infobyte/faraday/wiki/Contact-Us)
   * [Faraday Awards](https://github.com/infobyte/faraday/wiki/Faraday-Awards)
   * [Demos / Videos](https://github.com/infobyte/faraday/wiki/Demos)
-
