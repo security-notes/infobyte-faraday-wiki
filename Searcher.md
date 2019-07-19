@@ -101,7 +101,7 @@ We can take a look at the following table that contains a brief description of e
 
 Now we can run Searcher, it’s important to know all the options it needs to get a desired result, to do this we can execute `faraday-searcher -h` in the terminal.
 
-    usage: faraday-searcher [-h] -w WORKSPACE [-s SERVER] [-u USER] [-p PASSWORD]
+    usage: faraday-searcher [-h] -w WORKSPACE [-s SERVER_ADDRESS] [-u USER] [-p PASSWORD]
                    [-o OUTPUT] [-e EMAIL] [-ep EMAIL_PASS] [-mp MAIL_PROTOCOL]
                    [-pp PORT_PROTOCOL] [-l LOG] [-r RULES_FILENAME]
 
@@ -110,7 +110,7 @@ Now we can run Searcher, it’s important to know all the options it needs to ge
     optional arguments:
       -h, --help            show this help message and exit
       -w WORKSPACE, --workspace WORKSPACE Search duplicated objects into this workspace
-      -s SERVER, --server SERVER Faraday server
+      -s SERVER_ADDRESS, --server_address SERVER_ADDRESS Faraday server address
       -u USER, --user USER  Faraday user
       -p PASSWORD, --password PASSWORD Faraday password
       -o OUTPUT, --output OUTPUT Choose a custom output directory
