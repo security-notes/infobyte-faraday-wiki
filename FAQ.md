@@ -12,7 +12,6 @@
 * [Can I keep using the Kali version with my newly bought pro/corp license?](#upgrade-kali)
 * [Can I install the Server and/or Client in my own box instead of using a Virtual Machine?](#native-install)
 * [What version am I using?](#faraday-version)
-* [How do I configure my own Vulnerabilities Database?](#vulns-db)
 * [What if I want to add a Vulnerability manually?](#adding-manually)
 * [How do I bind Faraday to 0.0.0.0?](#0.0.0.0)
 
@@ -45,9 +44,7 @@ Faraday is a **multiuser integrated penetration test and vulnerability managemen
 
 <a name="price"></a>
 ### Is Faraday free?
-Yes, we have a community version which is totally free, you can [download it from Github](https://github.com/infobyte/faraday/archive/master.zip).
-
-We also develop two [commercial versions](https://www.faradaysec.com/#download).
+Yes, we have a Community version which is totally free, you can [download it from Github](https://github.com/infobyte/faraday/archive/master.zip).We also have two Commercial versions, details about those in our [webpage](https://www.faradaysec.com/#download).
 
 ![](https://www.faradaysec.com/images/workspace-diff/features-comparation.png)
 
@@ -55,14 +52,13 @@ We also develop two [commercial versions](https://www.faradaysec.com/#download).
 
 <a name="plugins"></a>
 ### Does Faraday have collaboration tools? 
-Faraday supports over 60 tools   
-Full plugin list: https://github.com/infobyte/faraday/wiki/PluginList
+Faraday supports over 70 tools. Full plugin list available [here](https://github.com/infobyte/faraday/wiki/PluginList).
 
 [ [index] ](#index)
 
 <a name="supported-platforms"></a>
 ### Which platforms are supported?
-ArchAssault, Archlinux, Debian, Kali, OSX, Ubuntu. You can find a detailed explanation [here](https://github.com/infobyte/faraday/wiki/installation-community).
+RedHat, CentOS, Fedora, Debian, Kali, OSX, Ubuntu.
 
 [ [index] ](#index)
 
@@ -86,9 +82,7 @@ If instead of installing you want to take a quick look at Faraday you can also u
 
 <a name="after-purchase"></a>
 ### I purchased a License, now what?
-You will receive an email with a link to download the license and the faraday product (deb,rpm or binary). One will be your Faraday License and the other the version you selected. Uncompress both and place the contents of the license tar inside **/home/faraday/.faraday/doc/**. 
-
-Read more on how to install - [Faraday Installation](https://github.com/infobyte/faraday/wiki/Installation-Guide).
+You will receive an email with a link to download everything regarding your license. If you haven’t received it or are having issues, please contact us at sales@infobytesec.com.
 
 [ [index] ](#index)
 
@@ -98,16 +92,14 @@ In a nutshell, yes. Even though the Kali Faraday version is incompatible with bo
 
 You will need to remove the package `python-faraday` and then you need to install the pro/corp .deb with `apt install ./faraday-server_amd64.deb`
 
-Follow the [commercial update instructions](https://github.com/infobyte/faraday/wiki/Updates#commercial-version-update) to upgrade.
-
 [ [index] ](#index)
 
 <a name="native-install"></a>
-### Can I install the Server and/or Client in my own box instead of using a Virtual Machine?
+### Can I install the Server and/or Client in my own box instead of using a Virtual Machine you provided?
 
 The **only** intended purpose for the **Faraday VM** is as a commercial demo.
 
-For production environments we recommend doing a fresh install in a Ubuntu Server and do not recommend using that Virtual Machine.
+For production environments we recommend doing a fresh install in a Ubuntu Server, please do not use your provided Demo License VM.
 
 If the use of a Virtualized environment is a must-have, then we recommend doing a proper install in a fresh Virtual Machine following the regular installation steps.
 
@@ -115,17 +107,7 @@ If the use of a Virtualized environment is a must-have, then we recommend doing 
 
 <a name="faraday-version"></a>
 ### How do I know which Faraday Version I'm using?
-If you already have Faraday installed, there are many ways to know which version you're using:
-
-* Using the `--version` or `-v` argument in both the Client and Server by running:
-
-  ```
-  $ faraday-server --version
-  $ faraday-client -v
-  ```
-
-* Using the Web UI - If you place the pointer over the Faraday Logo you will get a tooltip containing the version number ![](https://raw.githubusercontent.com/wiki/infobyte/faraday/images/FAQ/webui_version.png)
-
+By running faraday-server --version or hovering your mouse over the Faraday logo at the top left of the Web UI. Latest version and information available in the Upgrading Faraday section.
 
 To get the latest available version:
 
@@ -134,15 +116,9 @@ To get the latest available version:
 
 [ [index] ](#index)
 
-<a name="vulns-db"></a>
-### How do I configure my own Vulnerabilities Database?
-Check out our [[Vulnerabilities Database]] config page.
-
-[ [index] ](#index)
-
 <a name="adding-manually"></a>
 ### What if I want to add a Vulnerability manually?
-You can do this using our WEB UI, read our documentation on [manually adding vulnerabilities](https://github.com/infobyte/faraday/wiki/Status-Report#vulnerability-creation).
+You can do this using our Web UI, read our documentation on [manually adding vulnerabilities](https://github.com/infobyte/faraday/wiki/Status-Report#vulnerability-creation).
 
 
 [ [index] ](#index)
@@ -154,10 +130,6 @@ Just go to ```/home/faraday/.faraday/config/server.ini``` and inside the ```[far
 `bind_address=0.0.0.0`
 
 Restart Faraday Server if you had it running. That's it!
-
-You can also use the parameter `--bind 0.0.0.0` when you start the server.
-
-Read more about [configuring the Community Server](https://github.com/infobyte/faraday/wiki/installation-community#configuration).
 
 [ [index] ](#index)  
 
