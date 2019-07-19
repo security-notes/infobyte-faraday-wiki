@@ -1,3 +1,5 @@
+Faraday's installers (.deb or .rpm) will install Faraday Server **as a service**.
+
 **Faraday Server** is the interface between PostgreSQL and **Faraday Client** and the WebUI. The Server's responsibility is to transmit information between the client or WebUI and PostgreSQL, and make sure that they are kept in sync.
 
 It is recommended to install Faraday Server on the same instance as PostgreSQL.
