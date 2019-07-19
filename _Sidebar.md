@@ -76,8 +76,8 @@
 
 
 * **Troubleshooting & FAQs**
-  * [FAQs](https://github.com/infobyte/faraday/wiki/FAQ)
   * [Troubleshooting](https://github.com/infobyte/faraday/wiki/Troubleshooting)
+  * [FAQs](https://github.com/infobyte/faraday/wiki/FAQ)
   * [Contact us](https://github.com/infobyte/faraday/wiki/Contact-Us)
   * [Faraday Awards](https://github.com/infobyte/faraday/wiki/Faraday-Awards)
   * [Demos / Videos](https://github.com/infobyte/faraday/wiki/Demos)
