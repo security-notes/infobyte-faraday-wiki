@@ -4,20 +4,16 @@
 * **Installing Faraday**
   * [Architecture](https://github.com/infobyte/faraday/wiki/Architecture)
   * [Install Guide](https://github.com/infobyte/faraday/wiki/Install-Guide)
+  * [Understanding Faraday Client](https://github.com/infobyte/faraday/wiki/Understanding-Faraday-Client)
   * [Development Setup](https://github.com/infobyte/faraday/wiki/Development-setup)
   * [Development Setup - OS X](https://github.com/infobyte/faraday/wiki/Development-Installation-OSX)
   * [Docker](https://github.com/infobyte/faraday/wiki/Installation-Docker-Community)
   * [How to run Faraday](https://github.com/infobyte/faraday/wiki/How-to-run-Faraday)
-  * **Faraday Client**
-    * [GTK](https://github.com/infobyte/faraday/wiki/GTK)
-    * [ZSH - Terminal](https://github.com/infobyte/faraday/wiki/ZSH)
-    * [CLI - (Headless importation)](https://github.com/infobyte/faraday/wiki/CLI-(Headless-importation))
   * [Updating Faraday](https://github.com/infobyte/faraday/wiki/Updates)
 
 * **Securing your instance**
-  * **Using SSL**
-    * [NGINX setup](https://github.com/infobyte/faraday/wiki/NGINX-Setup)
-    * [Apache setup](https://github.com/infobyte/faraday/wiki/Faraday-apache-setup)
+  * [NGINX (SSL Config](https://github.com/infobyte/faraday/wiki/NGINX-Setup)
+  * [Apache (SSL Config)](https://github.com/infobyte/faraday/wiki/Faraday-apache-setup)
   * [Setting up a Proxy](https://github.com/infobyte/faraday/wiki/Proxy)
   * [Report a Security Vulnerability](https://github.com/infobyte/faraday/wiki/Security)
   * [Backup](https://github.com/infobyte/faraday/wiki/Backup)
@@ -38,8 +34,6 @@
   * [Hosts & Services](https://github.com/infobyte/faraday/wiki/Hosts-and-Services)
   * [Credentials](https://github.com/infobyte/faraday/wiki/Credentials)
   * [Vulnerability Templates](https://github.com/infobyte/faraday/wiki/Vulnerabilities-Database)
-
-* [**Executive Report Feature**](https://github.com/infobyte/faraday/wiki/Executive-Report)
 
 * **Using Faraday**
   * [Cybersecurity Program (Use Case)](https://github.com/infobyte/faraday/wiki/Cybersecurity-Program)
