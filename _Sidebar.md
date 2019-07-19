@@ -12,7 +12,7 @@
   * [Updating Faraday](https://github.com/infobyte/faraday/wiki/Updates)
 
 * **Securing your instance**
-  * [NGINX (SSL Config](https://github.com/infobyte/faraday/wiki/NGINX-Setup)
+  * [NGINX (SSL Config)](https://github.com/infobyte/faraday/wiki/NGINX-Setup)
   * [Apache (SSL Config)](https://github.com/infobyte/faraday/wiki/Faraday-apache-setup)
   * [Setting up a Proxy](https://github.com/infobyte/faraday/wiki/Proxy)
   * [Report a Security Vulnerability](https://github.com/infobyte/faraday/wiki/Security)
