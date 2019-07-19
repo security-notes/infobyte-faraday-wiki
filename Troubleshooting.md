@@ -26,7 +26,7 @@ In this section we will show common errors and possible solutions. We recommend 
 * [How to reset Faraday Server password](#change-password)
 * [Can't access Faraday Server remotely](#faraday-server-access-problems)
 * [OSx GTK not working IP ERROR](#osx-gtk-not-working)
-
+* [OSx GTK not working AttributeError: 'module' object has no attribute 'require_version'](#osx-gtk-depencencies)
 * [[Errno 2] No such file or directory: '/home/USERNAME/.faraday/config/config.xml'](#user.xml-not-found)
 * [Updating Nginx Configuration](#updating-nginx-configuration)
 * [Error while backing up the database](#backup-error)
