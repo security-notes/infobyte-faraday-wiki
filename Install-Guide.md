@@ -63,6 +63,8 @@ $ curl -o epel.rpm http://dl.fedoraproject.org/pub/epel/epel-release-latest-7.no
 $ rpm -Uvh epel.rpm
 ```
 
+
+
 1. Download Faraday's installer from our [Github project](https://github.com/infobyte/faraday/releases).
 
 2. Install **postgresql > 9.5** (locally or in a remote server). In order to install [PostgreSQL](https://yum.postgresql.org/), you can run the following command:
