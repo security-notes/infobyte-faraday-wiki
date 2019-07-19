@@ -5,7 +5,7 @@ It is recommended to install Faraday Server on the same instance as PostgreSQL.
 <a name="index"></a>
 * [Debian/Ubuntu/Kali](#linux)
 * [CentOS7/RedHat7](#centos/redhat)
-* [MacOS DMG](#macos)
+* [Mac OSx](#macos)
 * [Binary Files](#binary-files)
 * [Installation from PyPI](#pypi)
 * [Installation from Git repo](#git-repo)
@@ -114,9 +114,9 @@ To know how to run Faraday's multiple commands, please follow this [link](https:
 
 
 <a name="macos"></a>
-## MacOS DMG
+## Mac OSx
 
-Instructions for Faraday's installation in MacOS are specified in this [installation guide](https://github.com/infobyte/faraday/wiki/Development-Installation-OSX).
+Instructions for Faraday's installation in Mac OSx are specified in this [installation guide](https://github.com/infobyte/faraday/wiki/Development-Installation-OSX).
 
 <a name="binary-files"></a>
 ## Binary files
