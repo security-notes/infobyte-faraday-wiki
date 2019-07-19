@@ -8,7 +8,6 @@
   * [Development Setup - OS X](https://github.com/infobyte/faraday/wiki/Development-Installation-OSX)
   * [Docker](https://github.com/infobyte/faraday/wiki/Installation-Docker-Community)
   * [How to run Faraday](https://github.com/infobyte/faraday/wiki/How-to-run-Faraday)
-  * [Run as Service](https://github.com/infobyte/faraday/wiki/Run-As-Service)
   * **Faraday Client**
     * [GTK](https://github.com/infobyte/faraday/wiki/GTK)
     * [ZSH - Terminal](https://github.com/infobyte/faraday/wiki/ZSH)
