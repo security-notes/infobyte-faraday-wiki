@@ -1,4 +1,4 @@
-### To use faraday follow the [new Faraday's Install guide](https://github.com/infobyte/faraday/wiki/Installation-Guide). This is for development
+### To use faraday follow the [new Faraday Install Guide](https://github.com/infobyte/faraday/wiki/Install-Guide). This is for development
 
 ## Index
 
