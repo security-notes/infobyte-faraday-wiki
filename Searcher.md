@@ -56,16 +56,16 @@ With this in mind, we use this global structure of a rule:
 
 
     [{
-        ‘id’: ‘CU1’,
+        "id": "CU1",
         
-        ‘model’:’Vulnerability’,
-        ‘parent’: ‘192.168.42.55’                                 OBJECT
-        ‘fields’:[‘name’,’desc’,’description’]
-        ‘object’:’creator=Nmap ref=nmap-10’,
+        "model":"Vulnerability",
+        "parent": "192.168.42.55"                                 OBJECT
+        "fields":["name","desc","description"]
+        "object":"creator=Nmap ref=nmap-10",
 
-        ‘conditions’:[“refs=nessus-333”,”name=smb-vuln-056”],       IF
+        "conditions":["refs=nessus-333","name=smb-vuln-056"],       IF
 
-        ‘actions’:[“--UPDATE:confirmed=True”]                      THEN
+        "actions":["--UPDATE:confirmed=True"]                      THEN
     }]
 
 
@@ -76,10 +76,10 @@ Now, let’s write our rule inside the **rules.json** file by following the expr
 TO CHANGE ALL **VULNERABILITIES (model)** WHICH **SEVERITY VALUE IS LOW (object)** **TO SEVERITY MEDIUM VALUE” (action)**
 
     [{
-         'id': 'CHANGE_SEVERITY',
-         'model': 'Vulnerability',
-         'object': "severity=low",        
-         'actions': ["--UPDATE:severity=med"]
+         "id": "CHANGE_SEVERITY",
+         "model": "Vulnerability",
+         "object": "severity=low",        
+         "actions": ["--UPDATE:severity=med"]
     }]
 
 #### Rule description
