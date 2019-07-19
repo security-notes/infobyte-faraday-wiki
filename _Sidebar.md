@@ -4,8 +4,8 @@
 * **Installing Faraday**
   * [Architecture](https://github.com/infobyte/faraday/wiki/Architecture)
   * [Install Guide](https://github.com/infobyte/faraday/wiki/Install-Guide)
-  * [Development setup - OS X](https://github.com/infobyte/faraday/wiki/Development-Installation-OSX)
-  * [Development setup](https://github.com/infobyte/faraday/wiki/Development-setup)
+  * [Development Setup](https://github.com/infobyte/faraday/wiki/Development-setup)
+  * [Development Setup - OS X](https://github.com/infobyte/faraday/wiki/Development-Installation-OSX)
   * [Docker](https://github.com/infobyte/faraday/wiki/Installation-Docker-Community)
   * [How to run Faraday](https://github.com/infobyte/faraday/wiki/How-to-run-Faraday)
   * [Run as Service](https://github.com/infobyte/faraday/wiki/Run-As-Service)
