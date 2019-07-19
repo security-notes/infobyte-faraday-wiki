@@ -63,7 +63,7 @@ $ curl -o epel.rpm http://dl.fedoraproject.org/pub/epel/epel-release-latest-7.no
 $ rpm -Uvh epel.rpm
 ```
 
-
+#### Installing Faraday
 
 1. Download Faraday's installer from our [Github project](https://github.com/infobyte/faraday/releases).
 
