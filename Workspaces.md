@@ -84,6 +84,8 @@ From the workspace window click on **Edit**
 ### Deactivating Workspaces or making them Read-Only
 You can also activate/deactivate your Workspaces and/or mark them as Read-Only. This will affect the amount of active Workspaces in your license. For example, if your license has 5 concurrent Workspaces (default Professional version) and you need an extra one and don't need a previous one, all you need to do is deactivate the old one and now you can create a new Workspace for your project. 
 
+![](https://raw.github.com/wiki/infobyte/faraday/images/workspaces/activation.png)
+
 ### Deleting Workspaces
 
 From the workspaces window click on **Delete**
