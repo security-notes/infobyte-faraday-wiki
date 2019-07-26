@@ -33,7 +33,7 @@
     * [Search & Filter](https://github.com/infobyte/faraday/wiki/Search-and-Filter)
   * [Hosts & Services](https://github.com/infobyte/faraday/wiki/Hosts-and-Services)
   * [Credentials](https://github.com/infobyte/faraday/wiki/Credentials)
-  * [Vulnerability Templates](https://github.com/infobyte/faraday/wiki/Vulnerabilities-Database)
+  * [Vulnerability Templates](https://github.com/infobyte/faraday/wiki/Vulnerability-Templates-(KB))
 
 * **Using Faraday**
   * [Cybersecurity Program (Use Case)](https://github.com/infobyte/faraday/wiki/Cybersecurity-Program)
