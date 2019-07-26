@@ -23,7 +23,7 @@ Once you click OK, select the file you want to import and all the data in the re
 
 To import your reports, drag-and-drop them into:
 
-    $ ~/.faraday/report/[workspace_name]
+    $ /home/faraday/.faraday/report/[workspace_name]
 
 Replace [workspace_name] with the workspace's name you're working in.
 Faraday will parse your reports and upload the information extracted from them.
