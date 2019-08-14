@@ -1,12 +1,10 @@
-## Backup Database
-
 Saving backups is always a good choice, whether it is to keep data safe or to share with others.
 
-## Faraday configuration and evidence backup
-Faraday server stores configuration, processed reports and saves evidence in the directory .faraday.
-Remember to do a backup of the .faraday directory of the user running faraday-server.
+### Faraday configuration and evidence backup
+Faraday server stores configuration, processed reports and saves evidence in the directory `/home/faraday/.faraday`.
+Remember to do a backup of this directory of the user running faraday-server.
 
-## Database backup
+### Database backup
 
 In order to create a backup for your database, follow these steps:
 
@@ -20,11 +18,13 @@ pg_dump faraday > backup_file
 
 3. Restart the Faraday Server and Faraday Client (in that order).
 
+### Database restore
+
 To restore a previously created backup turn again Faraday Client and Faraday Server off and execute:
 ```
 psql faraday < backup_file
 ```
 
-Remember: To restore the back you need to have the database empty.
+**Remember**: To restore the backup you need to have the database empty.
 
-Check [more information about PostgreSQL](https://www.postgresql.org/docs/9.1/static/backup-dump.html) backups if you need more help.
+To check more information about PostgreSQL you can follow this [link](https://www.postgresql.org/docs/9.1/static/backup-dump.html).
