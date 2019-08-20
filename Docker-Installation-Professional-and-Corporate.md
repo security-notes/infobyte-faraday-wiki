@@ -130,7 +130,7 @@ version: '3.7'
  
 services: 
   server: 
-    image: faraday:c_v3.7 
+    image: faraday:3.8.1 
     environment: 
       - LISTEN_ADDR=0.0.0.0 
       - PGSQL_HOST=192.168.20.29 
