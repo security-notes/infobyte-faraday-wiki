@@ -86,7 +86,7 @@ With environment variables
       -e PGSQL_HOST='192.168.20.29' \
       -e PGSQL_PASSWD='mypgsqlpassword' \
       -e LISTEN_ADDR='0.0.0.0' \
-      faraday:c_v3.7
+      faraday:3.8.1
  ```
 With config volume mounted
  ```
@@ -95,7 +95,7 @@ With config volume mounted
       -v ~/.faraday/storage:/faraday-storage \
       -v ~/.faraday/config:/faraday-config \
       -p 5985:5985 \
-      faraday:c_v3.7
+      faraday:3.8.1
  ```
 
 To check container, run the following command:
@@ -180,7 +180,7 @@ version: '3.7'
  
 services: 
   server: 
-    image: faraday:c_v3.7 
+    image: faraday:3.8.1
     ports: 
       - 5985:5985 
     volumes: 
