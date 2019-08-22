@@ -83,7 +83,7 @@ For more information about virtualenv, please follow this [link](https://virtual
 <a name="server-python-dependencies"></a>
 #### Installing Python 2 dependencies
 
-Once you have the required system dependencies, you just have to install the Python modules needed to run the server using `pip`:
+Once you have the required system dependencies, you just have to install the Python modules needed to run the server using:
 
 ```
 $ python setup.py develop
@@ -93,16 +93,11 @@ $ python setup.py develop
 
 #### Initializing PostgreSQL
 
-In order to initialize Postgresql database, run the following command:
+In order to initialize PostgreSQL database, run the following command:
 
 ```
-$ python manage.py initdb
+faraday-manage initdb
 ```
-If you don't have CouchDB configured we assume this is a new installation, so a
-new user will be created.
-
-With CouchDB configured in the `server.ini` file, it will import all the data
-you had from the 2.7.2 version, including the users and its hashed passwords.
 
 ***Note:*** If you can't login into to Faraday after running the command above due to invalid credentials, you can change your password through the PostgreSQL shell that Faraday has in it. Follow the next [instructions](https://github.com/infobyte/faraday/wiki/Troubleshooting#cant-login-after-importing-from-couch) in order to change your password and be able to login.
 
