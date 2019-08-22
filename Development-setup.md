@@ -276,18 +276,14 @@ $ yaourt -S python2-dateutil python2-pip mime-types python2-gobject gtk3 vte3 po
 ```
 
 <a name="client-python-dependencies"></a>
-#### Installing Python 2 dependencies
 
-Once you have the required system dependencies, you just have to install the Python modules needed to run the client using `pip`:
+#### Using GTK client with virtualenv
 
+If you are working inside a Virtual enviroment you need to follow this extra steps for GTK to work:
 ```
-$ pip2 install -r requirements.txt -U
-```
-
-If you are working inside a Virtual Machine you need to follow this extra steps for GTK to work:
-```
-pip2 install vext
-pip2 install vext.pygtk
+pip install vext
+pip install vext.pygtk
+pip install vext.gi
 ```
 
 <a name="client-configuration"></a>
