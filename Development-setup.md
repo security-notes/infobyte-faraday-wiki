@@ -86,7 +86,7 @@ For more information about virtualenv, please follow this [link](https://virtual
 Once you have the required system dependencies, you just have to install the Python modules needed to run the server using `pip`:
 
 ```
-$ python setup.py install
+$ python setup.py develop
 ```
 
 <a name="server-configuration"></a>
