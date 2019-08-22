@@ -99,6 +99,8 @@ In order to initialize PostgreSQL database, run the following command:
 faraday-manage initdb
 ```
 
+**IMPORTANT**: The command `initdb` will create a random password for the admin user, remeber to COPY THE PASSWORD. You can use the command `faraday-manage change-password` if you want to change it.
+
 ***Note:*** If you can't login into to Faraday after running the command above due to invalid credentials, you can change your password through the PostgreSQL shell that Faraday has in it. Follow the next [instructions](https://github.com/infobyte/faraday/wiki/Troubleshooting#cant-login-after-importing-from-couch) in order to change your password and be able to login.
 
  ***Note:*** You sould have the PostgreSQL service started. To do it run
