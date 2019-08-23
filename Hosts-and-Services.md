@@ -30,7 +30,11 @@ From the host window, select the host and click **Delete**.
 
 ## How to manage Services
 
-To manage services for a specific host, find it in the list and click on the **view** button.
+To manage services for a specific host, select the host you would like to make changes:
+
+![](https://raw.github.com/wiki/infobyte/faraday/images/hosts&services/select_host.png)
+
+And then edit the fields as you wish:
 
 ![](https://raw.github.com/wiki/infobyte/faraday/images/hosts&services/host_list.png)
 
