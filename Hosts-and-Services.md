@@ -1,8 +1,6 @@
 ## How to manage Hosts
 
-To manage your Hosts you need to access [Faraday's Web Interface](https://github.com/infobyte/faraday/wiki/Status-report) click on the **Hosts** icon ![](https://raw.github.com/wiki/infobyte/faraday/images/hosts&services/icon.png)
-
-The hosts you can see on a list, where you can create, edit or eliminate them as you wish.
+You can manage your **Hosts** accessing the 'Manage' section through the [Faraday's Web Interface](https://github.com/infobyte/faraday/wiki/Status-report). Here you can create, edit or eliminate them as you wish.
 
 ![](https://raw.github.com/wiki/infobyte/faraday/images/hosts&services/host_list.png)
 
