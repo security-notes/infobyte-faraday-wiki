@@ -12,7 +12,7 @@ From the host window, click New and fill out the form.
 
 ### Editing Host
 
-From the host window, click on the host you would like to make change:
+From the host window, click on the host you would like to make changes:
 
 ![](https://raw.github.com/wiki/infobyte/faraday/images/hosts&services/select_host.png)
 
