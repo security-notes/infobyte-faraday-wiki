@@ -6,7 +6,7 @@ The tags are assigned to the team's workspace letting you use different tags for
 
 ### How to tag vulnerabilities
 
-Using the specified credentials during the configuration, from the Navigator start the session in [Faraday's GUI](https://github.com/infobyte/faraday/wiki/Status-report). Once you have obtained the authentication and you are in, click on the “Status Report” icon.
+Using the specified credentials during the configuration, from the Navigator start the session in [Faraday's GUI](https://github.com/infobyte/faraday/wiki/Status-report). Once you have obtained the authentication and you are in, click on the "Manage" section and then go to "Vulns" section.
 
 ![](https://raw.github.com/wiki/infobyte/faraday/images/status_report/vulns_list.png)
 
