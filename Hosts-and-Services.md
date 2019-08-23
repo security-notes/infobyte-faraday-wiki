@@ -12,11 +12,11 @@ From the host window, click New and fill out the form.
 
 ### Editing Host
 
-From the host window, click on the host:
+From the host window, click on the host you would like to make change:
 
-![](https://raw.github.com/wiki/infobyte/faraday/images/hosts&services/host_host.png)
+![](https://raw.github.com/wiki/infobyte/faraday/images/hosts&services/select_host.png)
 
-And then edit the fields as you need
+And then edit the fields as you wish:
 
 ![](https://raw.github.com/wiki/infobyte/faraday/images/hosts&services/host_edit.png)
 
