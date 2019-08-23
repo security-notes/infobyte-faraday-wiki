@@ -2,7 +2,7 @@ Docker is great if you want to give Faraday community edition a try without actu
 
 If you already tried Faraday and you are ready to use it for real we strongly recommend that you install it in your host OS.
 
-For Commercial versiones, please [follow our knowledge base article here](https://support.faradaysec.com/portal/kb/articles/docker)
+For Commercial versions, please [follow our knowledge base article here](https://support.faradaysec.com/portal/kb/articles/docker)
 
 ##### Starting up Faraday
 
