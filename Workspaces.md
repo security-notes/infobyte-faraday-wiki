@@ -4,8 +4,10 @@ The workspaces are used to hold the information re-collected from the different 
 
 ### How to manage the Workspace
 
-To manage your workspaces you need to access [Faraday's Web Interface](https://github.com/infobyte/faraday/wiki/Status-report) and click on the **Faraday** slider menu on the right of the screen ![](https://raw.github.com/wiki/infobyte/faraday/images/workspaces/workspace_menu.png)
-and then on **Wokspaces**
+To manage your workspaces you need to access [Faraday's Web Interface](https://github.com/infobyte/faraday/wiki/Status-report) and click on the **Faraday** slider menu on the right of the screen and then on **Wokspaces**
+
+![](https://raw.github.com/wiki/infobyte/faraday/images/workspaces/workspace_menu.png)
+
 
 
 The workspaces you can see on a list, where you can create, edit or eliminate them as you wish.
@@ -89,4 +91,3 @@ You can also activate/deactivate your Workspaces and/or mark them as Read-Only. 
 From the workspaces window click on **Delete**
 
 ![](https://raw.github.com/wiki/infobyte/faraday/images/workspaces/delete.png)
-
