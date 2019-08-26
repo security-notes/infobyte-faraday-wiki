@@ -24,4 +24,4 @@ And just complete the data like it shows in the following picture!
 
 ## View all the Credentials
 When you go to the Credentials View you will see all the credentials you have for every target on that workspace:
-![](https://raw.githubusercontent.com/wiki/infobyte/faraday/images/credentials/general_view)
+![](https://raw.githubusercontent.com/wiki/infobyte/faraday/images/credentials/general_view.png)
