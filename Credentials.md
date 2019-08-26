@@ -10,7 +10,7 @@ In the hosts view you have a special column that says credentials and has a numb
 To add it to a Service after entering the Hosts view click on the desired target and follow the steps bellow:
 
 
-![](https://raw.githubusercontent.com/wiki/infobyte/faraday/images/hosts&services/select_service.png)
+![](https://raw.githubusercontent.com/wiki/infobyte/faraday/images/credentials/select_service.png)
 
 Next just click on the New button 
 
