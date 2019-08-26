@@ -20,6 +20,7 @@ And just complete the data like it shows in the following picture!
 
 ![](https://raw.githubusercontent.com/wiki/infobyte/faraday/images/credentials/new_credential_modal.png)
 
+![](https://raw.githubusercontent.com/wiki/infobyte/faraday/images/credentials/list_new_credential.png)
 
 ## View all the Credentials
 When you go to the Credentials View you will see all the credentials you have for every target on that workspace:
