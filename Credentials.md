@@ -11,7 +11,7 @@ Just click on the 'New' button
 
 ![](https://raw.githubusercontent.com/wiki/infobyte/faraday/images/credentials/new_credential_list.png)
 
-select a host and complete the form as the following image
+and select a host and complete the form as the following image
 
 ![](https://raw.githubusercontent.com/wiki/infobyte/faraday/images/credentials/new_credential_from_credential.png)
 
@@ -19,6 +19,16 @@ select a host and complete the form as the following image
 In the hosts view you have a special column that says credentials and has a number with the amount of credentials you have already created. Click on that number.
 
 ![](https://raw.githubusercontent.com/wiki/infobyte/faraday/images/hosts&services/hosts_view.png)
+
+Next just click on the New button 
+
+![](https://raw.githubusercontent.com/wiki/infobyte/faraday/images/credentials/new_credential_list.png)
+
+And just complete the data like it shows in the following picture!
+
+![](https://raw.githubusercontent.com/wiki/infobyte/faraday/images/credentials/new_credential_modal.png)
+
+![](https://raw.githubusercontent.com/wiki/infobyte/faraday/images/credentials/list_new_credential.png)
 
 ### From Service view
 To add it to a Service after entering the Hosts view click on the desired target and follow the steps bellow:
