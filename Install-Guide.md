@@ -105,7 +105,7 @@ $ systemctl enable postgresql-9.5
 6. Restart PostgreSQL server and initialize the database: 
 
 ```
-$ sudo sysmtectl restart postgresql-9.5 
+$ sudo systemctl restart postgresql-9.5 
 $ sudo faraday-manage initdb
 ```
 
