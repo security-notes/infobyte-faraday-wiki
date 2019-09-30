@@ -72,4 +72,5 @@ Once you have everything setup, you can send the issues or requests to Faraday.
 
 ![](https://raw.github.com/wiki/infobyte/faraday/images/plugins/burp/send_to.png)
 
-
+REMEMBER: If the request is missing the response, the information can't be sent to faraday!
+REMEMBER 2: Vulnerabilities will only work with commercial versions of burp
