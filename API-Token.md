@@ -27,5 +27,5 @@ eyJhbGciOiJIUzUxMiIsImV4cCI6MTU2Mjc4MzQwOCwiaWF0IjoxNTYyNzc5ODA4fQ.eyJ1c2VyX2lkI
 Now that you got the auth token you can start using it on every request to the api:
 
 ```
-curl 'http://localhost:5985/_api/v2/ws/' -H 'Authorization:AUTH_TOKEN' -H 'Content-Type: application/json' 
+curl 'http://localhost:5985/_api/v2/ws/' -H 'Authorization:Token AUTH_TOKEN' -H 'Content-Type: application/json' 
 ```
