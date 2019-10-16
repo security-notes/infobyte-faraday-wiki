@@ -34,7 +34,7 @@ listen_addresses = '*'
 Login into the database server and execute:
 
 ```
-createuser faraday_postgres -P
+createuser faraday_postgresql -P
 ```
 
 Now create the database:
@@ -49,7 +49,7 @@ Now on the faraday server instance, open the file `/home/faraday/.faraday/config
 
 ```
 [database]
-connection_string = postgresql+psycopg2://faraday_postgresql:SECRETE_PASSWORD@REMOTE_IP/faraday
+connection_string = postgresql+psycopg2://faraday_postgresql:SECRET_PASSWORD@REMOTE_IP/faraday
 ```
 
 # Step 4: Create tables
