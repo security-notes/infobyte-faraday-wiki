@@ -22,9 +22,9 @@ It is recommended to install Faraday Server on the same instance as PostgreSQL.
 `$ sudo apt install postgresql`
 
 
-3. After the installation is completed, verify that PostgreSQL version is higher than 9.5 by running:
+3. After the installation is completed, verify that PostgreSQL version is higher or equal than 9.6 by running:
 
-`$ psql –version`
+`$ psql -c "SELECT version()" postgres`
 
 
 4. Go to your Download directory and run the following command:
@@ -67,20 +67,11 @@ $ rpm -Uvh epel.rpm
 
 1. Download Faraday's installer from our [Github project](https://github.com/infobyte/faraday/releases).
 
-2. Install **postgresql > 9.5** (locally or in a remote server). In order to install [PostgreSQL](https://yum.postgresql.org/), you can run the following command:
+2. Install **postgresql >= 9.6** (locally or in a remote server). In order to install [PostgreSQL](https://yum.postgresql.org/), you can run follow the [guide from postgresql website](https://www.postgresql.org/download/linux/redhat/)
 
-```
-$ rpm -Uvh https://download.postgresql.org/pub/repos/yum/reporpms/EL-7-x86_64/pgdg-redhat-repo-latest.noarch.rpm
-$ yum install postgresql95-server postgresql95
-$ /usr/pgsql-9.5/bin/postgresql95-setup initdb
-$ systemctl start postgresql-9.5
-$ systemctl enable postgresql-9.5
-```
+3. After the installation is completed, verify that PostgreSQL version is higher than 9.6 by running:
 
-
-3. After the installation is completed, verify that PostgreSQL version is higher than 9.5 by running:
-
-`$ psql –version`
+`$ psql -c "SELECT version()" postgres`
 
 
 4. Go to your Download directory and run the following command:
@@ -105,7 +96,7 @@ $ systemctl enable postgresql-9.5
 6. Restart PostgreSQL server and initialize the database: 
 
 ```
-$ sudo systemctl restart postgresql-9.5 
+$ sudo systemctl restart postgresql
 $ sudo faraday-manage initdb
 ```
 
