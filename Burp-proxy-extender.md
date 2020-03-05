@@ -2,7 +2,7 @@ This plugin is a script developed in Java as a extender to the Burp Proxy API (P
 
 ### Installation
 
-To download Faraday's Burp extension, follow this [link](https://github.com/infobyte/faraday/releases/download/v3.8.0/faraday-burp-v2.0.1.jar)
+To download Faraday's Burp extension, follow this [link](https://github.com/infobyte/faraday_burp/releases/download/v2.4/faraday-burp-v2.4.jar)
 
 Once you have downloaded the extension, follow these steps:
 
