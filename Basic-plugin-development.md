@@ -233,7 +233,6 @@ If you need to debug for plugins with the command line set this variable:
 
 ```shell script
 export PLUGIN_DEBUG=1
-export PLUGIN_DEBUG=1
 python -m faraday_plugins process appscan /path/to/report.xml
 2019-11-15 20:37:03,355 - faraday.faraday_plugins.plugins.manager - INFO [manager.py:113 - _load_plugins()]  Loading Native Plugins...
 2019-11-15 20:37:03,465 - faraday.faraday_plugins.plugins.manager - DEBUG [manager.py:123 - _load_plugins()]  Load Plugin [acunetix]
