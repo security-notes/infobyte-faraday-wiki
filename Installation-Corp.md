@@ -16,6 +16,12 @@ Faraday Server is the interface between PostgreSQL and Faraday Client and WebUI.
 
 **Important:** You should keep in mind that is recommended to install Faraday server on the same instance as PostgreSQL.
 
+The following instructions will leave the Faraday Server running locally on port 5965 by default. After the installation, you can open your browser on http://localhost:5965 to check that everything is running fine.
+This is OK for development or a single user in one machine. For deployments with multiple users, we recommend to use Faraday behind a reverse proxy server, such as [Nginx](https://nginx.com).
+See [Nginx Setup](https://github.com/infobyte/faraday/wiki/NGINX-Setup) for information on how to configure it.
+
+**Important** The recommended way to use SSL is to delegate it to the reverse proxy. Faraday Server can be run with SSL directly by configuring it in the server.ini file. This option is deprecated and will be removed in future versions.
+
 #### Downloading
 
 After the purchase you will receive an email with your credentials and a link to our **Customers Portal**. Use those credentials to log in to the site and you will get two links:
@@ -103,7 +109,7 @@ If you want to manually import the data from CouchDB, follow this [step](https:/
 
 Keep in mind the following items:
 
-* This commmand must be executed only when you run Faraday for the first time. 
+* This command must be executed only when you run Faraday for the first time. 
 * If you can't login into to Faraday after running the command above due to invalid credentials, you can change your password through the PostgreSQL shell that Faraday has in it. Follow the next [instructions](https://github.com/infobyte/faraday/wiki/Troubleshooting#cant-login-after-importing-from-couch) in order to change your password and be able to login.
 
 * You should have the PostgreSQL service started. To do it run
@@ -149,15 +155,6 @@ the data from CouchDB:
 $ faraday-manage  import-from-couchdb
 ```
 ***Note:*** beware of the number of users you have created in CouchDB, remember that you have already created one when you initialized PostgreSQL. The number of users that you have between CouchDB and PostgreSQL should not surpass the number of users you're allow to have according to your license.
-
-#### Updating Nginx configuration
-
-***Note:*** This only applies if you are using Nginx and https.
-
-Please, make sure you have this settings on your Nginx config:
-
-    proxy_pass http://localhost:5985/;
-    proxy_redirect http:// $scheme://;
 
 
 <a name="server-configuration"></a>
@@ -282,16 +279,16 @@ Faraday comes pre-installed in Kali Rolling. However, that version is **incompat
 Before installing Faraday you will need to get some user-contributed packages. In order to do this quickly we need an [AUR](https://wiki.archlinux.org/index.php/Arch_User_Repository) wrapper, in this case we will use [Yaourt](http://archlinux.fr/yaourt-en). After installing Yaourt run:
 
 ```
-$ yaourt -S python2-dateutil python2-pip mime-types python2-gobject gtk3 vte3 postgresql-libs
+$ yaourt -S python-dateutil python-pip mime-types python-gobject gtk3 vte3 postgresql-libs
 ```
 
 <a name="client-python-dependencies"></a>
-#### Installing Python 2 dependencies
+#### Installing Python dependencies
 
 Once you have the required system dependencies, you just have to install the Python modules needed to run the client using `pip`:
 
 ```
-$ pip2 install -r requirements.txt -U
+$ pip3 install -r requirements.txt -U
 ```
 
 <a name="client-configuration"></a>

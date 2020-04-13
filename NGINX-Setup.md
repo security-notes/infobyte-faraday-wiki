@@ -22,7 +22,7 @@ After installing and configuring NGINX, Faraday's setup should be as follows:
 
 #### Generating Certificates
 
-In order to generate self signed certificates, run the following command:  
+In order to generate self signed certificates, run the following command:
 
     $ sudo openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout /etc/ssl/faraday.key -out /etc/ssl/faraday.crt
 
@@ -47,7 +47,7 @@ Below you can find a sample config file for NGINX. You can use this same configu
         https://s-static.ak.facebook.com https://tautt.zendesk.com; object-src 'none'";
 
         server {
-        listen *:443;
+        listen 443 ssl;
         server_name _; #Change with the proper domain
 
         client_max_body_size 50M;
@@ -55,6 +55,7 @@ Below you can find a sample config file for NGINX. You can use this same configu
         ssl_certificate /etc/ssl/faraday.crt;
         ssl_certificate_key /etc/ssl/faraday.key;
         # enable session resumption to improve https performance
+
         # http://vincent.bernat.im/en/blog/2011-ssl-session-reuse-rfc5077.html
         ssl_session_cache shared:SSL:50m;
         ssl_session_timeout 5m;
@@ -81,16 +82,8 @@ Below you can find a sample config file for NGINX. You can use this same configu
                 proxy_set_header Host $host;
                 proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
                 proxy_set_header X-Forwarded-Ssl on;
-	        }
+          }
         }
-```
-
-#### Updating Nginx configuration
-
-Please, make sure you have these settings on your Nginx config:
-```
-proxy_pass http://localhost:5985/;
-proxy_redirect http:// $scheme://;
 ```
 
 ### Troubleshooting
