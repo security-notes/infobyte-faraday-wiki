@@ -37,9 +37,10 @@ After doing so, make sure to [install system dependencies](#server-system-depend
 
 #### Requirements
 
-Faraday Server is built with minimum requirements. This is by design, so you can install it even on the most bare-bones machine you can think of. The main requirement we need is Python 2.6 or 2.7.
+Faraday Server is built with minimum requirements. This is by design, so you can install it even on the most bare-bones machine you can think of. The main requirement we need is Python 3.6+.
 
 The Python requirements for the server are stored in the [`requirements_server.txt` file](https://github.com/infobyte/faraday/blob/master/requirements_server.txt).
+
 
 
 <a name="server-system-dependencies"></a>
@@ -78,7 +79,7 @@ $ sudo apt install build-essential ipython python-setuptools \
 Please consult with your distribution documentation to install the dependencies listed above.
 
 <a name="server-python-dependencies"></a>
-#### Installing Python 2 dependencies
+#### Installing Python dependencies
 
 Once you have the required system dependencies, you just have to install the Python modules needed to run the server using `pip`:
 

@@ -74,7 +74,7 @@ Before installing Faraday, we need to create a virtualenv so Faraday runs in it.
 
 ```
 $ pip install virtualenv
-$ virtualenv -p python2 faraday_venv
+$ virtualenv -p python3 faraday_venv
 $ source faraday_env/bin/activate 
 ```
 
@@ -272,7 +272,7 @@ By default, Faraday server will listen on port **5985**. You can edit this on `~
 Before installing Faraday you will need to get some user-contributed packages. In order to do this quickly we need an [AUR](https://wiki.archlinux.org/index.php/Arch_User_Repository) wrapper, in this case we will use [Yaourt](http://archlinux.fr/yaourt-en). After installing Yaourt run:
 
 ```
-$ yaourt -S python2-dateutil python2-pip mime-types python2-gobject gtk3 vte3 postgresql-libs
+$ yaourt -S python-dateutil python-pip mime-types python-gobject gtk3 vte3 postgresql-libs
 ```
 
 <a name="client-python-dependencies"></a>

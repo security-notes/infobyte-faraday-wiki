@@ -190,7 +190,7 @@ Before installing Faraday, we need to create a virtualenv so Faraday runs in it.
 
 ```
 $ pip install virtualenv
-$ virtualenv -p python2 faraday_venv
+$ virtualenv faraday_venv
 $ source faraday_env/bin/activate
 ```
 
@@ -213,7 +213,7 @@ $ python setup.py install
 
 #### After installation
 
-Once the installation is completed, we can start Faraday's server by running: 
+Once the installation is completed, we can start Faraday's server by running:
 
 ```
 $ faraday-server

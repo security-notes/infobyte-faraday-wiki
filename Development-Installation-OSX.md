@@ -54,7 +54,7 @@ Th should return:
 
 If this is not the case, you can change the PATH and use `/usr/local/bin` by running this command:
 
-    $ ln -s /usr/local/bin/python2 /usr/local/bin/python
+    $ ln -s /usr/local/bin/python3 /usr/local/bin/python
 
 If you want to revert this change just delete the link executed in the previous command.
 
