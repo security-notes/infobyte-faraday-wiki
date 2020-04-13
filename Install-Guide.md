@@ -32,7 +32,7 @@ It is recommended to install Faraday Server on the same instance as PostgreSQL.
 `$ sudo apt install ./yourInstallFileName.deb`
 
 
-5. If PostgreSQL is running in a remote machine please follow [these instructions](https://github.com/infobyte/faraday/wiki/Remote-PostgreSQL-database-configuration). If, instead, it is running locally, simply run: 
+5. If PostgreSQL is running in a remote machine please follow [these instructions](https://github.com/infobyte/faraday/wiki/Remote-PostgreSQL-database-configuration). If, instead, it is running locally, simply run:
 
 `$ sudo faraday-manage initdb`
 
@@ -79,12 +79,12 @@ $ rpm -Uvh epel.rpm
 `$ sudo yum install ./yourInstallFileName.rpm`
 
 
-5. If PostgreSQL is running in a remote machine please follow [these instructions](https://github.com/infobyte/faraday/wiki/Remote-PostgreSQL-database-configuration). If, instead, it is running locally, you need to open the pg_hba.conf file. There, you need to modify the localhost authentication type from "ident" to "md5". To do this, change host IPV4 local and IPV6 local from "ident" to "md5":
+5. If PostgreSQL is running in a remote machine please follow [these instructions](https://github.com/infobyte/faraday/wiki/Remote-PostgreSQL-database-configuration). If, instead, it is running locally, you need to open the pg\_hba.conf file. There, you need to modify the localhost authentication type from "ident" to "md5". To do this, change host IPV4 local and IPV6 local from "ident" to "md5":
 
-    Open the pg_hba.conf file (remember to specify the right PostgreSQL version):
+    Open the pg\_hba.conf file (remember to specify the right PostgreSQL version):
 
     ```
-    $ nano /var/lib/pgsql/POSTGRESQL_VERSION/data/pg_hba.conf
+    $ nano /var/lib/pgsql/POSTGRESQL_VERSION/data/pg\_hba.conf
     ```
     Once you have opened the file, you need to edit the following lines so the authentication type is set from "ident" to "md5":
     ```
@@ -93,7 +93,7 @@ $ rpm -Uvh epel.rpm
     # IPv6 local connections:
     host    all             all             ::1/128                 md5
     ```
-6. Restart PostgreSQL server and initialize the database: 
+6. Restart PostgreSQL server and initialize the database:
 
 ```
 $ sudo systemctl restart postgresql
@@ -139,7 +139,7 @@ This binary package contains four executable files:
 $ ./faraday-server
 ```
 
-Once the installation is completed, we can run every executable file as follow: 
+Once the installation is completed, we can run every executable file as follow:
 
 * To run Faraday's Server:
 
@@ -191,7 +191,7 @@ Before installing Faraday, we need to create a virtualenv so Faraday runs in it.
 ```
 $ pip install virtualenv
 $ virtualenv -p python2 faraday_venv
-$ source faraday_env/bin/activate 
+$ source faraday_env/bin/activate
 ```
 
 For more information about virtualenv, please follow this [link](https://virtualenv.pypa.io/en/latest/userguide/).
