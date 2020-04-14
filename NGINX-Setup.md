@@ -30,9 +30,12 @@ Be sure to type the Common Name of this certificate. If you don't type a Common 
 
 For further information about certificates, follow this [link](https://www.digitalocean.com/community/tutorials/how-to-create-a-self-signed-ssl-certificate-for-apache-in-ubuntu-16-04).
 
-#### Sample Configuration File
+#### Sample Configuration Files
 
-Below you can find a sample config file for NGINX. You can use this same configuration by pasting it inside the folder `/etc/nginx/sites-enabled/` and naming the file as you want.
+Below you can find both sample config files for NGINX. You can use this same configuration by pasting it inside the folder `/etc/nginx/sites-enabled/` and naming the file as you want.          
+
+`/etc/nginx/nginx.conf`
+
 ```
         #don't send the nginx version number in error pages and Server header
         server_tokens off;
@@ -65,7 +68,7 @@ Below you can find a sample config file for NGINX. You can use this same configu
         ssl_prefer_server_ciphers on;
 
         # disable SSLv3(enabled by default since nginx 0.8.19) since it's less secure then TLS http://en.wikipedia.org/wiki/Secure_Sockets_Layer#SSL_3.0
-        ssl_protocols TLSv1 TLSv1.1 TLSv1.2;
+        ssl_protocols TLSv1.2;
 
         # ciphers chosen for forward secrecy and compatibility
         # http://blog.ivanristic.com/2013/08/configuring-apache-nginx-and-openssl-for-forward-secrecy.html
@@ -86,6 +89,45 @@ Below you can find a sample config file for NGINX. You can use this same configu
         }
 ```
 
+`/etc/nginx/sites-available/faraday`
+```
+        server {
+            listen 443 ssl; # managed by Certbot
+            listen [::]:443 ssl ipv6only=on; # managed by Certbot
+            server_name {__your_server_name__};
+            client_max_body_size 50M;
+            ssl on;
+            ssl_session_cache shared:SSL:50m;
+            ssl_certificate           /etc/ssl/certs/nginx.crt;
+            ssl_certificate_key       /etc/ssl/private/nginx.key;
+
+            location / {
+                proxy_pass http://localhost:5985/;
+                proxy_redirect http:// $scheme://;
+                proxy_set_header Host $host;
+                proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+                proxy_set_header X-Forwarded-Ssl on;
+            }
+
+            location /websockets {
+                proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+                proxy_pass http://localhost:9000/;
+                proxy_http_version 1.1;
+                proxy_set_header Upgrade $http_upgrade;
+                proxy_set_header Connection "upgrade";
+            }
+        }
+        server {
+    
+            server_name {__your_server_name__};
+            if ($host = {__your_server_name__}) {
+                return 301 https://$host$request_uri;
+            }
+            listen 80 ;
+            listen [::]:80 ;
+            return 404;
+        }
+```
 ### Troubleshooting
 
 To ensure that the issue is not with your certificates, test from the command line using
