@@ -266,17 +266,6 @@ Extras dependencies:
 dev-python/beautifulsoup dev-python/gevent-psycopg2
 ```
 
-#### ArchLinux
-By default, Faraday server will listen on port **5985**. You can edit this on `~/.faraday/config/server.ini`.
-
-Before installing Faraday you will need to get some user-contributed packages. In order to do this quickly we need an [AUR](https://wiki.archlinux.org/index.php/Arch_User_Repository) wrapper, in this case we will use [Yaourt](http://archlinux.fr/yaourt-en). After installing Yaourt run:
-
-```
-$ yaourt -S python-dateutil python-pip mime-types python-gobject gtk3 vte3 postgresql-libs
-```
-
-<a name="client-python-dependencies"></a>
-
 #### Using GTK client with virtualenv
 
 If you are working inside a Virtual enviroment you need to follow this extra steps for GTK to work:
