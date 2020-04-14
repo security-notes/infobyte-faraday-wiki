@@ -12,7 +12,7 @@ After many months of work we have reorganized and changed the internal estructur
 <!--Haciendo correr (white|pink|black)/dev
 <!--Se recomienda borrar el virtualenv y armar uno desde cero. Para evitar los problemas con gobject-introspection, lo mejor es crearlo <!--usando la opción --system-site-packages:
 <!--
-<!--$ virtualenv -p python2 --system-site-packages .venv
+<!--$ virtualenv -p python3 --system-site-packages .venv
 <!--$ source .venv/bin/activate
 
 
@@ -20,8 +20,7 @@ After many months of work we have reorganized and changed the internal estructur
 ##VirtualEnv
 The Firts Step is to create the VirtualEnv.
 If you already had a virtual env for faraday, we recomend deleting it and creating a new one.
-And if hadn't: We can't stress enough just how important it is to use VirtualEnvs on Pythons projects.
-Specially at this time where Python2 is on it's last months of support and so many libraries have already switched to Python3. (Don't worry, before 2020 is here so will we).
+And if hadn't: We can't stress enough just how important it is to use VirtualEnvs on Python projects.
 
 ### How to create a VirtualEnv
 To install VirtualEnv do:
@@ -30,7 +29,7 @@ pip install virtualenv
 ```
 And to create a new one:
 ```
-virtualenv -p python2 --system-site-packages MYVIRTUALENV
+virtualenv  --system-site-packages MYVIRTUALENV
 ```
 And to activate it:
 ```
@@ -71,17 +70,17 @@ pip install -r requirements.txt -U
 
 ## New aliases
 
-To run the server instead of doing python2 faraday-server.pyc  do:
+To run the server instead of doing python3 faraday-server.pyc  do:
 ```
 faraday-server 
 ```
 This will work even without being inside the faraday directory (as long as you don't deactivate your virtualenv).
 
-To run the client instead of doing python2 faraday.pyc do:
+To run the client instead of doing python3 faraday.pyc do:
 ```
 faraday-client
 ```
-To run the manage intead of doing python2 manage.pyc do:
+To run the manage intead of doing python3 manage.pyc do:
 ```
 faraday-manage
 ```
