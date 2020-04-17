@@ -96,7 +96,6 @@ Below you can find both sample config files for NGINX. You can use this same con
             listen [::]:443 ssl ipv6only=on; # managed by Certbot
             server_name {__your_server_name__};
             client_max_body_size 50M;
-            ssl on;
             ssl_session_cache shared:SSL:50m;
             ssl_certificate           /etc/ssl/certs/nginx.crt;
             ssl_certificate_key       /etc/ssl/private/nginx.key;
