@@ -1,60 +1,63 @@
-Faraday is composed of the Faraday Server and the Faraday Client with a Server-Centric approach. The Client talks almost exclusively with the Server, and the Server is used to synchronize the state of the program between instances.
+# Architecture overview
 
-Execute:
-```
-faraday-manage database-schema
-```
-For an image explaining the schema of our database.
+This page provides a high level overview Faraday and the role of its components. 
+
+# Technical introduction 
+
+Faraday is a web application, the [Server][server] is made with python using Flask and the [Frontend][frontend] is made 
+with ReactJS. It is deployed as a standard WSGI application. Its possible to interact with the Server with 
+[Faraday client][faraday_client] and you can automatize tool usage with [Faraday agent][faraday_agent].
+
+
+![Faraday architecture overview](./images/architecture/Faraday_Architecture.jpg)
+
+# Faraday Server
+
+
 
 Faraday uses PostgreSQL as a database engine.
-
 The Server provides everything else using a REST API. You can also make queries over
 the relational database structured according to our Host/Services/Vulnerability models (server/models.py). Our
 Server acts as a Web Server build upon Twisted which provides websockets, wsgi and serves static files.
 
-## Server Centric approach
+# Faraday Client 
 
-Every user connects to the same Faraday Server, which is itself connected to a PostgreSQL database.
-This permits seamless data sharing and synchronization.
-![Sincronize_2](https://raw.github.com/wiki/infobyte/faraday/images/architecture/faraday_schema.png)
+[Faraday client][faraday_client] provides an interface for interacting with a terminal that allows the user to execute commands which results will be loaded inside Faraday Server. 
+The Client also allows the user to upload tool reports, create workspaces and configure [Faraday Plugins][faraday_plugins]
+
+# Faraday Server 
+
+Faraday is accessed by a Web Browser or the [Faraday Client](#faraday-client). Both clients communicate with Faraday Server via its [REST API][api_docs]. 
+
+The data is persisted within a PostgreSQL database, processed with python libraries as SQLAlchemy and Marshmallow.
+
+The server has other main components as the Report Processor, or the Websocket Server. The latter provides information to the Client, and the [Agents](#faraday-agent).
+
+# Faraday Agent 
+
+The Faraday Agents allows to automate the upload of different data to the server, such as integration with other applications or services; or execute some tools that the [Faraday plugins][faraday_plugins] can process. Moreover, the Agents can be executed on any remote computer and its Executors can be written in any language.
+
+# Burp / Zap Addons
+
+Faraday has [Burp][burp_addon]/[Zap][zap_addon] Extensions that run inside the third party application. Using Faraday addons provides flexibility to ingress information inside Faraday Server from other applications.
 
 
-## Plugin Engine
+# Appendix
 
-The following diagram explains the plugins' architecture:
-![Plugin_Controller](https://raw.github.com/wiki/infobyte/faraday/images/architecture/plugin_controller.png)
+## Database schema
 
-Plugin engine has the following components:
+Faraday manage command can generate the current database schema with:
 
-* Report Processor
-* Plugin Controller
-* Plugin Process
-* Model Controller
+```
+faraday-manage database-schema
+```
 
-The interaction of these components can be seen in the following graph:
 
-![Plugin Architecture](https://raw.github.com/wiki/infobyte/faraday/images/architecture/plugin_architecture.png)
-
-Plugins, Report and Persistence Model each run in a separate Thread. Communication between threads are made by queues. Report Processor is a process and it could be one process for each workspace.
-
-### Report Processor
-
-Search for files in the .faraday/reports directory looking for external tools reports.
-Report Processor will call the plugin controller using the method ProcessReport with the filename of the report.
-
-### Plugin Controller
-
-Plugin Controller will open the filename passed in the ProcessReport and will enqueue the contents in the output_queue.
-The output_queue will be consumed by the Plugin Process
-
-### Plugin Process
-
-Plugin Process will detect the corresponding plugin that matches the report file.
-When it finds the plugin it will call the ProcessReport or ProcessOutput (if called from shell).
-While the plugin is being executed in the Plugin Instance, methods like the CreateAndAddHost and similar will be called.
-Each of the CreateAndADD (Or Update, Delete, etc) will enqueue an action code with an instance of persistence server models to the pending_actions queue.
-
-### Model Controller
-
-Model Controller consumes the pending_actions queue and will create http requests and serialize persistence model instances.
-All http requests will be made to the faraday-server.
+[frontend]: link al github del frontend
+[server]: https://github.com/infobyte/faraday
+[faraday_client]: https://github.com/infobyte/faraday-client
+[faraday_agent]: https://github.com/infobyte/faraday_agent_dispatcher
+[api_docs]: https://apidocs.faradaysec.com
+[faraday_plugins]: https://github.com/infobyte/faraday_plugins
+[burp_addon]: https://github.com/infobyte/faraday_burp
+[zap_addon]: https://github.com/infobyte/faraday_zap
