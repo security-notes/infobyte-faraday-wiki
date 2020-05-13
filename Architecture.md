@@ -53,7 +53,7 @@ faraday-manage database-schema
 ```
 
 
-[frontend]: link al github del frontend
+[frontend]: https://github.com/infobyte/faraday_reactjs
 [server]: https://github.com/infobyte/faraday
 [faraday_client]: https://github.com/infobyte/faraday-client
 [faraday_agent]: https://github.com/infobyte/faraday_agent_dispatcher
