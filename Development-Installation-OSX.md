@@ -68,7 +68,7 @@ First of all, we need Git in order to get Faraday from Github. Run:
 
 Now clone Faraday's repository by running the following command:
 
-    $ git clone https://github.com/infobyte/faraday.git faraday-dev
+    $ git clone --depth 1 https://github.com/infobyte/faraday.git faraday-dev
 
 Done!
 

@@ -13,7 +13,7 @@ Download and install the last release from Firefox addons repository:
 [Faraday Addon](https://addons.mozilla.org/es/firefox/addon/faraday-addon/)
 
 ### For Developers
-$ git clone https://github.com/infobyte/faraday_addon.git
+$ git clone --depth 1 https://github.com/infobyte/faraday_addon.git
 
 
 

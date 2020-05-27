@@ -207,7 +207,7 @@ $ pip install git+git@github.com:infobyte/faraday.git
 * Cloning the repository:
 
 ```
-$ git clone git@github.com:infobyte/faraday.git
+$ git clone --depth 1 git@github.com:infobyte/faraday.git
 $ cd faraday-dev/
 $ python setup.py install
 ```
